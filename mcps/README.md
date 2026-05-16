@@ -130,16 +130,20 @@ These MCPs focus on enabling AI models to effectively select, utilize, and orche
     *   **Official Link:** [notfair.co](https://notfair.co/)
 
 *   **Squish Memory (4M Labs):**
-    *   **Description:** A persistent memory runtime for AI agents that provides long-term recall, graph-based association, and tiered memory lifecycle (hot/warm/cold). Squish acts as an MCP-accessible memory layer, allowing AI agents to store, retrieve, and reason over past interactions, user preferences, and project context across sessions. Built with TypeScript, supports both SQLite and Supabase (PostgreSQL + pgvector) backends.
+    *   **Description:** A forward-only memory runtime for production AI agents. Squish auto-captures durable signal from agent sessions, derives beliefs (decisions, constraints, preferences), and restores relevant context across restarts. No second LLM required -- local-first embeddings (1-5ms) handle retrieval. Ships as a single 283KB package with MCP server, CLI, and local web UI. Built with TypeScript, supports SQLite (local) and PostgreSQL (team mode) backends.
     *   **Key Features:**
-        *   **Cross-Session Memory:** Agents remember context, decisions, and user preferences across conversations, not just within a single context window.
-        *   **Graph Associations:** Memories link to each other through typed associations (relates_to, supports, contradicts, supersedes, duplicate) enabling multi-hop reasoning and context-aware retrieval.
-        *   **Tiered Lifecycle:** Automatic decay scheduler promotes/demotes memories between hot (fast QMD file store), warm, and cold tiers based on recency and importance.
-        *   **Hybrid Search:** Combines BM25 keyword search, vector similarity (pgvector), recency scoring, and graph boost for relevance-ranked results.
-        *   **MCP Server:** Ships with a built-in MCP server (`npx squish-memory`) for easy integration with any MCP-compatible client.
-    *   **Installation:** `npx -y squish-memory`
-    *   **Official GitHub:** [github.com/michielhdoteth/squish-memory](https://github.com/michielhdoteth/squish-memory)
+        *   **No Second LLM Required:** Unlike most memory tools, Squish uses local embeddings and geometric methods for signal extraction and retrieval. No API calls, no per-token costs, ~$0 default runtime.
+        *   **Signal Distillation:** Suppresses noisy tool output, keeps session-only context local, and only promotes durable signal (decisions, fixes, constraints, preferences).
+        *   **Belief Derivation:** Turns captured memories into durable beliefs that change future agent behavior -- without requiring the agent to remember to save them.
+        *   **Context Restoration:** Restarts an agent with relevant working-set context instead of a cold start. Inspection surfaces show exactly what was stored and why.
+        *   **Hybrid Retrieval:** BM25 keyword search, semantic vector similarity (pgvector), graph-boosted relevance, and multi-factor ranking (recency, importance, graph coactivation).
+        *   **MCP Server:** Built-in MCP server (`npx squish-memory`) works with Claude Code, OpenCode, Cursor, VS Code, OpenClaw, and any MCP-compatible client.
+        *   **Memory Lifecycle:** Hot/warm/cold tier system with automatic decay, expiration, and consolidation. Sectors for episodic, semantic, procedural, and autobiographical memory types.
+        *   **Places:** Durable memories are routed into spatial buckets (WIP, Sandbox, Board, Ref) for segmented retrieval without noise.
+    *   **Installation:** `npm install -g squish-memory && squish install --all`
+    *   **Official GitHub:** [github.com/michielhdoteth/squish](https://github.com/michielhdoteth/squish)
     *   **Landing Page:** [squishplugin.dev](https://squishplugin.dev)
+    *   **Benchmarks:** LoCoMo 65% (no LLM), LongMemEval 67%, 1-5ms embedding latency, 943 ops/sec throughput
 
 ### 📊 Data Integration MCPs (Conceptual)
 

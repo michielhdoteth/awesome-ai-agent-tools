@@ -10,6 +10,7 @@ Skills are structured instruction sets that tell an AI assistant how to handle a
 
 | Skill | Description | File |
 |-------|-------------|------|
+| **squish-memory** | Memory runtime for production AI agents. Auto-captures signal, derives beliefs, restores context across sessions. MCP + CLI + Web UI. | [external: squishplugin.dev](https://squishplugin.dev) |
 | **humanizer** | Remove AI writing patterns from generated text. Detects and fixes em dashes, hedging, puffery, and other LLM tells | [humanizer/SKILL.md](humanizer/SKILL.md) |
 | **brainstorming** | Design process for turning ideas into specs. Explore context, ask questions, propose approaches, write design docs | [brainstorming/SKILL.md](brainstorming/SKILL.md) |
 | **writing-plans** | Convert specs into multi-step implementation plans with task breakdowns and dependencies | [writing-plans/SKILL.md](writing-plans/SKILL.md) |
