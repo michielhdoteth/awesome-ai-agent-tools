@@ -1,6 +1,32 @@
 # Claude Code Complete Feature Reference
 
-A comprehensive reference of all Claude Code features, commands, workflows, and best practices.
+*Last updated: 2026-06-02*
+
+**Claude Code has 40+ built-in slash commands** for session management, code review, testing, debugging, and workflow automation. This reference covers every command, subagent, hook, MCP configuration, plugin, and workflow pattern.
+
+---
+
+## Frequently Asked Questions
+
+### What are all Claude Code slash commands?
+Claude Code includes 40+ built-in commands: `/add-dir`, `/agents`, `/bashes`, `/clear`, `/compact`, `/config`, `/context`, `/cost`, `/doctor`, `/exit`, `/export`, `/help`, `/hooks`, `/ide`, `/init`, `/install-github-app`, `/login`, `/logout`, `/mcp`, `/memory`, `/model`, `/output-style`, `/permissions`, `/plan`, `/plugin`, `/pr-comments`, `/privacy-settings`, `/release-notes`, `/rename`, `/remote-env`, `/resume`, `/review`, `/rewind`, `/sandbox`, `/security-review`, `/stats`, `/status`, `/statusline`, `/teleport`, `/terminal-setup`, `/theme`, `/todos`, `/usage`, `/vim`. Each command has specific flags and options documented below.
+
+### How do I create custom slash commands?
+Create markdown files in `.claude/commands/` (project) or `~/.claude/commands/` (personal). The filename becomes the command name. Use `$ARGUMENTS` for parameters, `$1`, `$2` for individual args, and `!` backticks for bash execution. Add frontmatter for `allowed-tools`, `description`, `model`, and `context` settings.
+
+### What are hooks in Claude Code?
+Hooks are automated scripts that run at specific workflow points: `PreToolUse` (before tool execution), `PostToolUse` (after completion), `PermissionRequest`, `Notification`, `UserPromptSubmit`, `Stop`, `SubagentStop`, `PreCompact`, `SessionStart`, and `SessionEnd`. Configure them in `.claude/settings.json` with matchers and command scripts.
+
+### How do I configure MCP servers?
+Create `.mcp.json` in your project root with server configurations. Each server needs a `command` (usually `npx`) and `args` array. Add `env` for API keys. Use `/mcp` command to manage connections. Essential servers: GitHub, Context7, Filesystem, Brave Search, Sentry, PostgreSQL.
+
+### What are subagents and how do I use them?
+Subagents are specialized AI agents for focused tasks. Built-in: Explore (codebase search), Plan (research for planning), General-purpose (complex tasks). Custom subagents live in `.claude/agents/` or `~/.claude/agents/` as markdown files with frontmatter defining `name`, `description`, `tools`, `model`, and `permissionMode`.
+
+### What is the difference between skills and slash commands?
+Slash commands are single markdown files with simple prompts. Skills are directories containing `SKILL.md`, multiple reference files, scripts, and resources. Skills auto-discover based on context; slash commands require explicit invocation. Skills handle complex capabilities; slash commands handle quick actions.
+
+---
 
 ## Table of Contents
 

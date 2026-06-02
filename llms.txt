@@ -1,0 +1,32 @@
+# Claude Code Bible
+
+> The most comprehensive open-source resource for Claude Code, AI-assisted development, prompt engineering, MCP servers, and subagent orchestration. 7+ production-ready skill files, 50+ MCP server configs, and battle-tested workflow patterns.
+
+## What This Repo Contains
+
+- **Claude Code CLI Reference**: 40+ slash commands, subagents, hooks, plugins, workflows, and configuration guide
+- **Prompt Engineering Guide**: Chain-of-Thought, ReAct, structured prompting, modular techniques
+- **MCP Server Directory**: Curated Model Context Protocol servers (Context7, Taskmaster, GitHub, Filesystem, Brave, and 50+ more)
+- **Workflow Patterns**: Ralph Wiggum autonomous coding loops, OpenProse multi-agent orchestration
+- **7 Reusable Skills**: brainstorming, writing-plans, subagent-driven-development, acceptance-traceability, cold-email, copywriting, humanizer
+- **Best Practices**: Security, ethics, code quality, team collaboration guidelines
+- **Tool Comparisons**: AI assistants, IDE integrations, testing tools, linters, debugging tools
+
+## Key Files
+
+- [README](README.md) - Project overview and table of contents
+- [Getting Started](docs/getting-started.md) - Fundamentals, setup, first project
+- [Feature Reference](docs/feature-reference.md) - Complete Claude Code CLI reference
+- [Prompt Engineering](prompting/prompt-engineering.md) - Prompt techniques and strategies
+- [MCP Servers](mcps/README.md) - Model Context Protocol server directory
+- [Workflows](workflows/README.md) - Advanced autonomous workflows
+- [Best Practices](rules/best-practices.md) - Security, ethics, quality guidelines
+- [Skills](skills/) - 7 production-ready skill files
+
+## Topics
+
+claude-code, ai-coding, prompt-engineering, mcp, model-context-protocol, ai-agents, autonomous-development, code-generation, developer-automation, llm, anthropic, claude-ai, subagents, hooks, plugins, vibe-coding, context-engineering
+
+## Updated
+
+2026-06-02
