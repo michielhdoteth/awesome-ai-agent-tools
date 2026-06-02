@@ -1,0 +1,29 @@
+# AI tool configs (private, not for repo)
+.opencode/
+.claude/
+.cursor/
+.windsurf/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+dist/
+build/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/settings.json
+.idea/
+
+# Research (internal notes)
+research/
+.iter/
