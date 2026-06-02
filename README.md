@@ -36,19 +36,35 @@ Claude Code Bible is an open-source knowledge base that teaches developers how t
 
 ## Quick Links
 
-| Category | What It Covers | Path |
+### Start Here
+
+| Resource | What You Learn | Time |
 |----------|----------------|------|
-| **Getting Started** | Setup, fundamentals, first project | [docs/getting-started.md](docs/getting-started.md) |
-| **Feature Reference** | Complete CLI reference, 40+ commands | [docs/feature-reference.md](docs/feature-reference.md) |
-| **CLAUDE.md Templates** | Ready-to-use config files | [docs/claude-md-templates.md](docs/claude-md-templates.md) |
-| **Commands** | Slash command library | [commands/](commands/) |
-| **Subagents** | Specialized AI agents | [subagents/](subagents/) |
-| **Hooks** | Automation scripts | [hooks/](hooks/) |
-| **MCPs** | Tool integrations | [mcps/](mcps/) |
-| **Workflows** | Advanced patterns | [workflows/](workflows/) |
-| **Prompting** | Engineering techniques | [prompting/](prompting/) |
-| **Rules** | Best practices | [rules/](rules/) |
-| **Skills** | Reusable skill files | [skills/](skills/) |
+| [Getting Started](docs/getting-started.md) | Setup, first project, core workflow | 10 min |
+| [Feature Reference](docs/feature-reference.md) | 40+ commands, flags, examples | 20 min |
+| [CLAUDE.md Templates](docs/claude-md-templates.md) | Copy-paste config files | 5 min |
+
+### Build With
+
+| Resource | What You Get | Path |
+|----------|--------------|------|
+| **Skills** | 12 production-ready skill files (TDD, debugging, code review, planning) | [skills/](skills/) |
+| **MCPs** | 50+ server configs with setup examples | [mcps/](mcps/) |
+| **Workflows** | Autonomous coding patterns (Ralph Wiggum, OpenProse) | [workflows/](workflows/) |
+| **Hooks** | 20+ automation scripts (security gate, auto-format, context loader) | [hooks/](hooks/) |
+| **Subagents** | Specialized AI agents (reviewer, debugger, security auditor) | [subagents/](subagents/) |
+| **Commands** | Custom slash command library | [commands/](commands/) |
+
+### Learn More
+
+| Resource | What You Master | Path |
+|----------|-----------------|------|
+| **Prompt Engineering** | Chain-of-Thought, ReAct, structured prompting | [prompting/](prompting/) |
+| **Best Practices** | Security, ethics, code quality, testing | [rules/](rules/) |
+| **Building Blocks** | Markdown files, agents, skills, hooks, plugins | [docs/building-blocks.md](docs/building-blocks.md) |
+| **Advanced Tips** | Context management, worktrees, parallel sessions | [docs/advanced-tips.md](docs/advanced-tips.md) |
+| **Tools Overview** | AI assistants, IDEs, testing, linting, docs | [tools/overview.md](tools/overview.md) |
+| **Integrations** | VS Code, JetBrains, GitHub, Vercel, 15+ services | [integrations/](integrations/) |
 
 ---
 
@@ -66,12 +82,23 @@ Curated Model Context Protocol servers including Context7 (39k+ stars), GitHub M
 ### Workflow Patterns
 Advanced autonomous workflows including Ralph Wiggum loops (overnight coding sessions that build features while you sleep), OpenProse language for multi-agent orchestration, and TDD workflows with parallel subagents.
 
-### 7 Production-Ready Skills
+### 12 Production-Ready Skills
 Reusable skill files you can drop into any project:
+
+**Development Workflow:**
+- **test-driven-development** - RED-GREEN-REFACTOR enforcement
+- **systematic-debugging** - 4-phase root cause process
+- **verification-before-completion** - Evidence-based task completion
+- **code-reviewer** - Security, logic, performance, style review
+- **git-commit-writer** - Conventional commit messages from staged changes
+
+**Planning & Design:**
 - **brainstorming** - Explore intent and requirements before coding
 - **writing-plans** - Create detailed implementation plans
-- **subagent-driven-development** - Execute plans with parallel agents
 - **acceptance-traceability** - Map requirements to tests and evidence
+- **subagent-driven-development** - Execute plans with parallel agents
+
+**Writing & Communication:**
 - **cold-email** - Write effective outreach emails
 - **copywriting** - Create compelling marketing content
 - **humanizer** - Make AI text sound natural
@@ -163,7 +190,15 @@ Claude Code is a CLI-based agentic coding tool that handles multi-step tasks, wh
 
 ## Contributing
 
-Contributions welcome! Read our [contributing guidelines](docs/contributing.md) to add resources, tools, and best practices.
+Contributions welcome! Read our [contributing guide](CONTRIBUTING.md) to add resources, tools, and best practices.
+
+**Quick ways to contribute:**
+- Add an MCP server config
+- Submit a skill file
+- Fix a broken link
+- Improve documentation
+
+All PRs are automatically reviewed by Claude Code via GitHub Actions.
 
 ## License
 

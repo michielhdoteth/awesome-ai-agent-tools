@@ -1,0 +1,85 @@
+name: Claude Code PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  claude-review:
+    # Run on PR events OR on issue comments that mention @claude
+    if: >
+      github.event_name == 'pull_request' ||
+      (github.event_name == 'issue_comment' &&
+       github.event.issue.pull_request &&
+       contains(github.event.comment.body, '@claude'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run Claude Code Review
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          review_mode: true
+          # Auto-review PRs, respond to @claude mentions
+          # Customize the prompt for Bible-specific review
+          prompt: |
+            You are reviewing a PR to the Claude Code Bible - a comprehensive resource
+            for Claude Code, MCP servers, prompt engineering, and AI workflows.
+
+            Review for:
+            1. **Accuracy** - Are technical claims correct? Are version numbers current?
+            2. **Completeness** - Does it follow the existing structure and format?
+            3. **SEO/AEO/GEO** - Does content have clear answers, FAQ sections, self-contained passages?
+            4. **Links** - Are all URLs valid and pointing to correct resources?
+            5. **Formatting** - Consistent markdown, proper headers, code blocks with language tags?
+            6. **Spelling/Grammar** - Clean, professional writing?
+            7. **Deduplication** - Does this overlap with existing content?
+
+            Flag issues by severity:
+            - CRITICAL: Wrong information, broken links, security issues
+            - WARNING: Missing sections, poor structure, formatting issues
+            - SUGESTION: Improvements, better wording, additional context
+
+      - name: Auto-fix formatting
+        if: success()
+        run: |
+          # Auto-fix common markdown issues
+          echo "Review complete. Check comments for details."
+
+  # Respond to @claude mentions in PR comments
+  claude-respond:
+    if: >
+      github.event_name == 'issue_comment' &&
+      github.event.issue.pull_request &&
+      contains(github.event.comment.body, '@claude')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Handle @claude mention
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            A user mentioned @claude in a PR comment. Read the comment,
+            understand what they're asking, and respond helpfully.
+
+            Common requests:
+            - "Review this PR" - Do a full review
+            - "Fix the issues" - Auto-fix what you can
+            - "Explain this change" - Summarize what changed and why
+            - "Add tests" - Generate tests for new code

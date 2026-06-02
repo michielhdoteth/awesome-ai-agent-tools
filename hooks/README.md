@@ -213,14 +213,82 @@ echo "Security scan passed"
 └── settings.json
 ```
 
+## Production-Ready Hooks
+
+### Security Gate (PreToolUse)
+
+Block destructive commands before they execute. Uses exit code 2 to actually block (exit 1 only warns).
+
+```json
+{
+  "matcher": "Bash",
+  "hooks": [
+    {
+      "type": "command",
+      "command": "bash -c 'CMD=\"$CLAUDE_TOOL_INPUT_COMMAND\"; if echo \"$CMD\" | grep -qE \"rm -rf|DROP TABLE|git push --force|git reset --hard\"; then echo \"BLOCKED: Destructive command detected\" >&2; exit 2; fi; exit 0'"
+    }
+  ]
+}
+```
+
+### SessionStart Context Loader
+
+Load project context, recent git history, and environment state when a session starts.
+
+```json
+{
+  "matcher": "SessionStart",
+  "hooks": [
+    {
+      "type": "command",
+      "command": "echo \"Last 5 commits:\"; git log --oneline -5; echo \"\\nBranch:\"; git branch --show-current; echo \"\\nChanged files:\"; git diff --name-only HEAD~3 2>/dev/null | head -20"
+    }
+  ]
+}
+```
+
+### PreCompact Backup
+
+Back up conversation transcript before context compaction runs.
+
+```json
+{
+  "matcher": "PreCompact",
+  "hooks": [
+    {
+      "type": "command",
+      "command": "cp \"$CLAUDE_SESSION_FILE\" \"$CLAUDE_SESSION_FILE.bak.$(date +%s)\" 2>/dev/null || true"
+    }
+  ]
+}
+```
+
+### Stop Hook (Task Enforcement)
+
+Block completion if tasks aren't done. Forces agent to continue working.
+
+```json
+{
+  "matcher": "Stop",
+  "hooks": [
+    {
+      "type": "command",
+      "command": "bash -c 'if [ -f .claude/todos.json ] && grep -q \"\\\"pending\\\"\" .claude/todos.json; then echo \"Tasks still pending - continue working\" >&2; exit 2; fi; exit 0'"
+    }
+  ]
+}
+```
+
 ## Best Practices
 
 1. **Keep hooks fast** - Long-running hooks slow down workflow
-2. **Fail gracefully** - Allow override for important commits
-3. **Use proper shebangs** - Cross-platform compatibility
-4. **Handle errors** - Provide meaningful error messages
-5. **Document hooks** - Explain what each hook does
-6. **Use SessionStart** for project initialization context
+2. **Use exit 2 to block** - Exit 1 only warns, exit 2 actually blocks execution
+3. **Fail gracefully** - Allow override for important commits
+4. **Use proper shebangs** - Cross-platform compatibility
+5. **Handle errors** - Provide meaningful error messages
+6. **Document hooks** - Explain what each hook does
+7. **Use SessionStart** for project initialization context
+8. **Test hooks** - Verify they work before team adoption
 
 ## Resources
 

@@ -129,21 +129,17 @@ These MCPs focus on enabling AI models to effectively select, utilize, and orche
         *   **MCP-Compatible:** Works with Claude, Cursor, and any MCP client.
     *   **Official Link:** [notfair.co](https://notfair.co/)
 
-*   **Squish Memory (4M Labs):**
-    *   **Description:** A forward-only memory runtime for production AI agents. Squish auto-captures durable signal from agent sessions, derives beliefs (decisions, constraints, preferences), and restores relevant context across restarts. No second LLM required -- local-first embeddings (1-5ms) handle retrieval. Ships as a single 283KB package with MCP server, CLI, and local web UI. Built with TypeScript, supports SQLite (local) and PostgreSQL (team mode) backends.
+*   **Squish (4M Labs):**
+    *   **Description:** Connect once. Remember everywhere. Squish gives ChatGPT, Claude Code, and every AI agent one shared memory through OAuth. Stop re-explaining your project, decisions, and context to every tool.
     *   **Key Features:**
-        *   **No Second LLM Required:** Unlike most memory tools, Squish uses local embeddings and geometric methods for signal extraction and retrieval. No API calls, no per-token costs, ~$0 default runtime.
-        *   **Signal Distillation:** Suppresses noisy tool output, keeps session-only context local, and only promotes durable signal (decisions, fixes, constraints, preferences).
-        *   **Belief Derivation:** Turns captured memories into durable beliefs that change future agent behavior -- without requiring the agent to remember to save them.
-        *   **Context Restoration:** Restarts an agent with relevant working-set context instead of a cold start. Inspection surfaces show exactly what was stored and why.
-        *   **Hybrid Retrieval:** BM25 keyword search, semantic vector similarity (pgvector), graph-boosted relevance, and multi-factor ranking (recency, importance, graph coactivation).
-        *   **MCP Server:** Built-in MCP server (`npx squish-memory`) works with Claude Code, OpenCode, Cursor, VS Code, OpenClaw, and any MCP-compatible client.
-        *   **Memory Lifecycle:** Hot/warm/cold tier system with automatic decay, expiration, and consolidation. Sectors for episodic, semantic, procedural, and autobiographical memory types.
-        *   **Places:** Durable memories are routed into spatial buckets (WIP, Sandbox, Board, Ref) for segmented retrieval without noise.
-    *   **Installation:** `npm install -g squish-memory && squish install --all`
+        *   **Works Everywhere:** OAuth connector for ChatGPT. MCP server for Claude Code, Cursor, VS Code, OpenClaw. CLI for local agents. One memory layer across all tools.
+        *   **Zero Setup Memory:** Auto-captures decisions, fixes, and context from agent sessions. No prompt engineering needed.
+        *   **Smart Retrieval:** Hybrid search (semantic + keyword + graph). Finds what matters without manual tagging.
+        *   **Cloud Sync:** OAuth 2.1 Authorization Code + PKCE. Connect once and your memory follows you between tools.
+        *   **Memory Lifecycle:** Hot/warm/cold tier system with automatic decay, expiration, and consolidation.
+    *   **Installation:** `npm install -g squish-memory && squish cloud login`
     *   **Official GitHub:** [github.com/michielhdoteth/squish](https://github.com/michielhdoteth/squish)
     *   **Landing Page:** [squishplugin.dev](https://squishplugin.dev)
-    *   **Benchmarks:** LoCoMo 65% (no LLM), LongMemEval 67%, 1-5ms embedding latency, 943 ops/sec throughput
 
 ### 📊 Data Integration MCPs (Conceptual)
 
