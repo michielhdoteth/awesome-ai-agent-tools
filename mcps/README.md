@@ -120,13 +120,14 @@ These MCPs focus on enabling AI models to effectively select, utilize, and orche
     *   **Official GitHub:** (No direct GitHub link found in search, but related to mcp.so, which is a hub for MCP-related projects and discussions. This suggests it might be a foundational component or a reference implementation within the broader MCP ecosystem.)
 
 
-*   **NotFair:**
-    *   **Description:** A hosted Google Ads MCP server that connects Claude and other AI agents to a Google Ads account. NotFair lets the AI orchestrate Google Ads diagnostics and changes through a standard MCP interface — diagnosing campaign performance, recommending optimizations, and executing approved changes via the official Google Ads API.
+*   **NotFair (~2.9k stars):**
+    *   **Description:** Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads. NotFair provides three skill areas — SEO (site analysis, keyword research, meta tags, schema markup, GEO optimization, content writing), Google Ads (audits, wasted-spend detection, search-term cleanup, keyword and bid management), and Meta Ads (ROAS analysis, creative fatigue, audience overlap). It connects to live data through the Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP.
     *   **Key Features:**
-        *   **Diagnose:** Surfaces campaign performance issues — CPA, ROAS, search-term waste, quality scores, learning-phase status.
-        *   **Recommend:** Suggests bid moves, budget reallocations, negative keywords, ad-copy changes, and audience refinements.
-        *   **Execute with Approval Gate:** Applies approved changes via the official Google Ads API, with a built-in human-approval step before any write.
-        *   **MCP-Compatible:** Works with Claude, Cursor, and any MCP client.
+        *   **SEO Skills:** Site analysis, keyword research, meta tags, schema markup, GEO optimization, and content writing via [seo/](https://github.com/nowork-studio/NotFair/tree/main/seo) folder.
+        *   **Google Ads Skills:** Audits, wasted-spend detection, search-term cleanup, keyword and bid management via [google-ads/](https://github.com/nowork-studio/NotFair/tree/main/google-ads) folder.
+        *   **Meta Ads Skills:** ROAS analysis, creative fatigue detection, audience overlap analysis via [meta-ads/](https://github.com/nowork-studio/NotFair/tree/main/meta-ads) folder.
+        *   **Live Data via MCPs:** Connects to Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP for real-time account data.
+    *   **Official GitHub:** [github.com/nowork-studio/NotFair](https://github.com/nowork-studio/NotFair)
     *   **Official Link:** [notfair.co](https://notfair.co/)
 
 *   **Squish (4M Labs):**

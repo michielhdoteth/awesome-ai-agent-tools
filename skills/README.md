@@ -40,6 +40,7 @@ Skills are structured instruction sets that tell an AI assistant how to handle a
 | Skill | Description | Link |
 |-------|-------------|------|
 | **squish** | Connect once. Remember everywhere. Shared memory through OAuth. MCP + CLI. | [squishplugin.dev](https://squishplugin.dev) |
+| **NotFair** (~2.9k stars) | Claude Code skills for SEO, GEO, Google Ads, and Meta Ads — connecting to Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP for live data. | [github.com/nowork-studio/NotFair](https://github.com/nowork-studio/NotFair) |
 
 ## Notable Skills from the Community
 
