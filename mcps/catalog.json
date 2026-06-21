@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-06-21",
-  "totalServers": 67,
+  "totalServers": 68,
   "categories": [
     { "name": "Official Reference", "count": 6 },
     { "name": "Developer Tools", "count": 8 },
@@ -21,7 +21,8 @@
     { "name": "Design", "count": 2 },
     { "name": "Finance", "count": 3 },
     { "name": "Maps", "count": 2 },
-    { "name": "Research & Data", "count": 3 }
+    { "name": "Research & Data", "count": 3 },
+    { "name": "Marketing", "count": 1 }
   ],
   "sources": [
     { "name": "Glama.ai", "url": "https://glama.ai/mcp/servers", "indexed": 42609 },
@@ -476,6 +477,18 @@
       "license": "MIT",
       "verified": true,
       "tags": ["notion", "knowledge", "databases", "pages"]
+    },
+    {
+      "id": "notfair",
+      "name": "NotFair",
+      "category": "Marketing",
+      "github": "https://github.com/nowork-studio/NotFair",
+      "stars": 2900,
+      "description": "Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads. Connects to Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP for live data.",
+      "install": "npx skills add nowork-studio/NotFair",
+      "license": "MIT",
+      "verified": true,
+      "tags": ["seo", "google-ads", "meta-ads", "marketing", "skills"]
     },
     {
       "id": "linear",

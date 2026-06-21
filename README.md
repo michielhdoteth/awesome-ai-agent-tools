@@ -4,52 +4,63 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The most comprehensive open-source directory for AI agent tools.** 73 curated skills, 67 MCP servers, 81 agent workflows, 20 subagents, 20 hooks, and 20 slash commands. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and every major AI coding assistant.
+> **282 installable components for AI coding assistants.** Skills, MCP servers, agent workflows, subagents, hooks, and slash commands — ready to copy into your project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/forks"><img src="https://img.shields.io/github/forks/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Forks&color=blue" alt="GitHub Forks"></a>
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools"><img src="https://img.shields.io/github/last-commit/michielhdoteth/awesome-ai-agent-tools?style=flat-square" alt="Last Commit"></a>
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/blob/main/LICENSE"><img src="https://img.shields.io/github/license/michielhdoteth/awesome-ai-agent-tools?style=flat-square" alt="License"></a>
-  <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/graphs/contributors"><img src="https://img.shields.io/github/contributors/michielhdoteth/awesome-ai-agent-tools?style=flat-square" alt="Contributors"></a>
+  <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/pulls"><img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square" alt="PRs Welcome"></a>
 </p>
 
 <p align="center">
   <a href="https://agentskills.io"><img src="https://img.shields.io/badge/Standard-SKILL.md-blue?style=flat-square" alt="SKILL.md Standard"></a>
   <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-2026-f97316?style=flat-square" alt="MCP 2026"></a>
-  <a href="https://github.com/topics/ai-agent-skills"><img src="https://img.shields.io/badge/AI_Agent_Skills-22c55e?style=flat-square" alt="AI Agent Skills"></a>
   <a href="https://github.com/topics/awesome"><img src="https://img.shields.io/badge/Awesome-List-pink?style=flat-square" alt="Awesome List"></a>
+  <a href="https://github.com/topics/ai-agent-skills"><img src="https://img.shields.io/badge/AI_Agent_Skills-22c55e?style=flat-square" alt="AI Agent Skills"></a>
 </p>
 
 ---
 
-## What is Awesome AI Agent Tools?
+**TL;DR — Try it now:**
 
-**Awesome AI Agent Tools** is an open-source knowledge base that teaches developers how to build with AI agents across any platform. It covers the entire AI agent ecosystem: skills (SKILL.md standard), MCP servers, agent workflows (loops), prompt engineering, and integrations with 50+ external tools.
+```bash
+# Install the skill collection via skills.sh
+npx skills add michielhdoteth/awesome-ai-agent-tools
 
-This is not just a curated list of links. It contains **actual installable components** — skill files you can copy into your project, MCP server configs with install commands, and agent workflows with exact prompts and verification criteria.
+# Or clone and explore
+git clone https://github.com/michielhdoteth/awesome-ai-agent-tools.git
+```
 
-**Who this is for:** Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CLI, Kiro, Aider, Windsurf, or any AI coding assistant. Works with Claude, GPT-4, Gemini, and open-source LLMs.
+---
 
-### What Makes This Different
+## What is this?
+
+Awesome AI Agent Tools is an open-source library of **installable AI agent components**. Not a list of links — actual skill files, MCP server configs, agent workflows, and automation scripts you can drop into any project.
+
+### Who it's for
+
+Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CLI, KiloCode, Aider, Windsurf, or any AI coding assistant. Works with Claude, GPT-4, Gemini, and open-source LLMs.
+
+### What makes this different
 
 <table width="100%">
   <thead>
     <tr>
       <th align="left">Feature</th>
-      <th align="center">Awesome AI Agent Tools</th>
-      <th align="center">Other Awesome Lists</th>
+      <th align="center">This repo</th>
+      <th align="center">Typical awesome lists</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>Installable skill files</td><td align="center">Yes</td><td align="center">Links only</td></tr>
-    <tr><td>MCP server configs</td><td align="center">Yes</td><td align="center">Links only</td></tr>
-    <tr><td>Agent workflows with prompts</td><td align="center">Yes</td><td align="center">Links only</td></tr>
-    <tr><td>Subagents with model routing</td><td align="center">Yes</td><td align="center">No</td></tr>
-    <tr><td>Catalogs with metadata</td><td align="center">Yes</td><td align="center">No</td></tr>
-    <tr><td>CI validation</td><td align="center">Yes</td><td align="center">No</td></tr>
-    <tr><td>Contributing templates</td><td align="center">Yes</td><td align="center">No</td></tr>
-    <tr><td>Cross-platform compatibility</td><td align="center">30+ platforms</td><td align="center">Varies</td></tr>
+    <tr><td>Installable skill files</td><td align="center">73 SKILL.md files</td><td align="center">Links only</td></tr>
+    <tr><td>MCP server configs</td><td align="center">68 servers + install cmds</td><td align="center">Links only</td></tr>
+    <tr><td>Agent workflows</td><td align="center">81 loops with prompts</td><td align="center">Links only</td></tr>
+    <tr><td>Subagents</td><td align="center">20 agents + model routing</td><td align="center">No</td></tr>
+    <tr><td>Hooks & commands</td><td align="center">40 scripts + slash cmds</td><td align="center">No</td></tr>
+    <tr><td>Catalogs with metadata</td><td align="center">JSON catalogs for discovery</td><td align="center">No</td></tr>
+    <tr><td>Cross-platform</td><td align="center">30+ AI tools</td><td align="center">Varies</td></tr>
   </tbody>
 </table>
 
@@ -57,39 +68,47 @@ This is not just a curated list of links. It contains **actual installable compo
 
 ## Quick Start
 
-### 1. Clone and Explore
+### Option 1: Install via skills.sh (recommended)
+
+```bash
+npx skills add michielhdoteth/awesome-ai-agent-tools
+```
+
+### Option 2: Clone and copy
 
 ```bash
 git clone https://github.com/michielhdoteth/awesome-ai-agent-tools.git
 cd awesome-ai-agent-tools
+
+# Copy a skill to your project
+cp -r skills/test-driven-development/ your-project/.claude/skills/
 ```
 
-### 2. Copy Skills to Your Project
+### Option 3: Install an MCP server
 
 ```bash
-# Claude Code
-cp -r skills/test-driven-development/.claude/skills/ your-project/.claude/skills/
-
-# OpenCode
-cp -r skills/test-driven-development/.opencode/skills/ your-project/.opencode/skills/
-
-# Codex
-cp -r skills/test-driven-development/.agents/skills/ your-project/.agents/skills/
-```
-
-### 3. Install an MCP Server
-
-```bash
-# Context7 - Version-pinned library documentation
+# Context7 — version-pinned library docs
 npx @upstash/context7-mcp@latest
 
-# Playwright - Browser automation
+# Playwright — browser automation
 npx @anthropic-ai/mcp-server-playwright
 ```
 
-### 4. Use an Agent Workflow
+---
 
-Copy any loop file to your project, use the prompt text as your agent instruction, and follow the verification criteria.
+## Featured Skills
+
+Start here before browsing all 73 skills:
+
+| Skill | What it does | Source |
+|-------|-------------|--------|
+| **test-driven-development** | TDD workflow with RED-GREEN-REFACTOR enforcement | Local |
+| **systematic-debugging** | Structured root-cause analysis with isolation methods | Local |
+| **code-reviewer** | Multi-pass review: security, performance, style | Local |
+| **brainstorming** | Design exploration before implementation | Local |
+| **verification-before-completion** | Prevents premature "done" claims with evidence gates | Local |
+
+Browse all: [skills/](skills/) - [catalog.json](skills/catalog.json)
 
 ---
 
@@ -99,23 +118,26 @@ Copy any loop file to your project, use the prompt text as your agent instructio
   <thead>
     <tr>
       <th align="left">Library</th>
+      <th align="right">Count</th>
       <th align="left">What You Get</th>
       <th align="left">Browse</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td><b>Skills</b></td><td>Installable SKILL.md files for specific tasks</td><td><a href="skills/">skills/</a> - <a href="skills/catalog.json">catalog.json</a></td></tr>
-    <tr><td><b>MCP Servers</b></td><td>Server configs with install commands</td><td><a href="mcps/">mcps/</a> - <a href="mcps/catalog.json">catalog.json</a></td></tr>
-    <tr><td><b>Agent Loops</b></td><td>Workflows with prompts and verification</td><td><a href="loops/">loops/</a> - <a href="loops/catalog.json">catalog.json</a></td></tr>
-    <tr><td><b>Subagents</b></td><td>Specialized agents with model routing</td><td><a href="subagents/">subagents/</a> - <a href="subagents/catalog.json">catalog.json</a></td></tr>
-    <tr><td><b>Hooks</b></td><td>Automation scripts for Claude Code events</td><td><a href="hooks/">hooks/</a></td></tr>
-    <tr><td><b>Commands</b></td><td>Slash commands for common workflows</td><td><a href="commands/">commands/</a></td></tr>
+    <tr><td><b>Skills</b></td><td align="right">73</td><td>Installable SKILL.md files for specific tasks</td><td><a href="skills/">skills/</a></td></tr>
+    <tr><td><b>MCP Servers</b></td><td align="right">68</td><td>Server configs with install commands</td><td><a href="mcps/">mcps/</a></td></tr>
+    <tr><td><b>Agent Loops</b></td><td align="right">81</td><td>Workflows with prompts and verification</td><td><a href="loops/">loops/</a></td></tr>
+    <tr><td><b>Subagents</b></td><td align="right">20</td><td>Specialized agents with model routing</td><td><a href="subagents/">subagents/</a></td></tr>
+    <tr><td><b>Hooks</b></td><td align="right">20</td><td>Automation scripts for Claude Code events</td><td><a href="hooks/">hooks/</a></td></tr>
+    <tr><td><b>Commands</b></td><td align="right">20</td><td>Slash commands for common workflows</td><td><a href="commands/">commands/</a></td></tr>
   </tbody>
 </table>
 
+**Total: 282 components across 8 categories.**
+
 ---
 
-## Skills (73 curated across 9 categories)
+## Skills (73 curated)
 
 19 local skill files you can copy + 54 external references with install commands from obra/superpowers, anthropics/skills, mattpocock/skills, vercel-labs, and more.
 
@@ -142,7 +164,7 @@ Copy any loop file to your project, use the prompt text as your agent instructio
 
 ---
 
-## MCP Servers (67 servers across 16 categories)
+## MCP Servers (68 servers)
 
 <table width="100%">
   <thead>
@@ -159,13 +181,14 @@ Copy any loop file to your project, use the prompt text as your agent instructio
     <tr><td><b>Databases</b></td><td align="right">8</td><td>PostgreSQL, Neon, Supabase, MindsDB, Redis, SQLite</td></tr>
     <tr><td><b>Cloud Platforms</b></td><td align="right">5</td><td>AWS, Cloudflare, DigitalOcean, Vercel</td></tr>
     <tr><td><b>DevOps</b></td><td align="right">5</td><td>Docker, Kubernetes, Terraform, Pulumi</td></tr>
-    <tr><td><b>Agent Orchestration</b></td><td align="right">3</td><td>n8n (185K stars), Ruflo, Claude-Flow</td></tr>
+    <tr><td><b>Communication</b></td><td align="right">4</td><td>Slack, Notion, Linear, Google Workspace</td></tr>
+    <tr><td><b>Marketing</b></td><td align="right">1</td><td>NotFair (~2.9K stars) — SEO, Google Ads, Meta Ads</td></tr>
   </tbody>
 </table>
 
 ---
 
-## Agent Loops (81 workflows across 7 categories)
+## Agent Loops (81 workflows)
 
 <table width="100%">
   <thead>
@@ -238,7 +261,7 @@ Browse: [hooks/](hooks/) - [settings.json](hooks/settings.json) - [scripts/](hoo
 
 ---
 
-## Commands (18 slash commands)
+## Commands (20 slash commands)
 
 <table width="100%">
   <thead>
@@ -310,7 +333,7 @@ All skills follow the [SKILL.md open standard](https://agentskills.io) adopted b
     <tr><td><b>Awesome Claude Skills</b> (Composio)</td><td align="right">60K</td><td align="right">-</td><td>Skills directory organized by use case</td><td><a href="https://github.com/ComposioHQ/awesome-claude-skills">github.com/ComposioHQ/awesome-claude-skills</a></td></tr>
     <tr><td><b>Claude-Mem</b> (thedotmack)</td><td align="right">76K</td><td align="right">-</td><td>Persistent memory system</td><td><a href="https://github.com/thedotmack/claude-mem">github.com/thedotmack/claude-mem</a></td></tr>
     <tr><td><b>Vercel skills.sh</b></td><td align="right">-</td><td align="right">810K+</td><td>670K+ skills listed</td><td><a href="https://skills.sh">skills.sh</a></td></tr>
-    <tr><td><b>OpenAI Skills</b> (openai)</td><td align="right">22K</td><td align="right">-</td><td>Official Codex skills catalog</td><td><a href="https://github.com/openai/skills">github.com/openai/skills</a></td></tr>
+    <tr><td><b>NotFair</b> (nowork-studio)</td><td align="right">2.9K</td><td align="right">-</td><td>SEO, Google Ads, Meta Ads skills</td><td><a href="https://github.com/nowork-studio/NotFair">github.com/nowork-studio/NotFair</a></td></tr>
   </tbody>
 </table>
 
@@ -320,23 +343,23 @@ All skills follow the [SKILL.md open standard](https://agentskills.io) adopted b
 
 ### What is Awesome AI Agent Tools?
 
-Awesome AI Agent Tools is an open-source library of AI agent skills, MCP servers, and agent workflows. It works across Claude Code, OpenCode, Codex, Cursor, and every major AI coding assistant. No vendor lock-in. Unlike other awesome lists that only contain links, this repo has actual installable components.
+An open-source library of 282 installable AI agent components — skills, MCP servers, agent workflows, subagents, hooks, and slash commands. Works across Claude Code, OpenCode, Codex, Cursor, and every major AI coding assistant. No vendor lock-in.
 
 ### What are Skills?
 
-Skills are reusable instruction files (SKILL.md format) that teach AI agents how to perform specific tasks. They work across 40+ AI coding tools via the open SKILL.md standard. Copy a skill file to your project and your AI assistant automatically knows how to use it.
+Reusable instruction files (SKILL.md format) that teach AI agents how to perform specific tasks. They work across 40+ AI coding tools via the open SKILL.md standard. Copy a skill file to your project and your AI assistant automatically knows how to use it.
 
 ### What are MCP servers?
 
-MCP (Model Context Protocol) servers connect AI agents to external tools and data sources. They let agents access GitHub, databases, web search, and 50+ other services. MCP is now under the Linux Foundation and adopted by every major AI vendor (OpenAI, Google, Microsoft, Anthropic).
+MCP (Model Context Protocol) servers connect AI agents to external tools and data sources. They let agents access GitHub, databases, web search, and 50+ other services. MCP is now under the Linux Foundation and adopted by every major AI vendor.
 
 ### What are agent workflows (loops)?
 
-Agent workflows, or loops, are repeatable AI agent patterns with built-in feedback mechanisms. Unlike one-shot prompts, loops let agents learn from results and iterate until the task is complete. Each loop includes exact prompt text, verification criteria, and source attribution.
+Repeatable AI agent patterns with built-in feedback mechanisms. Unlike one-shot prompts, loops let agents learn from results and iterate until the task is complete. Each loop includes exact prompt text, verification criteria, and source attribution.
 
 ### How do I install skills?
 
-Copy the skill directory to your agent's skills folder (`.claude/skills/`, `.opencode/skills/`, `.agents/skills/`, etc.). The skill auto-triggers when your task matches its description. No configuration needed.
+Copy the skill directory to your agent's skills folder (`.claude/skills/`, `.opencode/skills/`, `.agents/skills/`, etc.), or use `npx skills add michielhdoteth/awesome-ai-agent-tools` to install via the skills.sh package manager.
 
 ### Can I contribute?
 
@@ -344,7 +367,7 @@ Yes! See [CONTRIBUTING.md](CONTRIBUTING.md) for templates and guidelines. We acc
 
 ### How is this different from other awesome lists?
 
-Most awesome lists are just collections of links. Awesome AI Agent Tools contains actual installable components: 69 skill files you can copy into your project, 66 MCP server configs with install commands, and 73 agent workflows with exact prompts and verification criteria. It also has catalogs with metadata for programmatic discovery and CI validation to ensure quality.
+Most awesome lists are just collections of links. This repo has actual installable components: 73 skill files, 68 MCP server configs, 81 agent workflows with prompts, 20 subagents, 20 hooks, and 20 slash commands. It also has catalogs with metadata for programmatic discovery and CI validation.
 
 ---
 
