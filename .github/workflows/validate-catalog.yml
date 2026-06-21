@@ -1,0 +1,165 @@
+name: Validate Catalog Files
+
+on:
+  pull_request:
+    paths:
+      - '**/catalog.json'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate catalog JSON files
+        id: validate
+        run: |
+          echo "## Catalog Validation Results" > results.md
+          echo "" >> results.md
+
+          ERROR_COUNT=0
+          WARNING_COUNT=0
+
+          # Find all catalog.json files
+          CATALOGS=$(find . -name "catalog.json" -not -path "./.git/*")
+
+          if [ -z "$CATALOGS" ]; then
+            echo "No catalog.json files found." >> results.md
+            echo "::warning::No catalog.json files found"
+            exit 0
+          fi
+
+          for CATALOG in $CATALOGS; do
+            echo "### Validating: \`$CATALOG\`" >> results.md
+            echo "" >> results.md
+
+            # Step 1: Check JSON syntax
+            if ! python3 -m json.tool "$CATALOG" > /dev/null 2>&1; then
+              echo "FAILED: Invalid JSON syntax" >> results.md
+              echo "" >> results.md
+              ERROR_COUNT=$((ERROR_COUNT + 1))
+              continue
+            fi
+            echo "VALID: JSON syntax" >> results.md
+
+            # Step 2: Check required fields and duplicate IDs using Python
+            CATALOG="$CATALOG" python3 << 'PYEOF'
+          import json
+          import sys
+          import os
+
+          catalog_path = os.environ.get("CATALOG", ".")
+
+          with open(catalog_path, "r") as f:
+              data = json.load(f)
+
+          # Support both formats: { "servers": [...] } and { "items": [...] } and flat [...]
+          items = data.get("servers", data.get("items", []))
+          if not items and isinstance(data, list):
+              items = data
+
+          if not items:
+              print("- WARNING: No items found in catalog")
+              sys.exit(0)
+
+          required_fields = ["id", "name", "description"]
+          ids = set()
+          duplicates = []
+          missing_fields = []
+
+          for i, item in enumerate(items):
+              item_id = item.get("id", f"item-{i}")
+
+              # Check for required fields
+              for field in required_fields:
+                  if field not in item or not item[field]:
+                      missing_fields.append(f"  - Item `{item_id}`: missing `{field}`")
+
+              # Check for duplicate IDs
+              if item_id in ids:
+                  duplicates.append(f"  - Duplicate ID: `{item_id}`")
+              ids.add(item_id)
+
+          if missing_fields:
+              print("- MISSING REQUIRED FIELDS:")
+              for mf in missing_fields:
+                  print(mf)
+
+          if duplicates:
+              print("- DUPLICATE IDs:")
+              for d in duplicates:
+                  print(d)
+
+          if not missing_fields and not duplicates:
+              print("VALID: All items have required fields and unique IDs")
+
+          # Count
+          print(f"- Items: {len(items)}")
+          PYEOF
+
+            echo "" >> results.md
+
+          done
+
+          # Summary
+          echo "---" >> results.md
+          echo "" >> results.md
+          if [ $ERROR_COUNT -gt 0 ]; then
+            echo "**RESULT: FAILED** with $ERROR_COUNT error(s)" >> results.md
+            exit 1
+          else
+            echo "**RESULT: PASSED**" >> results.md
+            exit 0
+          fi
+
+      - name: Comment on PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const results = fs.readFileSync('results.md', 'utf8');
+            const body = results;
+
+            // Find existing comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+
+            const botComment = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes('Catalog Validation Results')
+            );
+
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body,
+              });
+            }
+
+      - name: Upload results artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-results
+          path: results.md

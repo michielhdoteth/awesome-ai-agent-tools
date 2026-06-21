@@ -1,0 +1,107 @@
+name: Add a Skill
+description: Suggest a new AI agent skill for the library
+title: "[Skill] "
+labels: ["skill", "new-content"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a skill! Skills are structured instruction sets that teach AI assistants how to perform specific tasks. They follow the SKILL.md standard (agentskills.io).
+
+        Before submitting, please check:
+        - [ ] The skill doesn't already exist in the [skills/](../../skills/) directory
+        - [ ] The skill follows the format in [CONTRIBUTING.md](../../CONTRIBUTING.md#adding-a-skill)
+
+  - type: input
+    id: skill-name
+    attributes:
+      label: Skill Name
+      description: A unique kebab-case identifier for the skill (e.g., `test-driven-development`)
+      placeholder: my-skill-name
+    validations:
+      required: true
+
+  - type: input
+    id: skill-source
+    attributes:
+      label: Source URL
+      description: Link to the skill source (GitHub repo, blog post, etc.)
+      placeholder: https://github.com/user/repo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: skill-category
+    attributes:
+      label: Category
+      description: What domain does this skill cover?
+      options:
+        - Development (TDD, debugging, code review, git)
+        - Planning (requirements, architecture, task breakdown)
+        - Writing (documentation, emails, marketing)
+        - Security (auditing, hardening, vulnerabilities)
+        - Design (UI/UX, prototyping, design systems)
+        - Data (analysis, visualization, ETL)
+        - DevOps (CI/CD, infrastructure, deployment)
+        - Multimedia (image, video, audio)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: skill-description
+    attributes:
+      label: Description
+      description: |
+        What does this skill do? Be specific about:
+        - What problem it solves
+        - Who it's for
+        - What makes it unique
+      placeholder: |
+        This skill helps developers write better tests by...
+    validations:
+      required: true
+
+  - type: textarea
+    id: skill-why
+    attributes:
+      label: Why Should It Be Included?
+      description: |
+        Explain why this skill would be valuable to the community:
+        - What gap does it fill?
+        - How many people would benefit?
+        - Does it solve a common pain point?
+      placeholder: |
+        This skill should be included because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: skill-workflow
+    attributes:
+      label: Workflow Overview
+      description: |
+        Provide a high-level overview of the skill's workflow steps. This helps reviewers understand the approach before reading the full SKILL.md.
+      placeholder: |
+        1. Step one: Analyze the codebase
+        2. Step two: Identify test gaps
+        3. Step three: Write tests
+        4. Step four: Verify coverage
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: skill-checklist
+    attributes:
+      label: Contributor Checklist
+      description: Confirm you've completed these steps
+      options:
+        - label: I have read the [contributing guide](../../CONTRIBUTING.md)
+          required: true
+        - label: This skill follows the SKILL.md format
+          required: true
+        - label: I have tested this skill in my own workflow
+          required: false
+        - label: I am willing to maintain this skill
+          required: false

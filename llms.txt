@@ -1,32 +1,37 @@
-# Claude Code Bible
+# Awesome AI Agent Tools
 
-> The most comprehensive open-source resource for Claude Code, AI-assisted development, prompt engineering, MCP servers, and subagent orchestration. 7+ production-ready skill files, 50+ MCP server configs, and battle-tested workflow patterns.
+> The most comprehensive open-source directory for AI agent tools. 73 curated skills (19 local + 54 external references), 67 MCP server configurations with install commands, 81 agent workflow patterns, 20 subagent definitions, 20 hook scripts, and 20 slash commands. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and every major AI coding assistant.
 
 ## What This Repo Contains
 
-- **Claude Code CLI Reference**: 40+ slash commands, subagents, hooks, plugins, workflows, and configuration guide
-- **Prompt Engineering Guide**: Chain-of-Thought, ReAct, structured prompting, modular techniques
-- **MCP Server Directory**: Curated Model Context Protocol servers (Context7, Taskmaster, GitHub, Filesystem, Brave, and 50+ more)
-- **Workflow Patterns**: Ralph Wiggum autonomous coding loops, OpenProse multi-agent orchestration
-- **7 Reusable Skills**: brainstorming, writing-plans, subagent-driven-development, acceptance-traceability, cold-email, copywriting, humanizer
-- **Best Practices**: Security, ethics, code quality, team collaboration guidelines
-- **Tool Comparisons**: AI assistants, IDE integrations, testing tools, linters, debugging tools
+- **73 Curated Skills**: 19 local SKILL.md files + 54 external skill references from obra/superpowers, anthropics/skills, mattpocock/skills, vercel-labs, and more
+- **67 MCP Server Configurations**: Verified Model Context Protocol servers with install commands across 16 categories
+- **81 Agent Workflows (Loops)**: Repeatable patterns with exact prompts, verification criteria, and source attribution
+- **20 Subagent Definitions**: Specialized agents with model routing and tool permissions
+- **20 Hook Scripts**: Production-ready automation for Claude Code events (security, quality, notifications)
+- **20 Slash Commands**: Development workflows (review, commit, debug, deploy, security-scan, and more)
+- **Cross-Platform Support**: Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, Aider, and Windsurf
+- **Catalogs with Metadata**: JSON catalogs for programmatic discovery and tooling integration
 
 ## Key Files
 
-- [README](README.md) - Project overview and table of contents
-- [Getting Started](docs/getting-started.md) - Fundamentals, setup, first project
-- [Feature Reference](docs/feature-reference.md) - Complete Claude Code CLI reference
-- [Prompt Engineering](prompting/prompt-engineering.md) - Prompt techniques and strategies
-- [MCP Servers](mcps/README.md) - Model Context Protocol server directory
-- [Workflows](workflows/README.md) - Advanced autonomous workflows
-- [Best Practices](rules/best-practices.md) - Security, ethics, quality guidelines
-- [Skills](skills/) - 7 production-ready skill files
+- [README](README.md) - Project overview, quick start, and full catalog
+- [CONTRIBUTING.md](CONTRIBUTING.md) - How to add skills, MCPs, or loops
+- [Skills Library](skills/) - 19 local skill files + catalog of 73 total (local + external)
+- [MCP Servers](mcps/) - Catalog of 67 MCP servers with install commands
+- [Agent Loops](loops/) - 81 workflow patterns with catalog
+- [Subagents](subagents/) - 20 specialized agent definitions with catalog
+- [Hooks](hooks/) - 20 production-ready hook scripts
+- [Commands](commands/) - 20 slash commands for common workflows
+- [Documentation](docs/) - Getting started, feature reference, tool comparisons
+- [Prompt Engineering](prompting/) - Prompt techniques and strategies
+- [Rules & Best Practices](rules/) - Security, ethics, quality guidelines
+- [Workflows](workflows/) - Advanced autonomous workflows
 
 ## Topics
 
-claude-code, ai-coding, prompt-engineering, mcp, model-context-protocol, ai-agents, autonomous-development, code-generation, developer-automation, llm, anthropic, claude-ai, subagents, hooks, plugins, vibe-coding, context-engineering
+awesome, ai-agent-tools, ai-agents, skills, mcp-servers, model-context-protocol, agent-workflows, claude-code, opencode, codex, kilocode, cursor, gemini-cli, copilot, coding-agent, vibe-coding, prompt-engineering, skill-marketplace, agent-orchestration, cross-platform-ai, open-source-ai, developer-tools, subagents, hooks, slash-commands
 
 ## Updated
 
-2026-06-02
+2026-06-21

@@ -1,204 +1,409 @@
-# Claude Code Bible: Complete Guide to AI-Assisted Development, Prompt Engineering, MCP Servers, and Workflows
-
-*Last updated: 2026-06-02*
+# Awesome AI Agent Tools
 
 <p align="center">
-  <a href="https://claude.ai/code"><img src="https://img.shields.io/badge/Claude-Code-8A2BE2?style=flat-square" alt="Claude Code"></a>
-  <a href="https://github.com/topics/ai-coding"><img src="https://img.shields.io/badge/AI-Assisted_Development-22c55e?style=flat-square" alt="AI Assisted Development"></a>
-  <a href="https://github.com/topics/prompt-engineering"><img src="https://img.shields.io/badge/Prompt_Engineering-a855f7?style=flat-square" alt="Prompt Engineering"></a>
-  <a href="https://github.com/topics/mcp"><img src="https://img.shields.io/badge/Model_Context_Protocol_(MCP)-f97316?style=flat-square" alt="MCP"></a>
-  <a href="https://github.com/topics/claude-code"><img src="https://img.shields.io/badge/Claude_Code_Resources-3b82f6?style=flat-square" alt="Claude Code Resources"></a>
-  <br>
-  <a href="https://github.com/michielhdoteth/claude-bible/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/claude-bible?style=flat-square" alt="GitHub Stars"></a>
-  <a href="https://github.com/michielhdoteth/claude-bible/forks"><img src="https://img.shields.io/github/forks/michielhdoteth/claude-bible?style=flat-square" alt="GitHub Forks"></a>
-  <a href="https://github.com/michielhdoteth/claude-bible"><img src="https://img.shields.io/github/last-commit/michielhdoteth/claude-bible?style=flat-square" alt="Last Commit"></a>
+  <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **Claude Code Bible** is the most comprehensive open-source resource for Claude Code, AI-assisted development, prompt engineering, MCP servers, and subagent orchestration. It includes 7 production-ready skill files, 50+ MCP server configurations, and battle-tested workflow patterns used by 32,000+ MCP repos and 27,000+ Claude Code repos as of May 2026.
+> **The most comprehensive open-source directory for AI agent tools.** 73 curated skills, 67 MCP servers, 81 agent workflows, 20 subagents, 20 hooks, and 20 slash commands. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and every major AI coding assistant.
+
+<p align="center">
+  <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
+  <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/forks"><img src="https://img.shields.io/github/forks/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Forks&color=blue" alt="GitHub Forks"></a>
+  <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools"><img src="https://img.shields.io/github/last-commit/michielhdoteth/awesome-ai-agent-tools?style=flat-square" alt="Last Commit"></a>
+  <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/blob/main/LICENSE"><img src="https://img.shields.io/github/license/michielhdoteth/awesome-ai-agent-tools?style=flat-square" alt="License"></a>
+  <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/graphs/contributors"><img src="https://img.shields.io/github/contributors/michielhdoteth/awesome-ai-agent-tools?style=flat-square" alt="Contributors"></a>
+</p>
+
+<p align="center">
+  <a href="https://agentskills.io"><img src="https://img.shields.io/badge/Standard-SKILL.md-blue?style=flat-square" alt="SKILL.md Standard"></a>
+  <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-2026-f97316?style=flat-square" alt="MCP 2026"></a>
+  <a href="https://github.com/topics/ai-agent-skills"><img src="https://img.shields.io/badge/AI_Agent_Skills-22c55e?style=flat-square" alt="AI Agent Skills"></a>
+  <a href="https://github.com/topics/awesome"><img src="https://img.shields.io/badge/Awesome-List-pink?style=flat-square" alt="Awesome List"></a>
+</p>
 
 ---
 
-## What is Claude Code Bible?
+## What is Awesome AI Agent Tools?
 
-Claude Code Bible is an open-source knowledge base that teaches developers how to use Claude Code, MCP servers, prompt engineering, and AI agents to build software faster. It covers the entire Claude Code ecosystem: CLI commands, slash commands, subagents, hooks, plugins, workflows, and integrations with 50+ external tools.
+**Awesome AI Agent Tools** is an open-source knowledge base that teaches developers how to build with AI agents across any platform. It covers the entire AI agent ecosystem: skills (SKILL.md standard), MCP servers, agent workflows (loops), prompt engineering, and integrations with 50+ external tools.
 
-**Who this is for:** Developers using Claude Code, AI coding assistants, LLM-powered workflows, or Model Context Protocol servers. Works with Claude Sonnet, Claude Opus, GPT-4, Gemini, and open-source LLMs.
+This is not just a curated list of links. It contains **actual installable components** — skill files you can copy into your project, MCP server configs with install commands, and agent workflows with exact prompts and verification criteria.
 
-**What you get:**
-- 40+ Claude Code slash commands with examples
-- 7 reusable skill files (brainstorming, planning, TDD, security review, copywriting)
-- 50+ MCP server configurations (GitHub, Context7, Brave, Sentry, databases)
-- Autonomous workflow patterns (Ralph Wiggum loops, OpenProse orchestration)
-- Prompt engineering techniques (Chain-of-Thought, ReAct, structured prompting)
-- Best practices for security, ethics, and code quality
+**Who this is for:** Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CLI, Kiro, Aider, Windsurf, or any AI coding assistant. Works with Claude, GPT-4, Gemini, and open-source LLMs.
 
----
+### What Makes This Different
 
-## Quick Links
-
-### Start Here
-
-| Resource | What You Learn | Time |
-|----------|----------------|------|
-| [Getting Started](docs/getting-started.md) | Setup, first project, core workflow | 10 min |
-| [Feature Reference](docs/feature-reference.md) | 40+ commands, flags, examples | 20 min |
-| [CLAUDE.md Templates](docs/claude-md-templates.md) | Copy-paste config files | 5 min |
-
-### Build With
-
-| Resource | What You Get | Path |
-|----------|--------------|------|
-| **Skills** | 12 production-ready skill files (TDD, debugging, code review, planning) | [skills/](skills/) |
-| **MCPs** | 50+ server configs with setup examples | [mcps/](mcps/) |
-| **Workflows** | Autonomous coding patterns (Ralph Wiggum, OpenProse) | [workflows/](workflows/) |
-| **Hooks** | 20+ automation scripts (security gate, auto-format, context loader) | [hooks/](hooks/) |
-| **Subagents** | Specialized AI agents (reviewer, debugger, security auditor) | [subagents/](subagents/) |
-| **Commands** | Custom slash command library | [commands/](commands/) |
-
-### Learn More
-
-| Resource | What You Master | Path |
-|----------|-----------------|------|
-| **Prompt Engineering** | Chain-of-Thought, ReAct, structured prompting | [prompting/](prompting/) |
-| **Best Practices** | Security, ethics, code quality, testing | [rules/](rules/) |
-| **Building Blocks** | Markdown files, agents, skills, hooks, plugins | [docs/building-blocks.md](docs/building-blocks.md) |
-| **Advanced Tips** | Context management, worktrees, parallel sessions | [docs/advanced-tips.md](docs/advanced-tips.md) |
-| **Tools Overview** | AI assistants, IDEs, testing, linting, docs | [tools/overview.md](tools/overview.md) |
-| **Integrations** | VS Code, JetBrains, GitHub, Vercel, 15+ services | [integrations/](integrations/) |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Feature</th>
+      <th align="center">Awesome AI Agent Tools</th>
+      <th align="center">Other Awesome Lists</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Installable skill files</td><td align="center">Yes</td><td align="center">Links only</td></tr>
+    <tr><td>MCP server configs</td><td align="center">Yes</td><td align="center">Links only</td></tr>
+    <tr><td>Agent workflows with prompts</td><td align="center">Yes</td><td align="center">Links only</td></tr>
+    <tr><td>Subagents with model routing</td><td align="center">Yes</td><td align="center">No</td></tr>
+    <tr><td>Catalogs with metadata</td><td align="center">Yes</td><td align="center">No</td></tr>
+    <tr><td>CI validation</td><td align="center">Yes</td><td align="center">No</td></tr>
+    <tr><td>Contributing templates</td><td align="center">Yes</td><td align="center">No</td></tr>
+    <tr><td>Cross-platform compatibility</td><td align="center">30+ platforms</td><td align="center">Varies</td></tr>
+  </tbody>
+</table>
 
 ---
 
-## Key Features
+## Quick Start
 
-### Claude Code CLI Reference
-Complete documentation of 40+ slash commands including `/add-dir`, `/agents`, `/compact`, `/config`, `/context`, `/cost`, `/doctor`, `/export`, `/hooks`, `/ide`, `/init`, `/mcp`, `/memory`, `/model`, `/permissions`, `/plan`, `/plugin`, `/review`, `/sandbox`, `/security-review`, `/todos`, and more. Each command includes usage examples, flags, and best practices.
+### 1. Clone and Explore
 
-### Prompt Engineering Guide
-Master AI communication with techniques like Chain-of-Thought prompting, ReAct pattern, structured prompting, modular prompt design, and prompt testing. Covers basic tips through advanced multi-step reasoning strategies.
+```bash
+git clone https://github.com/michielhdoteth/awesome-ai-agent-tools.git
+cd awesome-ai-agent-tools
+```
 
-### MCP Server Directory
-Curated Model Context Protocol servers including Context7 (39k+ stars), GitHub MCP, Filesystem, Brave Search, Sentry, PostgreSQL, Taskmaster, Wrinkl, Squish, and 40+ more. Each server includes configuration examples and use cases.
+### 2. Copy Skills to Your Project
 
-### Workflow Patterns
-Advanced autonomous workflows including Ralph Wiggum loops (overnight coding sessions that build features while you sleep), OpenProse language for multi-agent orchestration, and TDD workflows with parallel subagents.
+```bash
+# Claude Code
+cp -r skills/test-driven-development/.claude/skills/ your-project/.claude/skills/
 
-### 12 Production-Ready Skills
-Reusable skill files you can drop into any project:
+# OpenCode
+cp -r skills/test-driven-development/.opencode/skills/ your-project/.opencode/skills/
 
-**Development Workflow:**
-- **test-driven-development** - RED-GREEN-REFACTOR enforcement
-- **systematic-debugging** - 4-phase root cause process
-- **verification-before-completion** - Evidence-based task completion
-- **code-reviewer** - Security, logic, performance, style review
-- **git-commit-writer** - Conventional commit messages from staged changes
+# Codex
+cp -r skills/test-driven-development/.agents/skills/ your-project/.agents/skills/
+```
 
-**Planning & Design:**
-- **brainstorming** - Explore intent and requirements before coding
-- **writing-plans** - Create detailed implementation plans
-- **acceptance-traceability** - Map requirements to tests and evidence
-- **subagent-driven-development** - Execute plans with parallel agents
+### 3. Install an MCP Server
 
-**Writing & Communication:**
-- **cold-email** - Write effective outreach emails
-- **copywriting** - Create compelling marketing content
-- **humanizer** - Make AI text sound natural
+```bash
+# Context7 - Version-pinned library documentation
+npx @upstash/context7-mcp@latest
 
-### Best Practices
-Security guidelines, ethical considerations, code review practices, testing strategies, and team collaboration patterns for responsible AI-assisted development.
+# Playwright - Browser automation
+npx @anthropic-ai/mcp-server-playwright
+```
+
+### 4. Use an Agent Workflow
+
+Copy any loop file to your project, use the prompt text as your agent instruction, and follow the verification criteria.
 
 ---
 
-## Table of Contents
+## Browse by Category
 
-### [Getting Started](docs/getting-started.md)
-Your entry point to Claude Code. Covers environment setup, IDE integrations, first project, and core workflow patterns.
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Library</th>
+      <th align="left">What You Get</th>
+      <th align="left">Browse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Skills</b></td><td>Installable SKILL.md files for specific tasks</td><td><a href="skills/">skills/</a> - <a href="skills/catalog.json">catalog.json</a></td></tr>
+    <tr><td><b>MCP Servers</b></td><td>Server configs with install commands</td><td><a href="mcps/">mcps/</a> - <a href="mcps/catalog.json">catalog.json</a></td></tr>
+    <tr><td><b>Agent Loops</b></td><td>Workflows with prompts and verification</td><td><a href="loops/">loops/</a> - <a href="loops/catalog.json">catalog.json</a></td></tr>
+    <tr><td><b>Subagents</b></td><td>Specialized agents with model routing</td><td><a href="subagents/">subagents/</a> - <a href="subagents/catalog.json">catalog.json</a></td></tr>
+    <tr><td><b>Hooks</b></td><td>Automation scripts for Claude Code events</td><td><a href="hooks/">hooks/</a></td></tr>
+    <tr><td><b>Commands</b></td><td>Slash commands for common workflows</td><td><a href="commands/">commands/</a></td></tr>
+  </tbody>
+</table>
 
-### [Feature Reference](docs/feature-reference.md)
-Complete reference of all Claude Code features: 40+ slash commands, subagents, hooks, MCP configuration, plugins, workflows, and CLI reference.
+---
 
-### [Building Blocks](docs/building-blocks.md)
-Deep dive into Claude Code's six building blocks: Markdown Files, Slash Commands, Agents, Skills, Hooks, and Plugins.
+## Skills (73 curated across 9 categories)
 
-### [Workflows](workflows/README.md)
-Advanced autonomous workflows including Ralph Wiggum loops and OpenProse multi-agent orchestration.
+19 local skill files you can copy + 54 external references with install commands from obra/superpowers, anthropics/skills, mattpocock/skills, vercel-labs, and more.
 
-### [MCP Servers](mcps/README.md)
-Model Context Protocol server directory with 50+ curated integrations, configuration examples, and context window explanations.
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">Top Skills</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Development</b></td><td align="right">28</td><td>test-driven-development, systematic-debugging, code-reviewer</td></tr>
+    <tr><td><b>Productivity</b></td><td align="right">14</td><td>brainstorming, writing-plans, verification-before-completion</td></tr>
+    <tr><td><b>Design</b></td><td align="right">8</td><td>figma-design-to-code, multimedia-generation, playwright-automation</td></tr>
+    <tr><td><b>Content</b></td><td align="right">7</td><td>cold-email, copywriting, humanizer</td></tr>
+    <tr><td><b>Testing</b></td><td align="right">5</td><td>webapp-testing, agent-browser</td></tr>
+    <tr><td><b>DevOps</b></td><td align="right">5</td><td>devops-infrastructure, using-git-worktrees</td></tr>
+    <tr><td><b>Marketing</b></td><td align="right">3</td><td>seo-audit, content-strategy</td></tr>
+    <tr><td><b>Data</b></td><td align="right">3</td><td>data-analysis, supabase-postgres-best-practices</td></tr>
+    <tr><td><b>Security</b></td><td align="right">2</td><td>mcp-security, security-guidance</td></tr>
+  </tbody>
+</table>
 
-### [Prompt Engineering](prompting/prompt-engineering.md)
-Complete guide to prompt techniques: Chain-of-Thought, ReAct, structured prompting, modular design, and testing.
+---
 
-### [Best Practices](rules/best-practices.md)
-Security, ethics, code quality, testing, integration, and responsible AI use guidelines.
+## MCP Servers (67 servers across 16 categories)
 
-### [Tools Overview](tools/overview.md)
-AI assistants, IDE integrations, testing tools, linters, debugging tools, and documentation generators.
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">Top Servers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Official Reference</b></td><td align="right">6</td><td>Filesystem, Fetch, Memory, Sequential Thinking, Git, Brave Search</td></tr>
+    <tr><td><b>Developer Tools</b></td><td align="right">8</td><td>Context7 (53K stars), MarkItDown (119K stars), GitHub MCP</td></tr>
+    <tr><td><b>Browser/Web</b></td><td align="right">7</td><td>Playwright (31K stars), Firecrawl (29.7K stars), Chrome DevTools</td></tr>
+    <tr><td><b>Databases</b></td><td align="right">8</td><td>PostgreSQL, Neon, Supabase, MindsDB, Redis, SQLite</td></tr>
+    <tr><td><b>Cloud Platforms</b></td><td align="right">5</td><td>AWS, Cloudflare, DigitalOcean, Vercel</td></tr>
+    <tr><td><b>DevOps</b></td><td align="right">5</td><td>Docker, Kubernetes, Terraform, Pulumi</td></tr>
+    <tr><td><b>Agent Orchestration</b></td><td align="right">3</td><td>n8n (185K stars), Ruflo, Claude-Flow</td></tr>
+  </tbody>
+</table>
 
-### [Integrations](integrations/README.md)
-Connect Claude Code with VS Code, JetBrains, GitHub, GitLab, Sentry, Vercel, and 15+ other services.
+---
 
-### [Subagents](subagents/README.md)
-Specialized AI agents for code review, testing, debugging, and security analysis.
+## Agent Loops (81 workflows across 7 categories)
 
-### [Hooks](hooks/README.md)
-Automated scripts for pre/post tool execution, validation, and workflow automation.
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">Top Loops</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Engineering</b></td><td align="right">38</td><td>overnight-docs-sweep, alpha-loop, kitchenloop, ralph-autonomous-loop, symphony-linear-loop</td></tr>
+    <tr><td><b>Evaluation</b></td><td align="right">14</td><td>core-agentic-workflow, quality-streak-loop, multi-llm-convergence-loop</td></tr>
+    <tr><td><b>Operations</b></td><td align="right">8</td><td>agent-teams, dynamic-workflows, developer-os-memory</td></tr>
+    <tr><td><b>Content</b></td><td align="right">2</td><td>seo-geo-visibility-loop, product-update-podcast-loop</td></tr>
+    <tr><td><b>Design</b></td><td align="right">6</td><td>ui-ux-score-loop, accessibility-repair-loop</td></tr>
+    <tr><td><b>Meta</b></td><td align="right">4</td><td>autoloop, validate-patterns, loop-audit</td></tr>
+    <tr><td><b>Multi-Agent</b></td><td align="right">6</td><td>beacon-loop, agent-teams, dynamic-workflows</td></tr>
+  </tbody>
+</table>
 
-### [Plugins](plugins/README.md)
-Extensions for MCP servers, IDE integrations, and third-party tools.
+---
 
-### [Commands](commands/README.md)
-Custom slash command creation, namespacing, arguments, and bash execution.
+## Subagents (20 specialized agents)
 
-### [Showcase](showcase/README.md)
-Real-world examples and projects built with Claude Code principles.
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="left">Agents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Development</b></td><td>code-reviewer, test-runner, debugger, refactorer, performance-optimizer, frontend-developer, backend-developer, test-writer, api-designer, migration-specialist</td></tr>
+    <tr><td><b>Security</b></td><td>security-auditor</td></tr>
+    <tr><td><b>Data</b></td><td>data-analyst, database-expert</td></tr>
+    <tr><td><b>DevOps</b></td><td>dependency-updater, devops-engineer</td></tr>
+    <tr><td><b>Content</b></td><td>doc-writer</td></tr>
+    <tr><td><b>Productivity</b></td><td>planner</td></tr>
+    <tr><td><b>Orchestration</b></td><td>workflow-orchestrator</td></tr>
+    <tr><td><b>Research</b></td><td>research-analyst</td></tr>
+    <tr><td><b>Design</b></td><td>accessibility-expert</td></tr>
+  </tbody>
+</table>
+
+Each subagent includes model routing (haiku/sonnet/opus) and tool permissions. Browse: [subagents/](subagents/) - [catalog.json](subagents/catalog.json)
+
+---
+
+## Hooks (20 production-ready scripts)
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">What They Do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Security</b></td><td align="right">3</td><td>Block dangerous commands, protect secrets, scan for leaked credentials</td></tr>
+    <tr><td><b>Automation</b></td><td align="right">4</td><td>Auto-stage files, auto-run tests, auto-fix lint, TypeScript checking</td></tr>
+    <tr><td><b>Quality</b></td><td align="right">3</td><td>Commit message validation, post-edit lint checks</td></tr>
+    <tr><td><b>Notifications</b></td><td align="right">2</td><td>Slack alerts, notification logging</td></tr>
+    <tr><td><b>Session</b></td><td align="right">5</td><td>Context loading, session state, compaction suggestions</td></tr>
+    <tr><td><b>Safety</b></td><td align="right">3</td><td>Pre-push checks, dev server blocking, smart command approval</td></tr>
+  </tbody>
+</table>
+
+Browse: [hooks/](hooks/) - [settings.json](hooks/settings.json) - [scripts/](hooks/scripts/)
+
+---
+
+## Commands (18 slash commands)
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="left">Commands</th>
+      <th align="left">What They Do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Development</b></td><td>/review, /commit, /debug, /refactor, /ship-it, /fix-bug, /feature-dev, /hotfix</td><td>Full development workflow from review to deploy</td></tr>
+    <tr><td><b>Quality</b></td><td>/security-scan, /ci-check, /dependency-audit</td><td>Security audits, CI pipeline, dependency checks</td></tr>
+    <tr><td><b>Documentation</b></td><td>/update-docs, /generate-readme, /changelog, /api-docs</td><td>Docs generation and maintenance</td></tr>
+    <tr><td><b>Analysis</b></td><td>/profile, /trace, /dashboard, /brainstorm</td><td>Performance, execution tracing, project status, design exploration</td></tr>
+  </tbody>
+</table>
+
+Browse: [commands/](commands/)
+
+---
+
+## Cross-Platform Compatibility
+
+Awesome AI Agent Tools works with every major AI coding assistant:
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Platform</th>
+      <th align="center">Skills</th>
+      <th align="center">MCPs</th>
+      <th align="center">Loops</th>
+      <th align="center">Subagents</th>
+      <th align="left">How to Install</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Claude Code</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.claude/skills/</code></td></tr>
+    <tr><td><b>OpenCode</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.opencode/skills/</code></td></tr>
+    <tr><td><b>Codex</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.agents/skills/</code></td></tr>
+    <tr><td><b>KiloCode</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.kilo/skills/</code></td></tr>
+    <tr><td><b>Cursor</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.cursor/skills/</code></td></tr>
+    <tr><td><b>Gemini CLI</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.gemini/skills/</code></td></tr>
+    <tr><td><b>Copilot</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.github/skills/</code></td></tr>
+    <tr><td><b>Aider</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.aider/skills/</code></td></tr>
+    <tr><td><b>Windsurf</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.windsurf/skills/</code></td></tr>
+  </tbody>
+</table>
+
+All skills follow the [SKILL.md open standard](https://agentskills.io) adopted by ~40 clients.
+
+---
+
+## Notable Skills from the Community
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Collection</th>
+      <th align="right">Stars</th>
+      <th align="right">Installs</th>
+      <th align="left">Description</th>
+      <th align="left">URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Superpowers</b> (obra)</td><td align="right">234K</td><td align="right">787K</td><td>Full agentic development methodology</td><td><a href="https://github.com/obra/superpowers">github.com/obra/superpowers</a></td></tr>
+    <tr><td><b>UI-UX Pro Max</b> (nextlevelbuilder)</td><td align="right">79K</td><td align="right">-</td><td>Design system and frontend patterns</td><td><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill">github.com/nextlevelbuilder/ui-ux-pro-max-skill</a></td></tr>
+    <tr><td><b>Awesome Claude Skills</b> (Composio)</td><td align="right">60K</td><td align="right">-</td><td>Skills directory organized by use case</td><td><a href="https://github.com/ComposioHQ/awesome-claude-skills">github.com/ComposioHQ/awesome-claude-skills</a></td></tr>
+    <tr><td><b>Claude-Mem</b> (thedotmack)</td><td align="right">76K</td><td align="right">-</td><td>Persistent memory system</td><td><a href="https://github.com/thedotmack/claude-mem">github.com/thedotmack/claude-mem</a></td></tr>
+    <tr><td><b>Vercel skills.sh</b></td><td align="right">-</td><td align="right">810K+</td><td>670K+ skills listed</td><td><a href="https://skills.sh">skills.sh</a></td></tr>
+    <tr><td><b>OpenAI Skills</b> (openai)</td><td align="right">22K</td><td align="right">-</td><td>Official Codex skills catalog</td><td><a href="https://github.com/openai/skills">github.com/openai/skills</a></td></tr>
+  </tbody>
+</table>
 
 ---
 
 ## Frequently Asked Questions
 
-### What is Claude Code?
-Claude Code is Anthropic's command-line tool for AI-assisted coding. It lets you generate, refactor, debug, and test code using natural language prompts. Developers describe what they want in plain English, and Claude Code writes the implementation. It supports multi-step task automation, context-aware development with persistent memory, and integration with external tools via MCP servers.
+### What is Awesome AI Agent Tools?
+
+Awesome AI Agent Tools is an open-source library of AI agent skills, MCP servers, and agent workflows. It works across Claude Code, OpenCode, Codex, Cursor, and every major AI coding assistant. No vendor lock-in. Unlike other awesome lists that only contain links, this repo has actual installable components.
+
+### What are Skills?
+
+Skills are reusable instruction files (SKILL.md format) that teach AI agents how to perform specific tasks. They work across 40+ AI coding tools via the open SKILL.md standard. Copy a skill file to your project and your AI assistant automatically knows how to use it.
 
 ### What are MCP servers?
-MCP (Model Context Protocol) servers connect Claude Code to external tools and data sources. They let Claude access GitHub repos, databases, web search, file systems, and 50+ other services. MCP is an open standard that works across AI models including Claude, GPT-4, and Gemini.
 
-### What are subagents in Claude Code?
-Subagents are specialized AI agents that handle specific tasks like code review, testing, debugging, or security analysis. They run in isolated contexts with focused expertise, keeping your main conversation clean. Claude Code includes built-in subagents (Explore, Plan, General-purpose) and supports custom subagents via markdown files.
+MCP (Model Context Protocol) servers connect AI agents to external tools and data sources. They let agents access GitHub, databases, web search, and 50+ other services. MCP is now under the Linux Foundation and adopted by every major AI vendor (OpenAI, Google, Microsoft, Anthropic).
 
-### How do I get started with Claude Code?
-Install Claude Code via npm (`npm install -g @anthropic-ai/claude-code`), configure your environment, and start a session with `claude`. The Bible provides step-by-step guides for setup, your first project, and advanced workflows.
+### What are agent workflows (loops)?
 
-### What skills are included in the Bible?
-The Bible includes 7 production-ready skill files: brainstorming (explore intent before coding), writing-plans (create implementation plans), subagent-driven-development (execute plans with parallel agents), acceptance-traceability (map requirements to tests), cold-email (write outreach), copywriting (marketing content), and humanizer (make AI text natural).
+Agent workflows, or loops, are repeatable AI agent patterns with built-in feedback mechanisms. Unlike one-shot prompts, loops let agents learn from results and iterate until the task is complete. Each loop includes exact prompt text, verification criteria, and source attribution.
 
-### What is the Ralph Wiggum workflow?
-Ralph Wiggum is an autonomous AI coding loop that builds features while you sleep. It uses a structured workflow where Claude plans, implements, tests, and commits code in cycles, with human checkpoints at key milestones. The pattern is documented in the workflows section.
+### How do I install skills?
 
-### How does Claude Code compare to GitHub Copilot?
-Claude Code is a CLI-based agentic coding tool that handles multi-step tasks, while Copilot is primarily an inline code completion tool. Claude Code can plan, implement, test, and commit entire features from natural language descriptions. Copilot excels at real-time code suggestions in your IDE. Many developers use both together.
+Copy the skill directory to your agent's skills folder (`.claude/skills/`, `.opencode/skills/`, `.agents/skills/`, etc.). The skill auto-triggers when your task matches its description. No configuration needed.
 
----
+### Can I contribute?
 
-## Principles of Claude Code
+Yes! See [CONTRIBUTING.md](CONTRIBUTING.md) for templates and guidelines. We accept skills, MCP servers, and loops from any source with proper attribution. All PRs are automatically validated by GitHub Actions.
 
-- **Human-in-the-loop:** The developer guides the AI, maintaining ultimate control and critical oversight
-- **Conversational and Iterative:** Development is a continuous dialogue with the AI, fostering rapid prototyping and refinement
-- **Accelerated and Accessible:** AI automates tasks, speeding up development and lowering the barrier to entry
-- **Context-Aware and Quality-Driven:** AI leverages rich context to generate accurate, high-quality code
+### How is this different from other awesome lists?
+
+Most awesome lists are just collections of links. Awesome AI Agent Tools contains actual installable components: 69 skill files you can copy into your project, 66 MCP server configs with install commands, and 73 agent workflows with exact prompts and verification criteria. It also has catalogs with metadata for programmatic discovery and CI validation to ensure quality.
 
 ---
 
 ## Contributing
 
-Contributions welcome! Read our [contributing guide](CONTRIBUTING.md) to add resources, tools, and best practices.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. Quick ways to contribute:
 
-**Quick ways to contribute:**
-- Add an MCP server config
-- Submit a skill file
+- Add a skill file with proper attribution
+- Add an MCP server configuration
+- Add an agent workflow (loop)
 - Fix a broken link
 - Improve documentation
 
-All PRs are automatically reviewed by Claude Code via GitHub Actions.
+All PRs are automatically validated by GitHub Actions.
+
+### Contributors
+
+<a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=michielhdoteth/awesome-ai-agent-tools" />
+</a>
+
+---
+
+## Star History
+
+<a href="https://star-history.com/#michielhdoteth/awesome-ai-agent-tools&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=michielhdoteth/awesome-ai-agent-tools&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=michielhdoteth/awesome-ai-agent-tools&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=michielhdoteth/awesome-ai-agent-tools&type=Date" />
+ </picture>
+</a>
+
+---
+
+## Related Projects
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Project</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="https://github.com/obra/superpowers">obra/superpowers</a></td><td>Full agentic development methodology (234K stars)</td></tr>
+    <tr><td><a href="https://github.com/openai/skills">openai/skills</a></td><td>Official Codex skills catalog</td></tr>
+    <tr><td><a href="https://github.com/anthropics/skills">anthropics/skills</a></td><td>Official Anthropic skills</td></tr>
+    <tr><td><a href="https://github.com/mattpocock/skills">mattpocock/skills</a></td><td>Cross-platform skills collection</td></tr>
+    <tr><td><a href="https://github.com/Forward-Future/loop-library">Forward-Future/loop-library</a></td><td>Agent workflow patterns</td></tr>
+    <tr><td><a href="https://agentskills.io">agentskills.io</a></td><td>The SKILL.md open standard</td></tr>
+    <tr><td><a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a></td><td>Official MCP documentation</td></tr>
+    <tr><td><a href="https://skills.sh">skills.sh</a></td><td>Vercel skills marketplace</td></tr>
+    <tr><td><a href="https://glama.ai">Glama.ai</a></td><td>MCP server registry (34K+ servers)</td></tr>
+    <tr><td><a href="https://smithery.ai">Smithery.ai</a></td><td>MCP server registry (4.7K+ servers)</td></tr>
+  </tbody>
+</table>
+
+---
 
 ## License
 
@@ -206,17 +411,4 @@ MIT License - use these resources in your own projects.
 
 ---
 
-## Resources and References
-
-- [Official Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
-- [Anthropic Claude Code Best Practices](https://www.anthropic.com/engineering/claude-code-best-practices)
-- [Claude Code GitHub Showcase](https://github.com/ChrisWiles/claude-code-showcase)
-- [Awesome Claude Code List](https://github.com/hesreallyhim/awesome-claude-code)
-- [Model Context Protocol Documentation](https://modelcontextprotocol.io/)
-- [Prompt Engineering Guide](https://www.promptingguide.ai/)
-
----
-
-## Search Keywords
-
-`claude-code` `ai-coding` `llm` `prompt-engineering` `anthropic` `claude-ai` `ai-assistant` `code-generation` `autonomous-agents` `mcp` `model-context-protocol` `subagents` `hooks` `slash-commands` `claude-cli` `ai-development` `developer-tools` `automation` `rag` `context-engineering` `ai-workflow` `vibe-coding` `ai-code-review` `tdd-workflow` `multi-agent`
+**Keywords:** AI agent skills, agent skills library, SKILL.md, MCP servers, model context protocol, agent workflows, AI coding assistant, Claude Code skills, OpenCode skills, Codex skills, Cursor skills, agent orchestration, AI development tools, skill marketplace, agent infrastructure, vibe coding, multi-agent, AI code review, TDD workflow, prompt engineering, agent loops, AI agent tools, coding agent, agent skills standard, portable skills, cross-platform AI, awesome list, open source AI, developer tools

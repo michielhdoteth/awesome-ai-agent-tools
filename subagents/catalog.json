@@ -1,0 +1,202 @@
+[
+  {
+    "id": "code-reviewer",
+    "name": "Code Reviewer",
+    "description": "Automated code review with security focus. Checks for vulnerabilities, performance issues, and code quality.",
+    "category": "development",
+    "tools": ["Read", "Edit", "Grep", "Bash", "Glob"],
+    "model": "sonnet",
+    "tags": ["code-review", "security", "quality"],
+    "localPath": "subagents/code-reviewer.md"
+  },
+  {
+    "id": "test-runner",
+    "name": "Test Runner",
+    "description": "Run test suite and fix failures. Analyzes root causes and verifies fixes.",
+    "category": "development",
+    "tools": ["Bash", "Read", "Edit", "Grep"],
+    "model": "haiku",
+    "tags": ["testing", "debugging", "quality"],
+    "localPath": "subagents/test-runner.md"
+  },
+  {
+    "id": "debugger",
+    "name": "Debugger",
+    "description": "Debug errors and unexpected behavior. Reproduce, isolate, understand, fix, verify.",
+    "category": "development",
+    "tools": ["Read", "Edit", "Bash", "Grep", "Glob"],
+    "model": "opus",
+    "tags": ["debugging", "error-handling", "troubleshooting"],
+    "localPath": "subagents/debugger.md"
+  },
+  {
+    "id": "security-auditor",
+    "name": "Security Auditor",
+    "description": "Security analysis for authentication, authorization, and data protection. OWASP Top 10 focused.",
+    "category": "security",
+    "tools": ["Read", "Grep", "Bash", "Glob"],
+    "model": "opus",
+    "tags": ["security", "audit", "vulnerabilities"],
+    "localPath": "subagents/security-auditor.md"
+  },
+  {
+    "id": "planner",
+    "name": "Planner",
+    "description": "Break down complex tasks into implementation plans. Creates atomic, testable tasks.",
+    "category": "productivity",
+    "tools": ["Read", "Grep", "Glob", "Bash"],
+    "model": "sonnet",
+    "tags": ["planning", "architecture", "task-breakdown"],
+    "localPath": "subagents/planner.md"
+  },
+  {
+    "id": "doc-writer",
+    "name": "Doc Writer",
+    "description": "Write and improve documentation. README, API docs, code comments, and guides.",
+    "category": "content",
+    "tools": ["Read", "Edit", "Grep", "Glob"],
+    "model": "sonnet",
+    "tags": ["documentation", "writing", "api-docs"],
+    "localPath": "subagents/doc-writer.md"
+  },
+  {
+    "id": "refactorer",
+    "name": "Refactorer",
+    "description": "Improve code quality through refactoring. Extract, simplify, organize, modernize.",
+    "category": "development",
+    "tools": ["Read", "Edit", "Grep", "Glob", "Bash"],
+    "model": "sonnet",
+    "tags": ["refactoring", "code-quality", "cleanup"],
+    "localPath": "subagents/refactorer.md"
+  },
+  {
+    "id": "data-analyst",
+    "name": "Data Analyst",
+    "description": "Analyze data and generate insights. Works with CSV, JSON, databases, and structured data.",
+    "category": "data",
+    "tools": ["Read", "Bash", "Edit", "Grep"],
+    "model": "sonnet",
+    "tags": ["data-analysis", "statistics", "insights"],
+    "localPath": "subagents/data-analyst.md"
+  },
+  {
+    "id": "dependency-updater",
+    "name": "Dependency Updater",
+    "description": "Update dependencies and manage versions. Security patches, compatibility checks.",
+    "category": "devops",
+    "tools": ["Bash", "Read", "Edit", "Grep"],
+    "model": "haiku",
+    "tags": ["dependencies", "security", "updates"],
+    "localPath": "subagents/dependency-updater.md"
+  },
+  {
+    "id": "performance-optimizer",
+    "name": "Performance Optimizer",
+    "description": "Identify and fix performance bottlenecks. Profiling, optimization, verification.",
+    "category": "development",
+    "tools": ["Read", "Edit", "Bash", "Grep", "Glob"],
+    "model": "opus",
+    "tags": ["performance", "optimization", "profiling"],
+    "localPath": "subagents/performance-optimizer.md"
+  },
+  {
+    "id": "frontend-developer",
+    "name": "Frontend Developer",
+    "description": "Frontend specialist for React, Vue, Angular, CSS, responsive design, and component architecture.",
+    "category": "development",
+    "tools": ["Read", "Edit", "Grep", "Glob", "Bash"],
+    "model": "sonnet",
+    "tags": ["frontend", "react", "css", "ui"],
+    "localPath": "subagents/frontend-developer.md"
+  },
+  {
+    "id": "backend-developer",
+    "name": "Backend Developer",
+    "description": "Backend specialist for APIs, databases, authentication, server architecture, and business logic.",
+    "category": "development",
+    "tools": ["Read", "Edit", "Grep", "Glob", "Bash"],
+    "model": "sonnet",
+    "tags": ["backend", "api", "database", "server"],
+    "localPath": "subagents/backend-developer.md"
+  },
+  {
+    "id": "database-expert",
+    "name": "Database Expert",
+    "description": "Database design and optimization specialist. Schema design, queries, migrations, performance tuning.",
+    "category": "data",
+    "tools": ["Read", "Edit", "Bash", "Grep"],
+    "model": "sonnet",
+    "tags": ["database", "sql", "schema", "optimization"],
+    "localPath": "subagents/database-expert.md"
+  },
+  {
+    "id": "devops-engineer",
+    "name": "DevOps Engineer",
+    "description": "DevOps specialist for Docker, Kubernetes, CI/CD, cloud deployment, and infrastructure automation.",
+    "category": "devops",
+    "tools": ["Read", "Edit", "Bash", "Grep", "Glob"],
+    "model": "sonnet",
+    "tags": ["devops", "docker", "kubernetes", "ci-cd"],
+    "localPath": "subagents/devops-engineer.md"
+  },
+  {
+    "id": "test-writer",
+    "name": "Test Writer",
+    "description": "Test writing specialist for unit, integration, and e2e tests. TDD, coverage, and test strategy.",
+    "category": "development",
+    "tools": ["Read", "Edit", "Bash", "Grep", "Glob"],
+    "model": "sonnet",
+    "tags": ["testing", "tdd", "coverage", "quality"],
+    "localPath": "subagents/test-writer.md"
+  },
+  {
+    "id": "api-designer",
+    "name": "API Designer",
+    "description": "API design specialist for REST, GraphQL, OpenAPI specs, versioning, and API governance.",
+    "category": "development",
+    "tools": ["Read", "Edit", "Grep", "Glob"],
+    "model": "sonnet",
+    "tags": ["api", "rest", "graphql", "openapi"],
+    "localPath": "subagents/api-designer.md"
+  },
+  {
+    "id": "workflow-orchestrator",
+    "name": "Workflow Orchestrator",
+    "description": "Multi-agent workflow orchestration. Task delegation, parallel execution, and workflow management.",
+    "category": "orchestration",
+    "tools": ["Read", "Edit", "Bash", "Grep"],
+    "model": "opus",
+    "tags": ["orchestration", "workflow", "multi-agent"],
+    "localPath": "subagents/workflow-orchestrator.md"
+  },
+  {
+    "id": "research-analyst",
+    "name": "Research Analyst",
+    "description": "Research and analysis specialist. Technology evaluation, competitive analysis, and documentation synthesis.",
+    "category": "research",
+    "tools": ["Read", "Grep", "Glob", "Bash", "WebSearch"],
+    "model": "opus",
+    "tags": ["research", "analysis", "evaluation"],
+    "localPath": "subagents/research-analyst.md"
+  },
+  {
+    "id": "migration-specialist",
+    "name": "Migration Specialist",
+    "description": "Code and data migration specialist. Database migrations, API upgrades, framework migrations.",
+    "category": "development",
+    "tools": ["Read", "Edit", "Bash", "Grep", "Glob"],
+    "model": "opus",
+    "tags": ["migration", "refactoring", "upgrade"],
+    "localPath": "subagents/migration-specialist.md"
+  },
+  {
+    "id": "accessibility-expert",
+    "name": "Accessibility Expert",
+    "description": "Accessibility specialist for WCAG compliance, screen reader testing, and inclusive design.",
+    "category": "design",
+    "tools": ["Read", "Edit", "Grep", "Glob", "Bash"],
+    "model": "sonnet",
+    "tags": ["accessibility", "wcag", "a11y", "inclusive"],
+    "localPath": "subagents/accessibility-expert.md"
+  }
+]

@@ -1,161 +1,204 @@
-# Subagents
+# Subagents Library
 
-Specialized AI agents that can be invoked for specific tasks. Subagents provide focused expertise and clean context for complex workflows.
+20 specialized AI agents that can be invoked for specific tasks. Subagents provide focused expertise and clean context for complex workflows.
 
-## What are Subagents?
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Subagents Count](https://img.shields.io/badge/Subagents-20-green.svg)](#all-subagents)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](../CONTRIBUTING.md)
+
+**Last updated:** June 2026
+
+## What Are Subagents?
 
 Subagents are specialized AI agents configured for specific tasks like code review, testing, debugging, security analysis, and more. They provide:
+
 - **Focused Expertise**: Each subagent is optimized for a specific domain
 - **Clean Context**: Fresh context for each task without conversation history pollution
 - **Parallel Execution**: Run multiple specialized agents simultaneously
 - **Reusable Workflows**: Share consistent workflows across your team
 
-## Getting Started
+## Quick Start
 
-### Basic Subagent Structure
+1. Copy a subagent file to your project
+2. Place it in `.claude/agents/`, `.opencode/agents/`, or your agent's config directory
+3. Invoke with: "Use the code-reviewer agent to review my changes"
 
-```yaml
----
-name: code-reviewer
-description: Use for code review tasks
-tools: Read, Edit, Grep, Bash
-model: sonnet
----
-
-You are an expert code reviewer. When reviewing code:
-1. Check for security vulnerabilities
-2. Look for performance issues
-3. Verify code follows project conventions
-4. Suggest improvements with examples
+```bash
+# Clone and explore
+git clone https://github.com/michielhdoteth/awesome-ai-agent-tools.git
+ls awesome-ai-agent-tools/subagents/
 ```
 
-### Creating a Subagent
+## Browse by Category
 
-1. Create `.claude/agents/` directory in your project
-2. Add a markdown file with the subagent definition
-3. Invoke with: `Use the code-reviewer agent to review my changes`
+Browse the full catalog: [`subagents/catalog.json`](catalog.json)
 
-## Common Subagents
+| Category | Count | Subagents |
+|----------|------:|-----------|
+| Development | 8 | code-reviewer, test-runner, debugger, refactorer, performance-optimizer, frontend-developer, backend-developer, test-writer, api-designer, migration-specialist |
+| Security | 1 | security-auditor |
+| Data | 2 | data-analyst, database-expert |
+| DevOps | 2 | dependency-updater, devops-engineer |
+| Content | 1 | doc-writer |
+| Productivity | 1 | planner |
+| Orchestration | 1 | workflow-orchestrator |
+| Research | 1 | research-analyst |
+| Design | 1 | accessibility-expert |
 
-### Code Reviewer
-
-```yaml
----
-name: code-reviewer
-description: Automated code review with security focus
-tools: Read, Edit, Grep, Bash, Glob
-model: sonnet
----
-
-You are a senior code reviewer. For each PR:
-- Identify potential security issues
-- Check for code smells and anti-patterns
-- Verify adequate test coverage
-- Suggest concrete improvements
-```
-
-### Test Runner
-
-```yaml
----
-name: test-runner
-description: Run test suite and fix failures
-tools: Bash, Read, Edit
-model: haiku
 ---
 
-You are a test specialist. When tests fail:
-1. Run the test suite and capture failures
-2. Analyze the root cause of each failure
-3. Fix the failing tests
-4. Verify all tests pass
-```
+## All Subagents
 
-### Debugger
+### Development
 
-```yaml
+#### code-reviewer.md
+**Tools:** Read, Edit, Grep, Bash, Glob | **Model:** sonnet
+Automated code review with security focus. Checks for vulnerabilities, performance issues, and code quality.
+
+#### test-runner.md
+**Tools:** Bash, Read, Edit, Grep | **Model:** haiku
+Run test suite and fix failures. Analyzes root causes and verifies fixes.
+
+#### debugger.md
+**Tools:** Read, Edit, Bash, Grep, Glob | **Model:** opus
+Expert debugging: reproduce, isolate, understand, fix, verify.
+
+#### refactorer.md
+**Tools:** Read, Edit, Grep, Glob, Bash | **Model:** sonnet
+Improve code quality through safe refactoring. Extract, simplify, organize, modernize.
+
+#### performance-optimizer.md
+**Tools:** Read, Edit, Bash, Grep, Glob | **Model:** opus
+Identify and fix performance bottlenecks. Measure before and after.
+
+#### frontend-developer.md
+**Tools:** Read, Edit, Grep, Glob, Bash | **Model:** sonnet
+Frontend specialist for React, Vue, Angular, CSS, responsive design, and component architecture.
+
+#### backend-developer.md
+**Tools:** Read, Edit, Grep, Glob, Bash | **Model:** sonnet
+Backend specialist for APIs, databases, authentication, server architecture, and business logic.
+
+#### test-writer.md
+**Tools:** Read, Edit, Bash, Grep, Glob | **Model:** sonnet
+Test writing specialist for unit, integration, and e2e tests. TDD, coverage, and test strategy.
+
+#### api-designer.md
+**Tools:** Read, Edit, Grep, Glob | **Model:** sonnet
+API design specialist for REST, GraphQL, OpenAPI specs, versioning, and API governance.
+
+#### migration-specialist.md
+**Tools:** Read, Edit, Bash, Grep, Glob | **Model:** opus
+Code and data migration specialist. Database migrations, API upgrades, framework migrations.
+
+### Security
+
+#### security-auditor.md
+**Tools:** Read, Grep, Bash, Glob | **Model:** opus
+OWASP Top 10 focused security analysis. Injection, auth, data protection, dependencies.
+
+### Data
+
+#### data-analyst.md
+**Tools:** Read, Bash, Edit, Grep | **Model:** sonnet
+Analyze data and generate insights. CSV, JSON, databases, statistics.
+
+#### database-expert.md
+**Tools:** Read, Edit, Bash, Grep | **Model:** sonnet
+Database design and optimization. Schema, queries, migrations, performance tuning.
+
+### DevOps
+
+#### dependency-updater.md
+**Tools:** Bash, Read, Edit, Grep | **Model:** haiku
+Update dependencies safely. Audit, plan, verify, test.
+
+#### devops-engineer.md
+**Tools:** Read, Edit, Bash, Grep, Glob | **Model:** sonnet
+Docker, Kubernetes, CI/CD, cloud deployment, infrastructure automation.
+
+### Content
+
+#### doc-writer.md
+**Tools:** Read, Edit, Grep, Glob | **Model:** sonnet
+Write and improve documentation. README, API docs, code comments.
+
+### Productivity
+
+#### planner.md
+**Tools:** Read, Grep, Glob, Bash | **Model:** sonnet
+Break down complex tasks into atomic, testable implementation plans.
+
+### Orchestration
+
+#### workflow-orchestrator.md
+**Tools:** Read, Edit, Bash, Grep | **Model:** opus
+Multi-agent workflow orchestration. Task delegation, parallel execution.
+
+### Research
+
+#### research-analyst.md
+**Tools:** Read, Grep, Glob, Bash, WebSearch | **Model:** opus
+Research and analysis. Technology evaluation, competitive analysis.
+
+### Design
+
+#### accessibility-expert.md
+**Tools:** Read, Edit, Grep, Glob, Bash | **Model:** sonnet
+WCAG compliance, screen reader testing, keyboard navigation, inclusive design.
+
 ---
-name: debugger
-description: Debug errors and unexpected behavior
-tools: Read, Edit, Bash, Grep
-model: opus
+
+## Cross-Platform Compatibility
+
+| Platform | Config Path | Invocation |
+|----------|-------------|------------|
+| **Claude Code** | `.claude/agents/` | "Use the code-reviewer agent" |
+| **OpenCode** | `.opencode/agents/` | "Use the code-reviewer agent" |
+| **Codex** | `.codex/agents/` | "Use the code-reviewer agent" |
+| **Cursor** | `.cursor/agents/` | "Use the code-reviewer agent" |
+
 ---
 
-You are an expert debugger. When invoked:
-1. Capture error message and stack trace
-2. Identify reproduction steps
-3. Isolate the failure location
-4. Implement minimal fix
-5. Verify solution works
-```
-
-### Security Auditor
-
-```yaml
----
-name: security-auditor
-description: Security analysis for authentication and authorization
-tools: Read, Grep, Bash
-model: opus
----
-
-You are a security expert specializing in authentication vulnerabilities.
-Check for:
-- SQL injection
-- XSS vulnerabilities
-- Authentication bypass
-- Authorization issues
-- Sensitive data exposure
-```
-
-## Using Subagents
-
-### Direct Invocation
-
-```
-Use the code-reviewer agent to check my recent changes
-```
-
-### In Commands
-
-Create commands that invoke subagents:
+## Creating Subagents
 
 ```markdown
-# /review
-Use the code-reviewer agent to review changes since the last commit
+---
+name: subagent-name
+description: >
+  Brief description of when to use this subagent.
+tools: Read, Edit, Bash, Grep
+model: sonnet
+---
+
+You are a specialist in [domain]. When invoked:
+1. [Step 1]
+2. [Step 2]
+
+## Rules
+- [Rule 1]
 ```
 
-### Programmatic Usage
+### Model Selection
 
-```javascript
-import { query } from '@anthropic-ai/claude-agent-sdk';
+| Model | Use For | Speed | Cost |
+|-------|---------|-------|------|
+| **haiku** | Simple tasks, running commands | Fast | Low |
+| **sonnet** | Code review, planning, implementation | Medium | Medium |
+| **opus** | Debugging, security, complex analysis | Slow | High |
 
-for await (const message of query({
-  prompt: 'Review the authentication module',
-  options: {
-    agents: {
-      'code-reviewer': {
-        description: 'Security-focused code review',
-        prompt: 'You are a security auditor...',
-        tools: ['Read', 'Grep'],
-        model: 'sonet'
-      }
-    }
-  }
-})) {
-  console.log(message);
-}
-```
+---
 
-## Best Practices
+## Contributing
 
-1. **Keep subagents focused** - Single responsibility per subagent
-2. **Limit tools** - Only grant tools needed for the task
-3. **Use appropriate models** - Simple tasks use haiku, complex use opus
-4. **Document clearly** - Description helps Claude decide when to use
-5. **Test subagents** - Verify they work before team adoption
+See [CONTRIBUTING.md](../CONTRIBUTING.md). Add your subagent to `subagents/catalog.json`.
 
-## Resources
+## Related
 
-- [Official Subagents Documentation](https://docs.anthropic.com/en/docs/claude-code/sub-agents)
-- [Claude Code SDK](https://docs.anthropic.com/en/docs/claude-code/sdk)
+- [Skills Library](../skills/) - AI agent skill files
+- [MCP Servers](../mcps/) - Model Context Protocol servers
+- [Agent Loops](../loops/) - Reusable workflow patterns
+
+---
+
+**Keywords:** subagents, AI agents, code review, debugger, test runner, security auditor, frontend developer, backend developer, database expert, devops engineer, workflow orchestrator, Claude Code agents, OpenCode agents, Codex agents, cross-platform AI

@@ -1,0 +1,279 @@
+{
+  "_comment": "Claude Code Hooks Configuration - Complete setup with 25+ hooks",
+  "_sources": [
+    "https://github.com/karanb192/claude-code-hooks",
+    "https://github.com/rohitg00/awesome-claude-code-toolkit",
+    "https://www.aitmpl.com/hooks/",
+    "https://github.com/hesreallyhim/awesome-claude-code"
+  ],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "_name": "block-dangerous-commands",
+        "_description": "Blocks dangerous shell commands (rm -rf ~, fork bombs, curl|sh)",
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/block-dangerous-commands.js"
+          }
+        ]
+      },
+      {
+        "_name": "protect-secrets",
+        "_description": "Prevents reading/modifying/exfiltrating sensitive files",
+        "matcher": "Read|Edit|Write|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/protect-secrets.js"
+          }
+        ]
+      },
+      {
+        "_name": "secret-scanner",
+        "_description": "Scans for leaked secrets before writing/editing files",
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/secret-scanner.js"
+          }
+        ]
+      },
+      {
+        "_name": "commit-guard",
+        "_description": "Validates conventional commit message format before git commit",
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/commit-guard.js"
+          }
+        ]
+      },
+      {
+        "_name": "pre-push-check",
+        "_description": "Warns before git push to verify branch and remote",
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/pre-push-check.js"
+          }
+        ]
+      },
+      {
+        "_name": "block-dev-server",
+        "_description": "Blocks dev server commands outside tmux to prevent orphaned processes",
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/block-dev-server.js"
+          }
+        ]
+      },
+      {
+        "_name": "smart-approve",
+        "_description": "Decomposes compound bash commands and checks each sub-command against allow/deny patterns",
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 ~/.claude/hooks/smart-approve.py"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "_name": "auto-stage",
+        "_description": "Automatically git stages files after Claude modifies them",
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/auto-stage.js"
+          }
+        ]
+      },
+      {
+        "_name": "lint-fix",
+        "_description": "Auto-fix lint issues after writing/editing files",
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/lint-fix.js"
+          }
+        ]
+      },
+      {
+        "_name": "type-check",
+        "_description": "Run TypeScript type checking after writing/editing .ts/.tsx files",
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/type-check.js"
+          }
+        ]
+      },
+      {
+        "_name": "auto-test",
+        "_description": "Run related tests after editing source files",
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/auto-test.js"
+          }
+        ]
+      },
+      {
+        "_name": "post-edit-check",
+        "_description": "Run linter check after file edits",
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/post-edit-check.js"
+          }
+        ]
+      },
+      {
+        "_name": "suggest-compact",
+        "_description": "Track edit count and suggest compaction at intervals",
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/suggest-compact.js"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "_name": "notify-permission",
+        "_description": "Sends Slack alerts when Claude needs input",
+        "matcher": "permission_prompt|idle_prompt|elicitation_dialog",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/notify-permission.js"
+          }
+        ]
+      },
+      {
+        "_name": "notification-log",
+        "_description": "Logs notifications for later review",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/notification-log.js"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "_name": "session-start",
+        "_description": "Detects package manager and loads previous session context",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/session-start.js"
+          }
+        ]
+      },
+      {
+        "_name": "context-loader",
+        "_description": "Load project context including git state, config files, and pending todos",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/context-loader.js"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "_name": "session-end",
+        "_description": "Save current context state for next session",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/session-end.js"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "_name": "stop-check",
+        "_description": "Remind to run tests if code was modified",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/stop-check.js"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "_name": "pre-compact",
+        "_description": "Save important context before compaction",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/pre-compact.js"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "_name": "prompt-check",
+        "_description": "Detect vague prompts and suggest clarification",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/prompt-check.js"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(npm test:*)",
+      "Bash(npm run:*)",
+      "Bash(bun test:*)",
+      "Bash(bun run:*)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm run:*)",
+      "Bash(pytest:*)",
+      "Bash(python -m pytest:*)",
+      "Bash(go test:*)",
+      "Bash(cargo test:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /:*)",
+      "Bash(rm -rf ~:*)",
+      "Bash(rm -rf *:*)",
+      "Bash(:(){ :|:& };:*:*)",
+      "Bash(curl * | sh:*)",
+      "Bash(curl * | bash:*)",
+      "Bash(wget * | sh:*)",
+      "Bash(wget * | bash:*)"
+    ]
+  }
+}
