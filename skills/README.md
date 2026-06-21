@@ -23,8 +23,8 @@ The SKILL.md standard (agentskills.io) is now adopted by ~40 clients. Skills are
 
 ```bash
 # Clone and explore
-git clone https://github.com/michielhdoteth/claude-bible.git
-ls claude-bible/skills/
+git clone https://github.com/michielhdoteth/agent-skills-hub.git
+ls agent-skills-hub/skills/
 ```
 
 ## Skills from This Repository
@@ -33,52 +33,52 @@ Browse the full catalog: [`skills/catalog.json`](catalog.json)
 
 ### Development Workflow
 
-| Skill | Description | Install Count | File |
-|-------|-------------|:------------:|------|
-| **test-driven-development** | Enforces strict RED-GREEN-REFACTOR cycle. Write failing test first, watch it fail, implement, verify | - | [test-driven-development/SKILL.md](test-driven-development/SKILL.md) |
-| **systematic-debugging** | 4-phase root cause process: reproduce, isolate, identify root cause, fix and verify | - | [systematic-debugging/SKILL.md](systematic-debugging/SKILL.md) |
-| **verification-before-completion** | Requires concrete evidence before marking tasks complete. No "it works on my machine" | - | [verification-before-completion/SKILL.md](verification-before-completion/SKILL.md) |
-| **code-reviewer** | Structured review checking security, logic, performance, and style. Findings by severity | - | [code-reviewer/SKILL.md](code-reviewer/SKILL.md) |
-| **git-commit-writer** | Analyzes staged changes, writes conventional commits with auto-detected scope | - | [git-commit-writer/SKILL.md](git-commit-writer/SKILL.md) |
+| Skill | Description | File |
+|-------|-------------|------|
+| **test-driven-development** | Enforces strict RED-GREEN-REFACTOR cycle. Write failing test first, watch it fail, implement, verify | [test-driven-development/SKILL.md](test-driven-development/SKILL.md) |
+| **systematic-debugging** | 4-phase root cause process: reproduce, isolate, identify root cause, fix and verify | [systematic-debugging/SKILL.md](systematic-debugging/SKILL.md) |
+| **verification-before-completion** | Requires concrete evidence before marking tasks complete. No "it works on my machine" | [verification-before-completion/SKILL.md](verification-before-completion/SKILL.md) |
+| **code-reviewer** | Structured review checking security, logic, performance, and style. Findings by severity | [code-reviewer/SKILL.md](code-reviewer/SKILL.md) |
+| **git-commit-writer** | Analyzes staged changes, writes conventional commits with auto-detected scope | [git-commit-writer/SKILL.md](git-commit-writer/SKILL.md) |
 
 ### Planning & Design
 
-| Skill | Description | Install Count | File |
-|-------|-------------|:------------:|------|
-| **brainstorming** | Design process for turning ideas into specs. Explore context, ask questions, propose approaches | - | [brainstorming/SKILL.md](brainstorming/SKILL.md) |
-| **writing-plans** | Convert specs into multi-step implementation plans with task breakdowns and dependencies | - | [writing-plans/SKILL.md](writing-plans/SKILL.md) |
-| **acceptance-traceability** | Map PRD requirements to tasks, tests, and evidence for plan/build handoffs | - | [acceptance-traceability/SKILL.md](acceptance-traceability/SKILL.md) |
-| **subagent-driven-development** | Execute implementation plans with independent tasks using parallel subagents | - | [subagent-driven-development/SKILL.md](subagent-driven-development/SKILL.md) |
+| Skill | Description | File |
+|-------|-------------|------|
+| **brainstorming** | Design process for turning ideas into specs. Explore context, ask questions, propose approaches | [brainstorming/SKILL.md](brainstorming/SKILL.md) |
+| **writing-plans** | Convert specs into multi-step implementation plans with task breakdowns and dependencies | [writing-plans/SKILL.md](writing-plans/SKILL.md) |
+| **acceptance-traceability** | Map PRD requirements to tasks, tests, and evidence for plan/build handoffs | [acceptance-traceability/SKILL.md](acceptance-traceability/SKILL.md) |
+| **subagent-driven-development** | Execute implementation plans with independent tasks using parallel subagents | [subagent-driven-development/SKILL.md](subagent-driven-development/SKILL.md) |
 
 ### Writing & Communication
 
-| Skill | Description | Install Count | File |
-|-------|-------------|:------------:|------|
-| **humanizer** | Remove AI writing patterns from generated text. Detects and fixes em dashes, hedging, puffery | - | [humanizer/SKILL.md](humanizer/SKILL.md) |
-| **cold-email** | SDR cold email outreach with 5-sentence structure, personalization, and low-friction CTAs | - | [cold-email/SKILL.md](cold-email/SKILL.md) |
-| **copywriting** | Write and optimize marketing copy with persuasive frameworks | - | [copywriting/SKILL.md](copywriting/SKILL.md) |
+| Skill | Description | File |
+|-------|-------------|------|
+| **humanizer** | Remove AI writing patterns from generated text. Detects and fixes em dashes, hedging, puffery | [humanizer/SKILL.md](humanizer/SKILL.md) |
+| **cold-email** | SDR cold email outreach with 5-sentence structure, personalization, and low-friction CTAs | [cold-email/SKILL.md](cold-email/SKILL.md) |
+| **copywriting** | Write and optimize marketing copy with persuasive frameworks | [copywriting/SKILL.md](copywriting/SKILL.md) |
 
 ### MCP & Agent Protocols
 
-| Skill | Description | Install Count | File |
-|-------|-------------|:------------:|------|
-| **mcp-security** | Audit, harden, and securely configure MCP servers. 66% of servers have security findings | - | [mcp-security/SKILL.md](mcp-security/SKILL.md) |
-| **a2a-protocol** | Implement multi-agent coordination using Agent-to-Agent protocol. Complements MCP | - | [a2a-protocol/SKILL.md](a2a-protocol/SKILL.md) |
+| Skill | Description | File |
+|-------|-------------|------|
+| **mcp-security** | Audit, harden, and securely configure MCP servers. 66% of servers have security findings | [mcp-security/SKILL.md](mcp-security/SKILL.md) |
+| **a2a-protocol** | Implement multi-agent coordination using Agent-to-Agent protocol. Complements MCP | [a2a-protocol/SKILL.md](a2a-protocol/SKILL.md) |
 
 ### Multimedia Generation
 
-| Skill | Description | Install Count | File |
-|-------|-------------|:------------:|------|
-| **multimedia-generation** | Generate video, voice, 3D models, and music using MCP servers and AI services | - | [multimedia-generation/SKILL.md](multimedia-generation/SKILL.md) |
-| **playwright-automation** | Browser automation for testing, scraping, and workflow automation. 34K+ GitHub stars | - | [playwright-automation/SKILL.md](playwright-automation/SKILL.md) |
-| **figma-design-to-code** | Bridge design and development using Figma MCP. Extract tokens, generate components | - | [figma-design-to-code/SKILL.md](figma-design-to-code/SKILL.md) |
+| Skill | Description | File |
+|-------|-------------|------|
+| **multimedia-generation** | Generate video, voice, 3D models, and music using MCP servers and AI services | [multimedia-generation/SKILL.md](multimedia-generation/SKILL.md) |
+| **playwright-automation** | Browser automation for testing, scraping, and workflow automation. 34K+ GitHub stars | [playwright-automation/SKILL.md](playwright-automation/SKILL.md) |
+| **figma-design-to-code** | Bridge design and development using Figma MCP. Extract tokens, generate components | [figma-design-to-code/SKILL.md](figma-design-to-code/SKILL.md) |
 
 ### Data & Infrastructure
 
-| Skill | Description | Install Count | File |
-|-------|-------------|:------------:|------|
-| **data-analysis** | Analyze data using MCP servers for CSV, Excel, databases, and visualization | - | [data-analysis/SKILL.md](data-analysis/SKILL.md) |
-| **devops-infrastructure** | Manage containers, orchestration, CI/CD, and cloud infrastructure using MCP servers | - | [devops-infrastructure/SKILL.md](devops-infrastructure/SKILL.md) |
+| Skill | Description | File |
+|-------|-------------|------|
+| **data-analysis** | Analyze data using MCP servers for CSV, Excel, databases, and visualization | [data-analysis/SKILL.md](data-analysis/SKILL.md) |
+| **devops-infrastructure** | Manage containers, orchestration, CI/CD, and cloud infrastructure using MCP servers | [devops-infrastructure/SKILL.md](devops-infrastructure/SKILL.md) |
 
 ### External
 
@@ -92,11 +92,11 @@ The AI-assisted development ecosystem has produced thousands of skill files. Her
 
 | Collection | Stars | Installs | Description | URL |
 |------------|------:|---------:|-------------|-----|
-| **Superpowers** (obra) | 234k | 787K | Full agentic development methodology. Supports 8+ harnesses | [github.com/obra/superpowers](https://github.com/obra/superpowers) |
-| **UI-UX Pro Max** (nextlevelbuilder) | 79k | - | Design system, UI/UX skills, and frontend development patterns | [github.com/nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) |
-| **Awesome Claude Skills** (Composio) | 60k | - | Directory of skills and tools organized by use case | [github.com/ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) |
-| **Claude-Mem** (thedotmack) | 76k | - | Persistent memory system for Claude Code sessions | [github.com/thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) |
-| **Anthropic claude-plugins-official** | 30k | - | Official marketplace, 222 entries, pre-registered in Claude Code | [github.com/anthropics/claude-plugins](https://github.com/anthropics/claude-plugins) |
+| **Superpowers** (obra) | 234K | 787K | Full agentic development methodology. Supports 8+ harnesses | [github.com/obra/superpowers](https://github.com/obra/superpowers) |
+| **UI-UX Pro Max** (nextlevelbuilder) | 79K | - | Design system, UI/UX skills, and frontend development patterns | [github.com/nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) |
+| **Awesome Claude Skills** (Composio) | 60K | - | Directory of skills and tools organized by use case | [github.com/ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) |
+| **Claude-Mem** (thedotmack) | 76K | - | Persistent memory system for Claude Code sessions | [github.com/thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) |
+| **Anthropic claude-plugins-official** | 30K | - | Official marketplace, 222 entries, pre-registered in Claude Code | [github.com/anthropics/claude-plugins](https://github.com/anthropics/claude-plugins) |
 | **Vercel skills.sh** | - | 810K+ | 670K+ skills listed, top skill at 2.0M installs | [skills.sh](https://skills.sh) |
 | **Agensi.io** | - | - | Curated, security-scanned marketplace | [agensi.io](https://agensi.io) |
 | **BuySkills.ai** | - | - | Cross-agent marketplace supporting 14+ agents | [buyskills.ai](https://buyskills.ai) |
@@ -172,4 +172,4 @@ We welcome contributions! See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelin
 
 ---
 
-**Keywords:** AI agent skills, SKILL.md, Claude Code skills, Cursor skills, OpenCode skills, AI coding assistant, agent workflows, skill library, AI development tools, coding agent skills, MCP skills, agent orchestration, skill marketplace, AI agent development, vibe coding skills
+**Keywords:** AI agent skills, SKILL.md, Claude Code skills, Cursor skills, OpenCode skills, Codex skills, AI coding assistant, agent workflows, skill library, AI development tools, coding agent skills, MCP skills, agent orchestration, skill marketplace, AI agent development, vibe coding skills, portable skills, cross-platform AI

@@ -235,4 +235,4 @@ We welcome contributions! See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelin
 
 ---
 
-**Keywords:** MCP servers, Model Context Protocol, AI agent tools, Claude Code MCP, Cursor MCP, OpenCode MCP, AI tool integration, MCP registry, AI agent infrastructure, serverless AI, agent development, MCP security, AI coding assistant tools, model context protocol servers, AI agent connectivity
+**Keywords:** MCP servers, Model Context Protocol, AI agent tools, Claude Code MCP, Cursor MCP, OpenCode MCP, Codex MCP, AI tool integration, MCP registry, AI agent infrastructure, serverless AI, agent development, MCP security, AI coding assistant tools, model context protocol servers, AI agent connectivity, cross-platform MCP
