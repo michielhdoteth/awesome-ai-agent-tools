@@ -401,7 +401,7 @@ OpenGAP is the most portable option, with adapters for: Claude Code, OpenAI, Cre
 
 ## Recommendations
 
-### For Your Project (claude-bible)
+### For Your Project (awesome-ai-agent-tools)
 
 1. **Use Markdown + YAML frontmatter** for agent definitions -- this is the Claude Code native format
 2. **Study VoltAgent/awesome-claude-code-subagents** as the reference catalog structure

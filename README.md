@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The most comprehensive open-source library for AI agent skills, MCP servers, agent workflows, and subagents.** Install via `npx skills add`. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+> **The most comprehensive open-source directory for AI agent tools.** 73 curated skills, 67 MCP servers, 81 agent workflows, 20 subagents, 20 hooks, and 20 slash commands. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and every major AI coding assistant.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -115,7 +115,9 @@ Copy any loop file to your project, use the prompt text as your agent instructio
 
 ---
 
-## Skills (69 files across 9 categories)
+## Skills (73 curated across 9 categories)
+
+19 local skill files you can copy + 54 external references with install commands from obra/superpowers, anthropics/skills, mattpocock/skills, vercel-labs, and more.
 
 <table width="100%">
   <thead>
@@ -140,7 +142,7 @@ Copy any loop file to your project, use the prompt text as your agent instructio
 
 ---
 
-## MCP Servers (66 servers across 16 categories)
+## MCP Servers (67 servers across 16 categories)
 
 <table width="100%">
   <thead>
@@ -163,7 +165,7 @@ Copy any loop file to your project, use the prompt text as your agent instructio
 
 ---
 
-## Agent Loops (78 workflows across 7 categories)
+## Agent Loops (81 workflows across 7 categories)
 
 <table width="100%">
   <thead>

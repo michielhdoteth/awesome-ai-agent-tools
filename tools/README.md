@@ -1,7 +1,7 @@
-# Tools for Claude Code
+# Tools
 
-This directory contains a collection of tools that can help you with Claude Code.
+Essential tools and resources for AI-assisted development.
 
 ## Contents
 
-*   [overview.md](overview.md): Comprehensive overview of AI-powered tools for development.
+- [overview.md](overview.md) - Coding assistants, MCP servers, skills marketplaces, and development tools

@@ -1,33 +1,36 @@
 # Awesome AI Agent Tools
 
-> The most comprehensive open-source library for AI agent skills, MCP servers, and agent workflows. 69 production-ready skill files, 66 verified MCP server configurations, 73 repeatable agent workflows. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and every major AI coding assistant.
+> The most comprehensive open-source directory for AI agent tools. 73 curated skills (19 local + 54 external references), 67 MCP server configurations with install commands, 81 agent workflow patterns, 20 subagent definitions, 20 hook scripts, and 20 slash commands. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and every major AI coding assistant.
 
 ## What This Repo Contains
 
-- **69 AI Agent Skills**: Reusable SKILL.md files for development, design, content, DevOps, security, and data workflows
-- **66 MCP Server Configurations**: Verified Model Context Protocol servers with install commands and security notes
-- **73 Agent Workflows (Loops)**: Repeatable patterns with exact prompts, verification criteria, and source attribution
-- **Cross-Platform Support**: Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Aider, and Windsurf
+- **73 Curated Skills**: 19 local SKILL.md files + 54 external skill references from obra/superpowers, anthropics/skills, mattpocock/skills, vercel-labs, and more
+- **67 MCP Server Configurations**: Verified Model Context Protocol servers with install commands across 16 categories
+- **81 Agent Workflows (Loops)**: Repeatable patterns with exact prompts, verification criteria, and source attribution
+- **20 Subagent Definitions**: Specialized agents with model routing and tool permissions
+- **20 Hook Scripts**: Production-ready automation for Claude Code events (security, quality, notifications)
+- **20 Slash Commands**: Development workflows (review, commit, debug, deploy, security-scan, and more)
+- **Cross-Platform Support**: Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, Aider, and Windsurf
 - **Catalogs with Metadata**: JSON catalogs for programmatic discovery and tooling integration
-- **Contributing Infrastructure**: Templates, issue templates, CI validation, and review checklists
-- **Community Resources**: Links to 10+ notable skill collections, MCP registries, and agent frameworks
 
 ## Key Files
 
 - [README](README.md) - Project overview, quick start, and full catalog
 - [CONTRIBUTING.md](CONTRIBUTING.md) - How to add skills, MCPs, or loops
-- [Skills Library](skills/) - 69 installable skill files with catalog
-- [MCP Servers](mcps/) - 66 verified MCP server configs with catalog
-- [Agent Loops](loops/) - 73 workflow patterns with catalog
+- [Skills Library](skills/) - 19 local skill files + catalog of 73 total (local + external)
+- [MCP Servers](mcps/) - Catalog of 67 MCP servers with install commands
+- [Agent Loops](loops/) - 81 workflow patterns with catalog
+- [Subagents](subagents/) - 20 specialized agent definitions with catalog
+- [Hooks](hooks/) - 20 production-ready hook scripts
+- [Commands](commands/) - 20 slash commands for common workflows
 - [Documentation](docs/) - Getting started, feature reference, tool comparisons
 - [Prompt Engineering](prompting/) - Prompt techniques and strategies
 - [Rules & Best Practices](rules/) - Security, ethics, quality guidelines
 - [Workflows](workflows/) - Advanced autonomous workflows
-- [Research](research/) - Architecture analysis, ecosystem research
 
 ## Topics
 
-awesome, ai-agent-tools, ai-agents, skills, mcp-servers, model-context-protocol, agent-workflows, claude-code, opencode, codex, cursor, gemini-cli, copilot, coding-agent, vibe-coding, prompt-engineering, skill-marketplace, agent-orchestration, cross-platform-ai, open-source-ai, developer-tools, tdd, code-review, debugging, devops, data-analysis, security
+awesome, ai-agent-tools, ai-agents, skills, mcp-servers, model-context-protocol, agent-workflows, claude-code, opencode, codex, kilocode, cursor, gemini-cli, copilot, coding-agent, vibe-coding, prompt-engineering, skill-marketplace, agent-orchestration, cross-platform-ai, open-source-ai, developer-tools, subagents, hooks, slash-commands
 
 ## Updated
 

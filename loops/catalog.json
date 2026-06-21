@@ -4,12 +4,12 @@
   "description": "Repeatable AI-agent workflows with feedback loops",
   "license": "MIT",
   "lastUpdated": "2026-06-21",
-  "totalLoops": 78,
+  "totalLoops": 81,
   "categories": [
-    { "name": "engineering", "count": 38 },
+    { "name": "engineering", "count": 39 },
     { "name": "evaluation", "count": 14 },
-    { "name": "operations", "count": 8 },
-    { "name": "content", "count": 2 },
+    { "name": "operations", "count": 9 },
+    { "name": "content", "count": 3 },
     { "name": "design", "count": 6 },
     { "name": "meta", "count": 4 },
     { "name": "multi-agent", "count": 6 }
