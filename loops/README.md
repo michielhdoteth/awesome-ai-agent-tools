@@ -25,8 +25,8 @@ Prompt -> Agent -> Output -> Verification -> Feedback -> Prompt (loop)
 
 ```bash
 # Clone and explore
-git clone https://github.com/michielhdoteth/agent-skills-hub.git
-ls agent-skills-hub/loops/
+git clone https://github.com/michielhdoteth/awesome-ai-agent-tools.git
+ls awesome-ai-agent-tools/loops/
 ```
 
 ## Browse by Category

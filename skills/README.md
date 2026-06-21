@@ -23,8 +23,8 @@ The SKILL.md standard (agentskills.io) is now adopted by ~40 clients. Skills are
 
 ```bash
 # Clone and explore
-git clone https://github.com/michielhdoteth/agent-skills-hub.git
-ls agent-skills-hub/skills/
+git clone https://github.com/michielhdoteth/awesome-ai-agent-tools.git
+ls awesome-ai-agent-tools/skills/
 ```
 
 ## Skills from This Repository

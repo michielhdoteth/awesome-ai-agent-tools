@@ -1,8 +1,8 @@
-# Contributing to Agent Skills Hub
+# Contributing to Awesome AI Agent Tools
 
-Thanks for contributing! Agent Skills Hub is the most comprehensive open-source library for AI agent skills, MCP servers, and agent workflows. This guide covers how to add resources, fix issues, and submit PRs.
+Thanks for contributing! Awesome AI Agent Tools is the most comprehensive open-source library for AI agent skills, MCP servers, and agent workflows. This guide covers how to add resources, fix issues, and submit PRs.
 
-> **First-time contributor?** Look for issues labeled `good-first-issue` or `help-wanted` in the [Issues](https://github.com/michielhdoteth/agent-skills-hub/issues) tab.
+> **First-time contributor?** Look for issues labeled `good-first-issue` or `help-wanted` in the [Issues](https://github.com/michielhdoteth/awesome-ai-agent-tools/issues) tab.
 
 ---
 
@@ -25,8 +25,8 @@ Thanks for contributing! Agent Skills Hub is the most comprehensive open-source 
 1. **Fork** the repo on GitHub
 2. **Clone** your fork locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/agent-skills-hub.git
-   cd agent-skills-hub
+   git clone https://github.com/YOUR_USERNAME/awesome-ai-agent-tools.git
+   cd awesome-ai-agent-tools
    ```
 3. **Create a branch** for your contribution:
    ```bash
@@ -359,4 +359,4 @@ Open an issue with the `question` label. We're happy to help!
 
 ---
 
-**Thank you for making Agent Skills Hub better for everyone!**
+**Thank you for making Awesome AI Agent Tools better for everyone!**
