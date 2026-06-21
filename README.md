@@ -1,6 +1,6 @@
 # Awesome AI Agent Tools
 
-> **The most comprehensive open-source library for AI agent skills, MCP servers, and agent workflows.** 69 production-ready skill files, 66 verified MCP server configurations, 73 repeatable agent workflows. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and every major AI coding assistant.
+> **The most comprehensive open-source library for AI agent skills, MCP servers, agent workflows, and subagents.** Install via `npx skills add`. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -31,13 +31,14 @@ This is not just a curated list of links. It contains **actual installable compo
 
 | Feature | Awesome AI Agent Tools | Other Awesome Lists |
 |---------|:----------------------:|:-------------------:|
-| **Installable skill files** | 69 | Links only |
-| **MCP server configs** | 66 | Links only |
-| **Agent workflows with prompts** | 73 | Links only |
+| **Installable skill files** | Yes | Links only |
+| **MCP server configs** | Yes | Links only |
+| **Agent workflows with prompts** | Yes | Links only |
+| **Subagents with model routing** | Yes | No |
 | **Catalogs with metadata** | Yes | No |
 | **CI validation** | Yes | No |
 | **Contributing templates** | Yes | No |
-| **Cross-platform compatibility** | 8+ platforms | Varies |
+| **Cross-platform compatibility** | 30+ platforms | Varies |
 
 ---
 
@@ -81,11 +82,12 @@ Copy any loop file to your project, use the prompt text as your agent instructio
 
 ## Browse by Category
 
-| Library | Count | What You Get | Browse |
-|---------|------:|--------------|--------|
-| **Skills** | 69 | Installable SKILL.md files for specific tasks | [skills/](skills/) - [catalog.json](skills/catalog.json) |
-| **MCP Servers** | 66 | Server configs with install commands | [mcps/](mcps/) - [catalog.json](mcps/catalog.json) |
-| **Agent Loops** | 73 | Workflows with prompts and verification | [loops/](loops/) - [catalog.json](loops/catalog.json) |
+| Library | What You Get | Browse |
+|---------|--------------|--------|
+| **Skills** | Installable SKILL.md files for specific tasks | [skills/](skills/) - [catalog.json](skills/catalog.json) |
+| **MCP Servers** | Server configs with install commands | [mcps/](mcps/) - [catalog.json](mcps/catalog.json) |
+| **Agent Loops** | Workflows with prompts and verification | [loops/](loops/) - [catalog.json](loops/catalog.json) |
+| **Subagents** | Specialized agents with model routing | [subagents/](subagents/) - [catalog.json](subagents/catalog.json) |
 
 ---
 
@@ -131,20 +133,39 @@ Copy any loop file to your project, use the prompt text as your agent instructio
 
 ---
 
+## Subagents (20 specialized agents)
+
+| Category | Agents |
+|----------|--------|
+| **Development** | code-reviewer, test-runner, debugger, refactorer, performance-optimizer, frontend-developer, backend-developer, test-writer, api-designer, migration-specialist |
+| **Security** | security-auditor |
+| **Data** | data-analyst, database-expert |
+| **DevOps** | dependency-updater, devops-engineer |
+| **Content** | doc-writer |
+| **Productivity** | planner |
+| **Orchestration** | workflow-orchestrator |
+| **Research** | research-analyst |
+| **Design** | accessibility-expert |
+
+Each subagent includes model routing (haiku/sonnet/opus) and tool permissions. Browse: [subagents/](subagents/) - [catalog.json](subagents/catalog.json)
+
+---
+
 ## Cross-Platform Compatibility
 
 Awesome AI Agent Tools works with every major AI coding assistant:
 
-| Platform | Skills | MCPs | Loops | How to Install |
-|----------|:------:|:----:|:-----:|----------------|
-| **Claude Code** | Yes | Yes | Yes | Copy to `.claude/skills/` |
-| **OpenCode** | Yes | Yes | Yes | Copy to `.opencode/skills/` |
-| **Codex** | Yes | Yes | Yes | Copy to `.agents/skills/` |
-| **Cursor** | Yes | Yes | Yes | Copy to `.cursor/skills/` |
-| **Gemini CLI** | Yes | Yes | Yes | Copy to `.gemini/skills/` |
-| **Copilot** | Yes | Yes | Yes | Copy to `.github/skills/` |
-| **Aider** | Yes | Yes | Yes | Copy to `.aider/skills/` |
-| **Windsurf** | Yes | Yes | Yes | Copy to `.windsurf/skills/` |
+| Platform | Skills | MCPs | Loops | Subagents | How to Install |
+|----------|:------:|:----:|:-----:|:---------:|----------------|
+| **Claude Code** | Yes | Yes | Yes | Yes | Copy to `.claude/skills/` |
+| **OpenCode** | Yes | Yes | Yes | Yes | Copy to `.opencode/skills/` |
+| **Codex** | Yes | Yes | Yes | Yes | Copy to `.agents/skills/` |
+| **KiloCode** | Yes | Yes | Yes | Yes | Copy to `.kilo/skills/` |
+| **Cursor** | Yes | Yes | Yes | Yes | Copy to `.cursor/skills/` |
+| **Gemini CLI** | Yes | Yes | Yes | Yes | Copy to `.gemini/skills/` |
+| **Copilot** | Yes | Yes | Yes | Yes | Copy to `.github/skills/` |
+| **Aider** | Yes | Yes | Yes | Yes | Copy to `.aider/skills/` |
+| **Windsurf** | Yes | Yes | Yes | Yes | Copy to `.windsurf/skills/` |
 
 All skills follow the [SKILL.md open standard](https://agentskills.io) adopted by ~40 clients.
 
