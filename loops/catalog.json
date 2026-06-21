@@ -4,9 +4,9 @@
   "description": "Repeatable AI-agent workflows with feedback loops",
   "license": "MIT",
   "lastUpdated": "2026-06-21",
-  "totalLoops": 72,
+  "totalLoops": 78,
   "categories": [
-    { "name": "engineering", "count": 32 },
+    { "name": "engineering", "count": 38 },
     { "name": "evaluation", "count": 14 },
     { "name": "operations", "count": 8 },
     { "name": "content", "count": 2 },
@@ -23,7 +23,13 @@
     { "name": "githubnext/autoloop", "url": "https://github.com/githubnext/autoloop", "loopCount": 1 },
     { "name": "anshulixyz/multi-agent-loop-kit", "url": "https://github.com/anshulixyz/multi-agent-loop-kit", "loopCount": 1 },
     { "name": "0xagentkitchen/kitchenloop", "url": "https://github.com/0xagentkitchen/kitchenloop", "loopCount": 1 },
-    { "name": "Community (Reddit/HN/Blogs)", "url": "https://www.reddit.com/r/ClaudeAI/", "loopCount": 7 }
+    { "name": "Community (Reddit/HN/Blogs)", "url": "https://www.reddit.com/r/ClaudeAI/", "loopCount": 7 },
+    { "name": "snarktank/ralph", "url": "https://github.com/snarktank/ralph", "stars": 2043, "loopCount": 1 },
+    { "name": "openai/symphony", "url": "https://github.com/openai/symphony", "stars": 25514, "loopCount": 1 },
+    { "name": "github/gh-aw", "url": "https://github.com/github/gh-aw", "stars": 500, "loopCount": 1 },
+    { "name": "zevtos/agentpipe", "url": "https://github.com/zevtos/agentpipe", "stars": 50, "loopCount": 1 },
+    { "name": "kayoslab/karl", "url": "https://github.com/kayoslab/karl", "stars": 50, "loopCount": 1 },
+    { "name": "a7t-ai/three-body-agent", "url": "https://github.com/a7t-ai/three-body-agent", "loopCount": 1 }
   ],
   "loops": [
     {
@@ -961,6 +967,84 @@
       "verification": "Context maintained across multiple sessions without loss.",
       "tags": ["memory", "persistence", "context", "state"],
       "related": ["living-story-loop", "handoff"]
+    },
+    {
+      "id": "ralph-autonomous-loop",
+      "title": "Ralph Autonomous Loop",
+      "category": "engineering",
+      "author": "snarktank",
+      "source": "https://github.com/snarktank/ralph",
+      "sourceRepo": "snarktank/ralph",
+      "description": "Serial PRD execution with fresh AI context per iteration, TDD enforcement, fire-and-forget",
+      "prompt": "Spawn a fresh claude CLI session per PRD task. Each iteration: read PRD, find next unchecked task, implement with TDD, mark done, commit. Stop when all tasks complete.",
+      "verification": "All PRD tasks completed with TDD tests passing and committed.",
+      "tags": ["autonomous", "prd", "tdd", "serial", "fire-and-forget"],
+      "related": ["ralph-bash-loop", "ticket-to-pr-ready-loop"]
+    },
+    {
+      "id": "symphony-linear-loop",
+      "title": "Symphony Linear Loop",
+      "category": "engineering",
+      "author": "OpenAI",
+      "source": "https://github.com/openai/symphony",
+      "sourceRepo": "openai/symphony",
+      "description": "Linear board monitoring that spawns autonomous implementation runs with proof-of-work",
+      "prompt": "Monitor Linear board for new work items. For each item: spawn an isolated agent, provide full context, implement the change, run CI, generate proof-of-work (CI status, PR feedback, complexity analysis). Engineers manage work at higher level.",
+      "verification": "PR created with passing CI, code review, and complexity analysis proof.",
+      "tags": ["autonomous", "linear", "proof-of-work", "monitoring"],
+      "related": ["ralph-autonomous-loop", "alpha-loop"]
+    },
+    {
+      "id": "github-agentic-workflow",
+      "title": "GitHub Agentic Workflow",
+      "category": "engineering",
+      "author": "GitHub",
+      "source": "https://github.com/github/gh-aw",
+      "sourceRepo": "github/gh-aw",
+      "description": "Official GitHub framework: markdown workflows compiled to sandboxed execution with multi-engine support",
+      "prompt": "Write workflow in markdown with YAML frontmatter. Compile to .lock.yml. Execute in sandboxed environment with safe outputs (pre-approved GitHub operations). Supports Copilot, Claude, Codex, Gemini engines.",
+      "verification": "Workflow executes in sandbox with all outputs passing safety checks.",
+      "tags": ["github", "official", "sandbox", "multi-engine", "compiled"],
+      "related": ["three-body-autonomous", "alpha-loop"]
+    },
+    {
+      "id": "gated-pipeline-loop",
+      "title": "Gated Pipeline Loop",
+      "category": "engineering",
+      "author": "zevtos",
+      "source": "https://github.com/zevtos/agentpipe",
+      "sourceRepo": "zevtos/agentpipe",
+      "description": "9 specialist agents with role-bounded tool access and quality gates between phases",
+      "prompt": "Route task through specialist agents: architect -> planner -> coder -> reviewer -> tester -> security -> deployer. Each agent has bounded tool access. Quality gates between phases block progression until criteria met.",
+      "verification": "All phases pass quality gates with specialist sign-off.",
+      "tags": ["pipeline", "specialists", "gates", "role-bounded"],
+      "related": ["multi-agent-devloop", "clodex-adversarial-review-loop"]
+    },
+    {
+      "id": "multi-agent-devloop",
+      "title": "Multi-Agent Dev Loop",
+      "category": "engineering",
+      "author": "kayoslab",
+      "source": "https://github.com/kayoslab/karl",
+      "sourceRepo": "kayoslab/karl",
+      "description": "Planner/architect/coder/reviewer/tester/deployer agents with rework loops and parallel execution",
+      "prompt": "Coordinate specialist agents: planner creates tasks, architect designs, coder implements, reviewer reviews, tester validates, deployer ships. Rework loop with up to 10 retries per ticket. Multi-instance parallel execution with git worktrees.",
+      "verification": "All tickets completed with reviewer and tester sign-off.",
+      "tags": ["multi-agent", "parallel", "rework", "worktrees"],
+      "related": ["gated-pipeline-loop", "agent-teams"]
+    },
+    {
+      "id": "three-body-autonomous",
+      "title": "Three-Body Autonomous Pipeline",
+      "category": "engineering",
+      "author": "a7t-ai",
+      "source": "https://github.com/a7t-ai/three-body-agent",
+      "sourceRepo": "a7t-ai/three-body-agent",
+      "description": "GitHub Actions pipeline: picks issues, implements, fixes CI, merges green PRs, syncs board",
+      "prompt": "5-workflow pipeline: Implementer picks issues from project board, implements changes. Fixer handles CI failures. Merger merges green PRs. Board Sync updates project board. Week Rollover manages sprint transitions. No human intervention required.",
+      "verification": "Issue implemented, CI passing, PR merged, board updated.",
+      "tags": ["github-actions", "autonomous", "pipeline", "issue-tracking"],
+      "related": ["github-agentic-workflow", "ralph-autonomous-loop"]
     }
   ]
 }

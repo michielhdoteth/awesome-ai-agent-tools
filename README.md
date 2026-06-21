@@ -1,5 +1,9 @@
 # Awesome AI Agent Tools
 
+<p align="center">
+  <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
+</p>
+
 > **The most comprehensive open-source library for AI agent skills, MCP servers, agent workflows, and subagents.** Install via `npx skills add`. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 <p align="center">
@@ -29,16 +33,25 @@ This is not just a curated list of links. It contains **actual installable compo
 
 ### What Makes This Different
 
-| Feature | Awesome AI Agent Tools | Other Awesome Lists |
-|---------|:----------------------:|:-------------------:|
-| **Installable skill files** | Yes | Links only |
-| **MCP server configs** | Yes | Links only |
-| **Agent workflows with prompts** | Yes | Links only |
-| **Subagents with model routing** | Yes | No |
-| **Catalogs with metadata** | Yes | No |
-| **CI validation** | Yes | No |
-| **Contributing templates** | Yes | No |
-| **Cross-platform compatibility** | 30+ platforms | Varies |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Feature</th>
+      <th align="center">Awesome AI Agent Tools</th>
+      <th align="center">Other Awesome Lists</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Installable skill files</td><td align="center">Yes</td><td align="center">Links only</td></tr>
+    <tr><td>MCP server configs</td><td align="center">Yes</td><td align="center">Links only</td></tr>
+    <tr><td>Agent workflows with prompts</td><td align="center">Yes</td><td align="center">Links only</td></tr>
+    <tr><td>Subagents with model routing</td><td align="center">Yes</td><td align="center">No</td></tr>
+    <tr><td>Catalogs with metadata</td><td align="center">Yes</td><td align="center">No</td></tr>
+    <tr><td>CI validation</td><td align="center">Yes</td><td align="center">No</td></tr>
+    <tr><td>Contributing templates</td><td align="center">Yes</td><td align="center">No</td></tr>
+    <tr><td>Cross-platform compatibility</td><td align="center">30+ platforms</td><td align="center">Varies</td></tr>
+  </tbody>
+</table>
 
 ---
 
@@ -82,72 +95,166 @@ Copy any loop file to your project, use the prompt text as your agent instructio
 
 ## Browse by Category
 
-| Library | What You Get | Browse |
-|---------|--------------|--------|
-| **Skills** | Installable SKILL.md files for specific tasks | [skills/](skills/) - [catalog.json](skills/catalog.json) |
-| **MCP Servers** | Server configs with install commands | [mcps/](mcps/) - [catalog.json](mcps/catalog.json) |
-| **Agent Loops** | Workflows with prompts and verification | [loops/](loops/) - [catalog.json](loops/catalog.json) |
-| **Subagents** | Specialized agents with model routing | [subagents/](subagents/) - [catalog.json](subagents/catalog.json) |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Library</th>
+      <th align="left">What You Get</th>
+      <th align="left">Browse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Skills</b></td><td>Installable SKILL.md files for specific tasks</td><td><a href="skills/">skills/</a> - <a href="skills/catalog.json">catalog.json</a></td></tr>
+    <tr><td><b>MCP Servers</b></td><td>Server configs with install commands</td><td><a href="mcps/">mcps/</a> - <a href="mcps/catalog.json">catalog.json</a></td></tr>
+    <tr><td><b>Agent Loops</b></td><td>Workflows with prompts and verification</td><td><a href="loops/">loops/</a> - <a href="loops/catalog.json">catalog.json</a></td></tr>
+    <tr><td><b>Subagents</b></td><td>Specialized agents with model routing</td><td><a href="subagents/">subagents/</a> - <a href="subagents/catalog.json">catalog.json</a></td></tr>
+    <tr><td><b>Hooks</b></td><td>Automation scripts for Claude Code events</td><td><a href="hooks/">hooks/</a></td></tr>
+    <tr><td><b>Commands</b></td><td>Slash commands for common workflows</td><td><a href="commands/">commands/</a></td></tr>
+  </tbody>
+</table>
 
 ---
 
 ## Skills (69 files across 9 categories)
 
-| Category | Count | Top Skills |
-|----------|------:|------------|
-| **Development** | 28 | test-driven-development, systematic-debugging, code-reviewer |
-| **Productivity** | 14 | brainstorming, writing-plans, verification-before-completion |
-| **Design** | 8 | figma-design-to-code, multimedia-generation, playwright-automation |
-| **Content** | 7 | cold-email, copywriting, humanizer |
-| **Testing** | 5 | webapp-testing, agent-browser |
-| **DevOps** | 5 | devops-infrastructure, using-git-worktrees |
-| **Marketing** | 3 | seo-audit, content-strategy |
-| **Data** | 3 | data-analysis, supabase-postgres-best-practices |
-| **Security** | 2 | mcp-security, security-guidance |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">Top Skills</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Development</b></td><td align="right">28</td><td>test-driven-development, systematic-debugging, code-reviewer</td></tr>
+    <tr><td><b>Productivity</b></td><td align="right">14</td><td>brainstorming, writing-plans, verification-before-completion</td></tr>
+    <tr><td><b>Design</b></td><td align="right">8</td><td>figma-design-to-code, multimedia-generation, playwright-automation</td></tr>
+    <tr><td><b>Content</b></td><td align="right">7</td><td>cold-email, copywriting, humanizer</td></tr>
+    <tr><td><b>Testing</b></td><td align="right">5</td><td>webapp-testing, agent-browser</td></tr>
+    <tr><td><b>DevOps</b></td><td align="right">5</td><td>devops-infrastructure, using-git-worktrees</td></tr>
+    <tr><td><b>Marketing</b></td><td align="right">3</td><td>seo-audit, content-strategy</td></tr>
+    <tr><td><b>Data</b></td><td align="right">3</td><td>data-analysis, supabase-postgres-best-practices</td></tr>
+    <tr><td><b>Security</b></td><td align="right">2</td><td>mcp-security, security-guidance</td></tr>
+  </tbody>
+</table>
 
 ---
 
 ## MCP Servers (66 servers across 16 categories)
 
-| Category | Count | Top Servers |
-|----------|------:|-------------|
-| **Official Reference** | 6 | Filesystem, Fetch, Memory, Sequential Thinking, Git, Brave Search |
-| **Developer Tools** | 8 | Context7 (53K stars), MarkItDown (119K stars), GitHub MCP |
-| **Browser/Web** | 7 | Playwright (31K stars), Firecrawl (29.7K stars), Chrome DevTools |
-| **Databases** | 8 | PostgreSQL, Neon, Supabase, MindsDB, Redis, SQLite |
-| **Cloud Platforms** | 5 | AWS, Cloudflare, DigitalOcean, Vercel |
-| **DevOps** | 5 | Docker, Kubernetes, Terraform, Pulumi |
-| **Agent Orchestration** | 3 | n8n (185K stars), Ruflo, Claude-Flow |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">Top Servers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Official Reference</b></td><td align="right">6</td><td>Filesystem, Fetch, Memory, Sequential Thinking, Git, Brave Search</td></tr>
+    <tr><td><b>Developer Tools</b></td><td align="right">8</td><td>Context7 (53K stars), MarkItDown (119K stars), GitHub MCP</td></tr>
+    <tr><td><b>Browser/Web</b></td><td align="right">7</td><td>Playwright (31K stars), Firecrawl (29.7K stars), Chrome DevTools</td></tr>
+    <tr><td><b>Databases</b></td><td align="right">8</td><td>PostgreSQL, Neon, Supabase, MindsDB, Redis, SQLite</td></tr>
+    <tr><td><b>Cloud Platforms</b></td><td align="right">5</td><td>AWS, Cloudflare, DigitalOcean, Vercel</td></tr>
+    <tr><td><b>DevOps</b></td><td align="right">5</td><td>Docker, Kubernetes, Terraform, Pulumi</td></tr>
+    <tr><td><b>Agent Orchestration</b></td><td align="right">3</td><td>n8n (185K stars), Ruflo, Claude-Flow</td></tr>
+  </tbody>
+</table>
 
 ---
 
-## Agent Loops (73 workflows across 7 categories)
+## Agent Loops (78 workflows across 7 categories)
 
-| Category | Count | Top Loops |
-|----------|------:|-----------|
-| **Engineering** | 41 | overnight-docs-sweep, alpha-loop, kitchenloop, autoloop |
-| **Evaluation** | 14 | core-agentic-workflow, quality-streak-loop, multi-llm-convergence-loop |
-| **Operations** | 9 | agent-teams, dynamic-workflows, developer-os-memory |
-| **Content** | 3 | content-refresh-loop, seo-geo-visibility-loop |
-| **Design** | 6 | ui-ux-score-loop, accessibility-repair-loop |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">Top Loops</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Engineering</b></td><td align="right">38</td><td>overnight-docs-sweep, alpha-loop, kitchenloop, ralph-autonomous-loop, symphony-linear-loop</td></tr>
+    <tr><td><b>Evaluation</b></td><td align="right">14</td><td>core-agentic-workflow, quality-streak-loop, multi-llm-convergence-loop</td></tr>
+    <tr><td><b>Operations</b></td><td align="right">8</td><td>agent-teams, dynamic-workflows, developer-os-memory</td></tr>
+    <tr><td><b>Content</b></td><td align="right">2</td><td>seo-geo-visibility-loop, product-update-podcast-loop</td></tr>
+    <tr><td><b>Design</b></td><td align="right">6</td><td>ui-ux-score-loop, accessibility-repair-loop</td></tr>
+    <tr><td><b>Meta</b></td><td align="right">4</td><td>autoloop, validate-patterns, loop-audit</td></tr>
+    <tr><td><b>Multi-Agent</b></td><td align="right">6</td><td>beacon-loop, agent-teams, dynamic-workflows</td></tr>
+  </tbody>
+</table>
 
 ---
 
 ## Subagents (20 specialized agents)
 
-| Category | Agents |
-|----------|--------|
-| **Development** | code-reviewer, test-runner, debugger, refactorer, performance-optimizer, frontend-developer, backend-developer, test-writer, api-designer, migration-specialist |
-| **Security** | security-auditor |
-| **Data** | data-analyst, database-expert |
-| **DevOps** | dependency-updater, devops-engineer |
-| **Content** | doc-writer |
-| **Productivity** | planner |
-| **Orchestration** | workflow-orchestrator |
-| **Research** | research-analyst |
-| **Design** | accessibility-expert |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="left">Agents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Development</b></td><td>code-reviewer, test-runner, debugger, refactorer, performance-optimizer, frontend-developer, backend-developer, test-writer, api-designer, migration-specialist</td></tr>
+    <tr><td><b>Security</b></td><td>security-auditor</td></tr>
+    <tr><td><b>Data</b></td><td>data-analyst, database-expert</td></tr>
+    <tr><td><b>DevOps</b></td><td>dependency-updater, devops-engineer</td></tr>
+    <tr><td><b>Content</b></td><td>doc-writer</td></tr>
+    <tr><td><b>Productivity</b></td><td>planner</td></tr>
+    <tr><td><b>Orchestration</b></td><td>workflow-orchestrator</td></tr>
+    <tr><td><b>Research</b></td><td>research-analyst</td></tr>
+    <tr><td><b>Design</b></td><td>accessibility-expert</td></tr>
+  </tbody>
+</table>
 
 Each subagent includes model routing (haiku/sonnet/opus) and tool permissions. Browse: [subagents/](subagents/) - [catalog.json](subagents/catalog.json)
+
+---
+
+## Hooks (20 production-ready scripts)
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">What They Do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Security</b></td><td align="right">3</td><td>Block dangerous commands, protect secrets, scan for leaked credentials</td></tr>
+    <tr><td><b>Automation</b></td><td align="right">4</td><td>Auto-stage files, auto-run tests, auto-fix lint, TypeScript checking</td></tr>
+    <tr><td><b>Quality</b></td><td align="right">3</td><td>Commit message validation, post-edit lint checks</td></tr>
+    <tr><td><b>Notifications</b></td><td align="right">2</td><td>Slack alerts, notification logging</td></tr>
+    <tr><td><b>Session</b></td><td align="right">5</td><td>Context loading, session state, compaction suggestions</td></tr>
+    <tr><td><b>Safety</b></td><td align="right">3</td><td>Pre-push checks, dev server blocking, smart command approval</td></tr>
+  </tbody>
+</table>
+
+Browse: [hooks/](hooks/) - [settings.json](hooks/settings.json) - [scripts/](hooks/scripts/)
+
+---
+
+## Commands (18 slash commands)
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="left">Commands</th>
+      <th align="left">What They Do</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Development</b></td><td>/review, /commit, /debug, /refactor, /ship-it, /fix-bug, /feature-dev, /hotfix</td><td>Full development workflow from review to deploy</td></tr>
+    <tr><td><b>Quality</b></td><td>/security-scan, /ci-check, /dependency-audit</td><td>Security audits, CI pipeline, dependency checks</td></tr>
+    <tr><td><b>Documentation</b></td><td>/update-docs, /generate-readme, /changelog, /api-docs</td><td>Docs generation and maintenance</td></tr>
+    <tr><td><b>Analysis</b></td><td>/profile, /trace, /dashboard, /brainstorm</td><td>Performance, execution tracing, project status, design exploration</td></tr>
+  </tbody>
+</table>
+
+Browse: [commands/](commands/)
 
 ---
 
@@ -155,17 +262,29 @@ Each subagent includes model routing (haiku/sonnet/opus) and tool permissions. B
 
 Awesome AI Agent Tools works with every major AI coding assistant:
 
-| Platform | Skills | MCPs | Loops | Subagents | How to Install |
-|----------|:------:|:----:|:-----:|:---------:|----------------|
-| **Claude Code** | Yes | Yes | Yes | Yes | Copy to `.claude/skills/` |
-| **OpenCode** | Yes | Yes | Yes | Yes | Copy to `.opencode/skills/` |
-| **Codex** | Yes | Yes | Yes | Yes | Copy to `.agents/skills/` |
-| **KiloCode** | Yes | Yes | Yes | Yes | Copy to `.kilo/skills/` |
-| **Cursor** | Yes | Yes | Yes | Yes | Copy to `.cursor/skills/` |
-| **Gemini CLI** | Yes | Yes | Yes | Yes | Copy to `.gemini/skills/` |
-| **Copilot** | Yes | Yes | Yes | Yes | Copy to `.github/skills/` |
-| **Aider** | Yes | Yes | Yes | Yes | Copy to `.aider/skills/` |
-| **Windsurf** | Yes | Yes | Yes | Yes | Copy to `.windsurf/skills/` |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Platform</th>
+      <th align="center">Skills</th>
+      <th align="center">MCPs</th>
+      <th align="center">Loops</th>
+      <th align="center">Subagents</th>
+      <th align="left">How to Install</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Claude Code</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.claude/skills/</code></td></tr>
+    <tr><td><b>OpenCode</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.opencode/skills/</code></td></tr>
+    <tr><td><b>Codex</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.agents/skills/</code></td></tr>
+    <tr><td><b>KiloCode</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.kilo/skills/</code></td></tr>
+    <tr><td><b>Cursor</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.cursor/skills/</code></td></tr>
+    <tr><td><b>Gemini CLI</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.gemini/skills/</code></td></tr>
+    <tr><td><b>Copilot</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.github/skills/</code></td></tr>
+    <tr><td><b>Aider</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.aider/skills/</code></td></tr>
+    <tr><td><b>Windsurf</b></td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td align="center">Yes</td><td>Copy to <code>.windsurf/skills/</code></td></tr>
+  </tbody>
+</table>
 
 All skills follow the [SKILL.md open standard](https://agentskills.io) adopted by ~40 clients.
 
@@ -173,14 +292,25 @@ All skills follow the [SKILL.md open standard](https://agentskills.io) adopted b
 
 ## Notable Skills from the Community
 
-| Collection | Stars | Installs | Description | URL |
-|------------|------:|---------:|-------------|-----|
-| **Superpowers** (obra) | 234K | 787K | Full agentic development methodology | [github.com/obra/superpowers](https://github.com/obra/superpowers) |
-| **UI-UX Pro Max** (nextlevelbuilder) | 79K | - | Design system and frontend patterns | [github.com/nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) |
-| **Awesome Claude Skills** (Composio) | 60K | - | Skills directory organized by use case | [github.com/ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) |
-| **Claude-Mem** (thedotmack) | 76K | - | Persistent memory system | [github.com/thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) |
-| **Vercel skills.sh** | - | 810K+ | 670K+ skills listed | [skills.sh](https://skills.sh) |
-| **OpenAI Skills** (openai) | 22K | - | Official Codex skills catalog | [github.com/openai/skills](https://github.com/openai/skills) |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Collection</th>
+      <th align="right">Stars</th>
+      <th align="right">Installs</th>
+      <th align="left">Description</th>
+      <th align="left">URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Superpowers</b> (obra)</td><td align="right">234K</td><td align="right">787K</td><td>Full agentic development methodology</td><td><a href="https://github.com/obra/superpowers">github.com/obra/superpowers</a></td></tr>
+    <tr><td><b>UI-UX Pro Max</b> (nextlevelbuilder)</td><td align="right">79K</td><td align="right">-</td><td>Design system and frontend patterns</td><td><a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill">github.com/nextlevelbuilder/ui-ux-pro-max-skill</a></td></tr>
+    <tr><td><b>Awesome Claude Skills</b> (Composio)</td><td align="right">60K</td><td align="right">-</td><td>Skills directory organized by use case</td><td><a href="https://github.com/ComposioHQ/awesome-claude-skills">github.com/ComposioHQ/awesome-claude-skills</a></td></tr>
+    <tr><td><b>Claude-Mem</b> (thedotmack)</td><td align="right">76K</td><td align="right">-</td><td>Persistent memory system</td><td><a href="https://github.com/thedotmack/claude-mem">github.com/thedotmack/claude-mem</a></td></tr>
+    <tr><td><b>Vercel skills.sh</b></td><td align="right">-</td><td align="right">810K+</td><td>670K+ skills listed</td><td><a href="https://skills.sh">skills.sh</a></td></tr>
+    <tr><td><b>OpenAI Skills</b> (openai)</td><td align="right">22K</td><td align="right">-</td><td>Official Codex skills catalog</td><td><a href="https://github.com/openai/skills">github.com/openai/skills</a></td></tr>
+  </tbody>
+</table>
 
 ---
 
@@ -250,18 +380,26 @@ All PRs are automatically validated by GitHub Actions.
 
 ## Related Projects
 
-| Project | Description |
-|---------|-------------|
-| [obra/superpowers](https://github.com/obra/superpowers) | Full agentic development methodology (234K stars) |
-| [openai/skills](https://github.com/openai/skills) | Official Codex skills catalog |
-| [anthropics/skills](https://github.com/anthropics/skills) | Official Anthropic skills |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | Cross-platform skills collection |
-| [Forward-Future/loop-library](https://github.com/Forward-Future/loop-library) | Agent workflow patterns |
-| [agentskills.io](https://agentskills.io) | The SKILL.md open standard |
-| [modelcontextprotocol.io](https://modelcontextprotocol.io) | Official MCP documentation |
-| [skills.sh](https://skills.sh) | Vercel skills marketplace |
-| [Glama.ai](https://glama.ai) | MCP server registry (34K+ servers) |
-| [Smithery.ai](https://smithery.ai) | MCP server registry (4.7K+ servers) |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Project</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="https://github.com/obra/superpowers">obra/superpowers</a></td><td>Full agentic development methodology (234K stars)</td></tr>
+    <tr><td><a href="https://github.com/openai/skills">openai/skills</a></td><td>Official Codex skills catalog</td></tr>
+    <tr><td><a href="https://github.com/anthropics/skills">anthropics/skills</a></td><td>Official Anthropic skills</td></tr>
+    <tr><td><a href="https://github.com/mattpocock/skills">mattpocock/skills</a></td><td>Cross-platform skills collection</td></tr>
+    <tr><td><a href="https://github.com/Forward-Future/loop-library">Forward-Future/loop-library</a></td><td>Agent workflow patterns</td></tr>
+    <tr><td><a href="https://agentskills.io">agentskills.io</a></td><td>The SKILL.md open standard</td></tr>
+    <tr><td><a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a></td><td>Official MCP documentation</td></tr>
+    <tr><td><a href="https://skills.sh">skills.sh</a></td><td>Vercel skills marketplace</td></tr>
+    <tr><td><a href="https://glama.ai">Glama.ai</a></td><td>MCP server registry (34K+ servers)</td></tr>
+    <tr><td><a href="https://smithery.ai">Smithery.ai</a></td><td>MCP server registry (4.7K+ servers)</td></tr>
+  </tbody>
+</table>
 
 ---
 

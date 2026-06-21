@@ -1,296 +1,261 @@
-# Hooks
+# Claude Code Hooks Collection
 
-Automated scripts that run at specific points in the development workflow.
+A comprehensive collection of 25+ production-ready hooks for Claude Code, sourced from top GitHub repositories.
 
-## What are Hooks?
+## Sources
 
-Hooks are deterministic automations that are guaranteed to run at specific trigger points. Unlike AI-generated responses which may vary, hooks execute the same code every time.
+- **karanb192/claude-code-hooks** (425 stars) - Security, automation, notifications
+- **rohitg00/awesome-claude-code-toolkit** (2,100+ stars) - 20 hook scripts
+- **aitmpl.com/hooks** - 56+ configurations
+- **hesreallyhim/awesome-claude-code** (47,000+ stars) - Curated list
 
-## Hook Types
+## Quick Start
 
-| Hook | When It Runs |
-|------|-------------|
-| **PreToolUse** | Before any tool call (can block execution) |
-| **PermissionRequest** | When permission dialog appears (can allow/deny) |
-| **PostToolUse** | After any tool call completes |
-| **UserPromptSubmit** | When user submits a prompt |
-| **Notification** | When Claude sends notifications |
-| **Stop** | When Claude finishes responding |
-| **SubagentStop** | When subagent tasks complete |
-| **PreCompact** | Before context compaction runs |
-| **SessionStart** | When session starts or resumes |
-| **SessionEnd** | When session ends |
+### 1. Copy scripts to your hooks directory
 
-## Getting Started
+```bash
+# Create hooks directory
+mkdir -p ~/.claude/hooks
 
-### Interactive Setup
+# Copy all scripts
+cp hooks/scripts/* ~/.claude/hooks/
+```
 
-Run the `/hooks` command in Claude Code for an interactive menu interface.
+### 2. Add configuration to .claude/settings.json
 
-### Configuration File
+Copy the contents of `hooks/settings.json` to your `.claude/settings.json` file.
 
-Create `.claude/settings.json`:
+### 3. Set environment variables (optional)
+
+```bash
+# For Slack notifications
+export CCH_SLA_WEBHOOK="https://hooks.slack.com/services/..."
+
+# For safety level (critical|high|strict)
+export SAFETY_LEVEL="high"
+```
+
+### 4. Restart Claude Code
+
+The hooks are now active.
+
+---
+
+## Hook Categories
+
+### Security Hooks
+
+| Hook | Type | Description |
+|------|------|-------------|
+| block-dangerous-commands | PreToolUse | Blocks rm -rf, fork bombs, curl\|sh |
+| protect-secrets | PreToolUse | Prevents reading/modifying sensitive files |
+| secret-scanner | PreToolUse | Scans for leaked secrets before file writes |
+| branch-guard | PreToolUse | Blocks changes on main/master |
+
+### Automation Hooks
+
+| Hook | Type | Description |
+|------|------|-------------|
+| auto-stage | PostToolUse | Git stages files after modifications |
+| auto-test | PostToolUse | Runs related tests after edits |
+| lint-fix | PostToolUse | Auto-fixes lint issues |
+| type-check | PostToolUse | TypeScript type checking |
+
+### Quality Hooks
+
+| Hook | Type | Description |
+|------|------|-------------|
+| commit-guard | PreToolUse | Validates conventional commit messages |
+| post-edit-check | PostToolUse | Linter checks after edits |
+| bundle-check | PostToolUse | Bundle size monitoring |
+
+### Notification Hooks
+
+| Hook | Type | Description |
+|------|------|-------------|
+| notify-permission | Notification | Slack alerts when Claude needs input |
+| notification-log | Notification | Logs notifications for review |
+
+### Session Management Hooks
+
+| Hook | Type | Description |
+|------|------|-------------|
+| session-start | SessionStart | Detects package manager, loads context |
+| session-end | SessionEnd | Saves session state |
+| context-loader | SessionStart | Loads project context |
+| pre-compact | PreCompact | Saves context before compaction |
+| suggest-compact | PostToolUse | Tracks edit count, suggests compaction |
+
+### Safety Hooks
+
+| Hook | Type | Description |
+|------|------|-------------|
+| pre-push-check | PreToolUse | Warns before git push |
+| block-dev-server | PreToolUse | Blocks dev server outside tmux |
+| smart-approve | PreToolUse | Decomposes compound commands |
+
+### Utility Hooks
+
+| Hook | Type | Description |
+|------|------|-------------|
+| event-logger | All events | Logs all hook events for debugging |
+| stop-check | Stop | Reminds to run tests on session end |
+| learning-log | SessionEnd | Saves learnings to daily log |
+
+---
+
+## Hook Event Types
+
+| Event | When It Fires | Input Data |
+|-------|---------------|------------|
+| PreToolUse | Before tool execution | tool_name, tool_input, session_id, cwd |
+| PostToolUse | After tool execution | tool_name, tool_input, tool_output, session_id |
+| Notification | Claude needs attention | notification_type, message, session_id |
+| Stop | Session ending | session_id, cwd |
+| SessionStart | Session beginning | session_id, cwd |
+| SessionEnd | Session closing | session_id, cwd |
+| PreCompact | Before context compaction | session_id, cwd |
+| UserPromptSubmit | After user submits prompt | prompt, session_id |
+
+---
+
+## Safety Levels
+
+| Level | What's Blocked | Use Case |
+|-------|---------------|----------|
+| critical | Catastrophic only (rm -rf ~, fork bombs) | Maximum flexibility |
+| high | + risky (force push, secrets exposure) | Recommended |
+| strict | + cautionary (any force push, sudo rm) | Maximum safety |
+
+---
+
+## Configuration Reference
+
+### Block Dangerous Commands
 
 ```json
 {
-  "hooks": [
-    {
-      "matcher": "Edit|Write",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "prettier --write \"$CLAUDE_FILE_PATHS\""
-        }
-      ]
-    }
-  ]
+  "hooks": {
+    "PreToolUse": [{
+      "matcher": "Bash",
+      "hooks": [{
+        "type": "command",
+        "command": "node ~/.claude/hooks/block-dangerous-commands.js"
+      }]
+    }]
+  }
 }
 ```
 
-### Matcher Patterns
+### Protect Secrets
 
 ```json
-// Exact match
-"matcher": "Edit"
-
-// Multiple tools
-"matcher": "Edit|Write"
-
-// Regex pattern
-"matcher": "Notebook.*"
+{
+  "hooks": {
+    "PreToolUse": [{
+      "matcher": "Read|Edit|Write|Bash",
+      "hooks": [{
+        "type": "command",
+        "command": "node ~/.claude/hooks/protect-secrets.js"
+      }]
+    }]
+  }
+}
 ```
+
+### Auto Stage
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [{
+      "matcher": "Edit|Write",
+      "hooks": [{
+        "type": "command",
+        "command": "node ~/.claude/hooks/auto-stage.js"
+      }]
+    }]
+  }
+}
+```
+
+### Slack Notifications
+
+```json
+{
+  "hooks": {
+    "Notification": [{
+      "matcher": "permission_prompt|idle_prompt",
+      "hooks": [{
+        "type": "command",
+        "command": "node ~/.claude/hooks/notify-permission.js"
+      }]
+    }]
+  }
+}
+```
+
+---
 
 ## Environment Variables
 
-Hooks receive these variables:
+| Variable | Description | Default |
+|----------|-------------|---------|
+| SAFETY_LEVEL | Security level (critical\|high\|strict) | high |
+| CCH_SLA_WEBHOOK | Slack webhook URL | (none) |
+| SMART_APPROVE_VERBOSE | Enable verbose logging | false |
 
-- `$CLAUDE_FILE_PATHS`: Files being edited
-- `$CLAUDE_TOOL_NAME`: Current tool name
-- `$CLAUDE_SESSION_ID`: Session identifier
+---
 
-## Example Hooks
+## Testing Hooks
 
-### Auto-format on Edit
-
-```json
-{
-  "matcher": "Edit|Write",
-  "hooks": [
-    {
-      "type": "command",
-      "command": "prettier --write \"$CLAUDE_FILE_PATHS\""
-    }
-  ]
-}
-```
-
-### TypeScript Validation
-
-```json
-{
-  "matcher": "Edit",
-  "hooks": [
-    {
-      "type": "command",
-      "command": "if [[ \"$CLAUDE_FILE_PATHS\" =~ \\.(ts|tsx)$ ]]; then npx tsc --noEmit --skipLibCheck \"$CLAUDE_FILE_PATHS\" || echo 'TypeScript errors detected'; fi"
-    }
-  ]
-}
-```
-
-### Date Context Generator
-
-```python
-#!/usr/bin/env python3
-"""
-Generate date context for Claude Code.
-Outputs: today, tomorrow, week start/end dates
-"""
-import json
-import sys
-from datetime import datetime, timedelta
-
-today = datetime.now()
-tomorrow = today + timedelta(days=1)
-week_start = today - timedelta(days=today.weekday())
-week_end = week_start + timedelta(days=6)
-
-print(json.dumps({
-    "today": today.strftime("%Y-%m-%d"),
-    "tomorrow": tomorrow.strftime("%Y-%m-%d"),
-    "week_start": week_start.strftime("%Y-%m-%d"),
-    "week_end": week_end.strftime("%Y-%m-%d")
-}))
-```
-
-### Markdown Formatter Hook
-
-```python
-#!/usr/bin/env python3
-"""
-Markdown formatter for Claude Code output.
-Fixes missing language tags and spacing issues.
-"""
-import json
-import sys
-import re
-
-def detect_language(code):
-    """Best-effort language detection from code content."""
-    s = code.strip()
-    # Python detection
-    if re.search(r'^\s*def\s+\w+\s*\(', s, re.M) or \
-       re.search(r'^\s*(import|from)\s+\w+', s, re.M):
-        return 'python'
-    # JavaScript detection
-    if re.search(r'\b(function\s+\w+\s*\(|const\s+\w+\s*=)', s) or \
-       re.search(r'=>|console\.(log|error)', s):
-        return 'javascript'
-    # Bash detection
-    if re.search(r'^#!.*\b(bash|sh)\b', s, re.M) or \
-       re.search(r'\b(if|then|fi|for|in|do|done)\b', s):
-        return 'bash'
-    # SQL detection
-    if re.search(r'\b(SELECT|INSERT|UPDATE|DELETE|CREATE)\s+', s, re.I):
-        return 'sql'
-    return 'text'
-
-def format_markdown(content):
-    """Format markdown content with language detection."""
-    def add_lang_to_fence(match):
-        indent, info, body, closing = match.groups()
-        if not info.strip():
-            lang = detect_language(body)
-            return f"{indent}```{lang}\n{body}{closing}\n"
-        return match.group(0)
-
-    fence_pattern = r'(?ms)^([ \t]{0,3})```([^\n]*)\n(.*?)\n(\1 ```)\s*$'
-    content = re.sub(fence_pattern, add_lang_to_fence, content)
-    content = re.sub(r'\n {3,}', '\n\n', content)
-    return content.rstrip() + '\n'
-
-try:
-    input_data = json.load(sys.stdin)
-    file_path = input_data.get('tool_input', {}).get('filePath', '')
-    if file_path.endswith(('.md', '.mdx')) and os.path.exists(file_path):
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-        formatted = format_markdown(content)
-        if formatted != content:
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(formatted)
-            print(f"Fixed markdown formatting in {file_path}")
-except Exception as e:
-    print(f"Error formatting markdown: {e}", file=sys.stderr)
-    sys.exit(1)
-```
-
-### Security Scan Hook
+### Test block-dangerous-commands
 
 ```bash
-#!/bin/bash
-# .claude/hooks/security-scan.sh
-
-echo "Running security scan..."
-
-# Check for hardcoded secrets
-if grep -rE "(api_key|apikey|secret|password)" --include="*.py" --include="*.js" . 2>/dev/null | grep -v ".env.example" | grep -v "test" | grep -v "# mock" > /dev/null; then
-    echo "ERROR: Potential secrets found in code"
-    exit 1
-fi
-
-echo "Security scan passed"
+echo '{"tool_name":"Bash","tool_input":{"command":"rm -rf ~"}}' | node ~/.claude/hooks/block-dangerous-commands.js
 ```
 
-## Hook Directory Structure
+### Test protect-secrets
 
-```
-.claude/
-├── hooks/
-│   ├── pre-format.sh
-│   ├── post-validate.py
-│   └── date-context.py
-└── settings.json
+```bash
+echo '{"tool_name":"Read","tool_input":{"file_path":"~/.env"}}' | node ~/.claude/hooks/protect-secrets.js
 ```
 
-## Production-Ready Hooks
+### Test auto-stage
 
-### Security Gate (PreToolUse)
-
-Block destructive commands before they execute. Uses exit code 2 to actually block (exit 1 only warns).
-
-```json
-{
-  "matcher": "Bash",
-  "hooks": [
-    {
-      "type": "command",
-      "command": "bash -c 'CMD=\"$CLAUDE_TOOL_INPUT_COMMAND\"; if echo \"$CMD\" | grep -qE \"rm -rf|DROP TABLE|git push --force|git reset --hard\"; then echo \"BLOCKED: Destructive command detected\" >&2; exit 2; fi; exit 0'"
-    }
-  ]
-}
+```bash
+echo '{"tool_name":"Edit","tool_input":{"file_path":"/path/to/file.js"}}' | node ~/.claude/hooks/auto-stage.js
 ```
 
-### SessionStart Context Loader
+### View hook logs
 
-Load project context, recent git history, and environment state when a session starts.
-
-```json
-{
-  "matcher": "SessionStart",
-  "hooks": [
-    {
-      "type": "command",
-      "command": "echo \"Last 5 commits:\"; git log --oneline -5; echo \"\\nBranch:\"; git branch --show-current; echo \"\\nChanged files:\"; git diff --name-only HEAD~3 2>/dev/null | head -20"
-    }
-  ]
-}
+```bash
+cat ~/.claude/hooks-logs/$(date +%Y-%m-%d).jsonl | jq
 ```
 
-### PreCompact Backup
+---
 
-Back up conversation transcript before context compaction runs.
+## Contributing
 
-```json
-{
-  "matcher": "PreCompact",
-  "hooks": [
-    {
-      "type": "command",
-      "command": "cp \"$CLAUDE_SESSION_FILE\" \"$CLAUDE_SESSION_FILE.bak.$(date +%s)\" 2>/dev/null || true"
-    }
-  ]
-}
-```
+To add a new hook:
 
-### Stop Hook (Task Enforcement)
+1. Create the script in `hooks/scripts/`
+2. Add the hook configuration to `hooks/settings.json`
+3. Update this README with documentation
+4. Test the hook with the testing commands above
 
-Block completion if tasks aren't done. Forces agent to continue working.
+---
 
-```json
-{
-  "matcher": "Stop",
-  "hooks": [
-    {
-      "type": "command",
-      "command": "bash -c 'if [ -f .claude/todos.json ] && grep -q \"\\\"pending\\\"\" .claude/todos.json; then echo \"Tasks still pending - continue working\" >&2; exit 2; fi; exit 0'"
-    }
-  ]
-}
-```
+## License
 
-## Best Practices
+MIT - See individual hook source files for specific licenses.
 
-1. **Keep hooks fast** - Long-running hooks slow down workflow
-2. **Use exit 2 to block** - Exit 1 only warns, exit 2 actually blocks execution
-3. **Fail gracefully** - Allow override for important commits
-4. **Use proper shebangs** - Cross-platform compatibility
-5. **Handle errors** - Provide meaningful error messages
-6. **Document hooks** - Explain what each hook does
-7. **Use SessionStart** for project initialization context
-8. **Test hooks** - Verify they work before team adoption
+---
 
-## Resources
+## References
 
-- [Official Hooks Guide](https://docs.anthropic.com/en/docs/claude-code/hooks-guide)
-- [Git Hooks Documentation](https://git-scm.com/docs/githooks)
+- [Official Claude Code Hooks Documentation](https://docs.anthropic.com/en/docs/claude-code/hooks)
+- [karanb192/claude-code-hooks](https://github.com/karanb192/claude-code-hooks)
+- [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit)
+- [aitmpl.com/hooks](https://www.aitmpl.com/hooks/)
+- [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
