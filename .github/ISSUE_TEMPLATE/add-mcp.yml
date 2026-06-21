@@ -1,0 +1,148 @@
+name: Add an MCP Server
+description: Suggest a new Model Context Protocol server
+title: "[MCP] "
+labels: ["mcp", "new-content"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an MCP server! MCP (Model Context Protocol) servers connect AI assistants to external tools and data sources.
+
+        Before submitting, please check:
+        - [ ] The server isn't already listed in [mcps/](../../mcps/)
+        - [ ] The server has a working GitHub repository
+        - [ ] The server has 100+ stars (exceptions for exceptional quality)
+        - [ ] The server has been updated in the last 6 months
+
+  - type: input
+    id: mcp-name
+    attributes:
+      label: MCP Name
+      description: The official name of the MCP server
+      placeholder: Context7
+    validations:
+      required: true
+
+  - type: input
+    id: mcp-github
+    attributes:
+      label: GitHub URL
+      description: Link to the server's GitHub repository
+      placeholder: https://github.com/org/repo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: mcp-category
+    attributes:
+      label: Category
+      description: What type of MCP server is this?
+      options:
+        - General Purpose (broad capabilities)
+        - Development (code, debugging, testing)
+        - Database (SQL, NoSQL, data access)
+        - Search (web search, documentation)
+        - Project Management (issues, boards, tracking)
+        - Communication (chat, email, notifications)
+        - Cloud (AWS, GCP, Azure)
+        - Security (auth, secrets, vulnerabilities)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: mcp-description
+    attributes:
+      label: Description
+      description: |
+        What does this MCP server do? Be specific about:
+        - What problem it solves
+        - What tools/resources it provides
+        - What makes it unique
+      placeholder: |
+        This MCP server provides access to...
+    validations:
+      required: true
+
+  - type: input
+    id: mcp-stars
+    attributes:
+      label: GitHub Stars
+      description: Approximate star count (as of submission)
+      placeholder: "1234"
+    validations:
+      required: false
+
+  - type: textarea
+    id: mcp-install
+    attributes:
+      label: Install Command
+      description: |
+        How do you install/run this MCP server? Include the full command.
+      placeholder: |
+        npx -y @package/server-name
+      render: bash
+    validations:
+      required: true
+
+  - type: textarea
+    id: mcp-config
+    attributes:
+      label: Configuration Example
+      description: |
+        Provide a JSON configuration example for Claude Code / Cursor / other AI assistants.
+      placeholder: |
+        {
+          "mcpServers": {
+            "server-name": {
+              "command": "npx",
+              "args": ["-y", "@package/server-name"],
+              "env": {
+                "API_KEY": "your-key"
+              }
+            }
+          }
+        }
+      render: json
+    validations:
+      required: false
+
+  - type: textarea
+    id: mcp-use-cases
+    attributes:
+      label: Use Cases
+      description: |
+        List 2-3 concrete use cases with examples.
+      placeholder: |
+        1. Query documentation in real-time while coding
+        2. Search across multiple repositories
+        3. Automate code reviews with AI
+    validations:
+      required: false
+
+  - type: textarea
+    id: mcp-auth
+    attributes:
+      label: Authentication Requirements
+      description: |
+        Does this server require API keys, tokens, or other auth? If so, what's needed?
+      placeholder: |
+        Requires a free API key from...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: mcp-checklist
+    attributes:
+      label: Contributor Checklist
+      description: Confirm you've completed these steps
+      options:
+        - label: I have read the [contributing guide](../../CONTRIBUTING.md)
+          required: true
+        - label: This MCP server has a working GitHub repository
+          required: true
+        - label: I have verified the server works with Claude Code
+          required: false
+        - label: I am willing to help maintain this entry
+          required: false

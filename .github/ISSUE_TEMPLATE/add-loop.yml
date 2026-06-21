@@ -1,0 +1,114 @@
+name: Add a Loop
+description: Suggest a new repeatable agent workflow
+title: "[Loop] "
+labels: ["loop", "new-content"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a loop! Loops are repeatable agent workflows with built-in feedback mechanisms. Unlike one-shot prompts, loops let agents learn from results and iterate.
+
+        Before submitting, please check:
+        - [ ] The loop doesn't already exist in [loops/](../../loops/)
+        - [ ] The loop follows the format in [CONTRIBUTING.md](../../CONTRIBUTING.md#adding-a-loop)
+
+  - type: input
+    id: loop-name
+    attributes:
+      label: Loop Name
+      description: A descriptive name for the loop
+      placeholder: The Overnight Docs Sweep
+    validations:
+      required: true
+
+  - type: input
+    id: loop-source
+    attributes:
+      label: Source URL
+      description: Link to the loop source (GitHub repo, blog post, etc.)
+      placeholder: https://github.com/user/repo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: loop-category
+    attributes:
+      label: Category
+      description: What domain does this loop cover?
+      options:
+        - Engineering (code quality, testing, performance, cleanup)
+        - Content (writing, documentation, marketing)
+        - Evaluation (analysis, benchmarking, assessment)
+        - Operations (deployment, monitoring, incident response)
+        - Design (UI/UX, prototyping, iteration)
+    validations:
+      required: true
+
+  - type: textarea
+    id: loop-prompt
+    attributes:
+      label: Full Prompt / Workflow
+      description: |
+        Provide the complete loop prompt or workflow. This is the core of the loop - the instructions the agent follows.
+      placeholder: |
+        Find the slowest page, make one focused improvement, and measure it again. Keep the change only if it helps. Repeat until every page meets the target or another pass stops producing a meaningful improvement.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: loop-verification
+    attributes:
+      label: Verification Criteria
+      description: |
+        How does the agent know whether the latest attempt worked? What metrics or checks define success?
+      placeholder: |
+        - Page load time < 2 seconds
+        - Lighthouse score > 90
+        - No regression in other metrics
+    validations:
+      required: true
+
+  - type: textarea
+    id: loop-exit
+    attributes:
+      label: Exit Criteria
+      description: |
+        When should the loop stop? Include:
+        - Success condition
+        - Failure condition
+        - Escalation trigger
+      placeholder: |
+        Stop when:
+        - All pages meet the performance threshold
+        - 3 consecutive iterations show no improvement
+        - A critical error is detected
+    validations:
+      required: false
+
+  - type: textarea
+    id: loop-description
+    attributes:
+      label: Description
+      description: |
+        What does this loop accomplish? Why is it useful?
+      placeholder: |
+        This loop automates overnight documentation maintenance by...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: loop-checklist
+    attributes:
+      label: Contributor Checklist
+      description: Confirm you've completed these steps
+      options:
+        - label: I have read the [contributing guide](../../CONTRIBUTING.md)
+          required: true
+        - label: This loop has clear verification criteria
+          required: true
+        - label: I have tested this loop in my own workflow
+          required: false
+        - label: I am willing to maintain this loop
+          required: false
