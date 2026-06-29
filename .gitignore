@@ -15,6 +15,10 @@ dist/
 build/
 .cache/
 
+# Site preview build artifacts
+site-preview/node_modules/
+site-preview/dist/
+
 # OS
 .DS_Store
 Thumbs.db
@@ -22,8 +26,20 @@ desktop.ini
 
 # Editor
 .vscode/settings.json
+.vscode/launch.json
 .idea/
 
 # Research (internal notes)
 research/
 .iter/
+
+# Archives (don't commit zips)
+*.zip
+
+# Logs
+*.log
+npm-debug.log*
+
+# Runtime
+*.pid
+*.seed
