@@ -95,7 +95,7 @@ cat loops/catalog.json | jq '.loops | length'
 
 ### Option 3: Use the browse site
 
-Visit the interactive site to search, filter, and explore all components.
+Visit the interactive site to search, filter, and explore all components: **https://awesome-ai-agent-tools.vercel.app**
 
 ### Option 4: Let your agent contribute
 
