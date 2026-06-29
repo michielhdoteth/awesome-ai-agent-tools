@@ -1,0 +1,6 @@
+{
+  "name": "Awesome AI Agent Tools",
+  "description": "An interactive directory and playground for the curated awesome AI agent tools repository, featuring agent loop simulators, MCP desktop config generators, skill creators, and an AI recommender.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

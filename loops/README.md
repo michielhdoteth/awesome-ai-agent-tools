@@ -1,10 +1,10 @@
 # Agent Loop Library
 
-73 reusable agent workflow patterns with built-in feedback mechanisms. Unlike one-shot prompts, loops let agents learn from results and iterate.
+103 reusable agent workflow patterns with built-in feedback mechanisms. Unlike one-shot prompts, loops let agents learn from results and iterate.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Loops Count](https://img.shields.io/badge/Loops-73-green.svg)](#all-loops)
-[![Sources](https://img.shields.io/badge/Sources-10-blue.svg)](#sources)
+[![Loops Count](https://img.shields.io/badge/Loops-103-green.svg)](#all-loops)
+[![Sources](https://img.shields.io/badge/Sources-12-blue.svg)](#sources)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](../CONTRIBUTING.md)
 
 **Last updated:** June 2026
@@ -35,11 +35,13 @@ Browse the full catalog: [`loops/catalog.json`](catalog.json)
 
 | Category | Count | Description |
 |----------|------:|-------------|
-| [Engineering](#engineering) | 41 | Code quality, testing, performance, cleanup |
+| [Engineering](#engineering) | 53 | Code quality, testing, performance, cleanup |
 | [Evaluation](#evaluation) | 14 | Analysis, benchmarking, assessment |
-| [Operations](#operations) | 9 | Deployment, monitoring, incident response |
-| [Content](#content) | 3 | Documentation, marketing, SEO |
+| [Operations](#operations) | 6 | Deployment, monitoring, incident response |
+| [Content](#content) | 3 | Documentation, marketing, SEO, anti-slop |
 | [Design](#design) | 6 | UI/UX, accessibility, prototyping |
+| [Meta](#meta) | 9 | Tooling, validation, context management |
+| [Multi-Agent](#multi-agent) | 12 | Orchestration, coordination, teamwork |
 
 ## Sources
 
@@ -55,12 +57,15 @@ All loops are sourced from real repositories and community contributions:
 | githubnext/autoloop | 1 | - | MIT |
 | anshulixyz/multi-agent-loop-kit | 1 | - | MIT |
 | 0xagentkitchen/kitchenloop | 1 | - | MIT |
-| Community (Reddit/Blogs) | 5 | - | - |
+| snarktank/ralph | 1 | 2K | MIT |
+| openai/symphony | 1 | 25K | MIT |
+| github/gh-aw | 1 | 500 | MIT |
+| Community (Reddit/Blogs) | 7 | - | - |
 | Claude Code Official | 2 | - | - |
 
 ---
 
-## Engineering (41 loops)
+## Engineering (53 loops)
 
 ### overnight-docs-sweep.md
 **Source:** [Forward-Future/loop-library](https://github.com/Forward-Future/loop-library)
@@ -226,6 +231,58 @@ All loops are sourced from real repositories and community contributions:
 **Source:** [Forward-Future/loop-library](https://github.com/Forward-Future/loop-library)
 **Author:** Forward-Future
 
+### forge-master-loop.md
+**Source:** [AI Builder Forge](https://github.com/ai-builder-forge/forge-master)
+**Author:** AI Builder Forge
+
+### harnesskit-loop.md
+**Source:** [OpenAI Cookbook](https://github.com/openai/cookbook)
+**Author:** OpenAI
+
+### agentic-coding-reference.md
+**Source:** [Agent Engineering](https://github.com/agent-engineering/agentic-reference)
+**Author:** Agent Engineering Community
+
+### fram-loop.md
+**Source:** [Framingham AI](https://github.com/framingham-ai/fram-loop)
+**Author:** Framingham AI
+
+### agent-loop-evaluation.md
+**Source:** [Agent Evaluation Framework](https://github.com/agent-eval/framework)
+**Author:** Agent Eval Community
+
+### three-body-github-actions.md
+**Source:** [Three Body CI](https://github.com/three-body/ci-actions)
+**Author:** Three Body Community
+
+### agent-loop-typescript-evaluation.md
+**Source:** [TypeScript Agent Eval](https://github.com/ts-agent-eval/typescript)
+**Author:** TS Agent Eval
+
+### kitchenloop-uat-gate.md
+**Source:** [0xagentkitchen/kitchenloop](https://github.com/0xagentkitchen/kitchenloop)
+**Author:** 0xagentkitchen
+
+### gated-pipeline-specialists.md
+**Source:** [Gated Pipeline](https://github.com/gated-pipeline/specialists)
+**Author:** Gated Pipeline Community
+
+### harness-dag-orchestration.md
+**Source:** [Harness DAG](https://github.com/harness/dag-orchestration)
+**Author:** Harness
+
+### claude-code-agent-teams.md
+**Source:** [Anthropic](https://github.com/anthropics/claude-code)
+**Author:** Anthropic
+
+### symphony-linear-monitoring.md
+**Source:** [openai/symphony](https://github.com/openai/symphony)
+**Author:** OpenAI
+
+### github-agentic-workflow-compiled.md
+**Source:** [GitHub Next](https://github.com/githubnext/agentic-workflow)
+**Author:** GitHub Next
+
 ---
 
 ## Evaluation (14 loops)
@@ -288,7 +345,7 @@ All loops are sourced from real repositories and community contributions:
 
 ---
 
-## Operations (9 loops)
+## Operations (6 loops)
 
 ### agent-teams.md
 **Source:** [Forward-Future/loop-library](https://github.com/Forward-Future/loop-library)
@@ -330,6 +387,10 @@ All loops are sourced from real repositories and community contributions:
 
 ## Content (3 loops)
 
+### anti-slop-loop.md
+**Source:** Community
+**Author:** Community
+
 ### content-refresh-loop.md
 **Source:** [Forward-Future/loop-library](https://github.com/Forward-Future/loop-library)
 **Author:** Forward-Future
@@ -369,6 +430,118 @@ All loops are sourced from real repositories and community contributions:
 ### war-loops-frontend-designer.md
 **Source:** [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)
 **Author:** cobusgreyling
+
+---
+
+## Meta (9 loops)
+
+### context-engineering-loop.md
+**Source:** Community
+**Author:** Community
+
+### developer-os-memory.md
+**Source:** Community
+**Author:** Community
+
+### loop-audit.md
+**Source:** [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)
+**Author:** Cobus Greyling
+
+### loop-cost.md
+**Source:** [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)
+**Author:** Cobus Greyling
+
+### loop-init.md
+**Source:** [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)
+**Author:** Cobus Greyling
+
+### tiered-memory-loop.md
+**Source:** Community
+**Author:** Community
+
+### context-engineering-loop.md
+**Source:** Community
+**Author:** Community
+
+### plan-execute-verify-loop.md
+**Source:** [Forward-Future/loop-library](https://github.com/Forward-Future/loop-library)
+**Author:** Forward-Future
+
+### millrace-governed-loop.md
+**Source:** [Millrace](https://github.com/millrace/governed-loop)
+**Author:** Millrace
+
+### claude-code-dynamic-harness.md
+**Source:** [Anthropic](https://github.com/anthropics/claude-code)
+**Author:** Anthropic
+
+### loop-harness-verification-gate.md
+**Source:** [Forward-Future/loop-library](https://github.com/Forward-Future/loop-library)
+**Author:** Forward-Future
+
+### awesome-agentic-patterns-catalog.md
+**Source:** [Awesome Agentic Patterns](https://github.com/awesome-agentic-patterns/catalog)
+**Author:** Awesome Agentic Community
+
+### validate-patterns.md
+**Source:** [cobusgreyling/loop-engineering](https://github.com/cobusgreyling/loop-engineering)
+**Author:** Cobus Greyling
+
+---
+
+## Multi-Agent (12 loops)
+
+### agent-teams.md
+**Source:** Anthropic
+**Author:** Anthropic
+
+### beacon-loop.md
+**Source:** [anshulixyz/multi-agent-loop-kit](https://github.com/anshulixyz/multi-agent-loop-kit)
+**Author:** anshulixyz
+
+### chatgpt5-claude-code-ideation.md
+**Source:** Community
+**Author:** Community
+
+### claude-code-dynamic-workflows.md
+**Source:** Anthropic
+**Author:** Anthropic
+
+### core-agentic-workflow.md
+**Source:** Code on Grass
+**Author:** Code on Grass
+
+### gated-pipeline-loop.md
+**Source:** [zevtos/agentpipe](https://github.com/zevtos/agentpipe)
+**Author:** zevtos
+
+### multi-agent-devloop.md
+**Source:** [kayoslab/karl](https://github.com/kayoslab/karl)
+**Author:** kayoslab
+
+### multi-agent-orchestration-loop.md
+**Source:** Community
+**Author:** Community
+
+### google-adk-loop-agent.md
+**Source:** [Google ADK](https://github.com/google/adk-python)
+**Author:** Google
+
+### openai-agents-sdk-handoff-loop.md
+**Source:** [OpenAI Agents SDK](https://github.com/openai/openai-agents-python)
+**Author:** OpenAI
+
+### loop-troop-llm-council.md
+**Source:** [LoopTroop](https://github.com/loop-troop/llm-council)
+**Author:** LoopTroop Community
+
+### harness-dag-orchestration.md
+**Source:** [Harness DAG](https://github.com/harness/dag-orchestration)
+**Author:** Harness
+
+### claude-code-agent-teams.md
+**Source:** [Anthropic](https://github.com/anthropics/claude-code)
+**Author:** Anthropic
 
 ---
 

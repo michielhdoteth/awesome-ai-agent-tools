@@ -1,362 +1,111 @@
 # Contributing to Awesome AI Agent Tools
 
-Thanks for contributing! Awesome AI Agent Tools is the most comprehensive open-source library for AI agent skills, MCP servers, and agent workflows. This guide covers how to add resources, fix issues, and submit PRs.
+Thank you for contributing! This directory grows stronger with every entry. You can contribute manually or let your AI agent do it automatically.
 
-> **First-time contributor?** Look for issues labeled `good-first-issue` or `help-wanted` in the [Issues](https://github.com/michielhdoteth/awesome-ai-agent-tools/issues) tab.
+## Quick Start (Agent-Automated)
 
----
+The fastest way to contribute: give your AI agent the [contribution skill](contribute/SKILL.md).
 
-## Table of Contents
+```bash
+# Claude Code
+"Use the contribute skill to add [item name] to the [category] catalog"
 
-- [Quick Start](#quick-start)
-- [What We Accept](#what-we-accept)
-- [Adding a Skill](#adding-a-skill)
-- [Adding an MCP Server](#adding-an-mcp-server)
-- [Adding a Loop](#adding-a-loop)
-- [Updating Catalog Files](#updating-catalog-files)
-- [PR Guidelines](#pr-guidelines)
-- [Code of Conduct](#code-of-conduct)
-- [Getting Featured](#getting-featured)
-
----
-
-## Quick Start
-
-1. **Fork** the repo on GitHub
-2. **Clone** your fork locally:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/awesome-ai-agent-tools.git
-   cd awesome-ai-agent-tools
-   ```
-3. **Create a branch** for your contribution:
-   ```bash
-   git checkout -b feat/add-my-skill
-   ```
-4. **Make your changes** (see templates below)
-5. **Validate** your changes locally:
-   ```bash
-   # If you touched catalog.json files
-   python -m json.tool mcps/catalog.json > /dev/null && echo "Valid JSON"
-   ```
-6. **Commit** with a descriptive message:
-   ```bash
-   git commit -m "Add skill: my-skill-name - brief description"
-   ```
-7. **Push** and open a PR
-
----
-
-## What We Accept
-
-### Skills
-Reusable instruction files (SKILL.md format) that teach AI agents how to perform specific tasks. Must follow the [SKILL.md open standard](https://agentskills.io).
-
-### MCP Servers
-Model Context Protocol server configurations with setup instructions, use cases, and security considerations.
-
-### Agent Loops
-Repeatable AI agent workflows with feedback mechanisms. Must include:
-- Prompt text (exact instructions for the agent)
-- Verification criteria
-- Source attribution
-
-### All Contributions Must:
-- Be real, working resources (no fabricated content)
-- Include proper attribution and source URLs
-- Follow the existing file format
-- Work across multiple AI coding assistants (not vendor-locked)
-
----
-
-## Adding a Skill
-
-### File Structure
-
-```
-skills/your-skill-name/
-  SKILL.md              # Required: skill instructions
-  references/           # Optional: additional docs
-  scripts/              # Optional: helper scripts
+# OpenCode
+"Load the contribute skill and add [item] to the catalog"
 ```
 
-### SKILL.md Template
+Your agent will fork the repo, add the entry, validate JSON, and submit a PR.
 
-```markdown
----
-name: your-skill-name
-description: >
-  Brief description of what this skill does and when to use it.
-  This helps agents decide when to load the skill.
----
+## Manual Contributions
 
-# Your Skill Name
+### What We Accept
 
-## Purpose
-
-What this skill does (one paragraph).
-
-## When to Use
-
-Trigger conditions for this skill:
-- When the user asks to...
-- When working on...
-
-## Workflow
-
-### Step 1: [First Step]
-[Instructions]
-
-### Step 2: [Second Step]
-[Instructions]
-
-## Rules
-
-- [Constraint 1]
-- [Constraint 2]
-
-## Output Format
-
-[What the result should look like]
-
-## References
-
-- [Link to original source]
-- [Link to documentation]
-```
-
-### Adding to Catalog
-
-Add an entry to `skills/catalog.json`:
-
-```json
-{
-  "id": "your-skill-name",
-  "name": "Your Skill Name",
-  "description": "Brief description",
-  "category": "development",
-  "author": "your-name",
-  "source": "https://github.com/your-repo",
-  "tags": ["tag1", "tag2"],
-  "local": true,
-  "localPath": "skills/your-skill-name/SKILL.md"
-}
-```
-
----
-
-## Adding an MCP Server
+| Type | Where | Format |
+|------|-------|--------|
+| **Skills** | `skills/catalog.json` | External SKILL.md repos with install commands |
+| **MCP Servers** | `mcps/catalog.json` | MCP servers with GitHub links and install commands |
+| **Agent Loops** | `loops/catalog.json` | Workflow patterns with source attribution |
+| **Subagents** | `subagents/catalog.json` | Agent frameworks, SDKs, collections |
+| **Plugins** | `plugins/catalog.json` | Extensions for AI coding agents |
 
 ### Entry Format
 
-Add to `mcps/catalog.json`:
+Each catalog entry must include:
 
 ```json
 {
-  "id": "server-name",
-  "name": "Server Name",
-  "category": "databases",
-  "github": "https://github.com/org/repo",
-  "stars": 1000,
-  "description": "What this server does",
-  "install": "npx -y @org/server-name",
-  "license": "MIT",
-  "verified": true,
-  "tags": ["database", "postgresql"]
-}
-```
-
-### Requirements
-
-- Must be a real, working MCP server
-- Must include a GitHub link
-- Must include an install command
-- Security note: flag if server has known vulnerabilities
-
----
-
-## Adding a Loop
-
-### File Structure
-
-```
-loops/category/your-loop-name.md
-```
-
-### Loop Template
-
-```markdown
----
-title: Your Loop Name
-category: engineering
-author: Original Author
-published: 2026-01-01
-source: https://github.com/repo/loop
----
-
-# Your Loop Name
-
-## Use When
-
-[When to use this loop]
-
-## Prompt
-
-[Exact prompt text for the agent]
-
-## Verification
-
-[What proves the loop succeeded]
-
-## Steps
-
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-
-## Why
-
-[Why this loop is useful]
-
-## Keywords
-
-[keyword1, keyword2, keyword3]
-
-## Related Loops
-
-- [other-loop](../category/other-loop.md)
-```
-
-### Adding to Catalog
-
-Add to `loops/catalog.json`:
-
-```json
-{
-  "id": "your-loop-name",
-  "title": "Your Loop Name",
-  "category": "engineering",
-  "author": "Original Author",
-  "source": "https://github.com/repo/loop",
-  "description": "What this loop does",
-  "prompt": "Exact prompt text...",
-  "verification": "Success criteria",
+  "id": "unique-kebab-case-id",
+  "name": "Human Readable Name",
+  "category": "Category Name",
+  "description": "One-line description of what this does",
+  "githubUrl": "https://github.com/owner/repo",
+  "installCommand": "npx skills add owner/repo",
+  "stars": 12345,
   "tags": ["tag1", "tag2"],
-  "related": ["other-loop"]
+  "source": "github",
+  "sourceType": "official",
+  "lastUpdated": "2026-06-28"
 }
-```
-
----
-
-## Updating Catalog Files
-
-### Validation
-
-Before submitting, validate your JSON:
-
-```bash
-python -m json.tool mcps/catalog.json > /dev/null && echo "mcps valid"
-python -m json.tool skills/catalog.json > /dev/null && echo "skills valid"
-python -m json.tool loops/catalog.json > /dev/null && echo "loops valid"
 ```
 
 ### Required Fields
 
-**mcps/catalog.json:**
-- `id` (string, unique)
-- `name` (string)
-- `description` (string)
-- `category` (string)
-- `github` (URL)
-- `install` (string)
+- `id` -- Unique kebab-case identifier (no duplicates)
+- `name` -- Human-readable name
+- `category` -- Must match an existing category in the catalog
+- `description` -- Clear, concise one-liner
+- `githubUrl` -- Link to the source repository
+- `source` -- Where you found it: `github`, `reddit`, `blog`, `official-docs`
+- `sourceType` -- `official` (company repo), `community` (individual), `registry` (marketplace)
 
-**skills/catalog.json:**
-- `id` (string, unique)
-- `name` (string)
-- `description` (string)
-- `category` (string)
-- `author` (string)
+### Adding a New Category
 
-**loops/catalog.json:**
-- `id` (string, unique)
-- `title` (string)
-- `category` (string)
-- `author` (string)
-- `source` (URL)
-- `prompt` (string)
+1. Add the category to the `categories` array in the catalog
+2. Set initial count to 1
+3. Add your entry under that category
+4. Update `totalSkills` / `totalServers` / `totalLoops` in metadata
 
----
+### Quality Standards
 
-## PR Guidelines
+- **No duplicates** -- Search existing entries before adding
+- **Working links** -- GitHub URL must be valid
+- **Accurate stars** -- Use current GitHub star count
+- **Honest description** -- No marketing fluff, just what it does
+- **Proper attribution** -- Source and sourceType required
 
-### Title Format
+### Validation
 
-```
-Add [type]: [name] - brief description
-```
+All PRs are automatically validated:
 
-Examples:
-- `Add skill: data-analysis - CSV/Excel analysis with MCP`
-- `Add MCP: supabase-mcp - Backend management via natural language`
-- `Add loop: quality-streak-loop - Iterative quality improvement`
+```bash
+# Validate JSON syntax
+cat skills/catalog.json | jq .
 
-### PR Description
+# Check for duplicate IDs
+cat skills/catalog.json | jq '[.skills[].id] | group_by(.) | map(select(length > 1))'
 
-```markdown
-## What
-- Added [skill/MCP/loop]: [name]
-
-## Why
-- [Reason for adding]
-
-## Source
-- [Link to original source]
-- [Attribution]
-
-## Verification
-- [How you verified it works]
+# Verify counts match
+cat skills/catalog.json | jq '.skills | length'
 ```
 
-### Review Checklist
+## PR Checklist
 
-- [ ] Real, working resource (not fabricated)
-- [ ] Proper attribution and source URL
-- [ ] Follows file format conventions
-- [ ] Catalog entry added with required fields
-- [ ] No duplicate IDs in catalog
-- [ ] Works across multiple AI coding assistants
-- [ ] No vendor lock-in
-
----
+- [ ] Entry follows the format above
+- [ ] No duplicate IDs
+- [ ] GitHub URL is valid and accessible
+- [ ] Star count is reasonably accurate
+- [ ] Description is clear and honest
+- [ ] Category exists in the catalog
+- [ ] JSON is valid (`jq .` passes)
+- [ ] Counts in metadata are updated
 
 ## Code of Conduct
 
-- Be respectful and inclusive
+- Be respectful and constructive
 - Focus on quality over quantity
 - Attribute all sources properly
-- No self-promotion unless relevant
-- No fabricated or fake content
-
----
-
-## Getting Featured
-
-Outstanding contributions may be featured in:
-- The README.md community section
-- The catalog.json highlighted entries
-- Social media shoutouts
-
-Criteria:
-- High-quality, well-documented resource
-- Broad cross-platform compatibility
-- Active maintenance and updates
-- Community adoption (stars, installs)
-
----
+- No self-promotion without genuine value
 
 ## Questions?
 
-Open an issue with the `question` label. We're happy to help!
-
----
-
-**Thank you for making Awesome AI Agent Tools better for everyone!**
+Open an issue or start a discussion. We're happy to help you contribute.

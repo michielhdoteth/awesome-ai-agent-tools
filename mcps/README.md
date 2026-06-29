@@ -2,27 +2,28 @@
 
 Curated Model Context Protocol (MCP) servers for AI-assisted development. Each entry includes install commands, GitHub links, and security notes.
 
-## 68 Servers Across 17 Categories
+## 97 Servers Across 18 Categories
 
 | Category | Count | Top Servers |
 |----------|------:|-------------|
 | **Official Reference** | 6 | Filesystem, Fetch, Memory, Sequential Thinking, Git, Time |
-| **Developer Tools** | 8 | Context7 (53K stars), MarkItDown (119K stars), GitHub MCP, Task Master |
+| **Developer Tools** | 11 | Context7 (53K stars), CodeGraph (54K stars), MarkItDown (119K stars), Atlassian, Desktop Commander |
 | **Browser Automation** | 4 | Playwright (31K stars), Firecrawl (29.7K stars), Chrome DevTools, Puppeteer |
-| **Databases** | 8 | PostgreSQL, SQLite, Redis, Supabase, MongoDB, MindsDB |
+| **Databases** | 13 | PostgreSQL, MongoDB, Redis, Elasticsearch, Snowflake, dbt, Airtable |
 | **Cloud Platforms** | 5 | AWS (8K stars), Cloudflare, DigitalOcean, Vercel, EdgeOne |
-| **DevOps** | 5 | Docker (4K stars), Kubernetes, Terraform, Pulumi, kubectl |
-| **Communication** | 4 | Slack, Notion, Linear, Google Workspace |
-| **Search** | 4 | Brave Search, Tavily, Serper, Jina AI |
-| **AI & ML** | 3 | MiniMax (16.8K stars), UI-TARS (29.5K stars), EverArt |
-| **Agent Orchestration** | 3 | n8n (185K stars), Ruflo (32.6K stars), Claude-Flow |
+| **DevOps** | 6 | Docker (4K stars), Kubernetes, Terraform (HashiCorp), Pulumi, kubectl |
+| **Communication** | 8 | Slack, Notion, Linear, Google Workspace, Asana, Obsidian |
+| **Search** | 8 | Brave Search, Tavily, Perplexity, Serper, Jina AI, Last30Days |
+| **AI & ML** | 6 | MiniMax (16.8K stars), UI-TARS (29.5K stars), Arize Phoenix, Langfuse, OpenRouter |
+| **Agent Orchestration** | 5 | n8n (22K stars), Zapier, Ruflo (32.6K stars), Claude-Flow |
 | **Marketing** | 1 | NotFair (~2.9K stars) - SEO, Google Ads, Meta Ads |
-| **Monitoring** | 3 | Netdata (78K stars), Grafana, Sentry |
+| **Monitoring** | 6 | Netdata (78K stars), Grafana, Datadog, Sentry, Sentry v2 |
 | **Security** | 3 | Aperion Shield, Grype, Wundervault |
-| **Design** | 2 | Figma, Canva |
-| **Finance** | 3 | Stripe, Dodo Payments, FLOX |
+| **Design** | 3 | Figma, Figma Context (15K stars), Canva |
+| **Finance** | 4 | Stripe, Dodo Payments, FLOX |
 | **Maps** | 2 | Google Maps, Amap |
-| **Research & Data** | 3 | TrendRadar (53K stars), Scrapling (38K stars), GPT-Researcher |
+| **Research & Data** | 5 | TrendRadar (53K stars), Scrapling (38K stars), GPT-Researcher, Last30Days |
+| **Data Engineering** | 1 | dbt MCP |
 
 ### NotFair - Marketing Skills
 
@@ -51,6 +52,18 @@ npx -y @modelcontextprotocol/server-fetch
 npx -y @upstash/context7-mcp
 npx -y @playwright/mcp
 npx -y @anthropic-ai/chrome-devtools-mcp
+
+# New this week
+npx -y @openrouter/mcp-server
+npx -y @sentry/mcp-server
+npx -y @anthropic-ai/codegraph-mcp
+npx -y @last30days/mcp-server
+npx -y @tavily/mcp-server
+npx -y @perplexity/mcp-server
+npx -y @hashicorp/terraform-mcp-server
+npx -y @grafana/mcp-grafana
+npx -y @mongodb/mongodb-mcp-server
+npx -y @redis/mcp-redis
 
 # Marketing
 npx -y notfair-mcp
