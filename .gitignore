@@ -15,9 +15,8 @@ dist/
 build/
 .cache/
 
-# Site preview build artifacts
-site-preview/node_modules/
-site-preview/dist/
+# Site (deployed separately via Vercel, not in repo)
+site/
 
 # OS
 .DS_Store
