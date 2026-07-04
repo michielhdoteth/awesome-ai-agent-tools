@@ -29,7 +29,7 @@
 - [Quick Start](#quick-start)
 - [Browse by Category](#browse-by-category)
 - [Skills (72 curated)](#skills-72-curated)
-- [MCP Servers (97 servers)](#mcp-servers-97-servers)
+- [MCP Servers (98 servers)](#mcp-servers-97-servers)
 - [Agent Loops (103 workflows)](#agent-loops-103-workflows)
 - [Subagents (50 agents)](#subagents-50-agents)
 - [Plugins (45 plugins)](#plugins-45-plugins)
@@ -108,7 +108,7 @@ Give your AI agent the [contribution skill](contribute/SKILL.md) and it will for
 | Library | Count | What You Get | Browse |
 |---------|-------|--------------|--------|
 | **Skills** | 72 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
-| **MCP Servers** | 97 | Server configs with install commands | [mcps/](mcps/) |
+| **MCP Servers** | 98 | Server configs with install commands | [mcps/](mcps/) |
 | **Agent Loops** | 103 | Workflows with prompts and verification | [loops/](loops/) |
 | **Subagents** | 50 | Specialized agents with model routing | [subagents/](subagents/) |
 | **Plugins** | 45 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
