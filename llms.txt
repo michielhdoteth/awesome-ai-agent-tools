@@ -1,15 +1,14 @@
 # Awesome AI Agent Tools
 
-> The most comprehensive open-source directory for AI agent tools. 73 curated skills (19 local + 54 external references), 67 MCP server configurations with install commands, 81 agent workflow patterns, 20 subagent definitions, 20 hook scripts, and 20 slash commands. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and every major AI coding assistant.
+> The most comprehensive open-source directory for AI agent components. 357 curated skills, MCP servers, agent workflows, subagents, and plugins from 100+ repositories. Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, and every major AI coding assistant.
 
 ## What This Repo Contains
 
-- **73 Curated Skills**: 19 local SKILL.md files + 54 external skill references from obra/superpowers, anthropics/skills, mattpocock/skills, vercel-labs, and more
-- **67 MCP Server Configurations**: Verified Model Context Protocol servers with install commands across 16 categories
-- **81 Agent Workflows (Loops)**: Repeatable patterns with exact prompts, verification criteria, and source attribution
-- **20 Subagent Definitions**: Specialized agents with model routing and tool permissions
-- **20 Hook Scripts**: Production-ready automation for Claude Code events (security, quality, notifications)
-- **20 Slash Commands**: Development workflows (review, commit, debug, deploy, security-scan, and more)
+- **77 Curated Skills**: SKILL.md files from obra/superpowers, anthropics/skills, addyosmani, vercel-labs, and 30+ more sources
+- **100 MCP Server Configurations**: Verified Model Context Protocol servers with install commands across 18 categories
+- **107 Agent Workflows (Loops)**: Repeatable patterns with exact prompts, verification criteria, and source attribution
+- **25 Subagent Definitions**: Specialized agents with model routing and tool permissions
+- **48 Plugins**: Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms
 - **Cross-Platform Support**: Works with Claude Code, OpenCode, Codex, KiloCode, Cursor, Gemini CLI, Copilot, Aider, and Windsurf
 - **Catalogs with Metadata**: JSON catalogs for programmatic discovery and tooling integration
 
@@ -17,12 +16,11 @@
 
 - [README](README.md) - Project overview, quick start, and full catalog
 - [CONTRIBUTING.md](CONTRIBUTING.md) - How to add skills, MCPs, or loops
-- [Skills Library](skills/) - 19 local skill files + catalog of 73 total (local + external)
-- [MCP Servers](mcps/) - Catalog of 67 MCP servers with install commands
-- [Agent Loops](loops/) - 81 workflow patterns with catalog
-- [Subagents](subagents/) - 20 specialized agent definitions with catalog
-- [Hooks](hooks/) - 20 production-ready hook scripts
-- [Commands](commands/) - 20 slash commands for common workflows
+- [Skills Library](skills/) - Catalog of 77 SKILL.md files across 9 categories
+- [MCP Servers](mcps/) - Catalog of 100 MCP servers with install commands
+- [Agent Loops](loops/) - 107 workflow patterns with catalog
+- [Subagents](subagents/) - 25 specialized agent definitions with catalog
+- [Plugins](plugins/) - 48 plugins across 9 platforms
 - [Documentation](docs/) - Getting started, feature reference, tool comparisons
 - [Prompt Engineering](prompting/) - Prompt techniques and strategies
 - [Rules & Best Practices](rules/) - Security, ethics, quality guidelines
@@ -34,4 +32,4 @@ awesome, ai-agent-tools, ai-agents, skills, mcp-servers, model-context-protocol,
 
 ## Updated
 
-2026-06-21
+2026-07-04

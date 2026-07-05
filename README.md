@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The definitive directory of AI agent components.** 367 installable skills, MCP servers, agent workflows, subagents, and plugins -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
+> **The definitive directory of AI agent components.** 357 installable skills, MCP servers, agent workflows, subagents, and plugins -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -28,11 +28,11 @@
 - [What is this?](#what-is-this)
 - [Quick Start](#quick-start)
 - [Browse by Category](#browse-by-category)
-- [Skills (72 curated)](#skills-72-curated)
-- [MCP Servers (97 servers)](#mcp-servers-97-servers)
-- [Agent Loops (103 workflows)](#agent-loops-103-workflows)
-- [Subagents (50 agents)](#subagents-50-agents)
-- [Plugins (45 plugins)](#plugins-45-plugins)
+- [Skills (77 curated)](#skills-77-curated)
+- [MCP Servers (100 servers)](#mcp-servers-100-servers)
+- [Agent Loops (107 workflows)](#agent-loops-107-workflows)
+- [Subagents (25 agents)](#subagents-25-agents)
+- [Plugins (48 plugins)](#plugins-48-plugins)
 - [Cross-Platform Compatibility](#cross-platform-compatibility)
 - [Contribute with Your Agent](#contribute-with-your-agent)
 - [Contributing](#contributing)
@@ -60,11 +60,11 @@ Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CL
     </tr>
   </thead>
   <tbody>
-    <tr><td>Installable skill files</td><td align="center">72 SKILL.md files</td><td align="center">Links only</td></tr>
-    <tr><td>MCP server configs</td><td align="center">97 servers + install cmds</td><td align="center">Links only</td></tr>
-    <tr><td>Agent workflows</td><td align="center">103 loops with prompts</td><td align="center">Links only</td></tr>
-    <tr><td>Subagents</td><td align="center">50 agents + model routing</td><td align="center">No</td></tr>
-    <tr><td>Plugins</td><td align="center">45 plugins across 9 platforms</td><td align="center">No</td></tr>
+    <tr><td>Installable skill files</td><td align="center">77 SKILL.md files</td><td align="center">Links only</td></tr>
+    <tr><td>MCP server configs</td><td align="center">100 servers + install cmds</td><td align="center">Links only</td></tr>
+    <tr><td>Agent workflows</td><td align="center">107 loops with prompts</td><td align="center">Links only</td></tr>
+    <tr><td>Subagents</td><td align="center">25 agents + model routing</td><td align="center">No</td></tr>
+    <tr><td>Plugins</td><td align="center">48 plugins across 9 platforms</td><td align="center">No</td></tr>
     <tr><td>Catalogs with metadata</td><td align="center">JSON catalogs for discovery</td><td align="center">No</td></tr>
     <tr><td>Cross-platform</td><td align="center">30+ AI tools</td><td align="center">Varies</td></tr>
     <tr><td>Agent-contributable</td><td align="center">Automated fork+PR skill</td><td align="center">No</td></tr>
@@ -107,17 +107,17 @@ Give your AI agent the [contribution skill](contribute/SKILL.md) and it will for
 
 | Library | Count | What You Get | Browse |
 |---------|-------|--------------|--------|
-| **Skills** | 72 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
-| **MCP Servers** | 97 | Server configs with install commands | [mcps/](mcps/) |
-| **Agent Loops** | 103 | Workflows with prompts and verification | [loops/](loops/) |
-| **Subagents** | 50 | Specialized agents with model routing | [subagents/](subagents/) |
-| **Plugins** | 45 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
+| **Skills** | 77 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
+| **MCP Servers** | 100 | Server configs with install commands | [mcps/](mcps/) |
+| **Agent Loops** | 107 | Workflows with prompts and verification | [loops/](loops/) |
+| **Subagents** | 25 | Specialized agents with model routing | [subagents/](subagents/) |
+| **Plugins** | 48 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
 
-**Total: 367 components across 5 categories.**
+**Total: 357 components across 5 categories.**
 
 ---
 
-## Skills (72 curated)
+## Skills (77 curated)
 
 External references with install commands from obra/superpowers, anthropics/skills, addyosmani, vercel-labs, trailofbits, and 30+ more sources.
 
@@ -130,10 +130,10 @@ External references with install commands from obra/superpowers, anthropics/skil
     </tr>
   </thead>
   <tbody>
-    <tr><td><b>Development</b></td><td align="right">24</td><td>addyosmani/agent-skills (67K), obra/superpowers (239K), trailofbits/skills (6K)</td></tr>
+    <tr><td><b>Development</b></td><td align="right">28</td><td>addyosmani/agent-skills (68.9K), obra/superpowers (239K), trailofbits/skills (6K)</td></tr>
     <tr><td><b>Productivity</b></td><td align="right">16</td><td>kepano/obsidian-skills (35K), agents-md-standard (25K), context-engineering (15K)</td></tr>
     <tr><td><b>Content</b></td><td align="right">8</td><td>stop-slop (11.8K), content-research-writer (8.5K), humanizer</td></tr>
-    <tr><td><b>Design</b></td><td align="right">6</td><td>nexu-io/open-design (66K), ui-ux-pro-max (79K)</td></tr>
+    <tr><td><b>Design</b></td><td align="right">7</td><td>nexu-io/open-design (66K), ui-ux-pro-max (79K)</td></tr>
     <tr><td><b>DevOps</b></td><td align="right">7</td><td>iuliandita/skills (Kubernetes, Terraform, Docker)</td></tr>
     <tr><td><b>Testing</b></td><td align="right">3</td><td>webapp-testing, agent-browser</td></tr>
     <tr><td><b>Marketing</b></td><td align="right">3</td><td>seo-audit, content-strategy</td></tr>
@@ -146,7 +146,7 @@ Browse all: [skills/](skills/) | [catalog.json](skills/catalog.json)
 
 ---
 
-## MCP Servers (97 servers)
+## MCP Servers (100 servers)
 
 Curated Model Context Protocol servers with install commands from GitHub, npm, and official registries.
 
@@ -165,8 +165,12 @@ Curated Model Context Protocol servers with install commands from GitHub, npm, a
     <tr><td><b>Search</b></td><td align="right">8</td><td>Brave Search, Tavily (1.5K), Perplexity (1.2K), Serper</td></tr>
     <tr><td><b>AI & Machine Learning</b></td><td align="right">6</td><td>Arize Phoenix (10K), Langfuse (166), OpenRouter</td></tr>
     <tr><td><b>Agent Orchestration</b></td><td align="right">5</td><td>n8n (22K), Zapier (2K), Composio</td></tr>
+    <tr><td><b>Browser Automation</b></td><td align="right">5</td><td>Playwright (34K), Puppeteer, Browserbase</td></tr>
+    <tr><td><b>Cloud Platforms</b></td><td align="right">5</td><td>Cloudflare, AWS, GCP, Azure</td></tr>
     <tr><td><b>Monitoring</b></td><td align="right">6</td><td>Grafana (800), Datadog (41), Sentry</td></tr>
-    <tr><td><b>DevOps</b></td><td align="right">6</td><td>Docker, Kubernetes, Terraform (1K), Cloudflare</td></tr>
+    <tr><td><b>DevOps</b></td><td align="right">6</td><td>Docker, Kubernetes, Terraform (1K), Ansible</td></tr>
+    <tr><td><b>Security</b></td><td align="right">4</td><td>Snyk, Semgrep, Socket.dev</td></tr>
+    <tr><td><b>Official Reference</b></td><td align="right">6</td><td>GitHub MCP, NPM, Docker Hub</td></tr>
     <tr><td><b>Design</b></td><td align="right">3</td><td>Figma Context (15K)</td></tr>
     <tr><td><b>Finance</b></td><td align="right">4</td><td>Stripe, PayPal, Square</td></tr>
     <tr><td><b>Research & Data</b></td><td align="right">5</td><td>MindsDB (39K), Snowflake, dbt</td></tr>
@@ -177,7 +181,7 @@ Browse all: [mcps/](mcps/) | [catalog.json](mcps/catalog.json)
 
 ---
 
-## Agent Loops (103 workflows)
+## Agent Loops (107 workflows)
 
 Repeatable AI agent patterns with built-in feedback mechanisms, sourced from official documentation, research papers, and community repos.
 
@@ -190,9 +194,9 @@ Repeatable AI agent patterns with built-in feedback mechanisms, sourced from off
     </tr>
   </thead>
   <tbody>
-    <tr><td><b>Engineering</b></td><td align="right">53</td><td>forge-master (TDD), harnesskit (OpenAI), plan-execute-verify, github-agentic-workflows</td></tr>
+    <tr><td><b>Engineering</b></td><td align="right">55</td><td>forge-master (TDD), harnesskit (OpenAI), plan-execute-verify, github-agentic-workflows</td></tr>
     <tr><td><b>Evaluation</b></td><td align="right">14</td><td>evaluator-optimizer, per-turn-classification, 4-d-trajectory-score, llm-as-judge</td></tr>
-    <tr><td><b>Multi-Agent</b></td><td align="right">12</td><td>google-adk-loop, openai-agents-sdk, orchestrator-worker, swarm, hierarchical</td></tr>
+    <tr><td><b>Multi-Agent</b></td><td align="right">14</td><td>google-adk-loop, openai-agents-sdk, orchestrator-worker, swarm, hierarchical</td></tr>
     <tr><td><b>Meta</b></td><td align="right">9</td><td>context-engineering-loop, tiered-memory-loop, loop-engineering-discipline</td></tr>
     <tr><td><b>Operations</b></td><td align="right">6</td><td>millrace-governed-loop, claude-code-dynamic-workflows, triage-and-escalate</td></tr>
     <tr><td><b>Design</b></td><td align="right">6</td><td>ui-ux-score-loop, accessibility-repair-loop</td></tr>
@@ -204,9 +208,9 @@ Browse all: [loops/](loops/) | [catalog.json](loops/catalog.json)
 
 ---
 
-## Subagents (50 agents)
+## Subagents (25 agents)
 
-Multi-agent frameworks, coding agents, orchestration platforms, and subagent collections from the ecosystem.
+Multi-agent frameworks, subagent collections, SDKs, and platform formats from the ecosystem.
 
 <table width="100%">
   <thead>
@@ -217,14 +221,11 @@ Multi-agent frameworks, coding agents, orchestration platforms, and subagent col
     </tr>
   </thead>
   <tbody>
-    <tr><td><b>Coding Agents</b></td><td align="right">12</td><td>OpenCode (172K), Claude Code (131K), Gemini CLI (105K), Codex (90K), OpenHands (76K)</td></tr>
-    <tr><td><b>Frameworks</b></td><td align="right">8</td><td>LangGraph (25K), CrewAI (54K), MetaGPT (62K), AutoGPT (150K)</td></tr>
-    <tr><td><b>Official SDKs</b></td><td align="right">5</td><td>Claude Agent SDK, OpenAI Agents SDK, Google ADK, Microsoft Agent Framework</td></tr>
-    <tr><td><b>Subagent Collections</b></td><td align="right">6</td><td>awesome-claude-code-subagents (22K), awesome-codex-subagents (5.2K)</td></tr>
-    <tr><td><b>Orchestration</b></td><td align="right">5</td><td>Claude Code, OpenCode, Aider, Windsurf</td></tr>
-    <tr><td><b>Protocols</b></td><td align="right">4</td><td>MCP, A2A, AGENTS.md Standard</td></tr>
-    <tr><td><b>Commercial</b></td><td align="right">5</td><td>Devin, Factory AI, GitHub Copilot Agent, Replit Agent</td></tr>
-    <tr><td><b>Research</b></td><td align="right">3</td><td>Hermes Agent (95K), AgentDoG, OpenClaw</td></tr>
+    <tr><td><b>Subagent Collection</b></td><td align="right">11</td><td>awesome-claude-code-subagents (22.5K), awesome-codex-subagents (5.3K), cc-sdd (3.5K), buildwithclaude (3.1K)</td></tr>
+    <tr><td><b>Official SDK</b></td><td align="right">4</td><td>Microsoft Agent Framework (54K), OpenAI Agents SDK (18K), Google ADK (16.8K), Claude Agent SDK</td></tr>
+    <tr><td><b>Platform Format</b></td><td align="right">4</td><td>Claude Code, OpenCode, Gemini CLI, Codex CLI</td></tr>
+    <tr><td><b>Curated Directory</b></td><td align="right">3</td><td>awesome-claude-code (47.3K), platform-subagent-formats (47.3K), curated-subagent-repos (22.5K)</td></tr>
+    <tr><td><b>Agent Harness</b></td><td align="right">3</td><td>oh-my-openagent (64.8K), oh-my-opencode (25K), oh-my-codex (19K)</td></tr>
   </tbody>
 </table>
 
@@ -232,7 +233,7 @@ Browse all: [subagents/](subagents/) | [catalog.json](subagents/catalog.json)
 
 ---
 
-## Plugins (45 plugins)
+## Plugins (48 plugins)
 
 Extensions, rules, and plugins for every major AI coding agent.
 
@@ -246,14 +247,14 @@ Extensions, rules, and plugins for every major AI coding agent.
   </thead>
   <tbody>
     <tr><td><b>Claude Code</b></td><td align="right">8</td><td>Official marketplace (200+ plugins, 31K stars), Superpowers (42K)</td></tr>
-    <tr><td><b>OpenCode</b></td><td align="right">8</td><td>npm-based plugins, browser automation, git integration</td></tr>
+    <tr><td><b>OpenCode</b></td><td align="right">9</td><td>npm-based plugins, browser automation, git integration</td></tr>
     <tr><td><b>Cursor</b></td><td align="right">6</td><td>awesome-cursorrules (20K), cursor.directory (83.7K devs)</td></tr>
     <tr><td><b>Copilot</b></td><td align="right">5</td><td>awesome-copilot (48+ plugins), custom instructions</td></tr>
     <tr><td><b>VS Code AI</b></td><td align="right">5</td><td>Kilo Code, Cline, Roo Code, Continue, Cody</td></tr>
     <tr><td><b>Windsurf</b></td><td align="right">4</td><td>VS Code plugin (3.8M installs), Neovim, Eclipse</td></tr>
     <tr><td><b>Aider</b></td><td align="right">4</td><td>VS Code extensions, NeoVim plugin, YAML config</td></tr>
-    <tr><td><b>JetBrains</b></td><td align="right">3</td><td>AI Assistant, ACP, Skills Manager</td></tr>
-    <tr><td><b>Cross-Tool</b></td><td align="right">2</td><td>Claude Plugin Hub (14K+ indexed), load-rules CLI</td></tr>
+    <tr><td><b>JetBrains</b></td><td align="right">4</td><td>AI Assistant, ACP, Skills Manager, JetBrains Air</td></tr>
+    <tr><td><b>Cross-Tool</b></td><td align="right">3</td><td>Claude Plugin Hub (14K+ indexed), load-rules CLI, OpenSpec</td></tr>
   </tbody>
 </table>
 
@@ -339,7 +340,7 @@ All PRs are automatically validated by GitHub Actions.
 |---------|-------|-------------|
 | [obra/superpowers](https://github.com/obra/superpowers) | 239K | Full agentic development methodology |
 | [anthropics/skills](https://github.com/anthropics/skills) | 156K | Official Anthropic skills |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 67K | Google engineering culture skills |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 68.9K | Google engineering culture skills |
 | [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 66K | 1000+ curated skills |
 | [nexu-io/open-design](https://github.com/nexu-io/open-design) | 66K | 259+ design skills |
 | [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 27K | 1497+ official skills |
@@ -348,7 +349,7 @@ All PRs are automatically validated by GitHub Actions.
 | [awesome-claude-code-subagents](https://github.com/anthropics/awesome-claude-code-subagents) | 22.2K | 100+ Claude Code subagents |
 | [awesome-codex-subagents](https://github.com/openai/awesome-codex-subagents) | 5.2K | 130+ Codex subagents |
 | [skills.sh](https://skills.sh) | - | Vercel skills marketplace (670K+) |
-| [Glama.ai](https://glama.ai) | - | MCP server registry (34K+ servers) |
+| [Glama.ai](https://glama.ai) | - | MCP server registry (51K+ servers) |
 | [Smithery.ai](https://smithery.ai) | - | MCP server registry (4.7K+ servers) |
 
 ---

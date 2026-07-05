@@ -1,20 +1,20 @@
 {
   "name": "Plugins Catalog",
-  "version": "2026.06",
+  "version": "2026.07",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-06-28",
-  "totalPlugins": 45,
+  "lastUpdated": "2026-07-04",
+  "totalPlugins": 48,
   "categories": [
     { "name": "Claude Code", "count": 8 },
-    { "name": "OpenCode", "count": 8 },
+    { "name": "OpenCode", "count": 9 },
     { "name": "Cursor", "count": 6 },
     { "name": "Copilot", "count": 5 },
     { "name": "Windsurf", "count": 4 },
     { "name": "Aider", "count": 4 },
     { "name": "VS Code AI", "count": 5 },
-    { "name": "JetBrains", "count": 3 },
-    { "name": "Cross-Tool", "count": 2 }
+    { "name": "JetBrains", "count": 4 },
+    { "name": "Cross-Tool", "count": 3 }
   ],
   "plugins": [
     {
@@ -22,9 +22,9 @@
       "name": "Official Claude Code Marketplace",
       "category": "Claude Code",
       "platform": "Claude Code",
-      "stars": 31000,
-      "installs": "200+ plugins",
-      "description": "Official marketplace for Claude Code plugins with 200+ community-contributed extensions",
+      "stars": 32000,
+      "installs": "255+ plugins",
+      "description": "Official marketplace for Claude Code plugins with 255+ community-contributed extensions",
       "githubUrl": "https://github.com/anthropics/claude-code-extensions",
       "websiteUrl": "https://claude.ai/plugins",
       "installCommand": "claude install @anthropics/claude-plugins",
@@ -35,7 +35,7 @@
       "name": "Superpowers Plugin",
       "category": "Claude Code",
       "platform": "Claude Code",
-      "stars": 42000,
+      "stars": 43000,
       "installs": "60+ skills",
       "description": "Comprehensive skill pack with 60+ pre-built skills for Claude Code workflows",
       "githubUrl": "https://github.com/nicholasgriffintn/superpowers",
@@ -223,6 +223,19 @@
       "githubUrl": "https://github.com/different-ai/opencode-browser",
       "websiteUrl": null,
       "installCommand": "opencode plugin install @different-ai/browser",
+      "license": "MIT"
+    },
+    {
+      "id": "opencode-openspec",
+      "name": "OpenSpec Plugin",
+      "category": "OpenCode",
+      "platform": "OpenCode",
+      "stars": 128,
+      "installs": null,
+      "description": "OpenAPI specification generation and management for OpenCode. Auto-generates API specs from your codebase.",
+      "githubUrl": "https://github.com/openspec/opencode-plugin-openspec",
+      "websiteUrl": null,
+      "installCommand": "opencode plugin install @openspec/plugin",
       "license": "MIT"
     },
     {
@@ -577,6 +590,19 @@
       "license": "MIT"
     },
     {
+      "id": "jetbrains-air",
+      "name": "JetBrains Air IDE",
+      "category": "JetBrains",
+      "platform": "JetBrains",
+      "stars": null,
+      "installs": "macOS preview",
+      "description": "New standalone AI-native IDE from JetBrains (March 2026). Supports Agent Client Protocol (ACP) for AI agent integration. macOS preview available.",
+      "githubUrl": null,
+      "websiteUrl": "https://www.jetbrains.com/air/",
+      "installCommand": "Download from jetbrains.com/air",
+      "license": "Proprietary"
+    },
+    {
       "id": "load-rules",
       "name": "Load Rules",
       "category": "Cross-Tool",
@@ -600,6 +626,19 @@
       "githubUrl": "https://github.com/lay4u/awesome-ai-rules",
       "websiteUrl": null,
       "installCommand": "Clone and reference from repository",
+      "license": "MIT"
+    },
+    {
+      "id": "vibecoding-plugins",
+      "name": "VibeCoding Plugin Hub",
+      "category": "Cross-Tool",
+      "platform": "Cross-Tool",
+      "stars": null,
+      "installs": null,
+      "description": "Cross-platform plugin hub at vibecoding.app/plugins. Curates AI coding plugins across 4 categories for multiple AI coding tools.",
+      "githubUrl": null,
+      "websiteUrl": "https://vibecoding.app/plugins",
+      "installCommand": "Browse at vibecoding.app/plugins",
       "license": "MIT"
     }
   ]

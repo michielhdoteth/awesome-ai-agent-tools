@@ -1,22 +1,22 @@
 {
   "name": "Loop Library Catalog",
-  "version": "2026.06",
+  "version": "2026.07",
   "description": "Repeatable AI-agent workflows with feedback loops",
   "license": "MIT",
-  "lastUpdated": "2026-06-28",
-  "totalLoops": 103,
+  "lastUpdated": "2026-07-04",
+  "totalLoops": 107,
   "categories": [
-    { "name": "engineering", "count": 53 },
+    { "name": "engineering", "count": 55 },
     { "name": "evaluation", "count": 14 },
     { "name": "operations", "count": 6 },
     { "name": "content", "count": 3 },
     { "name": "design", "count": 6 },
     { "name": "meta", "count": 9 },
-    { "name": "multi-agent", "count": 12 }
+    { "name": "multi-agent", "count": 14 }
   ],
   "sources": [
-    { "name": "Forward-Future/loop-library", "url": "https://github.com/Forward-Future/loop-library", "stars": 599, "loopCount": 49 },
-    { "name": "cobusgreyling/loop-engineering", "url": "https://github.com/cobusgreyling/loop-engineering", "stars": 474, "loopCount": 7 },
+    { "name": "Forward-Future/loop-library", "url": "https://github.com/Forward-Future/loop-library", "stars": 650, "loopCount": 55 },
+    { "name": "cobusgreyling/loop-engineering", "url": "https://github.com/cobusgreyling/loop-engineering", "stars": 500, "loopCount": 7 },
     { "name": "rohanbalkondekar/agent-loop-patterns", "url": "https://github.com/rohanbalkondekar/agent-loop-patterns", "loopCount": 5 },
     { "name": "bradtaylorsf/alpha-loop", "url": "https://github.com/bradtaylorsf/alpha-loop", "loopCount": 1 },
     { "name": "iKon85/agent-workflow-kit", "url": "https://github.com/iKon85/agent-workflow-kit", "loopCount": 1 },
@@ -24,12 +24,15 @@
     { "name": "anshulixyz/multi-agent-loop-kit", "url": "https://github.com/anshulixyz/multi-agent-loop-kit", "loopCount": 1 },
     { "name": "0xagentkitchen/kitchenloop", "url": "https://github.com/0xagentkitchen/kitchenloop", "loopCount": 1 },
     { "name": "Community (Reddit/HN/Blogs)", "url": "https://www.reddit.com/r/ClaudeAI/", "loopCount": 7 },
-    { "name": "snarktank/ralph", "url": "https://github.com/snarktank/ralph", "stars": 2043, "loopCount": 1 },
-    { "name": "openai/symphony", "url": "https://github.com/openai/symphony", "stars": 25514, "loopCount": 1 },
+    { "name": "snarktank/ralph", "url": "https://github.com/snarktank/ralph", "stars": 2100, "loopCount": 1 },
+    { "name": "openai/symphony", "url": "https://github.com/openai/symphony", "stars": 26000, "loopCount": 1 },
     { "name": "github/gh-aw", "url": "https://github.com/github/gh-aw", "stars": 500, "loopCount": 1 },
     { "name": "zevtos/agentpipe", "url": "https://github.com/zevtos/agentpipe", "stars": 50, "loopCount": 1 },
     { "name": "kayoslab/karl", "url": "https://github.com/kayoslab/karl", "stars": 50, "loopCount": 1 },
-    { "name": "a7t-ai/three-body-agent", "url": "https://github.com/a7t-ai/three-body-agent", "loopCount": 1 }
+    { "name": "a7t-ai/three-body-agent", "url": "https://github.com/a7t-ai/three-body-agent", "loopCount": 1 },
+    { "name": "DataScienceDojo loop patterns", "url": "https://www.datascience-dojo.com/blog/loop-engineering-patterns", "loopCount": 10 },
+    { "name": "Digital Applied multi-agent patterns", "url": "https://digitalapplied.com/blog/multi-agent-orchestration-patterns", "loopCount": 5 },
+    { "name": "Verdent agentic engineering patterns", "url": "https://verdent.io/blog/agentic-engineering-patterns", "loopCount": 4 }
   ],
   "loops": [
     {
@@ -1400,6 +1403,58 @@
       "tags": ["specialists", "gated", "role-bounded", "pipeline"],
       "related": ["gated-pipeline-loop", "multi-agent-devloop"],
       "sourceType": "github"
+    },
+    {
+      "id": "plan-first-development",
+      "title": "The Plan-First Development loop",
+      "category": "engineering",
+      "author": "Verdent Engineering",
+      "source": "https://verdent.io/blog/agentic-engineering-patterns",
+      "sourceRepo": "Verdent agentic-engineering-patterns",
+      "description": "Plan-first approach with documentation before any code changes",
+      "prompt": "Before writing any code, produce a detailed plan covering architecture, data flow, edge cases, and testing strategy. Only after plan approval proceed to implementation.",
+      "verification": "Code matches the approved plan with no deviations.",
+      "tags": ["planning", "documentation", "architecture", "approval"],
+      "related": ["goal-forge-loop", "prepare-new-project-loop"]
+    },
+    {
+      "id": "parallel-worktree-isolation",
+      "title": "The Parallel Worktree Isolation loop",
+      "category": "engineering",
+      "author": "Verdent Engineering",
+      "source": "https://verdent.io/blog/agentic-engineering-patterns",
+      "sourceRepo": "Verdent agentic-engineering-patterns",
+      "description": "Isolated worktree-based development for safe parallel experimentation",
+      "prompt": "Create isolated git worktrees for each experimental feature. Work independently in each worktree, run tests in isolation, only merge when each passes independently.",
+      "verification": "All worktrees pass independently and merge cleanly without conflicts.",
+      "tags": ["worktree", "isolation", "parallel", "git"],
+      "related": ["autonomy-loop", "loop-harness-verification-loop"]
+    },
+    {
+      "id": "multi-agent-supervisor",
+      "title": "The Multi-Agent Supervisor loop",
+      "category": "multi-agent",
+      "author": "DataScienceDojo",
+      "source": "https://www.datascience-dojo.com/blog/loop-engineering-patterns",
+      "sourceRepo": "DataScienceDojo",
+      "description": "Supervisor agent coordinates specialist sub-agents with routing and escalation",
+      "prompt": "Supervisor agent receives task, decomposes it into sub-tasks, routes to specialist agents, collects results, resolves conflicts, and produces final output.",
+      "verification": "All sub-tasks completed correctly with supervisor validation. No conflicts in final output.",
+      "tags": ["supervisor", "orchestration", "multi-agent", "routing"],
+      "related": ["orchestrator-worker", "triage-and-escalate"]
+    },
+    {
+      "id": "debate-consensus",
+      "title": "The Debate Consensus loop",
+      "category": "multi-agent",
+      "author": "Digital Applied",
+      "source": "https://digitalapplied.com/blog/multi-agent-orchestration-patterns",
+      "sourceRepo": "Digital Applied",
+      "description": "Multiple agents debate different viewpoints until reaching consensus",
+      "prompt": "Assign agent roles with different viewpoints. Have them debate the solution, challenge each other's reasoning, and iterate until consensus is reached.",
+      "verification": "All agents agree on the solution with documented reasoning from each perspective.",
+      "tags": ["debate", "consensus", "multi-agent", "reasoning"],
+      "related": ["multi-llm-convergence-loop", "devils-advocate-design-loop"]
     }
   ]
 }

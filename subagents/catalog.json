@@ -1,34 +1,36 @@
 {
   "name": "Subagents Catalog",
-  "version": "2026.06",
+  "version": "2026.07",
   "description": "Curated index of subagent definitions, agent harnesses, and platform-specific subagent formats",
   "license": "MIT",
-  "lastUpdated": "2026-06-28",
-  "totalSubagents": 22,
+  "lastUpdated": "2026-07-04",
+  "totalSubagents": 25,
   "categories": [
-    { "name": "Subagent Collection", "count": 8 },
+    { "name": "Subagent Collection", "count": 11 },
     { "name": "Agent Harness", "count": 3 },
     { "name": "Official SDK", "count": 4 },
     { "name": "Platform Format", "count": 4 },
     { "name": "Curated Directory", "count": 3 }
   ],
   "sources": [
-    { "name": "VoltAgent/awesome-claude-code-subagents", "url": "https://github.com/VoltAgent/awesome-claude-code-subagents", "stars": 22500 },
-    { "name": "VoltAgent/awesome-codex-subagents", "url": "https://github.com/VoltAgent/awesome-codex-subagents", "stars": 5300 },
+    { "name": "VoltAgent/awesome-claude-code-subagents", "url": "https://github.com/VoltAgent/awesome-claude-code-subagents", "stars": 23000 },
+    { "name": "VoltAgent/awesome-codex-subagents", "url": "https://github.com/VoltAgent/awesome-codex-subagents", "stars": 5500 },
     { "name": "gotalab/cc-sdd", "url": "https://github.com/gotalab/cc-sdd", "stars": 3500 },
     { "name": "davepoon/buildwithclaude", "url": "https://github.com/davepoon/buildwithclaude", "stars": 3100 },
     { "name": "0xfurai/claude-code-subagents", "url": "https://github.com/0xfurai/claude-code-subagents", "stars": 939 },
     { "name": "gensecaihq/Claude-Code-Subagents-Collection", "url": "https://github.com/gensecaihq/Claude-Code-Subagents-Collection", "stars": 26 },
     { "name": "ankitmundada/awesome-gemini-cli-subagents", "url": "https://github.com/ankitmundada/awesome-gemini-cli-subagents", "stars": 35 },
     { "name": "armanzeroeight/fastagent-plugins", "url": "https://github.com/armanzeroeight/fastagent-plugins", "stars": 28 },
-    { "name": "code-yeongyu/oh-my-openagent", "url": "https://github.com/code-yeongyu/oh-my-openagent", "stars": 63800 },
-    { "name": "code-yeongyu/oh-my-opencode", "url": "https://github.com/code-yeongyu/oh-my-opencode", "stars": 24500 },
-    { "name": "Yeachan-Heo/oh-my-codex", "url": "https://github.com/Yeachan-Heo/oh-my-codex", "stars": 18800 },
-    { "name": "hesreallyhim/awesome-claude-code", "url": "https://github.com/hesreallyhim/awesome-claude-code", "stars": 47300 },
-    { "name": "anthropics/claude-code", "url": "https://github.com/anthropics/claude-code", "stars": 131000 },
-    { "name": "openai/codex", "url": "https://github.com/openai/codex", "stars": 90000 },
-    { "name": "google-gemini/gemini-cli", "url": "https://github.com/google-gemini/gemini-cli", "stars": 105000 },
-    { "name": "anomalyco/opencode", "url": "https://github.com/anomalyco/opencode", "stars": 172000 }
+    { "name": "code-yeongyu/oh-my-openagent", "url": "https://github.com/code-yeongyu/oh-my-openagent", "stars": 64818 },
+    { "name": "code-yeongyu/oh-my-opencode", "url": "https://github.com/code-yeongyu/oh-my-opencode", "stars": 25000 },
+    { "name": "Yeachan-Heo/oh-my-codex", "url": "https://github.com/Yeachan-Heo/oh-my-codex", "stars": 19000 },
+    { "name": "hesreallyhim/awesome-claude-code", "url": "https://github.com/hesreallyhim/awesome-claude-code", "stars": 48000 },
+    { "name": "anthropics/claude-code", "url": "https://github.com/anthropics/claude-code", "stars": 136073 },
+    { "name": "openai/codex", "url": "https://github.com/openai/codex", "stars": 95507 },
+    { "name": "google-gemini/gemini-cli", "url": "https://github.com/google-gemini/gemini-cli", "stars": 105739 },
+    { "name": "anomalyco/opencode", "url": "https://github.com/anomalyco/opencode", "stars": 182372 },
+    { "name": "minetechnic2012/claude-ops-inspector", "url": "https://github.com/minetechnic2012-lang/claude-ops-inspector", "stars": 151 },
+    { "name": "jshsakura/awesome-opencode-skills", "url": "https://github.com/jshsakura/awesome-opencode-skills", "stars": 19 }
   ],
   "subagents": [
     {
@@ -117,7 +119,7 @@
       "category": "Agent Harness",
       "description": "Agent harness with async subagent orchestration. Manages subagent delegation, parallel execution, and result aggregation across multiple agent personas.",
       "githubUrl": "https://github.com/code-yeongyu/oh-my-openagent",
-      "stars": 63800,
+      "stars": 64818,
       "license": "MIT",
       "tags": ["harness", "async", "orchestration", "delegation", "parallel"]
     },
@@ -125,9 +127,9 @@
       "id": "oh-my-opencode",
       "name": "oh-my-opencode",
       "category": "Agent Harness",
-      "description": "Agent harness for OpenCode with subagent management, tool delegation, and workflow orchestration. Extends OpenCode with multi-agent capabilities.",
+      "description": "Now absorbed into oh-my-openagent (64.8K stars). Originally an OpenCode agent harness with subagent management, now part of the unified OMO platform.",
       "githubUrl": "https://github.com/code-yeongyu/oh-my-opencode",
-      "stars": 24500,
+      "stars": 25000,
       "license": "MIT",
       "tags": ["harness", "opencode", "delegation", "workflow", "multi-agent"]
     },
@@ -137,7 +139,7 @@
       "category": "Agent Harness",
       "description": "Codex orchestration harness with 33 agent prompts. Manages subagent lifecycle, handoffs, and coordinated task execution for Codex CLI.",
       "githubUrl": "https://github.com/Yeachan-Heo/oh-my-codex",
-      "stars": 18800,
+      "stars": 19000,
       "license": "MIT",
       "tags": ["harness", "codex", "orchestration", "prompts", "handoffs"]
     },
@@ -255,6 +257,36 @@
       "stars": 47300,
       "license": "MIT",
       "tags": ["directory", "formats", "cross-platform", "reference"]
+    },
+    {
+      "id": "claude-ops-inspector",
+      "name": "Claude Ops Inspector",
+      "category": "Subagent Collection",
+      "description": "First subagent verification/safety tool with proof-carrying code. Validates subagent outputs and ensures trustworthiness before execution. 151 stars in 6 days.",
+      "githubUrl": "https://github.com/minetechnic2012-lang/claude-ops-inspector",
+      "stars": 151,
+      "license": "MIT",
+      "tags": ["verification", "safety", "trust", "proof-carrying-code"]
+    },
+    {
+      "id": "awesome-opencode-skills",
+      "name": "awesome-opencode-skills",
+      "category": "Subagent Collection",
+      "description": "136+ Codex subagents ported to OpenCode skill format. Demonstrates cross-platform subagent portability trend.",
+      "githubUrl": "https://github.com/jshsakura/awesome-opencode-skills",
+      "stars": 19,
+      "license": "MIT",
+      "tags": ["opencode", "porting", "cross-platform", "subagents"]
+    },
+    {
+      "id": "giolabs-conclave",
+      "name": "GioLabs Conclave",
+      "category": "Subagent Collection",
+      "description": "Scrum team roles as subagents. Defines PM, Tech Lead, QA, and Developer agent personas with team-based orchestration patterns.",
+      "githubUrl": "https://github.com/giolabs/conclave",
+      "stars": 1,
+      "license": "MIT",
+      "tags": ["scrum", "team-roles", "pm", "qa", "orchestration"]
     }
   ]
 }

@@ -1,15 +1,15 @@
 {
   "name": "Skills Catalog",
-  "version": "2026.06",
+  "version": "2026.07",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-06-28",
-  "totalSkills": 72,
+  "lastUpdated": "2026-07-04",
+  "totalSkills": 77,
   "categories": [
-    { "name": "Development", "count": 24 },
+    { "name": "Development", "count": 28 },
     { "name": "Productivity", "count": 16 },
     { "name": "Content", "count": 8 },
-    { "name": "Design", "count": 6 },
+    { "name": "Design", "count": 7 },
     { "name": "Testing", "count": 3 },
     { "name": "DevOps", "count": 7 },
     { "name": "Marketing", "count": 3 },
@@ -17,12 +17,13 @@
     { "name": "Security", "count": 2 }
   ],
   "sources": [
-    { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "stars": 235000, "skillCount": 13 },
-    { "name": "anthropics/skills", "url": "https://github.com/anthropics/skills", "stars": 153000, "skillCount": 7 },
-    { "name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "stars": 139000, "skillCount": 15 },
-    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "stars": 28200, "skillCount": 8 },
+    { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "stars": 239000, "skillCount": 13 },
+    { "name": "anthropics/skills", "url": "https://github.com/anthropics/skills", "stars": 157000, "skillCount": 7 },
+    { "name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "stars": 141000, "skillCount": 15 },
+    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "stars": 29000, "skillCount": 8 },
     { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "stars": 30500, "skillCount": 37 },
-    { "name": "skills.sh leaderboard", "url": "https://skills.sh", "totalInstalls": 810000 }
+    { "name": "skills.sh leaderboard", "url": "https://skills.sh", "totalInstalls": 850000 },
+    { "name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "stars": 68900, "skillCount": 24 }
   ],
   "skills": [
     {
@@ -960,6 +961,71 @@
       "verified": true,
       "local": false,
       "tags": ["registry", "discovery", "community", "platform"]
+    },
+    {
+      "id": "ponytail",
+      "name": "Ponytail Anti-Over-Engineering",
+      "source": "DietrichGebert/ponytail",
+      "category": "Development",
+      "installs": 69000,
+      "description": "Anti-over-engineering skill that keeps code simple and maintainable. Born 3 weeks ago and rapidly adopted. Prevents unnecessary complexity in AI-generated code.",
+      "install": "npx skills add DietrichGebert/ponytail",
+      "license": "MIT",
+      "verified": true,
+      "local": false,
+      "tags": ["simplicity", "anti-overengineering", "maintainability", "code-quality"]
+    },
+    {
+      "id": "understand-anything",
+      "name": "Understand-Anything",
+      "source": "Egonex-AI/understand-anything",
+      "category": "Development",
+      "installs": 59400,
+      "description": "Code knowledge graphs for AI agents. Builds semantic understanding of any codebase with visual dependency maps and architecture diagrams.",
+      "install": "npx skills add Egonex-AI/understand-anything",
+      "license": "MIT",
+      "verified": true,
+      "local": false,
+      "tags": ["knowledge-graph", "codebase", "understanding", "architecture"]
+    },
+    {
+      "id": "agent-reach",
+      "name": "Agent-Reach Internet Research",
+      "source": "Panniantong/agent-reach",
+      "category": "Development",
+      "installs": 48300,
+      "description": "15-platform internet research CLI for AI agents. Aggregates results from web search, social media, academic sources, and news into structured reports.",
+      "install": "npx skills add Panniantong/agent-reach",
+      "license": "MIT",
+      "verified": true,
+      "local": false,
+      "tags": ["research", "internet", "aggregation", "cli"]
+    },
+    {
+      "id": "taste-skill",
+      "name": "Taste Frontend Design",
+      "source": "Leonxlnx/taste-skill",
+      "category": "Design",
+      "installs": 55900,
+      "description": "Anti-slop frontend design skill with taste-based UI generation. Creates visually refined interfaces that avoid generic AI aesthetics.",
+      "install": "npx skills add Leonxlnx/taste-skill",
+      "license": "MIT",
+      "verified": true,
+      "local": false,
+      "tags": ["design", "ui", "aesthetics", "anti-slop"]
+    },
+    {
+      "id": "skillopt",
+      "name": "SkillOpt (Microsoft)",
+      "source": "microsoft/skillopt",
+      "category": "Development",
+      "installs": 11000,
+      "description": "Self-evolving agent skills from Microsoft Research. Skills that improve themselves through iterative refinement and feedback loops with plugin support.",
+      "install": "npx skills add microsoft/skillopt",
+      "license": "MIT",
+      "verified": true,
+      "local": false,
+      "tags": ["self-improving", "microsoft", "research", "meta-learning"]
     }
   ]
 }
