@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The definitive directory of AI agent components.** 398 installable skills, MCP servers, agent workflows, subagents, hooks, and plugins -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
+> **The definitive directory of AI agent components.** 580 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -34,6 +34,8 @@
 - [Subagents (30 agents)](#subagents-30-agents)
 - [Hooks (20 hooks)](#hooks-20-hooks)
 - [Plugins (51 plugins)](#plugins-51-plugins)
+- [Prompts (120 prompts)](#prompts-120-prompts)
+- [Tools (62 CLI tools)](#tools-62-cli-tools)
 - [Cross-Platform Compatibility](#cross-platform-compatibility)
 - [Contribute with Your Agent](#contribute-with-your-agent)
 - [Contributing](#contributing)
@@ -66,6 +68,8 @@ Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CL
     <tr><td>Subagents</td><td align="center">30 agents + model routing</td><td align="center">No</td></tr>
     <tr><td>Hooks</td><td align="center">20 production-ready hooks</td><td align="center">No</td></tr>
     <tr><td>Plugins</td><td align="center">51 plugins across 9 platforms</td><td align="center">No</td></tr>
+    <tr><td>Prompts</td><td align="center">120 curated prompts + 310K marketplace</td><td align="center">Links only</td></tr>
+    <tr><td>CLI Tools</td><td align="center">62 tools with install cmds</td><td align="center">No</td></tr>
     <tr><td>Catalogs with metadata</td><td align="center">JSON catalogs for discovery</td><td align="center">No</td></tr>
     <tr><td>Cross-platform</td><td align="center">30+ AI tools</td><td align="center">Varies</td></tr>
     <tr><td>Agent-contributable</td><td align="center">Automated fork+PR skill</td><td align="center">No</td></tr>
@@ -114,8 +118,10 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 | **Subagents** | 30 | Specialized agents with model routing | [subagents/](subagents/) |
 | **Hooks** | 20 | Production-ready Claude Code hooks | [hooks/](hooks/) |
 | **Plugins** | 51 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
+| **Prompts** | 120 | Curated prompt collections and marketplaces | [prompts/](prompts/) |
+| **Tools** | 62 | CLI tools that enhance agent capabilities | [tools/](tools/) |
 
-**Total: 398 components across 6 categories.**
+**Total: 580 components across 8 categories.**
 
 ---
 
@@ -291,21 +297,83 @@ Browse all: [plugins/](plugins/) | [catalog.json](plugins/catalog.json)
 
 ---
 
+## Prompts (120 prompts)
+
+Curated prompt collections, libraries, and marketplaces for AI coding agents.
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">Top Sources</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>General Purpose</b></td><td align="right">12</td><td>f/prompts.chat (164K stars), dair-ai/Prompt-Engineering-Guide (55K)</td></tr>
+    <tr><td><b>Coding</b></td><td align="right">15</td><td>danielmiessler/Fabric (43K), anthropic/prompt-library</td></tr>
+    <tr><td><b>Code Review</b></td><td align="right">8</td><td>anthropic/prompt-eng-interactive-tutorial (37K)</td></tr>
+    <tr><td><b>Architecture</b></td><td align="right">7</td><td>f/awesome-chatgpt-prompts, hoangatg/awesome-ai-prompts-2026</td></tr>
+    <tr><td><b>Debugging</b></td><td align="right">6</td><td>openai/openai-cookbook (75K), repowise-dev/claude-code-prompts</td></tr>
+    <tr><td><b>DevOps</b></td><td align="right">5</td><td>hoangatg/awesome-ai-prompts-2026</td></tr>
+    <tr><td><b>Security</b></td><td align="right">5</td><td>anthropic/prompt-library, OWASP Agentic AI Top 10</td></tr>
+    <tr><td><b>Image Generation</b></td><td align="right">8</td><td>YouMind-OpenLab/awesome-gpt-image-2 (7.4K stars, 9.9K prompts)</td></tr>
+    <tr><td><b>Agent Workflows</b></td><td align="right">5</td><td>langgptai/LangGPT (12.2K), danielmiessler/Fabric</td></tr>
+  </tbody>
+</table>
+
+**Marketplaces:** PromptBase (310K+ prompts), AIPRM (4K+), FlowGPT, PromptHero, skills.sh (885K installs)
+
+Browse all: [prompts/](prompts/) | [catalog.json](prompts/catalog.json)
+
+---
+
+## Tools (62 CLI tools)
+
+Essential CLI tools and utilities that enhance AI coding agent capabilities.
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">Top Tools</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Code Analysis</b></td><td align="right">9</td><td>ripgrep (65.5K), fzf (68K), fd (35K), bat (51K)</td></tr>
+    <tr><td><b>Git Utilities</b></td><td align="right">6</td><td>lazygit (55K), gh (38K), delta (25K), tig (13K)</td></tr>
+    <tr><td><b>Package Managers</b></td><td align="right">5</td><td>Bun (77K), pnpm (30K), uv (50K), volta (11K)</td></tr>
+    <tr><td><b>Docker & Containers</b></td><td align="right">5</td><td>lazydocker (40K), dive (49K), podman (30K)</td></tr>
+    <tr><td><b>Cloud & DevOps</b></td><td align="right">6</td><td>ansible (64K), terraform (44K), k9s (28K)</td></tr>
+    <tr><td><b>AI Coding CLIs</b></td><td align="right">8</td><td>ollama (120K), gemini-cli (98K), claude-code (80K), aider (42K)</td></tr>
+    <tr><td><b>Formatting & Linting</b></td><td align="right">6</td><td>prettier (51K), ruff (35K), shellcheck (37K), biome (17K)</td></tr>
+    <tr><td><b>Database CLIs</b></td><td align="right">5</td><td>pgcli (12.8K), mycli (11.7K), usql (9K)</td></tr>
+    <tr><td><b>API Testing</b></td><td align="right">5</td><td>hoppscotch (67K), httpie (35K), bruno (30K)</td></tr>
+    <tr><td><b>Monitoring</b></td><td align="right">4</td><td>netdata (72K), glances (27K), btop (25K)</td></tr>
+    <tr><td><b>Terminal Enhancement</b></td><td align="right">3</td><td>starship (48K), tmux (35K), atuin (23K)</td></tr>
+  </tbody>
+</table>
+
+Browse all: [tools/](tools/) | [catalog.json](tools/catalog.json)
+
+---
+
 ## Cross-Platform Compatibility
 
 Awesome AI Agent Tools works with every major AI coding assistant:
 
-| Platform | Skills | MCPs | Loops | Subagents | Plugins | How to Install |
-|----------|:------:|:----:|:-----:|:---------:|:-------:|----------------|
-| **Claude Code** | Yes | Yes | Yes | Yes | Yes | Copy to `.claude/skills/` |
-| **OpenCode** | Yes | Yes | Yes | Yes | Yes | Copy to `.opencode/skills/` |
-| **Codex** | Yes | Yes | Yes | Yes | Yes | Copy to `.agents/skills/` |
-| **KiloCode** | Yes | Yes | Yes | Yes | Yes | Copy to `.kilo/skills/` |
-| **Cursor** | Yes | Yes | Yes | Yes | Yes | Copy to `.cursor/skills/` |
-| **Gemini CLI** | Yes | Yes | Yes | Yes | Yes | Copy to `.gemini/skills/` |
-| **Copilot** | Yes | Yes | Yes | Yes | Yes | Copy to `.github/skills/` |
-| **Aider** | Yes | Yes | Yes | Yes | Yes | Copy to `.aider/skills/` |
-| **Windsurf** | Yes | Yes | Yes | Yes | Yes | Copy to `.windsurf/skills/` |
+| Platform | Skills | MCPs | Loops | Subagents | Plugins | Prompts | Tools | How to Install |
+|----------|:------:|:----:|:-----:|:---------:|:-------:|:-------:|:-----:|----------------|
+| **Claude Code** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Copy to `.claude/skills/` |
+| **OpenCode** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Copy to `.opencode/skills/` |
+| **Codex** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Copy to `.agents/skills/` |
+| **KiloCode** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Copy to `.kilo/skills/` |
+| **Cursor** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Copy to `.cursor/skills/` |
+| **Gemini CLI** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Copy to `.gemini/skills/` |
+| **Copilot** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Copy to `.github/skills/` |
+| **Aider** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Copy to `.aider/skills/` |
+| **Windsurf** | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Copy to `.windsurf/skills/` |
 
 All skills follow the [SKILL.md open standard](https://agentskills.io) adopted by ~40 clients.
 
@@ -371,4 +439,4 @@ To the extent possible under law, the contributors have waived all copyright and
 
 ---
 
-**Keywords:** AI agent skills, agent skills library, SKILL.md, MCP servers, model context protocol, agent workflows, AI coding assistant, Claude Code skills, OpenCode skills, Codex skills, Cursor skills, agent orchestration, AI development tools, skill marketplace, agent infrastructure, multi-agent, AI code review, TDD workflow, prompt engineering, agent loops, AI agent tools, coding agent, agent skills standard, portable skills, cross-platform AI, awesome list, open source AI, developer tools, subagents, hooks, plugins, agent plugins
+**Keywords:** AI agent skills, agent skills library, SKILL.md, MCP servers, model context protocol, agent workflows, AI coding assistant, Claude Code skills, OpenCode skills, Codex skills, Cursor skills, agent orchestration, AI development tools, skill marketplace, agent infrastructure, multi-agent, AI code review, TDD workflow, prompt engineering, agent loops, AI agent tools, coding agent, agent skills standard, portable skills, cross-platform AI, awesome list, open source AI, developer tools, subagents, hooks, plugins, agent plugins, prompt collections, CLI tools, developer utilities

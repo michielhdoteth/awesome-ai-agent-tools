@@ -1,0 +1,643 @@
+{
+  "name": "Tools Catalog",
+  "version": "2026.07",
+  "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
+  "license": "MIT",
+  "lastUpdated": "2026-07-06",
+  "totalTools": 62,
+  "categories": [
+    { "name": "Code Analysis", "count": 9 },
+    { "name": "Git Utilities", "count": 6 },
+    { "name": "Package Managers", "count": 5 },
+    { "name": "Docker & Containers", "count": 5 },
+    { "name": "Cloud & DevOps", "count": 6 },
+    { "name": "AI Coding CLIs", "count": 8 },
+    { "name": "Formatting & Linting", "count": 6 },
+    { "name": "Database CLIs", "count": 5 },
+    { "name": "API Testing", "count": 5 },
+    { "name": "Monitoring", "count": 4 },
+    { "name": "Terminal Enhancement", "count": 3 }
+  ],
+  "tools": [
+    {
+      "id": "ripgrep",
+      "name": "ripgrep",
+      "category": "Code Analysis",
+      "description": "Line-oriented search tool, 10-100x faster than grep. Respects .gitignore.",
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "stars": 65500,
+      "crossPlatform": true,
+      "install": "brew install ripgrep / winget install BurntSushi.ripgrep.MSVC"
+    },
+    {
+      "id": "fd",
+      "name": "fd",
+      "category": "Code Analysis",
+      "description": "Friendly, fast alternative to find. Simpler syntax, colorized output.",
+      "url": "https://github.com/sharkdp/fd",
+      "stars": 35000,
+      "crossPlatform": true,
+      "install": "brew install fd / sudo apt install fd-find"
+    },
+    {
+      "id": "bat",
+      "name": "bat",
+      "category": "Code Analysis",
+      "description": "Cat clone with syntax highlighting, line numbers, and git integration.",
+      "url": "https://github.com/sharkdp/bat",
+      "stars": 51000,
+      "crossPlatform": true,
+      "install": "brew install bat"
+    },
+    {
+      "id": "fzf",
+      "name": "fzf",
+      "category": "Code Analysis",
+      "description": "General-purpose fuzzy finder. Interactively filter files, history, branches.",
+      "url": "https://github.com/junegunn/fzf",
+      "stars": 68000,
+      "crossPlatform": true,
+      "install": "brew install fzf"
+    },
+    {
+      "id": "eza",
+      "name": "eza",
+      "category": "Code Analysis",
+      "description": "Modern ls replacement with git integration, icons, tree view.",
+      "url": "https://github.com/eza-community/eza",
+      "stars": 15000,
+      "crossPlatform": true,
+      "install": "brew install eza"
+    },
+    {
+      "id": "zoxide",
+      "name": "zoxide",
+      "category": "Code Analysis",
+      "description": "Smarter cd command. Learns your habits and jumps to directories.",
+      "url": "https://github.com/ajeetdsouza/zoxide",
+      "stars": 25000,
+      "crossPlatform": true,
+      "install": "brew install zoxide"
+    },
+    {
+      "id": "dust",
+      "name": "dust",
+      "category": "Code Analysis",
+      "description": "Intuitive du replacement. Shows disk usage with visual bars.",
+      "url": "https://github.com/bootandy/dust",
+      "stars": 10000,
+      "crossPlatform": true,
+      "install": "brew install dust"
+    },
+    {
+      "id": "duf",
+      "name": "duf",
+      "category": "Code Analysis",
+      "description": "Better df alternative. Beautiful disk usage display.",
+      "url": "https://github.com/muesli/duf",
+      "stars": 11000,
+      "crossPlatform": true,
+      "install": "brew install duf"
+    },
+    {
+      "id": "yazi",
+      "name": "Yazi",
+      "category": "Code Analysis",
+      "description": "Blazing fast terminal file manager written in Rust.",
+      "url": "https://github.com/sxyazi/yazi",
+      "stars": 25000,
+      "crossPlatform": true,
+      "install": "brew install yazi"
+    },
+    {
+      "id": "lazygit",
+      "name": "lazygit",
+      "category": "Git Utilities",
+      "description": "Terminal UI for git. Visual staging, stashing, rebating.",
+      "url": "https://github.com/jesseduffield/lazygit",
+      "stars": 55000,
+      "crossPlatform": true,
+      "install": "brew install lazygit"
+    },
+    {
+      "id": "gh",
+      "name": "GitHub CLI (gh)",
+      "category": "Git Utilities",
+      "description": "Official GitHub CLI. PRs, issues, actions, releases from terminal.",
+      "url": "https://github.com/cli/cli",
+      "stars": 38000,
+      "crossPlatform": true,
+      "install": "brew install gh"
+    },
+    {
+      "id": "delta",
+      "name": "delta",
+      "category": "Git Utilities",
+      "description": "Syntax-highlighting pager for git, diff, and grep output.",
+      "url": "https://github.com/dandavison/delta",
+      "stars": 25000,
+      "crossPlatform": true,
+      "install": "brew install git-delta"
+    },
+    {
+      "id": "tig",
+      "name": "tig",
+      "category": "Git Utilities",
+      "description": "Text-mode interface for git. Browser mode for git history.",
+      "url": "https://github.com/jonas/tig",
+      "stars": 13000,
+      "crossPlatform": true,
+      "install": "brew install tig"
+    },
+    {
+      "id": "gitui",
+      "name": "Gitui",
+      "category": "Git Utilities",
+      "description": "Blazing fast terminal-ui for git written in Rust.",
+      "url": "https://github.com/extrawurst/gitui",
+      "stars": 10000,
+      "crossPlatform": true,
+      "install": "brew install gitui"
+    },
+    {
+      "id": "gh-dash",
+      "name": "gh-dash",
+      "category": "Git Utilities",
+      "description": "GitHub CLI dashboard. Visual PR/issue management.",
+      "url": "https://github.com/dlvhdr/gh-dash",
+      "stars": 5000,
+      "crossPlatform": true,
+      "install": "gh extension install dlvhdr/gh-dash"
+    },
+    {
+      "id": "bun",
+      "name": "Bun",
+      "category": "Package Managers",
+      "description": "Incredibly fast JavaScript runtime, bundler, and package manager.",
+      "url": "https://github.com/oven-sh/bun",
+      "stars": 77000,
+      "crossPlatform": true,
+      "install": "curl -fsSL https://bun.sh/install | bash"
+    },
+    {
+      "id": "pnpm",
+      "name": "pnpm",
+      "category": "Package Managers",
+      "description": "Fast, disk-efficient package manager. Strict dependency resolution.",
+      "url": "https://github.com/pnpm/pnpm",
+      "stars": 30000,
+      "crossPlatform": true,
+      "install": "npm install -g pnpm"
+    },
+    {
+      "id": "uv",
+      "name": "uv",
+      "category": "Package Managers",
+      "description": "Extremely fast Python package installer and resolver.",
+      "url": "https://github.com/astral-sh/uv",
+      "stars": 50000,
+      "crossPlatform": true,
+      "install": "curl -LsSf https://astral.sh/uv/install.sh | sh"
+    },
+    {
+      "id": "volta",
+      "name": "Volta",
+      "category": "Package Managers",
+      "description": "JavaScript tool manager. Pin node/npm/yarn versions per project.",
+      "url": "https://github.com/volta-cli/volta",
+      "stars": 11000,
+      "crossPlatform": true,
+      "install": "curl https://get.volta.sh | bash"
+    },
+    {
+      "id": "corepack",
+      "name": "Corepack",
+      "category": "Package Managers",
+      "description": "Zero-runtime-dependency Node.js package manager manager.",
+      "url": "https://github.com/nodejs/corepack",
+      "stars": 3000,
+      "crossPlatform": true,
+      "install": "corepack enable"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "Docker & Containers",
+      "description": "Container platform for building, shipping, running applications.",
+      "url": "https://github.com/docker/cli",
+      "stars": 5000,
+      "crossPlatform": true,
+      "install": "brew install --cask docker"
+    },
+    {
+      "id": "podman",
+      "name": "Podman",
+      "category": "Docker & Containers",
+      "description": "Daemonless container engine. Rootless, OCI-compatible Docker alternative.",
+      "url": "https://github.com/containers/podman",
+      "stars": 30000,
+      "crossPlatform": true,
+      "install": "brew install podman"
+    },
+    {
+      "id": "lazydocker",
+      "name": "lazydocker",
+      "category": "Docker & Containers",
+      "description": "Terminal UI for docker and docker-compose. Visual container management.",
+      "url": "https://github.com/jesseduffield/lazydocker",
+      "stars": 40000,
+      "crossPlatform": true,
+      "install": "brew install lazydocker"
+    },
+    {
+      "id": "dive",
+      "name": "dive",
+      "category": "Docker & Containers",
+      "description": "Tool for exploring each layer in a Docker image. Optimize Dockerfiles.",
+      "url": "https://github.com/wagoodman/dive",
+      "stars": 49000,
+      "crossPlatform": true,
+      "install": "brew install dive"
+    },
+    {
+      "id": "compose",
+      "name": "Docker Compose",
+      "category": "Docker & Containers",
+      "description": "Define and run multi-container Docker applications.",
+      "url": "https://github.com/docker/compose",
+      "stars": 35000,
+      "crossPlatform": true,
+      "install": "Included with Docker Desktop"
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "category": "Cloud & DevOps",
+      "description": "Infrastructure as Code tool for cloud provisioning.",
+      "url": "https://github.com/hashicorp/terraform",
+      "stars": 44000,
+      "crossPlatform": true,
+      "install": "brew install terraform"
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "category": "Cloud & DevOps",
+      "description": "Agentless automation engine. Configuration management at scale.",
+      "url": "https://github.com/ansible/ansible",
+      "stars": 64000,
+      "crossPlatform": true,
+      "install": "pip install ansible"
+    },
+    {
+      "id": "kubectl",
+      "name": "kubectl",
+      "category": "Cloud & DevOps",
+      "description": "Kubernetes command-line tool. Deploy and manage containerized apps.",
+      "url": "https://github.com/kubernetes/kubectl",
+      "stars": 12000,
+      "crossPlatform": true,
+      "install": "brew install kubectl"
+    },
+    {
+      "id": "k9s",
+      "name": "K9s",
+      "category": "Cloud & DevOps",
+      "description": "Terminal UI for Kubernetes. Real-time cluster monitoring.",
+      "url": "https://github.com/derailed/k9s",
+      "stars": 28000,
+      "crossPlatform": true,
+      "install": "brew install k9s"
+    },
+    {
+      "id": "aws-cli",
+      "name": "AWS CLI",
+      "category": "Cloud & DevOps",
+      "description": "Official AWS command-line interface.",
+      "url": "https://github.com/aws/aws-cli",
+      "stars": 16000,
+      "crossPlatform": true,
+      "install": "brew install awscli"
+    },
+    {
+      "id": "gcloud",
+      "name": "gcloud CLI",
+      "category": "Cloud & DevOps",
+      "description": "Google Cloud command-line interface.",
+      "url": "https://github.com/googlecloudsdk/gcloud_cli",
+      "stars": 5000,
+      "crossPlatform": true,
+      "install": "brew install --cask google-cloud-sdk"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "category": "AI Coding CLIs",
+      "description": "Anthropic's agentic coding tool. Terminal-native AI pair programmer.",
+      "url": "https://github.com/anthropics/claude-code",
+      "stars": 80000,
+      "crossPlatform": true,
+      "install": "npm install -g @anthropic-ai/claude-code"
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "category": "AI Coding CLIs",
+      "description": "Google's AI coding agent in the terminal.",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "stars": 98000,
+      "crossPlatform": true,
+      "install": "npm install -g @anthropic-ai/gemini-cli"
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "category": "AI Coding CLIs",
+      "description": "Run LLMs locally. Llama, Mistral, Phi, Gemma, and more.",
+      "url": "https://github.com/ollama/ollama",
+      "stars": 120000,
+      "crossPlatform": true,
+      "install": "brew install ollama"
+    },
+    {
+      "id": "aider",
+      "name": "Aider",
+      "category": "AI Coding CLIs",
+      "description": "AI pair programming in your terminal. Works with GPT-4, Claude, local models.",
+      "url": "https://github.com/paul-gauthier/aider",
+      "stars": 42000,
+      "crossPlatform": true,
+      "install": "pip install aider-chat"
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "category": "AI Coding CLIs",
+      "description": "Open-source AI coding agent. Multi-model support.",
+      "url": "https://github.com/opencode-ai/opencode",
+      "stars": 25000,
+      "crossPlatform": true,
+      "install": "npm install -g opencode"
+    },
+    {
+      "id": "continue",
+      "name": "Continue",
+      "category": "AI Coding CLIs",
+      "description": "Open-source AI code assistant. VS Code and JetBrains.",
+      "url": "https://github.com/continuedev/continue",
+      "stars": 20000,
+      "crossPlatform": true,
+      "install": "Install from VS Code marketplace"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "category": "AI Coding CLIs",
+      "description": "AI-first code editor. Fork of VS Code with AI superpowers.",
+      "url": "https://github.com/getcursor/cursor",
+      "stars": 35000,
+      "crossPlatform": true,
+      "install": "Download from cursor.com"
+    },
+    {
+      "id": "codeium",
+      "name": "Codeium / Windsurf",
+      "category": "AI Coding CLIs",
+      "description": "Free AI code completion and chat. Now Devin Desktop.",
+      "url": "https://github.com/Exafunction/codeium.vsix",
+      "stars": 8000,
+      "crossPlatform": true,
+      "install": "Install from VS Code marketplace"
+    },
+    {
+      "id": "biome",
+      "name": "Biome",
+      "category": "Formatting & Linting",
+      "description": "One toolchain for JS/TS/JSON/CSS. 35x faster than Prettier.",
+      "url": "https://github.com/biomejs/biome",
+      "stars": 17000,
+      "crossPlatform": true,
+      "install": "npm install -g @biomejs/biome"
+    },
+    {
+      "id": "ruff",
+      "name": "Ruff",
+      "category": "Formatting & Linting",
+      "description": "Python linter and formatter. Replaces flake8, isort, black, and more.",
+      "url": "https://github.com/astral-sh/ruff",
+      "stars": 35000,
+      "crossPlatform": true,
+      "install": "pip install ruff"
+    },
+    {
+      "id": "prettier",
+      "name": "Prettier",
+      "category": "Formatting & Linting",
+      "description": "Opinionated code formatter. Supports many languages.",
+      "url": "https://github.com/prettier/prettier",
+      "stars": 51000,
+      "crossPlatform": true,
+      "install": "npm install -g prettier"
+    },
+    {
+      "id": "eslint",
+      "name": "ESLint",
+      "category": "Formatting & Linting",
+      "description": "Pluggable JavaScript linter. Catch errors early.",
+      "url": "https://github.com/eslint/eslint",
+      "stars": 25000,
+      "crossPlatform": true,
+      "install": "npm install -g eslint"
+    },
+    {
+      "id": "shellcheck",
+      "name": "ShellCheck",
+      "category": "Formatting & Linting",
+      "description": "Static analysis tool for shell scripts. Find bugs automatically.",
+      "url": "https://github.com/koalaman/shellcheck",
+      "stars": 37000,
+      "crossPlatform": true,
+      "install": "brew install shellcheck"
+    },
+    {
+      "id": "ty",
+      "name": "ty (TypeScript)",
+      "category": "Formatting & Linting",
+      "description": "Extremely fast TypeScript type checker written in Rust.",
+      "url": "https://github.com/astral-sh/ty",
+      "stars": 5000,
+      "crossPlatform": true,
+      "install": "pip install ty"
+    },
+    {
+      "id": "pgcli",
+      "name": "pgcli",
+      "category": "Database CLIs",
+      "description": "PostgreSQL CLI with auto-completion and syntax highlighting.",
+      "url": "https://github.com/dbcli/pgcli",
+      "stars": 12800,
+      "crossPlatform": true,
+      "install": "pip install pgcli"
+    },
+    {
+      "id": "mycli",
+      "name": "mycli",
+      "category": "Database CLIs",
+      "description": "MySQL CLI with auto-completion and syntax highlighting.",
+      "url": "https://github.com/dbcli/mycli",
+      "stars": 11700,
+      "crossPlatform": true,
+      "install": "pip install mycli"
+    },
+    {
+      "id": "litecli",
+      "name": "litecli",
+      "category": "Database CLIs",
+      "description": "SQLite CLI with auto-completion and syntax highlighting.",
+      "url": "https://github.com/dbcli/litecli",
+      "stars": 3000,
+      "crossPlatform": true,
+      "install": "pip install litecli"
+    },
+    {
+      "id": "usql",
+      "name": "usql",
+      "category": "Database CLIs",
+      "description": "Universal command-line interface for SQL databases.",
+      "url": "https://github.com/xo/usql",
+      "stars": 9000,
+      "crossPlatform": true,
+      "install": "brew install usql"
+    },
+    {
+      "id": "peppermint",
+      "name": "Peppermint",
+      "category": "Database CLIs",
+      "description": "Modern database client with AI-powered query assistance.",
+      "url": "https://github.com/peppermint-tech/peppermint",
+      "stars": 2000,
+      "crossPlatform": true,
+      "install": "Download from GitHub releases"
+    },
+    {
+      "id": "httpie",
+      "name": "HTTPie",
+      "category": "API Testing",
+      "description": "User-friendly HTTP client. cURL for humans.",
+      "url": "https://github.com/httpie/cli",
+      "stars": 35000,
+      "crossPlatform": true,
+      "install": "brew install httpie"
+    },
+    {
+      "id": "bruno",
+      "name": "Bruno",
+      "category": "API Testing",
+      "description": "Open-source API client. Git-native, offline-first Postman alternative.",
+      "url": "https://github.com/usebruno/bruno",
+      "stars": 30000,
+      "crossPlatform": true,
+      "install": "Download from usebruno.com"
+    },
+    {
+      "id": "hoppscotch",
+      "name": "Hoppscotch",
+      "category": "API Testing",
+      "description": "Open-source API development ecosystem. Web + desktop.",
+      "url": "https://github.com/hoppscotch/hoppscotch",
+      "stars": 67000,
+      "crossPlatform": true,
+      "install": "Download from hoppscotch.io"
+    },
+    {
+      "id": "curl",
+      "name": "curl",
+      "category": "API Testing",
+      "description": "Command-line tool for transferring data with URLs.",
+      "url": "https://github.com/curl/curl",
+      "stars": 35000,
+      "crossPlatform": true,
+      "install": "Pre-installed on most systems"
+    },
+    {
+      "id": "xh",
+      "name": "xh",
+      "category": "API Testing",
+      "description": "Friendly and fast tool for sending HTTP requests. Written in Rust.",
+      "url": "https://github.com/ducaale/xh",
+      "stars": 5000,
+      "crossPlatform": true,
+      "install": "brew install xh"
+    },
+    {
+      "id": "btop",
+      "name": "btop",
+      "category": "Monitoring",
+      "description": "Resource monitor. Beautiful UI, GPU monitoring, mouse support.",
+      "url": "https://github.com/aristocratos/btop",
+      "stars": 25000,
+      "crossPlatform": true,
+      "install": "brew install btop"
+    },
+    {
+      "id": "glances",
+      "name": "Glances",
+      "category": "Monitoring",
+      "description": "System monitoring tool. Web-based and terminal.",
+      "url": "https://github.com/nicolargo/glances",
+      "stars": 27000,
+      "crossPlatform": true,
+      "install": "pip install glances"
+    },
+    {
+      "id": "netdata",
+      "name": "Netdata",
+      "category": "Monitoring",
+      "description": "Real-time performance and health monitoring.",
+      "url": "https://github.com/netdata/netdata",
+      "stars": 72000,
+      "crossPlatform": true,
+      "install": "brew install netdata"
+    },
+    {
+      "id": "dool",
+      "name": "dool",
+      "category": "Monitoring",
+      "description": "Versatile resource statistics tool. vmstat/iostat/mpstat replacement.",
+      "url": "https://github.com/scottchiefbaker/dool",
+      "stars": 1500,
+      "crossPlatform": true,
+      "install": "brew install dool"
+    },
+    {
+      "id": "starship",
+      "name": "Starship",
+      "category": "Terminal Enhancement",
+      "description": "Cross-shell prompt. Minimal, fast, customizable.",
+      "url": "https://github.com/starship/starship",
+      "stars": 48000,
+      "crossPlatform": true,
+      "install": "brew install starship"
+    },
+    {
+      "id": "tmux",
+      "name": "tmux",
+      "category": "Terminal Enhancement",
+      "description": "Terminal multiplexer. Split panes, sessions, persistent workspaces.",
+      "url": "https://github.com/tmux/tmux",
+      "stars": 35000,
+      "crossPlatform": true,
+      "install": "brew install tmux"
+    },
+    {
+      "id": "atuin",
+      "name": "Atuin",
+      "category": "Terminal Enhancement",
+      "description": "Magic shell history. Search, sync, and share command history.",
+      "url": "https://github.com/atuinsh/atuin",
+      "stars": 23000,
+      "crossPlatform": true,
+      "install": "brew install atuin"
+    }
+  ]
+}
