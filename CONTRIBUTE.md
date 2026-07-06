@@ -52,6 +52,7 @@ cat mcps/catalog.json | jq '.servers[0]'
 cat loops/catalog.json | jq '.loops[0]'
 cat subagents/catalog.json | jq '.subagents[0]'
 cat plugins/catalog.json | jq '.plugins[0]'
+cat hooks/catalog.json | jq '.hooks[0]'
 ```
 
 Add the new entry to the appropriate array. Use this template:

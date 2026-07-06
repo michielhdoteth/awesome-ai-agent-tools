@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The definitive directory of AI agent components.** 378 installable skills, MCP servers, agent workflows, subagents, and plugins -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
+> **The definitive directory of AI agent components.** 398 installable skills, MCP servers, agent workflows, subagents, hooks, and plugins -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -32,11 +32,11 @@
 - [MCP Servers (101 servers)](#mcp-servers-101-servers)
 - [Agent Loops (113 workflows)](#agent-loops-113-workflows)
 - [Subagents (30 agents)](#subagents-30-agents)
+- [Hooks (20 hooks)](#hooks-20-hooks)
 - [Plugins (51 plugins)](#plugins-51-plugins)
 - [Cross-Platform Compatibility](#cross-platform-compatibility)
 - [Contribute with Your Agent](#contribute-with-your-agent)
 - [Contributing](#contributing)
-- [Related Projects](#related-projects)
 - [License](#license)
 
 ---
@@ -60,11 +60,12 @@ Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CL
     </tr>
   </thead>
   <tbody>
-    <tr><td>Installable skill files</td><td align="center">77 SKILL.md files</td><td align="center">Links only</td></tr>
-    <tr><td>MCP server configs</td><td align="center">100 servers + install cmds</td><td align="center">Links only</td></tr>
-    <tr><td>Agent workflows</td><td align="center">107 loops with prompts</td><td align="center">Links only</td></tr>
-    <tr><td>Subagents</td><td align="center">25 agents + model routing</td><td align="center">No</td></tr>
-    <tr><td>Plugins</td><td align="center">48 plugins across 9 platforms</td><td align="center">No</td></tr>
+    <tr><td>Installable skill files</td><td align="center">83 SKILL.md files</td><td align="center">Links only</td></tr>
+    <tr><td>MCP server configs</td><td align="center">101 servers + install cmds</td><td align="center">Links only</td></tr>
+    <tr><td>Agent workflows</td><td align="center">113 loops with prompts</td><td align="center">Links only</td></tr>
+    <tr><td>Subagents</td><td align="center">30 agents + model routing</td><td align="center">No</td></tr>
+    <tr><td>Hooks</td><td align="center">20 production-ready hooks</td><td align="center">No</td></tr>
+    <tr><td>Plugins</td><td align="center">51 plugins across 9 platforms</td><td align="center">No</td></tr>
     <tr><td>Catalogs with metadata</td><td align="center">JSON catalogs for discovery</td><td align="center">No</td></tr>
     <tr><td>Cross-platform</td><td align="center">30+ AI tools</td><td align="center">Varies</td></tr>
     <tr><td>Agent-contributable</td><td align="center">Automated fork+PR skill</td><td align="center">No</td></tr>
@@ -99,7 +100,7 @@ Visit the interactive site to search, filter, and explore all components: **http
 
 ### Option 4: Let your agent contribute
 
-Give your AI agent the [contribution skill](contribute/SKILL.md) and it will fork, edit, and submit a PR automatically.
+Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edit, and submit a PR automatically.
 
 ---
 
@@ -111,9 +112,10 @@ Give your AI agent the [contribution skill](contribute/SKILL.md) and it will for
 | **MCP Servers** | 101 | Server configs with install commands | [mcps/](mcps/) |
 | **Agent Loops** | 113 | Workflows with prompts and verification | [loops/](loops/) |
 | **Subagents** | 30 | Specialized agents with model routing | [subagents/](subagents/) |
+| **Hooks** | 20 | Production-ready Claude Code hooks | [hooks/](hooks/) |
 | **Plugins** | 51 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
 
-**Total: 378 components across 5 categories.**
+**Total: 398 components across 6 categories.**
 
 ---
 
@@ -233,6 +235,33 @@ Browse all: [subagents/](subagents/) | [catalog.json](subagents/catalog.json)
 
 ---
 
+## Hooks (20 hooks)
+
+Production-ready Claude Code hooks for security, automation, quality, notifications, session management, and safety.
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Category</th>
+      <th align="right">Count</th>
+      <th align="left">Top Hooks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Security</b></td><td align="right">4</td><td>block-dangerous-commands, protect-secrets, secret-scanner, branch-guard</td></tr>
+    <tr><td><b>Automation</b></td><td align="right">6</td><td>auto-stage, auto-test, lint-fix, type-check, post-edit-check, suggest-compact</td></tr>
+    <tr><td><b>Quality</b></td><td align="right">2</td><td>commit-guard, post-edit-check</td></tr>
+    <tr><td><b>Notifications</b></td><td align="right">2</td><td>notify-permission, notification-log</td></tr>
+    <tr><td><b>Session Management</b></td><td align="right">4</td><td>session-start, session-end, context-loader, pre-compact</td></tr>
+    <tr><td><b>Safety</b></td><td align="right">3</td><td>pre-push-check, block-dev-server, smart-approve</td></tr>
+    <tr><td><b>Utility</b></td><td align="right">2</td><td>event-logger, stop-check</td></tr>
+  </tbody>
+</table>
+
+Browse all: [hooks/](hooks/) | [catalog.json](hooks/catalog.json)
+
+---
+
 ## Plugins (51 plugins)
 
 Extensions, rules, and plugins for every major AI coding agent.
@@ -284,7 +313,7 @@ All skills follow the [SKILL.md open standard](https://agentskills.io) adopted b
 
 ## Contribute with Your Agent
 
-**Your AI agent can contribute to this directory automatically.** Give it the [contribution skill](contribute/SKILL.md) and it will:
+**Your AI agent can contribute to this directory automatically.** Give it the [contribution skill](CONTRIBUTE.md) and it will:
 
 1. Fork the repo
 2. Add the entry to the correct catalog
@@ -296,10 +325,10 @@ All skills follow the [SKILL.md open standard](https://agentskills.io) adopted b
 "Use the contribute skill to add [item] to the [category] catalog"
 
 # Or install the skill manually:
-cp -r contribute/ .claude/skills/contribute/
+cp CONTRIBUTE.md .claude/skills/contribute/SKILL.md
 ```
 
-See [contribute/SKILL.md](contribute/SKILL.md) for the full automation prompt.
+See [CONTRIBUTE.md](CONTRIBUTE.md) for the full automation prompt.
 
 ---
 
@@ -307,7 +336,7 @@ See [contribute/SKILL.md](contribute/SKILL.md) for the full automation prompt.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. Quick ways to contribute:
 
-- Add a skill, MCP server, loop, subagent, or plugin to the catalogs
+- Add a skill, MCP server, loop, subagent, hook, or plugin to the catalogs
 - Fix a broken link or outdated information
 - Improve documentation
 - Star the repo to help others find it
@@ -324,31 +353,13 @@ All PRs are automatically validated by GitHub Actions.
 
 ## Star History
 
-<p align="center">
-  <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers">
-    <img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=for-the-badge&label=Stars&color=gold" alt="GitHub Stars" />
-  </a>
-</p>
-
----
-
-## Related Projects
-
-| Project | Stars | Description |
-|---------|-------|-------------|
-| [obra/superpowers](https://github.com/obra/superpowers) | 239K | Full agentic development methodology |
-| [anthropics/skills](https://github.com/anthropics/skills) | 156K | Official Anthropic skills |
-| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 68.9K | Google engineering culture skills |
-| [ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | 66K | 1000+ curated skills |
-| [nexu-io/open-design](https://github.com/nexu-io/open-design) | 66K | 259+ design skills |
-| [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 27K | 1497+ official skills |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | 28K | Next.js and React skills |
-| [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 29.5K | 147 scientific research skills |
-| [awesome-claude-code-subagents](https://github.com/anthropics/awesome-claude-code-subagents) | 22.2K | 100+ Claude Code subagents |
-| [awesome-codex-subagents](https://github.com/openai/awesome-codex-subagents) | 5.2K | 130+ Codex subagents |
-| [skills.sh](https://skills.sh) | - | Vercel skills marketplace (670K+) |
-| [Glama.ai](https://glama.ai) | - | MCP server registry (51K+ servers) |
-| [Smithery.ai](https://smithery.ai) | - | MCP server registry (4.7K+ servers) |
+<a href="https://www.star-history.com/?repos=michielhdoteth%2Fawesome-ai-agent-tools&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=michielhdoteth/awesome-ai-agent-tools&type=date&theme=dark&legend=top-left&sealed_token=-rr9zd3TjPRUPgzgjXTfN0iwMe6Ch67UCSBSYfsSU06aAmPQQOZb8v07CzIQRFKsFPkknfmO18KGoOQMqfCqIFXevL4bi0CfhbYzJHs3iMQjdTnxV7RvTj_ogXs28lM0d8SeM1zb_z4gW_MoOLXifziyJ6DLw8G1RHgatck66tXr-VqDh1f1_UxoAo3j" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=michielhdoteth/awesome-ai-agent-tools&type=date&legend=top-left&sealed_token=-rr9zd3TjPRUPgzgjXTfN0iwMe6Ch67UCSBSYfsSU06aAmPQQOZb8v07CzIQRFKsFPkknfmO18KGoOQMqfCqIFXevL4bi0CfhbYzJHs3iMQjdTnxV7RvTj_ogXs28lM0d8SeM1zb_z4gW_MoOLXifziyJ6DLw8G1RHgatck66tXr-VqDh1f1_UxoAo3j" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=michielhdoteth/awesome-ai-agent-tools&type=date&legend=top-left&sealed_token=-rr9zd3TjPRUPgzgjXTfN0iwMe6Ch67UCSBSYfsSU06aAmPQQOZb8v07CzIQRFKsFPkknfmO18KGoOQMqfCqIFXevL4bi0CfhbYzJHs3iMQjdTnxV7RvTj_ogXs28lM0d8SeM1zb_z4gW_MoOLXifziyJ6DLw8G1RHgatck66tXr-VqDh1f1_UxoAo3j" />
+ </picture>
+</a>
 
 ---
 
@@ -360,4 +371,4 @@ To the extent possible under law, the contributors have waived all copyright and
 
 ---
 
-**Keywords:** AI agent skills, agent skills library, SKILL.md, MCP servers, model context protocol, agent workflows, AI coding assistant, Claude Code skills, OpenCode skills, Codex skills, Cursor skills, agent orchestration, AI development tools, skill marketplace, agent infrastructure, multi-agent, AI code review, TDD workflow, prompt engineering, agent loops, AI agent tools, coding agent, agent skills standard, portable skills, cross-platform AI, awesome list, open source AI, developer tools, subagents, plugins, agent plugins
+**Keywords:** AI agent skills, agent skills library, SKILL.md, MCP servers, model context protocol, agent workflows, AI coding assistant, Claude Code skills, OpenCode skills, Codex skills, Cursor skills, agent orchestration, AI development tools, skill marketplace, agent infrastructure, multi-agent, AI code review, TDD workflow, prompt engineering, agent loops, AI agent tools, coding agent, agent skills standard, portable skills, cross-platform AI, awesome list, open source AI, developer tools, subagents, hooks, plugins, agent plugins
