@@ -3,16 +3,16 @@
   "version": "2026.07",
   "description": "Repeatable AI-agent workflows with feedback loops",
   "license": "MIT",
-  "lastUpdated": "2026-07-04",
-  "totalLoops": 107,
+  "lastUpdated": "2026-07-06",
+  "totalLoops": 113,
   "categories": [
-    { "name": "engineering", "count": 55 },
+    { "name": "engineering", "count": 58 },
     { "name": "evaluation", "count": 14 },
     { "name": "operations", "count": 6 },
     { "name": "content", "count": 3 },
     { "name": "design", "count": 6 },
-    { "name": "meta", "count": 9 },
-    { "name": "multi-agent", "count": 14 }
+    { "name": "meta", "count": 10 },
+    { "name": "multi-agent", "count": 16 }
   ],
   "sources": [
     { "name": "Forward-Future/loop-library", "url": "https://github.com/Forward-Future/loop-library", "stars": 650, "loopCount": 55 },
@@ -1455,6 +1455,84 @@
       "verification": "All agents agree on the solution with documented reasoning from each perspective.",
       "tags": ["debate", "consensus", "multi-agent", "reasoning"],
       "related": ["multi-llm-convergence-loop", "devils-advocate-design-loop"]
+    },
+    {
+      "id": "activegraph-event-sourced",
+      "title": "The Log is the Agent: Event-Sourced Reactive Graphs",
+      "category": "multi-agent",
+      "author": "Yohei Nakajima",
+      "source": "https://github.com/yoheinakajima/activegraph",
+      "sourceRepo": "yoheinakajima/activegraph",
+      "description": "Inverts standard agent architecture - append-only event log IS the agent. Behaviors react to log changes and emit new events. Deterministic replay from any point.",
+      "prompt": "Install activegraph, run activegraph quickstart. The runtime manages event-sourced reactive graphs where behaviors react to log changes.",
+      "verification": "Deterministic replay - any run can be byte-reproduced from its log. The bundled diligence example produces 671 events, 93 objects, 76 relations.",
+      "tags": ["event-sourcing", "reactive-graphs", "deterministic-replay", "lineage", "auditability"],
+      "related": ["overnight-docs-sweep", "architecture-satisfaction-loop"]
+    },
+    {
+      "id": "reap-pipeline",
+      "title": "REAP: Rapid Evolutionary Agent Pipeline",
+      "category": "meta",
+      "author": "casamia918",
+      "source": "https://dev.to/casamia918/everyone-just-discovered-loop-engineering-reap-got-there-first-and-its-ready-when-you-are-26dh",
+      "sourceRepo": "reap.cc",
+      "description": "Bounded generations with human fitness feedback, genome locking (immutable architecture decisions), cryptographic signature-enforced stage order, and cruise mode for budgeted autonomy.",
+      "prompt": "Uses a fixed lifecycle per generation: research -> plan -> implement -> validate -> human fitness review. Each stage produces artifact files. Run 'reap cruise 3' for budgeted autonomy.",
+      "verification": "Human fitness feedback is the primary signal. Environment checks (tests/build) are secondary. Self-assessment allowed; self-grading banned at protocol level.",
+      "tags": ["bounded-generations", "human-fitness", "genome-locking", "signature-enforcement", "cruise-mode"],
+      "related": ["ralph-loop", "overnight-docs-sweep"]
+    },
+    {
+      "id": "loop-context-circuit-breaker",
+      "title": "Loop-Context Circuit Breaker",
+      "category": "engineering",
+      "author": "KhaiTrang1995",
+      "source": "https://github.com/cobusgreyling/loop-engineering/pull/140",
+      "sourceRepo": "cobusgreyling/loop-engineering",
+      "description": "Auto-scaffolded circuit breaker that detects stagnation (same error 3x), consecutive failures (5x), token budget, iteration cap. Escalates to human with pruned context.",
+      "prompt": "loop-context --check --ledger run.json before each retry attempt.",
+      "verification": "Exit 0 = continue, Exit 2 = STOP + escalate. Tests: 12/12 pass for loop-init, 18/18 for loop-context.",
+      "tags": ["circuit-breaker", "stagnation-detection", "cost-blowup-prevention", "loop-guard"],
+      "related": ["ralph-loop", "overnight-docs-sweep"]
+    },
+    {
+      "id": "llm-as-code",
+      "title": "LLM-as-Code: Program-Owned Control Flow",
+      "category": "engineering",
+      "author": "arxiv authors",
+      "source": "https://arxiv.org/html/2606.15874v1",
+      "sourceRepo": null,
+      "description": "Program owns all control flow, LLM invoked only for reasoning at leaf nodes. Context is DAG-structured (bounded by call depth, not accumulated). Multi-agent follows for free.",
+      "prompt": "Not prompt-based; a programming paradigm. Code-driven workflow with LLM calls at leaf nodes only.",
+      "verification": "Case study on computer-use agents shows substantially improved stability of long visual operation sequences.",
+      "tags": ["agentic-programming", "llm-as-code", "dag-context", "program-controlled-execution"],
+      "related": ["activegraph-event-sourced", "reap-pipeline"]
+    },
+    {
+      "id": "sovereign-agentic-loops",
+      "title": "Sovereign Agentic Loops (SAL)",
+      "category": "engineering",
+      "author": "arxiv authors",
+      "source": "https://arxiv.org/pdf/2604.22136",
+      "sourceRepo": null,
+      "description": "Pre-execution policy validation. Model outputs intents, not commands. Control plane validates against system state before execution. Blocks 93% of unsafe intents in prototype.",
+      "prompt": "Model generates intent objects. Control plane validates intent against policy rules and system state. Only validated intents are executed.",
+      "verification": "93% of unsafe intents blocked in prototype testing. Policy validation is deterministic.",
+      "tags": ["pre-execution-validation", "intent-based", "policy-enforcement", "safety"],
+      "related": ["loop-context-circuit-breaker", "reap-pipeline"]
+    },
+    {
+      "id": "zero-dep-multi-agent",
+      "title": "Zero-Dependency Multi-Agent Pipeline",
+      "category": "multi-agent",
+      "author": "community",
+      "source": "https://www.reddit.com/r/ClaudeAI/",
+      "sourceRepo": null,
+      "description": "tmux + bash + markdown. Opus plans, Sonnet codes, Haiku tests. Append-only markdown protocol. Proves frameworks aren't required for multi-agent orchestration.",
+      "prompt": "Use tmux to run parallel sessions. Opus agent plans in one pane, Sonnet codes in another, Haiku tests in a third. Communication via append-only markdown files.",
+      "verification": "All agents complete their roles. Final output validated by test agent. Markdown protocol ensures auditability.",
+      "tags": ["zero-dependency", "multi-agent", "tmux", "markdown-protocol", "framework-free"],
+      "related": ["supervisor-coordination", "debate-consensus"]
     }
   ]
 }

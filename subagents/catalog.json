@@ -3,10 +3,10 @@
   "version": "2026.07",
   "description": "Curated index of subagent definitions, agent harnesses, and platform-specific subagent formats",
   "license": "MIT",
-  "lastUpdated": "2026-07-04",
-  "totalSubagents": 25,
+  "lastUpdated": "2026-07-06",
+  "totalSubagents": 30,
   "categories": [
-    { "name": "Subagent Collection", "count": 11 },
+    { "name": "Subagent Collection", "count": 16 },
     { "name": "Agent Harness", "count": 3 },
     { "name": "Official SDK", "count": 4 },
     { "name": "Platform Format", "count": 4 },
@@ -287,6 +287,56 @@
       "stars": 1,
       "license": "MIT",
       "tags": ["scrum", "team-roles", "pm", "qa", "orchestration"]
+    },
+    {
+      "id": "chusri-claude-code-agents",
+      "name": "chusri/claude-code-agents",
+      "category": "Subagent Collection",
+      "description": "Claude Code agent definitions collection for various development workflows",
+      "githubUrl": "https://github.com/chusri/claude-code-agents",
+      "stars": null,
+      "license": "MIT",
+      "tags": ["claude-code", "subagents", "development"]
+    },
+    {
+      "id": "jbeck018-agents-opencode",
+      "name": "jbeck018/agents-opencode",
+      "category": "Subagent Collection",
+      "description": "OpenCode agent definitions for multi-agent development workflows",
+      "githubUrl": "https://github.com/jbeck018/agents-opencode",
+      "stars": null,
+      "license": "MIT",
+      "tags": ["opencode", "subagents", "agents"]
+    },
+    {
+      "id": "kexinjinnn-opencode-subagents",
+      "name": "kexinjinnn/opencode-subagents",
+      "category": "Subagent Collection",
+      "description": "OpenCode subagent definitions for AI-assisted development",
+      "githubUrl": "https://github.com/kexinjinnn/opencode-subagents",
+      "stars": 2,
+      "license": "MIT",
+      "tags": ["opencode", "subagents", "ai-development"]
+    },
+    {
+      "id": "gtheys-opencode",
+      "name": "gtheys/opencode",
+      "category": "Subagent Collection",
+      "description": "OpenCode agent collection with specialized subagent personas",
+      "githubUrl": "https://github.com/gtheys/opencode",
+      "stars": 12,
+      "license": "MIT",
+      "tags": ["opencode", "subagents", "personas"]
+    },
+    {
+      "id": "simota-agent-skills",
+      "name": "simota/agent-skills",
+      "category": "Subagent Collection",
+      "description": "124-145 specialist agent definitions covering multiple development domains. Cross-platform compatible.",
+      "githubUrl": "https://github.com/simota/agent-skills",
+      "stars": 16,
+      "license": "MIT",
+      "tags": ["specialist-agents", "cross-platform", "multi-domain"]
     }
   ]
 }

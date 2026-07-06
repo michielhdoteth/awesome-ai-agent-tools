@@ -3,18 +3,18 @@
   "version": "2026.07",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-07-04",
-  "totalPlugins": 48,
+  "lastUpdated": "2026-07-06",
+  "totalPlugins": 51,
   "categories": [
-    { "name": "Claude Code", "count": 8 },
-    { "name": "OpenCode", "count": 9 },
+    { "name": "Claude Code", "count": 9 },
+    { "name": "OpenCode", "count": 10 },
     { "name": "Cursor", "count": 6 },
     { "name": "Copilot", "count": 5 },
     { "name": "Windsurf", "count": 4 },
     { "name": "Aider", "count": 4 },
     { "name": "VS Code AI", "count": 5 },
     { "name": "JetBrains", "count": 4 },
-    { "name": "Cross-Tool", "count": 3 }
+    { "name": "Cross-Tool", "count": 4 }
   ],
   "plugins": [
     {
@@ -640,6 +640,45 @@
       "websiteUrl": "https://vibecoding.app/plugins",
       "installCommand": "Browse at vibecoding.app/plugins",
       "license": "MIT"
+    },
+    {
+      "id": "cc-safety-net",
+      "name": "CC Safety Net",
+      "category": "Cross-Tool",
+      "platform": "Claude Code, OpenCode, Copilot CLI, Gemini CLI",
+      "stars": 1400,
+      "installs": null,
+      "description": "Safety net catching destructive git and filesystem commands before execution. Works across Claude Code, OpenCode, Copilot CLI, and Gemini CLI.",
+      "githubUrl": "https://github.com/kenryu42/cc-safety-net",
+      "websiteUrl": null,
+      "installCommand": "Clone from GitHub",
+      "license": "MIT"
+    },
+    {
+      "id": "agentenv",
+      "name": "AgentEnv",
+      "category": "Cross-Tool",
+      "platform": "Claude Code, Cursor, Codex",
+      "stars": null,
+      "installs": null,
+      "description": "Project-scoped AI agent and plugin environment manager. Manages agent configurations across multiple AI coding tools.",
+      "githubUrl": "https://github.com/eduardoarantes/agentenv",
+      "websiteUrl": null,
+      "installCommand": "Clone from GitHub",
+      "license": "MIT"
+    },
+    {
+      "id": "kilo-code",
+      "name": "Kilo Code",
+      "category": "VS Code AI",
+      "platform": "VS Code, JetBrains",
+      "stars": null,
+      "installs": "1.2M+",
+      "description": "Open-source AI coding agent with 500+ model support and browser automation capabilities",
+      "githubUrl": null,
+      "websiteUrl": "https://kilo.ai",
+      "installCommand": "Install from kilo.ai",
+      "license": "Apache-2.0"
     }
   ]
 }

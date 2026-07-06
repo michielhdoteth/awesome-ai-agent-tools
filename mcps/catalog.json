@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-07-04",
-  "totalServers": 100,
+  "lastUpdated": "2026-07-06",
+  "totalServers": 101,
   "categories": [
     { "name": "Official Reference", "count": 6 },
     { "name": "Developer Tools", "count": 11 },
@@ -12,7 +12,7 @@
     { "name": "Databases", "count": 13 },
     { "name": "Cloud Platforms", "count": 5 },
     { "name": "DevOps", "count": 6 },
-    { "name": "Communication", "count": 8 },
+    { "name": "Communication", "count": 9 },
     { "name": "Search", "count": 8 },
     { "name": "AI & Machine Learning", "count": 6 },
     { "name": "Agent Orchestration", "count": 5 },
@@ -26,14 +26,15 @@
     { "name": "Data Engineering", "count": 1 }
   ],
   "sources": [
-    { "name": "Glama.ai", "url": "https://glama.ai/mcp/servers", "indexed": 51276 },
-    { "name": "mcp.so", "url": "https://mcp.so", "indexed": 30000 },
+    { "name": "Glama.ai", "url": "https://glama.ai/mcp/servers", "indexed": 51752 },
+    { "name": "mcp.so", "url": "https://mcp.so", "indexed": 23036 },
     { "name": "popularaitools.ai", "url": "https://popularaitools.ai/skills?type=mcp", "indexed": 7500 },
     { "name": "bestmcp.dev", "url": "https://bestmcp.dev", "indexed": 143 },
     { "name": "awesome-mcp.tools", "url": "https://awesome-mcp.tools", "indexed": 2500 },
     { "name": "GitHub modelcontextprotocol", "url": "https://github.com/modelcontextprotocol/servers", "stars": 87600 },
-    { "name": "PulseMCP", "url": "https://pulsemcp.com", "indexed": 9400 },
-    { "name": "browser-use/browser-use", "url": "https://github.com/browser-use/browser-use", "stars": 100412 }
+    { "name": "PulseMCP", "url": "https://pulsemcp.com", "indexed": 20269 },
+    { "name": "browser-use/browser-use", "url": "https://github.com/browser-use/browser-use", "stars": 100412 },
+    { "name": "MCP Toplist", "url": "https://mcptoplist.com", "indexed": 73756 }
   ],
   "servers": [
     {
@@ -479,6 +480,18 @@
       "license": "MIT",
       "verified": true,
       "tags": ["slack", "messaging", "channels", "team"]
+    },
+    {
+      "id": "x-twitter",
+      "name": "X (Twitter) MCP Server",
+      "category": "Communication",
+      "github": "https://github.com/xdevplatform/xmcp",
+      "stars": 668,
+      "description": "Official hosted MCP server from X exposing 200+ API endpoints. Read tweets, search content, post updates, manage profiles, and more. Hosted at api.x.com/mcp.",
+      "install": "Remote server: https://api.x.com/mcp (no local install needed)",
+      "license": "Apache-2.0",
+      "verified": true,
+      "tags": ["x", "twitter", "social-media", "posts", "search", "users", "trends", "hosted", "official"]
     },
     {
       "id": "notion",

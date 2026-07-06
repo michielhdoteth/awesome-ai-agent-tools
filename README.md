@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The definitive directory of AI agent components.** 357 installable skills, MCP servers, agent workflows, subagents, and plugins -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
+> **The definitive directory of AI agent components.** 378 installable skills, MCP servers, agent workflows, subagents, and plugins -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -28,11 +28,11 @@
 - [What is this?](#what-is-this)
 - [Quick Start](#quick-start)
 - [Browse by Category](#browse-by-category)
-- [Skills (77 curated)](#skills-77-curated)
-- [MCP Servers (100 servers)](#mcp-servers-100-servers)
-- [Agent Loops (107 workflows)](#agent-loops-107-workflows)
-- [Subagents (25 agents)](#subagents-25-agents)
-- [Plugins (48 plugins)](#plugins-48-plugins)
+- [Skills (83 curated)](#skills-83-curated)
+- [MCP Servers (101 servers)](#mcp-servers-101-servers)
+- [Agent Loops (113 workflows)](#agent-loops-113-workflows)
+- [Subagents (30 agents)](#subagents-30-agents)
+- [Plugins (51 plugins)](#plugins-51-plugins)
 - [Cross-Platform Compatibility](#cross-platform-compatibility)
 - [Contribute with Your Agent](#contribute-with-your-agent)
 - [Contributing](#contributing)
@@ -117,7 +117,7 @@ Give your AI agent the [contribution skill](contribute/SKILL.md) and it will for
 
 ---
 
-## Skills (77 curated)
+## Skills (83 curated)
 
 External references with install commands from obra/superpowers, anthropics/skills, addyosmani, vercel-labs, trailofbits, and 30+ more sources.
 
@@ -146,7 +146,7 @@ Browse all: [skills/](skills/) | [catalog.json](skills/catalog.json)
 
 ---
 
-## MCP Servers (100 servers)
+## MCP Servers (101 servers)
 
 Curated Model Context Protocol servers with install commands from GitHub, npm, and official registries.
 
@@ -181,7 +181,7 @@ Browse all: [mcps/](mcps/) | [catalog.json](mcps/catalog.json)
 
 ---
 
-## Agent Loops (107 workflows)
+## Agent Loops (113 workflows)
 
 Repeatable AI agent patterns with built-in feedback mechanisms, sourced from official documentation, research papers, and community repos.
 
@@ -208,7 +208,7 @@ Browse all: [loops/](loops/) | [catalog.json](loops/catalog.json)
 
 ---
 
-## Subagents (25 agents)
+## Subagents (30 agents)
 
 Multi-agent frameworks, subagent collections, SDKs, and platform formats from the ecosystem.
 
@@ -233,7 +233,7 @@ Browse all: [subagents/](subagents/) | [catalog.json](subagents/catalog.json)
 
 ---
 
-## Plugins (48 plugins)
+## Plugins (51 plugins)
 
 Extensions, rules, and plugins for every major AI coding agent.
 
@@ -324,13 +324,11 @@ All PRs are automatically validated by GitHub Actions.
 
 ## Star History
 
-<a href="https://star-history.com/#michielhdoteth/awesome-ai-agent-tools&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=michielhdoteth/awesome-ai-agent-tools&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=michielhdoteth/awesome-ai-agent-tools&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=michielhdoteth/awesome-ai-agent-tools&type=Date" />
- </picture>
-</a>
+<p align="center">
+  <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers">
+    <img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=for-the-badge&label=Stars&color=gold" alt="GitHub Stars" />
+  </a>
+</p>
 
 ---
 
