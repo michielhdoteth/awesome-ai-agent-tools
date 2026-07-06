@@ -47,7 +47,13 @@
       "install": "npx -y @modelcontextprotocol/server-filesystem /path/to/dir",
       "license": "MIT",
       "verified": true,
-      "tags": ["files", "read", "write", "search", "official"]
+      "tags": [
+        "files",
+        "read",
+        "write",
+        "search",
+        "official"
+      ]
     },
     {
       "id": "memory",
@@ -59,7 +65,12 @@
       "install": "npx -y @modelcontextprotocol/server-memory",
       "license": "MIT",
       "verified": true,
-      "tags": ["memory", "knowledge-graph", "context", "official"]
+      "tags": [
+        "memory",
+        "knowledge-graph",
+        "context",
+        "official"
+      ]
     },
     {
       "id": "sequential-thinking",
@@ -71,7 +82,12 @@
       "install": "npx -y @modelcontextprotocol/server-sequential-thinking",
       "license": "MIT",
       "verified": true,
-      "tags": ["reasoning", "problem-solving", "thinking", "official"]
+      "tags": [
+        "reasoning",
+        "problem-solving",
+        "thinking",
+        "official"
+      ]
     },
     {
       "id": "git",
@@ -83,7 +99,12 @@
       "install": "uvx mcp-server-git",
       "license": "MIT",
       "verified": true,
-      "tags": ["git", "version-control", "repository", "official"]
+      "tags": [
+        "git",
+        "version-control",
+        "repository",
+        "official"
+      ]
     },
     {
       "id": "fetch",
@@ -95,7 +116,13 @@
       "install": "npx -y @modelcontextprotocol/server-fetch",
       "license": "MIT",
       "verified": true,
-      "tags": ["web", "fetch", "http", "content", "official"]
+      "tags": [
+        "web",
+        "fetch",
+        "http",
+        "content",
+        "official"
+      ]
     },
     {
       "id": "time",
@@ -107,7 +134,12 @@
       "install": "npx -y @modelcontextprotocol/server-time",
       "license": "MIT",
       "verified": true,
-      "tags": ["time", "timezone", "scheduling", "official"]
+      "tags": [
+        "time",
+        "timezone",
+        "scheduling",
+        "official"
+      ]
     },
     {
       "id": "github",
@@ -119,7 +151,13 @@
       "install": "gh extension install github/gh-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["github", "repos", "issues", "prs", "ci-cd"]
+      "tags": [
+        "github",
+        "repos",
+        "issues",
+        "prs",
+        "ci-cd"
+      ]
     },
     {
       "id": "context7",
@@ -131,7 +169,12 @@
       "install": "npx -y @upstash/context7-mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["documentation", "libraries", "api", "version-pinned"]
+      "tags": [
+        "documentation",
+        "libraries",
+        "api",
+        "version-pinned"
+      ]
     },
     {
       "id": "serena",
@@ -143,7 +186,12 @@
       "install": "pip install serena",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["semantic", "code-search", "editing", "ide"]
+      "tags": [
+        "semantic",
+        "code-search",
+        "editing",
+        "ide"
+      ]
     },
     {
       "id": "markitdown",
@@ -155,7 +203,13 @@
       "install": "pip install markitdown[all]",
       "license": "MIT",
       "verified": true,
-      "tags": ["pdf", "office", "html", "markdown", "conversion"]
+      "tags": [
+        "pdf",
+        "office",
+        "html",
+        "markdown",
+        "conversion"
+      ]
     },
     {
       "id": "task-master",
@@ -167,7 +221,12 @@
       "install": "npx -y task-master-ai",
       "license": "MIT",
       "verified": true,
-      "tags": ["task-management", "prd", "autonomous", "planning"]
+      "tags": [
+        "task-management",
+        "prd",
+        "autonomous",
+        "planning"
+      ]
     },
     {
       "id": "fastmcp",
@@ -179,7 +238,12 @@
       "install": "pip install fastmcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["framework", "python", "server-building", "decorators"]
+      "tags": [
+        "framework",
+        "python",
+        "server-building",
+        "decorators"
+      ]
     },
     {
       "id": "mcp-inspector",
@@ -191,7 +255,12 @@
       "install": "npx -y @modelcontextprotocol/inspector",
       "license": "MIT",
       "verified": true,
-      "tags": ["debugging", "testing", "inspection", "official"]
+      "tags": [
+        "debugging",
+        "testing",
+        "inspection",
+        "official"
+      ]
     },
     {
       "id": "chrome-devtools",
@@ -203,7 +272,12 @@
       "install": "npx -y @anthropic-ai/chrome-devtools-mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["chrome", "devtools", "debugging", "web"]
+      "tags": [
+        "chrome",
+        "devtools",
+        "debugging",
+        "web"
+      ]
     },
     {
       "id": "playwright",
@@ -215,7 +289,12 @@
       "install": "npx -y @playwright/mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["browser", "automation", "testing", "playwright"]
+      "tags": [
+        "browser",
+        "automation",
+        "testing",
+        "playwright"
+      ]
     },
     {
       "id": "firecrawl",
@@ -227,7 +306,12 @@
       "install": "npx -y @mendable/firecrawl-mcp",
       "license": "AGPL-3.0",
       "verified": true,
-      "tags": ["scraping", "crawling", "javascript", "content-extraction"]
+      "tags": [
+        "scraping",
+        "crawling",
+        "javascript",
+        "content-extraction"
+      ]
     },
     {
       "id": "puppeteer",
@@ -239,7 +323,12 @@
       "install": "npx -y @modelcontextprotocol/server-puppeteer",
       "license": "MIT",
       "verified": true,
-      "tags": ["puppeteer", "headless", "browser", "automation"]
+      "tags": [
+        "puppeteer",
+        "headless",
+        "browser",
+        "automation"
+      ]
     },
     {
       "id": "browser-use-mcp",
@@ -263,7 +352,12 @@
       "install": "npx -y @modelcontextprotocol/server-postgres \"postgresql://localhost/mydb\"",
       "license": "MIT",
       "verified": true,
-      "tags": ["postgresql", "database", "sql", "schema"]
+      "tags": [
+        "postgresql",
+        "database",
+        "sql",
+        "schema"
+      ]
     },
     {
       "id": "sqlite",
@@ -275,7 +369,12 @@
       "install": "npx -y @modelcontextprotocol/server-sqlite",
       "license": "MIT",
       "verified": true,
-      "tags": ["sqlite", "database", "local", "lightweight"]
+      "tags": [
+        "sqlite",
+        "database",
+        "local",
+        "lightweight"
+      ]
     },
     {
       "id": "redis",
@@ -287,7 +386,12 @@
       "install": "Available via modelcontextprotocol",
       "license": "MIT",
       "verified": true,
-      "tags": ["redis", "cache", "key-value", "real-time"]
+      "tags": [
+        "redis",
+        "cache",
+        "key-value",
+        "real-time"
+      ]
     },
     {
       "id": "supabase",
@@ -299,7 +403,12 @@
       "install": "Remote MCP via Supabase dashboard",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["supabase", "backend", "auth", "storage"]
+      "tags": [
+        "supabase",
+        "backend",
+        "auth",
+        "storage"
+      ]
     },
     {
       "id": "mongodb",
@@ -311,7 +420,12 @@
       "install": "Available via MongoDB documentation",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["mongodb", "nosql", "document", "vector-search"]
+      "tags": [
+        "mongodb",
+        "nosql",
+        "document",
+        "vector-search"
+      ]
     },
     {
       "id": "qdrant",
@@ -323,7 +437,12 @@
       "install": "pip install mcp-server-qdrant",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["qdrant", "vector", "semantic", "search"]
+      "tags": [
+        "qdrant",
+        "vector",
+        "semantic",
+        "search"
+      ]
     },
     {
       "id": "chromadb",
@@ -335,7 +454,12 @@
       "install": "pip install chroma-mcp-server",
       "license": "MIT",
       "verified": true,
-      "tags": ["chromadb", "vector", "embeddings", "similarity"]
+      "tags": [
+        "chromadb",
+        "vector",
+        "embeddings",
+        "similarity"
+      ]
     },
     {
       "id": "mindsdb",
@@ -347,7 +471,12 @@
       "install": "pip install mindsdb",
       "license": "GPL-3.0",
       "verified": true,
-      "tags": ["federation", "data-sources", "query-engine", "analytics"]
+      "tags": [
+        "federation",
+        "data-sources",
+        "query-engine",
+        "analytics"
+      ]
     },
     {
       "id": "aws",
@@ -359,7 +488,13 @@
       "install": "Various - see github.com/awslabs/mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["aws", "cloud", "ec2", "s3", "lambda"]
+      "tags": [
+        "aws",
+        "cloud",
+        "ec2",
+        "s3",
+        "lambda"
+      ]
     },
     {
       "id": "cloudflare",
@@ -371,7 +506,12 @@
       "install": "Remote MCP via Cloudflare dashboard",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["cloudflare", "workers", "edge", "serverless"]
+      "tags": [
+        "cloudflare",
+        "workers",
+        "edge",
+        "serverless"
+      ]
     },
     {
       "id": "digitalocean",
@@ -383,7 +523,12 @@
       "install": "Remote MCP endpoints available",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["digitalocean", "droplets", "kubernetes", "hosting"]
+      "tags": [
+        "digitalocean",
+        "droplets",
+        "kubernetes",
+        "hosting"
+      ]
     },
     {
       "id": "vercel",
@@ -395,7 +540,12 @@
       "install": "Remote MCP at mcp.vercel.com",
       "license": "MIT",
       "verified": true,
-      "tags": ["vercel", "deployment", "edge", "analytics"]
+      "tags": [
+        "vercel",
+        "deployment",
+        "edge",
+        "analytics"
+      ]
     },
     {
       "id": "edgeone-pages",
@@ -407,7 +557,12 @@
       "install": "Available via mcp.so",
       "license": "MIT",
       "verified": true,
-      "tags": ["edgeone", "deployment", "html", "cdn"]
+      "tags": [
+        "edgeone",
+        "deployment",
+        "html",
+        "cdn"
+      ]
     },
     {
       "id": "docker",
@@ -419,7 +574,12 @@
       "install": "Via Docker Desktop",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["docker", "containers", "devops", "management"]
+      "tags": [
+        "docker",
+        "containers",
+        "devops",
+        "management"
+      ]
     },
     {
       "id": "kubernetes",
@@ -431,7 +591,12 @@
       "install": "go install github.com/containers/kubernetes-mcp-server@latest",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["kubernetes", "k8s", "helm", "orchestration"]
+      "tags": [
+        "kubernetes",
+        "k8s",
+        "helm",
+        "orchestration"
+      ]
     },
     {
       "id": "kubectl-mcp",
@@ -443,7 +608,12 @@
       "install": "pip install kubectl-mcp-server",
       "license": "MIT",
       "verified": true,
-      "tags": ["kubectl", "kubernetes", "natural-language", "debugging"]
+      "tags": [
+        "kubectl",
+        "kubernetes",
+        "natural-language",
+        "debugging"
+      ]
     },
     {
       "id": "terraform",
@@ -455,7 +625,12 @@
       "install": "Available via HashiCorp documentation",
       "license": "MPL-2.0",
       "verified": true,
-      "tags": ["terraform", "infrastructure", "iac", "hashicorp"]
+      "tags": [
+        "terraform",
+        "infrastructure",
+        "iac",
+        "hashicorp"
+      ]
     },
     {
       "id": "pulumi",
@@ -467,7 +642,12 @@
       "install": "Available via Pulumi documentation",
       "license": "MIT",
       "verified": true,
-      "tags": ["pulumi", "infrastructure", "iac", "multi-cloud"]
+      "tags": [
+        "pulumi",
+        "infrastructure",
+        "iac",
+        "multi-cloud"
+      ]
     },
     {
       "id": "slack",
@@ -479,7 +659,12 @@
       "install": "npx -y @modelcontextprotocol/server-slack",
       "license": "MIT",
       "verified": true,
-      "tags": ["slack", "messaging", "channels", "team"]
+      "tags": [
+        "slack",
+        "messaging",
+        "channels",
+        "team"
+      ]
     },
     {
       "id": "x-twitter",
@@ -503,7 +688,12 @@
       "install": "Available via Notion documentation",
       "license": "MIT",
       "verified": true,
-      "tags": ["notion", "knowledge", "databases", "pages"]
+      "tags": [
+        "notion",
+        "knowledge",
+        "databases",
+        "pages"
+      ]
     },
     {
       "id": "notfair",
@@ -515,7 +705,13 @@
       "install": "npx skills add nowork-studio/NotFair",
       "license": "MIT",
       "verified": true,
-      "tags": ["seo", "google-ads", "meta-ads", "marketing", "skills"]
+      "tags": [
+        "seo",
+        "google-ads",
+        "meta-ads",
+        "marketing",
+        "skills"
+      ]
     },
     {
       "id": "salesforce-marketing-mcp",
@@ -539,7 +735,12 @@
       "install": "Available via Linear documentation",
       "license": "MIT",
       "verified": true,
-      "tags": ["linear", "issues", "projects", "team"]
+      "tags": [
+        "linear",
+        "issues",
+        "projects",
+        "team"
+      ]
     },
     {
       "id": "obsidian",
@@ -551,7 +752,12 @@
       "install": "Community plugin + MCP wrapper",
       "license": "MIT",
       "verified": true,
-      "tags": ["obsidian", "knowledge-base", "markdown", "notes"]
+      "tags": [
+        "obsidian",
+        "knowledge-base",
+        "markdown",
+        "notes"
+      ]
     },
     {
       "id": "google-workspace",
@@ -563,7 +769,12 @@
       "install": "npx -y @modelcontextprotocol/server-gdrive",
       "license": "MIT",
       "verified": true,
-      "tags": ["google", "gmail", "calendar", "drive"]
+      "tags": [
+        "google",
+        "gmail",
+        "calendar",
+        "drive"
+      ]
     },
     {
       "id": "brave-search",
@@ -575,7 +786,12 @@
       "install": "npx -y @anthropic-ai/brave-search-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["brave", "search", "privacy", "web"]
+      "tags": [
+        "brave",
+        "search",
+        "privacy",
+        "web"
+      ]
     },
     {
       "id": "tavily",
@@ -587,7 +803,12 @@
       "install": "npx -y @tavily/mcp-server",
       "license": "MIT",
       "verified": true,
-      "tags": ["tavily", "search", "ai-optimized", "llm"]
+      "tags": [
+        "tavily",
+        "search",
+        "ai-optimized",
+        "llm"
+      ]
     },
     {
       "id": "serper",
@@ -599,7 +820,12 @@
       "install": "Available on mcp.so",
       "license": "MIT",
       "verified": true,
-      "tags": ["serper", "google", "search", "api"]
+      "tags": [
+        "serper",
+        "google",
+        "search",
+        "api"
+      ]
     },
     {
       "id": "jina",
@@ -611,7 +837,12 @@
       "install": "Available on mcp.so",
       "license": "MIT",
       "verified": true,
-      "tags": ["jina", "semantic", "neural", "cross-modal"]
+      "tags": [
+        "jina",
+        "semantic",
+        "neural",
+        "cross-modal"
+      ]
     },
     {
       "id": "minimax",
@@ -623,7 +854,13 @@
       "install": "Available via MiniMax documentation",
       "license": "MIT",
       "verified": true,
-      "tags": ["minimax", "tts", "image", "video", "voice"]
+      "tags": [
+        "minimax",
+        "tts",
+        "image",
+        "video",
+        "voice"
+      ]
     },
     {
       "id": "ui-tars",
@@ -635,7 +872,13 @@
       "install": "Download from GitHub releases",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["ui-tars", "gui", "vision", "desktop", "bytedance"]
+      "tags": [
+        "ui-tars",
+        "gui",
+        "vision",
+        "desktop",
+        "bytedance"
+      ]
     },
     {
       "id": "everart",
@@ -647,7 +890,12 @@
       "install": "npx -y @modelcontextprotocol/server-everart",
       "license": "MIT",
       "verified": true,
-      "tags": ["image-generation", "stable-diffusion", "dalle", "ai-art"]
+      "tags": [
+        "image-generation",
+        "stable-diffusion",
+        "dalle",
+        "ai-art"
+      ]
     },
     {
       "id": "claude-flow",
@@ -659,7 +907,12 @@
       "install": "Available via popularaitools.ai",
       "license": "MIT",
       "verified": true,
-      "tags": ["orchestration", "multi-agent", "swarm", "claude"]
+      "tags": [
+        "orchestration",
+        "multi-agent",
+        "swarm",
+        "claude"
+      ]
     },
     {
       "id": "ruflo",
@@ -671,7 +924,12 @@
       "install": "Available via GitHub",
       "license": "MIT",
       "verified": true,
-      "tags": ["ruflo", "enterprise", "distributed", "rag"]
+      "tags": [
+        "ruflo",
+        "enterprise",
+        "distributed",
+        "rag"
+      ]
     },
     {
       "id": "n8n",
@@ -683,7 +941,12 @@
       "install": "docker run -it --rm --name n8n -p 5678:5678 -v ~/.n8n:/home/node/.n8n n8nio/n8n",
       "license": "Sustainable Use License",
       "verified": true,
-      "tags": ["n8n", "workflow", "automation", "integrations"]
+      "tags": [
+        "n8n",
+        "workflow",
+        "automation",
+        "integrations"
+      ]
     },
     {
       "id": "netdata",
@@ -695,7 +958,12 @@
       "install": "Via Netdata agent",
       "license": "GPL-3.0",
       "verified": true,
-      "tags": ["netdata", "monitoring", "metrics", "real-time"]
+      "tags": [
+        "netdata",
+        "monitoring",
+        "metrics",
+        "real-time"
+      ]
     },
     {
       "id": "grafana",
@@ -707,7 +975,12 @@
       "install": "Available via Grafana documentation",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["grafana", "dashboards", "alerts", "observability"]
+      "tags": [
+        "grafana",
+        "dashboards",
+        "alerts",
+        "observability"
+      ]
     },
     {
       "id": "sentry",
@@ -719,7 +992,12 @@
       "install": "npx -y @modelcontextprotocol/server-sentry",
       "license": "MIT",
       "verified": true,
-      "tags": ["sentry", "errors", "tracking", "debugging"]
+      "tags": [
+        "sentry",
+        "errors",
+        "tracking",
+        "debugging"
+      ]
     },
     {
       "id": "aperion-shield",
@@ -731,7 +1009,12 @@
       "install": "Download from GitHub",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["security", "guardrails", "proxy", "safety"]
+      "tags": [
+        "security",
+        "guardrails",
+        "proxy",
+        "safety"
+      ]
     },
     {
       "id": "grype",
@@ -743,7 +1026,12 @@
       "install": "Available via Anchore documentation",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["security", "vulnerability", "scanning", "containers"]
+      "tags": [
+        "security",
+        "vulnerability",
+        "scanning",
+        "containers"
+      ]
     },
     {
       "id": "wundervault",
@@ -755,7 +1043,12 @@
       "install": "Available via Glama.ai",
       "license": "AGPL-3.0",
       "verified": true,
-      "tags": ["secrets", "zero-knowledge", "vault", "encryption"]
+      "tags": [
+        "secrets",
+        "zero-knowledge",
+        "vault",
+        "encryption"
+      ]
     },
     {
       "id": "mcpguard",
@@ -779,7 +1072,12 @@
       "install": "Available via community",
       "license": "MIT",
       "verified": true,
-      "tags": ["figma", "design", "ui", "prototype"]
+      "tags": [
+        "figma",
+        "design",
+        "ui",
+        "prototype"
+      ]
     },
     {
       "id": "canva",
@@ -791,7 +1089,12 @@
       "install": "Available via Canva developer docs",
       "license": "MIT",
       "verified": true,
-      "tags": ["canva", "design", "graphics", "visual"]
+      "tags": [
+        "canva",
+        "design",
+        "graphics",
+        "visual"
+      ]
     },
     {
       "id": "stripe",
@@ -803,7 +1106,12 @@
       "install": "Available via Stripe documentation",
       "license": "MIT",
       "verified": true,
-      "tags": ["stripe", "payments", "subscriptions", "billing"]
+      "tags": [
+        "stripe",
+        "payments",
+        "subscriptions",
+        "billing"
+      ]
     },
     {
       "id": "dodo-payments",
@@ -815,7 +1123,12 @@
       "install": "Available via Glama.ai",
       "license": "MIT",
       "verified": true,
-      "tags": ["dodo", "payments", "subscriptions", "licenses"]
+      "tags": [
+        "dodo",
+        "payments",
+        "subscriptions",
+        "licenses"
+      ]
     },
     {
       "id": "flox",
@@ -827,7 +1140,12 @@
       "install": "Available via Glama.ai",
       "license": "MIT",
       "verified": true,
-      "tags": ["trading", "backtesting", "strategy", "finance"]
+      "tags": [
+        "trading",
+        "backtesting",
+        "strategy",
+        "finance"
+      ]
     },
     {
       "id": "google-maps",
@@ -839,7 +1157,12 @@
       "install": "npx -y @modelcontextprotocol/server-google-maps",
       "license": "MIT",
       "verified": true,
-      "tags": ["google-maps", "location", "directions", "places"]
+      "tags": [
+        "google-maps",
+        "location",
+        "directions",
+        "places"
+      ]
     },
     {
       "id": "amap",
@@ -851,7 +1174,12 @@
       "install": "Available via mcp.so",
       "license": "MIT",
       "verified": true,
-      "tags": ["amap", "gaode", "chinese", "mapping"]
+      "tags": [
+        "amap",
+        "gaode",
+        "chinese",
+        "mapping"
+      ]
     },
     {
       "id": "trendradar",
@@ -863,7 +1191,12 @@
       "install": "Available via Docker",
       "license": "MIT",
       "verified": true,
-      "tags": ["trends", "monitoring", "rss", "aggregation"]
+      "tags": [
+        "trends",
+        "monitoring",
+        "rss",
+        "aggregation"
+      ]
     },
     {
       "id": "scrapling",
@@ -875,7 +1208,12 @@
       "install": "pip install scrapling",
       "license": "BSD-3-Clause",
       "verified": true,
-      "tags": ["scraping", "adaptive", "crawling", "python"]
+      "tags": [
+        "scraping",
+        "adaptive",
+        "crawling",
+        "python"
+      ]
     },
     {
       "id": "gpt-researcher",
@@ -887,7 +1225,12 @@
       "install": "pip install gpt-researcher",
       "license": "MIT",
       "verified": true,
-      "tags": ["research", "autonomous", "deep-research", "multi-source"]
+      "tags": [
+        "research",
+        "autonomous",
+        "deep-research",
+        "multi-source"
+      ]
     },
     {
       "id": "openrouter-mcp",
@@ -899,7 +1242,12 @@
       "install": "npx -y @openrouter/mcp-server",
       "license": "MIT",
       "verified": true,
-      "tags": ["openrouter", "multi-model", "routing", "llm"]
+      "tags": [
+        "openrouter",
+        "multi-model",
+        "routing",
+        "llm"
+      ]
     },
     {
       "id": "sentry-mcp-v2",
@@ -911,7 +1259,12 @@
       "install": "npx -y @sentry/mcp-server",
       "license": "MIT",
       "verified": true,
-      "tags": ["sentry", "errors", "performance", "monitoring"]
+      "tags": [
+        "sentry",
+        "errors",
+        "performance",
+        "monitoring"
+      ]
     },
     {
       "id": "codegraph-mcp",
@@ -923,7 +1276,12 @@
       "install": "npx -y @anthropic-ai/codegraph-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["code-indexing", "semantic-search", "local-first", "codebase"]
+      "tags": [
+        "code-indexing",
+        "semantic-search",
+        "local-first",
+        "codebase"
+      ]
     },
     {
       "id": "trendradar-mcp",
@@ -935,7 +1293,12 @@
       "install": "Available via Docker",
       "license": "MIT",
       "verified": true,
-      "tags": ["trends", "monitoring", "rss", "aggregation"]
+      "tags": [
+        "trends",
+        "monitoring",
+        "rss",
+        "aggregation"
+      ]
     },
     {
       "id": "last30days-mcp",
@@ -947,7 +1310,12 @@
       "install": "npx -y @last30days/mcp-server",
       "license": "MIT",
       "verified": true,
-      "tags": ["research", "trends", "social-media", "engagement"]
+      "tags": [
+        "research",
+        "trends",
+        "social-media",
+        "engagement"
+      ]
     },
     {
       "id": "n8n-mcp",
@@ -959,7 +1327,12 @@
       "install": "npx -y n8n-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["n8n", "workflow", "automation", "orchestration"]
+      "tags": [
+        "n8n",
+        "workflow",
+        "automation",
+        "orchestration"
+      ]
     },
     {
       "id": "figma-context-mcp",
@@ -971,7 +1344,12 @@
       "install": "npx -y figma-developer-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["figma", "design", "design-tokens", "code-generation"]
+      "tags": [
+        "figma",
+        "design",
+        "design-tokens",
+        "code-generation"
+      ]
     },
     {
       "id": "arize-phoenix-mcp",
@@ -983,7 +1361,12 @@
       "install": "npx -y arize-phoenix-mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["llm", "observability", "tracing", "evaluation"]
+      "tags": [
+        "llm",
+        "observability",
+        "tracing",
+        "evaluation"
+      ]
     },
     {
       "id": "desktop-commander",
@@ -995,7 +1378,12 @@
       "install": "npx -y @anthropic/desktop-commander",
       "license": "MIT",
       "verified": true,
-      "tags": ["desktop", "automation", "commands", "file-management"]
+      "tags": [
+        "desktop",
+        "automation",
+        "commands",
+        "file-management"
+      ]
     },
     {
       "id": "mcp-atlassian",
@@ -1007,7 +1395,12 @@
       "install": "npx -y mcp-atlassian",
       "license": "MIT",
       "verified": true,
-      "tags": ["jira", "confluence", "bitbucket", "project-management"]
+      "tags": [
+        "jira",
+        "confluence",
+        "bitbucket",
+        "project-management"
+      ]
     },
     {
       "id": "google-workspace-mcp",
@@ -1019,7 +1412,13 @@
       "install": "npx -y @anthropic/google-workspace-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["google", "gmail", "calendar", "drive", "workspace"]
+      "tags": [
+        "google",
+        "gmail",
+        "calendar",
+        "drive",
+        "workspace"
+      ]
     },
     {
       "id": "zapier-mcp",
@@ -1031,7 +1430,12 @@
       "install": "npx -y zapier-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["zapier", "integration", "automation", "universal"]
+      "tags": [
+        "zapier",
+        "integration",
+        "automation",
+        "universal"
+      ]
     },
     {
       "id": "tavily-mcp",
@@ -1043,7 +1447,12 @@
       "install": "npx -y tavily-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["search", "web", "research", "extraction"]
+      "tags": [
+        "search",
+        "web",
+        "research",
+        "extraction"
+      ]
     },
     {
       "id": "perplexity-mcp",
@@ -1055,7 +1464,12 @@
       "install": "npx -y @anthropic/perplexity-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["perplexity", "ai-search", "official", "research"]
+      "tags": [
+        "perplexity",
+        "ai-search",
+        "official",
+        "research"
+      ]
     },
     {
       "id": "mongodb-mcp-server",
@@ -1067,7 +1481,12 @@
       "install": "npx -y @anthropic/mongodb-mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["mongodb", "nosql", "database", "official"]
+      "tags": [
+        "mongodb",
+        "nosql",
+        "database",
+        "official"
+      ]
     },
     {
       "id": "terraform-mcp-server",
@@ -1079,7 +1498,12 @@
       "install": "npx -y @anthropic/terraform-mcp",
       "license": "MPL-2.0",
       "verified": true,
-      "tags": ["terraform", "infrastructure", "iac", "hashicorp"]
+      "tags": [
+        "terraform",
+        "infrastructure",
+        "iac",
+        "hashicorp"
+      ]
     },
     {
       "id": "mcp-grafana",
@@ -1091,7 +1515,12 @@
       "install": "npx -y @anthropic/grafana-mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["grafana", "monitoring", "dashboards", "metrics"]
+      "tags": [
+        "grafana",
+        "monitoring",
+        "dashboards",
+        "metrics"
+      ]
     },
     {
       "id": "atlassian-mcp-server",
@@ -1103,7 +1532,12 @@
       "install": "npx -y @anthropic/atlassian-mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["atlassian", "jira", "confluence", "official"]
+      "tags": [
+        "atlassian",
+        "jira",
+        "confluence",
+        "official"
+      ]
     },
     {
       "id": "mcp-server-elasticsearch",
@@ -1115,7 +1549,12 @@
       "install": "npx -y @anthropic/elasticsearch-mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["elasticsearch", "search", "analytics", "elastic"]
+      "tags": [
+        "elasticsearch",
+        "search",
+        "analytics",
+        "elastic"
+      ]
     },
     {
       "id": "obsidian-mcp-server",
@@ -1127,7 +1566,12 @@
       "install": "npx -y obsidian-mcp-server",
       "license": "MIT",
       "verified": true,
-      "tags": ["obsidian", "notes", "knowledge", "vault"]
+      "tags": [
+        "obsidian",
+        "notes",
+        "knowledge",
+        "vault"
+      ]
     },
     {
       "id": "dbt-mcp",
@@ -1139,7 +1583,12 @@
       "install": "npx -y @anthropic/dbt-mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["dbt", "data-transformations", "analytics", "official"]
+      "tags": [
+        "dbt",
+        "data-transformations",
+        "analytics",
+        "official"
+      ]
     },
     {
       "id": "mcp-redis",
@@ -1151,7 +1600,12 @@
       "install": "npx -y @anthropic/redis-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["redis", "cache", "pub-sub", "data-structures"]
+      "tags": [
+        "redis",
+        "cache",
+        "pub-sub",
+        "data-structures"
+      ]
     },
     {
       "id": "airtable-mcp-server",
@@ -1163,7 +1617,12 @@
       "install": "npx -y airtable-mcp-server",
       "license": "MIT",
       "verified": true,
-      "tags": ["airtable", "database", "records", "low-code"]
+      "tags": [
+        "airtable",
+        "database",
+        "records",
+        "low-code"
+      ]
     },
     {
       "id": "snowflake-mcp",
@@ -1175,7 +1634,12 @@
       "install": "npx -y @anthropic/snowflake-mcp",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["snowflake", "data-warehouse", "sql", "official"]
+      "tags": [
+        "snowflake",
+        "data-warehouse",
+        "sql",
+        "official"
+      ]
     },
     {
       "id": "shopify-mcp",
@@ -1187,7 +1651,12 @@
       "install": "npx -y shopify-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["shopify", "ecommerce", "products", "orders"]
+      "tags": [
+        "shopify",
+        "ecommerce",
+        "products",
+        "orders"
+      ]
     },
     {
       "id": "langfuse-mcp-server",
@@ -1199,7 +1668,12 @@
       "install": "npx -y langfuse-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["langfuse", "prompts", "observability", "versioning"]
+      "tags": [
+        "langfuse",
+        "prompts",
+        "observability",
+        "versioning"
+      ]
     },
     {
       "id": "mcp-server-asana",
@@ -1211,7 +1685,12 @@
       "install": "npx -y mcp-server-asana",
       "license": "MIT",
       "verified": true,
-      "tags": ["asana", "project-management", "tasks", "productivity"]
+      "tags": [
+        "asana",
+        "project-management",
+        "tasks",
+        "productivity"
+      ]
     },
     {
       "id": "serper-search-mcp",
@@ -1223,7 +1702,12 @@
       "install": "npx -y mcp-server-serper",
       "license": "MIT",
       "verified": true,
-      "tags": ["serper", "google", "search", "web"]
+      "tags": [
+        "serper",
+        "google",
+        "search",
+        "web"
+      ]
     },
     {
       "id": "datadog-mcp",
@@ -1235,7 +1719,12 @@
       "install": "npx -y @anthropic/datadog-mcp",
       "license": "BSD-3-Clause",
       "verified": true,
-      "tags": ["datadog", "monitoring", "logs", "metrics"]
+      "tags": [
+        "datadog",
+        "monitoring",
+        "logs",
+        "metrics"
+      ]
     },
     {
       "id": "mcp-server-google-workspace-ts",
@@ -1247,7 +1736,30 @@
       "install": "npx -y google-workspace-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["google", "workspace", "typescript", "alternative"]
+      "tags": [
+        "google",
+        "workspace",
+        "typescript",
+        "alternative"
+      ]
+    },
+    {
+      "id": "xquik",
+      "name": "Xquik MCP Server",
+      "category": "Marketing",
+      "github": "https://github.com/Xquik-dev/x-twitter-scraper",
+      "stars": 130,
+      "description": "Remote MCP server and REST API for X search, timelines, profiles, media, monitors, webhooks, and posting workflows.",
+      "install": "Remote endpoint: https://xquik.com/mcp",
+      "license": "No license file",
+      "verified": true,
+      "tags": [
+        "x-twitter",
+        "social-media",
+        "automation",
+        "monitoring",
+        "webhooks"
+      ]
     }
   ]
 }

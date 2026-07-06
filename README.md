@@ -107,13 +107,13 @@ Give your AI agent the [contribution skill](contribute/SKILL.md) and it will for
 
 | Library | Count | What You Get | Browse |
 |---------|-------|--------------|--------|
-| **Skills** | 77 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
-| **MCP Servers** | 100 | Server configs with install commands | [mcps/](mcps/) |
-| **Agent Loops** | 107 | Workflows with prompts and verification | [loops/](loops/) |
-| **Subagents** | 25 | Specialized agents with model routing | [subagents/](subagents/) |
-| **Plugins** | 48 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
+| **Skills** | 83 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
+| **MCP Servers** | 101 | Server configs with install commands | [mcps/](mcps/) |
+| **Agent Loops** | 113 | Workflows with prompts and verification | [loops/](loops/) |
+| **Subagents** | 30 | Specialized agents with model routing | [subagents/](subagents/) |
+| **Plugins** | 51 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
 
-**Total: 357 components across 5 categories.**
+**Total: 378 components across 5 categories.**
 
 ---
 
