@@ -35,7 +35,7 @@
 - [Hooks (20 hooks)](#hooks-20-hooks)
 - [Plugins (51 plugins)](#plugins-51-plugins)
 - [Prompts (120 prompts)](#prompts-120-prompts)
-- [Tools (62 CLI tools)](#tools-62-cli-tools)
+- [Tools (63 CLI tools)](#tools-63-cli-tools)
 - [Cross-Platform Compatibility](#cross-platform-compatibility)
 - [Contribute with Your Agent](#contribute-with-your-agent)
 - [Contributing](#contributing)
@@ -69,7 +69,7 @@ Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CL
     <tr><td>Hooks</td><td align="center">20 production-ready hooks</td><td align="center">No</td></tr>
     <tr><td>Plugins</td><td align="center">51 plugins across 9 platforms</td><td align="center">No</td></tr>
     <tr><td>Prompts</td><td align="center">120 curated prompts + 310K marketplace</td><td align="center">Links only</td></tr>
-    <tr><td>CLI Tools</td><td align="center">62 tools with install cmds</td><td align="center">No</td></tr>
+    <tr><td>CLI Tools</td><td align="center">63 tools with install cmds</td><td align="center">No</td></tr>
     <tr><td>Catalogs with metadata</td><td align="center">JSON catalogs for discovery</td><td align="center">No</td></tr>
     <tr><td>Cross-platform</td><td align="center">30+ AI tools</td><td align="center">Varies</td></tr>
     <tr><td>Agent-contributable</td><td align="center">Automated fork+PR skill</td><td align="center">No</td></tr>
@@ -119,9 +119,9 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 | **Hooks** | 20 | Production-ready Claude Code hooks | [hooks/](hooks/) |
 | **Plugins** | 51 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
 | **Prompts** | 120 | Curated prompt collections and marketplaces | [prompts/](prompts/) |
-| **Tools** | 62 | CLI tools that enhance agent capabilities | [tools/](tools/) |
+| **Tools** | 63 | CLI tools that enhance agent capabilities | [tools/](tools/) |
 
-**Total: 580 components across 8 categories.**
+**Total: 581 components across 8 categories.**
 
 ---
 
@@ -328,7 +328,7 @@ Browse all: [prompts/](prompts/) | [catalog.json](prompts/catalog.json)
 
 ---
 
-## Tools (62 CLI tools)
+## Tools (63 CLI tools)
 
 Essential CLI tools and utilities that enhance AI coding agent capabilities.
 
@@ -347,6 +347,7 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities.
     <tr><td><b>Docker & Containers</b></td><td align="right">5</td><td>lazydocker (40K), dive (49K), podman (30K)</td></tr>
     <tr><td><b>Cloud & DevOps</b></td><td align="right">6</td><td>ansible (64K), terraform (44K), k9s (28K)</td></tr>
     <tr><td><b>AI Coding CLIs</b></td><td align="right">8</td><td>ollama (120K), gemini-cli (98K), claude-code (80K), aider (42K)</td></tr>
+    <tr><td><b>Agent Memory</b></td><td align="right">1</td><td>Tree Ring Memory (2)</td></tr>
     <tr><td><b>Formatting & Linting</b></td><td align="right">6</td><td>prettier (51K), ruff (35K), shellcheck (37K), biome (17K)</td></tr>
     <tr><td><b>Database CLIs</b></td><td align="right">5</td><td>pgcli (12.8K), mycli (11.7K), usql (9K)</td></tr>
     <tr><td><b>API Testing</b></td><td align="right">5</td><td>hoppscotch (67K), httpie (35K), bruno (30K)</td></tr>
