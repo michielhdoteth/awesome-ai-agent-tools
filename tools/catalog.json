@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-07-06",
-  "totalTools": 62,
+  "lastUpdated": "2026-07-07",
+  "totalTools": 63,
   "categories": [
     { "name": "Code Analysis", "count": 9 },
     { "name": "Git Utilities", "count": 6 },
@@ -12,6 +12,7 @@
     { "name": "Docker & Containers", "count": 5 },
     { "name": "Cloud & DevOps", "count": 6 },
     { "name": "AI Coding CLIs", "count": 8 },
+    { "name": "Agent Memory", "count": 1 },
     { "name": "Formatting & Linting", "count": 6 },
     { "name": "Database CLIs", "count": 5 },
     { "name": "API Testing", "count": 5 },
@@ -408,6 +409,16 @@
       "stars": 8000,
       "crossPlatform": true,
       "install": "Install from VS Code marketplace"
+    },
+    {
+      "id": "tree-ring-memory",
+      "name": "Tree Ring Memory",
+      "category": "Agent Memory",
+      "description": "Local-first Rust CLI/TUI for AI-agent memory recall, forgetting, audit, and consolidation.",
+      "url": "https://github.com/TerminallyLazy/Tree-Ring-Memory",
+      "stars": 2,
+      "crossPlatform": true,
+      "install": "curl -fsSL https://raw.githubusercontent.com/TerminallyLazy/Tree-Ring-Memory/main/install.sh | sh"
     },
     {
       "id": "biome",
