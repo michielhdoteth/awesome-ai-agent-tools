@@ -3,15 +3,15 @@
   "version": "2026.07",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-07-07",
-  "totalTools": 63,
+  "lastUpdated": "2026-07-13",
+  "totalTools": 64,
   "categories": [
     { "name": "Code Analysis", "count": 9 },
     { "name": "Git Utilities", "count": 6 },
     { "name": "Package Managers", "count": 5 },
     { "name": "Docker & Containers", "count": 5 },
     { "name": "Cloud & DevOps", "count": 6 },
-    { "name": "AI Coding CLIs", "count": 8 },
+    { "name": "AI Coding CLIs", "count": 9 },
     { "name": "Agent Memory", "count": 1 },
     { "name": "Formatting & Linting", "count": 6 },
     { "name": "Database CLIs", "count": 5 },
@@ -409,6 +409,16 @@
       "stars": 8000,
       "crossPlatform": true,
       "install": "Install from VS Code marketplace"
+    },
+    {
+      "id": "codex-profiles",
+      "name": "codex-profiles",
+      "category": "AI Coding CLIs",
+      "description": "Named CODEX_HOME profiles and macOS ChatGPT windows without copying auth tokens.",
+      "url": "https://github.com/Ducksss/codex-profiles",
+      "stars": 49,
+      "crossPlatform": true,
+      "install": "npm install -g codex-profile"
     },
     {
       "id": "tree-ring-memory",
