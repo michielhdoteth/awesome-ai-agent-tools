@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-07-12",
-  "totalSkills": 89,
+  "totalSkills": 88,
   "categories": [
     { "name": "Development", "count": 29 },
     { "name": "Productivity", "count": 16 },

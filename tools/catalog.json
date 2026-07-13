@@ -4,7 +4,7 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-07-12",
-  "totalTools": 67,
+  "totalTools": 66,
   "categories": [
     { "name": "Code Analysis", "count": 9 },
     { "name": "Git Utilities", "count": 6 },

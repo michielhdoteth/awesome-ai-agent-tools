@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The definitive directory of AI agent components.** 590+ installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
+> **The definitive directory of AI agent components.** 598 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -28,8 +28,8 @@
 - [What is this?](#what-is-this)
 - [Quick Start](#quick-start)
 - [Browse by Category](#browse-by-category)
-- [Skills (89 curated)](#skills-89-curated)
-- [MCP Servers (108 servers)](#mcp-servers-108-servers)
+- [Skills (88 curated)](#skills-88-curated)
+- [MCP Servers (110 servers)](#mcp-servers-110-servers)
 - [Agent Loops (113 workflows)](#agent-loops-113-workflows)
 - [Subagents (30 agents)](#subagents-30-agents)
 - [Hooks (20 hooks)](#hooks-20-hooks)
@@ -112,8 +112,8 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 
 | Library | Count | What You Get | Browse |
 |---------|-------|--------------|--------|
-| **Skills** | 89 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
-| **MCP Servers** | 109 | Server configs with install commands | [mcps/](mcps/) |
+| **Skills** | 88 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
+| **MCP Servers** | 110 | Server configs with install commands | [mcps/](mcps/) |
 | **Agent Loops** | 113 | Workflows with prompts and verification | [loops/](loops/) |
 | **Subagents** | 30 | Specialized agents with model routing | [subagents/](subagents/) |
 | **Hooks** | 20 | Production-ready Claude Code hooks | [hooks/](hooks/) |
@@ -125,7 +125,7 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 
 ---
 
-## Skills (89 curated)
+## Skills (88 curated)
 
 External references with install commands from obra/superpowers, anthropics/skills, addyosmani (77.2K stars), vercel-labs, trailofbits, and 30+ more sources.
 
@@ -154,7 +154,7 @@ Browse all: [skills/](skills/) | [catalog.json](skills/catalog.json)
 
 ---
 
-## MCP Servers (109 servers)
+## MCP Servers (110 servers)
 
 Curated Model Context Protocol servers with install commands from GitHub, npm, and official registries.
 
