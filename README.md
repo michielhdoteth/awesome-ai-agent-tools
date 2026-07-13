@@ -35,7 +35,7 @@
 - [Hooks (20 hooks)](#hooks-20-hooks)
 - [Plugins (51 plugins)](#plugins-51-plugins)
 - [Prompts (120 prompts)](#prompts-120-prompts)
-- [Tools (65 CLI tools)](#tools-65-cli-tools)
+- [Tools (66 CLI tools)](#tools-66-cli-tools)
 - [Cross-Platform Compatibility](#cross-platform-compatibility)
 - [Contribute with Your Agent](#contribute-with-your-agent)
 - [Contributing](#contributing)
@@ -69,7 +69,7 @@ Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CL
     <tr><td>Hooks</td><td align="center">20 production-ready hooks</td><td align="center">No</td></tr>
     <tr><td>Plugins</td><td align="center">51 plugins across 9 platforms</td><td align="center">No</td></tr>
     <tr><td>Prompts</td><td align="center">120 curated prompts + 310K marketplace</td><td align="center">Links only</td></tr>
-    <tr><td>CLI Tools</td><td align="center">65 tools with install cmds</td><td align="center">No</td></tr>
+    <tr><td>CLI Tools</td><td align="center">66 tools with install cmds</td><td align="center">No</td></tr>
     <tr><td>Catalogs with metadata</td><td align="center">JSON catalogs for discovery</td><td align="center">No</td></tr>
     <tr><td>Cross-platform</td><td align="center">30+ AI tools</td><td align="center">Varies</td></tr>
     <tr><td>Agent-contributable</td><td align="center">Automated fork+PR skill</td><td align="center">No</td></tr>
@@ -113,15 +113,15 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 | Library | Count | What You Get | Browse |
 |---------|-------|--------------|--------|
 | **Skills** | 89 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
-| **MCP Servers** | 108 | Server configs with install commands | [mcps/](mcps/) |
+| **MCP Servers** | 109 | Server configs with install commands | [mcps/](mcps/) |
 | **Agent Loops** | 113 | Workflows with prompts and verification | [loops/](loops/) |
 | **Subagents** | 30 | Specialized agents with model routing | [subagents/](subagents/) |
 | **Hooks** | 20 | Production-ready Claude Code hooks | [hooks/](hooks/) |
 | **Plugins** | 51 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
 | **Prompts** | 120 | Curated prompt collections and marketplaces | [prompts/](prompts/) |
-| **Tools** | 65 | CLI tools that enhance agent capabilities | [tools/](tools/) |
+| **Tools** | 66 | CLI tools that enhance agent capabilities | [tools/](tools/) |
 
-**Total: 596 components across 8 categories.**
+**Total: 598 components across 8 categories.**
 
 ---
 
@@ -154,7 +154,7 @@ Browse all: [skills/](skills/) | [catalog.json](skills/catalog.json)
 
 ---
 
-## MCP Servers (108 servers)
+## MCP Servers (109 servers)
 
 Curated Model Context Protocol servers with install commands from GitHub, npm, and official registries.
 
@@ -168,11 +168,11 @@ Curated Model Context Protocol servers with install commands from GitHub, npm, a
   </thead>
   <tbody>
     <tr><td><b>Databases</b></td><td align="right">13</td><td>MongoDB (1K), Redis (512), Elasticsearch (670), Neon, Supabase</td></tr>
-    <tr><td><b>Developer Tools</b></td><td align="right">13</td><td>Context7 (54K), MarkItDown (119K), GitHub MCP (30.6K), Playwright (34K), skills-mcp (7K)</td></tr>
+    <tr><td><b>Developer Tools</b></td><td align="right">14</td><td>Context7 (54K), MarkItDown (119K), GitHub MCP (30.6K), Playwright (34K), skills-mcp (7K)</td></tr>
     <tr><td><b>Communication</b></td><td align="right">8</td><td>Slack, Notion, Linear, Google Workspace (3K), Obsidian</td></tr>
     <tr><td><b>Search</b></td><td align="right">8</td><td>Brave Search, Tavily (1.5K), Perplexity (1.2K), Serper</td></tr>
     <tr><td><b>AI & Machine Learning</b></td><td align="right">8</td><td>Arize Phoenix (10K), Langfuse (166), OpenRouter, Chutes, Brain MCP</td></tr>
-    <tr><td><b>Agent Orchestration</b></td><td align="right">6</td><td>n8n (22K), Zapier (2K), Composio, skills-mcp</td></tr>
+    <tr><td><b>Agent Orchestration</b></td><td align="right">7</td><td>n8n (22K), Zapier (2K), Composio, skills-mcp, llm-box</td></tr>
     <tr><td><b>Browser Automation</b></td><td align="right">5</td><td>Playwright (34K), Puppeteer, Browserbase</td></tr>
     <tr><td><b>Cloud Platforms</b></td><td align="right">5</td><td>Cloudflare, AWS, GCP, Azure</td></tr>
     <tr><td><b>Monitoring</b></td><td align="right">6</td><td>Grafana (800), Datadog (41), Sentry</td></tr>
@@ -329,7 +329,7 @@ Browse all: [prompts/](prompts/) | [catalog.json](prompts/catalog.json)
 
 ---
 
-## Tools (65 CLI tools)
+## Tools (66 CLI tools)
 
 Essential CLI tools and utilities that enhance AI coding agent capabilities.
 
@@ -347,7 +347,7 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities.
     <tr><td><b>Package Managers</b></td><td align="right">5</td><td>pnpm (32K), bun (18K), nvm (84K)</td></tr>
     <tr><td><b>Docker & Containers</b></td><td align="right">5</td><td>lazydocker (52K), dive (47K)</td></tr>
     <tr><td><b>Cloud & DevOps</b></td><td align="right">6</td><td>aws-cli (16K), terraform (23K)</td></tr>
-    <tr><td><b>AI Coding CLIs</b></td><td align="right">10</td><td>ollama (120K), gemini-cli (98K), claude-code (80K), aider (42K)</td></tr>
+    <tr><td><b>AI Coding CLIs</b></td><td align="right">11</td><td>ollama (120K), gemini-cli (98K), claude-code (80K), aider (42K), codex-profiles (49)</td></tr>
     <tr><td><b>Agent Memory</b></td><td align="right">2</td><td>Tree Ring Memory (2), Skills MCP Server (4)</td></tr>
     <tr><td><b>Formatting & Linting</b></td><td align="right">6</td><td>prettier (51K), ruff (35K), shellcheck (37K), biome (17K)</td></tr>
     <tr><td><b>Database CLIs</b></td><td align="right">5</td><td>pgcli (12.8K), mycli (11.7K), usql (9K)</td></tr>

@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-07-12",
-  "totalServers": 108,
+  "totalServers": 109,
   "categories": [
     { "name": "Official Reference", "count": 6 },
     { "name": "Developer Tools", "count": 11 },
@@ -15,7 +15,7 @@
     { "name": "Communication", "count": 9 },
     { "name": "Search", "count": 8 },
     { "name": "AI & Machine Learning", "count": 6 },
-    { "name": "Agent Orchestration", "count": 5 },
+    { "name": "Agent Orchestration", "count": 7 },
     { "name": "Monitoring", "count": 6 },
     { "name": "Security", "count": 5 },
     { "name": "Design", "count": 3 },
@@ -1888,6 +1888,24 @@
         "knowledge-graph",
         "codebase-navigation",
         "semantic"
+      ]
+    },
+    {
+      "id": "llm-box",
+      "name": "llm-box",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/alib8b8/llm-box",
+      "stars": 0,
+      "description": "Terminal-first workflow automation engine with MCP server mode. Generate and execute YAML workflows from plain English descriptions. 20+ built-in nodes, 15+ LLM providers.",
+      "install": "npm install -g llm-box",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "workflow",
+        "automation",
+        "mcp",
+        "terminal",
+        "yaml"
       ]
     }
   ]
