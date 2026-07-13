@@ -3,16 +3,16 @@
   "version": "2026.07",
   "description": "Repeatable AI-agent workflows with feedback loops",
   "license": "MIT",
-  "lastUpdated": "2026-07-06",
-  "totalLoops": 113,
+  "lastUpdated": "2026-07-13",
+  "totalLoops": 115,
   "categories": [
     { "name": "engineering", "count": 58 },
     { "name": "evaluation", "count": 14 },
     { "name": "operations", "count": 6 },
     { "name": "content", "count": 3 },
     { "name": "design", "count": 6 },
-    { "name": "meta", "count": 10 },
-    { "name": "multi-agent", "count": 16 }
+    { "name": "meta", "count": 11 },
+    { "name": "multi-agent", "count": 17 }
   ],
   "sources": [
     { "name": "Forward-Future/loop-library", "url": "https://github.com/Forward-Future/loop-library", "stars": 650, "loopCount": 55 },
@@ -1533,6 +1533,32 @@
       "verification": "All agents complete their roles. Final output validated by test agent. Markdown protocol ensures auditability.",
       "tags": ["zero-dependency", "multi-agent", "tmux", "markdown-protocol", "framework-free"],
       "related": ["supervisor-coordination", "debate-consensus"]
+    },
+    {
+      "id": "hermes-loop",
+      "title": "Hermes Loop - Self-Improving Agent Skills",
+      "category": "meta",
+      "author": "akijain2000",
+      "source": "https://github.com/akijain2000/hermes-loop",
+      "sourceRepo": "akijain2000/hermes-loop",
+      "description": "Self-improving agent loop extension that creates skills from experience. Runs on Raspberry Pi and Claude Code. Agent improves itself over time by converting successful patterns into reusable skills.",
+      "prompt": "After completing a task, analyze what worked well. Convert successful patterns into reusable skill files. Store skills for future use. Continuously improve by building on past successes.",
+      "verification": "New skill files created from successful patterns. Skills are reusable across future tasks. Agent performance improves over time.",
+      "tags": ["self-improving", "meta-learning", "skills", "raspberry-pi", "claude-code"],
+      "related": ["overnight-docs-sweep", "code-quality-loop"]
+    },
+    {
+      "id": "agentic-design-patterns",
+      "title": "Agentic Design Patterns",
+      "category": "multi-agent",
+      "author": "agenticdesign",
+      "source": "https://github.com/agenticdesign/patterns",
+      "sourceRepo": "agenticdesign/patterns",
+      "description": "Reference implementations of core agentic patterns: reflection, tool-use, planning, multi-agent collaboration. Educational resource with production-ready pattern implementations.",
+      "prompt": "Implement one of the core agentic patterns: reflection (self-evaluation), tool-use (external tool integration), planning (step decomposition), or multi-agent collaboration (task delegation). Use as reference for building agentic systems.",
+      "verification": "Pattern implementation matches reference. Code is production-ready. Educational explanations are clear and accurate.",
+      "tags": ["design-patterns", "educational", "reflection", "planning", "multi-agent", "reference"],
+      "related": ["hermes-loop", "zero-dep-multi-agent"]
     }
   ]
 }

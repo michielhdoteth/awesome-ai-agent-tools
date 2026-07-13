@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Curated prompt collections, libraries, and marketplaces for AI coding agents",
   "license": "MIT",
-  "lastUpdated": "2026-07-06",
-  "totalPrompts": 120,
+  "lastUpdated": "2026-07-13",
+  "totalPrompts": 122,
   "categories": [
     { "name": "General Purpose", "count": 12 },
     { "name": "Coding", "count": 15 },
@@ -146,6 +146,8 @@
     { "id": "image-gen-illustration", "name": "Illustration Generation", "category": "Image Generation", "description": "Create illustrations for blog posts and documentation", "bestFor": "Blog headers, docs illustrations", "worksWith": ["GPT-4", "DALL-E", "Midjourney"], "source": "devanshug2307/Awesome-AI-Image-Prompts" },
     { "id": "image-gen-ui-mockup", "name": "UI Mockup Generation", "category": "Image Generation", "description": "Generate UI mockups and wireframes with AI", "bestFor": "Rapid prototyping, design exploration", "worksWith": ["GPT-4", "DALL-E"], "source": "YouMind-OpenLab/awesome-gpt-image-2" },
     { "id": "image-gen-data-viz", "name": "Data Visualization Generation", "category": "Image Generation", "description": "Create charts and data visualizations with AI", "bestFor": "Reports, presentations, dashboards", "worksWith": ["GPT-4", "DALL-E"], "source": "YouMind-OpenLab/awesome-gpt-image-2" },
-    { "id": "image-gen-social", "name": "Social Media Graphics", "category": "Image Generation", "description": "Create social media graphics and banners", "bestFor": "Marketing, social content", "worksWith": ["GPT-4", "DALL-E", "Midjourney"], "source": "devanshug2307/Awesome-AI-Image-Prompts" }
+    { "id": "image-gen-social", "name": "Social Media Graphics", "category": "Image Generation", "description": "Create social media graphics and banners", "bestFor": "Marketing, social content", "worksWith": ["GPT-4", "DALL-E", "Midjourney"], "source": "devanshug2307/Awesome-AI-Image-Prompts" },
+    { "id": "awesome-ai-prompts-2026", "name": "Awesome AI Prompts 2026", "category": "General Purpose", "description": "Updated prompt library for GPT-5.4, Claude Sonnet 4.6, and Gemini 3.1 models. First major prompt library updated for July 2026 model releases.", "bestFor": "Multi-model prompt engineering", "worksWith": ["GPT-5.4", "Claude Sonnet 4.6", "Gemini 3.1"], "source": "hoangatg/awesome-ai-prompts-2026" },
+    { "id": "prompthub", "name": "PromptHub", "category": "Marketplace", "description": "Marketplace with 50,000+ prompts organized by use case and model compatibility. Largest dedicated prompt marketplace with strong discovery features.", "bestFor": "Prompt discovery, commercial prompts", "worksWith": ["All models"], "source": "prompthub.com" }
   ]
 }

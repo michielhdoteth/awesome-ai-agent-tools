@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The definitive directory of AI agent components.** 598 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
+> **The definitive directory of AI agent components.** 611 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -30,11 +30,11 @@
 - [Browse by Category](#browse-by-category)
 - [Skills (88 curated)](#skills-88-curated)
 - [MCP Servers (110 servers)](#mcp-servers-110-servers)
-- [Agent Loops (113 workflows)](#agent-loops-113-workflows)
-- [Subagents (30 agents)](#subagents-30-agents)
-- [Hooks (20 hooks)](#hooks-20-hooks)
-- [Plugins (51 plugins)](#plugins-51-plugins)
-- [Prompts (120 prompts)](#prompts-120-prompts)
+- [Agent Loops (115 workflows)](#agent-loops-115-workflows)
+- [Subagents (32 agents)](#subagents-32-agents)
+- [Hooks (25 hooks)](#hooks-25-hooks)
+- [Plugins (53 plugins)](#plugins-53-plugins)
+- [Prompts (122 prompts)](#prompts-122-prompts)
 - [Tools (66 CLI tools)](#tools-66-cli-tools)
 - [Cross-Platform Compatibility](#cross-platform-compatibility)
 - [Contribute with Your Agent](#contribute-with-your-agent)
@@ -65,10 +65,10 @@ Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CL
     <tr><td>Installable skill files</td><td align="center">89 SKILL.md files</td><td align="center">Links only</td></tr>
     <tr><td>MCP server configs</td><td align="center">108 servers + install cmds</td><td align="center">Links only</td></tr>
     <tr><td>Agent workflows</td><td align="center">113 loops with prompts</td><td align="center">Links only</td></tr>
-    <tr><td>Subagents</td><td align="center">30 agents + model routing</td><td align="center">No</td></tr>
-    <tr><td>Hooks</td><td align="center">20 production-ready hooks</td><td align="center">No</td></tr>
-    <tr><td>Plugins</td><td align="center">51 plugins across 9 platforms</td><td align="center">No</td></tr>
-    <tr><td>Prompts</td><td align="center">120 curated prompts + 310K marketplace</td><td align="center">Links only</td></tr>
+    <tr><td>Subagents</td><td align="center">32 agents + model routing</td><td align="center">No</td></tr>
+    <tr><td>Hooks</td><td align="center">25 production-ready hooks</td><td align="center">No</td></tr>
+    <tr><td>Plugins</td><td align="center">53 plugins across 9 platforms</td><td align="center">No</td></tr>
+    <tr><td>Prompts</td><td align="center">122 curated prompts + 310K marketplace</td><td align="center">Links only</td></tr>
     <tr><td>CLI Tools</td><td align="center">66 tools with install cmds</td><td align="center">No</td></tr>
     <tr><td>Catalogs with metadata</td><td align="center">JSON catalogs for discovery</td><td align="center">No</td></tr>
     <tr><td>Cross-platform</td><td align="center">30+ AI tools</td><td align="center">Varies</td></tr>
@@ -114,14 +114,14 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 |---------|-------|--------------|--------|
 | **Skills** | 88 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
 | **MCP Servers** | 110 | Server configs with install commands | [mcps/](mcps/) |
-| **Agent Loops** | 113 | Workflows with prompts and verification | [loops/](loops/) |
-| **Subagents** | 30 | Specialized agents with model routing | [subagents/](subagents/) |
-| **Hooks** | 20 | Production-ready Claude Code hooks | [hooks/](hooks/) |
-| **Plugins** | 51 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
-| **Prompts** | 120 | Curated prompt collections and marketplaces | [prompts/](prompts/) |
+| **Agent Loops** | 115 | Workflows with prompts and verification | [loops/](loops/) |
+| **Subagents** | 32 | Specialized agents with model routing | [subagents/](subagents/) |
+| **Hooks** | 25 | Production-ready Claude Code hooks | [hooks/](hooks/) |
+| **Plugins** | 53 | Extensions for Claude Code, OpenCode, Cursor, etc. | [plugins/](plugins/) |
+| **Prompts** | 122 | Curated prompt collections and marketplaces | [prompts/](prompts/) |
 | **Tools** | 66 | CLI tools that enhance agent capabilities | [tools/](tools/) |
 
-**Total: 598 components across 8 categories.**
+**Total: 611 components across 8 categories.**
 
 ---
 
@@ -190,7 +190,7 @@ Browse all: [mcps/](mcps/) | [catalog.json](mcps/catalog.json)
 
 ---
 
-## Agent Loops (113 workflows)
+## Agent Loops (115 workflows)
 
 Repeatable AI agent patterns with built-in feedback mechanisms, sourced from official documentation, research papers, and community repos.
 
@@ -217,7 +217,7 @@ Browse all: [loops/](loops/) | [catalog.json](loops/catalog.json)
 
 ---
 
-## Subagents (30 agents)
+## Subagents (32 agents)
 
 Multi-agent frameworks, subagent collections, SDKs, and platform formats from the ecosystem.
 
@@ -242,7 +242,7 @@ Browse all: [subagents/](subagents/) | [catalog.json](subagents/catalog.json)
 
 ---
 
-## Hooks (20 hooks)
+## Hooks (25 hooks)
 
 Production-ready Claude Code hooks for security, automation, quality, notifications, session management, and safety.
 
@@ -269,7 +269,7 @@ Browse all: [hooks/](hooks/) | [catalog.json](hooks/catalog.json)
 
 ---
 
-## Plugins (51 plugins)
+## Plugins (53 plugins)
 
 Extensions, rules, and plugins for every major AI coding agent.
 
@@ -298,7 +298,7 @@ Browse all: [plugins/](plugins/) | [catalog.json](plugins/catalog.json)
 
 ---
 
-## Prompts (120 prompts)
+## Prompts (122 prompts)
 
 Curated prompt collections, libraries, and marketplaces for AI coding agents.
 

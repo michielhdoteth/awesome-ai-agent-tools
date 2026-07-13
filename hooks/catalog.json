@@ -1,20 +1,22 @@
 {
   "metadata": {
-    "totalHooks": 20,
-    "lastUpdated": "2026-07-06",
+    "totalHooks": 25,
+    "lastUpdated": "2026-07-13",
     "sources": [
       "https://github.com/karanb192/claude-code-hooks",
       "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "https://www.aitmpl.com/hooks/"
     ],
     "categories": [
-      { "name": "Security", "count": 4 },
+      { "name": "Security", "count": 5 },
       { "name": "Automation", "count": 6 },
       { "name": "Quality", "count": 2 },
       { "name": "Notifications", "count": 2 },
       { "name": "Session Management", "count": 4 },
       { "name": "Safety", "count": 3 },
-      { "name": "Utility", "count": 2 }
+      { "name": "Utility", "count": 3 },
+      { "name": "Curated Directory", "count": 1 },
+      { "name": "Platform Feature", "count": 1 }
     ]
   },
   "hooks": [
@@ -369,6 +371,55 @@
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
+    },
+    {
+      "id": "lasso-security-prompt-injection",
+      "name": "Lasso Security Prompt Injection Defenses",
+      "category": "Security",
+      "description": "Enterprise-grade prompt injection detection and prevention hooks for Claude Code. Detects and blocks indirect prompt injection attacks via tool outputs.",
+      "eventType": "PreToolUse",
+      "matcher": "Bash|Read|Write|Edit",
+      "script": "lasso-security.js",
+      "language": "node",
+      "githubUrl": "https://github.com/lasso-security/claude-hooks",
+      "stars": 50,
+      "tags": ["security", "prompt-injection", "enterprise", "defense"],
+      "source": "github",
+      "sourceType": "community",
+      "lastUpdated": "2026-07-13"
+    },
+    {
+      "id": "awesome-claude-code-hooks",
+      "name": "awesome-claude-code-hooks",
+      "category": "Utility",
+      "description": "Curated directory of Claude Code hooks organized by category. Meta-resource for discovering hooks in the ecosystem.",
+      "eventType": "N/A",
+      "matcher": "N/A",
+      "script": "N/A",
+      "language": "markdown",
+      "githubUrl": "https://github.com/ithiria894/awesome-claude-code-hooks",
+      "stars": 200,
+      "tags": ["curated", "directory", "hooks", "discovery"],
+      "source": "github",
+      "sourceType": "community",
+      "lastUpdated": "2026-07-13"
+    },
+    {
+      "id": "copilot-agent-hooks",
+      "name": "GitHub Copilot Agent Hooks",
+      "category": "Platform Feature",
+      "description": "Native Stop hook event in GitHub Copilot Extensions API for pre/post-completion hooks. First-class hook support in GitHub's AI coding tool.",
+      "eventType": "Stop",
+      "matcher": "copilot",
+      "script": "copilot-hooks-api",
+      "language": "api",
+      "githubUrl": null,
+      "websiteUrl": "https://docs.github.com/en/copilot/extensions",
+      "stars": null,
+      "tags": ["copilot", "github", "platform", "hooks-api"],
+      "source": "docs",
+      "sourceType": "official",
+      "lastUpdated": "2026-07-13"
     }
   ]
 }

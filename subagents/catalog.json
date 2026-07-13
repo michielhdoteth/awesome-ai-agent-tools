@@ -3,11 +3,11 @@
   "version": "2026.07",
   "description": "Curated index of subagent definitions, agent harnesses, and platform-specific subagent formats",
   "license": "MIT",
-  "lastUpdated": "2026-07-06",
-  "totalSubagents": 30,
+  "lastUpdated": "2026-07-13",
+  "totalSubagents": 32,
   "categories": [
     { "name": "Subagent Collection", "count": 16 },
-    { "name": "Agent Harness", "count": 3 },
+    { "name": "Agent Harness", "count": 5 },
     { "name": "Official SDK", "count": 4 },
     { "name": "Platform Format", "count": 4 },
     { "name": "Curated Directory", "count": 3 }
@@ -337,6 +337,26 @@
       "stars": 16,
       "license": "MIT",
       "tags": ["specialist-agents", "cross-platform", "multi-domain"]
+    },
+    {
+      "id": "herdr",
+      "name": "ogulcancelik/herdr",
+      "category": "Agent Harness",
+      "description": "AI agent multiplexer for terminal. Spawn, manage, and orchestrate multiple AI agents from CLI. Terminal-native multi-agent orchestration.",
+      "githubUrl": "https://github.com/ogulcancelik/herdr",
+      "stars": 707,
+      "license": "MIT",
+      "tags": ["terminal", "multiplexer", "multi-agent", "cli", "orchestration"]
+    },
+    {
+      "id": "opensquad",
+      "name": "opensquad",
+      "category": "Agent Harness",
+      "description": "Multi-agent orchestration framework via npm. Coordinate multiple AI agents in a single workflow. npm-first approach for easy Node.js integration.",
+      "githubUrl": "https://www.npmjs.com/package/opensquad",
+      "stars": null,
+      "license": "MIT",
+      "tags": ["npm", "orchestration", "multi-agent", "nodejs", "framework"]
     }
   ]
 }

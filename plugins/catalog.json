@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-07-06",
-  "totalPlugins": 51,
+  "lastUpdated": "2026-07-13",
+  "totalPlugins": 53,
   "categories": [
     { "name": "Claude Code", "count": 9 },
     { "name": "OpenCode", "count": 10 },
@@ -14,7 +14,7 @@
     { "name": "Aider", "count": 4 },
     { "name": "VS Code AI", "count": 5 },
     { "name": "JetBrains", "count": 4 },
-    { "name": "Cross-Tool", "count": 4 }
+    { "name": "Cross-Tool", "count": 5 }
   ],
   "plugins": [
     {
@@ -679,6 +679,32 @@
       "websiteUrl": "https://kilo.ai",
       "installCommand": "Install from kilo.ai",
       "license": "Apache-2.0"
+    },
+    {
+      "id": "wshobson-agents",
+      "name": "wshobson/agents",
+      "category": "Cross-Tool",
+      "platform": "Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains",
+      "stars": 169,
+      "installs": "84 plugins",
+      "description": "Multi-harness agent marketplace with 84 plugins for 7 different AI coding platforms. Largest multi-harness plugin collection.",
+      "githubUrl": "https://github.com/wshobson/agents",
+      "websiteUrl": null,
+      "installCommand": "git clone https://github.com/wshobson/agents",
+      "license": "MIT"
+    },
+    {
+      "id": "change8-marketplace",
+      "name": "Change8 MCP Marketplace",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": null,
+      "installs": "N/A",
+      "description": "Dedicated marketplace for Claude Code MCP servers and plugins with categorized browsing and discovery features.",
+      "githubUrl": null,
+      "websiteUrl": "https://change8.dev",
+      "installCommand": "Browse at change8.dev",
+      "license": "N/A"
     }
   ]
 }
