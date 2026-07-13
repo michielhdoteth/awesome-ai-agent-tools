@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-07-07",
-  "totalTools": 63,
+  "lastUpdated": "2026-07-12",
+  "totalTools": 64,
   "categories": [
     { "name": "Code Analysis", "count": 9 },
     { "name": "Git Utilities", "count": 6 },
@@ -649,6 +649,26 @@
       "stars": 23000,
       "crossPlatform": true,
       "install": "brew install atuin"
+    },
+    {
+      "id": "calliope-cli",
+      "name": "Calliope CLI",
+      "category": "AI Coding CLIs",
+      "description": "Multi-backend AI agent CLI with ACP/fleet modes. v3.0.0 with workflow automation engine and MCP server mode.",
+      "url": "https://github.com/calliopeai/calliope-cli",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "pip install calliope-cli"
+    },
+    {
+      "id": "skills-mcp-server",
+      "name": "Skills MCP Server",
+      "category": "Agent Memory",
+      "description": "Self-hostable, semantically-searchable agent skills registry delivered over MCP. 30+ bundled skills, Cloudflare Workers deployment.",
+      "url": "https://github.com/jignesh-ponamwar/skills-mcp",
+      "stars": 4,
+      "crossPlatform": true,
+      "install": "pip install skills-mcp"
     }
   ]
 }

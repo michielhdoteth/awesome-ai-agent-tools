@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-07-06",
-  "totalServers": 101,
+  "lastUpdated": "2026-07-12",
+  "totalServers": 108,
   "categories": [
     { "name": "Official Reference", "count": 6 },
     { "name": "Developer Tools", "count": 11 },
@@ -17,13 +17,14 @@
     { "name": "AI & Machine Learning", "count": 6 },
     { "name": "Agent Orchestration", "count": 5 },
     { "name": "Monitoring", "count": 6 },
-    { "name": "Security", "count": 4 },
+    { "name": "Security", "count": 5 },
     { "name": "Design", "count": 3 },
     { "name": "Finance", "count": 4 },
     { "name": "Maps", "count": 2 },
     { "name": "Research & Data", "count": 5 },
     { "name": "Marketing", "count": 2 },
-    { "name": "Data Engineering", "count": 1 }
+    { "name": "Data Engineering", "count": 1 },
+    { "name": "Blockchain", "count": 1 }
   ],
   "sources": [
     { "name": "Glama.ai", "url": "https://glama.ai/mcp/servers", "indexed": 51752 },
@@ -1759,6 +1760,134 @@
         "automation",
         "monitoring",
         "webhooks"
+      ]
+    },
+    {
+      "id": "hedera-mcp",
+      "name": "Hedera Hosted MCP Server",
+      "category": "Blockchain",
+      "github": "https://github.com/hedera-dev/hedera-agent-kit",
+      "stars": 0,
+      "description": "Managed Hedera network capabilities via MCP. Account management, token operations, smart contracts, consensus service. Returns unsigned transaction bytes for security.",
+      "install": "Remote endpoint: https://agentic-testnet-mcp.hedera.com/mcp",
+      "license": "Apache-2.0",
+      "verified": true,
+      "tags": [
+        "hedera",
+        "hashgraph",
+        "blockchain",
+        "tokens",
+        "smart-contracts",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "wiz-mcp",
+      "name": "Wiz MCP Server",
+      "category": "Security",
+      "github": "https://github.com/wiz-sec/wiz-mcp",
+      "stars": 0,
+      "description": "Cloud security MCP server from Wiz. Build AI security agents with cloud posture data, vulnerability findings, and compliance context.",
+      "install": "npm install -g @wiz/mcp-server",
+      "license": "Proprietary",
+      "verified": true,
+      "tags": [
+        "wiz",
+        "cloud-security",
+        "vulnerabilities",
+        "compliance",
+        "cspm"
+      ]
+    },
+    {
+      "id": "chutes-mcp",
+      "name": "Chutes MCP Server",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/chutes-ai/chutes-mcp-server",
+      "stars": 0,
+      "description": "AI model discovery and management via MCP. List models, check quota, manage API keys, usage tracking. Supports 13+ models.",
+      "install": "uv tool install chutes-mcp-server --from plugins/chutes-ai/skills/chutes-mcp-portability/mcp-server",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "model-discovery",
+        "api-keys",
+        "quota",
+        "usage-tracking",
+        "multi-model"
+      ]
+    },
+    {
+      "id": "skills-mcp",
+      "name": "Skills MCP Server (gengirish)",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/gengirish/skills-mcp",
+      "stars": 0,
+      "description": "Discover, search, and install ~7,000 agent skills from across the GitHub ecosystem via MCP. 20 domains, 11 source repos.",
+      "install": "npm install -g skills-mcp",
+      "license": "NOASSERTION",
+      "verified": false,
+      "tags": [
+        "skill-discovery",
+        "registry",
+        "multi-repo",
+        "fuzzy-search",
+        "antigravity"
+      ]
+    },
+    {
+      "id": "mcp-skills-self-healing",
+      "name": "MCP Skills (rickwphillips)",
+      "category": "Developer Tools",
+      "github": "https://github.com/rickwphillips/mcp-skills",
+      "stars": 0,
+      "description": "Agent-agnostic MCP server with 26 tools and self-healing audit pipeline. Database, PDF, deploy, and reactive workflow skills.",
+      "install": "npm install -g mcp-skills",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "self-healing",
+        "audit-pipeline",
+        "database",
+        "pdf",
+        "deploy",
+        "reactive"
+      ]
+    },
+    {
+      "id": "brain-mcp",
+      "name": "Brain MCP (Bob Protocol)",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/mordechaipotash/brain-mcp",
+      "stars": 60,
+      "description": "Persistent memory via the Bob protocol. Long-term agent memory with semantic search and graph-based retrieval.",
+      "install": "npx -y brain-mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "memory",
+        "persistent",
+        "semantic-search",
+        "bob-protocol",
+        "knowledge-graph"
+      ]
+    },
+    {
+      "id": "code-graph-mcp",
+      "name": "Code Graph MCP",
+      "category": "Developer Tools",
+      "github": "https://github.com/sdsrss/code-graph-mcp",
+      "stars": 0,
+      "description": "Code knowledge graph built with Tree-sitter. Parse, query, and navigate codebases through semantic relationships.",
+      "install": "npx -y code-graph-mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "code-graph",
+        "tree-sitter",
+        "knowledge-graph",
+        "codebase-navigation",
+        "semantic"
       ]
     }
   ]

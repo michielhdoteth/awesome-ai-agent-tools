@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-07-06",
-  "totalSkills": 83,
+  "lastUpdated": "2026-07-12",
+  "totalSkills": 89,
   "categories": [
     { "name": "Development", "count": 29 },
     { "name": "Productivity", "count": 16 },
@@ -23,7 +23,7 @@
     { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "stars": 29000, "skillCount": 8 },
     { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "stars": 30500, "skillCount": 37 },
     { "name": "skills.sh leaderboard", "url": "https://skills.sh", "totalInstalls": 850000 },
-    { "name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "stars": 68900, "skillCount": 24 }
+    { "name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "stars": 77200, "skillCount": 24 }
   ],
   "skills": [
     {
@@ -772,13 +772,13 @@
       "name": "Addy Osmani Agent Skills",
       "source": "addyosmani/agent-skills",
       "category": "Development",
-      "installs": 67000,
-      "description": "Google Chrome team lead's 24 lifecycle skills for AI agents. Covers TDD, API design, code review, debugging, and more.",
+      "installs": 77200,
+      "description": "Google Chrome team lead's 24 lifecycle skills for AI agents. Covers TDD, API design, code review, debugging, frontend engineering, security, and more.",
       "install": "npx skills add addyosmani/agent-skills",
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["google", "chrome", "lifecycle", "tdd", "api-design"]
+      "tags": ["google", "chrome", "lifecycle", "tdd", "api-design", "frontend", "security"]
     },
     {
       "id": "kepano-obsidian-skills",
@@ -1104,6 +1104,71 @@
       "verified": false,
       "local": false,
       "tags": ["audio", "music", "generation", "multimedia"]
+    },
+    {
+      "id": "fable-skill-executing-hard-tasks",
+      "name": "Fable Skill - Executing Hard Tasks",
+      "source": "wsbm393/Fable-Skill",
+      "category": "Development",
+      "installs": 22,
+      "description": "Pressure-tested skill for decomposing hard tasks risk-first, verifying with pasteable evidence, deciding what to do next. Built with skill-TDD against frontier-model failure modes.",
+      "install": "npx skills add wsbm393/Fable-Skill --skill executing-hard-tasks",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": ["risk-first", "verification", "skill-tdd", "frontier-models", "task-decomposition"]
+    },
+    {
+      "id": "agent-maxxing",
+      "name": "Agent Maxxing",
+      "source": "subhansh-dev/agent-maxxing",
+      "category": "Development",
+      "installs": 95,
+      "description": "95+ production-ready skills, 19 UI components, and 7 system prompts extracted from Claude Fable 5, GPT-5.5, Gemini CLI, and Claude Code. Self-fine-tune your agent.",
+      "install": "npx skills add subhansh-dev/agent-maxxing",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": ["multi-agent", "system-prompts", "ui-components", "frontend", "anti-slop"]
+    },
+    {
+      "id": "battle-tested-engineer",
+      "name": "Battle Tested Engineer",
+      "source": "sayeed1999/agent-skills",
+      "category": "Development",
+      "installs": 4,
+      "description": "Reusable agent skills for battle-tested engineering judgment. Ask before guessing, change only what was asked, prefer simple fixes over big refactors.",
+      "install": "npx skills add sayeed1999/agent-skills --skill battle-tested-engineer",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": ["engineering-judgment", "minimal-code", "safety", "review"]
+    },
+    {
+      "id": "trend-radar",
+      "name": "Trend Radar - Chinese Internet Hotspot Tracking",
+      "source": "asoiso/trend-radar",
+      "category": "Marketing",
+      "installs": 2,
+      "description": "Five plug-and-play skills for Chinese-internet hotspot tracking and viral content generation via the trendradar MCP server.",
+      "install": "npx skills add asoiso/trend-radar",
+      "license": "Apache-2.0",
+      "verified": false,
+      "local": false,
+      "tags": ["trend-tracking", "viral-content", "chinese-internet", "mcp-integration"]
+    },
+    {
+      "id": "share-md",
+      "name": "Share Markdown via Gist",
+      "source": "kirollosatef/skills",
+      "category": "Productivity",
+      "installs": 1,
+      "description": "Share a markdown file via private GitHub Gist URL with optional auto-delete, TTL, AES-256 encryption, and burn-after-read mode.",
+      "install": "npx skills add kirollosatef/skills@share-md",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": ["gist", "sharing", "encryption", "markdown", "ephemeral"]
     }
   ]
 }
