@@ -4,38 +4,131 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-07-12",
-  "totalServers": 110,
+  "totalServers": 111,
   "categories": [
-    { "name": "Official Reference", "count": 6 },
-    { "name": "Developer Tools", "count": 11 },
-    { "name": "Browser Automation", "count": 5 },
-    { "name": "Databases", "count": 13 },
-    { "name": "Cloud Platforms", "count": 5 },
-    { "name": "DevOps", "count": 6 },
-    { "name": "Communication", "count": 9 },
-    { "name": "Search", "count": 8 },
-    { "name": "AI & Machine Learning", "count": 6 },
-    { "name": "Agent Orchestration", "count": 7 },
-    { "name": "Monitoring", "count": 6 },
-    { "name": "Security", "count": 5 },
-    { "name": "Design", "count": 3 },
-    { "name": "Finance", "count": 4 },
-    { "name": "Maps", "count": 2 },
-    { "name": "Research & Data", "count": 5 },
-    { "name": "Marketing", "count": 2 },
-    { "name": "Data Engineering", "count": 1 },
-    { "name": "Blockchain", "count": 1 }
+    {
+      "name": "Official Reference",
+      "count": 6
+    },
+    {
+      "name": "Developer Tools",
+      "count": 11
+    },
+    {
+      "name": "Browser Automation",
+      "count": 5
+    },
+    {
+      "name": "Databases",
+      "count": 13
+    },
+    {
+      "name": "Cloud Platforms",
+      "count": 5
+    },
+    {
+      "name": "DevOps",
+      "count": 6
+    },
+    {
+      "name": "Communication",
+      "count": 9
+    },
+    {
+      "name": "Search",
+      "count": 8
+    },
+    {
+      "name": "AI & Machine Learning",
+      "count": 6
+    },
+    {
+      "name": "Agent Orchestration",
+      "count": 7
+    },
+    {
+      "name": "Monitoring",
+      "count": 6
+    },
+    {
+      "name": "Security",
+      "count": 5
+    },
+    {
+      "name": "Design",
+      "count": 3
+    },
+    {
+      "name": "Finance",
+      "count": 4
+    },
+    {
+      "name": "Maps",
+      "count": 2
+    },
+    {
+      "name": "Research & Data",
+      "count": 5
+    },
+    {
+      "name": "Marketing",
+      "count": 2
+    },
+    {
+      "name": "Data Engineering",
+      "count": 1
+    },
+    {
+      "name": "Blockchain",
+      "count": 2
+    }
   ],
   "sources": [
-    { "name": "Glama.ai", "url": "https://glama.ai/mcp/servers", "indexed": 51752 },
-    { "name": "mcp.so", "url": "https://mcp.so", "indexed": 23036 },
-    { "name": "popularaitools.ai", "url": "https://popularaitools.ai/skills?type=mcp", "indexed": 7500 },
-    { "name": "bestmcp.dev", "url": "https://bestmcp.dev", "indexed": 143 },
-    { "name": "awesome-mcp.tools", "url": "https://awesome-mcp.tools", "indexed": 2500 },
-    { "name": "GitHub modelcontextprotocol", "url": "https://github.com/modelcontextprotocol/servers", "stars": 87600 },
-    { "name": "PulseMCP", "url": "https://pulsemcp.com", "indexed": 20269 },
-    { "name": "browser-use/browser-use", "url": "https://github.com/browser-use/browser-use", "stars": 100412 },
-    { "name": "MCP Toplist", "url": "https://mcptoplist.com", "indexed": 73756 }
+    {
+      "name": "Glama.ai",
+      "url": "https://glama.ai/mcp/servers",
+      "indexed": 51752
+    },
+    {
+      "name": "mcp.so",
+      "url": "https://mcp.so",
+      "indexed": 23036
+    },
+    {
+      "name": "popularaitools.ai",
+      "url": "https://popularaitools.ai/skills?type=mcp",
+      "indexed": 7500
+    },
+    {
+      "name": "bestmcp.dev",
+      "url": "https://bestmcp.dev",
+      "indexed": 143
+    },
+    {
+      "name": "awesome-mcp.tools",
+      "url": "https://awesome-mcp.tools",
+      "indexed": 2500
+    },
+    {
+      "name": "GitHub modelcontextprotocol",
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "stars": 87600
+    },
+    {
+      "name": "PulseMCP",
+      "url": "https://pulsemcp.com",
+      "indexed": 20269
+    },
+    {
+      "name": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "stars": 100412
+    },
+    {
+      "name": "MCP Toplist",
+      "url": "https://mcptoplist.com",
+      "indexed": 73756
+    }
   ],
   "servers": [
     {
@@ -341,7 +434,12 @@
       "install": "pip install browser-use",
       "license": "MIT",
       "verified": true,
-      "tags": ["browser", "automation", "ai", "web-scraping"]
+      "tags": [
+        "browser",
+        "automation",
+        "ai",
+        "web-scraping"
+      ]
     },
     {
       "id": "postgresql",
@@ -677,7 +775,17 @@
       "install": "Remote server: https://api.x.com/mcp (no local install needed)",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["x", "twitter", "social-media", "posts", "search", "users", "trends", "hosted", "official"]
+      "tags": [
+        "x",
+        "twitter",
+        "social-media",
+        "posts",
+        "search",
+        "users",
+        "trends",
+        "hosted",
+        "official"
+      ]
     },
     {
       "id": "notion",
@@ -724,7 +832,12 @@
       "install": "npx -y @salesforce/marketing-cloud-mcp",
       "license": "MIT",
       "verified": true,
-      "tags": ["salesforce", "marketing", "email", "campaigns"]
+      "tags": [
+        "salesforce",
+        "marketing",
+        "email",
+        "campaigns"
+      ]
     },
     {
       "id": "linear",
@@ -1061,7 +1174,12 @@
       "install": "npx -y mcpguard",
       "license": "MIT",
       "verified": true,
-      "tags": ["security", "owasp", "scanning", "vulnerability"]
+      "tags": [
+        "security",
+        "owasp",
+        "scanning",
+        "vulnerability"
+      ]
     },
     {
       "id": "figma",
@@ -1906,6 +2024,27 @@
         "mcp",
         "terminal",
         "yaml"
+      ]
+    },
+    {
+      "id": "agentservices",
+      "name": "AgentServices MCP",
+      "category": "Blockchain",
+      "github": "https://github.com/vbkotecha/aiservices-api",
+      "stars": 0,
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "install": "Remote endpoint: https://agentservices.to/mcp",
+      "license": "MIT",
+      "verified": true,
+      "tags": [
+        "x402",
+        "crypto",
+        "defi",
+        "on-chain",
+        "market-data",
+        "payments",
+        "base",
+        "usdc"
       ]
     }
   ]
