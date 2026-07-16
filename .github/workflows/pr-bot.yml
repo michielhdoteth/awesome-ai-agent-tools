@@ -1,0 +1,231 @@
+name: PR Bot
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # --- AUTO-LABEL ---
+
+      - name: Label by catalog touched
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: files } = await github.rest.pulls.listFiles({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+            });
+
+            const labels = new Set();
+            const catalogMap = {
+              'skills/catalog.json': 'catalog:skills',
+              'mcps/catalog.json': 'catalog:mcps',
+              'loops/catalog.json': 'catalog:loops',
+              'subagents/catalog.json': 'catalog:subagents',
+              'hooks/catalog.json': 'catalog:hooks',
+              'plugins/catalog.json': 'catalog:plugins',
+              'prompts/catalog.json': 'catalog:prompts',
+              'tools/catalog.json': 'catalog:tools',
+            };
+
+            let additions = 0;
+            let deletions = 0;
+
+            for (const file of files) {
+              const label = catalogMap[file.filename];
+              if (label) labels.add(label);
+              additions += file.additions;
+              deletions += file.deletions;
+            }
+
+            // Size labels
+            const total = additions + deletions;
+            if (total < 20) labels.add('size:xs');
+            else if (total < 100) labels.add('size:sm');
+            else if (total < 500) labels.add('size:md');
+            else labels.add('size:lg');
+
+            // Check if adding new entries vs editing
+            const catalogFiles = files.filter(f => catalogMap[f.filename]);
+            if (catalogFiles.some(f => f.additions > 0 && f.deletions === 0)) {
+              labels.add('new-entry');
+            } else if (catalogFiles.length > 0) {
+              labels.add('update');
+            }
+
+            if (labels.size > 0) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                labels: [...labels],
+              });
+            }
+
+      # --- VALIDATE ---
+
+      - name: Validate JSON syntax
+        id: json-check
+        run: |
+          errors=""
+          for f in */catalog.json; do
+            if ! python3 -m json.tool "$f" > /dev/null 2>&1; then
+              errors="${errors}\nINVALID JSON: $f"
+            fi
+          done
+          if [ -n "$errors" ]; then
+            echo "valid=false" >> $GITHUB_OUTPUT
+            echo -e "$errors" > /tmp/json-errors.txt
+          else
+            echo "valid=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Validate catalog entries
+        id: catalog-check
+        run: |
+          node scripts/validate-catalogs.js 2>&1 | tee /tmp/validate-output.txt
+          if [ $? -ne 0 ]; then
+            echo "valid=false" >> $GITHUB_OUTPUT
+          else
+            echo "valid=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check GitHub URLs exist
+        id: url-check
+        run: |
+          # Get changed catalog files
+          BASE_SHA=${{ github.event.pull_request.base.sha }}
+          HEAD_SHA=${{ github.event.pull_request.head.sha }}
+          
+          errors=""
+          for f in */catalog.json; do
+            # Get added lines with github URLs
+            urls=$(git diff "$BASE_SHA" "$HEAD_SHA" -- "$f" | grep '^+' | grep -o '"github"[[:space:]]*:[[:space:]]*"[^"]*"' | grep -o 'https://github.com/[^"]*')
+            
+            for url in $urls; do
+              # Extract owner/repo
+              owner_repo=$(echo "$url" | sed 's|https://github.com/||' | sed 's|/$||')
+              if [ -n "$owner_repo" ]; then
+                status=$(curl -s -o /dev/null -w "%{http_code}" "https://api.github.com/repos/$owner_repo" -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}")
+                if [ "$status" != "200" ]; then
+                  errors="${errors}\n- $url (HTTP $status - repo not found)"
+                fi
+              fi
+            done
+          done
+          
+          if [ -n "$errors" ]; then
+            echo "valid=false" >> $GITHUB_OUTPUT
+            echo -e "$errors" > /tmp/url-errors.txt
+          else
+            echo "valid=true" >> $GITHUB_OUTPUT
+          fi
+
+      # --- COMMENT ---
+
+      - name: Comment on PR
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const jsonValid = '${{ steps.json-check.outputs.valid }}' === 'true';
+            const catalogValid = '${{ steps.catalog-check.outputs.valid }}' === 'true';
+            const urlValid = '${{ steps.url-check.outputs.valid }}' === 'true';
+            const allPassed = jsonValid && catalogValid && urlValid;
+
+            let body = '<!-- awesome-pr-bot -->\n';
+
+            if (allPassed) {
+              body += '## All Checks Passed\n\n';
+              body += '- JSON syntax: valid\n';
+              body += '- Catalog validation: passed\n';
+              body += '- GitHub URLs: all reachable\n\n';
+              body += 'Auto-merge is enabled. This PR will be merged when all checks pass.';
+            } else {
+              body += '## Validation Failed\n\n';
+
+              if (!jsonValid) {
+                const fs = require('fs');
+                const errors = fs.existsSync('/tmp/json-errors.txt') 
+                  ? fs.readFileSync('/tmp/json-errors.txt', 'utf8') 
+                  : 'Unknown JSON errors';
+                body += '### JSON Syntax Errors\n```\n' + errors + '\n```\n\n';
+              }
+
+              if (!catalogValid) {
+                const fs = require('fs');
+                const output = fs.existsSync('/tmp/validate-output.txt')
+                  ? fs.readFileSync('/tmp/validate-output.txt', 'utf8')
+                  : 'Unknown validation errors';
+                body += '### Catalog Validation Errors\n```\n' + output + '\n```\n\n';
+              }
+
+              if (!urlValid) {
+                const fs = require('fs');
+                const errors = fs.existsSync('/tmp/url-errors.txt')
+                  ? fs.readFileSync('/tmp/url-errors.txt', 'utf8')
+                  : 'Unknown URL errors';
+                body += '### GitHub URL Errors\n' + errors + '\n\n';
+              }
+
+              body += '**Please fix the issues above and push again.**';
+            }
+
+            // Find existing bot comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c => c.body.includes('<!-- awesome-pr-bot -->'));
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+      # --- AUTO-MERGE ---
+
+      - name: Auto-merge
+        if: |
+          steps.json-check.outputs.valid == 'true' &&
+          steps.catalog-check.outputs.valid == 'true' &&
+          steps.url-check.outputs.valid == 'true' &&
+          github.event.pull_request.user.login != 'github-actions[bot]'
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} \
+            --auto \
+            --squash \
+            --subject "feat: add ${{ github.event.pull_request.title }}" \
+            --body "Auto-merged by PR Bot"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
