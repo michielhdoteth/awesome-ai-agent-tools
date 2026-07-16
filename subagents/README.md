@@ -68,3 +68,9 @@ Examples: code-reviewer subagent, debugger subagent, test-writer subagent, plann
 - [skills/catalog.json](../skills/catalog.json) — Reusable AI agent skills
 - [mcps/catalog.json](../mcps/catalog.json) — Model Context Protocol servers
 - [loops/catalog.json](../loops/catalog.json) — Repeatable agent workflows
+
+## Related
+
+- [Loops](../loops/) -- Workflow patterns that coordinate subagents
+- [Plugins](../plugins/) -- Platform support for multi-agent setups
+- [Skills](../skills/) -- Capabilities for individual subagents

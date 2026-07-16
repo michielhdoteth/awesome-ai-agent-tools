@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-07-12",
-  "totalServers": 111,
+  "lastUpdated": "2026-07-16",
+  "totalServers": 119,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 11
+      "count": 13
     },
     {
       "name": "Browser Automation",
@@ -28,11 +28,11 @@
     },
     {
       "name": "DevOps",
-      "count": 6
+      "count": 9
     },
     {
       "name": "Communication",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Search",
@@ -40,11 +40,11 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 6
+      "count": 10
     },
     {
       "name": "Agent Orchestration",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Monitoring",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Finance",
@@ -72,7 +72,7 @@
     },
     {
       "name": "Marketing",
-      "count": 2
+      "count": 3
     },
     {
       "name": "Data Engineering",
@@ -2045,6 +2045,164 @@
         "payments",
         "base",
         "usdc"
+      ]
+    },
+    {
+      "id": "flujo",
+      "name": "FLUJO",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/mario-andreschak/FLUJO",
+      "stars": 595,
+      "description": "MCP-Hub and Inspector, Multi-Model Workflow and Chat Interface. Open-source local-first platform for building MCP-powered AI workflows with model management, visual flow builder, chat interface, and planned executions (cron, webhooks, file watch, MCP tool polling, URL watch)",
+      "install": "npx flujo-ai",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "mcp-hub",
+        "workflow",
+        "chat",
+        "visual-builder",
+        "orchestration",
+        "multi-model",
+        "automation",
+        "planned-executions"
+      ]
+    },
+    {
+      "id": "mcp-abap-abap-adt-api",
+      "name": "MCP ABAP ADT API",
+      "category": "DevOps",
+      "github": "https://github.com/mario-andreschak/mcp-abap-abap-adt-api",
+      "stars": 168,
+      "description": "MCP server wrapping abap-adt-api for SAP ABAP development workflows. Provides tools for object management, transport handling, code analysis, syntax checks, source code editing, and DDIC access",
+      "install": "npx -y mcp-abap-abap-adt-api",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "sap",
+        "abap",
+        "adt",
+        "erp",
+        "enterprise",
+        "development",
+        "transport"
+      ]
+    },
+    {
+      "id": "mcp-sap-gui",
+      "name": "MCP SAP GUI",
+      "category": "DevOps",
+      "github": "https://github.com/mario-andreschak/mcp-sap-gui",
+      "stars": 122,
+      "description": "MCP server for SAP GUI automation using simulated mouse clicks and keyboard input. Provides tools for launching transactions, clicking, typing, scrolling, and screenshot capture with multiple return formats",
+      "install": "git clone https://github.com/mario-andreschak/mcp-sap-gui.git && cd mcp-sap-gui && pip install -r requirements.txt",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "sap",
+        "gui",
+        "automation",
+        "erp",
+        "enterprise",
+        "screenshot",
+        "mouse-keyboard"
+      ]
+    },
+    {
+      "id": "mcp-windows-desktop-automation",
+      "name": "MCP Windows Desktop Automation",
+      "category": "DevOps",
+      "github": "https://github.com/mario-andreschak/mcp-windows-desktop-automation",
+      "stars": 114,
+      "description": "MCP server for Windows desktop automation using AutoIt via node-autoit-koffi. Wraps all AutoIt functions as MCP tools for mouse, keyboard, window management, control manipulation, process management, and screenshots",
+      "install": "npx -y mcp-windows-desktop-automation",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "windows",
+        "desktop",
+        "automation",
+        "autoit",
+        "mouse",
+        "keyboard",
+        "gui"
+      ]
+    },
+    {
+      "id": "mcp-image-recognition",
+      "name": "MCP Image Recognition",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/mario-andreschak/mcp-image-recognition",
+      "stars": 39,
+      "description": "MCP server providing image recognition via Anthropic Claude Vision and OpenAI GPT-4 Vision APIs. Supports multiple image formats, configurable primary/fallback providers, base64 and file input, and optional Tesseract OCR text extraction",
+      "install": "git clone https://github.com/mario-andreschak/mcp-image-recognition.git && cd mcp-image-recognition && pip install -r requirements.txt",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "image-recognition",
+        "vision",
+        "anthropic",
+        "openai",
+        "ocr",
+        "computer-vision",
+        "image-analysis"
+      ]
+    },
+    {
+      "id": "mcp-veo2",
+      "name": "MCP Veo2 Video Generation",
+      "category": "Design",
+      "github": "https://github.com/mario-andreschak/mcp-veo2",
+      "stars": 33,
+      "description": "MCP server for video and image generation using Google Veo2. Generate videos from text prompts or images, access generated videos through MCP resources, with support for aspect ratio, duration, and prompt enhancement",
+      "install": "npx -y mcp-veo2",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "video-generation",
+        "image-generation",
+        "google",
+        "veo2",
+        "ai-video",
+        "creative"
+      ]
+    },
+    {
+      "id": "mcp-whatsapp-web",
+      "name": "MCP WhatsApp Web",
+      "category": "Communication",
+      "github": "https://github.com/mario-andreschak/mcp-whatsapp-web",
+      "stars": 16,
+      "description": "MCP server for WhatsApp Web. Search and read personal messages, search contacts, send messages to individuals or groups, send and receive media files via whatsapp-web.js. Supports stdio and Streamable HTTP transports with OAuth",
+      "install": "npx -y mcp-whatsapp-web",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "whatsapp",
+        "messaging",
+        "chat",
+        "media",
+        "contacts",
+        "communication"
+      ]
+    },
+    {
+      "id": "mcp-reasoning-coding",
+      "name": "MCP Reasoning Coder",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/mario-andreschak/mcp-reasoning-coding",
+      "stars": 14,
+      "description": "MCP server providing flexible two-stage reasoning and response generation. Configurable reasoning and coding models across OpenRouter, OpenAI, Anthropic, DeepSeek, Gemini, and Vertex AI with conversation history and response polling",
+      "install": "npx -y @smithery/cli install @mario-andreschak/mcp-reasoning-coding --client claude",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "reasoning",
+        "two-stage",
+        "multi-provider",
+        "code-generation",
+        "thinking",
+        "chain-of-thought"
       ]
     }
   ]

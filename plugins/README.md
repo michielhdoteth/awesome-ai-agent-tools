@@ -4,7 +4,7 @@ Reference directory linking to external plugins, extensions, and rules for AI co
 
 ## Overview
 
-This catalog tracks **45 plugins** across **9 categories** for all major AI coding tools:
+This catalog tracks **53 plugins** across **9 categories** for all major AI coding tools:
 
 | Category | Count | Tools |
 |----------|-------|-------|
@@ -61,3 +61,9 @@ Reference this catalog when:
 - **Version**: 2026.06
 - Update entries quarterly or when significant changes occur
 - Validate JSON schema before committing
+
+## Related
+
+- [Skills](../skills/) -- Cross-platform agent capabilities
+- [Hooks](../hooks/) -- Event-driven automation for Claude Code
+- [Subagents](../subagents/) -- Multi-agent orchestration frameworks

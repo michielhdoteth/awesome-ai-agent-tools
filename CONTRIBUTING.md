@@ -4,7 +4,7 @@ Thank you for contributing! This directory grows stronger with every entry. You 
 
 ## Quick Start (Agent-Automated)
 
-The fastest way to contribute: give your AI agent the [contribution skill](contribute/SKILL.md).
+The fastest way to contribute: give your AI agent the [contribution skill](CONTRIBUTE.md).
 
 ```bash
 # Claude Code
@@ -14,7 +14,19 @@ The fastest way to contribute: give your AI agent the [contribution skill](contr
 "Load the contribute skill and add [item] to the catalog"
 ```
 
-Your agent will fork the repo, add the entry, validate JSON, and submit a PR.
+Your agent will fork the repo, add the entry, validate JSON, and submit a PR. GitHub Actions will automatically validate your PR and regenerate the README.
+
+## How Automation Works
+
+This repo uses automated README generation so counts are never stale:
+
+1. **You edit** `*/catalog.json` (add/update/remove entries)
+2. **PR validation** runs `scripts/validate-catalogs.js` to catch errors
+3. **On merge to main** GitHub Actions runs `scripts/generate-readme.js`
+4. **README.md is regenerated** with accurate counts from the catalogs
+5. **Weekly** star counts are updated from the GitHub API
+
+**You never need to edit README.md manually.** Just update the catalog.json files.
 
 ## Manual Contributions
 
@@ -26,7 +38,10 @@ Your agent will fork the repo, add the entry, validate JSON, and submit a PR.
 | **MCP Servers** | `mcps/catalog.json` | MCP servers with GitHub links and install commands |
 | **Agent Loops** | `loops/catalog.json` | Workflow patterns with source attribution |
 | **Subagents** | `subagents/catalog.json` | Agent frameworks, SDKs, collections |
+| **Hooks** | `hooks/catalog.json` | Claude Code hooks for automation, security, quality |
 | **Plugins** | `plugins/catalog.json` | Extensions for AI coding agents |
+| **Prompts** | `prompts/catalog.json` | Curated prompt collections and libraries |
+| **Tools** | `tools/catalog.json` | CLI utilities that enhance agent capabilities |
 
 ### Entry Format
 
@@ -75,17 +90,18 @@ Each catalog entry must include:
 
 ### Validation
 
-All PRs are automatically validated:
+All PRs are automatically validated by GitHub Actions:
+
+1. **JSON syntax** -- All catalog.json files must be valid JSON
+2. **Schema validation** -- Required fields (id, name, category, description) must be present
+3. **Duplicate detection** -- No duplicate IDs within a catalog
+4. **ID format** -- Must be lowercase kebab-case (e.g., `my-skill-name`)
+5. **Star counts** -- Must be numbers (not strings)
+
+You can also validate locally:
 
 ```bash
-# Validate JSON syntax
-cat skills/catalog.json | jq .
-
-# Check for duplicate IDs
-cat skills/catalog.json | jq '[.skills[].id] | group_by(.) | map(select(length > 1))'
-
-# Verify counts match
-cat skills/catalog.json | jq '.skills | length'
+node scripts/validate-catalogs.js
 ```
 
 ## PR Checklist
@@ -96,8 +112,13 @@ cat skills/catalog.json | jq '.skills | length'
 - [ ] Star count is reasonably accurate
 - [ ] Description is clear and honest
 - [ ] Category exists in the catalog
-- [ ] JSON is valid (`jq .` passes)
-- [ ] Counts in metadata are updated
+- [ ] JSON is valid
+- [ ] `node scripts/validate-catalogs.js` passes locally
+
+## What NOT to Edit
+
+- **README.md** -- Auto-generated from catalog.json files
+- **AGENTS.md** -- Only maintainers update this
 
 ## Code of Conduct
 

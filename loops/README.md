@@ -791,4 +791,12 @@ We welcome contributions! See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelin
 
 ---
 
+## Related
+
+- [Subagents](../subagents/) -- Specialized agents for multi-agent loops
+- [Skills](../skills/) -- Installable instructions for loop components
+- [Prompts](../prompts/) -- Prompt templates for loop inputs
+
+---
+
 **Keywords:** agent loops, AI agent workflows, agent feedback loops, Claude Code loops, OpenCode loops, agent patterns, AI development workflows, autonomous agents, agent orchestration, AI code review loops, TDD loops, agent iteration, cross-platform AI workflows

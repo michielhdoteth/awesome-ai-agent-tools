@@ -1,0 +1,99 @@
+name: Update Metadata
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday at 8am UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Update star counts from GitHub API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node -e "
+          const fs = require('fs');
+          const path = require('path');
+          
+          const ROOT = process.cwd();
+          const catalogs = ['skills', 'mcps', 'loops', 'subagents', 'hooks', 'plugins', 'prompts', 'tools'];
+          
+          async function fetchStars(owner, repo) {
+            try {
+              const res = await fetch('https://api.github.com/repos/' + owner + '/' + repo, {
+                headers: { 'Authorization': 'token ' + process.env.GITHUB_TOKEN }
+              });
+              if (!res.ok) return null;
+              const data = await res.json();
+              return data.stargazers_count || null;
+            } catch { return null; }
+          }
+          
+          async function updateCatalog(name) {
+            const filePath = path.join(ROOT, name, 'catalog.json');
+            if (!fs.existsSync(filePath)) return;
+            
+            const raw = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+            const arrKey = Object.keys(raw).find(k => Array.isArray(raw[k]));
+            if (!arrKey) return;
+            
+            let updated = 0;
+            for (const entry of raw[arrKey]) {
+              // Extract owner/repo from github URL
+              const url = entry.github || entry.githubUrl || '';
+              const match = url.match(/github\.com\/([^/]+)\/([^/]+)/);
+              if (!match) continue;
+              
+              const stars = await fetchStars(match[1], match[2]);
+              if (stars !== null && stars !== entry.stars) {
+                entry.stars = stars;
+                updated++;
+              }
+              
+              // Rate limit: 1 request per second
+              await new Promise(r => setTimeout(r, 1100));
+            }
+            
+            if (updated > 0) {
+              fs.writeFileSync(filePath, JSON.stringify(raw, null, 2) + '\n');
+              console.log(name + ': updated ' + updated + ' star counts');
+            } else {
+              console.log(name + ': no changes');
+            }
+          }
+          
+          (async () => {
+            for (const cat of catalogs) {
+              await updateCatalog(cat);
+            }
+          })();
+          "
+
+      - name: Regenerate README
+        run: node scripts/generate-readme.js
+
+      - name: Check for changes
+        id: diff
+        run: git diff --quiet || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: update star counts and regenerate README [skip ci]"
+          git push

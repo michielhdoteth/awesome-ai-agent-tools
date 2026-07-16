@@ -259,3 +259,9 @@ MIT - See individual hook source files for specific licenses.
 - [rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit)
 - [aitmpl.com/hooks](https://www.aitmpl.com/hooks/)
 - [hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)
+
+## Related
+
+- [Skills](../skills/) -- Installable agent capabilities
+- [Plugins](../plugins/) -- Platform extensions with similar automation
+- [Tools](../tools/) -- CLI utilities that hooks can invoke

@@ -32,6 +32,11 @@ desktop.ini
 research/
 .iter/
 
+# Drafts and submissions (marketing, launch content)
+drafts/
+.submissions/
+*.draft.md
+
 # Archives (don't commit zips)
 *.zip
 
