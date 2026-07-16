@@ -32,7 +32,10 @@ desktop.ini
 research/
 .iter/
 
-# Drafts and submissions (marketing, launch content)
+# Marketing (internal, not for repo)
+marketing/
+
+# Drafts and submissions
 drafts/
 .submissions/
 *.draft.md
