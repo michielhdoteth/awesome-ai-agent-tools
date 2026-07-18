@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-07-16",
-  "totalServers": 119,
+  "lastUpdated": "2026-07-18",
+  "totalServers": 120,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 8
+      "count": 9
     },
     {
       "name": "AI & Machine Learning",
@@ -2203,6 +2203,24 @@
         "code-generation",
         "thinking",
         "chain-of-thought"
+      ]
+    },
+    {
+      "id": "find-mcp",
+      "name": "Find MCP",
+      "category": "Search",
+      "github": "https://github.com/agentage/find-mcp",
+      "stars": 0,
+      "description": "MCP server for discovering other MCP servers. Searches 17,000+ servers synced from the official MCP registry via remote Streamable HTTP (catalog.agentage.io/mcp, no auth for search) or stdio (npx @agentage/find-mcp)",
+      "install": "npx -y @agentage/find-mcp",
+      "license": "MIT",
+      "verified": true,
+      "tags": [
+        "mcp",
+        "search",
+        "discovery",
+        "registry",
+        "catalog"
       ]
     }
   ]
