@@ -2204,6 +2204,114 @@
         "thinking",
         "chain-of-thought"
       ]
+    },
+    {
+      "id": "nexus-mcp",
+      "name": "Nexus-MCP",
+      "category": "Developer Tools",
+      "github": "https://github.com/jaggernaut007/nexus-mcp",
+      "stars": 0,
+      "description": "Unified local MCP server with hybrid search, code graph, and semantic memory. 15 tools, under 350MB RAM, no API keys required. Supports 25+ languages.",
+      "install": "uvx nexus-mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": ["code-intelligence", "hybrid-search", "semantic-memory", "local-first", "code-graph"]
+    },
+    {
+      "id": "cve-mcp-server",
+      "name": "CVE MCP Server",
+      "category": "Security",
+      "github": "https://github.com/mukul975/cve-mcp-server",
+      "stars": 952,
+      "description": "Production-grade security intelligence MCP server with 27 tools across 21 APIs. CVE lookup, EPSS scoring, CISA KEV, MITRE ATT&CK, Shodan, VirusTotal integration.",
+      "install": "uvx cve-mcp-server",
+      "license": "MIT",
+      "verified": false,
+      "tags": ["security", "CVE", "vulnerability", "threat-intelligence", "MITRE", "Shodan"]
+    },
+    {
+      "id": "stash-memory",
+      "name": "Stash",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/alash3al/stash",
+      "stars": 710,
+      "description": "Persistent memory layer for AI agents. Episodes, facts, and working context stored in Postgres with MCP server. Self-hosted, single binary.",
+      "install": "go install github.com/alash3al/stash@latest",
+      "license": "MIT",
+      "verified": false,
+      "tags": ["memory", "persistence", "postgres", "agent-memory", "self-hosted"]
+    },
+    {
+      "id": "pentest-ai",
+      "name": "Pentest AI",
+      "category": "Security",
+      "github": "https://github.com/0xSteph/pentest-ai",
+      "stars": 598,
+      "description": "Offensive-security MCP server with 205 wrapped tools, 17 specialist agents, and 60 SPA-aware probes for OWASP Top 10. CLI and MCP modes.",
+      "install": "pip install pentest-ai",
+      "license": "MIT",
+      "verified": false,
+      "tags": ["pentesting", "security", "OWASP", "offensive-security", "vulnerability-scanning"]
+    },
+    {
+      "id": "design-extract",
+      "name": "Design Extract",
+      "category": "Developer Tools",
+      "github": "https://github.com/Manavarya09/design-extract",
+      "stars": 3074,
+      "description": "Extract any website's complete design system. DTCG tokens, semantic+primitive+composite. Multi-platform emitters for iOS SwiftUI, Android Compose, Flutter, and Tailwind v4.",
+      "install": "npx design-extract-mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": ["design-system", "extraction", "tokens", "DTCG", "cross-platform"]
+    },
+    {
+      "id": "anysearch-mcp",
+      "name": "AnySearch MCP",
+      "category": "Search",
+      "github": "https://github.com/anysearch-ai/anysearch-mcp-server",
+      "stars": 1023,
+      "description": "Unified real-time search engine for AI agents. One MCP server for multiple search providers including web, academic, and code search.",
+      "install": "npx anysearch-mcp-server",
+      "license": "MIT",
+      "verified": false,
+      "tags": ["search", "web-search", "unified-search", "multi-provider"]
+    },
+    {
+      "id": "agent-toolkit-aws",
+      "name": "AWS Agent Toolkit",
+      "category": "Cloud Platforms",
+      "github": "https://github.com/aws/agent-toolkit-for-aws",
+      "stars": 803,
+      "description": "Official AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS. Covers S3, Lambda, DynamoDB, CloudFormation, and more.",
+      "install": "pip install aws-agent-toolkit",
+      "license": "Apache-2.0",
+      "verified": true,
+      "tags": ["AWS", "cloud", "infrastructure", "serverless", "official"]
+    },
+    {
+      "id": "mcp-context-server",
+      "name": "MCP Context Server",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/alex-feel/mcp-context-server",
+      "stars": 0,
+      "description": "High-performance MCP server for persistent multimodal context storage. Thread-based scoping for multi-agent collaboration. 13 tools including semantic and hybrid search.",
+      "install": "pip install mcp-context-server",
+      "license": "MIT",
+      "verified": false,
+      "tags": ["context", "memory", "multi-agent", "semantic-search", "persistence"]
+    },
+    {
+      "id": "mcp-trendpulse",
+      "name": "TrendPulse MCP",
+      "category": "Search",
+      "github": "https://github.com/AKzar1el/mcp-trendpulse",
+      "stars": 1,
+      "description": "Connect AI models to Google News RSS feeds and Google Trends analytics. Historical interest curves, growth rates, trending queries, and NLP summarization.",
+      "install": "uvx mcp-trendpulse",
+      "license": "MIT",
+      "verified": false,
+      "tags": ["google-trends", "news", "analytics", "trending", "NLP"]
     }
   ]
 }

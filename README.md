@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The definitive directory of AI agent components.** 600 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
+> **The definitive directory of AI agent components.** 600 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools - curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -53,10 +53,10 @@
 
 | I want to... | Start with | Then explore |
 |--------------|------------|--------------|
-| **Give my agent new skills** | [Skills](skills/) -- 88 installable SKILL.md files | [MCP Servers](mcps/) -- connect to external services |
-| **Build multi-agent systems** | [Subagents](subagents/) -- 32 specialized agents | [Agent Loops](loops/) -- 115 repeatable workflows |
-| **Automate my workflow** | [Hooks](hooks/) -- 25 production-ready hooks | [Plugins](plugins/) -- 53 platform extensions |
-| **Get better prompts** | [Prompts](prompts/) -- 102 curated collections | [Tools](tools/) -- 66 CLI utilities |
+| **Give my agent new skills** | [Skills](skills/) - 88 installable SKILL.md files | [MCP Servers](mcps/) - connect to external services |
+| **Build multi-agent systems** | [Subagents](subagents/) - 32 specialized agents | [Agent Loops](loops/) - 115 repeatable workflows |
+| **Automate my workflow** | [Hooks](hooks/) - 25 production-ready hooks | [Plugins](plugins/) - 53 platform extensions |
+| **Get better prompts** | [Prompts](prompts/) - 102 curated collections | [Tools](tools/) - 66 CLI utilities |
 | **Understand the ecosystem** | [What is this?](#what-is-this) below | [Browse by Category](#browse-by-category) |
 
 **Quickest path:** Install the top 3 most-installed skills in under a minute:
@@ -71,7 +71,7 @@ npx skills add mattpocock/skills --skill grill-me
 
 ## What is this?
 
-Awesome AI Agent Tools is the **definitive directory** of AI agent components. Not a list of links -- actual installable skill files, MCP server configs, agent workflows, subagents, and plugins you can drop into any project.
+Awesome AI Agent Tools is the **definitive directory** of AI agent components. Not a list of links - actual installable skill files, MCP server configs, agent workflows, subagents, and plugins you can drop into any project.
 
 ### Who it's for
 
@@ -504,9 +504,9 @@ The catalogs are updated with each community PR. All entries are validated by Gi
 
 **Q: Where can I find more resources?**
 
-- [awesome-claude-code](https://github.com/nicobailon/awesome-claude-code) -- 49.9K stars, Claude Code ecosystem
-- [awesome-claude-code-subagents](https://github.com/nicobailon/awesome-claude-code-subagents) -- 23.3K stars, subagent ecosystem
-- [skills.sh](https://skills.sh) -- 850K+ installs, the Skill Discovery Engine
+- [awesome-claude-code](https://github.com/nicobailon/awesome-claude-code) - 49.9K stars, Claude Code ecosystem
+- [awesome-claude-code-subagents](https://github.com/nicobailon/awesome-claude-code-subagents) - 23.3K stars, subagent ecosystem
+- [skills.sh](https://skills.sh) - 850K+ installs, the Skill Discovery Engine
 
 ---
 
