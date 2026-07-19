@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The definitive directory of AI agent components.** 609 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
+> **The definitive directory of AI agent components.** 610 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -32,7 +32,7 @@
 - [Start Here](#start-here)
 - [Browse by Category](#browse-by-category)
 - [Skills (88 curated)](#skills-88-curated)
-- [MCP Servers (128 servers)](#mcp-servers-128-servers)
+- [MCP Servers (129 servers)](#mcp-servers-129-servers)
 - [Agent Loops (115 workflows)](#agent-loops-115-workflows)
 - [Subagents (32 agents)](#subagents-32-agents)
 - [Hooks (25 hooks)](#hooks-25-hooks)
@@ -89,7 +89,7 @@ Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CL
   </thead>
   <tbody>
     <tr><td>Installable skill files</td><td align="center">88 SKILL.md files</td><td align="center">Links only</td></tr>
-    <tr><td>MCP server configs</td><td align="center">128 servers + install cmds</td><td align="center">Links only</td></tr>
+    <tr><td>MCP server configs</td><td align="center">129 servers + install cmds</td><td align="center">Links only</td></tr>
     <tr><td>Agent workflows</td><td align="center">115 loops with prompts</td><td align="center">Links only</td></tr>
     <tr><td>Subagents</td><td align="center">32 agents + model routing</td><td align="center">No</td></tr>
     <tr><td>Hooks</td><td align="center">25 production-ready hooks</td><td align="center">No</td></tr>
@@ -139,7 +139,7 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 | Library | Count | What You Get | Browse |
 |---------|-------|--------------|--------|
 | **Skills** | 88 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
-| **MCP Servers** | 128 | Server configs with install commands | [mcps/](mcps/) |
+| **MCP Servers** | 129 | Server configs with install commands | [mcps/](mcps/) |
 | **Agent Loops** | 115 | Workflows with prompts and verification | [loops/](loops/) |
 | **Subagents** | 32 | Specialized agents with model routing | [subagents/](subagents/) |
 | **Hooks** | 25 | Production-ready Claude Code hooks | [hooks/](hooks/) |
@@ -147,7 +147,7 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 | **Prompts** | 102 | Curated prompt collections and marketplaces | [prompts/](prompts/) |
 | **Tools** | 66 | CLI tools that enhance agent capabilities | [tools/](tools/) |
 
-**Total: 609 components across 8 categories.**
+**Total: 610 components across 8 categories.**
 
 ---
 
@@ -180,9 +180,9 @@ Browse all: [skills/](skills/) | [catalog.json](skills/catalog.json)
 
 ---
 
-## MCP Servers (128 servers)
+## MCP Servers (129 servers)
 
-128 Model Context Protocol servers that connect AI agents to tools, databases, APIs, and services. Categories include Developer Tools (15), Databases (13), AI & Machine Learning (12), Communication (10), Search (10), DevOps (9), Agent Orchestration (8), Security (7), Official Reference (6), Cloud Platforms (6), Monitoring (6), Browser Automation (5), Research & Data (5), Design (4), Finance (4), Marketing (3), Maps (2), Blockchain (2), Data Engineering (1). Install via `npx @anthropic-ai/mcp install` or individual server commands.
+129 Model Context Protocol servers that connect AI agents to tools, databases, APIs, and services. Categories include Developer Tools (15), Databases (13), AI & Machine Learning (12), Search (11), Communication (10), DevOps (9), Agent Orchestration (8), Security (7), Official Reference (6), Cloud Platforms (6), Monitoring (6), Browser Automation (5), Research & Data (5), Design (4), Finance (4), Marketing (3), Maps (2), Blockchain (2), Data Engineering (1). Install via `npx @anthropic-ai/mcp install` or individual server commands.
 
 <table width="100%">
   <thead>
@@ -196,8 +196,8 @@ Browse all: [skills/](skills/) | [catalog.json](skills/catalog.json)
     <tr><td><b>Developer Tools</b></td><td align="right">15</td><td>MarkItDown (122.0K), Context7 (54.0K), CodeGraph MCP (54.0K)</td></tr>
     <tr><td><b>Databases</b></td><td align="right">13</td><td>PostgreSQL MCP (87.5K), SQLite MCP (87.5K), MindsDB MCP (39.0K)</td></tr>
     <tr><td><b>AI & Machine Learning</b></td><td align="right">12</td><td>EverArt MCP (87.5K), UI-TARS Desktop (30.0K), MiniMax MCP (16.8K)</td></tr>
+    <tr><td><b>Search</b></td><td align="right">11</td><td>Jina AI MCP (4.7K), Last30Days MCP (4.5K), Brave Search MCP (3.0K)</td></tr>
     <tr><td><b>Communication</b></td><td align="right">10</td><td>Google Workspace MCP (87.5K), Notion MCP (5.0K), Slack MCP (3.0K)</td></tr>
-    <tr><td><b>Search</b></td><td align="right">10</td><td>Jina AI MCP (4.7K), Last30Days MCP (4.5K), Brave Search MCP (3.0K)</td></tr>
     <tr><td><b>DevOps</b></td><td align="right">9</td><td>Docker MCP (4.0K), Kubernetes MCP (1.7K), Terraform MCP (1.3K)</td></tr>
     <tr><td><b>Agent Orchestration</b></td><td align="right">8</td><td>n8n MCP (187.0K), Ruflo (33.0K), n8n MCP Server (22.0K)</td></tr>
     <tr><td><b>Security</b></td><td align="right">7</td><td>CVE MCP Server (952), Pentest AI (598), MCPGuard OWASP Scanner (150)</td></tr>
@@ -492,7 +492,7 @@ Most components can be installed with a single command. See the [Quick Start](#q
 
 **Q: Which AI tools are compatible?**
 
-All 609 components work with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, KiloCode, and 30+ other AI coding assistants. Skills follow the [SKILL.md open standard](https://agentskills.io).
+All 610 components work with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, KiloCode, and 30+ other AI coding assistants. Skills follow the [SKILL.md open standard](https://agentskills.io).
 
 **Q: Can my AI agent contribute?**
 
