@@ -4,7 +4,7 @@
   <img src="assets/banner.png" alt="Awesome AI Agent Tools" width="100%">
 </p>
 
-> **The definitive directory of AI agent components.** 600 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools - curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
+> **The definitive directory of AI agent components.** 609 installable skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and tools -- curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, and 30+ tools.
 
 <p align="center">
   <a href="https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers"><img src="https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold" alt="GitHub Stars"></a>
@@ -21,7 +21,7 @@
   <a href="https://github.com/topics/awesome"><img src="https://img.shields.io/badge/Awesome-List-pink?style=flat-square" alt="Awesome List"></a>
 </p>
 
-<p align="center"><sub>Last updated: July 16, 2026</sub></p>
+<p align="center"><sub>Last updated: July 19, 2026</sub></p>
 
 ---
 
@@ -32,7 +32,7 @@
 - [Start Here](#start-here)
 - [Browse by Category](#browse-by-category)
 - [Skills (88 curated)](#skills-88-curated)
-- [MCP Servers (119 servers)](#mcp-servers-119-servers)
+- [MCP Servers (128 servers)](#mcp-servers-128-servers)
 - [Agent Loops (115 workflows)](#agent-loops-115-workflows)
 - [Subagents (32 agents)](#subagents-32-agents)
 - [Hooks (25 hooks)](#hooks-25-hooks)
@@ -53,10 +53,10 @@
 
 | I want to... | Start with | Then explore |
 |--------------|------------|--------------|
-| **Give my agent new skills** | [Skills](skills/) - 88 installable SKILL.md files | [MCP Servers](mcps/) - connect to external services |
-| **Build multi-agent systems** | [Subagents](subagents/) - 32 specialized agents | [Agent Loops](loops/) - 115 repeatable workflows |
-| **Automate my workflow** | [Hooks](hooks/) - 25 production-ready hooks | [Plugins](plugins/) - 53 platform extensions |
-| **Get better prompts** | [Prompts](prompts/) - 102 curated collections | [Tools](tools/) - 66 CLI utilities |
+| **Give my agent new skills** | [Skills](skills/) -- 88 installable SKILL.md files | [MCP Servers](mcps/) -- connect to external services |
+| **Build multi-agent systems** | [Subagents](subagents/) -- 32 specialized agents | [Agent Loops](loops/) -- 115 repeatable workflows |
+| **Automate my workflow** | [Hooks](hooks/) -- 25 production-ready hooks | [Plugins](plugins/) -- 53 platform extensions |
+| **Get better prompts** | [Prompts](prompts/) -- 102 curated collections | [Tools](tools/) -- 66 CLI utilities |
 | **Understand the ecosystem** | [What is this?](#what-is-this) below | [Browse by Category](#browse-by-category) |
 
 **Quickest path:** Install the top 3 most-installed skills in under a minute:
@@ -71,7 +71,7 @@ npx skills add mattpocock/skills --skill grill-me
 
 ## What is this?
 
-Awesome AI Agent Tools is the **definitive directory** of AI agent components. Not a list of links - actual installable skill files, MCP server configs, agent workflows, subagents, and plugins you can drop into any project.
+Awesome AI Agent Tools is the **definitive directory** of AI agent components. Not a list of links -- actual installable skill files, MCP server configs, agent workflows, subagents, and plugins you can drop into any project.
 
 ### Who it's for
 
@@ -89,7 +89,7 @@ Developers using Claude Code, OpenCode, Codex, Cursor, GitHub Copilot, Gemini CL
   </thead>
   <tbody>
     <tr><td>Installable skill files</td><td align="center">88 SKILL.md files</td><td align="center">Links only</td></tr>
-    <tr><td>MCP server configs</td><td align="center">119 servers + install cmds</td><td align="center">Links only</td></tr>
+    <tr><td>MCP server configs</td><td align="center">128 servers + install cmds</td><td align="center">Links only</td></tr>
     <tr><td>Agent workflows</td><td align="center">115 loops with prompts</td><td align="center">Links only</td></tr>
     <tr><td>Subagents</td><td align="center">32 agents + model routing</td><td align="center">No</td></tr>
     <tr><td>Hooks</td><td align="center">25 production-ready hooks</td><td align="center">No</td></tr>
@@ -139,7 +139,7 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 | Library | Count | What You Get | Browse |
 |---------|-------|--------------|--------|
 | **Skills** | 88 | Installable SKILL.md files for specific tasks | [skills/](skills/) |
-| **MCP Servers** | 119 | Server configs with install commands | [mcps/](mcps/) |
+| **MCP Servers** | 128 | Server configs with install commands | [mcps/](mcps/) |
 | **Agent Loops** | 115 | Workflows with prompts and verification | [loops/](loops/) |
 | **Subagents** | 32 | Specialized agents with model routing | [subagents/](subagents/) |
 | **Hooks** | 25 | Production-ready Claude Code hooks | [hooks/](hooks/) |
@@ -147,7 +147,7 @@ Give your AI agent the [contribution skill](CONTRIBUTE.md) and it will fork, edi
 | **Prompts** | 102 | Curated prompt collections and marketplaces | [prompts/](prompts/) |
 | **Tools** | 66 | CLI tools that enhance agent capabilities | [tools/](tools/) |
 
-**Total: 600 components across 8 categories.**
+**Total: 609 components across 8 categories.**
 
 ---
 
@@ -180,9 +180,9 @@ Browse all: [skills/](skills/) | [catalog.json](skills/catalog.json)
 
 ---
 
-## MCP Servers (119 servers)
+## MCP Servers (128 servers)
 
-119 Model Context Protocol servers that connect AI agents to tools, databases, APIs, and services. Categories include Developer Tools (13), Databases (13), Communication (10), AI & Machine Learning (10), DevOps (9), Search (8), Agent Orchestration (8), Official Reference (6), Monitoring (6), Browser Automation (5), Cloud Platforms (5), Security (5), Research & Data (5), Design (4), Finance (4), Marketing (3), Maps (2), Blockchain (2), Data Engineering (1). Install via `npx @anthropic-ai/mcp install` or individual server commands.
+128 Model Context Protocol servers that connect AI agents to tools, databases, APIs, and services. Categories include Developer Tools (15), Databases (13), AI & Machine Learning (12), Communication (10), Search (10), DevOps (9), Agent Orchestration (8), Security (7), Official Reference (6), Cloud Platforms (6), Monitoring (6), Browser Automation (5), Research & Data (5), Design (4), Finance (4), Marketing (3), Maps (2), Blockchain (2), Data Engineering (1). Install via `npx @anthropic-ai/mcp install` or individual server commands.
 
 <table width="100%">
   <thead>
@@ -193,18 +193,18 @@ Browse all: [skills/](skills/) | [catalog.json](skills/catalog.json)
     </tr>
   </thead>
   <tbody>
-    <tr><td><b>Developer Tools</b></td><td align="right">13</td><td>MarkItDown (122.0K), Context7 (54.0K), CodeGraph MCP (54.0K)</td></tr>
+    <tr><td><b>Developer Tools</b></td><td align="right">15</td><td>MarkItDown (122.0K), Context7 (54.0K), CodeGraph MCP (54.0K)</td></tr>
     <tr><td><b>Databases</b></td><td align="right">13</td><td>PostgreSQL MCP (87.5K), SQLite MCP (87.5K), MindsDB MCP (39.0K)</td></tr>
+    <tr><td><b>AI & Machine Learning</b></td><td align="right">12</td><td>EverArt MCP (87.5K), UI-TARS Desktop (30.0K), MiniMax MCP (16.8K)</td></tr>
     <tr><td><b>Communication</b></td><td align="right">10</td><td>Google Workspace MCP (87.5K), Notion MCP (5.0K), Slack MCP (3.0K)</td></tr>
-    <tr><td><b>AI & Machine Learning</b></td><td align="right">10</td><td>EverArt MCP (87.5K), UI-TARS Desktop (30.0K), MiniMax MCP (16.8K)</td></tr>
+    <tr><td><b>Search</b></td><td align="right">10</td><td>Jina AI MCP (4.7K), Last30Days MCP (4.5K), Brave Search MCP (3.0K)</td></tr>
     <tr><td><b>DevOps</b></td><td align="right">9</td><td>Docker MCP (4.0K), Kubernetes MCP (1.7K), Terraform MCP (1.3K)</td></tr>
-    <tr><td><b>Search</b></td><td align="right">8</td><td>Jina AI MCP (4.7K), Last30Days MCP (4.5K), Brave Search MCP (3.0K)</td></tr>
     <tr><td><b>Agent Orchestration</b></td><td align="right">8</td><td>n8n MCP (187.0K), Ruflo (33.0K), n8n MCP Server (22.0K)</td></tr>
+    <tr><td><b>Security</b></td><td align="right">7</td><td>CVE MCP Server (952), Pentest AI (598), MCPGuard OWASP Scanner (150)</td></tr>
     <tr><td><b>Official Reference</b></td><td align="right">6</td><td>Filesystem MCP (87.5K), Memory MCP (87.5K), Git MCP (87.5K)</td></tr>
+    <tr><td><b>Cloud Platforms</b></td><td align="right">6</td><td>EdgeOne Pages MCP (10.4K), AWS MCP Servers (8.0K), Cloudflare MCP (5.0K)</td></tr>
     <tr><td><b>Monitoring</b></td><td align="right">6</td><td>Sentry MCP (87.5K), Netdata MCP (78.0K), Sentry MCP v2 (5.2K)</td></tr>
     <tr><td><b>Browser Automation</b></td><td align="right">5</td><td>Browser Use MCP (100.4K), Puppeteer MCP (87.5K), Chrome DevTools MCP (40.0K)</td></tr>
-    <tr><td><b>Cloud Platforms</b></td><td align="right">5</td><td>EdgeOne Pages MCP (10.4K), AWS MCP Servers (8.0K), Cloudflare MCP (5.0K)</td></tr>
-    <tr><td><b>Security</b></td><td align="right">5</td><td>MCPGuard OWASP Scanner (150), Aperion Shield (20), Grype MCP (9)</td></tr>
     <tr><td><b>Research & Data</b></td><td align="right">5</td><td>TrendRadar (54.0K), TrendRadar MCP (54.0K), Scrapling (38.5K)</td></tr>
     <tr><td><b>Design</b></td><td align="right">4</td><td>Framelink Figma MCP (15.1K), Figma MCP (3.0K), Canva MCP (500)</td></tr>
     <tr><td><b>Finance</b></td><td align="right">4</td><td>Stripe MCP (2.0K), Shopify MCP Server (200), FLOX MCP (37)</td></tr>
@@ -492,7 +492,7 @@ Most components can be installed with a single command. See the [Quick Start](#q
 
 **Q: Which AI tools are compatible?**
 
-All 600 components work with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, KiloCode, and 30+ other AI coding assistants. Skills follow the [SKILL.md open standard](https://agentskills.io).
+All 609 components work with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, Windsurf, Aider, KiloCode, and 30+ other AI coding assistants. Skills follow the [SKILL.md open standard](https://agentskills.io).
 
 **Q: Can my AI agent contribute?**
 
@@ -504,9 +504,9 @@ The catalogs are updated with each community PR. All entries are validated by Gi
 
 **Q: Where can I find more resources?**
 
-- [awesome-claude-code](https://github.com/nicobailon/awesome-claude-code) - 49.9K stars, Claude Code ecosystem
-- [awesome-claude-code-subagents](https://github.com/nicobailon/awesome-claude-code-subagents) - 23.3K stars, subagent ecosystem
-- [skills.sh](https://skills.sh) - 850K+ installs, the Skill Discovery Engine
+- [awesome-claude-code](https://github.com/nicobailon/awesome-claude-code) -- 49.9K stars, Claude Code ecosystem
+- [awesome-claude-code-subagents](https://github.com/nicobailon/awesome-claude-code-subagents) -- 23.3K stars, subagent ecosystem
+- [skills.sh](https://skills.sh) -- 850K+ installs, the Skill Discovery Engine
 
 ---
 
