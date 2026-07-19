@@ -93,7 +93,7 @@ jobs:
           done
           if [ -n "$errors" ]; then
             echo "valid=false" >> $GITHUB_OUTPUT
-            echo -e "$errors" > /tmp/json-errors.txt
+            printf "%b" "$errors" > /tmp/json-errors.txt
           else
             echo "valid=true" >> $GITHUB_OUTPUT
           fi
@@ -117,16 +117,31 @@ jobs:
           
           errors=""
           for f in */catalog.json; do
-            # Get added lines with github URLs
-            urls=$(git diff "$BASE_SHA" "$HEAD_SHA" -- "$f" | grep '^+' | grep -o '"github"[[:space:]]*:[[:space:]]*"[^"]*"' | grep -o 'https://github.com/[^"]*')
+            # Get added lines with github URLs (also match "githubUrl" key)
+            urls=$(git diff "$BASE_SHA" "$HEAD_SHA" -- "$f" | grep '^+' | grep -oE '"github(Url)?"[[:space:]]*:[[:space:]]*"[^"]*"' | grep -o 'https://github.com/[^"]*')
             
             for url in $urls; do
               # Extract owner/repo
               owner_repo=$(echo "$url" | sed 's|https://github.com/||' | sed 's|/$||')
               if [ -n "$owner_repo" ]; then
-                status=$(curl -s -o /dev/null -w "%{http_code}" "https://api.github.com/repos/$owner_repo" -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}")
+                # Retry up to 3 times for rate limits
+                status=""
+                for attempt in 1 2 3; do
+                  status=$(curl -s -o /dev/null -w "%{http_code}" \
+                    "https://api.github.com/repos/$owner_repo" \
+                    -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}")
+                  if [ "$status" = "200" ]; then
+                    break
+                  fi
+                  # Rate limited or server error - wait and retry
+                  if [ "$status" = "403" ] || [ "$status" = "429" ] || [ "$status" = "500" ] || [ "$status" = "502" ] || [ "$status" = "503" ]; then
+                    sleep $((attempt * 3))
+                  else
+                    break
+                  fi
+                done
                 if [ "$status" != "200" ]; then
-                  errors="${errors}\n- $url (HTTP $status - repo not found)"
+                  errors="${errors}\n- $url (HTTP $status - repo not found or unreachable)"
                 fi
               fi
             done
@@ -134,7 +149,7 @@ jobs:
           
           if [ -n "$errors" ]; then
             echo "valid=false" >> $GITHUB_OUTPUT
-            echo -e "$errors" > /tmp/url-errors.txt
+            printf "%b" "$errors" > /tmp/url-errors.txt
           else
             echo "valid=true" >> $GITHUB_OUTPUT
           fi
