@@ -6,149 +6,1510 @@
   "lastUpdated": "2026-07-16",
   "totalPrompts": 102,
   "categories": [
-    { "name": "General Purpose", "count": 8 },
-    { "name": "Coding", "count": 11 },
-    { "name": "Code Review", "count": 9 },
-    { "name": "Architecture", "count": 8 },
-    { "name": "Debugging", "count": 6 },
-    { "name": "DevOps", "count": 6 },
-    { "name": "Data", "count": 4 },
-    { "name": "Security", "count": 6 },
-    { "name": "Documentation", "count": 6 },
-    { "name": "Testing", "count": 8 },
-    { "name": "Design", "count": 4 },
-    { "name": "Content", "count": 3 },
-    { "name": "Productivity", "count": 4 },
-    { "name": "Image Generation", "count": 8 },
-    { "name": "Reasoning", "count": 5 },
-    { "name": "Agent Workflows", "count": 5 },
-    { "name": "Marketplace", "count": 1 }
+    {
+      "name": "General Purpose",
+      "count": 8
+    },
+    {
+      "name": "Coding",
+      "count": 11
+    },
+    {
+      "name": "Code Review",
+      "count": 9
+    },
+    {
+      "name": "Architecture",
+      "count": 8
+    },
+    {
+      "name": "Debugging",
+      "count": 6
+    },
+    {
+      "name": "DevOps",
+      "count": 6
+    },
+    {
+      "name": "Data",
+      "count": 4
+    },
+    {
+      "name": "Security",
+      "count": 6
+    },
+    {
+      "name": "Documentation",
+      "count": 6
+    },
+    {
+      "name": "Testing",
+      "count": 8
+    },
+    {
+      "name": "Design",
+      "count": 4
+    },
+    {
+      "name": "Content",
+      "count": 3
+    },
+    {
+      "name": "Productivity",
+      "count": 4
+    },
+    {
+      "name": "Image Generation",
+      "count": 8
+    },
+    {
+      "name": "Reasoning",
+      "count": 5
+    },
+    {
+      "name": "Agent Workflows",
+      "count": 5
+    },
+    {
+      "name": "Marketplace",
+      "count": 1
+    }
   ],
   "sources": [
-    { "name": "f/prompts.chat", "url": "https://github.com/f/awesome-chatgpt-prompts", "stars": 164314, "promptCount": 270, "description": "World's largest open-source prompt library. Works with ChatGPT, Claude, Gemini, Llama, Mistral." },
-    { "name": "x1xhlol/system-prompts", "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools", "stars": 141392, "promptCount": 50, "description": "System prompts extracted from 50+ AI products (Claude, GPT, Gemini, Cursor, Devin, v0, Replit)." },
-    { "name": "danielmiessler/Fabric", "url": "https://github.com/danielmiessler/Fabric", "stars": 43000, "promptCount": 200, "description": "200+ Patterns organized by real-world task. Chain-of-thought, tree-of-thought, and 8 reasoning strategies." },
-    { "name": "anthropics/prompt-eng-interactive-tutorial", "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial", "stars": 37000, "promptCount": 30, "description": "Official Anthropic Jupyter notebook course covering all prompt engineering fundamentals." },
-    { "name": "YouMind-OpenLab/awesome-nano-banana-pro-prompts", "url": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts", "stars": 12700, "promptCount": 14667, "description": "Largest single-repo prompt count: 14,667 prompts." },
-    { "name": "langgptai/LangGPT", "url": "https://github.com/langgptai/LangGPT", "stars": 12200, "promptCount": 50, "description": "Structured prompt engineering framework with collections for Claude, Gemini, DeepSeek, Grok, Qwen, Llama." },
-    { "name": "ai-boost/awesome-prompts", "url": "https://github.com/ai-boost/awesome-prompts", "stars": 8200, "promptCount": 120, "description": "Curated list of ChatGPT prompts for various use cases." },
-    { "name": "dair-ai/Prompt-Engineering-Guide", "url": "https://github.com/dair-ai/Prompt-Engineering-Guide", "stars": 55000, "promptCount": 50, "description": "Academic prompt engineering guide with theory and practice." },
-    { "name": "openai/openai-cookbook", "url": "https://github.com/openai/openai-cookbook", "stars": 75000, "promptCount": 80, "description": "Official OpenAI cookbook with examples and guides." },
-    { "name": "anthropic/prompt-library", "url": "https://docs.anthropic.com/en/prompt-library", "promptCount": 30, "description": "Official Claude prompt library with categorized prompts." },
-    { "name": "YouMind-OpenLab/awesome-gpt-image-2", "url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2", "stars": 7400, "promptCount": 9871, "description": "Definitive GPT Image 2 collection with web gallery, 16 languages." },
-    { "name": "repowise-dev/claude-code-prompts", "url": "https://github.com/repowise-dev/claude-code-prompts", "description": "Deep analysis of Claude Code's architecture: system prompt, 11 tool prompts, 5 agent prompts, 9 pattern analyses." },
-    { "name": "florian101010/awesome-agentic-AI-coding-template", "url": "https://github.com/florian101010/awesome-agentic-AI-coding-template", "description": "Multi-agent template pre-wired for Claude Code, Copilot, Cursor, Jules, Gemini." },
-    { "name": "patricio0312rev/agentkit", "url": "https://github.com/patricio0312rev/agentkit", "description": "CLI tool scaffolding 42 pre-built agents across 7 departments." }
+    {
+      "name": "f/prompts.chat",
+      "url": "https://github.com/f/awesome-chatgpt-prompts",
+      "stars": 164314,
+      "promptCount": 270,
+      "description": "World's largest open-source prompt library. Works with ChatGPT, Claude, Gemini, Llama, Mistral."
+    },
+    {
+      "name": "x1xhlol/system-prompts",
+      "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "stars": 141392,
+      "promptCount": 50,
+      "description": "System prompts extracted from 50+ AI products (Claude, GPT, Gemini, Cursor, Devin, v0, Replit)."
+    },
+    {
+      "name": "danielmiessler/Fabric",
+      "url": "https://github.com/danielmiessler/Fabric",
+      "stars": 43000,
+      "promptCount": 200,
+      "description": "200+ Patterns organized by real-world task. Chain-of-thought, tree-of-thought, and 8 reasoning strategies."
+    },
+    {
+      "name": "anthropics/prompt-eng-interactive-tutorial",
+      "url": "https://github.com/anthropics/prompt-eng-interactive-tutorial",
+      "stars": 37000,
+      "promptCount": 30,
+      "description": "Official Anthropic Jupyter notebook course covering all prompt engineering fundamentals."
+    },
+    {
+      "name": "YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "url": "https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts",
+      "stars": 12700,
+      "promptCount": 14667,
+      "description": "Largest single-repo prompt count: 14,667 prompts."
+    },
+    {
+      "name": "langgptai/LangGPT",
+      "url": "https://github.com/langgptai/LangGPT",
+      "stars": 12200,
+      "promptCount": 50,
+      "description": "Structured prompt engineering framework with collections for Claude, Gemini, DeepSeek, Grok, Qwen, Llama."
+    },
+    {
+      "name": "ai-boost/awesome-prompts",
+      "url": "https://github.com/ai-boost/awesome-prompts",
+      "stars": 8200,
+      "promptCount": 120,
+      "description": "Curated list of ChatGPT prompts for various use cases."
+    },
+    {
+      "name": "dair-ai/Prompt-Engineering-Guide",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "stars": 55000,
+      "promptCount": 50,
+      "description": "Academic prompt engineering guide with theory and practice."
+    },
+    {
+      "name": "openai/openai-cookbook",
+      "url": "https://github.com/openai/openai-cookbook",
+      "stars": 75000,
+      "promptCount": 80,
+      "description": "Official OpenAI cookbook with examples and guides."
+    },
+    {
+      "name": "anthropic/prompt-library",
+      "url": "https://docs.anthropic.com/en/prompt-library",
+      "promptCount": 30,
+      "description": "Official Claude prompt library with categorized prompts."
+    },
+    {
+      "name": "YouMind-OpenLab/awesome-gpt-image-2",
+      "url": "https://github.com/YouMind-OpenLab/awesome-gpt-image-2",
+      "stars": 7400,
+      "promptCount": 9871,
+      "description": "Definitive GPT Image 2 collection with web gallery, 16 languages."
+    },
+    {
+      "name": "repowise-dev/claude-code-prompts",
+      "url": "https://github.com/repowise-dev/claude-code-prompts",
+      "description": "Deep analysis of Claude Code's architecture: system prompt, 11 tool prompts, 5 agent prompts, 9 pattern analyses."
+    },
+    {
+      "name": "florian101010/awesome-agentic-AI-coding-template",
+      "url": "https://github.com/florian101010/awesome-agentic-AI-coding-template",
+      "description": "Multi-agent template pre-wired for Claude Code, Copilot, Cursor, Jules, Gemini."
+    },
+    {
+      "name": "patricio0312rev/agentkit",
+      "url": "https://github.com/patricio0312rev/agentkit",
+      "description": "CLI tool scaffolding 42 pre-built agents across 7 departments."
+    }
   ],
   "marketplaces": [
-    { "name": "PromptBase", "url": "https://promptbase.com", "promptCount": 310000, "model": "Pay-per-prompt ($1.99-$9.99), 80% creator revenue" },
-    { "name": "AIPRM", "url": "https://aiprm.com", "promptCount": 4000, "model": "Chrome extension, $9-$79/mo subscription" },
-    { "name": "FlowGPT", "url": "https://flowgpt.com", "model": "Community-driven, token-based pricing, multi-model" },
-    { "name": "PromptHero", "url": "https://prompthero.com", "model": "Freemium, image-generation focused, $19.99/mo Pro" },
-    { "name": "skills.sh", "url": "https://skills.sh", "promptCount": 885000, "model": "Vercel skills marketplace, 885K+ all-time installs" }
+    {
+      "name": "PromptBase",
+      "url": "https://promptbase.com",
+      "promptCount": 310000,
+      "model": "Pay-per-prompt ($1.99-$9.99), 80% creator revenue"
+    },
+    {
+      "name": "AIPRM",
+      "url": "https://aiprm.com",
+      "promptCount": 4000,
+      "model": "Chrome extension, $9-$79/mo subscription"
+    },
+    {
+      "name": "FlowGPT",
+      "url": "https://flowgpt.com",
+      "model": "Community-driven, token-based pricing, multi-model"
+    },
+    {
+      "name": "PromptHero",
+      "url": "https://prompthero.com",
+      "model": "Freemium, image-generation focused, $19.99/mo Pro"
+    },
+    {
+      "name": "skills.sh",
+      "url": "https://skills.sh",
+      "promptCount": 885000,
+      "model": "Vercel skills marketplace, 885K+ all-time installs"
+    }
   ],
   "prompts": [
-    { "id": "code-reviewer", "name": "Senior Code Reviewer", "category": "Code Review", "description": "Thorough code review with security, performance, and maintainability analysis", "bestFor": "Pull request reviews, code quality checks", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "bug-hunter", "name": "Bug Hunter", "category": "Debugging", "description": "Systematic bug investigation with root cause analysis and fix suggestions", "bestFor": "Debugging complex issues, error investigation", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "software-architect", "name": "Software Architect", "category": "Architecture", "description": "System design with scalability, maintainability, and trade-off analysis", "bestFor": "Architecture decisions, system design reviews", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "devops-engineer", "name": "DevOps Engineer", "category": "DevOps", "description": "Infrastructure, CI/CD, containerization, and deployment guidance", "bestFor": "Deployment pipelines, infrastructure setup", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "security-auditor", "name": "Security Auditor", "category": "Security", "description": "OWASP-focused security review with vulnerability identification", "bestFor": "Security audits, vulnerability assessment", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "technical-writer", "name": "Technical Writer", "category": "Documentation", "description": "Clear, structured documentation with examples and API references", "bestFor": "README files, API docs, user guides", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "test-engineer", "name": "Test Engineer", "category": "Testing", "description": "Comprehensive test strategy with unit, integration, and E2E test design", "bestFor": "Test planning, test writing, coverage analysis", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "full-stack-developer", "name": "Full Stack Developer", "category": "Coding", "description": "End-to-end feature implementation with frontend, backend, and database", "bestFor": "Feature development, full-stack implementation", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "code-explainer", "name": "Code Explainer", "category": "General Purpose", "description": "Explain code line-by-line with context and reasoning", "bestFor": "Understanding unfamiliar code, onboarding", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "refactoring-expert", "name": "Refactoring Expert", "category": "Coding", "description": "Identify code smells and suggest clean refactoring patterns", "bestFor": "Code cleanup, technical debt reduction", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "database-expert", "name": "Database Expert", "category": "Data", "description": "Schema design, query optimization, and migration planning", "bestFor": "Database design, SQL optimization", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "api-designer", "name": "API Designer", "category": "Architecture", "description": "RESTful and GraphQL API design with best practices", "bestFor": "API design, endpoint planning", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "performance-engineer", "name": "Performance Engineer", "category": "Coding", "description": "Performance profiling, bottleneck identification, and optimization", "bestFor": "Performance issues, optimization", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "ui-designer", "name": "UI/UX Designer", "category": "Design", "description": "User interface design with accessibility and usability focus", "bestFor": "UI design, component creation", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "product-manager", "name": "Product Manager", "category": "Productivity", "description": "Feature specification, user stories, and acceptance criteria", "bestFor": "Feature planning, PRD writing", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "data-analyst", "name": "Data Analyst", "category": "Data", "description": "Data analysis with SQL queries, visualization recommendations", "bestFor": "Data exploration, reporting", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "prompt-engineer", "name": "Prompt Engineer", "category": "General Purpose", "description": "Meta-prompt for designing and optimizing other prompts", "bestFor": "Prompt creation and optimization", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "dair-ai/Prompt-Engineering-Guide" },
-    { "id": "few-shot-learner", "name": "Few-Shot Learner", "category": "General Purpose", "description": "Task learning from minimal examples with structured output", "bestFor": "Classification, extraction, pattern matching", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "dair-ai/Prompt-Engineering-Guide" },
-    { "id": "chain-of-thought", "name": "Chain of Thought Reasoner", "category": "Reasoning", "description": "Step-by-step reasoning for complex problems", "bestFor": "Complex reasoning, math, logic puzzles", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "dair-ai/Prompt-Engineering-Guide" },
-    { "id": "react-agent", "name": "ReAct Agent Prompt", "category": "Agent Workflows", "description": "Reasoning + Acting framework for tool-using agents", "bestFor": "Agent workflows, tool orchestration", "worksWith": ["Claude", "GPT-4"], "source": "langchain-ai/langchain-hub" },
-    { "id": "code-refactor-craft", "name": "Craft Code Refactor", "category": "Coding", "description": "Systematic code improvement with test coverage maintenance", "bestFor": "Legacy code modernization", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "api-documenter", "name": "API Documentation Generator", "category": "Documentation", "description": "Generate OpenAPI specs and README documentation from code", "bestFor": "API documentation, SDK docs", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "git-commit-writer", "name": "Git Commit Message Writer", "category": "Productivity", "description": "Conventional commit messages from code changes", "bestFor": "Commit messages, changelog generation", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "self-critique", "name": "Self-Critique Prompt", "category": "Reasoning", "description": "Force model to review and fix its own output", "bestFor": "Improving accuracy, catching errors", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "structured-output", "name": "Structured JSON Output", "category": "General Purpose", "description": "Force consistent JSON output with schema validation", "bestFor": "Data extraction, API responses", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "code-generation-craft", "name": "Craft Code Generation", "category": "Coding", "description": "Production-ready code with error handling and tests", "bestFor": "New feature implementation", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "migration-planner", "name": "Migration Planner", "category": "Architecture", "description": "Step-by-step migration strategy with rollback plans", "bestFor": "Tech stack migrations, database migrations", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "incident-responder", "name": "Incident Responder", "category": "DevOps", "description": "Structured incident investigation and resolution", "bestFor": "Production incidents, post-mortems", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "codebase-analyzer", "name": "Codebase Analyzer", "category": "General Purpose", "description": "Deep analysis of project structure, patterns, and tech debt", "bestFor": "Project onboarding, architecture review", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "debugging-partner", "name": "Debugging Partner", "category": "Debugging", "description": "Interactive debugging with hypothesis testing", "bestFor": "Complex bugs, race conditions", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "code-explain-line", "name": "Line-by-Line Code Explanation", "category": "General Purpose", "description": "Detailed explanation of every line with context", "bestFor": "Learning, code reviews", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "security-review", "name": "Security Code Review", "category": "Security", "description": "OWASP Top 10 focused security review", "bestFor": "Security audits, pre-deployment checks", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "test-writer", "name": "Test Writer", "category": "Testing", "description": "Generate comprehensive test suites from code", "bestFor": "Unit tests, integration tests", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "performance-profiler", "name": "Performance Profiler", "category": "Coding", "description": "Identify performance bottlenecks and suggest optimizations", "bestFor": "Slow queries, memory leaks, CPU optimization", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "sql-optimizer", "name": "SQL Query Optimizer", "category": "Data", "description": "Analyze and optimize SQL queries with index suggestions", "bestFor": "Slow queries, database performance", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "openai/openai-cookbook" },
-    { "id": "code-completion", "name": "Intelligent Code Completion", "category": "Coding", "description": "Context-aware code completion with best practices", "bestFor": "Writing new functions, filling implementation gaps", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "openai/openai-cookbook" },
-    { "id": "regex-builder", "name": "Regex Builder", "category": "Coding", "description": "Generate and explain regular expressions", "bestFor": "Pattern matching, input validation", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "openai/openai-cookbook" },
-    { "id": "docker-optimizer", "name": "Docker Optimizer", "category": "DevOps", "description": "Optimize Dockerfiles for size and security", "bestFor": "Container optimization, multi-stage builds", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "openai/openai-cookbook" },
-    { "id": "ci-cd-builder", "name": "CI/CD Pipeline Builder", "category": "DevOps", "description": "Generate GitHub Actions, GitLab CI, or Jenkins pipelines", "bestFor": "Pipeline creation, automation setup", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "openai/openai-cookbook" },
-    { "id": "error-explainer", "name": "Error Message Explainer", "category": "Debugging", "description": "Decode cryptic error messages with fix suggestions", "bestFor": "Understanding compiler/runtime errors", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "dependency-analyzer", "name": "Dependency Analyzer", "category": "Security", "description": "Analyze package dependencies for vulnerabilities and licenses", "bestFor": "Supply chain security, license compliance", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "code-to-diagram", "name": "Code to Diagram", "category": "Documentation", "description": "Generate Mermaid/PlantUML diagrams from code", "bestFor": "Architecture diagrams, data flow charts", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "commit-reviewer", "name": "Git Commit Reviewer", "category": "Code Review", "description": "Review git diffs for quality, security, and best practices", "bestFor": "PR reviews, commit quality", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "tech-debt-assessor", "name": "Technical Debt Assessor", "category": "Architecture", "description": "Identify and prioritize technical debt with remediation plans", "bestFor": "Code quality improvement, sprint planning", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "accessibility-auditor", "name": "Accessibility Auditor", "category": "Design", "description": "WCAG compliance review with remediation steps", "bestFor": "Accessibility audits, inclusive design", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "color-palette-generator", "name": "Color Palette Generator", "category": "Design", "description": "Generate accessible color palettes with contrast ratios", "bestFor": "Design systems, brand colors", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "component-builder", "name": "UI Component Builder", "category": "Design", "description": "Generate reusable UI components with accessibility baked in", "bestFor": "Component libraries, design systems", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "blog-writer", "name": "Technical Blog Writer", "category": "Content", "description": "Write technical blog posts with code examples", "bestFor": "Blog posts, tutorials, how-to guides", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "changelog-writer", "name": "Changelog Writer", "category": "Content", "description": "Generate user-facing changelogs from git history", "bestFor": "Release notes, changelogs", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "readme-writer", "name": "README Generator", "category": "Documentation", "description": "Generate comprehensive README files from code analysis", "bestFor": "Open source project documentation", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "code-commenter", "name": "Code Comment Writer", "category": "Documentation", "description": "Add meaningful comments and docstrings to code", "bestFor": "Code documentation, JSDoc/Docstring generation", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "meeting-notes", "name": "Technical Meeting Notes", "category": "Productivity", "description": "Summarize technical meetings with action items", "bestFor": "Sprint planning, design reviews", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "rubric-generator", "name": "Code Evaluation Rubric", "category": "Testing", "description": "Generate evaluation rubrics for code quality assessment", "bestFor": "Code reviews, team standards", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "e2e-test-designer", "name": "E2E Test Designer", "category": "Testing", "description": "Design end-to-end test scenarios from user stories", "bestFor": "Playwright/Cypress test planning", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "api-test-writer", "name": "API Test Writer", "category": "Testing", "description": "Generate API tests with edge cases and error handling", "bestFor": "REST/GraphQL API testing", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "load-test-designer", "name": "Load Test Designer", "category": "Testing", "description": "Design load testing scenarios with realistic traffic patterns", "bestFor": "Performance testing, capacity planning", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "openai/openai-cookbook" },
-    { "id": "contract-test-writer", "name": "Contract Test Writer", "category": "Testing", "description": "Generate consumer-driven contract tests", "bestFor": "Microservices testing, API contracts", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "kubernetes-debugger", "name": "Kubernetes Debugger", "category": "Debugging", "description": "Diagnose K8s issues with kubectl commands and fixes", "bestFor": "Pod failures, networking issues", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "terraform-reviewer", "name": "Terraform Reviewer", "category": "DevOps", "description": "Review Terraform plans for cost, security, and best practices", "bestFor": "Infrastructure as Code review", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "architecture-decision-record", "name": "ADR Writer", "category": "Architecture", "description": "Generate Architecture Decision Records with context and trade-offs", "bestFor": "Decision documentation, team alignment", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "system-design-interview", "name": "System Design Interview Prep", "category": "Architecture", "description": "Structured approach to system design problems", "bestFor": "Interview prep, design exercises", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "incident-postmortem", "name": "Incident Postmortem Writer", "category": "DevOps", "description": "Structured postmortem with timeline, root cause, and action items", "bestFor": "Post-incident analysis", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "code-migration-planner", "name": "Code Migration Planner", "category": "Architecture", "description": "Plan language/framework migrations with risk assessment", "bestFor": "Tech stack migrations", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "dair-ai/Prompt-Engineering-Guide" },
-    { "id": "natural-language-to-sql", "name": "Natural Language to SQL", "category": "Data", "description": "Convert natural language questions to optimized SQL queries", "bestFor": "Data exploration, business intelligence", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "openai/openai-cookbook" },
-    { "id": "code-style-enforcer", "name": "Code Style Enforcer", "category": "Code Review", "description": "Enforce consistent coding style across a codebase", "bestFor": "Style guide compliance, code consistency", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "dependency-upgrader", "name": "Dependency Upgrader", "category": "Coding", "description": "Safe dependency upgrade with breaking change analysis", "bestFor": "Package upgrades, version management", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "code-migration-executor", "name": "Code Migration Executor", "category": "Coding", "description": "Execute code migrations with test verification", "bestFor": "Framework migrations, API version upgrades", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "feature-spec-writer", "name": "Feature Specification Writer", "category": "Productivity", "description": "Write detailed feature specs with user stories and edge cases", "bestFor": "Product planning, technical specifications", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "code-review-checklist", "name": "Code Review Checklist Generator", "category": "Code Review", "description": "Generate project-specific code review checklists", "bestFor": "Team standards, review processes", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "dair-ai/Prompt-Engineering-Guide" },
-    { "id": "security-hardening", "name": "Security Hardening Guide", "category": "Security", "description": "Generate security hardening checklist for applications", "bestFor": "Production security, compliance", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "threat-modeler", "name": "Threat Modeler", "category": "Security", "description": "Generate threat models using STRIDE/DREAD frameworks", "bestFor": "Security architecture, risk assessment", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "prompt-optimizer", "name": "Prompt Optimizer", "category": "General Purpose", "description": "Optimize prompts for better results and lower token usage", "bestFor": "Prompt engineering, cost optimization", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "dair-ai/Prompt-Engineering-Guide" },
-    { "id": "codebase-onboarding", "name": "Codebase Onboarding Guide", "category": "Documentation", "description": "Generate onboarding docs for new team members", "bestFor": "Team onboarding, knowledge transfer", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "image-prompt-crafter", "name": "Image Generation Prompt Crafter", "category": "Image Generation", "description": "Craft detailed prompts for DALL-E, Midjourney, and Flux", "bestFor": "Image generation, visual content", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "Ryan-yang125/gpt-image-2-prompts" },
-    { "id": "code-to-tests", "name": "Code to Test Converter", "category": "Testing", "description": "Convert existing code into comprehensive test suites", "bestFor": "Test coverage improvement", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "debugging-rubber-duck", "name": "Rubber Duck Debugger", "category": "Debugging", "description": "Structured rubber-duck debugging with hypothesis testing", "bestFor": "Stuck debugging sessions", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "code-review-security", "name": "Security-Focused Code Review", "category": "Security", "description": "Review code specifically for security vulnerabilities", "bestFor": "Pre-deployment security checks", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "microservices-decomposer", "name": "Microservices Decomposer", "category": "Architecture", "description": "Analyze monoliths and suggest service boundaries", "bestFor": "Monolith decomposition, service design", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "content-repurposer", "name": "Content Repurposer", "category": "Content", "description": "Transform content across formats (blog, social, docs)", "bestFor": "Content marketing, documentation", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "technical-debt-tracker", "name": "Technical Debt Tracker", "category": "Code Review", "description": "Identify and categorize technical debt with priority scores", "bestFor": "Sprint planning, refactoring prioritization", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "dair-ai/Prompt-Engineering-Guide" },
-    { "id": "code-review-perf", "name": "Performance Review Prompt", "category": "Code Review", "description": "Review code specifically for performance issues", "bestFor": "Performance optimization reviews", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "prompt-chainer", "name": "Prompt Chaining Template", "category": "Agent Workflows", "description": "Template for chaining multiple prompts in sequence", "bestFor": "Complex multi-step workflows", "worksWith": ["Claude", "GPT-4"], "source": "dair-ai/Prompt-Engineering-Guide" },
-    { "id": "code-translation", "name": "Code Translator", "category": "Coding", "description": "Translate code between programming languages", "bestFor": "Language migration, cross-platform development", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "debugging-stack-trace", "name": "Stack Trace Analyzer", "category": "Debugging", "description": "Analyze stack traces with root cause identification", "bestFor": "Runtime error diagnosis", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "openai/openai-cookbook" },
-    { "id": "code-review-maintainability", "name": "Maintainability Review", "category": "Code Review", "description": "Review code for long-term maintainability", "bestFor": "Code quality, technical debt prevention", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "code-review-testing", "name": "Test Coverage Review", "category": "Code Review", "description": "Review test coverage and suggest missing tests", "bestFor": "Test quality improvement", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "anthropic/prompt-library" },
-    { "id": "code-review-ux", "name": "UX Code Review", "category": "Code Review", "description": "Review frontend code for UX best practices", "bestFor": "UI/UX quality, accessibility", "worksWith": ["Claude", "GPT-4", "Gemini"], "source": "f/awesome-chatgpt-prompts" },
-    { "id": "tool-use-prompt", "name": "Tool Use / Function Calling", "category": "Agent Workflows", "description": "Structured tool use with schema validation", "bestFor": "MCP tool orchestration", "worksWith": ["Claude", "GPT-4"], "source": "anthropic/prompt-library" },
-    { "id": "multi-agent-orchestrator", "name": "Multi-Agent Orchestrator", "category": "Agent Workflows", "description": "Coordinate multiple AI agents for complex tasks", "bestFor": "Agent team workflows", "worksWith": ["Claude", "GPT-4"], "source": "langgptai/LangGPT" },
-    { "id": "context-window-manager", "name": "Context Window Manager", "category": "Agent Workflows", "description": "Manage context windows efficiently across long conversations", "bestFor": "Long coding sessions, large codebases", "worksWith": ["Claude", "GPT-4"], "source": "danielmiessler/Fabric" },
-    { "id": "tree-of-thought", "name": "Tree of Thought Reasoner", "category": "Reasoning", "description": "Explore multiple solution paths before committing", "bestFor": "Complex problem solving, algorithm design", "worksWith": ["Claude", "GPT-4"], "source": "danielmiessler/Fabric" },
-    { "id": "structured-debate", "name": "Structured Debate", "category": "Reasoning", "description": "Have AI argue multiple sides before concluding", "bestFor": "Decision making, trade-off analysis", "worksWith": ["Claude", "GPT-4"], "source": "danielmiessler/Fabric" },
-    { "id": "meta-prompting", "name": "Meta-Prompting", "category": "Reasoning", "description": "Use AI to optimize its own prompts", "bestFor": "Prompt improvement, self-optimization", "worksWith": ["Claude", "GPT-4"], "source": "dair-ai/Prompt-Engineering-Guide" },
-    { "id": "image-gen-photorealistic", "name": "Photorealistic Image Generation", "category": "Image Generation", "description": "Craft prompts for photorealistic GPT Image 2 output", "bestFor": "Product photos, marketing visuals", "worksWith": ["GPT-4", "DALL-E"], "source": "Ryan-yang125/gpt-image-2-prompts" },
-    { "id": "image-gen-technical", "name": "Technical Diagram Generation", "category": "Image Generation", "description": "Generate technical diagrams and flowcharts with AI", "bestFor": "Architecture diagrams, documentation visuals", "worksWith": ["GPT-4", "DALL-E"], "source": "Ryan-yang125/gpt-image-2-prompts" },
-    { "id": "image-gen-icon", "name": "Icon and Logo Generation", "category": "Image Generation", "description": "Craft prompts for app icons, logos, and brand assets", "bestFor": "Branding, UI assets", "worksWith": ["GPT-4", "DALL-E", "Midjourney"], "source": "Ryan-yang125/gpt-image-2-prompts" },
-    { "id": "image-gen-illustration", "name": "Illustration Generation", "category": "Image Generation", "description": "Create illustrations for blog posts and documentation", "bestFor": "Blog headers, docs illustrations", "worksWith": ["GPT-4", "DALL-E", "Midjourney"], "source": "devanshug2307/Awesome-AI-Image-Prompts" },
-    { "id": "image-gen-ui-mockup", "name": "UI Mockup Generation", "category": "Image Generation", "description": "Generate UI mockups and wireframes with AI", "bestFor": "Rapid prototyping, design exploration", "worksWith": ["GPT-4", "DALL-E"], "source": "YouMind-OpenLab/awesome-gpt-image-2" },
-    { "id": "image-gen-data-viz", "name": "Data Visualization Generation", "category": "Image Generation", "description": "Create charts and data visualizations with AI", "bestFor": "Reports, presentations, dashboards", "worksWith": ["GPT-4", "DALL-E"], "source": "YouMind-OpenLab/awesome-gpt-image-2" },
-    { "id": "image-gen-social", "name": "Social Media Graphics", "category": "Image Generation", "description": "Create social media graphics and banners", "bestFor": "Marketing, social content", "worksWith": ["GPT-4", "DALL-E", "Midjourney"], "source": "devanshug2307/Awesome-AI-Image-Prompts" },
-    { "id": "awesome-ai-prompts-2026", "name": "Awesome AI Prompts 2026", "category": "General Purpose", "description": "Updated prompt library for GPT-5.4, Claude Sonnet 4.6, and Gemini 3.1 models. First major prompt library updated for July 2026 model releases.", "bestFor": "Multi-model prompt engineering", "worksWith": ["GPT-5.4", "Claude Sonnet 4.6", "Gemini 3.1"], "source": "hoangatg/awesome-ai-prompts-2026" },
-    { "id": "prompthub", "name": "PromptHub", "category": "Marketplace", "description": "Marketplace with 50,000+ prompts organized by use case and model compatibility. Largest dedicated prompt marketplace with strong discovery features.", "bestFor": "Prompt discovery, commercial prompts", "worksWith": ["All models"], "source": "prompthub.com" }
+    {
+      "id": "code-reviewer",
+      "name": "Senior Code Reviewer",
+      "category": "Code Review",
+      "description": "Thorough code review with security, performance, and maintainability analysis",
+      "bestFor": "Pull request reviews, code quality checks",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "bug-hunter",
+      "name": "Bug Hunter",
+      "category": "Debugging",
+      "description": "Systematic bug investigation with root cause analysis and fix suggestions",
+      "bestFor": "Debugging complex issues, error investigation",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "software-architect",
+      "name": "Software Architect",
+      "category": "Architecture",
+      "description": "System design with scalability, maintainability, and trade-off analysis",
+      "bestFor": "Architecture decisions, system design reviews",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "devops-engineer",
+      "name": "DevOps Engineer",
+      "category": "DevOps",
+      "description": "Infrastructure, CI/CD, containerization, and deployment guidance",
+      "bestFor": "Deployment pipelines, infrastructure setup",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "security-auditor",
+      "name": "Security Auditor",
+      "category": "Security",
+      "description": "OWASP-focused security review with vulnerability identification",
+      "bestFor": "Security audits, vulnerability assessment",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "technical-writer",
+      "name": "Technical Writer",
+      "category": "Documentation",
+      "description": "Clear, structured documentation with examples and API references",
+      "bestFor": "README files, API docs, user guides",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "test-engineer",
+      "name": "Test Engineer",
+      "category": "Testing",
+      "description": "Comprehensive test strategy with unit, integration, and E2E test design",
+      "bestFor": "Test planning, test writing, coverage analysis",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "full-stack-developer",
+      "name": "Full Stack Developer",
+      "category": "Coding",
+      "description": "End-to-end feature implementation with frontend, backend, and database",
+      "bestFor": "Feature development, full-stack implementation",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "code-explainer",
+      "name": "Code Explainer",
+      "category": "General Purpose",
+      "description": "Explain code line-by-line with context and reasoning",
+      "bestFor": "Understanding unfamiliar code, onboarding",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "refactoring-expert",
+      "name": "Refactoring Expert",
+      "category": "Coding",
+      "description": "Identify code smells and suggest clean refactoring patterns",
+      "bestFor": "Code cleanup, technical debt reduction",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "database-expert",
+      "name": "Database Expert",
+      "category": "Data",
+      "description": "Schema design, query optimization, and migration planning",
+      "bestFor": "Database design, SQL optimization",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "api-designer",
+      "name": "API Designer",
+      "category": "Architecture",
+      "description": "RESTful and GraphQL API design with best practices",
+      "bestFor": "API design, endpoint planning",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "performance-engineer",
+      "name": "Performance Engineer",
+      "category": "Coding",
+      "description": "Performance profiling, bottleneck identification, and optimization",
+      "bestFor": "Performance issues, optimization",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "ui-designer",
+      "name": "UI/UX Designer",
+      "category": "Design",
+      "description": "User interface design with accessibility and usability focus",
+      "bestFor": "UI design, component creation",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "product-manager",
+      "name": "Product Manager",
+      "category": "Productivity",
+      "description": "Feature specification, user stories, and acceptance criteria",
+      "bestFor": "Feature planning, PRD writing",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "data-analyst",
+      "name": "Data Analyst",
+      "category": "Data",
+      "description": "Data analysis with SQL queries, visualization recommendations",
+      "bestFor": "Data exploration, reporting",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "prompt-engineer",
+      "name": "Prompt Engineer",
+      "category": "General Purpose",
+      "description": "Meta-prompt for designing and optimizing other prompts",
+      "bestFor": "Prompt creation and optimization",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "id": "few-shot-learner",
+      "name": "Few-Shot Learner",
+      "category": "General Purpose",
+      "description": "Task learning from minimal examples with structured output",
+      "bestFor": "Classification, extraction, pattern matching",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "id": "chain-of-thought",
+      "name": "Chain of Thought Reasoner",
+      "category": "Reasoning",
+      "description": "Step-by-step reasoning for complex problems",
+      "bestFor": "Complex reasoning, math, logic puzzles",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "id": "react-agent",
+      "name": "ReAct Agent Prompt",
+      "category": "Agent Workflows",
+      "description": "Reasoning + Acting framework for tool-using agents",
+      "bestFor": "Agent workflows, tool orchestration",
+      "worksWith": [
+        "Claude",
+        "GPT-4"
+      ],
+      "source": "langchain-ai/langchain-hub"
+    },
+    {
+      "id": "code-refactor-craft",
+      "name": "Craft Code Refactor",
+      "category": "Coding",
+      "description": "Systematic code improvement with test coverage maintenance",
+      "bestFor": "Legacy code modernization",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "api-documenter",
+      "name": "API Documentation Generator",
+      "category": "Documentation",
+      "description": "Generate OpenAPI specs and README documentation from code",
+      "bestFor": "API documentation, SDK docs",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "git-commit-writer",
+      "name": "Git Commit Message Writer",
+      "category": "Productivity",
+      "description": "Conventional commit messages from code changes",
+      "bestFor": "Commit messages, changelog generation",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "self-critique",
+      "name": "Self-Critique Prompt",
+      "category": "Reasoning",
+      "description": "Force model to review and fix its own output",
+      "bestFor": "Improving accuracy, catching errors",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "structured-output",
+      "name": "Structured JSON Output",
+      "category": "General Purpose",
+      "description": "Force consistent JSON output with schema validation",
+      "bestFor": "Data extraction, API responses",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "code-generation-craft",
+      "name": "Craft Code Generation",
+      "category": "Coding",
+      "description": "Production-ready code with error handling and tests",
+      "bestFor": "New feature implementation",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "migration-planner",
+      "name": "Migration Planner",
+      "category": "Architecture",
+      "description": "Step-by-step migration strategy with rollback plans",
+      "bestFor": "Tech stack migrations, database migrations",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "incident-responder",
+      "name": "Incident Responder",
+      "category": "DevOps",
+      "description": "Structured incident investigation and resolution",
+      "bestFor": "Production incidents, post-mortems",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "codebase-analyzer",
+      "name": "Codebase Analyzer",
+      "category": "General Purpose",
+      "description": "Deep analysis of project structure, patterns, and tech debt",
+      "bestFor": "Project onboarding, architecture review",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "debugging-partner",
+      "name": "Debugging Partner",
+      "category": "Debugging",
+      "description": "Interactive debugging with hypothesis testing",
+      "bestFor": "Complex bugs, race conditions",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "code-explain-line",
+      "name": "Line-by-Line Code Explanation",
+      "category": "General Purpose",
+      "description": "Detailed explanation of every line with context",
+      "bestFor": "Learning, code reviews",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "security-review",
+      "name": "Security Code Review",
+      "category": "Security",
+      "description": "OWASP Top 10 focused security review",
+      "bestFor": "Security audits, pre-deployment checks",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "test-writer",
+      "name": "Test Writer",
+      "category": "Testing",
+      "description": "Generate comprehensive test suites from code",
+      "bestFor": "Unit tests, integration tests",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "performance-profiler",
+      "name": "Performance Profiler",
+      "category": "Coding",
+      "description": "Identify performance bottlenecks and suggest optimizations",
+      "bestFor": "Slow queries, memory leaks, CPU optimization",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "sql-optimizer",
+      "name": "SQL Query Optimizer",
+      "category": "Data",
+      "description": "Analyze and optimize SQL queries with index suggestions",
+      "bestFor": "Slow queries, database performance",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "openai/openai-cookbook"
+    },
+    {
+      "id": "code-completion",
+      "name": "Intelligent Code Completion",
+      "category": "Coding",
+      "description": "Context-aware code completion with best practices",
+      "bestFor": "Writing new functions, filling implementation gaps",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "openai/openai-cookbook"
+    },
+    {
+      "id": "regex-builder",
+      "name": "Regex Builder",
+      "category": "Coding",
+      "description": "Generate and explain regular expressions",
+      "bestFor": "Pattern matching, input validation",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "openai/openai-cookbook"
+    },
+    {
+      "id": "docker-optimizer",
+      "name": "Docker Optimizer",
+      "category": "DevOps",
+      "description": "Optimize Dockerfiles for size and security",
+      "bestFor": "Container optimization, multi-stage builds",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "openai/openai-cookbook"
+    },
+    {
+      "id": "ci-cd-builder",
+      "name": "CI/CD Pipeline Builder",
+      "category": "DevOps",
+      "description": "Generate GitHub Actions, GitLab CI, or Jenkins pipelines",
+      "bestFor": "Pipeline creation, automation setup",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "openai/openai-cookbook"
+    },
+    {
+      "id": "error-explainer",
+      "name": "Error Message Explainer",
+      "category": "Debugging",
+      "description": "Decode cryptic error messages with fix suggestions",
+      "bestFor": "Understanding compiler/runtime errors",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "dependency-analyzer",
+      "name": "Dependency Analyzer",
+      "category": "Security",
+      "description": "Analyze package dependencies for vulnerabilities and licenses",
+      "bestFor": "Supply chain security, license compliance",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "code-to-diagram",
+      "name": "Code to Diagram",
+      "category": "Documentation",
+      "description": "Generate Mermaid/PlantUML diagrams from code",
+      "bestFor": "Architecture diagrams, data flow charts",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "commit-reviewer",
+      "name": "Git Commit Reviewer",
+      "category": "Code Review",
+      "description": "Review git diffs for quality, security, and best practices",
+      "bestFor": "PR reviews, commit quality",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "tech-debt-assessor",
+      "name": "Technical Debt Assessor",
+      "category": "Architecture",
+      "description": "Identify and prioritize technical debt with remediation plans",
+      "bestFor": "Code quality improvement, sprint planning",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "accessibility-auditor",
+      "name": "Accessibility Auditor",
+      "category": "Design",
+      "description": "WCAG compliance review with remediation steps",
+      "bestFor": "Accessibility audits, inclusive design",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "color-palette-generator",
+      "name": "Color Palette Generator",
+      "category": "Design",
+      "description": "Generate accessible color palettes with contrast ratios",
+      "bestFor": "Design systems, brand colors",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "component-builder",
+      "name": "UI Component Builder",
+      "category": "Design",
+      "description": "Generate reusable UI components with accessibility baked in",
+      "bestFor": "Component libraries, design systems",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "blog-writer",
+      "name": "Technical Blog Writer",
+      "category": "Content",
+      "description": "Write technical blog posts with code examples",
+      "bestFor": "Blog posts, tutorials, how-to guides",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "changelog-writer",
+      "name": "Changelog Writer",
+      "category": "Content",
+      "description": "Generate user-facing changelogs from git history",
+      "bestFor": "Release notes, changelogs",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "readme-writer",
+      "name": "README Generator",
+      "category": "Documentation",
+      "description": "Generate comprehensive README files from code analysis",
+      "bestFor": "Open source project documentation",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "code-commenter",
+      "name": "Code Comment Writer",
+      "category": "Documentation",
+      "description": "Add meaningful comments and docstrings to code",
+      "bestFor": "Code documentation, JSDoc/Docstring generation",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "meeting-notes",
+      "name": "Technical Meeting Notes",
+      "category": "Productivity",
+      "description": "Summarize technical meetings with action items",
+      "bestFor": "Sprint planning, design reviews",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "rubric-generator",
+      "name": "Code Evaluation Rubric",
+      "category": "Testing",
+      "description": "Generate evaluation rubrics for code quality assessment",
+      "bestFor": "Code reviews, team standards",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "e2e-test-designer",
+      "name": "E2E Test Designer",
+      "category": "Testing",
+      "description": "Design end-to-end test scenarios from user stories",
+      "bestFor": "Playwright/Cypress test planning",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "api-test-writer",
+      "name": "API Test Writer",
+      "category": "Testing",
+      "description": "Generate API tests with edge cases and error handling",
+      "bestFor": "REST/GraphQL API testing",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "load-test-designer",
+      "name": "Load Test Designer",
+      "category": "Testing",
+      "description": "Design load testing scenarios with realistic traffic patterns",
+      "bestFor": "Performance testing, capacity planning",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "openai/openai-cookbook"
+    },
+    {
+      "id": "contract-test-writer",
+      "name": "Contract Test Writer",
+      "category": "Testing",
+      "description": "Generate consumer-driven contract tests",
+      "bestFor": "Microservices testing, API contracts",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "kubernetes-debugger",
+      "name": "Kubernetes Debugger",
+      "category": "Debugging",
+      "description": "Diagnose K8s issues with kubectl commands and fixes",
+      "bestFor": "Pod failures, networking issues",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "terraform-reviewer",
+      "name": "Terraform Reviewer",
+      "category": "DevOps",
+      "description": "Review Terraform plans for cost, security, and best practices",
+      "bestFor": "Infrastructure as Code review",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "architecture-decision-record",
+      "name": "ADR Writer",
+      "category": "Architecture",
+      "description": "Generate Architecture Decision Records with context and trade-offs",
+      "bestFor": "Decision documentation, team alignment",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "system-design-interview",
+      "name": "System Design Interview Prep",
+      "category": "Architecture",
+      "description": "Structured approach to system design problems",
+      "bestFor": "Interview prep, design exercises",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "incident-postmortem",
+      "name": "Incident Postmortem Writer",
+      "category": "DevOps",
+      "description": "Structured postmortem with timeline, root cause, and action items",
+      "bestFor": "Post-incident analysis",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "code-migration-planner",
+      "name": "Code Migration Planner",
+      "category": "Architecture",
+      "description": "Plan language/framework migrations with risk assessment",
+      "bestFor": "Tech stack migrations",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "id": "natural-language-to-sql",
+      "name": "Natural Language to SQL",
+      "category": "Data",
+      "description": "Convert natural language questions to optimized SQL queries",
+      "bestFor": "Data exploration, business intelligence",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "openai/openai-cookbook"
+    },
+    {
+      "id": "code-style-enforcer",
+      "name": "Code Style Enforcer",
+      "category": "Code Review",
+      "description": "Enforce consistent coding style across a codebase",
+      "bestFor": "Style guide compliance, code consistency",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "dependency-upgrader",
+      "name": "Dependency Upgrader",
+      "category": "Coding",
+      "description": "Safe dependency upgrade with breaking change analysis",
+      "bestFor": "Package upgrades, version management",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "code-migration-executor",
+      "name": "Code Migration Executor",
+      "category": "Coding",
+      "description": "Execute code migrations with test verification",
+      "bestFor": "Framework migrations, API version upgrades",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "feature-spec-writer",
+      "name": "Feature Specification Writer",
+      "category": "Productivity",
+      "description": "Write detailed feature specs with user stories and edge cases",
+      "bestFor": "Product planning, technical specifications",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "code-review-checklist",
+      "name": "Code Review Checklist Generator",
+      "category": "Code Review",
+      "description": "Generate project-specific code review checklists",
+      "bestFor": "Team standards, review processes",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "id": "security-hardening",
+      "name": "Security Hardening Guide",
+      "category": "Security",
+      "description": "Generate security hardening checklist for applications",
+      "bestFor": "Production security, compliance",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "threat-modeler",
+      "name": "Threat Modeler",
+      "category": "Security",
+      "description": "Generate threat models using STRIDE/DREAD frameworks",
+      "bestFor": "Security architecture, risk assessment",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "prompt-optimizer",
+      "name": "Prompt Optimizer",
+      "category": "General Purpose",
+      "description": "Optimize prompts for better results and lower token usage",
+      "bestFor": "Prompt engineering, cost optimization",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "id": "codebase-onboarding",
+      "name": "Codebase Onboarding Guide",
+      "category": "Documentation",
+      "description": "Generate onboarding docs for new team members",
+      "bestFor": "Team onboarding, knowledge transfer",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "image-prompt-crafter",
+      "name": "Image Generation Prompt Crafter",
+      "category": "Image Generation",
+      "description": "Craft detailed prompts for DALL-E, Midjourney, and Flux",
+      "bestFor": "Image generation, visual content",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "Ryan-yang125/gpt-image-2-prompts"
+    },
+    {
+      "id": "code-to-tests",
+      "name": "Code to Test Converter",
+      "category": "Testing",
+      "description": "Convert existing code into comprehensive test suites",
+      "bestFor": "Test coverage improvement",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "debugging-rubber-duck",
+      "name": "Rubber Duck Debugger",
+      "category": "Debugging",
+      "description": "Structured rubber-duck debugging with hypothesis testing",
+      "bestFor": "Stuck debugging sessions",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "code-review-security",
+      "name": "Security-Focused Code Review",
+      "category": "Security",
+      "description": "Review code specifically for security vulnerabilities",
+      "bestFor": "Pre-deployment security checks",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "microservices-decomposer",
+      "name": "Microservices Decomposer",
+      "category": "Architecture",
+      "description": "Analyze monoliths and suggest service boundaries",
+      "bestFor": "Monolith decomposition, service design",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "content-repurposer",
+      "name": "Content Repurposer",
+      "category": "Content",
+      "description": "Transform content across formats (blog, social, docs)",
+      "bestFor": "Content marketing, documentation",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "technical-debt-tracker",
+      "name": "Technical Debt Tracker",
+      "category": "Code Review",
+      "description": "Identify and categorize technical debt with priority scores",
+      "bestFor": "Sprint planning, refactoring prioritization",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "id": "code-review-perf",
+      "name": "Performance Review Prompt",
+      "category": "Code Review",
+      "description": "Review code specifically for performance issues",
+      "bestFor": "Performance optimization reviews",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "prompt-chainer",
+      "name": "Prompt Chaining Template",
+      "category": "Agent Workflows",
+      "description": "Template for chaining multiple prompts in sequence",
+      "bestFor": "Complex multi-step workflows",
+      "worksWith": [
+        "Claude",
+        "GPT-4"
+      ],
+      "source": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "id": "code-translation",
+      "name": "Code Translator",
+      "category": "Coding",
+      "description": "Translate code between programming languages",
+      "bestFor": "Language migration, cross-platform development",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "debugging-stack-trace",
+      "name": "Stack Trace Analyzer",
+      "category": "Debugging",
+      "description": "Analyze stack traces with root cause identification",
+      "bestFor": "Runtime error diagnosis",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "openai/openai-cookbook"
+    },
+    {
+      "id": "code-review-maintainability",
+      "name": "Maintainability Review",
+      "category": "Code Review",
+      "description": "Review code for long-term maintainability",
+      "bestFor": "Code quality, technical debt prevention",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "code-review-testing",
+      "name": "Test Coverage Review",
+      "category": "Code Review",
+      "description": "Review test coverage and suggest missing tests",
+      "bestFor": "Test quality improvement",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "code-review-ux",
+      "name": "UX Code Review",
+      "category": "Code Review",
+      "description": "Review frontend code for UX best practices",
+      "bestFor": "UI/UX quality, accessibility",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "f/awesome-chatgpt-prompts"
+    },
+    {
+      "id": "tool-use-prompt",
+      "name": "Tool Use / Function Calling",
+      "category": "Agent Workflows",
+      "description": "Structured tool use with schema validation",
+      "bestFor": "MCP tool orchestration",
+      "worksWith": [
+        "Claude",
+        "GPT-4"
+      ],
+      "source": "anthropic/prompt-library"
+    },
+    {
+      "id": "multi-agent-orchestrator",
+      "name": "Multi-Agent Orchestrator",
+      "category": "Agent Workflows",
+      "description": "Coordinate multiple AI agents for complex tasks",
+      "bestFor": "Agent team workflows",
+      "worksWith": [
+        "Claude",
+        "GPT-4"
+      ],
+      "source": "langgptai/LangGPT"
+    },
+    {
+      "id": "context-window-manager",
+      "name": "Context Window Manager",
+      "category": "Agent Workflows",
+      "description": "Manage context windows efficiently across long conversations",
+      "bestFor": "Long coding sessions, large codebases",
+      "worksWith": [
+        "Claude",
+        "GPT-4"
+      ],
+      "source": "danielmiessler/Fabric"
+    },
+    {
+      "id": "tree-of-thought",
+      "name": "Tree of Thought Reasoner",
+      "category": "Reasoning",
+      "description": "Explore multiple solution paths before committing",
+      "bestFor": "Complex problem solving, algorithm design",
+      "worksWith": [
+        "Claude",
+        "GPT-4"
+      ],
+      "source": "danielmiessler/Fabric"
+    },
+    {
+      "id": "structured-debate",
+      "name": "Structured Debate",
+      "category": "Reasoning",
+      "description": "Have AI argue multiple sides before concluding",
+      "bestFor": "Decision making, trade-off analysis",
+      "worksWith": [
+        "Claude",
+        "GPT-4"
+      ],
+      "source": "danielmiessler/Fabric"
+    },
+    {
+      "id": "meta-prompting",
+      "name": "Meta-Prompting",
+      "category": "Reasoning",
+      "description": "Use AI to optimize its own prompts",
+      "bestFor": "Prompt improvement, self-optimization",
+      "worksWith": [
+        "Claude",
+        "GPT-4"
+      ],
+      "source": "dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "id": "image-gen-photorealistic",
+      "name": "Photorealistic Image Generation",
+      "category": "Image Generation",
+      "description": "Craft prompts for photorealistic GPT Image 2 output",
+      "bestFor": "Product photos, marketing visuals",
+      "worksWith": [
+        "GPT-4",
+        "DALL-E"
+      ],
+      "source": "Ryan-yang125/gpt-image-2-prompts"
+    },
+    {
+      "id": "image-gen-technical",
+      "name": "Technical Diagram Generation",
+      "category": "Image Generation",
+      "description": "Generate technical diagrams and flowcharts with AI",
+      "bestFor": "Architecture diagrams, documentation visuals",
+      "worksWith": [
+        "GPT-4",
+        "DALL-E"
+      ],
+      "source": "Ryan-yang125/gpt-image-2-prompts"
+    },
+    {
+      "id": "image-gen-icon",
+      "name": "Icon and Logo Generation",
+      "category": "Image Generation",
+      "description": "Craft prompts for app icons, logos, and brand assets",
+      "bestFor": "Branding, UI assets",
+      "worksWith": [
+        "GPT-4",
+        "DALL-E",
+        "Midjourney"
+      ],
+      "source": "Ryan-yang125/gpt-image-2-prompts"
+    },
+    {
+      "id": "image-gen-illustration",
+      "name": "Illustration Generation",
+      "category": "Image Generation",
+      "description": "Create illustrations for blog posts and documentation",
+      "bestFor": "Blog headers, docs illustrations",
+      "worksWith": [
+        "GPT-4",
+        "DALL-E",
+        "Midjourney"
+      ],
+      "source": "devanshug2307/Awesome-AI-Image-Prompts"
+    },
+    {
+      "id": "image-gen-ui-mockup",
+      "name": "UI Mockup Generation",
+      "category": "Image Generation",
+      "description": "Generate UI mockups and wireframes with AI",
+      "bestFor": "Rapid prototyping, design exploration",
+      "worksWith": [
+        "GPT-4",
+        "DALL-E"
+      ],
+      "source": "YouMind-OpenLab/awesome-gpt-image-2"
+    },
+    {
+      "id": "image-gen-data-viz",
+      "name": "Data Visualization Generation",
+      "category": "Image Generation",
+      "description": "Create charts and data visualizations with AI",
+      "bestFor": "Reports, presentations, dashboards",
+      "worksWith": [
+        "GPT-4",
+        "DALL-E"
+      ],
+      "source": "YouMind-OpenLab/awesome-gpt-image-2"
+    },
+    {
+      "id": "image-gen-social",
+      "name": "Social Media Graphics",
+      "category": "Image Generation",
+      "description": "Create social media graphics and banners",
+      "bestFor": "Marketing, social content",
+      "worksWith": [
+        "GPT-4",
+        "DALL-E",
+        "Midjourney"
+      ],
+      "source": "devanshug2307/Awesome-AI-Image-Prompts"
+    },
+    {
+      "id": "awesome-ai-prompts-2026",
+      "name": "Awesome AI Prompts 2026",
+      "category": "General Purpose",
+      "description": "Updated prompt library for GPT-5.4, Claude Sonnet 4.6, and Gemini 3.1 models. First major prompt library updated for July 2026 model releases.",
+      "bestFor": "Multi-model prompt engineering",
+      "worksWith": [
+        "GPT-5.4",
+        "Claude Sonnet 4.6",
+        "Gemini 3.1"
+      ],
+      "source": "hoangatg/awesome-ai-prompts-2026"
+    },
+    {
+      "id": "prompthub",
+      "name": "PromptHub",
+      "category": "Marketplace",
+      "description": "Marketplace with 50,000+ prompts organized by use case and model compatibility. Largest dedicated prompt marketplace with strong discovery features.",
+      "bestFor": "Prompt discovery, commercial prompts",
+      "worksWith": [
+        "All models"
+      ],
+      "source": "prompthub.com"
+    }
   ]
 }

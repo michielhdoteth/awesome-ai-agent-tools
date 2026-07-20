@@ -43,6 +43,9 @@ drafts/
 # Archives (don't commit zips)
 *.zip
 
+# Scripts (internal tooling, not for repo)
+scripts/
+
 # Logs
 *.log
 npm-debug.log*

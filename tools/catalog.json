@@ -6,18 +6,54 @@
   "lastUpdated": "2026-07-12",
   "totalTools": 66,
   "categories": [
-    { "name": "Code Analysis", "count": 9 },
-    { "name": "Git Utilities", "count": 6 },
-    { "name": "Package Managers", "count": 5 },
-    { "name": "Docker & Containers", "count": 5 },
-    { "name": "Cloud & DevOps", "count": 6 },
-    { "name": "AI Coding CLIs", "count": 11 },
-    { "name": "Agent Memory", "count": 2 },
-    { "name": "Formatting & Linting", "count": 6 },
-    { "name": "Database CLIs", "count": 5 },
-    { "name": "API Testing", "count": 5 },
-    { "name": "Monitoring", "count": 4 },
-    { "name": "Terminal Enhancement", "count": 3 }
+    {
+      "name": "Code Analysis",
+      "count": 9
+    },
+    {
+      "name": "Git Utilities",
+      "count": 6
+    },
+    {
+      "name": "Package Managers",
+      "count": 5
+    },
+    {
+      "name": "Docker & Containers",
+      "count": 5
+    },
+    {
+      "name": "Cloud & DevOps",
+      "count": 6
+    },
+    {
+      "name": "AI Coding CLIs",
+      "count": 11
+    },
+    {
+      "name": "Agent Memory",
+      "count": 2
+    },
+    {
+      "name": "Formatting & Linting",
+      "count": 6
+    },
+    {
+      "name": "Database CLIs",
+      "count": 5
+    },
+    {
+      "name": "API Testing",
+      "count": 5
+    },
+    {
+      "name": "Monitoring",
+      "count": 4
+    },
+    {
+      "name": "Terminal Enhancement",
+      "count": 3
+    }
   ],
   "tools": [
     {

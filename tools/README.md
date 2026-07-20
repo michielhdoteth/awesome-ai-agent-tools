@@ -1,221 +1,95 @@
-# CLI Tools
+# Tools Catalog
 
-66 essential CLI tools and utilities that enhance AI coding agent capabilities. Install once, use everywhere.
+Essential CLI tools and utilities that enhance AI coding agent capabilities
 
-## Quick Install
+**66** entries across **12** categories.
 
-### All-in-one (macOS)
-```bash
-# Code analysis
-brew install ripgrep fd bat fzf eza zoxide dust duf yazi
+## Categories
 
-# Git utilities
-brew install lazygit gh git-delta tig gitui
+- **AI Coding CLIs** (10)
+- **Code Analysis** (9)
+- **Git Utilities** (6)
+- **Cloud & DevOps** (6)
+- **Formatting & Linting** (6)
+- **Package Managers** (5)
+- **Docker & Containers** (5)
+- **Database CLIs** (5)
+- **API Testing** (5)
+- **Monitoring** (4)
+- **Terminal Enhancement** (3)
+- **Agent Memory** (2)
 
-# Package managers
-curl -fsSL https://bun.sh/install | bash
-npm install -g pnpm
-curl -LsSf https://astral.sh/uv/install.sh | sh
+## All 66 tools
 
-# Docker
-brew install --cask docker podman lazydocker dive
-
-# DevOps
-brew install terraform kubectl k9s awscli
-
-# Formatting & linting
-npm install -g @biomejs/biome prettier eslint
-pip install ruff
-
-# Database CLIs
-pip install pgcli mycli litecli
-brew install usql
-
-# Monitoring
-brew install btop netdata
-
-# Terminal
-brew install starship tmux atuin
-```
-
-### All-in-one (Ubuntu/Debian)
-```bash
-# Code analysis
-sudo apt install ripgrep fd-find bat fzf
-
-# Git utilities
-sudo apt install git-cola tig
-
-# Package managers
-curl -fsSL https://bun.sh/install | bash
-sudo npm install -g pnpm
-
-# DevOps
-sudo apt install terraform kubectl
-
-# Formatting & linting
-sudo npm install -g @biomejs/biome prettier eslint
-pip install ruff
-
-# Database CLIs
-pip install pgcli mycli litecli
-```
-
----
-
-## Browse by Category
-
-### Code Analysis (9 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **ripgrep** | 65K | Line-oriented search, 10-100x faster than grep | `brew install ripgrep` |
-| **fd** | 35K | Friendly, fast alternative to find | `brew install fd` |
-| **bat** | 51K | Cat clone with syntax highlighting, line numbers, git integration | `brew install bat` |
-| **fzf** | 68K | General-purpose fuzzy finder | `brew install fzf` |
-| **eza** | 15K | Modern ls replacement with git integration, icons, tree view | `brew install eza` |
-| **zoxide** | 25K | Smarter cd command that learns your habits | `brew install zoxide` |
-| **dust** | 10K | Intuitive du replacement with visual bars | `brew install dust` |
-| **duf** | 11K | Better df alternative with beautiful display | `brew install duf` |
-| **Yazi** | 25K | Blazing fast terminal file manager written in Rust | `brew install yazi` |
-
-### Git Utilities (6 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **lazygit** | 55K | Terminal UI for git with visual staging, stashing, rebasing | `brew install lazygit` |
-| **GitHub CLI (gh)** | 38K | Official GitHub CLI for PRs, issues, actions, releases | `brew install gh` |
-| **delta** | 25K | Syntax-highlighting pager for git, diff, and grep output | `brew install git-delta` |
-| **tig** | 13K | Text-mode interface for git | `brew install tig` |
-| **Gitui** | 10K | Blazing fast terminal-ui for git written in Rust | `brew install gitui` |
-| **gh-dash** | 5K | GitHub CLI dashboard for visual PR/issue management | `gh extension install dlvhdr/gh-dash` |
-
-### Package Managers (5 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **Bun** | 77K | Incredibly fast JavaScript runtime, bundler, and package manager | `curl -fsSL https://bun.sh/install \| bash` |
-| **pnpm** | 30K | Fast, disk-efficient package manager with strict dependency resolution | `npm install -g pnpm` |
-| **uv** | 50K | Extremely fast Python package installer and resolver | `curl -LsSf https://astral.sh/uv/install.sh \| sh` |
-| **Volta** | 11K | JavaScript tool manager - pin node/npm/yarn versions per project | `curl https://get.volta.sh \| bash` |
-| **Corepack** | 3K | Zero-runtime-dependency Node.js package manager manager | `corepack enable` |
-
-### Docker & Containers (5 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **Docker** | 5K | Container platform for building, shipping, running applications | `brew install --cask docker` |
-| **Podman** | 30K | Daemonless container engine, rootless Docker alternative | `brew install podman` |
-| **lazydocker** | 40K | Terminal UI for docker and docker-compose | `brew install lazydocker` |
-| **dive** | 49K | Tool for exploring each layer in a Docker image | `brew install dive` |
-| **Docker Compose** | 35K | Define and run multi-container Docker applications | Included with Docker Desktop |
-
-### Cloud & DevOps (6 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **Terraform** | 44K | Infrastructure as Code tool for cloud provisioning | `brew install terraform` |
-| **Ansible** | 64K | Agentless automation engine for configuration management | `pip install ansible` |
-| **kubectl** | 12K | Kubernetes command-line tool | `brew install kubectl` |
-| **K9s** | 28K | Terminal UI for Kubernetes with real-time cluster monitoring | `brew install k9s` |
-| **AWS CLI** | 16K | Official AWS command-line interface | `brew install awscli` |
-| **gcloud CLI** | 5K | Google Cloud command-line interface | `brew install --cask google-cloud-sdk` |
-
-### AI Coding CLIs (11 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **Ollama** | 120K | Run LLMs locally - Llama, Mistral, Phi, Gemma, and more | `brew install ollama` |
-| **Gemini CLI** | 98K | Google's AI coding agent in the terminal | `npm install -g @anthropic-ai/gemini-cli` |
-| **Claude Code** | 80K | Anthropic's agentic coding tool, terminal-native AI pair programmer | `npm install -g @anthropic-ai/claude-code` |
-| **Aider** | 42K | AI pair programming in your terminal | `pip install aider-chat` |
-| **Cursor** | 35K | AI-first code editor, fork of VS Code with AI superpowers | Download from cursor.com |
-| **OpenCode** | 25K | Open-source AI coding agent with multi-model support | `npm install -g opencode` |
-| **Continue** | 20K | Open-source AI code assistant for VS Code and JetBrains | Install from VS Code marketplace |
-| **Codeium / Windsurf** | 8K | Free AI code completion and chat | Install from VS Code marketplace |
-| **codex-profiles** | 49 | Named CODEX_HOME profiles and macOS ChatGPT windows | `npm install -g codex-profile` |
-| **Calliope CLI** | - | Multi-backend AI agent CLI with ACP/fleet modes | `pip install calliope-cli` |
-
-### Agent Memory (2 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **Tree Ring Memory** | 2 | Local-first Rust CLI/TUI for AI-agent memory recall, forgetting, audit | `curl -fsSL https://raw.githubusercontent.com/TerminallyLazy/Tree-Ring-Memory/main/install.sh \| sh` |
-| **Skills MCP Server** | 4 | Self-hostable, semantically-searchable agent skills registry over MCP | `pip install skills-mcp` |
-
-### Formatting & Linting (6 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **Prettier** | 51K | Opinionated code formatter supporting many languages | `npm install -g prettier` |
-| **Ruff** | 35K | Python linter and formatter, replaces flake8, isort, black | `pip install ruff` |
-| **ShellCheck** | 37K | Static analysis tool for shell scripts | `brew install shellcheck` |
-| **ESLint** | 25K | Pluggable JavaScript linter | `npm install -g eslint` |
-| **Biome** | 17K | One toolchain for JS/TS/JSON/CSS, 35x faster than Prettier | `npm install -g @biomejs/biome` |
-| **ty (TypeScript)** | 5K | Extremely fast TypeScript type checker written in Rust | `pip install ty` |
-
-### Database CLIs (5 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **pgcli** | 12.8K | PostgreSQL CLI with auto-completion and syntax highlighting | `pip install pgcli` |
-| **mycli** | 11.7K | MySQL CLI with auto-completion and syntax highlighting | `pip install mycli` |
-| **usql** | 9K | Universal command-line interface for SQL databases | `brew install usql` |
-| **litecli** | 3K | SQLite CLI with auto-completion and syntax highlighting | `pip install litecli` |
-| **Peppermint** | 2K | Modern database client with AI-powered query assistance | Download from GitHub releases |
-
-### API Testing (5 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **Hoppscotch** | 67K | Open-source API development ecosystem, web + desktop | Download from hoppscotch.io |
-| **HTTPie** | 35K | User-friendly HTTP client, cURL for humans | `brew install httpie` |
-| **curl** | 35K | Command-line tool for transferring data with URLs | Pre-installed on most systems |
-| **Bruno** | 30K | Open-source API client, git-native Postman alternative | Download from usebruno.com |
-| **xh** | 5K | Friendly and fast tool for sending HTTP requests, written in Rust | `brew install xh` |
-
-### Monitoring (4 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **Netdata** | 72K | Real-time performance and health monitoring | `brew install netdata` |
-| **Glances** | 27K | System monitoring tool, web-based and terminal | `pip install glances` |
-| **btop** | 25K | Resource monitor with beautiful UI and GPU monitoring | `brew install btop` |
-| **dool** | 1.5K | Versatile resource statistics tool, vmstat/iostat/mpstat replacement | `brew install dool` |
-
-### Terminal Enhancement (3 tools)
-
-| Tool | Stars | Description | Install |
-|------|-------|-------------|---------|
-| **Starship** | 48K | Cross-shell prompt, minimal, fast, customizable | `brew install starship` |
-| **tmux** | 35K | Terminal multiplexer with split panes, sessions, persistent workspaces | `brew install tmux` |
-| **Atuin** | 23K | Magic shell history - search, sync, and share command history | `brew install atuin` |
+| Name               | Category             | Description                                                                                                                         | Source                                                                                | Badges                                                                                                                                                                                                               |
+| ------------------ | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ripgrep            | Code Analysis        | Line-oriented search tool, 10-100x faster than grep. Respects .gitignore.                                                           | [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep)                           | ![Stars](https://img.shields.io/github/stars/BurntSushi/ripgrep?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/BurntSushi/ripgrep?style=flat)                           |
+| fd                 | Code Analysis        | Friendly, fast alternative to find. Simpler syntax, colorized output.                                                               | [sharkdp/fd](https://github.com/sharkdp/fd)                                           | ![Stars](https://img.shields.io/github/stars/sharkdp/fd?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sharkdp/fd?style=flat)                                           |
+| bat                | Code Analysis        | Cat clone with syntax highlighting, line numbers, and git integration.                                                              | [sharkdp/bat](https://github.com/sharkdp/bat)                                         | ![Stars](https://img.shields.io/github/stars/sharkdp/bat?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sharkdp/bat?style=flat)                                         |
+| fzf                | Code Analysis        | General-purpose fuzzy finder. Interactively filter files, history, branches.                                                        | [junegunn/fzf](https://github.com/junegunn/fzf)                                       | ![Stars](https://img.shields.io/github/stars/junegunn/fzf?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/junegunn/fzf?style=flat)                                       |
+| eza                | Code Analysis        | Modern ls replacement with git integration, icons, tree view.                                                                       | [eza-community/eza](https://github.com/eza-community/eza)                             | ![Stars](https://img.shields.io/github/stars/eza-community/eza?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/eza-community/eza?style=flat)                             |
+| zoxide             | Code Analysis        | Smarter cd command. Learns your habits and jumps to directories.                                                                    | [ajeetdsouza/zoxide](https://github.com/ajeetdsouza/zoxide)                           | ![Stars](https://img.shields.io/github/stars/ajeetdsouza/zoxide?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ajeetdsouza/zoxide?style=flat)                           |
+| dust               | Code Analysis        | Intuitive du replacement. Shows disk usage with visual bars.                                                                        | [bootandy/dust](https://github.com/bootandy/dust)                                     | ![Stars](https://img.shields.io/github/stars/bootandy/dust?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/bootandy/dust?style=flat)                                     |
+| duf                | Code Analysis        | Better df alternative. Beautiful disk usage display.                                                                                | [muesli/duf](https://github.com/muesli/duf)                                           | ![Stars](https://img.shields.io/github/stars/muesli/duf?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/muesli/duf?style=flat)                                           |
+| Yazi               | Code Analysis        | Blazing fast terminal file manager written in Rust.                                                                                 | [sxyazi/yazi](https://github.com/sxyazi/yazi)                                         | ![Stars](https://img.shields.io/github/stars/sxyazi/yazi?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sxyazi/yazi?style=flat)                                         |
+| lazygit            | Git Utilities        | Terminal UI for git. Visual staging, stashing, rebating.                                                                            | [jesseduffield/lazygit](https://github.com/jesseduffield/lazygit)                     | ![Stars](https://img.shields.io/github/stars/jesseduffield/lazygit?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/jesseduffield/lazygit?style=flat)                     |
+| GitHub CLI (gh)    | Git Utilities        | Official GitHub CLI. PRs, issues, actions, releases from terminal.                                                                  | [cli/cli](https://github.com/cli/cli)                                                 | ![Stars](https://img.shields.io/github/stars/cli/cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/cli/cli?style=flat)                                                 |
+| delta              | Git Utilities        | Syntax-highlighting pager for git, diff, and grep output.                                                                           | [dandavison/delta](https://github.com/dandavison/delta)                               | ![Stars](https://img.shields.io/github/stars/dandavison/delta?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/dandavison/delta?style=flat)                               |
+| tig                | Git Utilities        | Text-mode interface for git. Browser mode for git history.                                                                          | [jonas/tig](https://github.com/jonas/tig)                                             | ![Stars](https://img.shields.io/github/stars/jonas/tig?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/jonas/tig?style=flat)                                             |
+| Gitui              | Git Utilities        | Blazing fast terminal-ui for git written in Rust.                                                                                   | [extrawurst/gitui](https://github.com/extrawurst/gitui)                               | ![Stars](https://img.shields.io/github/stars/extrawurst/gitui?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/extrawurst/gitui?style=flat)                               |
+| gh-dash            | Git Utilities        | GitHub CLI dashboard. Visual PR/issue management.                                                                                   | [dlvhdr/gh-dash](https://github.com/dlvhdr/gh-dash)                                   | ![Stars](https://img.shields.io/github/stars/dlvhdr/gh-dash?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/dlvhdr/gh-dash?style=flat)                                   |
+| Bun                | Package Managers     | Incredibly fast JavaScript runtime, bundler, and package manager.                                                                   | [oven-sh/bun](https://github.com/oven-sh/bun)                                         | ![Stars](https://img.shields.io/github/stars/oven-sh/bun?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/oven-sh/bun?style=flat)                                         |
+| pnpm               | Package Managers     | Fast, disk-efficient package manager. Strict dependency resolution.                                                                 | [pnpm/pnpm](https://github.com/pnpm/pnpm)                                             | ![Stars](https://img.shields.io/github/stars/pnpm/pnpm?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/pnpm/pnpm?style=flat)                                             |
+| uv                 | Package Managers     | Extremely fast Python package installer and resolver.                                                                               | [astral-sh/uv](https://github.com/astral-sh/uv)                                       | ![Stars](https://img.shields.io/github/stars/astral-sh/uv?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/astral-sh/uv?style=flat)                                       |
+| Volta              | Package Managers     | JavaScript tool manager. Pin node/npm/yarn versions per project.                                                                    | [volta-cli/volta](https://github.com/volta-cli/volta)                                 | ![Stars](https://img.shields.io/github/stars/volta-cli/volta?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/volta-cli/volta?style=flat)                                 |
+| Corepack           | Package Managers     | Zero-runtime-dependency Node.js package manager manager.                                                                            | [nodejs/corepack](https://github.com/nodejs/corepack)                                 | ![Stars](https://img.shields.io/github/stars/nodejs/corepack?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/nodejs/corepack?style=flat)                                 |
+| Docker             | Docker & Containers  | Container platform for building, shipping, running applications.                                                                    | [docker/cli](https://github.com/docker/cli)                                           | ![Stars](https://img.shields.io/github/stars/docker/cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/docker/cli?style=flat)                                           |
+| Podman             | Docker & Containers  | Daemonless container engine. Rootless, OCI-compatible Docker alternative.                                                           | [containers/podman](https://github.com/containers/podman)                             | ![Stars](https://img.shields.io/github/stars/containers/podman?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/containers/podman?style=flat)                             |
+| lazydocker         | Docker & Containers  | Terminal UI for docker and docker-compose. Visual container management.                                                             | [jesseduffield/lazydocker](https://github.com/jesseduffield/lazydocker)               | ![Stars](https://img.shields.io/github/stars/jesseduffield/lazydocker?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/jesseduffield/lazydocker?style=flat)               |
+| dive               | Docker & Containers  | Tool for exploring each layer in a Docker image. Optimize Dockerfiles.                                                              | [wagoodman/dive](https://github.com/wagoodman/dive)                                   | ![Stars](https://img.shields.io/github/stars/wagoodman/dive?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/wagoodman/dive?style=flat)                                   |
+| Docker Compose     | Docker & Containers  | Define and run multi-container Docker applications.                                                                                 | [docker/compose](https://github.com/docker/compose)                                   | ![Stars](https://img.shields.io/github/stars/docker/compose?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/docker/compose?style=flat)                                   |
+| Terraform          | Cloud & DevOps       | Infrastructure as Code tool for cloud provisioning.                                                                                 | [hashicorp/terraform](https://github.com/hashicorp/terraform)                         | ![Stars](https://img.shields.io/github/stars/hashicorp/terraform?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hashicorp/terraform?style=flat)                         |
+| Ansible            | Cloud & DevOps       | Agentless automation engine. Configuration management at scale.                                                                     | [ansible/ansible](https://github.com/ansible/ansible)                                 | ![Stars](https://img.shields.io/github/stars/ansible/ansible?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ansible/ansible?style=flat)                                 |
+| kubectl            | Cloud & DevOps       | Kubernetes command-line tool. Deploy and manage containerized apps.                                                                 | [kubernetes/kubectl](https://github.com/kubernetes/kubectl)                           | ![Stars](https://img.shields.io/github/stars/kubernetes/kubectl?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/kubernetes/kubectl?style=flat)                           |
+| K9s                | Cloud & DevOps       | Terminal UI for Kubernetes. Real-time cluster monitoring.                                                                           | [derailed/k9s](https://github.com/derailed/k9s)                                       | ![Stars](https://img.shields.io/github/stars/derailed/k9s?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/derailed/k9s?style=flat)                                       |
+| AWS CLI            | Cloud & DevOps       | Official AWS command-line interface.                                                                                                | [aws/aws-cli](https://github.com/aws/aws-cli)                                         | ![Stars](https://img.shields.io/github/stars/aws/aws-cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/aws/aws-cli?style=flat)                                         |
+| gcloud CLI         | Cloud & DevOps       | Google Cloud command-line interface.                                                                                                | [googlecloudsdk/gcloud_cli](https://github.com/googlecloudsdk/gcloud_cli)             | ![Stars](https://img.shields.io/github/stars/googlecloudsdk/gcloud_cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/googlecloudsdk/gcloud_cli?style=flat)             |
+| Claude Code        | AI Coding CLIs       | Anthropic's agentic coding tool. Terminal-native AI pair programmer.                                                                | [anthropics/claude-code](https://github.com/anthropics/claude-code)                   | ![Stars](https://img.shields.io/github/stars/anthropics/claude-code?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/anthropics/claude-code?style=flat)                   |
+| Gemini CLI         | AI Coding CLIs       | Google's AI coding agent in the terminal.                                                                                           | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)               | ![Stars](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/google-gemini/gemini-cli?style=flat)               |
+| Ollama             | AI Coding CLIs       | Run LLMs locally. Llama, Mistral, Phi, Gemma, and more.                                                                             | [ollama/ollama](https://github.com/ollama/ollama)                                     | ![Stars](https://img.shields.io/github/stars/ollama/ollama?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ollama/ollama?style=flat)                                     |
+| Aider              | AI Coding CLIs       | AI pair programming in your terminal. Works with GPT-4, Claude, local models.                                                       | [paul-gauthier/aider](https://github.com/paul-gauthier/aider)                         | ![Stars](https://img.shields.io/github/stars/paul-gauthier/aider?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/paul-gauthier/aider?style=flat)                         |
+| OpenCode           | AI Coding CLIs       | Open-source AI coding agent. Multi-model support.                                                                                   | [opencode-ai/opencode](https://github.com/opencode-ai/opencode)                       | ![Stars](https://img.shields.io/github/stars/opencode-ai/opencode?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/opencode-ai/opencode?style=flat)                       |
+| Continue           | AI Coding CLIs       | Open-source AI code assistant. VS Code and JetBrains.                                                                               | [continuedev/continue](https://github.com/continuedev/continue)                       | ![Stars](https://img.shields.io/github/stars/continuedev/continue?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/continuedev/continue?style=flat)                       |
+| Cursor             | AI Coding CLIs       | AI-first code editor. Fork of VS Code with AI superpowers.                                                                          | [getcursor/cursor](https://github.com/getcursor/cursor)                               | ![Stars](https://img.shields.io/github/stars/getcursor/cursor?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/getcursor/cursor?style=flat)                               |
+| Codeium / Windsurf | AI Coding CLIs       | Free AI code completion and chat. Now Devin Desktop.                                                                                | [Exafunction/codeium.vsix](https://github.com/Exafunction/codeium.vsix)               | ![Stars](https://img.shields.io/github/stars/Exafunction/codeium.vsix?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Exafunction/codeium.vsix?style=flat)               |
+| codex-profiles     | AI Coding CLIs       | Named CODEX_HOME profiles and macOS ChatGPT windows without copying auth tokens.                                                    | [Ducksss/codex-profiles](https://github.com/Ducksss/codex-profiles)                   | ![Stars](https://img.shields.io/github/stars/Ducksss/codex-profiles?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Ducksss/codex-profiles?style=flat)                   |
+| Tree Ring Memory   | Agent Memory         | Local-first Rust CLI/TUI for AI-agent memory recall, forgetting, audit, and consolidation.                                          | [TerminallyLazy/Tree-Ring-Memory](https://github.com/TerminallyLazy/Tree-Ring-Memory) | ![Stars](https://img.shields.io/github/stars/TerminallyLazy/Tree-Ring-Memory?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/TerminallyLazy/Tree-Ring-Memory?style=flat) |
+| Biome              | Formatting & Linting | One toolchain for JS/TS/JSON/CSS. 35x faster than Prettier.                                                                         | [biomejs/biome](https://github.com/biomejs/biome)                                     | ![Stars](https://img.shields.io/github/stars/biomejs/biome?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/biomejs/biome?style=flat)                                     |
+| Ruff               | Formatting & Linting | Python linter and formatter. Replaces flake8, isort, black, and more.                                                               | [astral-sh/ruff](https://github.com/astral-sh/ruff)                                   | ![Stars](https://img.shields.io/github/stars/astral-sh/ruff?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/astral-sh/ruff?style=flat)                                   |
+| Prettier           | Formatting & Linting | Opinionated code formatter. Supports many languages.                                                                                | [prettier/prettier](https://github.com/prettier/prettier)                             | ![Stars](https://img.shields.io/github/stars/prettier/prettier?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/prettier/prettier?style=flat)                             |
+| ESLint             | Formatting & Linting | Pluggable JavaScript linter. Catch errors early.                                                                                    | [eslint/eslint](https://github.com/eslint/eslint)                                     | ![Stars](https://img.shields.io/github/stars/eslint/eslint?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/eslint/eslint?style=flat)                                     |
+| ShellCheck         | Formatting & Linting | Static analysis tool for shell scripts. Find bugs automatically.                                                                    | [koalaman/shellcheck](https://github.com/koalaman/shellcheck)                         | ![Stars](https://img.shields.io/github/stars/koalaman/shellcheck?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/koalaman/shellcheck?style=flat)                         |
+| ty (TypeScript)    | Formatting & Linting | Extremely fast TypeScript type checker written in Rust.                                                                             | [astral-sh/ty](https://github.com/astral-sh/ty)                                       | ![Stars](https://img.shields.io/github/stars/astral-sh/ty?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/astral-sh/ty?style=flat)                                       |
+| pgcli              | Database CLIs        | PostgreSQL CLI with auto-completion and syntax highlighting.                                                                        | [dbcli/pgcli](https://github.com/dbcli/pgcli)                                         | ![Stars](https://img.shields.io/github/stars/dbcli/pgcli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/dbcli/pgcli?style=flat)                                         |
+| mycli              | Database CLIs        | MySQL CLI with auto-completion and syntax highlighting.                                                                             | [dbcli/mycli](https://github.com/dbcli/mycli)                                         | ![Stars](https://img.shields.io/github/stars/dbcli/mycli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/dbcli/mycli?style=flat)                                         |
+| litecli            | Database CLIs        | SQLite CLI with auto-completion and syntax highlighting.                                                                            | [dbcli/litecli](https://github.com/dbcli/litecli)                                     | ![Stars](https://img.shields.io/github/stars/dbcli/litecli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/dbcli/litecli?style=flat)                                     |
+| usql               | Database CLIs        | Universal command-line interface for SQL databases.                                                                                 | [xo/usql](https://github.com/xo/usql)                                                 | ![Stars](https://img.shields.io/github/stars/xo/usql?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/xo/usql?style=flat)                                                 |
+| Peppermint         | Database CLIs        | Modern database client with AI-powered query assistance.                                                                            | [peppermint-tech/peppermint](https://github.com/peppermint-tech/peppermint)           | ![Stars](https://img.shields.io/github/stars/peppermint-tech/peppermint?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/peppermint-tech/peppermint?style=flat)           |
+| HTTPie             | API Testing          | User-friendly HTTP client. cURL for humans.                                                                                         | [httpie/cli](https://github.com/httpie/cli)                                           | ![Stars](https://img.shields.io/github/stars/httpie/cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/httpie/cli?style=flat)                                           |
+| Bruno              | API Testing          | Open-source API client. Git-native, offline-first Postman alternative.                                                              | [usebruno/bruno](https://github.com/usebruno/bruno)                                   | ![Stars](https://img.shields.io/github/stars/usebruno/bruno?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/usebruno/bruno?style=flat)                                   |
+| Hoppscotch         | API Testing          | Open-source API development ecosystem. Web + desktop.                                                                               | [hoppscotch/hoppscotch](https://github.com/hoppscotch/hoppscotch)                     | ![Stars](https://img.shields.io/github/stars/hoppscotch/hoppscotch?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hoppscotch/hoppscotch?style=flat)                     |
+| curl               | API Testing          | Command-line tool for transferring data with URLs.                                                                                  | [curl/curl](https://github.com/curl/curl)                                             | ![Stars](https://img.shields.io/github/stars/curl/curl?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/curl/curl?style=flat)                                             |
+| xh                 | API Testing          | Friendly and fast tool for sending HTTP requests. Written in Rust.                                                                  | [ducaale/xh](https://github.com/ducaale/xh)                                           | ![Stars](https://img.shields.io/github/stars/ducaale/xh?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ducaale/xh?style=flat)                                           |
+| btop               | Monitoring           | Resource monitor. Beautiful UI, GPU monitoring, mouse support.                                                                      | [aristocratos/btop](https://github.com/aristocratos/btop)                             | ![Stars](https://img.shields.io/github/stars/aristocratos/btop?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/aristocratos/btop?style=flat)                             |
+| Glances            | Monitoring           | System monitoring tool. Web-based and terminal.                                                                                     | [nicolargo/glances](https://github.com/nicolargo/glances)                             | ![Stars](https://img.shields.io/github/stars/nicolargo/glances?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/nicolargo/glances?style=flat)                             |
+| Netdata            | Monitoring           | Real-time performance and health monitoring.                                                                                        | [netdata/netdata](https://github.com/netdata/netdata)                                 | ![Stars](https://img.shields.io/github/stars/netdata/netdata?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/netdata/netdata?style=flat)                                 |
+| dool               | Monitoring           | Versatile resource statistics tool. vmstat/iostat/mpstat replacement.                                                               | [scottchiefbaker/dool](https://github.com/scottchiefbaker/dool)                       | ![Stars](https://img.shields.io/github/stars/scottchiefbaker/dool?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/scottchiefbaker/dool?style=flat)                       |
+| Starship           | Terminal Enhancement | Cross-shell prompt. Minimal, fast, customizable.                                                                                    | [starship/starship](https://github.com/starship/starship)                             | ![Stars](https://img.shields.io/github/stars/starship/starship?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/starship/starship?style=flat)                             |
+| tmux               | Terminal Enhancement | Terminal multiplexer. Split panes, sessions, persistent workspaces.                                                                 | [tmux/tmux](https://github.com/tmux/tmux)                                             | ![Stars](https://img.shields.io/github/stars/tmux/tmux?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/tmux/tmux?style=flat)                                             |
+| Atuin              | Terminal Enhancement | Magic shell history. Search, sync, and share command history.                                                                       | [atuinsh/atuin](https://github.com/atuinsh/atuin)                                     | ![Stars](https://img.shields.io/github/stars/atuinsh/atuin?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/atuinsh/atuin?style=flat)                                     |
+| Calliope CLI       | AI Coding CLIs       | Multi-backend AI agent CLI with ACP/fleet modes. v3.0.0 with workflow automation engine and MCP server mode.                        | [calliopeai/calliope-cli](https://github.com/calliopeai/calliope-cli)                 | ![Stars](https://img.shields.io/github/stars/calliopeai/calliope-cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/calliopeai/calliope-cli?style=flat)                 |
+| Skills MCP Server  | Agent Memory         | Self-hostable, semantically-searchable agent skills registry delivered over MCP. 30+ bundled skills, Cloudflare Workers deployment. | [jignesh-ponamwar/skills-mcp](https://github.com/jignesh-ponamwar/skills-mcp)         | ![Stars](https://img.shields.io/github/stars/jignesh-ponamwar/skills-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/jignesh-ponamwar/skills-mcp?style=flat)         |
 
 ---
 
-## Top 10 by Stars
-
-| Tool | Stars | Category |
-|------|-------|----------|
-| Ollama | 120K | AI Coding CLIs |
-| Gemini CLI | 98K | AI Coding CLIs |
-| fzf | 68K | Code Analysis |
-| ripgrep | 65K | Code Analysis |
-| Ansible | 64K | Cloud & DevOps |
-| Hoppscotch | 67K | API Testing |
-| lazygit | 55K | Git Utilities |
-| Bun | 77K | Package Managers |
-| uv | 50K | Package Managers |
-| Netdata | 72K | Monitoring |
-
----
-
-## Browse
-
-- [catalog.json](catalog.json) - Full catalog with metadata
-
-## Related
-
-- [MCP Servers](../mcps/) -- Server-based tool integrations
-- [Skills](../skills/) -- Agent instructions for using these tools
-- [Hooks](../hooks/) -- Automate tool execution with Claude Code hooks
+Machine-readable data: [catalog.json](catalog.json)

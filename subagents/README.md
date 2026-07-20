@@ -1,76 +1,54 @@
 # Subagents Catalog
 
-Reference directory linking to subagent definitions, agent harnesses, and platform-specific subagent formats.
+Specialized agent definitions with model routing
 
-This catalog is a **discovery index** — it catalogs specialized agent configurations that get delegated to within larger agent systems. It is not an implementation; it points to where things live.
+**32** entries across **5** categories.
 
-## What's in the catalog
+## Categories
 
-- **Subagent Collection** — 8 GitHub repos containing 100+ subagent definitions each (code-reviewer, debugger, test-writer, planner, etc.)
-- **Agent Harness** — 4 tools that manage subagent delegation, parallel execution, and result aggregation
-- **Official SDK** — 4 SDKs with native subagent delegation support (Anthropic, OpenAI, Google, Microsoft)
-- **Platform Format** — 4 platform-specific subagent definition formats (Claude Code, Codex, Gemini CLI, OpenCode)
-- **Curated Directory** — 3 awesome lists indexing subagent resources across the ecosystem
+- **Subagent Collection** (16)
+- **Agent Harness** (5)
+- **Official SDK** (4)
+- **Platform Format** (4)
+- **Curated Directory** (3)
 
-## How to use
+## All 32 subagents
 
-```bash
-# List all categories and counts
-cat catalog.json | jq '.categories'
+| Name                               | Category            | Description                                                                                                                                                                            | Source | Badges |
+| ---------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
+| awesome-claude-code-subagents      | Subagent Collection | Curated list of 154+ Claude Code subagent definitions including code-reviewer, debugger, test-writer, planner, and more. VoltAgent's definitive collection of reusable agent personas. |        |        |
+| awesome-codex-subagents            | Subagent Collection | Curated collection of 171+ OpenAI Codex CLI subagent definitions in TOML format. Covers code review, testing, documentation, architecture, and deployment roles.                       |        |        |
+| cc-sdd                             | Subagent Collection | Claude Code subagent definitions for software design and development workflows. 17 role-specific skills for multi-agent development pipelines.                                         |        |        |
+| buildwithclaude                    | Subagent Collection | 117+ Claude Code agents and automation templates for building production applications. Includes code-reviewer, test-writer, deployer, and documentation subagents.                     |        |        |
+| claude-code-subagents              | Subagent Collection | 100+ subagent definitions for Claude Code covering code review, debugging, testing, refactoring, and documentation workflows.                                                          |        |        |
+| Claude-Code-Subagents-Collection   | Subagent Collection | Open-source collection of reusable Claude Code subagent definitions for common development tasks. Starter pack for agent-driven workflows.                                             |        |        |
+| fastagent-plugins                  | Subagent Collection | Plugin collection with pre-configured subagent roles and tool integrations for multi-agent frameworks. Includes reviewer, tester, and deployer roles.                                  |        |        |
+| awesome-gemini-cli-subagents       | Subagent Collection | Curated list of Gemini CLI subagent configurations and custom agent prompts for coding assistance. Includes code-reviewer, test-writer, and documentation agents.                      |        |        |
+| oh-my-openagent                    | Agent Harness       | Agent harness with async subagent orchestration. Manages subagent delegation, parallel execution, and result aggregation across multiple agent personas.                               |        |        |
+| oh-my-opencode                     | Agent Harness       | Now absorbed into oh-my-openagent (64.8K stars). Originally an OpenCode agent harness with subagent management, now part of the unified OMO platform.                                  |        |        |
+| oh-my-codex                        | Agent Harness       | Codex orchestration harness with 33 agent prompts. Manages subagent lifecycle, handoffs, and coordinated task execution for Codex CLI.                                                 |        |        |
+| awesome-claude-code                | Curated Directory   | Ecosystem directory indexing 47K+ stars of Claude Code resources including subagent collections, skills, MCP servers, and community extensions.                                        |        |        |
+| Claude Agent SDK                   | Official SDK        | Official Anthropic SDK for building agentic applications with Claude. Supports tool delegation, multi-turn conversations, and structured subagent outputs.                             |        |        |
+| OpenAI Agents SDK                  | Official SDK        | OpenAI's production-ready framework for building multi-agent systems with handoffs, guardrails, and tracing. Supports subagent delegation patterns.                                    |        |        |
+| Google ADK                         | Official SDK        | Google's Agent Development Kit with sub-agent orchestration support. Build, deploy, and manage hierarchical agent systems with Gemini models.                                          |        |        |
+| Microsoft Agent Framework          | Official SDK        | Microsoft's comprehensive framework for building autonomous AI agents with multi-agent patterns, Azure integration, and .NET/Python support.                                           |        |        |
+| Claude Code Subagent Format        | Platform Format     | Claude Code subagents are defined as Markdown files with YAML frontmatter placed in .claude/agents/ directory. Each file becomes a callable agent persona.                             |        |        |
+| Codex CLI Subagent Format          | Platform Format     | Codex CLI subagents use TOML configuration files placed in .codex/agents/ directory. Each TOML file defines agent name, prompt, tools, and behavior.                                   |        |        |
+| Gemini CLI Subagent Format         | Platform Format     | Gemini CLI subagents use Markdown with YAML frontmatter placed in .gemini/agents/ directory. Similar to Claude Code's agent format.                                                    |        |        |
+| OpenCode Subagent Format           | Platform Format     | OpenCode subagents use Markdown with YAML frontmatter placed in .opencode/agents/ directory. Supports custom tools, prompts, and agent delegation.                                     |        |        |
+| Curated Subagent Repositories      | Curated Directory   | Index of GitHub repositories containing subagent definitions across Claude Code, Codex, and Gemini CLI platforms.                                                                      |        |        |
+| Platform Subagent Formats Overview | Curated Directory   | Cross-platform reference for subagent definition formats across Claude Code, Codex CLI, Gemini CLI, and OpenCode.                                                                      |        |        |
+| Claude Ops Inspector               | Subagent Collection | First subagent verification/safety tool with proof-carrying code. Validates subagent outputs and ensures trustworthiness before execution. 151 stars in 6 days.                        |        |        |
+| awesome-opencode-skills            | Subagent Collection | 136+ Codex subagents ported to OpenCode skill format. Demonstrates cross-platform subagent portability trend.                                                                          |        |        |
+| GioLabs Conclave                   | Subagent Collection | Scrum team roles as subagents. Defines PM, Tech Lead, QA, and Developer agent personas with team-based orchestration patterns.                                                         |        |        |
+| chusri/claude-code-agents          | Subagent Collection | Claude Code agent definitions collection for various development workflows                                                                                                             |        |        |
+| jbeck018/agents-opencode           | Subagent Collection | OpenCode agent definitions for multi-agent development workflows                                                                                                                       |        |        |
+| kexinjinnn/opencode-subagents      | Subagent Collection | OpenCode subagent definitions for AI-assisted development                                                                                                                              |        |        |
+| gtheys/opencode                    | Subagent Collection | OpenCode agent collection with specialized subagent personas                                                                                                                           |        |        |
+| simota/agent-skills                | Subagent Collection | 124-145 specialist agent definitions covering multiple development domains. Cross-platform compatible.                                                                                 |        |        |
+| ogulcancelik/herdr                 | Agent Harness       | AI agent multiplexer for terminal. Spawn, manage, and orchestrate multiple AI agents from CLI. Terminal-native multi-agent orchestration.                                              |        |        |
+| opensquad                          | Agent Harness       | Multi-agent orchestration framework via npm. Coordinate multiple AI agents in a single workflow. npm-first approach for easy Node.js integration.                                      |        |        |
 
-# Find subagent collections with most stars
-cat catalog.json | jq '[.subagents[] | select(.category == "Subagent Collection")] | sort_by(-.stars) | .[].name'
+---
 
-# Get all GitHub URLs for a category
-cat catalog.json | jq -r '.subagents[] | select(.category == "Agent Harness") | .githubUrl'
-
-# Search by name or description
-cat catalog.json | jq '.subagents[] | select(.name | test("review"; "i"))'
-
-# List all platform formats
-cat catalog.json | jq '.subagents[] | select(.category == "Platform Format") | {id, name, tags}'
-```
-
-## Data format
-
-Each entry contains:
-
-| Field | Description |
-|-------|-------------|
-| `id` | Kebab-case identifier |
-| `name` | Display name |
-| `category` | One of the 5 categories |
-| `stars` | GitHub stars (if available) |
-| `description` | 1-2 sentence summary |
-| `githubUrl` | Repository URL (if available) |
-| `websiteUrl` | Project website (if available) |
-| `license` | License type |
-| `language` | Primary language (if applicable) |
-| `tags` | Searchable keyword tags |
-
-## What are subagents?
-
-Subagents are **specialized agent configurations** that get delegated to within larger agent systems. They are not standalone applications — they are persona definitions, prompts, or configurations that a parent agent loads and delegates tasks to.
-
-Examples: code-reviewer subagent, debugger subagent, test-writer subagent, planner subagent, deployer subagent, documentation subagent.
-
-## Platform formats
-
-| Platform | Format | Location |
-|----------|--------|----------|
-| Claude Code | Markdown + YAML frontmatter | `.claude/agents/` |
-| Codex CLI | TOML files | `.codex/agents/` |
-| Gemini CLI | Markdown + YAML frontmatter | `.gemini/agents/` |
-| OpenCode | Markdown + YAML frontmatter | `.opencode/agents/` |
-
-## Related catalogs
-
-- [skills/catalog.json](../skills/catalog.json) — Reusable AI agent skills
-- [mcps/catalog.json](../mcps/catalog.json) — Model Context Protocol servers
-- [loops/catalog.json](../loops/catalog.json) — Repeatable agent workflows
-
-## Related
-
-- [Loops](../loops/) -- Workflow patterns that coordinate subagents
-- [Plugins](../plugins/) -- Platform support for multi-agent setups
-- [Skills](../skills/) -- Capabilities for individual subagents
+Machine-readable data: [catalog.json](catalog.json)

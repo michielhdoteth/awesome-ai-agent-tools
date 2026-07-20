@@ -6,33 +6,133 @@
   "lastUpdated": "2026-07-13",
   "totalLoops": 115,
   "categories": [
-    { "name": "engineering", "count": 58 },
-    { "name": "evaluation", "count": 14 },
-    { "name": "operations", "count": 6 },
-    { "name": "content", "count": 3 },
-    { "name": "design", "count": 6 },
-    { "name": "meta", "count": 11 },
-    { "name": "multi-agent", "count": 17 }
+    {
+      "name": "engineering",
+      "count": 58
+    },
+    {
+      "name": "evaluation",
+      "count": 14
+    },
+    {
+      "name": "operations",
+      "count": 6
+    },
+    {
+      "name": "content",
+      "count": 3
+    },
+    {
+      "name": "design",
+      "count": 6
+    },
+    {
+      "name": "meta",
+      "count": 11
+    },
+    {
+      "name": "multi-agent",
+      "count": 17
+    }
   ],
   "sources": [
-    { "name": "Forward-Future/loop-library", "url": "https://github.com/Forward-Future/loop-library", "stars": 650, "loopCount": 55 },
-    { "name": "cobusgreyling/loop-engineering", "url": "https://github.com/cobusgreyling/loop-engineering", "stars": 500, "loopCount": 7 },
-    { "name": "rohanbalkondekar/agent-loop-patterns", "url": "https://github.com/rohanbalkondekar/agent-loop-patterns", "loopCount": 5 },
-    { "name": "bradtaylorsf/alpha-loop", "url": "https://github.com/bradtaylorsf/alpha-loop", "loopCount": 1 },
-    { "name": "iKon85/agent-workflow-kit", "url": "https://github.com/iKon85/agent-workflow-kit", "loopCount": 1 },
-    { "name": "githubnext/autoloop", "url": "https://github.com/githubnext/autoloop", "loopCount": 1 },
-    { "name": "anshulixyz/multi-agent-loop-kit", "url": "https://github.com/anshulixyz/multi-agent-loop-kit", "loopCount": 1 },
-    { "name": "0xagentkitchen/kitchenloop", "url": "https://github.com/0xagentkitchen/kitchenloop", "loopCount": 1 },
-    { "name": "Community (Reddit/HN/Blogs)", "url": "https://www.reddit.com/r/ClaudeAI/", "loopCount": 7 },
-    { "name": "snarktank/ralph", "url": "https://github.com/snarktank/ralph", "stars": 2100, "loopCount": 1 },
-    { "name": "openai/symphony", "url": "https://github.com/openai/symphony", "stars": 26000, "loopCount": 1 },
-    { "name": "github/gh-aw", "url": "https://github.com/github/gh-aw", "stars": 500, "loopCount": 1 },
-    { "name": "zevtos/agentpipe", "url": "https://github.com/zevtos/agentpipe", "stars": 50, "loopCount": 1 },
-    { "name": "kayoslab/karl", "url": "https://github.com/kayoslab/karl", "stars": 50, "loopCount": 1 },
-    { "name": "a7t-ai/three-body-agent", "url": "https://github.com/a7t-ai/three-body-agent", "loopCount": 1 },
-    { "name": "DataScienceDojo loop patterns", "url": "https://www.datascience-dojo.com/blog/loop-engineering-patterns", "loopCount": 10 },
-    { "name": "Digital Applied multi-agent patterns", "url": "https://digitalapplied.com/blog/multi-agent-orchestration-patterns", "loopCount": 5 },
-    { "name": "Verdent agentic engineering patterns", "url": "https://verdent.io/blog/agentic-engineering-patterns", "loopCount": 4 }
+    {
+      "name": "Forward-Future/loop-library",
+      "url": "https://github.com/Forward-Future/loop-library",
+      "stars": 650,
+      "loopCount": 55
+    },
+    {
+      "name": "cobusgreyling/loop-engineering",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "stars": 500,
+      "loopCount": 7
+    },
+    {
+      "name": "rohanbalkondekar/agent-loop-patterns",
+      "url": "https://github.com/rohanbalkondekar/agent-loop-patterns",
+      "loopCount": 5
+    },
+    {
+      "name": "bradtaylorsf/alpha-loop",
+      "url": "https://github.com/bradtaylorsf/alpha-loop",
+      "loopCount": 1
+    },
+    {
+      "name": "iKon85/agent-workflow-kit",
+      "url": "https://github.com/iKon85/agent-workflow-kit",
+      "loopCount": 1
+    },
+    {
+      "name": "githubnext/autoloop",
+      "url": "https://github.com/githubnext/autoloop",
+      "loopCount": 1
+    },
+    {
+      "name": "anshulixyz/multi-agent-loop-kit",
+      "url": "https://github.com/anshulixyz/multi-agent-loop-kit",
+      "loopCount": 1
+    },
+    {
+      "name": "0xagentkitchen/kitchenloop",
+      "url": "https://github.com/0xagentkitchen/kitchenloop",
+      "loopCount": 1
+    },
+    {
+      "name": "Community (Reddit/HN/Blogs)",
+      "url": "https://www.reddit.com/r/ClaudeAI/",
+      "loopCount": 7
+    },
+    {
+      "name": "snarktank/ralph",
+      "url": "https://github.com/snarktank/ralph",
+      "stars": 2100,
+      "loopCount": 1
+    },
+    {
+      "name": "openai/symphony",
+      "url": "https://github.com/openai/symphony",
+      "stars": 26000,
+      "loopCount": 1
+    },
+    {
+      "name": "github/gh-aw",
+      "url": "https://github.com/github/gh-aw",
+      "stars": 500,
+      "loopCount": 1
+    },
+    {
+      "name": "zevtos/agentpipe",
+      "url": "https://github.com/zevtos/agentpipe",
+      "stars": 50,
+      "loopCount": 1
+    },
+    {
+      "name": "kayoslab/karl",
+      "url": "https://github.com/kayoslab/karl",
+      "stars": 50,
+      "loopCount": 1
+    },
+    {
+      "name": "a7t-ai/three-body-agent",
+      "url": "https://github.com/a7t-ai/three-body-agent",
+      "loopCount": 1
+    },
+    {
+      "name": "DataScienceDojo loop patterns",
+      "url": "https://www.datascience-dojo.com/blog/loop-engineering-patterns",
+      "loopCount": 10
+    },
+    {
+      "name": "Digital Applied multi-agent patterns",
+      "url": "https://digitalapplied.com/blog/multi-agent-orchestration-patterns",
+      "loopCount": 5
+    },
+    {
+      "name": "Verdent agentic engineering patterns",
+      "url": "https://verdent.io/blog/agentic-engineering-patterns",
+      "loopCount": 4
+    }
   ],
   "loops": [
     {
@@ -45,8 +145,15 @@
       "description": "Keeps documentation aligned with the current codebase",
       "prompt": "Whenever a documentation pass is needed, review the codebase in full and make sure all documentation reflects the current implementation. Update stale documentation, verify the changes, then open a pull request.",
       "verification": "Documentation matches the current implementation. Finish with a reviewable pull request.",
-      "tags": ["documentation", "pull-request", "maintenance"],
-      "related": ["production-error-sweep", "architecture-satisfaction-loop"]
+      "tags": [
+        "documentation",
+        "pull-request",
+        "maintenance"
+      ],
+      "related": [
+        "production-error-sweep",
+        "architecture-satisfaction-loop"
+      ]
     },
     {
       "id": "architecture-satisfaction-loop",
@@ -58,8 +165,16 @@
       "description": "Iterative refactoring with verification until architecture meets quality bar",
       "prompt": "Refactor until you are happy with the architecture. After each significant step, live-test the system, run autoreview, and commit. Track progress in /tmp/refactor-{projectname}.md.",
       "verification": "The architecture is satisfactory and checks pass. Live-test, autoreview, and commit each significant step.",
-      "tags": ["refactoring", "architecture", "verification", "iterative"],
-      "related": ["overnight-docs-sweep", "sub-50ms-page-load-loop"]
+      "tags": [
+        "refactoring",
+        "architecture",
+        "verification",
+        "iterative"
+      ],
+      "related": [
+        "overnight-docs-sweep",
+        "sub-50ms-page-load-loop"
+      ]
     },
     {
       "id": "sub-50ms-page-load-loop",
@@ -71,8 +186,16 @@
       "description": "Optimizes page load performance until every page loads under 50ms",
       "prompt": "Continue optimizing the code for speed. After each significant change, measure page-load performance across every page under the same repeatable test conditions. Continue until every page loads in under 50 ms.",
       "verification": "Every page loads in under 50 ms. Use the same benchmark and confirm there are no regressions.",
-      "tags": ["performance", "optimization", "benchmarks", "speed"],
-      "related": ["architecture-satisfaction-loop", "production-error-sweep"]
+      "tags": [
+        "performance",
+        "optimization",
+        "benchmarks",
+        "speed"
+      ],
+      "related": [
+        "architecture-satisfaction-loop",
+        "production-error-sweep"
+      ]
     },
     {
       "id": "production-error-sweep",
@@ -84,8 +207,16 @@
       "description": "Reviews production logs, fixes actionable errors, and opens PRs",
       "prompt": "Review our production logs for errors. If you find an actionable issue, trace it to its root cause, fix it, verify the fix, and open a pull request. If no actionable errors are present, stop without making changes.",
       "verification": "Actionable production errors are fixed and verified. Finish with a pull request, or stop when no actionable errors are present.",
-      "tags": ["errors", "production", "debugging", "pull-request"],
-      "related": ["overnight-docs-sweep", "sub-50ms-page-load-loop"]
+      "tags": [
+        "errors",
+        "production",
+        "debugging",
+        "pull-request"
+      ],
+      "related": [
+        "overnight-docs-sweep",
+        "sub-50ms-page-load-loop"
+      ]
     },
     {
       "id": "100-percent-test-coverage-loop",
@@ -97,8 +228,16 @@
       "description": "Adds tests until 100% coverage is achieved",
       "prompt": "Add tests until we have 100% test coverage.",
       "verification": "The full test suite passes at 100% coverage. Use the project's coverage report as the source of truth.",
-      "tags": ["testing", "coverage", "quality", "comprehensive"],
-      "related": ["architecture-satisfaction-loop", "production-error-sweep"]
+      "tags": [
+        "testing",
+        "coverage",
+        "quality",
+        "comprehensive"
+      ],
+      "related": [
+        "architecture-satisfaction-loop",
+        "production-error-sweep"
+      ]
     },
     {
       "id": "exhaustive-logging-coverage-loop",
@@ -110,8 +249,16 @@
       "description": "Ensures every important path produces useful, tested logs",
       "prompt": "Review the system's logging and add missing coverage until every important path produces useful, tested logs.",
       "verification": "Every important path emits useful, tested logs. Representative success and failure tests prove coverage without exposing sensitive data.",
-      "tags": ["logging", "observability", "testing", "coverage"],
-      "related": ["production-error-sweep", "100-percent-test-coverage-loop"]
+      "tags": [
+        "logging",
+        "observability",
+        "testing",
+        "coverage"
+      ],
+      "related": [
+        "production-error-sweep",
+        "100-percent-test-coverage-loop"
+      ]
     },
     {
       "id": "nightly-changelog-sweep",
@@ -123,8 +270,16 @@
       "description": "Updates changelog with user-relevant changes from previous day",
       "prompt": "Each night, review changes from the previous day and update the changelog with anything users should know.",
       "verification": "Every user-relevant change from the previous day is accounted for. The changelog is updated and validated, or the no-change result is recorded.",
-      "tags": ["changelog", "documentation", "daily", "release-notes"],
-      "related": ["overnight-docs-sweep", "repository-cleanup-loop"]
+      "tags": [
+        "changelog",
+        "documentation",
+        "daily",
+        "release-notes"
+      ],
+      "related": [
+        "overnight-docs-sweep",
+        "repository-cleanup-loop"
+      ]
     },
     {
       "id": "test-suite-speed-loop",
@@ -136,8 +291,16 @@
       "description": "Optimizes test suite speed without reducing coverage",
       "prompt": "Optimize the test suite to run as quickly as possible without reducing coverage or changing behavior.",
       "verification": "The suite is faster with no coverage or behavior regression. Repeatable timing, the full passing suite, and the original coverage report prove the result.",
-      "tags": ["testing", "performance", "speed", "optimization"],
-      "related": ["100-percent-test-coverage-loop", "sub-50ms-page-load-loop"]
+      "tags": [
+        "testing",
+        "performance",
+        "speed",
+        "optimization"
+      ],
+      "related": [
+        "100-percent-test-coverage-loop",
+        "sub-50ms-page-load-loop"
+      ]
     },
     {
       "id": "repository-cleanup-loop",
@@ -149,8 +312,16 @@
       "description": "Cleans stale branches, PRs, and worktrees while recovering valuable work",
       "prompt": "Inspect local and remote branches, pull requests, commits, and worktrees. Recover valuable work and clean everything stale until the repository is current and organized.",
       "verification": "Valuable work is recovered and remaining repository state is intentional. Branches, pull requests, commits, and worktrees are current, owned, or safely removed with evidence.",
-      "tags": ["git", "cleanup", "maintenance", "organization"],
-      "related": ["stale-safe-batch-release-loop", "nightly-changelog-sweep"]
+      "tags": [
+        "git",
+        "cleanup",
+        "maintenance",
+        "organization"
+      ],
+      "related": [
+        "stale-safe-batch-release-loop",
+        "nightly-changelog-sweep"
+      ]
     },
     {
       "id": "ticket-to-pr-ready-loop",
@@ -162,8 +333,16 @@
       "description": "Turns tickets/bugs into review-ready patches with root cause analysis",
       "prompt": "Take a ticket, bug report, failing behavior, or customer complaint and turn it into a review-ready patch. Reproduce the failure in the smallest representative environment, prove the root cause, make the smallest credible fix, and rerun the original reproduction plus relevant regression tests.",
       "verification": "The failure is fixed, verified, and ready for review. The issue reproduces before the fix, no longer reproduces afterward, and relevant regression checks pass.",
-      "tags": ["tickets", "bug-fix", "pull-request", "root-cause"],
-      "related": ["production-error-sweep", "quality-streak-loop"]
+      "tags": [
+        "tickets",
+        "bug-fix",
+        "pull-request",
+        "root-cause"
+      ],
+      "related": [
+        "production-error-sweep",
+        "quality-streak-loop"
+      ]
     },
     {
       "id": "clodex-adversarial-review-loop",
@@ -175,8 +354,16 @@
       "description": "Separates builder from reviewer with bounded repair loop",
       "prompt": "Run /clodex [task] think hard --max-iter 5 --threshold medium. Claude plans the task, implements it, opens a pull request, asks Codex for an adversarial review, fixes findings above the accepted severity, and repeats.",
       "verification": "The pull request reaches the configured review bar. Codex approves it or only explicitly accepted findings remain.",
-      "tags": ["adversarial", "review", "codex", "quality"],
-      "related": ["architecture-satisfaction-loop", "stale-safe-batch-release-loop"]
+      "tags": [
+        "adversarial",
+        "review",
+        "codex",
+        "quality"
+      ],
+      "related": [
+        "architecture-satisfaction-loop",
+        "stale-safe-batch-release-loop"
+      ]
     },
     {
       "id": "loop-harness-verification-loop",
@@ -188,8 +375,16 @@
       "description": "Two-agent verification for scheduled repository work",
       "prompt": "Use Loop Harness for scheduled repository work such as CI triage, issue grooming, dependency updates, or docs sync. Set [retry limit], then start an isolated git worktree. Let one Claude session stage a patch and a second Claude session verify it.",
       "verification": "Only independently verified output ships. A second-agent pass releases the configured output.",
-      "tags": ["verification", "two-agent", "scheduled", "ci"],
-      "related": ["clodex-adversarial-review-loop", "overnight-docs-sweep"]
+      "tags": [
+        "verification",
+        "two-agent",
+        "scheduled",
+        "ci"
+      ],
+      "related": [
+        "clodex-adversarial-review-loop",
+        "overnight-docs-sweep"
+      ]
     },
     {
       "id": "fresh-clone-loop",
@@ -201,8 +396,16 @@
       "description": "Tests README documentation by cloning fresh and following only docs",
       "prompt": "Clone [repository] into a disposable environment and follow only its README to the documented ready state. When a step fails or assumes missing knowledge, record the gap, fix the setup or documentation issue, discard the environment, and start again.",
       "verification": "A clean environment reaches the documented ready state using only the README.",
-      "tags": ["documentation", "testing", "fresh-clone", "onboarding"],
-      "related": ["overnight-docs-sweep", "repository-cleanup-loop"]
+      "tags": [
+        "documentation",
+        "testing",
+        "fresh-clone",
+        "onboarding"
+      ],
+      "related": [
+        "overnight-docs-sweep",
+        "repository-cleanup-loop"
+      ]
     },
     {
       "id": "autonomy-loop",
@@ -214,8 +417,16 @@
       "description": "Builder-reviewer separation with revert-or-mutate proof",
       "prompt": "Use autonomy-loop for [repository task] after the test, build, and lint gates pass. Run /autonomy-loop:autonomy-init, then start builder and reviewer in separate worktrees.",
       "verification": "Every accepted wave passes autonomy-loop's proof-of-test gate. New test fails without change, passes with it.",
-      "tags": ["autonomy", "builder-reviewer", "proof", "gates"],
-      "related": ["clodex-adversarial-review-loop", "loop-harness-verification-loop"]
+      "tags": [
+        "autonomy",
+        "builder-reviewer",
+        "proof",
+        "gates"
+      ],
+      "related": [
+        "clodex-adversarial-review-loop",
+        "loop-harness-verification-loop"
+      ]
     },
     {
       "id": "codex-completion-contract-loop",
@@ -227,8 +438,16 @@
       "description": "Defines completion contracts with evidence tracking for long-running tasks",
       "prompt": "Run $goal-planner-codex [task] for long-running Codex work where partial work could be mistaken for done. Before acting, define every required outcome and its evidence.",
       "verification": "Every Codex Goal requirement has current, adequate proof. No weak, missing, or contradicted required item.",
-      "tags": ["completion", "contract", "evidence", "long-running"],
-      "related": ["ticket-to-pr-ready-loop", "quality-streak-loop"]
+      "tags": [
+        "completion",
+        "contract",
+        "evidence",
+        "long-running"
+      ],
+      "related": [
+        "ticket-to-pr-ready-loop",
+        "quality-streak-loop"
+      ]
     },
     {
       "id": "five-minute-repository-maintainer-loop",
@@ -240,8 +459,16 @@
       "description": "Periodic repository maintenance with 5-minute heartbeat",
       "prompt": "While repository maintenance is active, wake every five minutes. Triage [repositories] and read each repository thread's latest state.",
       "verification": "Every repository item reaches a proven handoff or terminal state. Authorized autonomous work lands with evidence.",
-      "tags": ["maintenance", "periodic", "heartbeat", "triage"],
-      "related": ["ticket-to-pr-ready-loop", "stale-safe-batch-release-loop"]
+      "tags": [
+        "maintenance",
+        "periodic",
+        "heartbeat",
+        "triage"
+      ],
+      "related": [
+        "ticket-to-pr-ready-loop",
+        "stale-safe-batch-release-loop"
+      ]
     },
     {
       "id": "recent-feedback-sweep",
@@ -253,8 +480,16 @@
       "description": "Processes reported issues, fixes confirmed instances, adds regression coverage",
       "prompt": "Review all available threads from [lookback window] where I reported something wrong with [project] and asked for a fix. Build a deduplicated issue list, group it into failure patterns, and verify current state.",
       "verification": "The issue inventory is closed and a fresh pattern audit is clean. Every reported issue has current proof of resolution.",
-      "tags": ["feedback", "issues", "regression", "patterns"],
-      "related": ["full-product-evaluation-loop", "quality-streak-loop"]
+      "tags": [
+        "feedback",
+        "issues",
+        "regression",
+        "patterns"
+      ],
+      "related": [
+        "full-product-evaluation-loop",
+        "quality-streak-loop"
+      ]
     },
     {
       "id": "propagation-compliance-loop",
@@ -266,8 +501,16 @@
       "description": "Ensures value changes propagate everywhere without leaving stale copies",
       "prompt": "After changing a version, count, rule, name, or configuration, list where the new value belongs and update it. Search the project for the old value and related forms.",
       "verification": "No unintended copy of the old value remains. Only references that are intentionally historical or required remain.",
-      "tags": ["propagation", "consistency", "configuration", "compliance"],
-      "related": ["overnight-docs-sweep", "recent-feedback-sweep"]
+      "tags": [
+        "propagation",
+        "consistency",
+        "configuration",
+        "compliance"
+      ],
+      "related": [
+        "overnight-docs-sweep",
+        "recent-feedback-sweep"
+      ]
     },
     {
       "id": "goal-forge-loop",
@@ -279,8 +522,16 @@
       "description": "Turns rough coding ideas into planning files before implementation",
       "prompt": "Turn [rough coding idea] into two planning files before Codex starts /goal, its long-running task mode. Interview the user, then write SPEC.md and GOAL.md.",
       "verification": "The planning files say what to build, how to judge it, and when to stop. Every done_when completion check names observable evidence.",
-      "tags": ["planning", "specification", "goals", "interview"],
-      "related": ["codex-completion-contract-loop", "ticket-to-pr-ready-loop"]
+      "tags": [
+        "planning",
+        "specification",
+        "goals",
+        "interview"
+      ],
+      "related": [
+        "codex-completion-contract-loop",
+        "ticket-to-pr-ready-loop"
+      ]
     },
     {
       "id": "cold-load-trimmer-loop",
@@ -292,8 +543,16 @@
       "description": "Reduces initial page load data while preserving pixel-perfect appearance",
       "prompt": "Reduce the data [web app] downloads before its first screen appears. First record passing tests, mobile and desktop screenshots, and compressed transferred bytes.",
       "verification": "The first screen downloads less data without a tested behavior or pixel changing.",
-      "tags": ["performance", "optimization", "loading", "bytes"],
-      "related": ["sub-50ms-page-load-loop", "pixel-safe-css-trim-loop"]
+      "tags": [
+        "performance",
+        "optimization",
+        "loading",
+        "bytes"
+      ],
+      "related": [
+        "sub-50ms-page-load-loop",
+        "pixel-safe-css-trim-loop"
+      ]
     },
     {
       "id": "housekeeper-loop",
@@ -305,8 +564,16 @@
       "description": "Identifies and removes dead code, stale files, and unused dependencies",
       "prompt": "Review [repository or code project] for dead code, meaning unreachable or unused code; stale files or comments; unused dependencies; duplication; broken links; old comments; inconsistent names; and confusing structure.",
       "verification": "No confirmed low-risk cleanup remains, and existing behavior still passes. Every retained cleanup is supported by direct evidence.",
-      "tags": ["cleanup", "dead-code", "maintenance", "quality"],
-      "related": ["repository-cleanup-loop", "overnight-docs-sweep"]
+      "tags": [
+        "cleanup",
+        "dead-code",
+        "maintenance",
+        "quality"
+      ],
+      "related": [
+        "repository-cleanup-loop",
+        "overnight-docs-sweep"
+      ]
     },
     {
       "id": "prepare-new-project-loop",
@@ -318,8 +585,16 @@
       "description": "Ensures project documents are complete and unambiguous before implementation",
       "prompt": "Prepare [project] for implementation. Ensure its documents cover requirements, technical design, tasks with acceptance criteria, and test strategy.",
       "verification": "Two independent reviewers derive substantially the same build from the project documents.",
-      "tags": ["project-setup", "requirements", "documentation", "planning"],
-      "related": ["goal-forge-loop", "multi-llm-convergence-loop"]
+      "tags": [
+        "project-setup",
+        "requirements",
+        "documentation",
+        "planning"
+      ],
+      "related": [
+        "goal-forge-loop",
+        "multi-llm-convergence-loop"
+      ]
     },
     {
       "id": "test-stabilizer-loop",
@@ -331,8 +606,16 @@
       "description": "Fixes flaky tests by running repeatedly and fixing root causes",
       "prompt": "Run [test suite] [N] times under the same conditions and list tests whose result changes. Fix the most frequent flake at its root cause.",
       "verification": "The full test suite passes for the required consecutive-run streak. No blind sleep or retry hides an unresolved cause.",
-      "tags": ["testing", "flaky", "stability", "root-cause"],
-      "related": ["quality-streak-loop", "test-suite-speed-loop"]
+      "tags": [
+        "testing",
+        "flaky",
+        "stability",
+        "root-cause"
+      ],
+      "related": [
+        "quality-streak-loop",
+        "test-suite-speed-loop"
+      ]
     },
     {
       "id": "groundtruth-audit-loop",
@@ -344,8 +627,16 @@
       "description": "Audits project from actual code and configuration, not framework assumptions",
       "prompt": "Audit [project] from its actual code and configuration, not framework assumptions. For architecture, platform compatibility, security, privileged areas, performance, deployment, jobs, business logic, and code quality.",
       "verification": "Every audit area has a current evidence-backed outcome and severity. No silent gaps.",
-      "tags": ["audit", "security", "architecture", "evidence"],
-      "related": ["full-product-evaluation-loop", "promise-to-proof-loop"]
+      "tags": [
+        "audit",
+        "security",
+        "architecture",
+        "evidence"
+      ],
+      "related": [
+        "full-product-evaluation-loop",
+        "promise-to-proof-loop"
+      ]
     },
     {
       "id": "quality-streak-loop",
@@ -357,8 +648,16 @@
       "description": "Tests realistic scenarios and requires N consecutive passes",
       "prompt": "Test realistic scenarios. When one fails, document it, add regression and benchmark coverage, fix it, and restart the streak. Stop after [N] successful cases in a row.",
       "verification": "The latest [N] realistic cases pass in a row. Every earlier failure is documented, fixed, and protected.",
-      "tags": ["quality", "testing", "streak", "regression"],
-      "related": ["full-product-evaluation-loop", "100-percent-test-coverage-loop"]
+      "tags": [
+        "quality",
+        "testing",
+        "streak",
+        "regression"
+      ],
+      "related": [
+        "full-product-evaluation-loop",
+        "100-percent-test-coverage-loop"
+      ]
     },
     {
       "id": "full-product-evaluation-loop",
@@ -370,8 +669,16 @@
       "description": "Evaluates every major capability against defined quality bar",
       "prompt": "Create [N] realistic scenarios covering every major capability. Before testing, define clear success criteria and choose a consistent evaluation method.",
       "verification": "Every one of the [N] scenarios meets the defined quality bar.",
-      "tags": ["evaluation", "quality", "scenarios", "comprehensive"],
-      "related": ["quality-streak-loop", "production-data-cleanup-loop"]
+      "tags": [
+        "evaluation",
+        "quality",
+        "scenarios",
+        "comprehensive"
+      ],
+      "related": [
+        "quality-streak-loop",
+        "production-data-cleanup-loop"
+      ]
     },
     {
       "id": "self-improving-champion-loop",
@@ -383,8 +690,16 @@
       "description": "Iteratively improves prompts/configs with holdout-tested champion selection",
       "prompt": "Improve a prompt, policy, or configuration. A support assistant's system prompt is one example. Save the champion, its score, a working set, untouched holdout cases, must-pass checks, and [budget].",
       "verification": "The best holdout-tested champion is returned. Every challenger is logged.",
-      "tags": ["improvement", "prompt", "optimization", "holdout"],
-      "related": ["full-product-evaluation-loop", "quality-streak-loop"]
+      "tags": [
+        "improvement",
+        "prompt",
+        "optimization",
+        "holdout"
+      ],
+      "related": [
+        "full-product-evaluation-loop",
+        "quality-streak-loop"
+      ]
     },
     {
       "id": "devils-advocate-design-loop",
@@ -396,8 +711,16 @@
       "description": "Separates critic and builder roles for adversarial design review",
       "prompt": "Before committing to an architecture, interface, or rollout plan, have a critic argue that it is wrong. Record each objection, impact, and status in a repository-local log at .agent-reviews/redteam.md.",
       "verification": "No high-impact objection remains open. Every logged objection is verified as resolved or explicitly accepted with evidence.",
-      "tags": ["adversarial", "design", "review", "criticism"],
-      "related": ["architecture-satisfaction-loop", "clodex-adversarial-review-loop"]
+      "tags": [
+        "adversarial",
+        "design",
+        "review",
+        "criticism"
+      ],
+      "related": [
+        "architecture-satisfaction-loop",
+        "clodex-adversarial-review-loop"
+      ]
     },
     {
       "id": "revolve-self-improvement-loop",
@@ -409,8 +732,16 @@
       "description": "Versioned experiment loop for improving testable subjects",
       "prompt": "Use Revolve to improve a support prompt, code path, or testable subject. In revolve/, define the goal and [budget], freeze the tests and scoring, checkpoint the current version, and record a baseline.",
       "verification": "The best Revolve checkpoint wins within one evaluation revision. Incumbent and candidates have comparable recorded runs.",
-      "tags": ["experiments", "versioning", "improvement", "benchmarks"],
-      "related": ["self-improving-champion-loop", "full-product-evaluation-loop"]
+      "tags": [
+        "experiments",
+        "versioning",
+        "improvement",
+        "benchmarks"
+      ],
+      "related": [
+        "self-improving-champion-loop",
+        "full-product-evaluation-loop"
+      ]
     },
     {
       "id": "multi-llm-convergence-loop",
@@ -422,8 +753,16 @@
       "description": "Requires two different model families to approve the same version",
       "prompt": "Review [plan, specification, document, or code change] against [quality bar] for at most [pass limit] rounds. Have one of two genuinely different model families review it.",
       "verification": "Two different AI model families approve the exact same version.",
-      "tags": ["multi-model", "convergence", "review", "quality"],
-      "related": ["clodex-adversarial-review-loop", "devils-advocate-design-loop"]
+      "tags": [
+        "multi-model",
+        "convergence",
+        "review",
+        "quality"
+      ],
+      "related": [
+        "clodex-adversarial-review-loop",
+        "devils-advocate-design-loop"
+      ]
     },
     {
       "id": "promise-to-proof-loop",
@@ -435,8 +774,16 @@
       "description": "Verifies customer-facing promises match actual product behavior",
       "prompt": "List every customer-facing promise [product] makes in marketing, documentation, demos, and AI answers. Compare each promise with current product behavior and evidence.",
       "verification": "Every high-risk customer promise is supported, narrowed, or waiting on an explicit decision.",
-      "tags": ["promises", "verification", "marketing", "trust"],
-      "related": ["full-product-evaluation-loop", "recent-feedback-sweep"]
+      "tags": [
+        "promises",
+        "verification",
+        "marketing",
+        "trust"
+      ],
+      "related": [
+        "full-product-evaluation-loop",
+        "recent-feedback-sweep"
+      ]
     },
     {
       "id": "easy-onboarding-loop",
@@ -448,8 +795,16 @@
       "description": "Tests onboarding flow from first-time user perspective",
       "prompt": "Act like a first-time user of [product]. Start at the real entry point in a clean session with no saved login, site data, remembered route, or hidden setup.",
       "verification": "A first-time user can complete onboarding in one uninterrupted clean session.",
-      "tags": ["onboarding", "user-experience", "testing", "clean-room"],
-      "related": ["fresh-clone-loop", "full-product-evaluation-loop"]
+      "tags": [
+        "onboarding",
+        "user-experience",
+        "testing",
+        "clean-room"
+      ],
+      "related": [
+        "fresh-clone-loop",
+        "full-product-evaluation-loop"
+      ]
     },
     {
       "id": "axelrod-subagent-arena-loop",
@@ -461,8 +816,16 @@
       "description": "Fixed Axelrod tournament with two reasoning AI agents",
       "prompt": "Run a fixed Axelrod tournament with two reasoning AI agents. Each round, every player privately chooses cooperate (C) or defect (D).",
       "verification": "All 18 matches and 180 rounds can be reproduced from the recorded moves and fixed scoring rules.",
-      "tags": ["tournament", "game-theory", "cooperation", "agents"],
-      "related": ["boeing-747-benchmark", "full-product-evaluation-loop"]
+      "tags": [
+        "tournament",
+        "game-theory",
+        "cooperation",
+        "agents"
+      ],
+      "related": [
+        "boeing-747-benchmark",
+        "full-product-evaluation-loop"
+      ]
     },
     {
       "id": "artifact-to-skill-loop",
@@ -474,8 +837,16 @@
       "description": "Extracts reusable skills from successful artifacts",
       "prompt": "Turn [artifact] into a skill, playbook, or procedure. Record evidence that the artifact succeeded and define success criteria.",
       "verification": "The extracted method succeeds on a fresh second case without the original artifact.",
-      "tags": ["skill-creation", "extraction", "reusability", "knowledge"],
-      "related": ["multi-llm-convergence-loop", "self-improving-champion-loop"]
+      "tags": [
+        "skill-creation",
+        "extraction",
+        "reusability",
+        "knowledge"
+      ],
+      "related": [
+        "multi-llm-convergence-loop",
+        "self-improving-champion-loop"
+      ]
     },
     {
       "id": "strip-miner-loop",
@@ -487,8 +858,16 @@
       "description": "Mines coding-agent history for proven workflows",
       "prompt": "Mine only explicitly authorized coding-agent history for workflows with at least three high-confidence independent successes.",
       "verification": "Every published candidate has repeated historical proof and passes a fresh replay.",
-      "tags": ["mining", "history", "workflows", "proven"],
-      "related": ["artifact-to-skill-loop", "recent-feedback-sweep"]
+      "tags": [
+        "mining",
+        "history",
+        "workflows",
+        "proven"
+      ],
+      "related": [
+        "artifact-to-skill-loop",
+        "recent-feedback-sweep"
+      ]
     },
     {
       "id": "stale-safe-batch-release-loop",
@@ -500,8 +879,16 @@
       "description": "Combines valid changes into release while excluding stale work",
       "prompt": "Review pending changes and pull requests, exclude stale or unfinished work, combine the valid changes, and release them together.",
       "verification": "Only current, complete changes ship in the combined release. The released revision is the latest integrated main.",
-      "tags": ["release", "batch", "stale-exclusion", "deployment"],
-      "related": ["repository-cleanup-loop", "post-release-baseline-loop"]
+      "tags": [
+        "release",
+        "batch",
+        "stale-exclusion",
+        "deployment"
+      ],
+      "related": [
+        "repository-cleanup-loop",
+        "post-release-baseline-loop"
+      ]
     },
     {
       "id": "production-data-cleanup-loop",
@@ -513,8 +900,16 @@
       "description": "Cleans invalid production records and improves classification logic",
       "prompt": "Review production records, remove anything that does not meet the allowed definition, improve the classification logic, and verify the remaining data.",
       "verification": "Every remaining record meets the allowed definition. Representative classification tests prove validity.",
-      "tags": ["data", "cleanup", "production", "classification"],
-      "related": ["full-product-evaluation-loop", "exhaustive-logging-coverage-loop"]
+      "tags": [
+        "data",
+        "cleanup",
+        "production",
+        "classification"
+      ],
+      "related": [
+        "full-product-evaluation-loop",
+        "exhaustive-logging-coverage-loop"
+      ]
     },
     {
       "id": "post-release-baseline-loop",
@@ -526,8 +921,16 @@
       "description": "Records benchmark baseline after each release",
       "prompt": "After current releases finish, run the standard benchmarks and record the results as the new baseline.",
       "verification": "The new baseline belongs to the completed release. Revision, environment, benchmark version, conditions, and results are recorded together.",
-      "tags": ["baseline", "benchmark", "release", "recording"],
-      "related": ["stale-safe-batch-release-loop", "test-suite-speed-loop"]
+      "tags": [
+        "baseline",
+        "benchmark",
+        "release",
+        "recording"
+      ],
+      "related": [
+        "stale-safe-batch-release-loop",
+        "test-suite-speed-loop"
+      ]
     },
     {
       "id": "customer-ai-deployment-loop",
@@ -539,8 +942,16 @@
       "description": "Deploys AI workflows for customers with validation and monitoring",
       "prompt": "Run this when a customer requests an AI workflow, reports a failure, or reaches an operations review. Choose one priority, define the owner, inputs, approvals, success metric, and ROI hypothesis.",
       "verification": "One customer priority reaches a proven terminal state. Workflow reaches agreed rollout stage.",
-      "tags": ["deployment", "customer", "workflow", "monitoring"],
-      "related": ["full-product-evaluation-loop", "quality-streak-loop"]
+      "tags": [
+        "deployment",
+        "customer",
+        "workflow",
+        "monitoring"
+      ],
+      "related": [
+        "full-product-evaluation-loop",
+        "quality-streak-loop"
+      ]
     },
     {
       "id": "living-story-loop",
@@ -552,8 +963,16 @@
       "description": "Maintains running narrative of project focus, deadlines, and wins",
       "prompt": "On each [window], read the configured repositories, goals, prior STORY.md, and optional authorized sources. Update project files, then write STORY.md with focus, deadlines, open threads, and evidence-backed recent wins.",
       "verification": "The current story accounts for every prior thread and supports every recent win with evidence.",
-      "tags": ["narrative", "project-status", "documentation", "tracking"],
-      "related": ["five-minute-repository-maintainer-loop", "nightly-changelog-sweep"]
+      "tags": [
+        "narrative",
+        "project-status",
+        "documentation",
+        "tracking"
+      ],
+      "related": [
+        "five-minute-repository-maintainer-loop",
+        "nightly-changelog-sweep"
+      ]
     },
     {
       "id": "recovery-proof-loop",
@@ -565,8 +984,16 @@
       "description": "Tests recovery scenarios from random real backups",
       "prompt": "For each required recovery scenario, randomly select an eligible real backup or recovery point and restore from zero in a disposable, isolated clean-room using only documented materials.",
       "verification": "Every required recovery scenario succeeds repeatedly from a real recovery point.",
-      "tags": ["disaster-recovery", "backup", "testing", "clean-room"],
-      "related": ["quality-streak-loop", "post-release-baseline-loop"]
+      "tags": [
+        "disaster-recovery",
+        "backup",
+        "testing",
+        "clean-room"
+      ],
+      "related": [
+        "quality-streak-loop",
+        "post-release-baseline-loop"
+      ]
     },
     {
       "id": "seo-geo-visibility-loop",
@@ -578,8 +1005,16 @@
       "description": "Iterative SEO/GEO audit and optimization across search and AI answer engines",
       "prompt": "Run an SEO/GEO audit across crawlability, indexation, page intent, titles, internal links, structured data, source citations, and answer-first content.",
       "verification": "Priority pages are indexable, answer-ready, and technically sound. Repeatable crawl finds no remaining gaps.",
-      "tags": ["seo", "geo", "visibility", "search-engine"],
-      "related": ["overnight-docs-sweep", "production-error-sweep"]
+      "tags": [
+        "seo",
+        "geo",
+        "visibility",
+        "search-engine"
+      ],
+      "related": [
+        "overnight-docs-sweep",
+        "production-error-sweep"
+      ]
     },
     {
       "id": "product-update-podcast-loop",
@@ -591,8 +1026,16 @@
       "description": "Creates nightly podcast episodes from product changes",
       "prompt": "Each night, review publicly released product changes and select only those users need to know. Verify each against the product, docs, or release notes.",
       "verification": "The episode accurately covers every meaningful public update. Review-ready three-to-five-minute episode, or confirmed no-episode result.",
-      "tags": ["podcast", "product-updates", "content", "automation"],
-      "related": ["nightly-changelog-sweep", "post-release-baseline-loop"]
+      "tags": [
+        "podcast",
+        "product-updates",
+        "content",
+        "automation"
+      ],
+      "related": [
+        "nightly-changelog-sweep",
+        "post-release-baseline-loop"
+      ]
     },
     {
       "id": "boeing-747-benchmark",
@@ -604,8 +1047,16 @@
       "description": "Iterative 3D model improvement with nine-angle visual scoring",
       "prompt": "Before building, choose reference images, a scoring rubric, [visual threshold], and [budget]. Build the most realistic Boeing 747 you can from Three.js primitives.",
       "verification": "The Boeing 747 meets the visual bar from all nine angles. Same camera rig and rubric show every required view meeting threshold.",
-      "tags": ["3d", "modeling", "benchmark", "visual"],
-      "related": ["quality-streak-loop", "full-product-evaluation-loop"]
+      "tags": [
+        "3d",
+        "modeling",
+        "benchmark",
+        "visual"
+      ],
+      "related": [
+        "quality-streak-loop",
+        "full-product-evaluation-loop"
+      ]
     },
     {
       "id": "war-loops-frontend-designer",
@@ -617,8 +1068,16 @@
       "description": "Reconstructs frontend from source URL with fidelity scoring",
       "prompt": "Point War Loops at an authorized URL or image. Capture it with a genuine browser and record the layout, styles, content, motion, and responsive behavior.",
       "verification": "The builds match the source across all three fidelity axes. Static appearance, experiential motion, and responsive reflow pass their gates.",
-      "tags": ["frontend", "reconstruction", "fidelity", "design"],
-      "related": ["full-product-evaluation-loop", "sub-50ms-page-load-loop"]
+      "tags": [
+        "frontend",
+        "reconstruction",
+        "fidelity",
+        "design"
+      ],
+      "related": [
+        "full-product-evaluation-loop",
+        "sub-50ms-page-load-loop"
+      ]
     },
     {
       "id": "infinite-clickbait-loop",
@@ -630,8 +1089,16 @@
       "description": "Iterative thumbnail creation with scoring against reference channel",
       "prompt": "For [video], use [approved assets] to make ten thumbnail concepts. Score each at real YouTube sizes against [inspiration channel] for clarity, curiosity, emotional pull, contrast, and accuracy.",
       "verification": "One accurate thumbnail clears the fixed quality threshold. Winner outscores alternatives under same conditions.",
-      "tags": ["thumbnails", "youtube", "design", "scoring"],
-      "related": ["boeing-747-benchmark", "full-product-evaluation-loop"]
+      "tags": [
+        "thumbnails",
+        "youtube",
+        "design",
+        "scoring"
+      ],
+      "related": [
+        "boeing-747-benchmark",
+        "full-product-evaluation-loop"
+      ]
     },
     {
       "id": "ui-ux-score-loop",
@@ -643,8 +1110,16 @@
       "description": "Improves user flow through clean-session scoring and iteration",
       "prompt": "Improve [user flow, such as signup] at [URL] until [completion criterion]. In a real browser, start each pass from fresh state.",
       "verification": "The complete user task scores better without making another important screen worse.",
-      "tags": ["ui", "ux", "user-flow", "scoring"],
-      "related": ["war-loops-frontend-designer", "full-product-evaluation-loop"]
+      "tags": [
+        "ui",
+        "ux",
+        "user-flow",
+        "scoring"
+      ],
+      "related": [
+        "war-loops-frontend-designer",
+        "full-product-evaluation-loop"
+      ]
     },
     {
       "id": "pixel-safe-css-trim-loop",
@@ -656,8 +1131,16 @@
       "description": "Reduces CSS size while maintaining pixel-perfect appearance",
       "prompt": "Reduce the CSS styling code [site] sends to users without changing tested screens. First capture representative pages, sizes, themes, and interactions.",
       "verification": "The delivered stylesheet is smaller while every tested screen remains pixel-identical.",
-      "tags": ["css", "optimization", "pixel-perfect", "size"],
-      "related": ["cold-load-trimmer-loop", "ui-ux-score-loop"]
+      "tags": [
+        "css",
+        "optimization",
+        "pixel-perfect",
+        "size"
+      ],
+      "related": [
+        "cold-load-trimmer-loop",
+        "ui-ux-score-loop"
+      ]
     },
     {
       "id": "accessibility-repair-loop",
@@ -669,8 +1152,16 @@
       "description": "Fixes accessibility barriers against WCAG standards",
       "prompt": "Check [scope] against [accessibility standard, such as WCAG 2.2 AA] with automated scans and available keyboard, screen-reader, and other manual tests.",
       "verification": "No confirmed accessibility barrier remains in the agreed pages, components, or user tasks.",
-      "tags": ["accessibility", "wcag", "compliance", "barriers"],
-      "related": ["ui-ux-score-loop", "full-product-evaluation-loop"]
+      "tags": [
+        "accessibility",
+        "wcag",
+        "compliance",
+        "barriers"
+      ],
+      "related": [
+        "ui-ux-score-loop",
+        "full-product-evaluation-loop"
+      ]
     },
     {
       "id": "daily-triage",
@@ -682,8 +1173,16 @@
       "description": "1d-2h maintenance loop for triaging issues, PRs, and priorities",
       "prompt": "Triage issues, PRs, and priorities on a daily cadence.",
       "verification": "All items triaged and assigned with clear next actions.",
-      "tags": ["triage", "daily", "maintenance", "issues"],
-      "related": ["five-minute-repository-maintainer-loop", "ticket-to-pr-ready-loop"]
+      "tags": [
+        "triage",
+        "daily",
+        "maintenance",
+        "issues"
+      ],
+      "related": [
+        "five-minute-repository-maintainer-loop",
+        "ticket-to-pr-ready-loop"
+      ]
     },
     {
       "id": "pr-babysitter",
@@ -695,8 +1194,16 @@
       "description": "5-15 minute loop for monitoring and maintaining PRs",
       "prompt": "Monitor PRs for status changes, review requests, and merge readiness.",
       "verification": "PRs are monitored and actionable items addressed.",
-      "tags": ["pr", "monitoring", "short-loop", "maintenance"],
-      "related": ["stale-safe-batch-release-loop", "repository-cleanup-loop"]
+      "tags": [
+        "pr",
+        "monitoring",
+        "short-loop",
+        "maintenance"
+      ],
+      "related": [
+        "stale-safe-batch-release-loop",
+        "repository-cleanup-loop"
+      ]
     },
     {
       "id": "codebase-sweeper",
@@ -708,8 +1215,16 @@
       "description": "L2 cautious loop for sweeping codebase improvements",
       "prompt": "Sweep codebase for improvements with cautious, verified changes.",
       "verification": "All changes verified and no regressions introduced.",
-      "tags": ["sweeping", "improvements", "cautious", "codebase"],
-      "related": ["housekeeper-loop", "repository-cleanup-loop"]
+      "tags": [
+        "sweeping",
+        "improvements",
+        "cautious",
+        "codebase"
+      ],
+      "related": [
+        "housekeeper-loop",
+        "repository-cleanup-loop"
+      ]
     },
     {
       "id": "validate-patterns",
@@ -721,8 +1236,16 @@
       "description": "Self-maintaining loop that validates patterns on every push/PR",
       "prompt": "Validate all patterns on every push and pull request.",
       "verification": "All patterns validated successfully.",
-      "tags": ["validation", "patterns", "ci", "self-maintaining"],
-      "related": ["loop-harness-verification-loop", "autonomy-loop"]
+      "tags": [
+        "validation",
+        "patterns",
+        "ci",
+        "self-maintaining"
+      ],
+      "related": [
+        "loop-harness-verification-loop",
+        "autonomy-loop"
+      ]
     },
     {
       "id": "loop-audit",
@@ -734,8 +1257,16 @@
       "description": "CLI tool for scoring loop readiness with activity detection",
       "prompt": "Run loop audit to score loop readiness.",
       "verification": "Audit score meets readiness threshold.",
-      "tags": ["audit", "cli", "scoring", "readiness"],
-      "related": ["loop-init", "loop-cost"]
+      "tags": [
+        "audit",
+        "cli",
+        "scoring",
+        "readiness"
+      ],
+      "related": [
+        "loop-init",
+        "loop-cost"
+      ]
     },
     {
       "id": "loop-init",
@@ -747,8 +1278,16 @@
       "description": "Scaffold starters with budget/run-log",
       "prompt": "Initialize a new loop with budget and run-log configuration.",
       "verification": "Loop scaffold created with valid configuration.",
-      "tags": ["scaffold", "initialization", "cli", "setup"],
-      "related": ["loop-audit", "loop-cost"]
+      "tags": [
+        "scaffold",
+        "initialization",
+        "cli",
+        "setup"
+      ],
+      "related": [
+        "loop-audit",
+        "loop-cost"
+      ]
     },
     {
       "id": "loop-cost",
@@ -760,8 +1299,16 @@
       "description": "Token spend estimator for loop workflows",
       "prompt": "Estimate token cost for loop workflow execution.",
       "verification": "Cost estimate provided within acceptable range.",
-      "tags": ["cost", "estimation", "tokens", "budget"],
-      "related": ["loop-audit", "loop-init"]
+      "tags": [
+        "cost",
+        "estimation",
+        "tokens",
+        "budget"
+      ],
+      "related": [
+        "loop-audit",
+        "loop-init"
+      ]
     },
     {
       "id": "issue-burn-down-line",
@@ -773,8 +1320,16 @@
       "description": "Curated backlog through worker, QA, and checkpoint stations",
       "prompt": "Intake: turn vague goals into a queue of small, ordered work items. Worker station: let the agent change code, but only for one bounded item.",
       "verification": "Issues processed through all stations with verified checkpoints.",
-      "tags": ["issues", "burn-down", "stations", "workflow"],
-      "related": ["ticket-to-pr-ready-loop", "five-minute-repository-maintainer-loop"]
+      "tags": [
+        "issues",
+        "burn-down",
+        "stations",
+        "workflow"
+      ],
+      "related": [
+        "ticket-to-pr-ready-loop",
+        "five-minute-repository-maintainer-loop"
+      ]
     },
     {
       "id": "modernization-line",
@@ -786,8 +1341,16 @@
       "description": "Migration milestone through bounded code slices with runtime gates",
       "prompt": "Process modernization through bounded code slices with runtime gates and ledger handoff.",
       "verification": "Modernization milestones achieved with verified runtime gates.",
-      "tags": ["modernization", "migration", "bounded", "gates"],
-      "related": ["architecture-satisfaction-loop", "propagation-compliance-loop"]
+      "tags": [
+        "modernization",
+        "migration",
+        "bounded",
+        "gates"
+      ],
+      "related": [
+        "architecture-satisfaction-loop",
+        "propagation-compliance-loop"
+      ]
     },
     {
       "id": "optimization-line",
@@ -799,8 +1362,16 @@
       "description": "Idea through benchmark, score, and experiment log",
       "prompt": "Process optimization ideas through benchmark, scoring, and experiment logging.",
       "verification": "Optimization experiments logged with clear scoring and decisions.",
-      "tags": ["optimization", "benchmark", "experiment", "scoring"],
-      "related": ["sub-50ms-page-load-loop", "test-suite-speed-loop"]
+      "tags": [
+        "optimization",
+        "benchmark",
+        "experiment",
+        "scoring"
+      ],
+      "related": [
+        "sub-50ms-page-load-loop",
+        "test-suite-speed-loop"
+      ]
     },
     {
       "id": "review-gate-line",
@@ -812,8 +1383,16 @@
       "description": "Implementation through independent review to final validation",
       "prompt": "Process implementation through independent review, findings, fixes, and final validation.",
       "verification": "Implementation passes independent review with all findings addressed.",
-      "tags": ["review", "gate", "independent", "validation"],
-      "related": ["clodex-adversarial-review-loop", "devils-advocate-design-loop"]
+      "tags": [
+        "review",
+        "gate",
+        "independent",
+        "validation"
+      ],
+      "related": [
+        "clodex-adversarial-review-loop",
+        "devils-advocate-design-loop"
+      ]
     },
     {
       "id": "supervisor-line",
@@ -825,8 +1404,16 @@
       "description": "Runner through stale detection to restart or stop with durable logs",
       "prompt": "Supervise runners with stale detection, restart logic, and durable logging.",
       "verification": "Runners supervised with proper stale detection and durable logs.",
-      "tags": ["supervisor", "stale-detection", "logging", "restart"],
-      "related": ["five-minute-repository-maintainer-loop", "loop-harness-verification-loop"]
+      "tags": [
+        "supervisor",
+        "stale-detection",
+        "logging",
+        "restart"
+      ],
+      "related": [
+        "five-minute-repository-maintainer-loop",
+        "loop-harness-verification-loop"
+      ]
     },
     {
       "id": "alpha-loop",
@@ -838,8 +1425,16 @@
       "description": "Agent-agnostic automated development loop: Plan -> Build -> Test -> Review -> Ship",
       "prompt": "Plan (GitHub Issues) -> Build (AI Agent) -> Test -> Review -> Verify -> Learn -> Ship (PR)",
       "verification": "PR created with test results, review summary, and verification status.",
-      "tags": ["end-to-end", "development", "automated", "ship"],
-      "related": ["ticket-to-pr-ready-loop", "autonomy-loop"]
+      "tags": [
+        "end-to-end",
+        "development",
+        "automated",
+        "ship"
+      ],
+      "related": [
+        "ticket-to-pr-ready-loop",
+        "autonomy-loop"
+      ]
     },
     {
       "id": "plan-execute-land-learn",
@@ -851,8 +1446,16 @@
       "description": "Complete shipping loop for coding agents with Plan/Execute/Land/Learn phases",
       "prompt": "idea / plan / backlog / raw-issue -> gate -> Execute -> Land -> Learn -> (next idea)",
       "verification": "Workflow completes all four phases with learnings captured.",
-      "tags": ["workflow", "shipping", "phases", "learning"],
-      "related": ["alpha-loop", "goal-forge-loop"]
+      "tags": [
+        "workflow",
+        "shipping",
+        "phases",
+        "learning"
+      ],
+      "related": [
+        "alpha-loop",
+        "goal-forge-loop"
+      ]
     },
     {
       "id": "autoloop",
@@ -864,8 +1467,16 @@
       "description": "Loop anything in your repo: automate research, development and maintenance",
       "prompt": "On every scheduled run: picks the most-overdue program, proposes a change, runs evaluation, commits if improved.",
       "verification": "Metric improved and change committed to branch.",
-      "tags": ["automated", "scheduled", "metric-driven", "open-ended"],
-      "related": ["autonomy-loop", "five-minute-repository-maintainer-loop"]
+      "tags": [
+        "automated",
+        "scheduled",
+        "metric-driven",
+        "open-ended"
+      ],
+      "related": [
+        "autonomy-loop",
+        "five-minute-repository-maintainer-loop"
+      ]
     },
     {
       "id": "beacon-loop",
@@ -877,8 +1488,16 @@
       "description": "Loop-planning agent that watches repo state and ranks what matters next",
       "prompt": "Setup mode: Agent reads your repo, interviews you, proposes multi-agent setup. Loop mode: Beacon reads repo state, ranks next work, creates task briefs.",
       "verification": "Work ranked and task briefs created with approval gates.",
-      "tags": ["planning", "multi-agent", "ranking", "beacon"],
-      "related": ["five-minute-repository-maintainer-loop", "ticket-to-pr-ready-loop"]
+      "tags": [
+        "planning",
+        "multi-agent",
+        "ranking",
+        "beacon"
+      ],
+      "related": [
+        "five-minute-repository-maintainer-loop",
+        "ticket-to-pr-ready-loop"
+      ]
     },
     {
       "id": "kitchenloop",
@@ -890,8 +1509,16 @@
       "description": "Autonomous self-evolving codebase framework where LLM agent uses product as synthetic power user",
       "prompt": "Six-Phase Loop: Backlog -> Ideation -> Triage -> Execution -> Polishing -> Regression",
       "verification": "UAT Gate passed with fresh agent verifying feature works from user perspective.",
-      "tags": ["self-evolving", "uat", "regression", "autonomous"],
-      "related": ["autonomy-loop", "kitchenloop"]
+      "tags": [
+        "self-evolving",
+        "uat",
+        "regression",
+        "autonomous"
+      ],
+      "related": [
+        "autonomy-loop",
+        "kitchenloop"
+      ]
     },
     {
       "id": "ralph-bash-loop",
@@ -903,8 +1530,16 @@
       "description": "Serial execution loop for PRD task completion with Claude Code",
       "prompt": "Spawns a fresh claude CLI session per task. Each iteration: reads PRD, finds next unchecked task, implements with TDD, marks done, commits.",
       "verification": "All PRD tasks completed with TDD and committed.",
-      "tags": ["serial", "prd", "tdd", "fire-and-forget"],
-      "related": ["ticket-to-pr-ready-loop", "alpha-loop"]
+      "tags": [
+        "serial",
+        "prd",
+        "tdd",
+        "fire-and-forget"
+      ],
+      "related": [
+        "ticket-to-pr-ready-loop",
+        "alpha-loop"
+      ]
     },
     {
       "id": "core-agentic-workflow",
@@ -916,8 +1551,16 @@
       "description": "Task -> Plan Review -> Approve -> PR with human judgment at decision point",
       "prompt": "1. Task file written 2. Agent drafts PLAN.md and stops 3. Human reviews and approves 4. Separate session executes approved PLAN.md 5. Session returns reviewable PR",
       "verification": "PR created with human-approved plan and QA inspector review.",
-      "tags": ["human-in-loop", "plan-review", "approval", "qa"],
-      "related": ["devils-advocate-design-loop", "ticket-to-pr-ready-loop"],
+      "tags": [
+        "human-in-loop",
+        "plan-review",
+        "approval",
+        "qa"
+      ],
+      "related": [
+        "devils-advocate-design-loop",
+        "ticket-to-pr-ready-loop"
+      ],
       "sourceType": "blog"
     },
     {
@@ -930,8 +1573,16 @@
       "description": "Claude writes its own harness on the fly, custom-built for the task",
       "prompt": "Patterns: Loop until done, Tournament, Fan out across files, Adversarial review",
       "verification": "Workflow completes with all patterns verified.",
-      "tags": ["dynamic", "harness", "tournament", "fan-out"],
-      "related": ["multi-llm-convergence-loop", "clodex-adversarial-review-loop"],
+      "tags": [
+        "dynamic",
+        "harness",
+        "tournament",
+        "fan-out"
+      ],
+      "related": [
+        "multi-llm-convergence-loop",
+        "clodex-adversarial-review-loop"
+      ],
       "sourceType": "official-docs"
     },
     {
@@ -944,8 +1595,16 @@
       "description": "Coordinate multiple Claude Code instances as a team",
       "prompt": "Team lead spawns and coordinates teammates working independently with shared task list and mailbox.",
       "verification": "All team tasks completed with proper coordination.",
-      "tags": ["teams", "coordination", "multi-instance", "mailbox"],
-      "related": ["dispatching-parallel-agents", "beacon-loop"],
+      "tags": [
+        "teams",
+        "coordination",
+        "multi-instance",
+        "mailbox"
+      ],
+      "related": [
+        "dispatching-parallel-agents",
+        "beacon-loop"
+      ],
       "sourceType": "official-docs"
     },
     {
@@ -958,8 +1617,16 @@
       "description": "ChatGPT 5 + Claude Code workflow for collaborative ideation",
       "prompt": "1. 5 agents with different perspectives go to work 2. Each proposes two designs 3. Agents collaborate and share feedback 4. Each improves design based on shared ideas 5. Final design incorporating all feedback",
       "verification": "Final design produced incorporating all agent feedback.",
-      "tags": ["ideation", "collaboration", "multi-model", "design"],
-      "related": ["multi-llm-convergence-loop", "devils-advocate-design-loop"],
+      "tags": [
+        "ideation",
+        "collaboration",
+        "multi-model",
+        "design"
+      ],
+      "related": [
+        "multi-llm-convergence-loop",
+        "devils-advocate-design-loop"
+      ],
       "sourceType": "reddit"
     },
     {
@@ -972,8 +1639,16 @@
       "description": "Persistent AI assistant that carries state between sessions",
       "prompt": "Use agent md + beads + documentation for larger modules to maintain context across sessions.",
       "verification": "Context maintained across multiple sessions without loss.",
-      "tags": ["memory", "persistence", "context", "state"],
-      "related": ["living-story-loop", "handoff"],
+      "tags": [
+        "memory",
+        "persistence",
+        "context",
+        "state"
+      ],
+      "related": [
+        "living-story-loop",
+        "handoff"
+      ],
       "sourceType": "reddit"
     },
     {
@@ -986,8 +1661,17 @@
       "description": "Serial PRD execution with fresh AI context per iteration, TDD enforcement, fire-and-forget",
       "prompt": "Spawn a fresh claude CLI session per PRD task. Each iteration: read PRD, find next unchecked task, implement with TDD, mark done, commit. Stop when all tasks complete.",
       "verification": "All PRD tasks completed with TDD tests passing and committed.",
-      "tags": ["autonomous", "prd", "tdd", "serial", "fire-and-forget"],
-      "related": ["ralph-bash-loop", "ticket-to-pr-ready-loop"]
+      "tags": [
+        "autonomous",
+        "prd",
+        "tdd",
+        "serial",
+        "fire-and-forget"
+      ],
+      "related": [
+        "ralph-bash-loop",
+        "ticket-to-pr-ready-loop"
+      ]
     },
     {
       "id": "symphony-linear-loop",
@@ -999,8 +1683,16 @@
       "description": "Linear board monitoring that spawns autonomous implementation runs with proof-of-work",
       "prompt": "Monitor Linear board for new work items. For each item: spawn an isolated agent, provide full context, implement the change, run CI, generate proof-of-work (CI status, PR feedback, complexity analysis). Engineers manage work at higher level.",
       "verification": "PR created with passing CI, code review, and complexity analysis proof.",
-      "tags": ["autonomous", "linear", "proof-of-work", "monitoring"],
-      "related": ["ralph-autonomous-loop", "alpha-loop"]
+      "tags": [
+        "autonomous",
+        "linear",
+        "proof-of-work",
+        "monitoring"
+      ],
+      "related": [
+        "ralph-autonomous-loop",
+        "alpha-loop"
+      ]
     },
     {
       "id": "github-agentic-workflow",
@@ -1012,8 +1704,17 @@
       "description": "Official GitHub framework: markdown workflows compiled to sandboxed execution with multi-engine support",
       "prompt": "Write workflow in markdown with YAML frontmatter. Compile to .lock.yml. Execute in sandboxed environment with safe outputs (pre-approved GitHub operations). Supports Copilot, Claude, Codex, Gemini engines.",
       "verification": "Workflow executes in sandbox with all outputs passing safety checks.",
-      "tags": ["github", "official", "sandbox", "multi-engine", "compiled"],
-      "related": ["three-body-autonomous", "alpha-loop"]
+      "tags": [
+        "github",
+        "official",
+        "sandbox",
+        "multi-engine",
+        "compiled"
+      ],
+      "related": [
+        "three-body-autonomous",
+        "alpha-loop"
+      ]
     },
     {
       "id": "gated-pipeline-loop",
@@ -1025,8 +1726,16 @@
       "description": "9 specialist agents with role-bounded tool access and quality gates between phases",
       "prompt": "Route task through specialist agents: architect -> planner -> coder -> reviewer -> tester -> security -> deployer. Each agent has bounded tool access. Quality gates between phases block progression until criteria met.",
       "verification": "All phases pass quality gates with specialist sign-off.",
-      "tags": ["pipeline", "specialists", "gates", "role-bounded"],
-      "related": ["multi-agent-devloop", "clodex-adversarial-review-loop"]
+      "tags": [
+        "pipeline",
+        "specialists",
+        "gates",
+        "role-bounded"
+      ],
+      "related": [
+        "multi-agent-devloop",
+        "clodex-adversarial-review-loop"
+      ]
     },
     {
       "id": "multi-agent-devloop",
@@ -1038,8 +1747,16 @@
       "description": "Planner/architect/coder/reviewer/tester/deployer agents with rework loops and parallel execution",
       "prompt": "Coordinate specialist agents: planner creates tasks, architect designs, coder implements, reviewer reviews, tester validates, deployer ships. Rework loop with up to 10 retries per ticket. Multi-instance parallel execution with git worktrees.",
       "verification": "All tickets completed with reviewer and tester sign-off.",
-      "tags": ["multi-agent", "parallel", "rework", "worktrees"],
-      "related": ["gated-pipeline-loop", "agent-teams"]
+      "tags": [
+        "multi-agent",
+        "parallel",
+        "rework",
+        "worktrees"
+      ],
+      "related": [
+        "gated-pipeline-loop",
+        "agent-teams"
+      ]
     },
     {
       "id": "three-body-autonomous",
@@ -1051,8 +1768,16 @@
       "description": "GitHub Actions pipeline: picks issues, implements, fixes CI, merges green PRs, syncs board",
       "prompt": "5-workflow pipeline: Implementer picks issues from project board, implements changes. Fixer handles CI failures. Merger merges green PRs. Board Sync updates project board. Week Rollover manages sprint transitions. No human intervention required.",
       "verification": "Issue implemented, CI passing, PR merged, board updated.",
-      "tags": ["github-actions", "autonomous", "pipeline", "issue-tracking"],
-      "related": ["github-agentic-workflow", "ralph-autonomous-loop"]
+      "tags": [
+        "github-actions",
+        "autonomous",
+        "pipeline",
+        "issue-tracking"
+      ],
+      "related": [
+        "github-agentic-workflow",
+        "ralph-autonomous-loop"
+      ]
     },
     {
       "id": "plan-execute-verify-loop",
@@ -1064,8 +1789,17 @@
       "description": "Trending this week: structured development loop where agent plans, executes, then verifies each step before proceeding",
       "prompt": "1. Plan: Agent reads requirements and creates detailed implementation plan 2. Execute: Agent implements one step at a time 3. Verify: Agent runs tests and checks for regressions 4. Repeat until complete",
       "verification": "All planned steps completed with passing tests and no regressions.",
-      "tags": ["plan", "execute", "verify", "structured", "trending"],
-      "related": ["alpha-loop", "ticket-to-pr-ready-loop"],
+      "tags": [
+        "plan",
+        "execute",
+        "verify",
+        "structured",
+        "trending"
+      ],
+      "related": [
+        "alpha-loop",
+        "ticket-to-pr-ready-loop"
+      ],
       "sourceType": "reddit"
     },
     {
@@ -1078,8 +1812,16 @@
       "description": "Trending methodology replacing prompt engineering - structured approach to building and maintaining context windows for optimal agent performance",
       "prompt": "1. Assess: Evaluate current context quality and gaps 2. Build: Construct context from codebase, docs, and conversation history 3. Select: Choose most relevant context for the task 4. Maintain: Update context as codebase evolves",
       "verification": "Agent consistently produces high-quality outputs with minimal context drift.",
-      "tags": ["context-engineering", "methodology", "trending", "prompt-engineering"],
-      "related": ["developer-os-memory", "living-story-loop"],
+      "tags": [
+        "context-engineering",
+        "methodology",
+        "trending",
+        "prompt-engineering"
+      ],
+      "related": [
+        "developer-os-memory",
+        "living-story-loop"
+      ],
       "sourceType": "reddit"
     },
     {
@@ -1092,8 +1834,17 @@
       "description": "Three-tier memory system for long-running agent sessions: working memory (session), short-term (project), long-term (global)",
       "prompt": "1. Working Memory: Active context for current task 2. Short-Term Memory: Project-specific knowledge stored in .md files 3. Long-Term Memory: Global learnings and patterns stored across projects 4. Consolidation: Regular promotion/demotion between tiers",
       "verification": "Agent maintains consistent context across sessions with proper memory management.",
-      "tags": ["memory", "architecture", "tiered", "persistence", "trending"],
-      "related": ["developer-os-memory", "handoff"],
+      "tags": [
+        "memory",
+        "architecture",
+        "tiered",
+        "persistence",
+        "trending"
+      ],
+      "related": [
+        "developer-os-memory",
+        "handoff"
+      ],
       "sourceType": "reddit"
     },
     {
@@ -1106,8 +1857,16 @@
       "description": "Trending pattern for coordinating multiple specialized agents with clear roles, communication channels, and quality gates",
       "prompt": "1. Spawn: Create specialized agents (planner, coder, reviewer, tester) 2. Coordinate: Use shared task list and mailbox for communication 3. Execute: Each agent works independently within bounded scope 4. Verify: Quality gates between phases 5. Integrate: Merge results and resolve conflicts",
       "verification": "All agents complete their tasks with proper coordination and no conflicts.",
-      "tags": ["multi-agent", "orchestration", "coordination", "trending"],
-      "related": ["agent-teams", "gated-pipeline-loop"],
+      "tags": [
+        "multi-agent",
+        "orchestration",
+        "coordination",
+        "trending"
+      ],
+      "related": [
+        "agent-teams",
+        "gated-pipeline-loop"
+      ],
       "sourceType": "reddit"
     },
     {
@@ -1120,8 +1879,17 @@
       "description": "Trending this week: iterative content creation with anti-AI-slop verification at each step",
       "prompt": "1. Draft: Generate content 2. Detect: Check for AI-slop patterns (em-dashes, rule of three, superlatives) 3. Rewrite: Replace with natural language 4. Verify: Human reader test - would a person write this way?",
       "verification": "Content passes anti-slop detection and reads naturally.",
-      "tags": ["anti-slop", "writing", "content", "verification", "trending"],
-      "related": ["seo-geo-visibility-loop", "full-product-evaluation-loop"],
+      "tags": [
+        "anti-slop",
+        "writing",
+        "content",
+        "verification",
+        "trending"
+      ],
+      "related": [
+        "seo-geo-visibility-loop",
+        "full-product-evaluation-loop"
+      ],
       "sourceType": "reddit"
     },
     {
@@ -1134,8 +1902,16 @@
       "description": "TDD enforcement with deterministic escalation rules. Agent implements, tests, and escalates when uncertain.",
       "prompt": "1. Read task 2. Write failing test 3. Implement minimal code 4. Pass test 5. Refactor 6. If uncertain, escalate to human with context",
       "verification": "All tests pass, code is clean, escalations documented.",
-      "tags": ["tdd", "enforcement", "escalation", "deterministic"],
-      "related": ["ticket-to-pr-ready-loop", "ralph-autonomous-loop"],
+      "tags": [
+        "tdd",
+        "enforcement",
+        "escalation",
+        "deterministic"
+      ],
+      "related": [
+        "ticket-to-pr-ready-loop",
+        "ralph-autonomous-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1148,8 +1924,16 @@
       "description": "OpenAI's methodology for building reliable agent harnesses. Structured testing and validation patterns.",
       "prompt": "1. Define harness boundaries 2. Create test fixtures 3. Implement validation gates 4. Run integration tests 5. Deploy with rollback plan",
       "verification": "Harness passes all validation gates with documented rollback.",
-      "tags": ["harness", "testing", "validation", "openai"],
-      "related": ["alpha-loop", "github-agentic-workflow"],
+      "tags": [
+        "harness",
+        "testing",
+        "validation",
+        "openai"
+      ],
+      "related": [
+        "alpha-loop",
+        "github-agentic-workflow"
+      ],
       "sourceType": "github"
     },
     {
@@ -1162,8 +1946,16 @@
       "description": "9 specialist agents with role-bounded tool access. Architecture through deployment with quality gates.",
       "prompt": "Route through: architect -> planner -> coder -> reviewer -> tester -> security -> deployer -> monitor -> feedback",
       "verification": "All 9 stages complete with specialist sign-off.",
-      "tags": ["specialists", "reference", "end-to-end", "gates"],
-      "related": ["gated-pipeline-loop", "multi-agent-devloop"],
+      "tags": [
+        "specialists",
+        "reference",
+        "end-to-end",
+        "gates"
+      ],
+      "related": [
+        "gated-pipeline-loop",
+        "multi-agent-devloop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1176,8 +1968,16 @@
       "description": "Functional Resonance Analysis Method applied to agent evaluation. Maps agent behavior to system functions.",
       "prompt": "1. Define functions 2. Map variability 3. Analyze resonance 4. Evaluate performance 5. Identify bottlenecks",
       "verification": "All functions mapped with variability bounds documented.",
-      "tags": ["fram", "evaluation", "resonance", "analysis"],
-      "related": ["full-product-evaluation-loop", "quality-streak-loop"],
+      "tags": [
+        "fram",
+        "evaluation",
+        "resonance",
+        "analysis"
+      ],
+      "related": [
+        "full-product-evaluation-loop",
+        "quality-streak-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1190,8 +1990,16 @@
       "description": "Structured scoring system for agent loops. Evaluates reliability, efficiency, and output quality.",
       "prompt": "1. Define metrics 2. Create test suite 3. Run evaluation 4. Score results 5. Compare against baseline",
       "verification": "Evaluation scores documented with statistical significance.",
-      "tags": ["evaluation", "scoring", "metrics", "baseline"],
-      "related": ["quality-streak-loop", "revolve-self-improvement-loop"],
+      "tags": [
+        "evaluation",
+        "scoring",
+        "metrics",
+        "baseline"
+      ],
+      "related": [
+        "quality-streak-loop",
+        "revolve-self-improvement-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1204,8 +2012,16 @@
       "description": "Google's Agent Development Kit loop pattern. Structured agent execution with state management.",
       "prompt": "1. Initialize agent state 2. Execute loop iterations 3. Manage state transitions 4. Handle errors gracefully 5. Persist results",
       "verification": "Agent completes all iterations with proper state management.",
-      "tags": ["google", "adk", "state-management", "loop"],
-      "related": ["agent-teams", "multi-agent-orchestration-loop"],
+      "tags": [
+        "google",
+        "adk",
+        "state-management",
+        "loop"
+      ],
+      "related": [
+        "agent-teams",
+        "multi-agent-orchestration-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1218,8 +2034,16 @@
       "description": "OpenAI's official agent handoff pattern. Agents pass context and control between specialized handlers.",
       "prompt": "1. Receive task 2. Process in current agent 3. If out of scope, handoff to specialist 4. Receive handoff context 5. Continue processing",
       "verification": "Task completed through proper handoff chain with context preserved.",
-      "tags": ["openai", "handoff", "agents", "python"],
-      "related": ["beacon-loop", "multi-agent-orchestration-loop"],
+      "tags": [
+        "openai",
+        "handoff",
+        "agents",
+        "python"
+      ],
+      "related": [
+        "beacon-loop",
+        "multi-agent-orchestration-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1232,8 +2056,16 @@
       "description": "Multi-model voting system. Multiple LLMs vote on decisions with weighted confidence scores.",
       "prompt": "1. Present proposal to council 2. Each LLM votes with confidence 3. Weight votes by confidence 4. If majority, proceed 5. If tie, escalate",
       "verification": "Decision reached through documented voting with confidence scores.",
-      "tags": ["voting", "multi-model", "council", "consensus"],
-      "related": ["multi-llm-convergence-loop", "chatgpt5-claude-code-ideation"],
+      "tags": [
+        "voting",
+        "multi-model",
+        "council",
+        "consensus"
+      ],
+      "related": [
+        "multi-llm-convergence-loop",
+        "chatgpt5-claude-code-ideation"
+      ],
       "sourceType": "github"
     },
     {
@@ -1246,8 +2078,16 @@
       "description": "Compiled workflow graphs with governance rules. Execute agent workflows with built-in compliance checks.",
       "prompt": "1. Define workflow graph 2. Compile to executable 3. Execute with governance 4. Log all decisions 5. Audit trail",
       "verification": "Workflow completes with full audit trail and compliance checks.",
-      "tags": ["governance", "workflow", "compliance", "audit"],
-      "related": ["github-agentic-workflow", "loop-harness-verification-loop"],
+      "tags": [
+        "governance",
+        "workflow",
+        "compliance",
+        "audit"
+      ],
+      "related": [
+        "github-agentic-workflow",
+        "loop-harness-verification-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1260,8 +2100,16 @@
       "description": "Claude generates its own harness per task. Self-adapting workflows based on task requirements.",
       "prompt": "1. Analyze task requirements 2. Generate custom harness 3. Execute with generated harness 4. Validate results 5. Learn from outcome",
       "verification": "Generated harness produces correct results with documented adaptations.",
-      "tags": ["dynamic", "harness", "self-adapting", "claude"],
-      "related": ["claude-code-dynamic-workflows", "autonomy-loop"],
+      "tags": [
+        "dynamic",
+        "harness",
+        "self-adapting",
+        "claude"
+      ],
+      "related": [
+        "claude-code-dynamic-workflows",
+        "autonomy-loop"
+      ],
       "sourceType": "official-docs"
     },
     {
@@ -1274,8 +2122,16 @@
       "description": "Dual-agent verification with independent review. One agent builds, another verifies independently.",
       "prompt": "1. Agent A implements change 2. Agent B receives isolated copy 3. Agent B verifies independently 4. If pass, merge 5. If fail, return to Agent A",
       "verification": "Both agents agree on outcome with documented evidence.",
-      "tags": ["verification", "dual-agent", "independent", "gate"],
-      "related": ["loop-harness-verification-loop", "clodex-adversarial-review-loop"],
+      "tags": [
+        "verification",
+        "dual-agent",
+        "independent",
+        "gate"
+      ],
+      "related": [
+        "loop-harness-verification-loop",
+        "clodex-adversarial-review-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1288,8 +2144,16 @@
       "description": "171 patterns across 8 categories. Comprehensive catalog of agentic AI patterns and workflows.",
       "prompt": "Reference catalog - browse patterns by category and use case.",
       "verification": "Patterns documented with examples and implementation guides.",
-      "tags": ["catalog", "patterns", "awesome-list", "comprehensive"],
-      "related": ["voltagent-awesome-agent-skills", "composiohq-awesome-claude-skills"],
+      "tags": [
+        "catalog",
+        "patterns",
+        "awesome-list",
+        "comprehensive"
+      ],
+      "related": [
+        "voltagent-awesome-agent-skills",
+        "composiohq-awesome-claude-skills"
+      ],
       "sourceType": "github"
     },
     {
@@ -1302,8 +2166,16 @@
       "description": "5-workflow GitHub Actions pipeline. Issue implementation, CI fixing, PR merging, board sync, sprint management.",
       "prompt": "Implementer picks issues -> implements -> Fixer handles CI -> Merger merges green PRs -> Board Sync updates -> Week Rollover manages sprints",
       "verification": "Issue implemented, CI passing, PR merged, board updated.",
-      "tags": ["github-actions", "pipeline", "autonomous", "sprint"],
-      "related": ["three-body-autonomous", "github-agentic-workflow"],
+      "tags": [
+        "github-actions",
+        "pipeline",
+        "autonomous",
+        "sprint"
+      ],
+      "related": [
+        "three-body-autonomous",
+        "github-agentic-workflow"
+      ],
       "sourceType": "github"
     },
     {
@@ -1316,8 +2188,16 @@
       "description": "TypeScript-based agent loop evaluation with OpenTelemetry integration. Structured scoring and tracing.",
       "prompt": "1. Instrument with OpenTelemetry 2. Run evaluation suite 3. Collect traces 4. Score performance 5. Generate report",
       "verification": "Evaluation report generated with traces and scores.",
-      "tags": ["typescript", "evaluation", "opentelemetry", "scoring"],
-      "related": ["agent-loop-evaluation", "arize-phoenix-mcp"],
+      "tags": [
+        "typescript",
+        "evaluation",
+        "opentelemetry",
+        "scoring"
+      ],
+      "related": [
+        "agent-loop-evaluation",
+        "arize-phoenix-mcp"
+      ],
       "sourceType": "github"
     },
     {
@@ -1330,8 +2210,16 @@
       "description": "DAG-based agent orchestration with replan-on-failure. Agents execute directed acyclic graphs of tasks.",
       "prompt": "1. Build task DAG 2. Execute in parallel where possible 3. If node fails, replan 4. Continue until complete 5. Validate final state",
       "verification": "DAG completed with all nodes executed and validated.",
-      "tags": ["dag", "orchestration", "parallel", "replan"],
-      "related": ["multi-agent-orchestration-loop", "gated-pipeline-loop"],
+      "tags": [
+        "dag",
+        "orchestration",
+        "parallel",
+        "replan"
+      ],
+      "related": [
+        "multi-agent-orchestration-loop",
+        "gated-pipeline-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1344,8 +2232,16 @@
       "description": "Official Claude Code multi-agent coordination. Team lead spawns and coordinates teammates with shared state.",
       "prompt": "1. Team lead creates task list 2. Spawn teammate agents 3. Each works independently 4. Communicate via mailbox 5. Team lead integrates results",
       "verification": "All tasks completed with proper coordination and no conflicts.",
-      "tags": ["teams", "coordination", "claude", "official"],
-      "related": ["agent-teams", "multi-agent-orchestration-loop"],
+      "tags": [
+        "teams",
+        "coordination",
+        "claude",
+        "official"
+      ],
+      "related": [
+        "agent-teams",
+        "multi-agent-orchestration-loop"
+      ],
       "sourceType": "official-docs"
     },
     {
@@ -1358,8 +2254,16 @@
       "description": "Linear board monitoring that spawns autonomous implementation runs with proof-of-work.",
       "prompt": "Monitor Linear board -> For new items: spawn isolated agent -> implement -> run CI -> generate proof -> create PR",
       "verification": "PR created with passing CI, code review, and complexity analysis.",
-      "tags": ["linear", "monitoring", "autonomous", "proof-of-work"],
-      "related": ["ralph-autonomous-loop", "symphony-linear-loop"],
+      "tags": [
+        "linear",
+        "monitoring",
+        "autonomous",
+        "proof-of-work"
+      ],
+      "related": [
+        "ralph-autonomous-loop",
+        "symphony-linear-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1372,8 +2276,16 @@
       "description": "Official GitHub framework. Markdown workflows compiled to sandboxed execution with multi-engine support.",
       "prompt": "Write markdown workflow -> Compile to .lock.yml -> Execute in sandbox -> Safe outputs only -> Supports Copilot, Claude, Codex, Gemini",
       "verification": "Workflow executes in sandbox with all outputs passing safety checks.",
-      "tags": ["github", "compiled", "sandbox", "multi-engine"],
-      "related": ["github-agentic-workflow", "three-body-autonomous"],
+      "tags": [
+        "github",
+        "compiled",
+        "sandbox",
+        "multi-engine"
+      ],
+      "related": [
+        "github-agentic-workflow",
+        "three-body-autonomous"
+      ],
       "sourceType": "github"
     },
     {
@@ -1386,8 +2298,16 @@
       "description": "Autonomous self-evolving codebase with UAT gate. Fresh agent verifies feature works from user perspective.",
       "prompt": "Backlog -> Ideation -> Triage -> Execution -> Polishing -> Regression -> UAT Gate (fresh agent verifies)",
       "verification": "UAT Gate passed with fresh agent verifying feature works.",
-      "tags": ["uat", "self-evolving", "regression", "verification"],
-      "related": ["kitchenloop", "full-product-evaluation-loop"],
+      "tags": [
+        "uat",
+        "self-evolving",
+        "regression",
+        "verification"
+      ],
+      "related": [
+        "kitchenloop",
+        "full-product-evaluation-loop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1400,8 +2320,16 @@
       "description": "9 specialist agents with role-bounded tool access and quality gates between phases.",
       "prompt": "architect -> planner -> coder -> reviewer -> tester -> security -> deployer -> monitor -> feedback. Each with bounded tools.",
       "verification": "All phases pass quality gates with specialist sign-off.",
-      "tags": ["specialists", "gated", "role-bounded", "pipeline"],
-      "related": ["gated-pipeline-loop", "multi-agent-devloop"],
+      "tags": [
+        "specialists",
+        "gated",
+        "role-bounded",
+        "pipeline"
+      ],
+      "related": [
+        "gated-pipeline-loop",
+        "multi-agent-devloop"
+      ],
       "sourceType": "github"
     },
     {
@@ -1414,8 +2342,16 @@
       "description": "Plan-first approach with documentation before any code changes",
       "prompt": "Before writing any code, produce a detailed plan covering architecture, data flow, edge cases, and testing strategy. Only after plan approval proceed to implementation.",
       "verification": "Code matches the approved plan with no deviations.",
-      "tags": ["planning", "documentation", "architecture", "approval"],
-      "related": ["goal-forge-loop", "prepare-new-project-loop"]
+      "tags": [
+        "planning",
+        "documentation",
+        "architecture",
+        "approval"
+      ],
+      "related": [
+        "goal-forge-loop",
+        "prepare-new-project-loop"
+      ]
     },
     {
       "id": "parallel-worktree-isolation",
@@ -1427,8 +2363,16 @@
       "description": "Isolated worktree-based development for safe parallel experimentation",
       "prompt": "Create isolated git worktrees for each experimental feature. Work independently in each worktree, run tests in isolation, only merge when each passes independently.",
       "verification": "All worktrees pass independently and merge cleanly without conflicts.",
-      "tags": ["worktree", "isolation", "parallel", "git"],
-      "related": ["autonomy-loop", "loop-harness-verification-loop"]
+      "tags": [
+        "worktree",
+        "isolation",
+        "parallel",
+        "git"
+      ],
+      "related": [
+        "autonomy-loop",
+        "loop-harness-verification-loop"
+      ]
     },
     {
       "id": "multi-agent-supervisor",
@@ -1440,8 +2384,16 @@
       "description": "Supervisor agent coordinates specialist sub-agents with routing and escalation",
       "prompt": "Supervisor agent receives task, decomposes it into sub-tasks, routes to specialist agents, collects results, resolves conflicts, and produces final output.",
       "verification": "All sub-tasks completed correctly with supervisor validation. No conflicts in final output.",
-      "tags": ["supervisor", "orchestration", "multi-agent", "routing"],
-      "related": ["orchestrator-worker", "triage-and-escalate"]
+      "tags": [
+        "supervisor",
+        "orchestration",
+        "multi-agent",
+        "routing"
+      ],
+      "related": [
+        "orchestrator-worker",
+        "triage-and-escalate"
+      ]
     },
     {
       "id": "debate-consensus",
@@ -1453,8 +2405,16 @@
       "description": "Multiple agents debate different viewpoints until reaching consensus",
       "prompt": "Assign agent roles with different viewpoints. Have them debate the solution, challenge each other's reasoning, and iterate until consensus is reached.",
       "verification": "All agents agree on the solution with documented reasoning from each perspective.",
-      "tags": ["debate", "consensus", "multi-agent", "reasoning"],
-      "related": ["multi-llm-convergence-loop", "devils-advocate-design-loop"]
+      "tags": [
+        "debate",
+        "consensus",
+        "multi-agent",
+        "reasoning"
+      ],
+      "related": [
+        "multi-llm-convergence-loop",
+        "devils-advocate-design-loop"
+      ]
     },
     {
       "id": "activegraph-event-sourced",
@@ -1466,8 +2426,17 @@
       "description": "Inverts standard agent architecture - append-only event log IS the agent. Behaviors react to log changes and emit new events. Deterministic replay from any point.",
       "prompt": "Install activegraph, run activegraph quickstart. The runtime manages event-sourced reactive graphs where behaviors react to log changes.",
       "verification": "Deterministic replay - any run can be byte-reproduced from its log. The bundled diligence example produces 671 events, 93 objects, 76 relations.",
-      "tags": ["event-sourcing", "reactive-graphs", "deterministic-replay", "lineage", "auditability"],
-      "related": ["overnight-docs-sweep", "architecture-satisfaction-loop"]
+      "tags": [
+        "event-sourcing",
+        "reactive-graphs",
+        "deterministic-replay",
+        "lineage",
+        "auditability"
+      ],
+      "related": [
+        "overnight-docs-sweep",
+        "architecture-satisfaction-loop"
+      ]
     },
     {
       "id": "reap-pipeline",
@@ -1479,8 +2448,17 @@
       "description": "Bounded generations with human fitness feedback, genome locking (immutable architecture decisions), cryptographic signature-enforced stage order, and cruise mode for budgeted autonomy.",
       "prompt": "Uses a fixed lifecycle per generation: research -> plan -> implement -> validate -> human fitness review. Each stage produces artifact files. Run 'reap cruise 3' for budgeted autonomy.",
       "verification": "Human fitness feedback is the primary signal. Environment checks (tests/build) are secondary. Self-assessment allowed; self-grading banned at protocol level.",
-      "tags": ["bounded-generations", "human-fitness", "genome-locking", "signature-enforcement", "cruise-mode"],
-      "related": ["ralph-loop", "overnight-docs-sweep"]
+      "tags": [
+        "bounded-generations",
+        "human-fitness",
+        "genome-locking",
+        "signature-enforcement",
+        "cruise-mode"
+      ],
+      "related": [
+        "ralph-loop",
+        "overnight-docs-sweep"
+      ]
     },
     {
       "id": "loop-context-circuit-breaker",
@@ -1492,8 +2470,16 @@
       "description": "Auto-scaffolded circuit breaker that detects stagnation (same error 3x), consecutive failures (5x), token budget, iteration cap. Escalates to human with pruned context.",
       "prompt": "loop-context --check --ledger run.json before each retry attempt.",
       "verification": "Exit 0 = continue, Exit 2 = STOP + escalate. Tests: 12/12 pass for loop-init, 18/18 for loop-context.",
-      "tags": ["circuit-breaker", "stagnation-detection", "cost-blowup-prevention", "loop-guard"],
-      "related": ["ralph-loop", "overnight-docs-sweep"]
+      "tags": [
+        "circuit-breaker",
+        "stagnation-detection",
+        "cost-blowup-prevention",
+        "loop-guard"
+      ],
+      "related": [
+        "ralph-loop",
+        "overnight-docs-sweep"
+      ]
     },
     {
       "id": "llm-as-code",
@@ -1505,8 +2491,16 @@
       "description": "Program owns all control flow, LLM invoked only for reasoning at leaf nodes. Context is DAG-structured (bounded by call depth, not accumulated). Multi-agent follows for free.",
       "prompt": "Not prompt-based; a programming paradigm. Code-driven workflow with LLM calls at leaf nodes only.",
       "verification": "Case study on computer-use agents shows substantially improved stability of long visual operation sequences.",
-      "tags": ["agentic-programming", "llm-as-code", "dag-context", "program-controlled-execution"],
-      "related": ["activegraph-event-sourced", "reap-pipeline"]
+      "tags": [
+        "agentic-programming",
+        "llm-as-code",
+        "dag-context",
+        "program-controlled-execution"
+      ],
+      "related": [
+        "activegraph-event-sourced",
+        "reap-pipeline"
+      ]
     },
     {
       "id": "sovereign-agentic-loops",
@@ -1518,8 +2512,16 @@
       "description": "Pre-execution policy validation. Model outputs intents, not commands. Control plane validates against system state before execution. Blocks 93% of unsafe intents in prototype.",
       "prompt": "Model generates intent objects. Control plane validates intent against policy rules and system state. Only validated intents are executed.",
       "verification": "93% of unsafe intents blocked in prototype testing. Policy validation is deterministic.",
-      "tags": ["pre-execution-validation", "intent-based", "policy-enforcement", "safety"],
-      "related": ["loop-context-circuit-breaker", "reap-pipeline"]
+      "tags": [
+        "pre-execution-validation",
+        "intent-based",
+        "policy-enforcement",
+        "safety"
+      ],
+      "related": [
+        "loop-context-circuit-breaker",
+        "reap-pipeline"
+      ]
     },
     {
       "id": "zero-dep-multi-agent",
@@ -1531,8 +2533,17 @@
       "description": "tmux + bash + markdown. Opus plans, Sonnet codes, Haiku tests. Append-only markdown protocol. Proves frameworks aren't required for multi-agent orchestration.",
       "prompt": "Use tmux to run parallel sessions. Opus agent plans in one pane, Sonnet codes in another, Haiku tests in a third. Communication via append-only markdown files.",
       "verification": "All agents complete their roles. Final output validated by test agent. Markdown protocol ensures auditability.",
-      "tags": ["zero-dependency", "multi-agent", "tmux", "markdown-protocol", "framework-free"],
-      "related": ["supervisor-coordination", "debate-consensus"]
+      "tags": [
+        "zero-dependency",
+        "multi-agent",
+        "tmux",
+        "markdown-protocol",
+        "framework-free"
+      ],
+      "related": [
+        "supervisor-coordination",
+        "debate-consensus"
+      ]
     },
     {
       "id": "hermes-loop",
@@ -1544,8 +2555,17 @@
       "description": "Self-improving agent loop extension that creates skills from experience. Runs on Raspberry Pi and Claude Code. Agent improves itself over time by converting successful patterns into reusable skills.",
       "prompt": "After completing a task, analyze what worked well. Convert successful patterns into reusable skill files. Store skills for future use. Continuously improve by building on past successes.",
       "verification": "New skill files created from successful patterns. Skills are reusable across future tasks. Agent performance improves over time.",
-      "tags": ["self-improving", "meta-learning", "skills", "raspberry-pi", "claude-code"],
-      "related": ["overnight-docs-sweep", "code-quality-loop"]
+      "tags": [
+        "self-improving",
+        "meta-learning",
+        "skills",
+        "raspberry-pi",
+        "claude-code"
+      ],
+      "related": [
+        "overnight-docs-sweep",
+        "code-quality-loop"
+      ]
     },
     {
       "id": "agentic-design-patterns",
@@ -1557,8 +2577,18 @@
       "description": "Reference implementations of core agentic patterns: reflection, tool-use, planning, multi-agent collaboration. Educational resource with production-ready pattern implementations.",
       "prompt": "Implement one of the core agentic patterns: reflection (self-evaluation), tool-use (external tool integration), planning (step decomposition), or multi-agent collaboration (task delegation). Use as reference for building agentic systems.",
       "verification": "Pattern implementation matches reference. Code is production-ready. Educational explanations are clear and accurate.",
-      "tags": ["design-patterns", "educational", "reflection", "planning", "multi-agent", "reference"],
-      "related": ["hermes-loop", "zero-dep-multi-agent"]
+      "tags": [
+        "design-patterns",
+        "educational",
+        "reflection",
+        "planning",
+        "multi-agent",
+        "reference"
+      ],
+      "related": [
+        "hermes-loop",
+        "zero-dep-multi-agent"
+      ]
     }
   ]
 }

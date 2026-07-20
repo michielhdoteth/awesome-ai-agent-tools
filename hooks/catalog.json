@@ -8,15 +8,42 @@
       "https://www.aitmpl.com/hooks/"
     ],
     "categories": [
-      { "name": "Security", "count": 5 },
-      { "name": "Automation", "count": 6 },
-      { "name": "Quality", "count": 2 },
-      { "name": "Notifications", "count": 2 },
-      { "name": "Session Management", "count": 4 },
-      { "name": "Safety", "count": 3 },
-      { "name": "Utility", "count": 3 },
-      { "name": "Curated Directory", "count": 1 },
-      { "name": "Platform Feature", "count": 1 }
+      {
+        "name": "Security",
+        "count": 5
+      },
+      {
+        "name": "Automation",
+        "count": 6
+      },
+      {
+        "name": "Quality",
+        "count": 2
+      },
+      {
+        "name": "Notifications",
+        "count": 2
+      },
+      {
+        "name": "Session Management",
+        "count": 4
+      },
+      {
+        "name": "Safety",
+        "count": 3
+      },
+      {
+        "name": "Utility",
+        "count": 3
+      },
+      {
+        "name": "Curated Directory",
+        "count": 1
+      },
+      {
+        "name": "Platform Feature",
+        "count": 1
+      }
     ]
   },
   "hooks": [
@@ -29,9 +56,12 @@
       "matcher": "Bash",
       "script": "block-dangerous-commands.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["security", "safety", "destructive-commands"],
+      "tags": [
+        "security",
+        "safety",
+        "destructive-commands"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -45,9 +75,13 @@
       "matcher": "Read|Edit|Write|Bash",
       "script": "protect-secrets.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["security", "secrets", "credentials", "env"],
+      "tags": [
+        "security",
+        "secrets",
+        "credentials",
+        "env"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -61,9 +95,13 @@
       "matcher": "Write|Edit",
       "script": "secret-scanner.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["security", "secrets", "scanning", "pre-commit"],
+      "tags": [
+        "security",
+        "secrets",
+        "scanning",
+        "pre-commit"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -77,9 +115,12 @@
       "matcher": "Bash",
       "script": "branch-guard.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["security", "git", "branch-protection"],
+      "tags": [
+        "security",
+        "git",
+        "branch-protection"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -93,9 +134,12 @@
       "matcher": "Edit|Write",
       "script": "auto-stage.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["automation", "git", "staging"],
+      "tags": [
+        "automation",
+        "git",
+        "staging"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -109,9 +153,12 @@
       "matcher": "Write|Edit",
       "script": "auto-test.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["automation", "testing", "tdd"],
+      "tags": [
+        "automation",
+        "testing",
+        "tdd"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -125,9 +172,12 @@
       "matcher": "Write|Edit",
       "script": "lint-fix.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["automation", "linting", "code-quality"],
+      "tags": [
+        "automation",
+        "linting",
+        "code-quality"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -141,9 +191,12 @@
       "matcher": "Write|Edit",
       "script": "type-check.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["automation", "typescript", "type-checking"],
+      "tags": [
+        "automation",
+        "typescript",
+        "type-checking"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -157,9 +210,12 @@
       "matcher": "Write|Edit",
       "script": "post-edit-check.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["quality", "linting", "code-review"],
+      "tags": [
+        "quality",
+        "linting",
+        "code-review"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -173,9 +229,12 @@
       "matcher": "Bash",
       "script": "suggest-compact.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["quality", "context-management", "compaction"],
+      "tags": [
+        "quality",
+        "context-management",
+        "compaction"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -189,9 +248,12 @@
       "matcher": "Bash",
       "script": "commit-guard.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["quality", "git", "conventional-commits"],
+      "tags": [
+        "quality",
+        "git",
+        "conventional-commits"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -205,9 +267,12 @@
       "matcher": "permission_prompt|idle_prompt|elicitation_dialog",
       "script": "notify-permission.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["notifications", "slack", "alerting"],
+      "tags": [
+        "notifications",
+        "slack",
+        "alerting"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -221,9 +286,12 @@
       "matcher": "*",
       "script": "notification-log.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["notifications", "logging", "debugging"],
+      "tags": [
+        "notifications",
+        "logging",
+        "debugging"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -237,9 +305,12 @@
       "matcher": "",
       "script": "session-start.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["session", "startup", "context"],
+      "tags": [
+        "session",
+        "startup",
+        "context"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -253,9 +324,12 @@
       "matcher": "",
       "script": "session-end.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["session", "shutdown", "persistence"],
+      "tags": [
+        "session",
+        "shutdown",
+        "persistence"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -269,9 +343,12 @@
       "matcher": "",
       "script": "context-loader.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["session", "context", "project-state"],
+      "tags": [
+        "session",
+        "context",
+        "project-state"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -285,9 +362,12 @@
       "matcher": "",
       "script": "pre-compact.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["session", "compaction", "context-preservation"],
+      "tags": [
+        "session",
+        "compaction",
+        "context-preservation"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -301,9 +381,12 @@
       "matcher": "Bash",
       "script": "pre-push-check.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["safety", "git", "push-protection"],
+      "tags": [
+        "safety",
+        "git",
+        "push-protection"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -317,9 +400,13 @@
       "matcher": "Bash",
       "script": "block-dev-server.js",
       "language": "node",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["safety", "dev-server", "tmux", "process-management"],
+      "tags": [
+        "safety",
+        "dev-server",
+        "tmux",
+        "process-management"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -333,9 +420,12 @@
       "matcher": "Bash",
       "script": "smart-approve.py",
       "language": "python",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["safety", "command-analysis", "approval"],
+      "tags": [
+        "safety",
+        "command-analysis",
+        "approval"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -349,9 +439,13 @@
       "matcher": "*",
       "script": "event-logger.py",
       "language": "python",
-      "githubUrl": "https://github.com/karanb192/claude-code-hooks",
       "stars": 425,
-      "tags": ["utility", "logging", "debugging", "audit"],
+      "tags": [
+        "utility",
+        "logging",
+        "debugging",
+        "audit"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -365,9 +459,13 @@
       "matcher": "",
       "script": "stop-check.js",
       "language": "node",
-      "githubUrl": "https://github.com/rohitg00/awesome-claude-code-toolkit",
       "stars": 2100,
-      "tags": ["utility", "testing", "session-end", "reminder"],
+      "tags": [
+        "utility",
+        "testing",
+        "session-end",
+        "reminder"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-06"
@@ -381,9 +479,13 @@
       "matcher": "Bash|Read|Write|Edit",
       "script": "lasso-security.js",
       "language": "node",
-      "githubUrl": "https://github.com/lasso-security/claude-hooks",
       "stars": 50,
-      "tags": ["security", "prompt-injection", "enterprise", "defense"],
+      "tags": [
+        "security",
+        "prompt-injection",
+        "enterprise",
+        "defense"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-13"
@@ -397,9 +499,13 @@
       "matcher": "N/A",
       "script": "N/A",
       "language": "markdown",
-      "githubUrl": "https://github.com/ithiria894/awesome-claude-code-hooks",
       "stars": 200,
-      "tags": ["curated", "directory", "hooks", "discovery"],
+      "tags": [
+        "curated",
+        "directory",
+        "hooks",
+        "discovery"
+      ],
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-07-13"
@@ -413,10 +519,14 @@
       "matcher": "copilot",
       "script": "copilot-hooks-api",
       "language": "api",
-      "githubUrl": null,
       "websiteUrl": "https://docs.github.com/en/copilot/extensions",
       "stars": null,
-      "tags": ["copilot", "github", "platform", "hooks-api"],
+      "tags": [
+        "copilot",
+        "github",
+        "platform",
+        "hooks-api"
+      ],
       "source": "docs",
       "sourceType": "official",
       "lastUpdated": "2026-07-13"

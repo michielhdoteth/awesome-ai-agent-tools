@@ -1,772 +1,165 @@
-# MCP Servers Directory
+# MCP Server Catalog
 
-119 Model Context Protocol (MCP) servers that connect your AI agent to tools, services, and data sources. MCP is the open standard for connecting AI agents to the outside world.
+Curated Model Context Protocol servers for AI-assisted development
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![MCP Count](https://img.shields.io/badge/MCP%20Servers-119-blue.svg)](#all-mcp-servers)
-[![Sources](https://img.shields.io/badge/Sources-20+-green.svg)](#sources)
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](../CONTRIBUTING.md)
+**120** entries across **19** categories.
 
-**Last updated:** July 2026
+## Categories
 
-## What is MCP?
+- **Developer Tools** (15)
+- **Databases** (13)
+- **AI & Machine Learning** (12)
+- **Search** (11)
+- **Communication** (10)
+- **DevOps** (9)
+- **Agent Orchestration** (8)
+- **Security** (7)
+- **Official Reference** (6)
+- **Cloud Platforms** (6)
+- **Monitoring** (6)
+- **Browser Automation** (5)
+- **Research & Data** (5)
+- **Design** (4)
+- **Finance** (4)
+- **Marketing** (3)
+- **Maps** (2)
+- **Blockchain** (2)
+- **Data Engineering** (1)
 
-MCP (Model Context Protocol) is an open standard that gives AI agents access to tools and data sources. Think of MCP servers as plugins for your AI -- they let your agent read files, query databases, browse the web, send messages, and more.
+## All 120 mcps
 
-```
-AI Agent + MCP Server = Connected Agent
-```
-
-**Example:** An agent with a GitHub MCP server can create issues, read code, and manage pull requests. Add a Slack MCP server, and it can post updates. Add a Postgres MCP server, and it can query your database directly.
-
-## Quick Start
-
-```bash
-# Install an MCP server
-npx @anthropic-ai/mcp install @anthropic-ai/filesystem
-npx @anthropic-ai/mcp install @anthropic-ai/github
-npx @anthropic-ai/mcp install @anthropic-ai/memory
-
-# Run a specific MCP server
-npx @anthropic-ai/mcp run @anthropic-ai/filesystem --path ./my-project
-```
-
-## Quick Reference
-
-| Category | Count | Top 3 Servers |
-|----------|------:|---------------|
-| [Official Reference](#official-reference-6-servers) | 6 | Filesystem (87.5K stars), Memory, Sequential Thinking |
-| [Developer Tools](#developer-tools-11-servers) | 11 | GitHub (30.6K stars), Context7 (54K), FastMCP (23K) |
-| [Browser Automation](#browser-automation-5-servers) | 5 | Chrome DevTools (40K), Playwright (34K), Browser Use (100K) |
-| [Databases](#databases-13-servers) | 13 | Supabase, PostgreSQL, MySQL, SQLite, MongoDB |
-| [Cloud Platforms](#cloud-platforms-5-servers) | 5 | AWS, Azure, GCP, Vercel, Railway |
-| [DevOps](#devops-6-servers) | 6 | Docker, Kubernetes, Terraform, GitHub Actions |
-| [Communication](#communication-9-servers) | 9 | Slack, Discord, Telegram, Email, Notion |
-| [Search](#search-8-servers) | 8 | Brave Search, Google Search, Perplexity, DuckDuckGo |
-| [AI & ML](#ai--ml-6-servers) | 6 | OpenAI, Anthropic, Hugging Face, Ollama |
-| [Agent Orchestration](#agent-orchestration-7-servers) | 7 | Task Master (26K), LangGraph, CrewAI |
-| [Marketing](#marketing-2-servers) | 2 | TrendRadar (54K), Content Marketing |
-| [Monitoring](#monitoring-6-servers) | 6 | Sentry (87.5K), Datadog, Grafana, Prometheus |
-| [Security](#security-5-servers) | 5 | Vault, Snyk, Trivy, OWASP |
-| [Design](#design-3-servers) | 3 | Figma, Sketch, Adobe XD |
-| [Finance](#finance-4-servers) | 4 | Stripe, Plaid, QuickBooks, Xero |
-| [Maps](#maps-2-servers) | 2 | Google Maps, Mapbox |
-| [Research & Data](#research--data-5-servers) | 5 | arXiv, PubMed, Semantic Scholar |
-| [Data Engineering](#data-engineering-1-server) | 1 | Apache Spark |
-| [Blockchain](#blockchain-1-server) | 1 | Ethereum |
-
----
-
-## Official Reference (6 servers)
-
-Core MCP servers maintained by Anthropic. These are the foundation of the MCP ecosystem.
-
----
-
-**Filesystem** -- Secure file system operations with configurable access controls. The most popular MCP server (87.5K stars).
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/filesystem`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `filesystem` `files` `read-write` `official`
-
-**Memory** -- Persistent memory with knowledge graph storage. Gives your agent long-term memory across sessions.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/memory`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `memory` `knowledge-graph` `persistence` `official`
-
-**Sequential Thinking** -- Step-by-step problem solving with dynamic thought chains. Helps agents work through complex reasoning.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/sequential-thinking`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `reasoning` `thinking` `problem-solving` `official`
-
-**Git** -- Git repository operations: status, diff, log, commit, branch management.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/git`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `git` `version-control` `repository` `official`
-
-**Fetch** -- Web content fetching and conversion for efficient use in LLM context. Fetches URLs and converts to markdown.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/fetch`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `web` `fetch` `markdown` `official`
-
-**Time** -- Time and timezone operations. Get current time, convert between timezones, format dates.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/time`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `time` `timezone` `datetime` `official`
-
----
-
-## Developer Tools (11 servers)
-
-Code, version control, documentation, and development workflows.
-
----
-
-**GitHub** -- Complete GitHub integration: issues, PRs, repos, search, notifications.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/github`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 30.6K | License: MIT
-> Tags: `github` `issues` `pull-requests` `repositories`
-
-**Context7** -- Up-to-date documentation context for AI coding assistants. Resolves library versions and pulls relevant docs.
-> Install: `npx @anthropic-ai/mcp install @upstash/context7-mcp`
-> Source: [upstash/context7](https://github.com/upstash/context7) | Stars: 54K | License: MIT
-> Tags: `documentation` `context` `libraries` `coding`
-
-**FastMCP** -- The fast, Pythonic way to build MCP servers. Framework for building custom MCP servers.
-> Install: `npx @anthropic-ai/mcp install fastmcp`
-> Source: [jlowin/fastmcp](https://github.com/jlowin/fastmcp) | Stars: 23K | License: MIT
-> Tags: `framework` `python` `build-servers` `developer-tools`
-
-**MarkItDown** -- Convert any file to Markdown for LLM consumption. Supports 50+ file formats.
-> Install: `npx @anthropic-ai/mcp install markitdown`
-> Source: [microsoft/markitdown](https://github.com/microsoft/markitdown) | Stars: 122K | License: MIT
-> Tags: `conversion` `markdown` `documents` `microsoft`
-
-**SQLite** -- SQLite database operations with read-only safety mode.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/sqlite`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `sqlite` `database` `sql` `official`
-
-**PostgreSQL** -- PostgreSQL database operations with schema inspection.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/postgres`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `postgresql` `database` `sql` `official`
-
-**Puppeteer** -- Browser automation for testing and scraping with headless Chrome.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/puppeteer`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `browser` `automation` `puppeteer` `testing`
-
-**Brave Search** -- Web and local search using Brave Search API.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/brave-search`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `search` `web` `brave` `official`
-
-**Google Maps** -- Google Maps API integration for geocoding, directions, and places.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/google-maps`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `maps` `geocoding` `directions` `official`
-
-**EverArt** -- AI image generation with multiple model support.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/everart`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `image` `generation` `ai` `official`
-
-**Everything** -- Reference/server for testing MCP features. Useful for development and debugging.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/everything`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `testing` `reference` `debugging` `official`
-
----
-
-## Browser Automation (5 servers)
-
-Web browsing, screenshots, and browser-based testing.
+| Name                              | Category              | Description                                                                                                                                                                                                                                                                         | Source                                                                                                                      | Badges                                                                                                                                                                                                                                               |
+| --------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Filesystem MCP                    | Official Reference    | Secure file read/write/list/search operations with configurable directory access controls                                                                                                                                                                                           | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem)                    | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers?style=flat)                                       |
+| Memory MCP                        | Official Reference    | Knowledge graph-based persistent memory system for maintaining context across sessions                                                                                                                                                                                              | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/memory)                        | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers?style=flat)                                       |
+| Sequential Thinking MCP           | Official Reference    | Dynamic and reflective problem-solving through structured thought sequences                                                                                                                                                                                                         | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking)            | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers?style=flat)                                       |
+| Git MCP                           | Official Reference    | Read, search, and manipulate Git repositories (commit, diff, log, branch)                                                                                                                                                                                                           | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/git)                           | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers?style=flat)                                       |
+| Fetch MCP                         | Official Reference    | Web content fetching and conversion for efficient LLM usage                                                                                                                                                                                                                         | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch)                         | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers?style=flat)                                       |
+| Time MCP                          | Official Reference    | Time and timezone conversion capabilities                                                                                                                                                                                                                                           | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers/tree/main/src/time)                          | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers?style=flat)                                       |
+| GitHub MCP Server                 | Developer Tools       | GitHub's official MCP server for repos, issues, PRs, code search, Actions, and CI/CD                                                                                                                                                                                                | [github/github-mcp-server](https://github.com/github/github-mcp-server)                                                     | ![Stars](https://img.shields.io/github/stars/github/github-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/github/github-mcp-server?style=flat)                                               |
+| Context7                          | Developer Tools       | Pulls live, version-pinned library documentation into prompts to prevent hallucinated APIs                                                                                                                                                                                          | [upstash/context7](https://github.com/upstash/context7)                                                                     | ![Stars](https://img.shields.io/github/stars/upstash/context7?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/upstash/context7?style=flat)                                                               |
+| Serena                            | Developer Tools       | Powerful MCP toolkit for coding with semantic retrieval and editing capabilities                                                                                                                                                                                                    | [oraios/serena](https://github.com/oraios/serena)                                                                           | ![Stars](https://img.shields.io/github/stars/oraios/serena?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/oraios/serena?style=flat)                                                                     |
+| MarkItDown                        | Developer Tools       | Converts PDF, Office, HTML and image files into clean Markdown for AI consumption                                                                                                                                                                                                   | [microsoft/markitdown](https://github.com/microsoft/markitdown)                                                             | ![Stars](https://img.shields.io/github/stars/microsoft/markitdown?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/microsoft/markitdown?style=flat)                                                       |
+| Task Master                       | Developer Tools       | Turns Claude Code into an autonomous PRD-driven task runner                                                                                                                                                                                                                         | [eyaltoledano/claude-task-master](https://github.com/eyaltoledano/claude-task-master)                                       | ![Stars](https://img.shields.io/github/stars/eyaltoledano/claude-task-master?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/eyaltoledano/claude-task-master?style=flat)                                 |
+| FastMCP                           | Developer Tools       | The fastest way to build MCP servers in Python with decorators and automatic type validation                                                                                                                                                                                        | [jlowin/fastmcp](https://github.com/jlowin/fastmcp)                                                                         | ![Stars](https://img.shields.io/github/stars/jlowin/fastmcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/jlowin/fastmcp?style=flat)                                                                   |
+| MCP Inspector                     | Developer Tools       | Official visual testing tool for MCP servers - debug tool calls, inspect responses                                                                                                                                                                                                  | [modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector)                                         | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/inspector?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/inspector?style=flat)                                   |
+| Chrome DevTools MCP               | Browser Automation    | Chrome DevTools for coding agents - inspect, debug, and interact with web pages                                                                                                                                                                                                     | [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)                                 | ![Stars](https://img.shields.io/github/stars/ChromeDevTools/chrome-devtools-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ChromeDevTools/chrome-devtools-mcp?style=flat)                           |
+| Playwright MCP                    | Browser Automation    | De-facto standard for browser automation under MCP - real Chromium, accessibility-tree targeting                                                                                                                                                                                    | [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)                                                     | ![Stars](https://img.shields.io/github/stars/microsoft/playwright-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/microsoft/playwright-mcp?style=flat)                                               |
+| Firecrawl MCP                     | Browser Automation    | Web scraping with JavaScript rendering, crawling, and content extraction                                                                                                                                                                                                            | [mendableai/firecrawl-mcp-server](https://github.com/mendableai/firecrawl-mcp-server)                                       | ![Stars](https://img.shields.io/github/stars/mendableai/firecrawl-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mendableai/firecrawl-mcp-server?style=flat)                                 |
+| Puppeteer MCP                     | Browser Automation    | Browser automation and web scraping via Puppeteer                                                                                                                                                                                                                                   | [modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/puppeteer)   | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers-archived?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers-archived?style=flat)                     |
+| Browser Use MCP                   | Browser Automation    | AI-powered browser automation with 100K+ stars. Enables agents to browse the web, fill forms, extract data, and interact with web pages autonomously.                                                                                                                               | [browser-use/browser-use](https://github.com/browser-use/browser-use)                                                       | ![Stars](https://img.shields.io/github/stars/browser-use/browser-use?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/browser-use/browser-use?style=flat)                                                 |
+| PostgreSQL MCP                    | Databases             | Read-only database access with schema inspection for PostgreSQL                                                                                                                                                                                                                     | [modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/postgres)    | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers-archived?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers-archived?style=flat)                     |
+| SQLite MCP                        | Databases             | Database interaction and business intelligence capabilities for SQLite                                                                                                                                                                                                              | [modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite)      | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers-archived?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers-archived?style=flat)                     |
+| Redis MCP                         | Databases             | Natural language interface for Redis key-value stores with multiple data structures                                                                                                                                                                                                 | [modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/redis)       | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers-archived?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers-archived?style=flat)                     |
+| Supabase MCP                      | Databases             | Connect AI tools to Supabase projects for database management, auth, storage, and Edge Functions                                                                                                                                                                                    | [supabase-community/supabase-mcp](https://github.com/supabase-community/supabase-mcp)                                       | ![Stars](https://img.shields.io/github/stars/supabase-community/supabase-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/supabase-community/supabase-mcp?style=flat)                                 |
+| MongoDB MCP                       | Databases             | MongoDB operations including Atlas Vector Search for document and vector operations                                                                                                                                                                                                 | [mongodb-js/mongodb-mcp-server](https://github.com/mongodb-js/mongodb-mcp-server)                                           | ![Stars](https://img.shields.io/github/stars/mongodb-js/mongodb-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mongodb-js/mongodb-mcp-server?style=flat)                                     |
+| Qdrant MCP                        | Databases             | Semantic memory layer on top of Qdrant vector search engine                                                                                                                                                                                                                         | [qdrant/mcp-server-qdrant](https://github.com/qdrant/mcp-server-qdrant)                                                     | ![Stars](https://img.shields.io/github/stars/qdrant/mcp-server-qdrant?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/qdrant/mcp-server-qdrant?style=flat)                                               |
+| ChromaDB MCP                      | Databases             | Vector database operations - collection management, document ops, similarity search                                                                                                                                                                                                 | [rkilchmn/chroma-mcp-server](https://github.com/rkilchmn/chroma-mcp-server)                                                 | ![Stars](https://img.shields.io/github/stars/rkilchmn/chroma-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/rkilchmn/chroma-mcp-server?style=flat)                                           |
+| MindsDB MCP                       | Databases             | Federated query engine aggregating 200+ data sources through a single MCP endpoint                                                                                                                                                                                                  | [mindsdb/mindsdb](https://github.com/mindsdb/mindsdb)                                                                       | ![Stars](https://img.shields.io/github/stars/mindsdb/mindsdb?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mindsdb/mindsdb?style=flat)                                                                 |
+| AWS MCP Servers                   | Cloud Platforms       | 66+ official AWS MCP servers for EC2, S3, Lambda, RDS, CloudFormation, CDK, and more                                                                                                                                                                                                | [awslabs/mcp](https://github.com/awslabs/mcp)                                                                               | ![Stars](https://img.shields.io/github/stars/awslabs/mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/awslabs/mcp?style=flat)                                                                         |
+| Cloudflare MCP                    | Cloud Platforms       | Manage Workers, KV, R2, D1, and other Cloudflare services                                                                                                                                                                                                                           | [cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare)                                     | ![Stars](https://img.shields.io/github/stars/cloudflare/mcp-server-cloudflare?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/cloudflare/mcp-server-cloudflare?style=flat)                               |
+| DigitalOcean MCP                  | Cloud Platforms       | Manage Droplets, App Platform, Databases, DOKS, Networking, and Spaces Storage                                                                                                                                                                                                      | [digitalocean/digitalocean-mcp](https://github.com/digitalocean/digitalocean-mcp)                                           | ![Stars](https://img.shields.io/github/stars/digitalocean/digitalocean-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/digitalocean/digitalocean-mcp?style=flat)                                     |
+| Vercel MCP                        | Cloud Platforms       | Deploy and manage Vercel projects, edge functions, and analytics                                                                                                                                                                                                                    | [vercel/mcp](https://github.com/vercel/mcp)                                                                                 | ![Stars](https://img.shields.io/github/stars/vercel/mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/vercel/mcp?style=flat)                                                                           |
+| EdgeOne Pages MCP                 | Cloud Platforms       | Deploy HTML content to EdgeOne Pages and obtain accessible public URLs                                                                                                                                                                                                              | [TencentEdgeOne/edgeone-pages-mcp](https://github.com/TencentEdgeOne/edgeone-pages-mcp)                                     | ![Stars](https://img.shields.io/github/stars/TencentEdgeOne/edgeone-pages-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/TencentEdgeOne/edgeone-pages-mcp?style=flat)                               |
+| Docker MCP                        | DevOps                | Container management and MCP server discovery with 300+ catalog entries                                                                                                                                                                                                             | [docker/mcp](https://github.com/docker/mcp)                                                                                 | ![Stars](https://img.shields.io/github/stars/docker/mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/docker/mcp?style=flat)                                                                           |
+| Kubernetes MCP                    | DevOps                | Kubernetes and OpenShift management with multi-cluster support, Helm, KubeVirt, Tekton                                                                                                                                                                                              | [containers/kubernetes-mcp-server](https://github.com/containers/kubernetes-mcp-server)                                     | ![Stars](https://img.shields.io/github/stars/containers/kubernetes-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/containers/kubernetes-mcp-server?style=flat)                               |
+| kubectl-mcp-server                | DevOps                | Natural language Kubernetes control - debug pods, optimize costs, deploy, audit security                                                                                                                                                                                            | [rohitg00/kubectl-mcp-server](https://github.com/rohitg00/kubectl-mcp-server)                                               | ![Stars](https://img.shields.io/github/stars/rohitg00/kubectl-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/rohitg00/kubectl-mcp-server?style=flat)                                         |
+| Terraform MCP                     | DevOps                | Browse Terraform Registry, discover modules/providers, validate configs, manage workspaces                                                                                                                                                                                          | [hashicorp/terraform-mcp-server](https://github.com/hashicorp/terraform-mcp-server)                                         | ![Stars](https://img.shields.io/github/stars/hashicorp/terraform-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hashicorp/terraform-mcp-server?style=flat)                                   |
+| Pulumi MCP                        | DevOps                | Infrastructure as code execution and management across cloud providers                                                                                                                                                                                                              | [pulumi/mcp-server](https://github.com/pulumi/mcp-server)                                                                   | ![Stars](https://img.shields.io/github/stars/pulumi/mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/pulumi/mcp-server?style=flat)                                                             |
+| Slack MCP                         | Communication         | Channel management, messaging, and thread operations for Slack                                                                                                                                                                                                                      | [zencoderai/slack-mcp-server](https://github.com/zencoderai/slack-mcp-server)                                               | ![Stars](https://img.shields.io/github/stars/zencoderai/slack-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/zencoderai/slack-mcp-server?style=flat)                                         |
+| X (Twitter) MCP Server            | Communication         | Official hosted MCP server from X exposing 200+ API endpoints. Read tweets, search content, post updates, manage profiles, and more. Hosted at api.x.com/mcp.                                                                                                                       | [xdevplatform/xmcp](https://github.com/xdevplatform/xmcp)                                                                   | ![Stars](https://img.shields.io/github/stars/xdevplatform/xmcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/xdevplatform/xmcp?style=flat)                                                             |
+| Notion MCP                        | Communication         | Read, create, and update Notion pages and databases                                                                                                                                                                                                                                 | [makenotion/notion-mcp-server](https://github.com/makenotion/notion-mcp-server)                                             | ![Stars](https://img.shields.io/github/stars/makenotion/notion-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/makenotion/notion-mcp-server?style=flat)                                       |
+| NotFair                           | Marketing             | Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads. Connects to Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP for live data.                                                                                           | [nowork-studio/NotFair](https://github.com/nowork-studio/NotFair)                                                           | ![Stars](https://img.shields.io/github/stars/nowork-studio/NotFair?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/nowork-studio/NotFair?style=flat)                                                     |
+| Salesforce Marketing Cloud MCP    | Marketing             | Salesforce Marketing Cloud Engagement MCP server. Manage journeys, email campaigns, audiences, and analytics through MCP protocol.                                                                                                                                                  | [salesforce/marketing-cloud-mcp](https://github.com/salesforce/marketing-cloud-mcp)                                         | ![Stars](https://img.shields.io/github/stars/salesforce/marketing-cloud-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/salesforce/marketing-cloud-mcp?style=flat)                                   |
+| Linear MCP                        | Communication         | Issue tracking, project management, and team coordination via Linear                                                                                                                                                                                                                | [linear/mcp-server](https://github.com/linear/mcp-server)                                                                   | ![Stars](https://img.shields.io/github/stars/linear/mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/linear/mcp-server?style=flat)                                                             |
+| Obsidian MCP                      | Communication         | Vision-aware vault access with link graph traversal and section-level editing                                                                                                                                                                                                       | [smithery-ai/obsidian-mcp](https://github.com/smithery-ai/obsidian-mcp)                                                     | ![Stars](https://img.shields.io/github/stars/smithery-ai/obsidian-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/smithery-ai/obsidian-mcp?style=flat)                                               |
+| Google Workspace MCP              | Communication         | Gmail, Google Calendar, and Google Drive access for AI agents                                                                                                                                                                                                                       | [modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/gdrive)      | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers-archived?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers-archived?style=flat)                     |
+| Brave Search MCP                  | Search                | Web and local search using Brave's Search API                                                                                                                                                                                                                                       | [brave/brave-search-mcp-server](https://github.com/brave/brave-search-mcp-server)                                           | ![Stars](https://img.shields.io/github/stars/brave/brave-search-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/brave/brave-search-mcp-server?style=flat)                                     |
+| Tavily MCP                        | Search                | AI-optimized web search API designed specifically for LLM agents                                                                                                                                                                                                                    | [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp)                                                             | ![Stars](https://img.shields.io/github/stars/tavily-ai/tavily-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/tavily-ai/tavily-mcp?style=flat)                                                       |
+| Serper MCP                        | Search                | Google search results via Serper API for AI agents                                                                                                                                                                                                                                  | [garymengcom/serper-mcp-server](https://github.com/garymengcom/serper-mcp-server)                                           | ![Stars](https://img.shields.io/github/stars/garymengcom/serper-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/garymengcom/serper-mcp-server?style=flat)                                     |
+| Jina AI MCP                       | Search                | Semantic search, image search, and cross-modal search via Jina AI APIs                                                                                                                                                                                                              | [PsychArch/jina-mcp-tools](https://github.com/PsychArch/jina-mcp-tools)                                                     | ![Stars](https://img.shields.io/github/stars/PsychArch/jina-mcp-tools?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/PsychArch/jina-mcp-tools?style=flat)                                               |
+| MiniMax MCP                       | AI & Machine Learning | Text-to-speech, image generation, video generation, and voice cloning via MiniMax APIs                                                                                                                                                                                              | [MiniMax-AI/MiniMax-MCP](https://github.com/MiniMax-AI/MiniMax-MCP)                                                         | ![Stars](https://img.shields.io/github/stars/MiniMax-AI/MiniMax-MCP?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/MiniMax-AI/MiniMax-MCP?style=flat)                                                   |
+| UI-TARS Desktop                   | AI & Machine Learning | Desktop GUI agent using vision-language model to click, type, and reason about arbitrary GUIs                                                                                                                                                                                       | [bytedance/UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop)                                                   | ![Stars](https://img.shields.io/github/stars/bytedance/UI-TARS-desktop?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/bytedance/UI-TARS-desktop?style=flat)                                             |
+| EverArt MCP                       | AI & Machine Learning | AI image generation using various models (Stable Diffusion, DALL-E, etc.)                                                                                                                                                                                                           | [modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/everart)     | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers-archived?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers-archived?style=flat)                     |
+| Claude-Flow                       | Agent Orchestration   | Orchestrates intelligent multi-agent swarms and autonomous workflows                                                                                                                                                                                                                | [ruvnet/claude-flow](https://github.com/ruvnet/claude-flow)                                                                 | ![Stars](https://img.shields.io/github/stars/ruvnet/claude-flow?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ruvnet/claude-flow?style=flat)                                                           |
+| Ruflo                             | Agent Orchestration   | Leading agent orchestration platform for Claude with enterprise-grade architecture                                                                                                                                                                                                  | [ruvnet/ruflo](https://github.com/ruvnet/ruflo)                                                                             | ![Stars](https://img.shields.io/github/stars/ruvnet/ruflo?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ruvnet/ruflo?style=flat)                                                                       |
+| n8n MCP                           | Agent Orchestration   | Fair-code workflow automation platform with native AI capabilities and 400+ integrations                                                                                                                                                                                            | [n8n-io/n8n](https://github.com/n8n-io/n8n)                                                                                 | ![Stars](https://img.shields.io/github/stars/n8n-io/n8n?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/n8n-io/n8n?style=flat)                                                                           |
+| Netdata MCP                       | Monitoring            | Real-time infrastructure monitoring with MCP integration for system metrics                                                                                                                                                                                                         | [netdata/netdata](https://github.com/netdata/netdata)                                                                       | ![Stars](https://img.shields.io/github/stars/netdata/netdata?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/netdata/netdata?style=flat)                                                                 |
+| Grafana MCP                       | Monitoring            | Query Grafana dashboards, alerts, and data sources through MCP                                                                                                                                                                                                                      | [grafana/mcp-grafana](https://github.com/grafana/mcp-grafana)                                                               | ![Stars](https://img.shields.io/github/stars/grafana/mcp-grafana?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/grafana/mcp-grafana?style=flat)                                                         |
+| Sentry MCP                        | Monitoring            | Retrieve and analyze issues from Sentry.io for error tracking                                                                                                                                                                                                                       | [modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sentry)      | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers-archived?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers-archived?style=flat)                     |
+| Aperion Shield                    | Security              | Local guardrail proxy that blocks destructive MCP tool calls before execution                                                                                                                                                                                                       | [AperionAI/shield](https://github.com/AperionAI/shield)                                                                     | ![Stars](https://img.shields.io/github/stars/AperionAI/shield?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/AperionAI/shield?style=flat)                                                               |
+| Grype MCP                         | Security              | Vulnerability scanning for directories, container images, and packages                                                                                                                                                                                                              | [anchore/grype-mcp](https://github.com/anchore/grype-mcp)                                                                   | ![Stars](https://img.shields.io/github/stars/anchore/grype-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/anchore/grype-mcp?style=flat)                                                             |
+| Wundervault                       | Security              | Zero-knowledge secret management - secrets decrypted server-side, never returned to agent                                                                                                                                                                                           | [wundervault/wundervault-mcp](https://github.com/wundervault/wundervault-mcp)                                               | ![Stars](https://img.shields.io/github/stars/wundervault/wundervault-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/wundervault/wundervault-mcp?style=flat)                                         |
+| MCPGuard OWASP Scanner            | Security              | OWASP MCP Top 10 vulnerability scanner. Scans MCP servers for security vulnerabilities following the OWASP MCP Top 10 framework.                                                                                                                                                    | [mcpguard/mcpguard](https://github.com/mcpguard/mcpguard)                                                                   | ![Stars](https://img.shields.io/github/stars/mcpguard/mcpguard?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mcpguard/mcpguard?style=flat)                                                             |
+| Figma MCP                         | Design                | Figma file access for design-to-code workflows                                                                                                                                                                                                                                      | [figma/figma-mcp](https://github.com/figma/figma-mcp)                                                                       | ![Stars](https://img.shields.io/github/stars/figma/figma-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/figma/figma-mcp?style=flat)                                                                 |
+| Canva MCP                         | Design                | Create and modify Canva designs programmatically                                                                                                                                                                                                                                    | [canva/mcp-server](https://github.com/canva/mcp-server)                                                                     | ![Stars](https://img.shields.io/github/stars/canva/mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/canva/mcp-server?style=flat)                                                               |
+| Stripe MCP                        | Finance               | Payment processing, subscription management, and financial operations                                                                                                                                                                                                               | [stripe/agent-toolkit](https://github.com/stripe/agent-toolkit)                                                             | ![Stars](https://img.shields.io/github/stars/stripe/agent-toolkit?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/stripe/agent-toolkit?style=flat)                                                       |
+| Dodo Payments MCP                 | Finance               | Live payments, subscriptions, customers, products, refunds, license keys                                                                                                                                                                                                            | [dodopayments/dodo-agent-plugin](https://github.com/dodopayments/dodo-agent-plugin)                                         | ![Stars](https://img.shields.io/github/stars/dodopayments/dodo-agent-plugin?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/dodopayments/dodo-agent-plugin?style=flat)                                   |
+| FLOX MCP                          | Finance               | Trading framework with 30 tools for backtests, strategy scaffolding, order placement                                                                                                                                                                                                | [FLOX-Foundation/flox](https://github.com/FLOX-Foundation/flox)                                                             | ![Stars](https://img.shields.io/github/stars/FLOX-Foundation/flox?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/FLOX-Foundation/flox?style=flat)                                                       |
+| Google Maps MCP                   | Maps                  | Location services, directions, and place details                                                                                                                                                                                                                                    | [modelcontextprotocol/servers-archived](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/google-maps) | ![Stars](https://img.shields.io/github/stars/modelcontextprotocol/servers-archived?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/modelcontextprotocol/servers-archived?style=flat)                     |
+| Amap Maps MCP                     | Maps                  | Official Amap (Gaode) Maps integration for Chinese mapping services                                                                                                                                                                                                                 | [amap/amap-mcp](https://github.com/amap/amap-mcp)                                                                           | ![Stars](https://img.shields.io/github/stars/amap/amap-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/amap/amap-mcp?style=flat)                                                                     |
+| TrendRadar                        | Research & Data       | AI-driven public opinion and trend monitor with multi-platform aggregation and RSS                                                                                                                                                                                                  | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar)                                                                 | ![Stars](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sansan0/TrendRadar?style=flat)                                                           |
+| Scrapling                         | Research & Data       | Adaptive web scraping framework handling single requests to full-scale crawls                                                                                                                                                                                                       | [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)                                                                   | ![Stars](https://img.shields.io/github/stars/D4Vinci/Scrapling?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/D4Vinci/Scrapling?style=flat)                                                             |
+| GPT-Researcher                    | Research & Data       | Autonomous agent for deep research on any topic using any LLM provider                                                                                                                                                                                                              | [assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher)                                                 | ![Stars](https://img.shields.io/github/stars/assafelovic/gpt-researcher?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/assafelovic/gpt-researcher?style=flat)                                           |
+| OpenRouter MCP                    | AI & Machine Learning | NEW June 25, 2026 - Multi-model routing through OpenRouter. Access 200+ models via a single MCP endpoint with automatic fallback and cost optimization.                                                                                                                             | [openrouter/openrouter-mcp](https://github.com/openrouter/openrouter-mcp)                                                   | ![Stars](https://img.shields.io/github/stars/openrouter/openrouter-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/openrouter/openrouter-mcp?style=flat)                                             |
+| Sentry MCP v2                     | Monitoring            | Enhanced Sentry integration - real-time error tracking, performance monitoring, session replay, and AI-powered root cause analysis.                                                                                                                                                 | [getsentry/sentry-mcp](https://github.com/getsentry/sentry-mcp)                                                             | ![Stars](https://img.shields.io/github/stars/getsentry/sentry-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/getsentry/sentry-mcp?style=flat)                                                       |
+| CodeGraph MCP                     | Developer Tools       | Local-first code indexing MCP - 54K stars. Fast semantic code search across large codebases without cloud dependency.                                                                                                                                                               | [anthropics/codegraph-mcp](https://github.com/anthropics/codegraph-mcp)                                                     | ![Stars](https://img.shields.io/github/stars/anthropics/codegraph-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/anthropics/codegraph-mcp?style=flat)                                               |
+| TrendRadar MCP                    | Research & Data       | AI-driven public opinion and trend monitor with multi-platform aggregation and RSS                                                                                                                                                                                                  | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar)                                                                 | ![Stars](https://img.shields.io/github/stars/sansan0/TrendRadar?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sansan0/TrendRadar?style=flat)                                                           |
+| Last30Days MCP                    | Search                | Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web.                                                                                                    | [last30days/last30days-mcp](https://github.com/last30days/last30days-mcp)                                                   | ![Stars](https://img.shields.io/github/stars/last30days/last30days-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/last30days/last30days-mcp?style=flat)                                             |
+| n8n MCP Server                    | Agent Orchestration   | AI-powered n8n workflow management. Create, edit, and manage n8n workflows and automations through MCP.                                                                                                                                                                             | [czlonkowski/n8n-mcp](https://github.com/czlonkowski/n8n-mcp)                                                               | ![Stars](https://img.shields.io/github/stars/czlonkowski/n8n-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/czlonkowski/n8n-mcp?style=flat)                                                         |
+| Framelink Figma MCP               | Design                | Connect AI agents to Figma designs. Extract design tokens, components, and layouts for code generation.                                                                                                                                                                             | [GLips/Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP)                                                       | ![Stars](https://img.shields.io/github/stars/GLips/Figma-Context-MCP?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/GLips/Figma-Context-MCP?style=flat)                                                 |
+| Arize Phoenix MCP                 | AI & Machine Learning | LLM observability and evaluation. Trace, debug, and analyze LLM applications with structured telemetry.                                                                                                                                                                             | [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix)                                                                     | ![Stars](https://img.shields.io/github/stars/Arize-ai/phoenix?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Arize-ai/phoenix?style=flat)                                                               |
+| Desktop Commander                 | Developer Tools       | Full desktop control for AI agents. Execute commands, manage files, control applications, and automate workflows.                                                                                                                                                                   | [wonderwhy-er/DesktopCommanderMCP](https://github.com/wonderwhy-er/DesktopCommanderMCP)                                     | ![Stars](https://img.shields.io/github/stars/wonderwhy-er/DesktopCommanderMCP?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/wonderwhy-er/DesktopCommanderMCP?style=flat)                               |
+| Atlassian MCP (Community)         | Developer Tools       | Community Atlassian integration. Access Jira, Confluence, and Bitbucket through MCP for project management.                                                                                                                                                                         | [sooperset/mcp-atlassian](https://github.com/sooperset/mcp-atlassian)                                                       | ![Stars](https://img.shields.io/github/stars/sooperset/mcp-atlassian?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sooperset/mcp-atlassian?style=flat)                                                 |
+| Google Workspace MCP              | Communication         | Comprehensive Google Workspace integration. Gmail, Calendar, Drive, Docs, Sheets, Slides through MCP.                                                                                                                                                                               | [taylorwilsdon/google_workspace_mcp](https://github.com/taylorwilsdon/google_workspace_mcp)                                 | ![Stars](https://img.shields.io/github/stars/taylorwilsdon/google_workspace_mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/taylorwilsdon/google_workspace_mcp?style=flat)                           |
+| Zapier MCP                        | Agent Orchestration   | Universal integration layer. Connect to 9,000+ apps through Zapier's MCP server for automation.                                                                                                                                                                                     | [zapier/zapier-mcp](https://github.com/zapier/zapier-mcp)                                                                   | ![Stars](https://img.shields.io/github/stars/zapier/zapier-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/zapier/zapier-mcp?style=flat)                                                             |
+| Tavily MCP Server                 | Search                | AI-optimized web search. Perform deep research, extract content, and find information across the web.                                                                                                                                                                               | [tavily-ai/tavily-mcp](https://github.com/tavily-ai/tavily-mcp)                                                             | ![Stars](https://img.shields.io/github/stars/tavily-ai/tavily-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/tavily-ai/tavily-mcp?style=flat)                                                       |
+| Perplexity MCP (Official)         | Search                | Official Perplexity AI MCP server. Access Perplexity's AI search capabilities through MCP protocol.                                                                                                                                                                                 | [perplexityai/modelcontextprotocol](https://github.com/perplexityai/modelcontextprotocol)                                   | ![Stars](https://img.shields.io/github/stars/perplexityai/modelcontextprotocol?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/perplexityai/modelcontextprotocol?style=flat)                             |
+| MongoDB MCP (Official)            | Databases             | Official MongoDB MCP server. Query, insert, update, and manage MongoDB databases through MCP.                                                                                                                                                                                       | [mongodb-labs/mongodb-mcp-server](https://github.com/mongodb-labs/mongodb-mcp-server)                                       | ![Stars](https://img.shields.io/github/stars/mongodb-labs/mongodb-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mongodb-labs/mongodb-mcp-server?style=flat)                                 |
+| Terraform MCP (HashiCorp)         | DevOps                | Official HashiCorp Terraform MCP server. Manage infrastructure as code through MCP protocol.                                                                                                                                                                                        | [hashicorp/terraform-mcp-server](https://github.com/hashicorp/terraform-mcp-server)                                         | ![Stars](https://img.shields.io/github/stars/hashicorp/terraform-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hashicorp/terraform-mcp-server?style=flat)                                   |
+| Grafana MCP Server                | Monitoring            | Official Grafana MCP server. Query dashboards, alerts, and metrics through MCP for monitoring workflows.                                                                                                                                                                            | [grafana/mcp-grafana](https://github.com/grafana/mcp-grafana)                                                               | ![Stars](https://img.shields.io/github/stars/grafana/mcp-grafana?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/grafana/mcp-grafana?style=flat)                                                         |
+| Atlassian MCP (Official)          | Developer Tools       | Official Atlassian MCP server. Remote server for Jira and Confluence integration.                                                                                                                                                                                                   | [atlassian/atlassian-mcp-server](https://github.com/atlassian/atlassian-mcp-server)                                         | ![Stars](https://img.shields.io/github/stars/atlassian/atlassian-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/atlassian/atlassian-mcp-server?style=flat)                                   |
+| Elasticsearch MCP                 | Databases             | Official Elasticsearch MCP server. Search, index, and analyze data through MCP protocol.                                                                                                                                                                                            | [elastic/mcp-server-elasticsearch](https://github.com/elastic/mcp-server-elasticsearch)                                     | ![Stars](https://img.shields.io/github/stars/elastic/mcp-server-elasticsearch?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/elastic/mcp-server-elasticsearch?style=flat)                               |
+| Obsidian MCP Server               | Research & Data       | Connect AI agents to Obsidian vaults. Read, write, and search notes through MCP for knowledge management.                                                                                                                                                                           | [cyanheads/obsidian-mcp-server](https://github.com/cyanheads/obsidian-mcp-server)                                           | ![Stars](https://img.shields.io/github/stars/cyanheads/obsidian-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/cyanheads/obsidian-mcp-server?style=flat)                                     |
+| dbt MCP Server (Official)         | Data Engineering      | Official dbt MCP server. Run transformations, manage models, and query data pipelines through MCP.                                                                                                                                                                                  | [dbt-labs/dbt-mcp](https://github.com/dbt-labs/dbt-mcp)                                                                     | ![Stars](https://img.shields.io/github/stars/dbt-labs/dbt-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/dbt-labs/dbt-mcp?style=flat)                                                               |
+| Redis MCP (Official)              | Databases             | Official Redis MCP server. Cache, pub/sub, and data structure operations through MCP protocol.                                                                                                                                                                                      | [redis/mcp-redis](https://github.com/redis/mcp-redis)                                                                       | ![Stars](https://img.shields.io/github/stars/redis/mcp-redis?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/redis/mcp-redis?style=flat)                                                                 |
+| Airtable MCP Server               | Databases             | Airtable integration through MCP. Read, create, update, and delete records in Airtable bases.                                                                                                                                                                                       | [domdomegg/airtable-mcp-server](https://github.com/domdomegg/airtable-mcp-server)                                           | ![Stars](https://img.shields.io/github/stars/domdomegg/airtable-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/domdomegg/airtable-mcp-server?style=flat)                                     |
+| Snowflake MCP Server              | Databases             | Official Snowflake MCP server. Query and manage Snowflake data warehouse through MCP protocol.                                                                                                                                                                                      | [Snowflake-Labs/mcp](https://github.com/Snowflake-Labs/mcp)                                                                 | ![Stars](https://img.shields.io/github/stars/Snowflake-Labs/mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Snowflake-Labs/mcp?style=flat)                                                           |
+| Shopify MCP Server                | Finance               | Shopify e-commerce integration. Manage products, orders, customers, and storefront through MCP.                                                                                                                                                                                     | [GeLi2001/shopify-mcp](https://github.com/GeLi2001/shopify-mcp)                                                             | ![Stars](https://img.shields.io/github/stars/GeLi2001/shopify-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/GeLi2001/shopify-mcp?style=flat)                                                       |
+| Langfuse Prompt MCP               | AI & Machine Learning | Langfuse prompt management through MCP. Version, test, and deploy prompts with observability.                                                                                                                                                                                       | [langfuse/mcp-server-langfuse](https://github.com/langfuse/mcp-server-langfuse)                                             | ![Stars](https://img.shields.io/github/stars/langfuse/mcp-server-langfuse?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/langfuse/mcp-server-langfuse?style=flat)                                       |
+| Asana MCP Server                  | Communication         | Asana project management through MCP. Create tasks, manage projects, and track work items.                                                                                                                                                                                          | [roychri/mcp-server-asana](https://github.com/roychri/mcp-server-asana)                                                     | ![Stars](https://img.shields.io/github/stars/roychri/mcp-server-asana?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/roychri/mcp-server-asana?style=flat)                                               |
+| Serper Search MCP                 | Search                | Google search results through Serper API. Fast, structured web search for AI agents.                                                                                                                                                                                                | [marcopesani/mcp-server-serper](https://github.com/marcopesani/mcp-server-serper)                                           | ![Stars](https://img.shields.io/github/stars/marcopesani/mcp-server-serper?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/marcopesani/mcp-server-serper?style=flat)                                     |
+| Datadog MCP (Official)            | Monitoring            | Official Datadog MCP server. Access logs, metrics, traces, and monitors through MCP protocol.                                                                                                                                                                                       | [datadog-labs/mcp-server](https://github.com/datadog-labs/mcp-server)                                                       | ![Stars](https://img.shields.io/github/stars/datadog-labs/mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/datadog-labs/mcp-server?style=flat)                                                 |
+| Google Workspace MCP (TypeScript) | Communication         | TypeScript Google Workspace MCP server. Alternative implementation with enhanced type safety.                                                                                                                                                                                       | [aaronsb/google-workspace-mcp](https://github.com/aaronsb/google-workspace-mcp)                                             | ![Stars](https://img.shields.io/github/stars/aaronsb/google-workspace-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/aaronsb/google-workspace-mcp?style=flat)                                       |
+| Xquik MCP Server                  | Marketing             | Remote MCP server and REST API for X search, timelines, profiles, media, monitors, webhooks, and posting workflows.                                                                                                                                                                 | [Xquik-dev/x-twitter-scraper](https://github.com/Xquik-dev/x-twitter-scraper)                                               | ![Stars](https://img.shields.io/github/stars/Xquik-dev/x-twitter-scraper?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Xquik-dev/x-twitter-scraper?style=flat)                                         |
+| Hedera Hosted MCP Server          | Blockchain            | Managed Hedera network capabilities via MCP. Account management, token operations, smart contracts, consensus service. Returns unsigned transaction bytes for security.                                                                                                             | [hedera-dev/hedera-agent-kit](https://github.com/hedera-dev/hedera-agent-kit)                                               | ![Stars](https://img.shields.io/github/stars/hedera-dev/hedera-agent-kit?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hedera-dev/hedera-agent-kit?style=flat)                                         |
+| Wiz MCP Server                    | Security              | Cloud security MCP server from Wiz. Build AI security agents with cloud posture data, vulnerability findings, and compliance context.                                                                                                                                               | [wiz-sec/wiz-mcp](https://github.com/wiz-sec/wiz-mcp)                                                                       | ![Stars](https://img.shields.io/github/stars/wiz-sec/wiz-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/wiz-sec/wiz-mcp?style=flat)                                                                 |
+| Chutes MCP Server                 | AI & Machine Learning | AI model discovery and management via MCP. List models, check quota, manage API keys, usage tracking. Supports 13+ models.                                                                                                                                                          | [chutes-ai/chutes-mcp-server](https://github.com/chutes-ai/chutes-mcp-server)                                               | ![Stars](https://img.shields.io/github/stars/chutes-ai/chutes-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/chutes-ai/chutes-mcp-server?style=flat)                                         |
+| Skills MCP Server (gengirish)     | Agent Orchestration   | Discover, search, and install ~7,000 agent skills from across the GitHub ecosystem via MCP. 20 domains, 11 source repos.                                                                                                                                                            | [gengirish/skills-mcp](https://github.com/gengirish/skills-mcp)                                                             | ![Stars](https://img.shields.io/github/stars/gengirish/skills-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/gengirish/skills-mcp?style=flat)                                                       |
+| MCP Skills (rickwphillips)        | Developer Tools       | Agent-agnostic MCP server with 26 tools and self-healing audit pipeline. Database, PDF, deploy, and reactive workflow skills.                                                                                                                                                       | [rickwphillips/mcp-skills](https://github.com/rickwphillips/mcp-skills)                                                     | ![Stars](https://img.shields.io/github/stars/rickwphillips/mcp-skills?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/rickwphillips/mcp-skills?style=flat)                                               |
+| Brain MCP (Bob Protocol)          | AI & Machine Learning | Persistent memory via the Bob protocol. Long-term agent memory with semantic search and graph-based retrieval.                                                                                                                                                                      | [mordechaipotash/brain-mcp](https://github.com/mordechaipotash/brain-mcp)                                                   | ![Stars](https://img.shields.io/github/stars/mordechaipotash/brain-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mordechaipotash/brain-mcp?style=flat)                                             |
+| Code Graph MCP                    | Developer Tools       | Code knowledge graph built with Tree-sitter. Parse, query, and navigate codebases through semantic relationships.                                                                                                                                                                   | [sdsrss/code-graph-mcp](https://github.com/sdsrss/code-graph-mcp)                                                           | ![Stars](https://img.shields.io/github/stars/sdsrss/code-graph-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sdsrss/code-graph-mcp?style=flat)                                                     |
+| llm-box                           | Agent Orchestration   | Terminal-first workflow automation engine with MCP server mode. Generate and execute YAML workflows from plain English descriptions. 20+ built-in nodes, 15+ LLM providers.                                                                                                         | [alib8b8/llm-box](https://github.com/alib8b8/llm-box)                                                                       | ![Stars](https://img.shields.io/github/stars/alib8b8/llm-box?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/alib8b8/llm-box?style=flat)                                                                 |
+| AgentServices MCP                 | Blockchain            | Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments                                                                                                                                            | [vbkotecha/aiservices-api](https://github.com/vbkotecha/aiservices-api)                                                     | ![Stars](https://img.shields.io/github/stars/vbkotecha/aiservices-api?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/vbkotecha/aiservices-api?style=flat)                                               |
+| FLUJO                             | Agent Orchestration   | MCP-Hub and Inspector, Multi-Model Workflow and Chat Interface. Open-source local-first platform for building MCP-powered AI workflows with model management, visual flow builder, chat interface, and planned executions (cron, webhooks, file watch, MCP tool polling, URL watch) | [mario-andreschak/FLUJO](https://github.com/mario-andreschak/FLUJO)                                                         | ![Stars](https://img.shields.io/github/stars/mario-andreschak/FLUJO?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mario-andreschak/FLUJO?style=flat)                                                   |
+| MCP ABAP ADT API                  | DevOps                | MCP server wrapping abap-adt-api for SAP ABAP development workflows. Provides tools for object management, transport handling, code analysis, syntax checks, source code editing, and DDIC access                                                                                   | [mario-andreschak/mcp-abap-abap-adt-api](https://github.com/mario-andreschak/mcp-abap-abap-adt-api)                         | ![Stars](https://img.shields.io/github/stars/mario-andreschak/mcp-abap-abap-adt-api?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mario-andreschak/mcp-abap-abap-adt-api?style=flat)                   |
+| MCP SAP GUI                       | DevOps                | MCP server for SAP GUI automation using simulated mouse clicks and keyboard input. Provides tools for launching transactions, clicking, typing, scrolling, and screenshot capture with multiple return formats                                                                      | [mario-andreschak/mcp-sap-gui](https://github.com/mario-andreschak/mcp-sap-gui)                                             | ![Stars](https://img.shields.io/github/stars/mario-andreschak/mcp-sap-gui?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mario-andreschak/mcp-sap-gui?style=flat)                                       |
+| MCP Windows Desktop Automation    | DevOps                | MCP server for Windows desktop automation using AutoIt via node-autoit-koffi. Wraps all AutoIt functions as MCP tools for mouse, keyboard, window management, control manipulation, process management, and screenshots                                                             | [mario-andreschak/mcp-windows-desktop-automation](https://github.com/mario-andreschak/mcp-windows-desktop-automation)       | ![Stars](https://img.shields.io/github/stars/mario-andreschak/mcp-windows-desktop-automation?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mario-andreschak/mcp-windows-desktop-automation?style=flat) |
+| MCP Image Recognition             | AI & Machine Learning | MCP server providing image recognition via Anthropic Claude Vision and OpenAI GPT-4 Vision APIs. Supports multiple image formats, configurable primary/fallback providers, base64 and file input, and optional Tesseract OCR text extraction                                        | [mario-andreschak/mcp-image-recognition](https://github.com/mario-andreschak/mcp-image-recognition)                         | ![Stars](https://img.shields.io/github/stars/mario-andreschak/mcp-image-recognition?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mario-andreschak/mcp-image-recognition?style=flat)                   |
+| MCP Veo2 Video Generation         | Design                | MCP server for video and image generation using Google Veo2. Generate videos from text prompts or images, access generated videos through MCP resources, with support for aspect ratio, duration, and prompt enhancement                                                            | [mario-andreschak/mcp-veo2](https://github.com/mario-andreschak/mcp-veo2)                                                   | ![Stars](https://img.shields.io/github/stars/mario-andreschak/mcp-veo2?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mario-andreschak/mcp-veo2?style=flat)                                             |
+| MCP WhatsApp Web                  | Communication         | MCP server for WhatsApp Web. Search and read personal messages, search contacts, send messages to individuals or groups, send and receive media files via whatsapp-web.js. Supports stdio and Streamable HTTP transports with OAuth                                                 | [mario-andreschak/mcp-whatsapp-web](https://github.com/mario-andreschak/mcp-whatsapp-web)                                   | ![Stars](https://img.shields.io/github/stars/mario-andreschak/mcp-whatsapp-web?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mario-andreschak/mcp-whatsapp-web?style=flat)                             |
+| MCP Reasoning Coder               | AI & Machine Learning | MCP server providing flexible two-stage reasoning and response generation. Configurable reasoning and coding models across OpenRouter, OpenAI, Anthropic, DeepSeek, Gemini, and Vertex AI with conversation history and response polling                                            | [mario-andreschak/mcp-reasoning-coding](https://github.com/mario-andreschak/mcp-reasoning-coding)                           | ![Stars](https://img.shields.io/github/stars/mario-andreschak/mcp-reasoning-coding?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mario-andreschak/mcp-reasoning-coding?style=flat)                     |
+| Find MCP                          | Search                | MCP server for discovering other MCP servers. Searches 17,000+ servers synced from the official MCP registry via remote Streamable HTTP (catalog.agentage.io/mcp, no auth for search) or stdio (npx @agentage/find-mcp)                                                             | [agentage/find-mcp](https://github.com/agentage/find-mcp)                                                                   | ![Stars](https://img.shields.io/github/stars/agentage/find-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/agentage/find-mcp?style=flat)                                                             |
+| Nexus-MCP                         | Developer Tools       | Unified local MCP server with hybrid search, code graph, and semantic memory. 15 tools, under 350MB RAM, no API keys required. Supports 25+ languages.                                                                                                                              | [jaggernaut007/nexus-mcp](https://github.com/jaggernaut007/nexus-mcp)                                                       | ![Stars](https://img.shields.io/github/stars/jaggernaut007/nexus-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/jaggernaut007/nexus-mcp?style=flat)                                                 |
+| CVE MCP Server                    | Security              | Production-grade security intelligence MCP server with 27 tools across 21 APIs. CVE lookup, EPSS scoring, CISA KEV, MITRE ATT&CK, Shodan, VirusTotal integration.                                                                                                                   | [mukul975/cve-mcp-server](https://github.com/mukul975/cve-mcp-server)                                                       | ![Stars](https://img.shields.io/github/stars/mukul975/cve-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mukul975/cve-mcp-server?style=flat)                                                 |
+| Stash                             | AI & Machine Learning | Persistent memory layer for AI agents. Episodes, facts, and working context stored in Postgres with MCP server. Self-hosted, single binary.                                                                                                                                         | [alash3al/stash](https://github.com/alash3al/stash)                                                                         | ![Stars](https://img.shields.io/github/stars/alash3al/stash?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/alash3al/stash?style=flat)                                                                   |
+| Pentest AI                        | Security              | Offensive-security MCP server with 205 wrapped tools, 17 specialist agents, and 60 SPA-aware probes for OWASP Top 10. CLI and MCP modes.                                                                                                                                            | [0xSteph/pentest-ai](https://github.com/0xSteph/pentest-ai)                                                                 | ![Stars](https://img.shields.io/github/stars/0xSteph/pentest-ai?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/0xSteph/pentest-ai?style=flat)                                                           |
+| Design Extract                    | Developer Tools       | Extract any website's complete design system. DTCG tokens, semantic+primitive+composite. Multi-platform emitters for iOS SwiftUI, Android Compose, Flutter, and Tailwind v4.                                                                                                        | [Manavarya09/design-extract](https://github.com/Manavarya09/design-extract)                                                 | ![Stars](https://img.shields.io/github/stars/Manavarya09/design-extract?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Manavarya09/design-extract?style=flat)                                           |
+| AnySearch MCP                     | Search                | Unified real-time search engine for AI agents. One MCP server for multiple search providers including web, academic, and code search.                                                                                                                                               | [anysearch-ai/anysearch-mcp-server](https://github.com/anysearch-ai/anysearch-mcp-server)                                   | ![Stars](https://img.shields.io/github/stars/anysearch-ai/anysearch-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/anysearch-ai/anysearch-mcp-server?style=flat)                             |
+| AWS Agent Toolkit                 | Cloud Platforms       | Official AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS. Covers S3, Lambda, DynamoDB, CloudFormation, and more.                                                                                                                                      | [aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws)                                                   | ![Stars](https://img.shields.io/github/stars/aws/agent-toolkit-for-aws?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/aws/agent-toolkit-for-aws?style=flat)                                             |
+| MCP Context Server                | AI & Machine Learning | High-performance MCP server for persistent multimodal context storage. Thread-based scoping for multi-agent collaboration. 13 tools including semantic and hybrid search.                                                                                                           | [alex-feel/mcp-context-server](https://github.com/alex-feel/mcp-context-server)                                             | ![Stars](https://img.shields.io/github/stars/alex-feel/mcp-context-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/alex-feel/mcp-context-server?style=flat)                                       |
+| TrendPulse MCP                    | Search                | Connect AI models to Google News RSS feeds and Google Trends analytics. Historical interest curves, growth rates, trending queries, and NLP summarization.                                                                                                                          | [AKzar1el/mcp-trendpulse](https://github.com/AKzar1el/mcp-trendpulse)                                                       | ![Stars](https://img.shields.io/github/stars/AKzar1el/mcp-trendpulse?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/AKzar1el/mcp-trendpulse?style=flat)                                                 |
 
 ---
 
-**Chrome DevTools Protocol** -- Chrome DevTools Protocol access for debugging web pages, network analysis, and performance profiling.
-> Install: `npx @anthropic-ai/mcp install chrome-devtools-mcp`
-> Source: [niclas-niclas/chrome-devtools-mcp](https://github.com/niclas-niclas/chrome-devtools-mcp) | Stars: 40K | License: MIT
-> Tags: `chrome` `devtools` `debugging` `web`
-
-**Playwright** -- Browser automation using Playwright for testing and scraping.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/playwright`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 34K | License: MIT
-> Tags: `playwright` `browser` `testing` `automation`
-
-**Browser Use** -- Connect agents to the web. Browser-based actions, form filling, and navigation.
-> Install: `npx @anthropic-ai/mcp install @browser-use/server`
-> Source: [browser-use/browser-use](https://github.com/browser-use/browser-use) | Stars: 100K | License: MIT
-> Tags: `browser` `web` `actions` `navigation`
-
-**Firecrawl** -- Web scraping and crawling with anti-bot bypass.
-> Install: `npx @anthropic-ai/mcp install firecrawl-mcp`
-> Source: [mendableai/firecrawl](https://github.com/mendableai/firecrawl) | Stars: 30K | License: MIT
-> Tags: `scraping` `crawling` `web` `anti-bot`
-
-**Stagehand** -- AI-powered browser automation framework.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/stagehand`
-> Source: [anthropics/stagehand](https://github.com/anthropics/stagehand) | Stars: 15K | License: MIT
-> Tags: `browser` `ai-powered` `automation` `web`
-
----
-
-## Databases (13 servers)
-
-Relational, NoSQL, and data warehouse connections.
-
----
-
-**Supabase** -- Supabase database operations with RLS-aware queries.
-> Install: `npx @anthropic-ai/mcp install @supabase/mcp`
-> Source: [supabase/mcp](https://github.com/supabase/mcp) | Stars: 15K | License: MIT
-> Tags: `supabase` `postgresql` `database` `rls`
-
-**MongoDB** -- MongoDB operations with schema discovery.
-> Install: `npx @anthropic-ai/mcp install mongodb-mcp`
-> Source: [mongodb/mongodb-mcp](https://github.com/mongodb/mongodb-mcp) | Stars: 8K | License: MIT
-> Tags: `mongodb` `nosql` `database` `documents`
-
-**Redis** -- Redis operations for caching and data structures.
-> Install: `npx @anthropic-ai/mcp install redis-mcp`
-> Source: [redis/mcp](https://github.com/redis/mcp) | Stars: 5K | License: MIT
-> Tags: `redis` `cache` `data-structures` `key-value`
-
-**MySQL** -- MySQL database operations with schema introspection.
-> Install: `npx @anthropic-ai/mcp install mysql-mcp`
-> Source: [mysql/mysql-mcp](https://github.com/mysql/mysql-mcp) | Stars: 3K | License: MIT
-> Tags: `mysql` `database` `sql` `relational`
-
-**ClickHouse** -- ClickHouse analytics database operations.
-> Install: `npx @anthropic-ai/mcp install clickhouse-mcp`
-> Source: [ClickHouse/mcp](https://github.com/ClickHouse/mcp) | Stars: 4K | License: MIT
-> Tags: `clickhouse` `analytics` `olap` `database`
-
-**BigQuery** -- Google BigQuery operations for large-scale data analysis.
-> Install: `npx @anthropic-ai/mcp install bigquery-mcp`
-> Source: [google/bigquery-mcp](https://github.com/google/bigquery-mcp) | Stars: 2K | License: MIT
-> Tags: `bigquery` `google` `analytics` `data-warehouse`
-
-**Snowflake** -- Snowflake data warehouse operations.
-> Install: `npx @anthropic-ai/mcp install snowflake-mcp`
-> Source: [snowflake/mcp](https://github.com/snowflake/mcp) | Stars: 3K | License: MIT
-> Tags: `snowflake` `data-warehouse` `analytics` `sql`
-
-**Elasticsearch** -- Elasticsearch search and analytics operations.
-> Install: `npx @anthropic-ai/mcp install elasticsearch-mcp`
-> Source: [elastic/elasticsearch-mcp](https://github.com/elastic/elasticsearch-mcp) | Stars: 6K | License: MIT
-> Tags: `elasticsearch` `search` `analytics` `full-text`
-
-**Pinecone** -- Pinecone vector database operations for AI/ML workloads.
-> Install: `npx @anthropic-ai/mcp install pinecone-mcp`
-> Source: [pinecone/mcp](https://github.com/pinecone/mcp) | Stars: 4K | License: MIT
-> Tags: `pinecone` `vector` `embedding` `ai`
-
-**Weaviate** -- Weaviate vector database for semantic search.
-> Install: `npx @anthropic-ai/mcp install weaviate-mcp`
-> Source: [weaviate/mcp](https://github.com/weaviate/mcp) | Stars: 2K | License: MIT
-> Tags: `weaviate` `vector` `semantic-search` `ai`
-
-**Neon** -- Neon serverless Postgres with branching and autoscaling.
-> Install: `npx @anthropic-ai/mcp install @neondatabase/mcp`
-> Source: [neondatabase/mcp](https://github.com/neondatabase/mcp) | Stars: 3K | License: MIT
-> Tags: `neon` `postgresql` `serverless` `branching`
-
-**Turso** -- Turso/libSQL edge database operations.
-> Install: `npx @anthropic-ai/mcp install turso-mcp`
-> Source: [tursodatabase/mcp](https://github.com/tursodatabase/mcp) | Stars: 2K | License: MIT
-> Tags: `turso` `libsql` `edge` `sqlite`
-
-**PlanetScale** -- PlanetScale MySQL-compatible serverless database.
-> Install: `npx @anthropic-ai/mcp install planetscale-mcp`
-> Source: [planetscale/mcp](https://github.com/planetscale/mcp) | Stars: 1K | License: MIT
-> Tags: `planetscale` `mysql` `serverless` `branching`
-
----
-
-## Cloud Platforms (5 servers)
-
-AWS, Azure, GCP, and platform-as-a-service integrations.
-
----
-
-**AWS** -- AWS services: S3, Lambda, DynamoDB, SQS, SNS, and more.
-> Install: `npx @anthropic-ai/mcp install aws-mcp`
-> Source: [awslabs/mcp](https://github.com/awslabs/mcp) | Stars: 12K | License: MIT
-> Tags: `aws` `cloud` `serverless` `infrastructure`
-
-**Azure** -- Microsoft Azure services: Storage, Functions, Cosmos DB.
-> Install: `npx @anthropic-ai/mcp install azure-mcp`
-> Source: [azure/azure-mcp](https://github.com/azure/azure-mcp) | Stars: 5K | License: MIT
-> Tags: `azure` `microsoft` `cloud` `enterprise`
-
-**Google Cloud** -- GCP services: BigQuery, Cloud Storage, Cloud Functions.
-> Install: `npx @anthropic-ai/mcp install gcp-mcp`
-> Source: [google/gcp-mcp](https://github.com/google/gcp-mcp) | Stars: 4K | License: MIT
-> Tags: `gcp` `google` `cloud` `platform`
-
-**Vercel** -- Vercel deployment, analytics, and edge functions.
-> Install: `npx @anthropic-ai/mcp install vercel-mcp`
-> Source: [vercel/mcp](https://github.com/vercel/mcp) | Stars: 8K | License: MIT
-> Tags: `vercel` `deployment` `edge` `hosting`
-
-**Railway** -- Railway deployment and infrastructure management.
-> Install: `npx @anthropic-ai/mcp install railway-mcp`
-> Source: [railway/mcp](https://github.com/railway/mcp) | Stars: 3K | License: MIT
-> Tags: `railway` `deployment` `infrastructure` `paas`
-
----
-
-## DevOps (6 servers)
-
-Container orchestration, CI/CD, and infrastructure as code.
-
----
-
-**Docker** -- Docker container management, image building, and compose operations.
-> Install: `npx @anthropic-ai/mcp install docker-mcp`
-> Source: [docker/mcp](https://github.com/docker/mcp) | Stars: 10K | License: MIT
-> Tags: `docker` `containers` `compose` `devops`
-
-**Kubernetes** -- Kubernetes cluster management and resource operations.
-> Install: `npx @anthropic-ai/mcp install kubernetes-mcp`
-> Source: [kubernetes/mcp](https://github.com/kubernetes/mcp) | Stars: 7K | License: MIT
-> Tags: `kubernetes` `k8s` `orchestration` `cluster`
-
-**Terraform** -- Terraform infrastructure as code operations.
-> Install: `npx @anthropic-ai/mcp install terraform-mcp`
-> Source: [hashicorp/mcp](https://github.com/hashicorp/mcp) | Stars: 5K | License: MIT
-> Tags: `terraform` `infrastructure` `iac` `hashicorp`
-
-**GitHub Actions** -- GitHub Actions workflow management and monitoring.
-> Install: `npx @anthropic-ai/mcp install github-actions-mcp`
-> Source: [github/actions-mcp](https://github.com/github/actions-mcp) | Stars: 4K | License: MIT
-> Tags: `github-actions` `ci-cd` `workflows` `automation`
-
-**Argo CD** -- Argo CD GitOps operations for Kubernetes deployments.
-> Install: `npx @anthropic-ai/mcp install argocd-mcp`
-> Source: [argoproj/mcp](https://github.com/argoproj/mcp) | Stars: 3K | License: MIT
-> Tags: `argocd` `gitops` `kubernetes` `deployment`
-
-**Vault** -- HashiCorp Vault secrets management.
-> Install: `npx @anthropic-ai/mcp install vault-mcp`
-> Source: [hashicorp/mcp](https://github.com/hashicorp/mcp) | Stars: 6K | License: MIT
-> Tags: `vault` `secrets` `security` `hashicorp`
-
----
-
-## Communication (9 servers)
-
-Messaging, notifications, and team collaboration tools.
-
----
-
-**Slack** -- Slack messaging, channels, threads, and workspace management.
-> Install: `npx @anthropic-ai/mcp install slack-mcp`
-> Source: [slack/mcp](https://github.com/slack/mcp) | Stars: 8K | License: MIT
-> Tags: `slack` `messaging` `channels` `workspace`
-
-**Discord** -- Discord bot operations, server management, and messaging.
-> Install: `npx @anthropic-ai/mcp install discord-mcp`
-> Source: [discord/mcp](https://github.com/discord/mcp) | Stars: 5K | License: MIT
-> Tags: `discord` `bot` `messaging` `gaming`
-
-**Telegram** -- Telegram bot operations and messaging.
-> Install: `npx @anthropic-ai/mcp install telegram-mcp`
-> Source: [telegram/mcp](https://github.com/telegram/mcp) | Stars: 4K | License: MIT
-> Tags: `telegram` `bot` `messaging` `mobile`
-
-**Email** -- Email sending and management (SMTP, IMAP).
-> Install: `npx @anthropic-ai/mcp install email-mcp`
-> Source: [email/mcp](https://github.com/email/mcp) | Stars: 3K | License: MIT
-> Tags: `email` `smtp` `imap` `communication`
-
-**Notion** -- Notion workspace: pages, databases, blocks, and search.
-> Install: `npx @anthropic-ai/mcp install notion-mcp`
-> Source: [notion/mcp](https://github.com/notion/mcp) | Stars: 7K | License: MIT
-> Tags: `notion` `workspace` `documentation` `knowledge`
-
-**Linear** -- Linear issue tracking: issues, projects, cycles, and teams.
-> Install: `npx @anthropic-ai/mcp install linear-mcp`
-> Source: [linear/mcp](https://github.com/linear/mcp) | Stars: 5K | License: MIT
-> Tags: `linear` `issues` `project-management` `agile`
-
-**Jira** -- Jira project management and issue tracking.
-> Install: `npx @anthropic-ai/mcp install jira-mcp`
-> Source: [atlassian/mcp](https://github.com/atlassian/mcp) | Stars: 6K | License: MIT
-> Tags: `jira` `atlassian` `project-management` `enterprise`
-
-**Confluence** -- Confluence wiki and documentation management.
-> Install: `npx @anthropic-ai/mcp install confluence-mcp`
-> Source: [atlassian/mcp](https://github.com/atlassian/mcp) | Stars: 6K | License: MIT
-> Tags: `confluence` `wiki` `documentation` `enterprise`
-
-**Microsoft Teams** -- Microsoft Teams messaging and workspace operations.
-> Install: `npx @anthropic-ai/mcp install teams-mcp`
-> Source: [microsoft/mcp](https://github.com/microsoft/mcp) | Stars: 4K | License: MIT
-> Tags: `teams` `microsoft` `enterprise` `collaboration`
-
----
-
-## Search (8 servers)
-
-Web search, knowledge retrieval, and information discovery.
-
----
-
-**Brave Search** -- Web and local search using Brave Search API.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/brave-search`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `brave` `search` `web` `official`
-
-**Google Search** -- Google Custom Search API integration.
-> Install: `npx @anthropic-ai/mcp install google-search-mcp`
-> Source: [google/search-mcp](https://github.com/google/search-mcp) | Stars: 5K | License: MIT
-> Tags: `google` `search` `web` `api`
-
-**Perplexity** -- Perplexity AI search with source citations.
-> Install: `npx @anthropic-ai/mcp install perplexity-mcp`
-> Source: [perplexity/mcp](https://github.com/perplexity/mcp) | Stars: 4K | License: MIT
-> Tags: `perplexity` `ai-search` `citations` `research`
-
-**DuckDuckGo** -- DuckDuckGo privacy-focused search.
-> Install: `npx @anthropic-ai/mcp install duckduckgo-mcp`
-> Source: [duckduckgo/mcp](https://github.com/duckduckgo/mcp) | Stars: 3K | License: MIT
-> Tags: `duckduckgo` `search` `privacy` `web`
-
-**Tavily** -- Tavily search API for AI-optimized web search.
-> Install: `npx @anthropic-ai/mcp install tavily-mcp`
-> Source: [tavily/mcp](https://github.com/tavily/mcp) | Stars: 6K | License: MIT
-> Tags: `tavily` `search` `ai-optimized` `web`
-
-**Exa** -- Exa neural search engine for semantic web search.
-> Install: `npx @anthropic-ai/mcp install exa-mcp`
-> Source: [exa/mcp](https://github.com/exa/mcp) | Stars: 4K | License: MIT
-> Tags: `exa` `neural` `semantic` `search`
-
-**SearXNG** -- Self-hosted metasearch engine.
-> Install: `npx @anthropic-ai/mcp install searxng-mcp`
-> Source: [searxng/mcp](https://github.com/searxng/mcp) | Stars: 2K | License: MIT
-> Tags: `searxng` `self-hosted` `metasearch` `privacy`
-
-**Wikipedia** -- Wikipedia API for encyclopedic knowledge retrieval.
-> Install: `npx @anthropic-ai/mcp install wikipedia-mcp`
-> Source: [wikipedia/mcp](https://github.com/wikipedia/mcp) | Stars: 3K | License: MIT
-> Tags: `wikipedia` `encyclopedia` `knowledge` `reference`
-
----
-
-## AI & ML (6 servers)
-
-Model APIs, ML pipelines, and AI service integrations.
-
----
-
-**OpenAI** -- OpenAI API: GPT models, embeddings, image generation.
-> Install: `npx @anthropic-ai/mcp install openai-mcp`
-> Source: [openai/mcp](https://github.com/openai/mcp) | Stars: 8K | License: MIT
-> Tags: `openai` `gpt` `llm` `api`
-
-**Anthropic** -- Anthropic API: Claude models, message creation.
-> Install: `npx @anthropic-ai/mcp install anthropic-mcp`
-> Source: [anthropics/mcp](https://github.com/anthropics/mcp) | Stars: 5K | License: MIT
-> Tags: `anthropic` `claude` `llm` `api`
-
-**Hugging Face** -- Hugging Face model hub and inference API.
-> Install: `npx @anthropic-ai/mcp install huggingface-mcp`
-> Source: [huggingface/mcp](https://github.com/huggingface/mcp) | Stars: 6K | License: MIT
-> Tags: `huggingface` `models` `inference` `ml`
-
-**Ollama** -- Local LLM inference with Ollama.
-> Install: `npx @anthropic-ai/mcp install ollama-mcp`
-> Source: [ollama/mcp](https://github.com/ollama/mcp) | Stars: 10K | License: MIT
-> Tags: `ollama` `local` `llm` `inference`
-
-**Replicate** -- Replicate model hosting and inference.
-> Install: `npx @anthropic-ai/mcp install replicate-mcp`
-> Source: [replicate/mcp](https://github.com/replicate/mcp) | Stars: 4K | License: MIT
-> Tags: `replicate` `hosting` `inference` `ml`
-
-**Together AI** -- Together AI inference platform.
-> Install: `npx @anthropic-ai/mcp install together-mcp`
-> Source: [together/mcp](https://github.com/together/mcp) | Stars: 3K | License: MIT
-> Tags: `together` `inference` `ml` `api`
-
----
-
-## Agent Orchestration (7 servers)
-
-Multi-agent coordination, task management, and workflow automation.
-
----
-
-**Task Master AI** -- AI-powered task management with dependency tracking and prioritization.
-> Install: `npx @anthropic-ai/mcp install task-master-mcp`
-> Source: [yoheinakajima/taskmaster](https://github.com/yoheinakajima/taskmaster) | Stars: 26K | License: MIT
-> Tags: `tasks` `management` `dependencies` `prioritization`
-
-**n8n** -- n8n workflow automation platform integration.
-> Install: `npx @anthropic-ai/mcp install n8n-mcp`
-> Source: [n8n-io/n8n](https://github.com/n8n-io/n8n) | Stars: 187K | License: MIT
-> Tags: `n8n` `automation` `workflows` `no-code`
-
-**LangGraph** -- LangGraph agent orchestration and state management.
-> Install: `npx @anthropic-ai/mcp install langgraph-mcp`
-> Source: [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | Stars: 12K | License: MIT
-> Tags: `langgraph` `agents` `orchestration` `state`
-
-**CrewAI** -- CrewAI multi-agent orchestration framework.
-> Install: `npx @anthropic-ai/mcp install crewai-mcp`
-> Source: [crewai/mcp](https://github.com/crewai/mcp) | Stars: 8K | License: MIT
-> Tags: `crewai` `multi-agent` `orchestration` `teams`
-
-**AutoGen** -- Microsoft AutoGen multi-agent conversation framework.
-> Install: `npx @anthropic-ai/mcp install autogen-mcp`
-> Source: [microsoft/autogen](https://github.com/microsoft/autogen) | Stars: 15K | License: MIT
-> Tags: `autogen` `multi-agent` `microsoft` `conversation`
-
-**Semantic Kernel** -- Microsoft Semantic Kernel SDK for AI orchestration.
-> Install: `npx @anthropic-ai/mcp install semantic-kernel-mcp`
-> Source: [microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel) | Stars: 20K | License: MIT
-> Tags: `semantic-kernel` `microsoft` `orchestration` `sdk`
-
-**AG-UI** -- Agent-User Interaction protocol for streaming agent updates to users.
-> Install: `npx @anthropic-ai/mcp install ag-ui-mcp`
-> Source: [ag-ui/mcp](https://github.com/ag-ui/mcp) | Stars: 5K | License: MIT
-> Tags: `ag-ui` `streaming` `interaction` `protocol`
-
----
-
-## Marketing (2 servers)
-
-Marketing automation and trend analysis.
-
----
-
-**TrendRadar** -- Trend analysis and market intelligence for content strategy.
-> Install: `npx @anthropic-ai/mcp install trendradar-mcp`
-> Source: [trendradar/mcp](https://github.com/trendradar/mcp) | Stars: 54K | License: MIT
-> Tags: `trends` `market-intelligence` `content-strategy` `marketing`
-
-**Content Marketing** -- Content creation, scheduling, and analytics.
-> Install: `npx @anthropic-ai/mcp install content-marketing-mcp`
-> Source: [content-marketing/mcp](https://github.com/content-marketing/mcp) | Stars: 2K | License: MIT
-> Tags: `content` `marketing` `scheduling` `analytics`
-
----
-
-## Monitoring (6 servers)
-
-Observability, error tracking, and performance monitoring.
-
----
-
-**Sentry** -- Sentry error tracking: issues, events, releases, and performance monitoring.
-> Install: `npx @anthropic-ai/mcp install sentry-mcp`
-> Source: [sentry/mcp](https://github.com/sentry/mcp) | Stars: 87.5K | License: MIT
-> Tags: `sentry` `errors` `monitoring` `performance`
-
-**Datadog** -- Datadog monitoring: metrics, logs, traces, and dashboards.
-> Install: `npx @anthropic-ai/mcp install datadog-mcp`
-> Source: [datadog/mcp](https://github.com/datadog/mcp) | Stars: 5K | License: MIT
-> Tags: `datadog` `monitoring` `metrics` `logs`
-
-**Grafana** -- Grafana dashboards and alerting.
-> Install: `npx @anthropic-ai/mcp install grafana-mcp`
-> Source: [grafana/mcp](https://github.com/grafana/mcp) | Stars: 4K | License: MIT
-> Tags: `grafana` `dashboards` `visualization` `alerting`
-
-**Prometheus** -- Prometheus metrics collection and querying.
-> Install: `npx @anthropic-ai/mcp install prometheus-mcp`
-> Source: [prometheus/mcp](https://github.com/prometheus/mcp) | Stars: 3K | License: MIT
-> Tags: `prometheus` `metrics` `monitoring` `alerting`
-
-**PagerDuty** -- PagerDuty incident management and on-call scheduling.
-> Install: `npx @anthropic-ai/mcp install pagerduty-mcp`
-> Source: [pagerduty/mcp](https://github.com/pagerduty/mcp) | Stars: 2K | License: MIT
-> Tags: `pagerduty` `incidents` `on-call` `alerting`
-
-**New Relic** -- New Relic APM and observability.
-> Install: `npx @anthropic-ai/mcp install newrelic-mcp`
-> Source: [newrelic/mcp](https://github.com/newrelic/mcp) | Stars: 3K | License: MIT
-> Tags: `new-relic` `apm` `observability` `performance`
-
----
-
-## Security (5 servers)
-
-Security scanning, secrets management, and compliance.
-
----
-
-**Vault** -- HashiCorp Vault secrets management.
-> Install: `npx @anthropic-ai/mcp install vault-mcp`
-> Source: [hashicorp/mcp](https://github.com/hashicorp/mcp) | Stars: 6K | License: MIT
-> Tags: `vault` `secrets` `security` `hashicorp`
-
-**Snyk** -- Snyk vulnerability scanning and fix recommendations.
-> Install: `npx @anthropic-ai/mcp install snyk-mcp`
-> Source: [snyk/mcp](https://github.com/snyk/mcp) | Stars: 4K | License: MIT
-> Tags: `snyk` `vulnerabilities` `scanning` `dependencies`
-
-**Trivy** -- Trivy container and filesystem vulnerability scanning.
-> Install: `npx @anthropic-ai/mcp install trivy-mcp`
-> Source: [aquasecurity/mcp](https://github.com/aquasecurity/mcp) | Stars: 3K | License: MIT
-> Tags: `trivy` `container` `vulnerabilities` `security`
-
-**OWASP** -- OWASP security best practices and checklist management.
-> Install: `npx @anthropic-ai/mcp install owasp-mcp`
-> Source: [owasp/mcp](https://github.com/owasp/mcp) | Stars: 2K | License: MIT
-> Tags: `owasp` `security` `best-practices` `compliance`
-
-**1Password** -- 1Password CLI for secrets access.
-> Install: `npx @anthropic-ai/mcp install 1password-mcp`
-> Source: [1password/mcp](https://github.com/1password/mcp) | Stars: 3K | License: MIT
-> Tags: `1password` `secrets` `passwords` `security`
-
----
-
-## Design (3 servers)
-
-Design tools, assets, and creative workflows.
-
----
-
-**Figma** -- Figma design file operations, component access, and design tokens.
-> Install: `npx @anthropic-ai/mcp install figma-mcp`
-> Source: [figma/mcp](https://github.com/figma/mcp) | Stars: 8K | License: MIT
-> Tags: `figma` `design` `components` `tokens`
-
-**Adobe XD** -- Adobe XD design file operations.
-> Install: `npx @anthropic-ai/mcp install adobexd-mcp`
-> Source: [adobexd/mcp](https://github.com/adobexd/mcp) | Stars: 2K | License: MIT
-> Tags: `adobe-xd` `design` `prototyping` `adobe`
-
-**Sketch** -- Sketch design file operations.
-> Install: `npx @anthropic-ai/mcp install sketch-mcp`
-> Source: [sketch/mcp](https://github.com/sketch/mcp) | Stars: 1K | License: MIT
-> Tags: `sketch` `design` `macos` `ui`
-
----
-
-## Finance (4 servers)
-
-Payments, banking, and financial operations.
-
----
-
-**Stripe** -- Stripe payment processing: customers, charges, subscriptions.
-> Install: `npx @anthropic-ai/mcp install stripe-mcp`
-> Source: [stripe/mcp](https://github.com/stripe/mcp) | Stars: 7K | License: MIT
-> Tags: `stripe` `payments` `subscriptions` `billing`
-
-**Plaid** -- Plaid banking data: accounts, transactions, and identity verification.
-> Install: `npx @anthropic-ai/mcp install plaid-mcp`
-> Source: [plaid/mcp](https://github.com/plaid/mcp) | Stars: 4K | License: MIT
-> Tags: `plaid` `banking` `transactions` `identity`
-
-**QuickBooks** -- QuickBooks accounting: invoices, expenses, and reports.
-> Install: `npx @anthropic-ai/mcp install quickbooks-mcp`
-> Source: [intuit/mcp](https://github.com/intuit/mcp) | Stars: 2K | License: MIT
-> Tags: `quickbooks` `accounting` `invoicing` `finance`
-
-**Xero** -- Xero accounting platform operations.
-> Install: `npx @anthropic-ai/mcp install xero-mcp`
-> Source: [xero/mcp](https://github.com/xero/mcp) | Stars: 1K | License: MIT
-> Tags: `xero` `accounting` `finance` `small-business`
-
----
-
-## Maps (2 servers)
-
-Geographic data, routing, and location services.
-
----
-
-**Google Maps** -- Google Maps API: geocoding, directions, places, and elevation.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/google-maps`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 87.5K | License: MIT
-> Tags: `google-maps` `geocoding` `directions` `official`
-
-**Mapbox** -- Mapbox GL JS mapping and geocoding.
-> Install: `npx @anthropic-ai/mcp install mapbox-mcp`
-> Source: [mapbox/mcp](https://github.com/mapbox/mcp) | Stars: 2K | License: MIT
-> Tags: `mapbox` `mapping` `geocoding` `tiles`
-
----
-
-## Research & Data (5 servers)
-
-Academic research, data retrieval, and knowledge bases.
-
----
-
-**arXiv** -- arXiv preprint search and paper retrieval.
-> Install: `npx @anthropic-ai/mcp install arxiv-mcp`
-> Source: [arxiv/mcp](https://github.com/arxiv/mcp) | Stars: 3K | License: MIT
-> Tags: `arxiv` `papers` `research` `academic`
-
-**PubMed** -- PubMed biomedical literature search.
-> Install: `npx @anthropic-ai/mcp install pubmed-mcp`
-> Source: [ncbi/mcp](https://github.com/ncbi/mcp) | Stars: 2K | License: MIT
-> Tags: `pubmed` `biomedical` `literature` `research`
-
-**Semantic Scholar** -- Semantic Scholar academic paper search with citation graphs.
-> Install: `npx @anthropic-ai/mcp install semantic-scholar-mcp`
-> Source: [allenai/mcp](https://github.com/allenai/mcp) | Stars: 3K | License: MIT
-> Tags: `semantic-scholar` `citations` `academic` `papers`
-
-**GitHub** -- GitHub API for code search, repository operations.
-> Install: `npx @anthropic-ai/mcp install @anthropic-ai/github`
-> Source: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Stars: 30.6K | License: MIT
-> Tags: `github` `code-search` `repositories` `official`
-
-**Hacker News** -- Hacker News API for tech news and discussions.
-> Install: `npx @anthropic-ai/mcp install hackernews-mcp`
-> Source: [hackernews/mcp](https://github.com/hackernews/mcp) | Stars: 2K | License: MIT
-> Tags: `hacker-news` `tech` `news` `discussions`
-
----
-
-## Data Engineering (1 server)
-
-Data pipelines and stream processing.
-
----
-
-**Apache Spark** -- Apache Spark operations for large-scale data processing.
-> Install: `npx @anthropic-ai/mcp install spark-mcp`
-> Source: [apache/spark-mcp](https://github.com/apache/spark-mcp) | Stars: 3K | License: MIT
-> Tags: `spark` `big-data` `processing` `pipelines`
-
----
-
-## Blockchain (1 server)
-
-Blockchain and Web3 integrations.
-
----
-
-**Ethereum** -- Ethereum blockchain: smart contracts, transactions, and wallet operations.
-> Install: `npx @anthropic-ai/mcp install ethereum-mcp`
-> Source: [ethereum/mcp](https://github.com/ethereum/mcp) | Stars: 2K | License: MIT
-> Tags: `ethereum` `blockchain` `smart-contracts` `web3`
-
----
-
-## Sources
-
-Major repositories contributing to this catalog:
-
-| Repository | Servers | Stars | Description |
-|------------|---------|-------|-------------|
-| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | 10 | 87.5K | Official MCP reference servers |
-| [anthropics/mcp](https://github.com/anthropics/mcp) | 5 | 15K | Anthropic's MCP implementations |
-| [upstash/context7](https://github.com/upstash/context7) | 1 | 54K | Documentation context for AI |
-| [n8n-io/n8n](https://github.com/n8n-io/n8n) | 1 | 187K | Workflow automation |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | 1 | 100K | Browser-based AI actions |
-| [sentry/mcp](https://github.com/sentry/mcp) | 1 | 87.5K | Error tracking and monitoring |
-| [microsoft/markitdown](https://github.com/microsoft/markitdown) | 1 | 122K | Document to Markdown conversion |
-
-## How to Use
-
-```bash
-# Install an MCP server
-npx @anthropic-ai/mcp install @anthropic-ai/filesystem
-
-# Run a server directly
-npx @anthropic-ai/mcp run @anthropic-ai/github
-
-# Check server health
-npx @anthropic-ai/mcp health @anthropic-ai/memory
-```
-
-## Browse
-
-- [catalog.json](catalog.json) - Full catalog with metadata, install commands, and links
-
-## Related
-
-- [Skills](../skills/) -- Teach your agent new capabilities
-- [Tools](../tools/) -- CLI utilities that complement MCP servers
-- [Hooks](../hooks/) -- Automate MCP server management
+Machine-readable data: [catalog.json](catalog.json)

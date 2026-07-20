@@ -2032,7 +2032,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/aiservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -2233,7 +2233,13 @@
       "install": "uvx nexus-mcp",
       "license": "MIT",
       "verified": false,
-      "tags": ["code-intelligence", "hybrid-search", "semantic-memory", "local-first", "code-graph"]
+      "tags": [
+        "code-intelligence",
+        "hybrid-search",
+        "semantic-memory",
+        "local-first",
+        "code-graph"
+      ]
     },
     {
       "id": "cve-mcp-server",
@@ -2245,7 +2251,14 @@
       "install": "uvx cve-mcp-server",
       "license": "MIT",
       "verified": false,
-      "tags": ["security", "CVE", "vulnerability", "threat-intelligence", "MITRE", "Shodan"]
+      "tags": [
+        "security",
+        "CVE",
+        "vulnerability",
+        "threat-intelligence",
+        "MITRE",
+        "Shodan"
+      ]
     },
     {
       "id": "stash-memory",
@@ -2257,7 +2270,13 @@
       "install": "go install github.com/alash3al/stash@latest",
       "license": "MIT",
       "verified": false,
-      "tags": ["memory", "persistence", "postgres", "agent-memory", "self-hosted"]
+      "tags": [
+        "memory",
+        "persistence",
+        "postgres",
+        "agent-memory",
+        "self-hosted"
+      ]
     },
     {
       "id": "pentest-ai",
@@ -2269,7 +2288,13 @@
       "install": "pip install pentest-ai",
       "license": "MIT",
       "verified": false,
-      "tags": ["pentesting", "security", "OWASP", "offensive-security", "vulnerability-scanning"]
+      "tags": [
+        "pentesting",
+        "security",
+        "OWASP",
+        "offensive-security",
+        "vulnerability-scanning"
+      ]
     },
     {
       "id": "design-extract",
@@ -2281,7 +2306,13 @@
       "install": "npx design-extract-mcp",
       "license": "MIT",
       "verified": false,
-      "tags": ["design-system", "extraction", "tokens", "DTCG", "cross-platform"]
+      "tags": [
+        "design-system",
+        "extraction",
+        "tokens",
+        "DTCG",
+        "cross-platform"
+      ]
     },
     {
       "id": "anysearch-mcp",
@@ -2293,7 +2324,12 @@
       "install": "npx anysearch-mcp-server",
       "license": "MIT",
       "verified": false,
-      "tags": ["search", "web-search", "unified-search", "multi-provider"]
+      "tags": [
+        "search",
+        "web-search",
+        "unified-search",
+        "multi-provider"
+      ]
     },
     {
       "id": "agent-toolkit-aws",
@@ -2305,7 +2341,13 @@
       "install": "pip install aws-agent-toolkit",
       "license": "Apache-2.0",
       "verified": true,
-      "tags": ["AWS", "cloud", "infrastructure", "serverless", "official"]
+      "tags": [
+        "AWS",
+        "cloud",
+        "infrastructure",
+        "serverless",
+        "official"
+      ]
     },
     {
       "id": "mcp-context-server",
@@ -2317,7 +2359,13 @@
       "install": "pip install mcp-context-server",
       "license": "MIT",
       "verified": false,
-      "tags": ["context", "memory", "multi-agent", "semantic-search", "persistence"]
+      "tags": [
+        "context",
+        "memory",
+        "multi-agent",
+        "semantic-search",
+        "persistence"
+      ]
     },
     {
       "id": "mcp-trendpulse",
@@ -2329,7 +2377,13 @@
       "install": "uvx mcp-trendpulse",
       "license": "MIT",
       "verified": false,
-      "tags": ["google-trends", "news", "analytics", "trending", "NLP"]
+      "tags": [
+        "google-trends",
+        "news",
+        "analytics",
+        "trending",
+        "NLP"
+      ]
     }
   ]
 }

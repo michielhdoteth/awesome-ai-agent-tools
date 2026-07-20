@@ -6,15 +6,42 @@
   "lastUpdated": "2026-07-13",
   "totalPlugins": 53,
   "categories": [
-    { "name": "Claude Code", "count": 9 },
-    { "name": "OpenCode", "count": 10 },
-    { "name": "Cursor", "count": 6 },
-    { "name": "Copilot", "count": 5 },
-    { "name": "Windsurf", "count": 4 },
-    { "name": "Aider", "count": 4 },
-    { "name": "VS Code AI", "count": 5 },
-    { "name": "JetBrains", "count": 4 },
-    { "name": "Cross-Tool", "count": 5 }
+    {
+      "name": "Claude Code",
+      "count": 9
+    },
+    {
+      "name": "OpenCode",
+      "count": 10
+    },
+    {
+      "name": "Cursor",
+      "count": 6
+    },
+    {
+      "name": "Copilot",
+      "count": 5
+    },
+    {
+      "name": "Windsurf",
+      "count": 4
+    },
+    {
+      "name": "Aider",
+      "count": 4
+    },
+    {
+      "name": "VS Code AI",
+      "count": 5
+    },
+    {
+      "name": "JetBrains",
+      "count": 4
+    },
+    {
+      "name": "Cross-Tool",
+      "count": 5
+    }
   ],
   "plugins": [
     {
@@ -25,7 +52,6 @@
       "stars": 32000,
       "installs": "255+ plugins",
       "description": "Official marketplace for Claude Code plugins with 255+ community-contributed extensions",
-      "githubUrl": "https://github.com/anthropics/claude-code-extensions",
       "websiteUrl": "https://claude.ai/plugins",
       "installCommand": "claude install @anthropics/claude-plugins",
       "license": "MIT"
@@ -38,7 +64,6 @@
       "stars": 43000,
       "installs": "60+ skills",
       "description": "Comprehensive skill pack with 60+ pre-built skills for Claude Code workflows",
-      "githubUrl": "https://github.com/nicholasgriffintn/superpowers",
       "websiteUrl": "https://superpowers.dev",
       "installCommand": "claude install @nicholasgriffintn/superpowers",
       "license": "MIT"
@@ -51,7 +76,6 @@
       "stars": null,
       "installs": "829K installs",
       "description": "Most installed Claude Code plugin for frontend design and component generation",
-      "githubUrl": null,
       "websiteUrl": "https://claude.ai/plugins/frontend-design",
       "installCommand": "claude install @anthropics/frontend-design",
       "license": "MIT"
@@ -64,7 +88,6 @@
       "stars": null,
       "installs": "348K installs",
       "description": "Real-time documentation lookup for Context7 framework and libraries",
-      "githubUrl": null,
       "websiteUrl": "https://context7.dev",
       "installCommand": "claude install @context7/docs-lookup",
       "license": "MIT"
@@ -77,7 +100,6 @@
       "stars": null,
       "installs": "81K installs",
       "description": "Advanced codebase understanding and semantic analysis for Claude Code",
-      "githubUrl": "https://github.com/serena/serena",
       "websiteUrl": "https://serena.dev",
       "installCommand": "claude install @serena/codebase-understanding",
       "license": "MIT"
@@ -90,7 +112,6 @@
       "stars": null,
       "installs": "50K installs",
       "description": "Semantic code search across repositories using Greptile indexing",
-      "githubUrl": "https://github.com/greptile/greptile",
       "websiteUrl": "https://greptile.com",
       "installCommand": "claude install @greptile/code-search",
       "license": "MIT"
@@ -103,7 +124,6 @@
       "stars": null,
       "installs": "21 plugins",
       "description": "Community collection of 21 Claude Code extensions by nodnarbnitram",
-      "githubUrl": "https://github.com/nodnarbnitram/claude-code-extensions",
       "websiteUrl": null,
       "installCommand": "claude install @nodnarbnitram/claude-code-extensions",
       "license": "MIT"
@@ -116,7 +136,6 @@
       "stars": null,
       "installs": null,
       "description": "Multi-runtime plugin system for Claude Code supporting various execution environments",
-      "githubUrl": "https://github.com/pleaseai/claude-code-plugins",
       "websiteUrl": null,
       "installCommand": "claude install @pleaseai/claude-code-plugins",
       "license": "MIT"
@@ -129,7 +148,6 @@
       "stars": null,
       "installs": null,
       "description": "Official OpenCode plugin architecture for extending agent capabilities",
-      "githubUrl": null,
       "websiteUrl": "https://opencode.ai/docs/plugins",
       "installCommand": "opencode plugin install <plugin-name>",
       "license": "MIT"
@@ -142,7 +160,6 @@
       "stars": null,
       "installs": null,
       "description": "Session tracking and analytics integration with Helicone for OpenCode",
-      "githubUrl": "https://github.com/helicone/opencode-session",
       "websiteUrl": "https://helicone.dev",
       "installCommand": "opencode plugin install @helicone/session",
       "license": "MIT"
@@ -155,7 +172,6 @@
       "stars": null,
       "installs": null,
       "description": "Track coding time and productivity metrics with WakaTime in OpenCode",
-      "githubUrl": "https://github.com/wakatime/opencode-plugin",
       "websiteUrl": "https://wakatime.com",
       "installCommand": "opencode plugin install @wakatime/integration",
       "license": "BSD-3-Clause"
@@ -168,7 +184,6 @@
       "stars": null,
       "installs": null,
       "description": "Automatic TypeScript type injection and inference for OpenCode completions",
-      "githubUrl": null,
       "websiteUrl": null,
       "installCommand": "opencode plugin install @opencode/type-inject",
       "license": "MIT"
@@ -181,7 +196,6 @@
       "stars": null,
       "installs": null,
       "description": "Authentication module for using ChatGPT Plus subscription with OpenCode",
-      "githubUrl": null,
       "websiteUrl": null,
       "installCommand": "opencode plugin install @opencode/codex-auth",
       "license": "MIT"
@@ -194,7 +208,6 @@
       "stars": null,
       "installs": null,
       "description": "Authentication module for Google Gemini plan integration with OpenCode",
-      "githubUrl": null,
       "websiteUrl": null,
       "installCommand": "opencode plugin install @opencode/gemini-auth",
       "license": "MIT"
@@ -207,7 +220,6 @@
       "stars": null,
       "installs": null,
       "description": "Cloud sandbox environments powered by Daytona for safe code execution",
-      "githubUrl": "https://github.com/daytonaio/opencode-plugin",
       "websiteUrl": "https://daytona.io",
       "installCommand": "opencode plugin install @daytona/sandboxes",
       "license": "MIT"
@@ -220,7 +232,6 @@
       "stars": null,
       "installs": null,
       "description": "Browser automation and web scraping capabilities for OpenCode agents",
-      "githubUrl": "https://github.com/different-ai/opencode-browser",
       "websiteUrl": null,
       "installCommand": "opencode plugin install @different-ai/browser",
       "license": "MIT"
@@ -233,7 +244,6 @@
       "stars": 128,
       "installs": null,
       "description": "OpenAPI specification generation and management for OpenCode. Auto-generates API specs from your codebase.",
-      "githubUrl": "https://github.com/openspec/opencode-plugin-openspec",
       "websiteUrl": null,
       "installCommand": "opencode plugin install @openspec/plugin",
       "license": "MIT"
@@ -246,7 +256,6 @@
       "stars": null,
       "installs": "83.7K developers",
       "description": "Community hub for Cursor rules with 83.7K registered developers",
-      "githubUrl": null,
       "websiteUrl": "https://cursor.directory",
       "installCommand": "Import rules from cursor.directory",
       "license": "MIT"
@@ -259,7 +268,6 @@
       "stars": 20000,
       "installs": null,
       "description": "Curated collection of cursor rules by PatrickJS with 20K stars",
-      "githubUrl": "https://github.com/PatrickJS/awesome-cursorrules",
       "websiteUrl": null,
       "installCommand": "Clone and copy .cursorrules to project root",
       "license": "MIT"
@@ -272,7 +280,6 @@
       "stars": null,
       "installs": "110+ rules",
       "description": "Collection of 110+ cursor rule packs for various frameworks and languages",
-      "githubUrl": "https://github.com/cursorrulespacks/cursorrules-collection",
       "websiteUrl": null,
       "installCommand": "Copy .cursorrules file from collection to project",
       "license": "MIT"
@@ -285,7 +292,6 @@
       "stars": null,
       "installs": null,
       "description": "Enterprise toolkit for batch downloading and managing Cursor rules",
-      "githubUrl": "https://github.com/YorkIE(cursor-rules-toolkit)",
       "websiteUrl": null,
       "installCommand": "npm install -g cursor-rules-toolkit",
       "license": "MIT"
@@ -298,7 +304,6 @@
       "stars": null,
       "installs": null,
       "description": "CLI-based rule manager for Cursor with search and install capabilities",
-      "githubUrl": "https://github.com/jonathanphilippou/cursing-rulez",
       "websiteUrl": null,
       "installCommand": "npm install -g cursing-rulez",
       "license": "MIT"
@@ -311,7 +316,6 @@
       "stars": null,
       "installs": null,
       "description": "Dynamic rule management system for Cursor with auto-updating capabilities",
-      "githubUrl": "https://github.com/fleXRPL/cursor-rules-dynamic",
       "websiteUrl": null,
       "installCommand": "Import via Cursor settings or CLI",
       "license": "MIT"
@@ -324,7 +328,6 @@
       "stars": null,
       "installs": "175+ agents, 208+ skills",
       "description": "Comprehensive list of 175+ agents and 208+ skills for GitHub Copilot",
-      "githubUrl": "https://github.com/github/awesome-copilot",
       "websiteUrl": "https://github.com/github/awesome-copilot",
       "installCommand": "Refer to repository for skill installation",
       "license": "MIT"
@@ -337,7 +340,6 @@
       "stars": null,
       "installs": null,
       "description": "Custom instruction files (.github/copilot-instructions.md) for Copilot behavior",
-      "githubUrl": null,
       "websiteUrl": "https://docs.github.com/copilot/custom-instructions",
       "installCommand": "Create .github/copilot-instructions.md in repository",
       "license": "MIT"
@@ -350,7 +352,6 @@
       "stars": null,
       "installs": null,
       "description": "Generally available Copilot Extensions platform for third-party integrations",
-      "githubUrl": null,
       "websiteUrl": "https://githubnext.com/projects/copilot-extensions",
       "installCommand": "Enable via GitHub Copilot settings",
       "license": "MIT"
@@ -363,7 +364,6 @@
       "stars": null,
       "installs": null,
       "description": "VS Code extension by TimHeuer for enhanced Copilot features and shortcuts",
-      "githubUrl": "https://github.com/TimHeuer/awesome-copilot",
       "websiteUrl": null,
       "installCommand": "code --install-extension TimHeuer.awesome-copilot",
       "license": "MIT"
@@ -376,7 +376,6 @@
       "stars": null,
       "installs": null,
       "description": "Curated API documentation integration for context-aware Copilot suggestions",
-      "githubUrl": null,
       "websiteUrl": "https://contextmatic.dev",
       "installCommand": "Install via VS Code marketplace",
       "license": "MIT"
@@ -389,7 +388,6 @@
       "stars": null,
       "installs": "3.8M installs",
       "description": "Official Windsurf (Codeium) VS Code extension with 3.8M installations",
-      "githubUrl": "https://github.com/Exafunction/windsurf-vscode",
       "websiteUrl": "https://codeium.com/windsurf",
       "installCommand": "code --install-extension Codeium.codeium",
       "license": "MIT"
@@ -402,7 +400,6 @@
       "stars": null,
       "installs": null,
       "description": "Windsurf integration for Visual Studio IDE",
-      "githubUrl": "https://github.com/Exafunction/WindsurfVisualStudio",
       "websiteUrl": "https://codeium.com/windsurf",
       "installCommand": "Install via Visual Studio Marketplace",
       "license": "MIT"
@@ -415,7 +412,6 @@
       "stars": null,
       "installs": null,
       "description": "Neovim plugin for Windsurf AI code completion and chat",
-      "githubUrl": "https://github.com/Exafunction/windsurf.nvim",
       "websiteUrl": "https://codeium.com/windsurf",
       "installCommand": "Plug 'Exafunction/windsurf.nvim'",
       "license": "MIT"
@@ -428,7 +424,6 @@
       "stars": null,
       "installs": null,
       "description": "Chrome Web Store extension for Windsurf AI assistance in browser",
-      "githubUrl": null,
       "websiteUrl": "https://chrome.google.com/webstore/detail/windsurf",
       "installCommand": "Install from Chrome Web Store",
       "license": "MIT"
@@ -441,7 +436,6 @@
       "stars": null,
       "installs": null,
       "description": "VS Code extension for Aider AI pair programming by lee88688",
-      "githubUrl": "https://github.com/lee88688/aider-composer",
       "websiteUrl": null,
       "installCommand": "code --install-extension lee88688.aider-composer",
       "license": "MIT"
@@ -454,7 +448,6 @@
       "stars": null,
       "installs": null,
       "description": "VS Code chat interface for Aider by ChristopherBlodgett",
-      "githubUrl": "https://github.com/ChristopherBlodgett/aider-chat",
       "websiteUrl": null,
       "installCommand": "code --install-extension ChristopherBlodgett.aider-chat",
       "license": "MIT"
@@ -467,7 +460,6 @@
       "stars": null,
       "installs": null,
       "description": "VS Code fork of Aider with enhanced Fish shell integration",
-      "githubUrl": "https://github.com/CnsMaple/vscode-aider-fish",
       "websiteUrl": null,
       "installCommand": "code --install-extension CnsMaple.vscode-aider-fish",
       "license": "MIT"
@@ -480,7 +472,6 @@
       "stars": null,
       "installs": null,
       "description": "Neovim plugin for Aider AI pair programming by joshuavial",
-      "githubUrl": "https://github.com/joshuavial/aider.nvim",
       "websiteUrl": null,
       "installCommand": "Plug 'joshuavial/aider.nvim'",
       "license": "MIT"
@@ -493,7 +484,6 @@
       "stars": null,
       "installs": "500+ models",
       "description": "VS Code extension supporting 500+ AI models for code generation",
-      "githubUrl": "https://github.com/kilocode/Kilo-Code",
       "websiteUrl": "https://kilocode.dev",
       "installCommand": "code --install-extension kilocode.Kilo-Code",
       "license": "MIT"
@@ -506,7 +496,6 @@
       "stars": null,
       "installs": "311+ models",
       "description": "VS Code extension with 311+ model support for autonomous coding assistance",
-      "githubUrl": "https://github.com/cline/cline",
       "websiteUrl": "https://cline.bot",
       "installCommand": "code --install-extension cline.cline",
       "license": "MIT"
@@ -519,7 +508,6 @@
       "stars": null,
       "installs": null,
       "description": "Multi-agent VS Code extension for parallel AI coding tasks",
-      "githubUrl": "https://github.com/RooVeterinaryInc/roo-cline",
       "websiteUrl": "https://roocode.com",
       "installCommand": "code --install-extension RooVeterinaryInc.roo-cline",
       "license": "MIT"
@@ -532,7 +520,6 @@
       "stars": null,
       "installs": null,
       "description": "Configurable AI code assistant supporting multiple providers and models",
-      "githubUrl": "https://github.com/continuedev/continue",
       "websiteUrl": "https://continue.dev",
       "installCommand": "code --install-extension Continue.continue",
       "license": "Apache-2.0"
@@ -545,7 +532,6 @@
       "stars": null,
       "installs": null,
       "description": "Sourcegraph Cody with cross-repository context for enterprise codebases",
-      "githubUrl": "https://github.com/sourcegraph/cody",
       "websiteUrl": "https://sourcegraph.com/cody",
       "installCommand": "code --install-extension sourcegraph.cody-ai",
       "license": "Apache-2.0"
@@ -558,7 +544,6 @@
       "stars": null,
       "installs": null,
       "description": "Official JetBrains AI Assistant for IntelliJ IDEA and other JetBrains IDEs",
-      "githubUrl": null,
       "websiteUrl": "https://www.jetbrains.com/ai/",
       "installCommand": "Install via JetBrains Marketplace",
       "license": "Proprietary"
@@ -571,7 +556,6 @@
       "stars": null,
       "installs": null,
       "description": "Open platform protocol for connecting AI agents to JetBrains IDEs",
-      "githubUrl": "https://github.com/JetBrains/agent-client-protocol",
       "websiteUrl": "https://www.jetbrains.com/ai/",
       "installCommand": "Enable ACP in JetBrains settings",
       "license": "Apache-2.0"
@@ -584,7 +568,6 @@
       "stars": null,
       "installs": null,
       "description": "Manager for AI skills and capabilities in JetBrains IDEs",
-      "githubUrl": null,
       "websiteUrl": "https://plugins.jetbrains.com/skills-manager",
       "installCommand": "Install via JetBrains Marketplace",
       "license": "MIT"
@@ -597,7 +580,6 @@
       "stars": null,
       "installs": "macOS preview",
       "description": "New standalone AI-native IDE from JetBrains (March 2026). Supports Agent Client Protocol (ACP) for AI agent integration. macOS preview available.",
-      "githubUrl": null,
       "websiteUrl": "https://www.jetbrains.com/air/",
       "installCommand": "Download from jetbrains.com/air",
       "license": "Proprietary"
@@ -610,7 +592,6 @@
       "stars": null,
       "installs": null,
       "description": "CLI tool for loading AI rules across 4 different coding tools",
-      "githubUrl": "https://github.com/fix2015/load-rules",
       "websiteUrl": null,
       "installCommand": "npm install -g load-rules",
       "license": "MIT"
@@ -623,7 +604,6 @@
       "stars": null,
       "installs": null,
       "description": "Curated list of AI rules covering 8 tools and 9 tech stacks",
-      "githubUrl": "https://github.com/lay4u/awesome-ai-rules",
       "websiteUrl": null,
       "installCommand": "Clone and reference from repository",
       "license": "MIT"
@@ -636,7 +616,6 @@
       "stars": null,
       "installs": null,
       "description": "Cross-platform plugin hub at vibecoding.app/plugins. Curates AI coding plugins across 4 categories for multiple AI coding tools.",
-      "githubUrl": null,
       "websiteUrl": "https://vibecoding.app/plugins",
       "installCommand": "Browse at vibecoding.app/plugins",
       "license": "MIT"
@@ -649,7 +628,6 @@
       "stars": 1400,
       "installs": null,
       "description": "Safety net catching destructive git and filesystem commands before execution. Works across Claude Code, OpenCode, Copilot CLI, and Gemini CLI.",
-      "githubUrl": "https://github.com/kenryu42/cc-safety-net",
       "websiteUrl": null,
       "installCommand": "Clone from GitHub",
       "license": "MIT"
@@ -662,7 +640,6 @@
       "stars": null,
       "installs": null,
       "description": "Project-scoped AI agent and plugin environment manager. Manages agent configurations across multiple AI coding tools.",
-      "githubUrl": "https://github.com/eduardoarantes/agentenv",
       "websiteUrl": null,
       "installCommand": "Clone from GitHub",
       "license": "MIT"
@@ -675,7 +652,6 @@
       "stars": null,
       "installs": "1.2M+",
       "description": "Open-source AI coding agent with 500+ model support and browser automation capabilities",
-      "githubUrl": null,
       "websiteUrl": "https://kilo.ai",
       "installCommand": "Install from kilo.ai",
       "license": "Apache-2.0"
@@ -688,7 +664,6 @@
       "stars": 169,
       "installs": "84 plugins",
       "description": "Multi-harness agent marketplace with 84 plugins for 7 different AI coding platforms. Largest multi-harness plugin collection.",
-      "githubUrl": "https://github.com/wshobson/agents",
       "websiteUrl": null,
       "installCommand": "git clone https://github.com/wshobson/agents",
       "license": "MIT"
@@ -701,7 +676,6 @@
       "stars": null,
       "installs": "N/A",
       "description": "Dedicated marketplace for Claude Code MCP servers and plugins with categorized browsing and discovery features.",
-      "githubUrl": null,
       "websiteUrl": "https://change8.dev",
       "installCommand": "Browse at change8.dev",
       "license": "N/A"

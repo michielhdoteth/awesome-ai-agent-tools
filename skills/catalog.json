@@ -6,24 +6,85 @@
   "lastUpdated": "2026-07-12",
   "totalSkills": 88,
   "categories": [
-    { "name": "Development", "count": 29 },
-    { "name": "Productivity", "count": 16 },
-    { "name": "Content", "count": 10 },
-    { "name": "Design", "count": 9 },
-    { "name": "Testing", "count": 3 },
-    { "name": "DevOps", "count": 7 },
-    { "name": "Marketing", "count": 4 },
-    { "name": "Data", "count": 3 },
-    { "name": "Security", "count": 2 }
+    {
+      "name": "Development",
+      "count": 29
+    },
+    {
+      "name": "Productivity",
+      "count": 16
+    },
+    {
+      "name": "Content",
+      "count": 10
+    },
+    {
+      "name": "Design",
+      "count": 9
+    },
+    {
+      "name": "Testing",
+      "count": 3
+    },
+    {
+      "name": "DevOps",
+      "count": 7
+    },
+    {
+      "name": "Marketing",
+      "count": 4
+    },
+    {
+      "name": "Data",
+      "count": 3
+    },
+    {
+      "name": "Security",
+      "count": 2
+    }
   ],
   "sources": [
-    { "name": "obra/superpowers", "url": "https://github.com/obra/superpowers", "stars": 239000, "skillCount": 13 },
-    { "name": "anthropics/skills", "url": "https://github.com/anthropics/skills", "stars": 157000, "skillCount": 7 },
-    { "name": "mattpocock/skills", "url": "https://github.com/mattpocock/skills", "stars": 141000, "skillCount": 15 },
-    { "name": "vercel-labs/agent-skills", "url": "https://github.com/vercel-labs/agent-skills", "stars": 29000, "skillCount": 8 },
-    { "name": "anthropics/claude-plugins-official", "url": "https://github.com/anthropics/claude-plugins-official", "stars": 30500, "skillCount": 37 },
-    { "name": "skills.sh leaderboard", "url": "https://skills.sh", "totalInstalls": 850000 },
-    { "name": "addyosmani/agent-skills", "url": "https://github.com/addyosmani/agent-skills", "stars": 77200, "skillCount": 24 }
+    {
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "stars": 239000,
+      "skillCount": 13
+    },
+    {
+      "name": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "stars": 157000,
+      "skillCount": 7
+    },
+    {
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "stars": 141000,
+      "skillCount": 15
+    },
+    {
+      "name": "vercel-labs/agent-skills",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "stars": 29000,
+      "skillCount": 8
+    },
+    {
+      "name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "stars": 30500,
+      "skillCount": 37
+    },
+    {
+      "name": "skills.sh leaderboard",
+      "url": "https://skills.sh",
+      "totalInstalls": 850000
+    },
+    {
+      "name": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "stars": 77200,
+      "skillCount": 24
+    }
   ],
   "skills": [
     {
@@ -37,7 +98,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["execution", "planning", "verification", "workflow"]
+      "tags": [
+        "execution",
+        "planning",
+        "verification",
+        "workflow"
+      ]
     },
     {
       "id": "finishing-a-development-branch",
@@ -50,7 +116,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["git", "branch", "merge", "cleanup"]
+      "tags": [
+        "git",
+        "branch",
+        "merge",
+        "cleanup"
+      ]
     },
     {
       "id": "receiving-code-review",
@@ -63,7 +134,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["code-review", "feedback", "iteration", "quality"]
+      "tags": [
+        "code-review",
+        "feedback",
+        "iteration",
+        "quality"
+      ]
     },
     {
       "id": "requesting-code-review",
@@ -76,7 +152,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["code-review", "request", "process", "quality"]
+      "tags": [
+        "code-review",
+        "request",
+        "process",
+        "quality"
+      ]
     },
     {
       "id": "using-git-worktrees",
@@ -89,7 +170,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["git", "worktrees", "isolation", "workspace"]
+      "tags": [
+        "git",
+        "worktrees",
+        "isolation",
+        "workspace"
+      ]
     },
     {
       "id": "writing-skills",
@@ -102,7 +188,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["meta", "skill-creation", "framework", "standards"]
+      "tags": [
+        "meta",
+        "skill-creation",
+        "framework",
+        "standards"
+      ]
     },
     {
       "id": "frontend-design",
@@ -115,7 +206,12 @@
       "license": "Apache-2.0",
       "verified": true,
       "local": false,
-      "tags": ["frontend", "ui", "design", "production"]
+      "tags": [
+        "frontend",
+        "ui",
+        "design",
+        "production"
+      ]
     },
     {
       "id": "skill-creator",
@@ -128,7 +224,12 @@
       "license": "Apache-2.0",
       "verified": true,
       "local": false,
-      "tags": ["skill-creation", "meta", "performance", "measurement"]
+      "tags": [
+        "skill-creation",
+        "meta",
+        "performance",
+        "measurement"
+      ]
     },
     {
       "id": "pptx",
@@ -141,7 +242,12 @@
       "license": "Apache-2.0",
       "verified": true,
       "local": false,
-      "tags": ["powerpoint", "presentations", "slides", "office"]
+      "tags": [
+        "powerpoint",
+        "presentations",
+        "slides",
+        "office"
+      ]
     },
     {
       "id": "pdf",
@@ -154,7 +260,12 @@
       "license": "Apache-2.0",
       "verified": true,
       "local": false,
-      "tags": ["pdf", "documents", "formatting", "creation"]
+      "tags": [
+        "pdf",
+        "documents",
+        "formatting",
+        "creation"
+      ]
     },
     {
       "id": "docx",
@@ -167,7 +278,12 @@
       "license": "Apache-2.0",
       "verified": true,
       "local": false,
-      "tags": ["word", "documents", "office", "professional"]
+      "tags": [
+        "word",
+        "documents",
+        "office",
+        "professional"
+      ]
     },
     {
       "id": "xlsx",
@@ -180,7 +296,12 @@
       "license": "Apache-2.0",
       "verified": true,
       "local": false,
-      "tags": ["excel", "spreadsheets", "formulas", "charts"]
+      "tags": [
+        "excel",
+        "spreadsheets",
+        "formulas",
+        "charts"
+      ]
     },
     {
       "id": "webapp-testing",
@@ -193,7 +314,12 @@
       "license": "Apache-2.0",
       "verified": true,
       "local": false,
-      "tags": ["testing", "playwright", "e2e", "web"]
+      "tags": [
+        "testing",
+        "playwright",
+        "e2e",
+        "web"
+      ]
     },
     {
       "id": "grill-me",
@@ -206,7 +332,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["interview", "planning", "design", "decisions"]
+      "tags": [
+        "interview",
+        "planning",
+        "design",
+        "decisions"
+      ]
     },
     {
       "id": "improve-codebase-architecture",
@@ -219,7 +350,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["architecture", "refactoring", "codebase", "improvement"]
+      "tags": [
+        "architecture",
+        "refactoring",
+        "codebase",
+        "improvement"
+      ]
     },
     {
       "id": "grill-with-docs",
@@ -232,7 +368,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["domain-model", "documentation", "adr", "terminology"]
+      "tags": [
+        "domain-model",
+        "documentation",
+        "adr",
+        "terminology"
+      ]
     },
     {
       "id": "tdd",
@@ -245,7 +386,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["tdd", "red-green", "refactor", "vertical-slice"]
+      "tags": [
+        "tdd",
+        "red-green",
+        "refactor",
+        "vertical-slice"
+      ]
     },
     {
       "id": "to-prd",
@@ -258,7 +404,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["prd", "specification", "issue-tracker", "synthesis"]
+      "tags": [
+        "prd",
+        "specification",
+        "issue-tracker",
+        "synthesis"
+      ]
     },
     {
       "id": "to-issues",
@@ -271,7 +422,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["issues", "vertical-slices", "planning", "breakdown"]
+      "tags": [
+        "issues",
+        "vertical-slices",
+        "planning",
+        "breakdown"
+      ]
     },
     {
       "id": "setup-matt-pocock-skills",
@@ -284,7 +440,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["setup", "configuration", "repo", "engineering"]
+      "tags": [
+        "setup",
+        "configuration",
+        "repo",
+        "engineering"
+      ]
     },
     {
       "id": "diagnose",
@@ -297,7 +458,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["diagnosis", "bugs", "performance", "regression"]
+      "tags": [
+        "diagnosis",
+        "bugs",
+        "performance",
+        "regression"
+      ]
     },
     {
       "id": "triage",
@@ -310,7 +476,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["triage", "issues", "state-machine", "workflow"]
+      "tags": [
+        "triage",
+        "issues",
+        "state-machine",
+        "workflow"
+      ]
     },
     {
       "id": "write-a-skill",
@@ -323,7 +494,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["skill-creation", "writing", "principles", "meta"]
+      "tags": [
+        "skill-creation",
+        "writing",
+        "principles",
+        "meta"
+      ]
     },
     {
       "id": "zoom-out",
@@ -336,7 +512,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["perspective", "big-picture", "strategy", "overview"]
+      "tags": [
+        "perspective",
+        "big-picture",
+        "strategy",
+        "overview"
+      ]
     },
     {
       "id": "caveman",
@@ -349,7 +530,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["compression", "readability", "concise", "refactoring"]
+      "tags": [
+        "compression",
+        "readability",
+        "concise",
+        "refactoring"
+      ]
     },
     {
       "id": "handoff",
@@ -362,7 +548,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["handoff", "continuity", "documentation", "agents"]
+      "tags": [
+        "handoff",
+        "continuity",
+        "documentation",
+        "agents"
+      ]
     },
     {
       "id": "prototype",
@@ -375,7 +566,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["prototype", "throwaway", "design", "exploration"]
+      "tags": [
+        "prototype",
+        "throwaway",
+        "design",
+        "exploration"
+      ]
     },
     {
       "id": "ask-matt",
@@ -388,7 +584,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["router", "navigation", "help", "selection"]
+      "tags": [
+        "router",
+        "navigation",
+        "help",
+        "selection"
+      ]
     },
     {
       "id": "vercel-react-best-practices",
@@ -401,7 +602,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["react", "nextjs", "performance", "optimization"]
+      "tags": [
+        "react",
+        "nextjs",
+        "performance",
+        "optimization"
+      ]
     },
     {
       "id": "web-design-guidelines",
@@ -414,7 +620,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["web-design", "accessibility", "ux", "best-practices"]
+      "tags": [
+        "web-design",
+        "accessibility",
+        "ux",
+        "best-practices"
+      ]
     },
     {
       "id": "writing-guidelines",
@@ -427,7 +638,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["writing", "documentation", "voice", "style"]
+      "tags": [
+        "writing",
+        "documentation",
+        "voice",
+        "style"
+      ]
     },
     {
       "id": "react-native-guidelines",
@@ -440,7 +656,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["react-native", "mobile", "best-practices", "guidelines"]
+      "tags": [
+        "react-native",
+        "mobile",
+        "best-practices",
+        "guidelines"
+      ]
     },
     {
       "id": "react-view-transitions",
@@ -453,7 +674,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["animations", "transitions", "react", "ux"]
+      "tags": [
+        "animations",
+        "transitions",
+        "react",
+        "ux"
+      ]
     },
     {
       "id": "composition-patterns",
@@ -466,7 +692,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["composition", "patterns", "react", "scalability"]
+      "tags": [
+        "composition",
+        "patterns",
+        "react",
+        "scalability"
+      ]
     },
     {
       "id": "vercel-optimize",
@@ -479,7 +710,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["vercel", "optimization", "cost", "performance"]
+      "tags": [
+        "vercel",
+        "optimization",
+        "cost",
+        "performance"
+      ]
     },
     {
       "id": "vercel-deploy-claimable",
@@ -492,7 +728,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["vercel", "deployment", "frameworks", "hosting"]
+      "tags": [
+        "vercel",
+        "deployment",
+        "frameworks",
+        "hosting"
+      ]
     },
     {
       "id": "find-skills",
@@ -505,7 +746,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["discovery", "search", "installation", "marketplace"]
+      "tags": [
+        "discovery",
+        "search",
+        "installation",
+        "marketplace"
+      ]
     },
     {
       "id": "agent-browser",
@@ -518,7 +764,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["browser", "automation", "testing", "scraping"]
+      "tags": [
+        "browser",
+        "automation",
+        "testing",
+        "scraping"
+      ]
     },
     {
       "id": "microsoft-foundry",
@@ -531,7 +782,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["azure", "microsoft", "cloud", "sdk"]
+      "tags": [
+        "azure",
+        "microsoft",
+        "cloud",
+        "sdk"
+      ]
     },
     {
       "id": "azure-ai",
@@ -544,7 +800,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["azure", "ai", "machine-learning", "services"]
+      "tags": [
+        "azure",
+        "ai",
+        "machine-learning",
+        "services"
+      ]
     },
     {
       "id": "remotion-best-practices",
@@ -557,7 +818,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["remotion", "video", "react", "content"]
+      "tags": [
+        "remotion",
+        "video",
+        "react",
+        "content"
+      ]
     },
     {
       "id": "caveman-julius",
@@ -570,7 +836,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["compression", "readability", "concise", "code"]
+      "tags": [
+        "compression",
+        "readability",
+        "concise",
+        "code"
+      ]
     },
     {
       "id": "supabase-postgres-best-practices",
@@ -583,7 +854,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["supabase", "postgresql", "database", "optimization"]
+      "tags": [
+        "supabase",
+        "postgresql",
+        "database",
+        "optimization"
+      ]
     },
     {
       "id": "github-actions-docs",
@@ -596,7 +872,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["github-actions", "ci-cd", "workflows", "documentation"]
+      "tags": [
+        "github-actions",
+        "ci-cd",
+        "workflows",
+        "documentation"
+      ]
     },
     {
       "id": "shadcn",
@@ -609,7 +890,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["shadcn", "components", "ui", "library"]
+      "tags": [
+        "shadcn",
+        "components",
+        "ui",
+        "library"
+      ]
     },
     {
       "id": "just-scrape",
@@ -622,7 +908,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["scraping", "extraction", "ai", "web"]
+      "tags": [
+        "scraping",
+        "extraction",
+        "ai",
+        "web"
+      ]
     },
     {
       "id": "next-best-practices",
@@ -635,7 +926,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["nextjs", "best-practices", "optimization", "react"]
+      "tags": [
+        "nextjs",
+        "best-practices",
+        "optimization",
+        "react"
+      ]
     },
     {
       "id": "emil-design-eng",
@@ -648,7 +944,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["design", "engineering", "patterns", "ui"]
+      "tags": [
+        "design",
+        "engineering",
+        "patterns",
+        "ui"
+      ]
     },
     {
       "id": "seo-audit",
@@ -661,7 +962,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["seo", "audit", "optimization", "marketing"]
+      "tags": [
+        "seo",
+        "audit",
+        "optimization",
+        "marketing"
+      ]
     },
     {
       "id": "copywriting",
@@ -674,7 +980,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["copywriting", "marketing", "content", "writing"]
+      "tags": [
+        "copywriting",
+        "marketing",
+        "content",
+        "writing"
+      ]
     },
     {
       "id": "marketing-psychology",
@@ -687,7 +998,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["psychology", "marketing", "persuasion", "behavior"]
+      "tags": [
+        "psychology",
+        "marketing",
+        "persuasion",
+        "behavior"
+      ]
     },
     {
       "id": "codegraph",
@@ -700,7 +1016,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["code-indexing", "semantic-search", "local-first", "codebase"]
+      "tags": [
+        "code-indexing",
+        "semantic-search",
+        "local-first",
+        "codebase"
+      ]
     },
     {
       "id": "stop-slop",
@@ -713,7 +1034,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["anti-slop", "writing", "humanization", "quality"]
+      "tags": [
+        "anti-slop",
+        "writing",
+        "humanization",
+        "quality"
+      ]
     },
     {
       "id": "content-research-writer",
@@ -726,7 +1052,12 @@
       "license": "Apache-2.0",
       "verified": true,
       "local": false,
-      "tags": ["research", "writing", "content", "verification"]
+      "tags": [
+        "research",
+        "writing",
+        "content",
+        "verification"
+      ]
     },
     {
       "id": "headroom",
@@ -739,7 +1070,12 @@
       "license": "Apache-2.0",
       "verified": true,
       "local": false,
-      "tags": ["complexity", "analysis", "optimization", "codebase"]
+      "tags": [
+        "complexity",
+        "analysis",
+        "optimization",
+        "codebase"
+      ]
     },
     {
       "id": "agents-md-standard",
@@ -752,7 +1088,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["agents-md", "standards", "agent-instructions", "linux-foundation"]
+      "tags": [
+        "agents-md",
+        "standards",
+        "agent-instructions",
+        "linux-foundation"
+      ]
     },
     {
       "id": "context-engineering",
@@ -765,7 +1106,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["context-engineering", "prompt-engineering", "methodology", "trending"]
+      "tags": [
+        "context-engineering",
+        "prompt-engineering",
+        "methodology",
+        "trending"
+      ]
     },
     {
       "id": "addyosmani-agent-skills",
@@ -778,7 +1124,15 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["google", "chrome", "lifecycle", "tdd", "api-design", "frontend", "security"]
+      "tags": [
+        "google",
+        "chrome",
+        "lifecycle",
+        "tdd",
+        "api-design",
+        "frontend",
+        "security"
+      ]
     },
     {
       "id": "kepano-obsidian-skills",
@@ -791,7 +1145,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["obsidian", "markdown", "knowledge-management", "notes"]
+      "tags": [
+        "obsidian",
+        "markdown",
+        "knowledge-management",
+        "notes"
+      ]
     },
     {
       "id": "nexu-open-design",
@@ -804,7 +1163,13 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["design", "design-systems", "figma", "ui", "code-generation"]
+      "tags": [
+        "design",
+        "design-systems",
+        "figma",
+        "ui",
+        "code-generation"
+      ]
     },
     {
       "id": "alirezarezvani-claude-skills",
@@ -817,7 +1182,13 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["multi-domain", "python", "engineering", "marketing", "finance"]
+      "tags": [
+        "multi-domain",
+        "python",
+        "engineering",
+        "marketing",
+        "finance"
+      ]
     },
     {
       "id": "expo-skills",
@@ -830,7 +1201,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["expo", "react-native", "mobile", "eas-build"]
+      "tags": [
+        "expo",
+        "react-native",
+        "mobile",
+        "eas-build"
+      ]
     },
     {
       "id": "trailofbits-skills",
@@ -843,7 +1219,13 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["security", "codeql", "semgrep", "smart-contracts", "vulnerability"]
+      "tags": [
+        "security",
+        "codeql",
+        "semgrep",
+        "smart-contracts",
+        "vulnerability"
+      ]
     },
     {
       "id": "ghostsecurity-skills",
@@ -856,7 +1238,13 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["appsec", "sast", "sca", "secrets", "dast"]
+      "tags": [
+        "appsec",
+        "sast",
+        "sca",
+        "secrets",
+        "dast"
+      ]
     },
     {
       "id": "forrestchang-karpathy-skills",
@@ -869,11 +1257,16 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["karpathy", "clean-code", "llm", "principles"]
+      "tags": [
+        "karpathy",
+        "clean-code",
+        "llm",
+        "principles"
+      ]
     },
     {
       "id": "iuliandita-skills",
-      "name": "Iulian Dit\u0103 Skills",
+      "name": "Iulian Dită Skills",
       "source": "iuliandita/skills",
       "category": "DevOps",
       "installs": 2,
@@ -882,7 +1275,13 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["kubernetes", "terraform", "docker", "ansible", "cicd"]
+      "tags": [
+        "kubernetes",
+        "terraform",
+        "docker",
+        "ansible",
+        "cicd"
+      ]
     },
     {
       "id": "voltagent-awesome-agent-skills",
@@ -895,7 +1294,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["directory", "awesome-list", "discovery", "ecosystem"]
+      "tags": [
+        "directory",
+        "awesome-list",
+        "discovery",
+        "ecosystem"
+      ]
     },
     {
       "id": "composiohq-awesome-claude-skills",
@@ -908,7 +1312,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["directory", "awesome-list", "claude", "curated"]
+      "tags": [
+        "directory",
+        "awesome-list",
+        "claude",
+        "curated"
+      ]
     },
     {
       "id": "travisvn-awesome-claude-skills",
@@ -921,7 +1330,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["directory", "awesome-list", "claude", "curated"]
+      "tags": [
+        "directory",
+        "awesome-list",
+        "claude",
+        "curated"
+      ]
     },
     {
       "id": "inskillflow-claude-code-skills",
@@ -934,7 +1348,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["collection", "claude-code", "workflows", "patterns"]
+      "tags": [
+        "collection",
+        "claude-code",
+        "workflows",
+        "patterns"
+      ]
     },
     {
       "id": "dynamods-skills",
@@ -947,7 +1366,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["enterprise", "org-level", "standards", "team"]
+      "tags": [
+        "enterprise",
+        "org-level",
+        "standards",
+        "team"
+      ]
     },
     {
       "id": "open-design-skills",
@@ -960,7 +1384,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["registry", "discovery", "community", "platform"]
+      "tags": [
+        "registry",
+        "discovery",
+        "community",
+        "platform"
+      ]
     },
     {
       "id": "ponytail",
@@ -973,7 +1402,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["simplicity", "anti-overengineering", "maintainability", "code-quality"]
+      "tags": [
+        "simplicity",
+        "anti-overengineering",
+        "maintainability",
+        "code-quality"
+      ]
     },
     {
       "id": "understand-anything",
@@ -986,7 +1420,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["knowledge-graph", "codebase", "understanding", "architecture"]
+      "tags": [
+        "knowledge-graph",
+        "codebase",
+        "understanding",
+        "architecture"
+      ]
     },
     {
       "id": "agent-reach",
@@ -999,7 +1438,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["research", "internet", "aggregation", "cli"]
+      "tags": [
+        "research",
+        "internet",
+        "aggregation",
+        "cli"
+      ]
     },
     {
       "id": "taste-skill",
@@ -1012,7 +1456,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["design", "ui", "aesthetics", "anti-slop"]
+      "tags": [
+        "design",
+        "ui",
+        "aesthetics",
+        "anti-slop"
+      ]
     },
     {
       "id": "skillopt",
@@ -1025,7 +1474,12 @@
       "license": "MIT",
       "verified": true,
       "local": false,
-      "tags": ["self-improving", "microsoft", "research", "meta-learning"]
+      "tags": [
+        "self-improving",
+        "microsoft",
+        "research",
+        "meta-learning"
+      ]
     },
     {
       "id": "ai-video-generation",
@@ -1038,7 +1492,12 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["video", "generation", "multimedia", "ai-media"]
+      "tags": [
+        "video",
+        "generation",
+        "multimedia",
+        "ai-media"
+      ]
     },
     {
       "id": "viral-hooks",
@@ -1051,7 +1510,12 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["marketing", "social-media", "content-creation", "viral"]
+      "tags": [
+        "marketing",
+        "social-media",
+        "content-creation",
+        "viral"
+      ]
     },
     {
       "id": "design-team-os",
@@ -1064,7 +1528,13 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["design", "product", "prd", "prototype", "ux"]
+      "tags": [
+        "design",
+        "product",
+        "prd",
+        "prototype",
+        "ux"
+      ]
     },
     {
       "id": "vibe-ship",
@@ -1077,7 +1547,12 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["deployment", "shipping", "devops", "production"]
+      "tags": [
+        "deployment",
+        "shipping",
+        "devops",
+        "production"
+      ]
     },
     {
       "id": "gpt-image-edit",
@@ -1090,7 +1565,13 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["image", "editing", "gpt", "design", "ai-media"]
+      "tags": [
+        "image",
+        "editing",
+        "gpt",
+        "design",
+        "ai-media"
+      ]
     },
     {
       "id": "ace-step",
@@ -1103,7 +1584,12 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["audio", "music", "generation", "multimedia"]
+      "tags": [
+        "audio",
+        "music",
+        "generation",
+        "multimedia"
+      ]
     },
     {
       "id": "fable-skill-executing-hard-tasks",
@@ -1116,7 +1602,13 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["risk-first", "verification", "skill-tdd", "frontier-models", "task-decomposition"]
+      "tags": [
+        "risk-first",
+        "verification",
+        "skill-tdd",
+        "frontier-models",
+        "task-decomposition"
+      ]
     },
     {
       "id": "agent-maxxing",
@@ -1129,7 +1621,13 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["multi-agent", "system-prompts", "ui-components", "frontend", "anti-slop"]
+      "tags": [
+        "multi-agent",
+        "system-prompts",
+        "ui-components",
+        "frontend",
+        "anti-slop"
+      ]
     },
     {
       "id": "battle-tested-engineer",
@@ -1142,7 +1640,12 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["engineering-judgment", "minimal-code", "safety", "review"]
+      "tags": [
+        "engineering-judgment",
+        "minimal-code",
+        "safety",
+        "review"
+      ]
     },
     {
       "id": "trend-radar",
@@ -1155,7 +1658,12 @@
       "license": "Apache-2.0",
       "verified": false,
       "local": false,
-      "tags": ["trend-tracking", "viral-content", "chinese-internet", "mcp-integration"]
+      "tags": [
+        "trend-tracking",
+        "viral-content",
+        "chinese-internet",
+        "mcp-integration"
+      ]
     },
     {
       "id": "share-md",
@@ -1168,7 +1676,13 @@
       "license": "MIT",
       "verified": false,
       "local": false,
-      "tags": ["gist", "sharing", "encryption", "markdown", "ephemeral"]
+      "tags": [
+        "gist",
+        "sharing",
+        "encryption",
+        "markdown",
+        "ephemeral"
+      ]
     }
   ]
 }
