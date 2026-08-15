@@ -3,8 +3,8 @@
   "version": "2026.07",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-07-18",
-  "totalServers": 120,
+  "lastUpdated": "2026-08-15",
+  "totalServers": 121,
   "categories": [
     {
       "name": "Official Reference",
@@ -40,7 +40,7 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Agent Orchestration",
@@ -2383,6 +2383,25 @@
         "analytics",
         "trending",
         "NLP"
+      ]
+    },
+    {
+      "id": "sandbase-cli",
+      "name": "SandBase CLI",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/sandbaseai/cli",
+      "stars": 1,
+      "description": "Agent-first CLI and MCP bridge for discovering and invoking 2,000+ hosted models and APIs through six tools",
+      "install": "npx @sandbaseai/cli connect",
+      "license": "Apache-2.0",
+      "verified": false,
+      "tags": [
+        "mcp",
+        "models",
+        "apis",
+        "multimodal",
+        "coding-agents",
+        "cli"
       ]
     }
   ]
