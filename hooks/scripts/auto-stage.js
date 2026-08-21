@@ -27,7 +27,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
+const { execSync, spawnSync } = require('child_process');
 
 const LOG_DIR = path.join(process.env.HOME || process.env.USERPROFILE, '.claude', 'hooks-logs');
 
@@ -52,7 +52,8 @@ function isInGitRepo(filePath) {
 function stageFile(filePath) {
   try {
     const dir = path.dirname(filePath);
-    execSync(`git add "${filePath}"`, { cwd: dir, stdio: 'pipe' });
+    const result = spawnSync('git', ['add', filePath], { cwd: dir, stdio: 'pipe' });
+    if (result.status !== 0) throw new Error(result.stderr.toString());
     return { success: true };
   } catch (e) {
     return { success: false, error: e.message };
