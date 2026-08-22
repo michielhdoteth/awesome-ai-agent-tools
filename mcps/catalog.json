@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-08-20",
-  "totalServers": 133,
+  "totalServers": 134,
   "categories": [
     {
       "name": "Official Reference",
@@ -2456,6 +2456,24 @@
         "mobile",
         "remote-control",
         "accessibility"
+      ]
+    },
+    {
+      "id": "animica-mcp",
+      "name": "Animica MCP",
+      "category": "Blockchain",
+      "github": "https://github.com/animicaorg/animica-mcp",
+      "stars": 0,
+      "description": "Read-only chain data, balances and mining stats for the Animica post-quantum L1, free OpenAI-compatible inference, a verifiable quantum randomness beacon and the x402 paid-API catalog; no private keys",
+      "install": "uvx animica-mcp",
+      "license": "Apache-2.0",
+      "verified": false,
+      "tags": [
+        "blockchain",
+        "post-quantum",
+        "inference",
+        "randomness",
+        "x402"
       ]
     }
   ]
