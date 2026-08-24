@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-08-20",
-  "totalServers": 134,
+  "lastUpdated": "2026-08-24",
+  "totalServers": 135,
   "categories": [
     {
       "name": "Official Reference",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Agent Orchestration",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Monitoring",
@@ -1082,6 +1082,24 @@
         "workflow",
         "automation",
         "integrations"
+      ]
+    },
+    {
+      "id": "orch8",
+      "name": "Orch8 MCP",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/orch8-io/engine",
+      "website": "https://orch8.io/",
+      "stars": 73,
+      "description": "Launch and supervise durable workflows through eight MCP tools with tenant-scoped authentication",
+      "install": "docker run -d -p 8080:8080 ghcr.io/orch8-io/engine:0.7.1 --insecure",
+      "license": "BUSL-1.1",
+      "verified": false,
+      "tags": [
+        "workflow",
+        "durable-execution",
+        "orchestration",
+        "mcp"
       ]
     },
     {
