@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-08-20",
-  "totalSkills": 97,
+  "lastUpdated": "2026-08-24",
+  "totalSkills": 98,
   "categories": [
     {
       "name": "Development",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Content",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Design",
@@ -1870,6 +1870,24 @@
         "long-horizon",
         "verification",
         "agent-skills"
+      ]
+    },
+    {
+      "id": "video-router",
+      "name": "Video Router",
+      "source": "Orkas-AI/Orkas-VideoStudio",
+      "category": "Content",
+      "installs": 0,
+      "description": "Routes video briefs to generation, composition, editing, or an end-to-end workflow.",
+      "install": "npx skills add Orkas-AI/Orkas-VideoStudio --skill video-router",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "video",
+        "workflow",
+        "routing",
+        "content"
       ]
     }
   ]
