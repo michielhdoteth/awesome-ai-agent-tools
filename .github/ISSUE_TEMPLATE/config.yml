@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Add to the Catalog"
+    url: https://github.com/michielhdoteth/awesome-ai-agent-tools/pulls
+    about: "Contributions should be PRs, not issues. See contributing.md for instructions."
+  - name: "Report a Bug or Request a Feature"
+    url: https://github.com/michielhdoteth/awesome-ai-agent-tools/issues/new
+    about: "For actual bugs, questions, or feature requests only."
