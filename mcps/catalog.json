@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-08-24",
-  "totalServers": 135,
+  "totalServers": 136,
   "categories": [
     {
       "name": "Official Reference",
@@ -40,7 +40,7 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Agent Orchestration",
@@ -2492,6 +2492,24 @@
         "inference",
         "randomness",
         "x402"
+      ]
+    },
+    {
+      "id": "sandbase-cli",
+      "name": "SandBase CLI",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/sandbaseai/cli",
+      "stars": 66,
+      "description": "Open-source CLI and local MCP bridge for discovering and running requests across 2,000+ AI models and APIs, with OAuth and ownership-aware client setup.",
+      "install": "npx -y https://github.com/sandbaseai/cli/releases/download/v0.1.17/sandbaseai-cli-0.1.17.tgz mcp-bridge --client claude-desktop",
+      "license": "Apache-2.0",
+      "verified": false,
+      "tags": [
+        "ai-models",
+        "mcp",
+        "cli",
+        "model-routing",
+        "oauth"
       ]
     }
   ]
