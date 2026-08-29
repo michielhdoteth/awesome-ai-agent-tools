@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-08-20",
-  "totalTools": 72,
+  "lastUpdated": "2026-08-29",
+  "totalTools": 73,
   "categories": [
     {
       "name": "Code Analysis",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Cloud & DevOps",
-      "count": 6
+      "count": 7
     },
     {
       "name": "AI Coding CLIs",
@@ -369,6 +369,16 @@
       "stars": 5000,
       "crossPlatform": true,
       "install": "brew install --cask google-cloud-sdk"
+    },
+    {
+      "id": "foac",
+      "name": "foac",
+      "category": "Cloud & DevOps",
+      "description": "One CLI for Linear, GitHub, Jira, Confluence, Slack, Sentry, Vercel and Neon. Built for agents.",
+      "url": "https://github.com/alephic-ai/foac",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "brew install alephic-ai/tap/foac"
     },
     {
       "id": "claude-code",

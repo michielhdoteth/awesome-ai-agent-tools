@@ -22,7 +22,7 @@
 
 ---
 
-**635** installable components across **8** categories. Every entry is sourced from real projects with provenance and install commands. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**637** installable components across **8** categories. Every entry is sourced from real projects with provenance and install commands. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -53,8 +53,8 @@
 ## MCPs
 
 - Developer Tools: 15
+- AI & Machine Learning: 14
 - Databases: 13
-- AI & Machine Learning: 13
 - Search: 11
 - Communication: 10
 - DevOps: 9
@@ -138,8 +138,8 @@
 
 - AI Coding CLIs: 11
 - Code Analysis: 9
+- Cloud & DevOps: 7
 - Git Utilities: 6
-- Cloud & DevOps: 6
 - Formatting & Linting: 6
 - Package Managers: 5
 - Docker & Containers: 5
@@ -155,13 +155,13 @@
 | Library         | Count | Description                                                                 | Folder                   |
 | --------------- | ----- | --------------------------------------------------------------------------- | ------------------------ |
 | **Skills**      | 97    | Reusable AI agent skills following the SKILL.md standard                    | [skills/](skills/)       |
-| **MCPs**        | 135   | Curated Model Context Protocol servers for AI-assisted development          | [mcps/](mcps/)           |
+| **MCPs**        | 136   | Curated Model Context Protocol servers for AI-assisted development          | [mcps/](mcps/)           |
 | **Agent Loops** | 115   | Repeatable AI-agent workflows with feedback loops                           | [loops/](loops/)         |
 | **Subagents**   | 34    | Specialized agent definitions with model routing                            | [subagents/](subagents/) |
 | **Hooks**       | 25    | Production-ready Claude Code hooks for security, automation, and quality    | [hooks/](hooks/)         |
 | **Plugins**     | 54    | Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms          | [plugins/](plugins/)     |
 | **Prompts**     | 103   | Curated prompt collections and marketplaces for AI coding agents            | [prompts/](prompts/)     |
-| **Tools**       | 72    | Essential CLI tools and utilities that enhance AI coding agent capabilities | [tools/](tools/)         |
+| **Tools**       | 73    | Essential CLI tools and utilities that enhance AI coding agent capabilities | [tools/](tools/)         |
 
 All data comes from `catalog.json` files in each folder. These catalogs are the single source of truth for programmatic discovery. Contributions welcome -- see Contributing below.
 

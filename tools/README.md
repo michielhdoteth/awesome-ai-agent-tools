@@ -2,14 +2,14 @@
 
 Essential CLI tools and utilities that enhance AI coding agent capabilities
 
-**72** entries across **13** categories.
+**73** entries across **13** categories.
 
 ## Categories
 
 - **AI Coding CLIs** (11)
 - **Code Analysis** (9)
+- **Cloud & DevOps** (7)
 - **Git Utilities** (6)
-- **Cloud & DevOps** (6)
 - **Formatting & Linting** (6)
 - **Package Managers** (5)
 - **Docker & Containers** (5)
@@ -20,7 +20,7 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 - **Terminal Enhancement** (3)
 - **Agent Memory** (2)
 
-## All 72 tools
+## All 73 tools
 
 | Name               | Category              | Description                                                                                                                                     | Source                                                                                | Badges                                                                                                                                                                                                               |
 | ------------------ | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -55,6 +55,7 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 | K9s                | Cloud & DevOps        | Terminal UI for Kubernetes. Real-time cluster monitoring.                                                                                       | [derailed/k9s](https://github.com/derailed/k9s)                                       | ![Stars](https://img.shields.io/github/stars/derailed/k9s?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/derailed/k9s?style=flat)                                       |
 | AWS CLI            | Cloud & DevOps        | Official AWS command-line interface.                                                                                                            | [aws/aws-cli](https://github.com/aws/aws-cli)                                         | ![Stars](https://img.shields.io/github/stars/aws/aws-cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/aws/aws-cli?style=flat)                                         |
 | gcloud CLI         | Cloud & DevOps        | Google Cloud command-line interface.                                                                                                            | [googlecloudsdk/gcloud_cli](https://github.com/googlecloudsdk/gcloud_cli)             | ![Stars](https://img.shields.io/github/stars/googlecloudsdk/gcloud_cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/googlecloudsdk/gcloud_cli?style=flat)             |
+| foac               | Cloud & DevOps        | One CLI for Linear, GitHub, Jira, Confluence, Slack, Sentry, Vercel and Neon. Built for agents.                                                 | [alephic-ai/foac](https://github.com/alephic-ai/foac)                                 | ![Stars](https://img.shields.io/github/stars/alephic-ai/foac?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/alephic-ai/foac?style=flat)                                 |
 | Claude Code        | AI Coding CLIs        | Anthropic's agentic coding tool. Terminal-native AI pair programmer.                                                                            | [anthropics/claude-code](https://github.com/anthropics/claude-code)                   | ![Stars](https://img.shields.io/github/stars/anthropics/claude-code?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/anthropics/claude-code?style=flat)                   |
 | Gemini CLI         | AI Coding CLIs        | Google's AI coding agent in the terminal.                                                                                                       | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)               | ![Stars](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/google-gemini/gemini-cli?style=flat)               |
 | Ollama             | AI Coding CLIs        | Run LLMs locally. Llama, Mistral, Phi, Gemma, and more.                                                                                         | [ollama/ollama](https://github.com/ollama/ollama)                                     | ![Stars](https://img.shields.io/github/stars/ollama/ollama?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ollama/ollama?style=flat)                                     |
