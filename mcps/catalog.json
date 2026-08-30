@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-08-24",
-  "totalServers": 136,
+  "totalServers": 137,
   "categories": [
     {
       "name": "Official Reference",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Agent Orchestration",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Monitoring",
@@ -2510,6 +2510,25 @@
         "cli",
         "model-routing",
         "oauth"
+      ]
+    },
+    {
+      "id": "sandbase-harness",
+      "name": "SandBase Harness",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/sandbaseai/sandbase-harness",
+      "stars": 639,
+      "description": "Self-hosted agent runtime with durable sessions, sandboxed execution, MCP tools, approvals, artifacts, audit, and replay.",
+      "install": "docker run --rm -i -e MANAGED_AGENTS_URL=http://host.docker.internal:3000 ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8",
+      "license": "Apache-2.0",
+      "verified": false,
+      "tags": [
+        "agent-runtime",
+        "mcp",
+        "sandbox",
+        "sessions",
+        "audit",
+        "self-hosted"
       ]
     }
   ]
