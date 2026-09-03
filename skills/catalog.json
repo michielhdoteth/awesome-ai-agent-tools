@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-08-20",
-  "totalSkills": 97,
+  "totalSkills": 98,
   "categories": [
     {
       "name": "Development",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Content",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Design",
@@ -1870,6 +1870,26 @@
         "long-horizon",
         "verification",
         "agent-skills"
+      ]
+    },
+    {
+      "id": "angles-video-skill",
+      "name": "Angles Video",
+      "source": "anglesvideo/angles-video-skill",
+      "category": "Content",
+      "installs": 0,
+      "description": "Turn a software repository into three selling angles and a launch-ready Angles video from Codex or Claude Code.",
+      "install": "npx skills add anglesvideo/angles-video-skill",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "video",
+        "angles",
+        "launch",
+        "marketing",
+        "claude-code",
+        "codex"
       ]
     }
   ]
