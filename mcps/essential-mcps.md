@@ -11,8 +11,9 @@ MCP (Model Context Protocol) is an open standard that connects AI assistants to 
 ### Learn: External Knowledge
 
 | Server | Purpose | Install |
-|--------|---------|---------|
+|--------|---------|----------|
 | **Context7** | Current documentation grounding | `npx @upstash/context7-mcp` |
+| **ContextStream** | Shared project memory across Cursor/Claude/Codex | `npx -y @contextstream/mcp-server` or remote `https://mcp.contextstream.io/mcp` |
 | **Brave Search** | Web search | `npx brave-search-mcp-server` |
 | **Firecrawl** | URL to clean Markdown | `npx firecrawl-mcp-server` |
 | **Exa** | Semantic search | `npx exa-mcp-server` |
@@ -21,14 +22,14 @@ MCP (Model Context Protocol) is an open standard that connects AI assistants to 
 ### Create: Design & Frontend
 
 | Server | Purpose | Install |
-|--------|---------|---------|
+|--------|---------|----------|
 | **Figma Dev Mode** | Design-to-code | Via Figma |
 | **Magic UI** | React/Tailwind components | `npx magicui-mcp-server` |
 
 ### Build: Engineering
 
 | Server | Purpose | Install |
-|--------|---------|---------|
+|--------|---------|----------|
 | **Filesystem** | Read/edit local files | Official MCP |
 | **Desktop Commander** | Terminal + process management | Community |
 | **E2B** | Secure code execution | `npx @e2b/mcp-server` |
@@ -40,7 +41,7 @@ MCP (Model Context Protocol) is an open standard that connects AI assistants to 
 ### Data: Backend
 
 | Server | Purpose | Install |
-|--------|---------|---------|
+|--------|---------|----------|
 | **Prisma Postgres** | Schema + queries | `npx prisma mcp` |
 | **Supabase** | PostgreSQL + Auth | `npx supabase-mcp` |
 | **Convex** | Full-stack functions | `npx convex-mcp-server` |
@@ -52,7 +53,7 @@ MCP (Model Context Protocol) is an open standard that connects AI assistants to 
 ### Test: Quality
 
 | Server | Purpose | Install |
-|--------|---------|---------|
+|--------|---------|----------|
 | **Playwright** | Browser automation | `npx playwright-mcp-server` |
 | **Chrome DevTools** | Runtime debugging | `npx chrome-devtools-mcp` |
 | **BrowserStack** | Cross-browser testing | `npx browserstack-mcp-server` |
@@ -60,7 +61,7 @@ MCP (Model Context Protocol) is an open standard that connects AI assistants to 
 ### Run: Deploy & Observe
 
 | Server | Purpose | Install |
-|--------|---------|---------|
+|--------|---------|----------|
 | **Netlify** | Deploy frontend | `npx netlify-mcp-server` |
 | **Vercel** | Deploy Next.js | `npx vercel-mcp-server` |
 | **Sentry** | Error tracking | `npx sentry-mcp-server` |
@@ -69,7 +70,7 @@ MCP (Model Context Protocol) is an open standard that connects AI assistants to 
 ### Work: Productivity
 
 | Server | Purpose | Install |
-|--------|---------|---------|
+|--------|---------|----------|
 | **Slack** | Channel reading/posting | `npx slack-mcp-server` |
 | **Linear** | Issue tracking | `npx linear-mcp-server` |
 | **Jira** | Enterprise tracking | `npx jira-mcp-server` |
@@ -80,7 +81,7 @@ MCP (Model Context Protocol) is an open standard that connects AI assistants to 
 ### Automate: Workflows
 
 | Server | Purpose | Install |
-|--------|---------|---------|
+|--------|---------|----------|
 | **n8n** | Workflow automation | `npx n8n-mcp-server` |
 | **Zapier** | 5000+ app integrations | `npx zapier-mcp-server` |
 | **Pipedream** | Serverless workflows | `npx pipedream-mcp-server` |
@@ -88,7 +89,7 @@ MCP (Model Context Protocol) is an open standard that connects AI assistants to 
 ### Brain: Memory & Reasoning
 
 | Server | Purpose | Install |
-|--------|---------|---------|
+|--------|---------|----------|
 | **Sequential Thinking** | Structured reasoning | `npx sequential-thinking-mcp` |
 | **Knowledge Graph** | Entity relationships | Via Zep/Cognee |
 | **Memory** | Persistent context | Various |
