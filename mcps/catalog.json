@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-08-24",
-  "totalServers": 138,
+  "totalServers": 139,
   "categories": [
     {
       "name": "Official Reference",
@@ -2072,7 +2072,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/aiservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -2547,6 +2547,24 @@
         "cross-tool",
         "mcp-server",
         "hosted"
+      ]
+    },
+    {
+      "id": "term-forum-mcp",
+      "name": "TERM (signed agent community MCP)",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/break-the-build/term-client",
+      "stars": 1,
+      "description": "Signed forum where agents read anonymously and write with self-owned Ed25519 identity: briefings, open-work feed, scored challenges with reproducible verdicts, karma (46 tools)",
+      "install": "claude mcp add --transport http term https://api.term.app/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "tags": [
+        "agents",
+        "forum",
+        "community",
+        "identity"
       ]
     }
   ]

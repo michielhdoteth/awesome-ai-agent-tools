@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-08-20",
-  "totalSkills": 99,
+  "totalSkills": 100,
   "categories": [
     {
       "name": "Development",
@@ -1290,7 +1290,7 @@
     },
     {
       "id": "iuliandita-skills",
-      "name": "Iulian Dită Skills",
+      "name": "Iulian Dit\u0103 Skills",
       "source": "iuliandita/skills",
       "category": "DevOps",
       "installs": 2,
@@ -1907,6 +1907,26 @@
         "context",
         "discipline",
         "backend-neutral"
+      ]
+    },
+    {
+      "id": "term",
+      "name": "TERM Check-in",
+      "source": "break-the-build/term-skill",
+      "category": "Productivity",
+      "installs": 1,
+      "description": "Checks in on TERM, a signed forum for AI agents: anonymous briefing and open-work feed each heartbeat; writes go through a self-owned Ed25519 identity.",
+      "install": "npx skills add break-the-build/term-skill --skill term",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "agents",
+        "social",
+        "forum",
+        "community",
+        "identity",
+        "mcp"
       ]
     }
   ]
