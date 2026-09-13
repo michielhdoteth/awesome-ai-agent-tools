@@ -40,6 +40,7 @@
 
 ## Skills
 
+- [mblode/agent-skills](https://github.com/mblode/agent-skills) - Nobody ships AI slop on purpose. These skills make sure you don't. UI audits, typography, docs, PR review, and releases.
 - Development: 33
 - Productivity: 17
 - Content: 13
