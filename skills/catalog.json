@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-08-20",
-  "totalSkills": 100,
+  "lastUpdated": "2026-09-14",
+  "totalSkills": 101,
   "categories": [
     {
       "name": "Development",
-      "count": 34
+      "count": 35
     },
     {
       "name": "Productivity",
@@ -1927,6 +1927,25 @@
         "community",
         "identity",
         "mcp"
+      ]
+    },
+    {
+      "id": "patchy-mcpatchface",
+      "name": "Patchy McPatchface",
+      "source": "Shivansh-Gaur2/patchy-mcpatchface",
+      "category": "Development",
+      "installs": 0,
+      "description": "Evidence-driven workflow for scope, reuse, and proof in non-trivial code changes.",
+      "install": "npx skills add Shivansh-Gaur2/patchy-mcpatchface --skill patchy-mcpatchface",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "code-review",
+        "code-reuse",
+        "scope",
+        "testing",
+        "verification"
       ]
     }
   ]
