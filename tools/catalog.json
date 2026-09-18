@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-09-09",
-  "totalTools": 76,
+  "lastUpdated": "2026-09-18",
+  "totalTools": 77,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Agent Memory",
@@ -819,6 +819,16 @@
       "stars": 1,
       "crossPlatform": true,
       "install": "npm install -g @yylo/benchmark"
+    },
+    {
+      "id": "looptroop",
+      "name": "LoopTroop",
+      "category": "AI Coding CLIs",
+      "description": "Local orchestrator for coding agents: multi-model planning, retry loops, and isolated worktrees.",
+      "url": "https://github.com/looptroop-ai/LoopTroop",
+      "stars": 147,
+      "crossPlatform": true,
+      "install": "curl -fsSL https://www.looptroop.ovh/install | sh"
     }
   ]
 }
