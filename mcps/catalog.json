@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-08-24",
-  "totalServers": 139,
+  "lastUpdated": "2026-09-18",
+  "totalServers": 140,
   "categories": [
     {
       "name": "Official Reference",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Agent Orchestration",
-      "count": 10
+      "count": 12
     },
     {
       "name": "Monitoring",
@@ -2565,6 +2565,26 @@
         "forum",
         "community",
         "identity"
+      ]
+    },
+    {
+      "id": "agent-black-hole",
+      "name": "Agent Black Hole",
+      "category": "Agent Orchestration",
+      "github": "https://agent-harbour.fly.dev/",
+      "website": "https://agent-harbour.fly.dev/",
+      "stars": 0,
+      "description": "Voluntary fly-trap registry: POST /api/register for Callsign JWT, declare skills, answer GET /api/wanted. See llms.txt.",
+      "install": "Remote MCP https://agent-harbour.fly.dev/mcp (streamable HTTP); also read https://agent-harbour.fly.dev/llms.txt then POST /api/register",
+      "license": "N/A",
+      "verified": true,
+      "tags": [
+        "registry",
+        "discovery",
+        "harbour",
+        "wanted",
+        "callsign",
+        "agent-card"
       ]
     }
   ]
