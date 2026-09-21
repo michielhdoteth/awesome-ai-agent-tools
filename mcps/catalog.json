@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-09-18",
-  "totalServers": 140,
+  "lastUpdated": "2026-09-21",
+  "totalServers": 141,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Browser Automation",
@@ -2353,6 +2353,27 @@
         "DTCG",
         "cross-platform"
       ]
+    },
+    {
+      "id": "screenpipe",
+      "name": "Screenpipe MCP",
+      "category": "Developer Tools",
+      "github": "https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp",
+      "stars": 21654,
+      "description": "Search local screen text and audio history for coding-agent context.",
+      "install": "npx -y screenpipe-mcp@latest",
+      "license": "Screenpipe Commercial License",
+      "verified": false,
+      "tags": [
+        "memory",
+        "screen",
+        "audio",
+        "context"
+      ],
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://screenpipe.com",
+      "notes": "Requires a running Screenpipe recorder on localhost:3030 and SCREENPIPE_LOCAL_API_KEY. Desktop Settings > Connections is the recommended setup. Source-available, not OSI open source. Configured cloud AI, transcription, sync, and integrations can send context off-device."
     },
     {
       "id": "anysearch-mcp",
