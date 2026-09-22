@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-09-22",
-  "totalServers": 141,
+  "totalServers": 142,
   "categories": [
     {
       "name": "Official Reference",
@@ -2423,6 +2423,25 @@
         "analytics",
         "trending",
         "NLP"
+      ]
+    },
+    {
+      "id": "vend-api-merchant",
+      "name": "Vend API Merchant",
+      "category": "Search",
+      "github": "https://github.com/PANDeveloper001/vend",
+      "stars": 0,
+      "description": "Pay-per-call web search, extract and web-data tools for AI agents, settled in Nano (XNO) via x402 - no signup, no API key",
+      "install": "https://extract.paypercall.dev/mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "web-search",
+        "extract",
+        "web-data",
+        "x402",
+        "nano",
+        "pay-per-call"
       ]
     },
     {
