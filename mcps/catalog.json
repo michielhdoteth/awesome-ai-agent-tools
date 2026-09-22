@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-09-22",
-  "totalServers": 142,
+  "totalServers": 143,
   "categories": [
     {
       "name": "Official Reference",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Marketing",
@@ -2623,6 +2623,24 @@
         "threads",
         "approvals",
         "transactional-email"
+      ]
+    },
+    {
+      "id": "statsnet",
+      "name": "Statsnet MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/usenetstate/statsnet-mcp",
+      "stars": 0,
+      "description": "Background check any company in the world: registration, executives, courts and finances",
+      "install": "Remote MCP: https://statsnet.co/mcp (Registry: io.github.usenetstate/statsnet)",
+      "license": "Proprietary",
+      "verified": false,
+      "tags": [
+        "company",
+        "osint",
+        "background-check",
+        "remote",
+        "enrichment"
       ]
     }
   ]
