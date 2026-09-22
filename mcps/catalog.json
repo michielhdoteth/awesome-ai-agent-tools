@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-09-22",
-  "totalServers": 143,
+  "totalServers": 144,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Browser Automation",
@@ -2352,6 +2352,24 @@
         "tokens",
         "DTCG",
         "cross-platform"
+      ]
+    },
+    {
+      "id": "orcareplay",
+      "name": "OrcaReplay",
+      "category": "Developer Tools",
+      "github": "https://github.com/Continuum-AI-Corp/OrcaReplay",
+      "stars": 260,
+      "description": "Read an agent's own recorded runs: walk the timeline, ask what happened at a step, replay offline with no model call",
+      "install": "npm i -g orcareplay",
+      "license": "Apache-2.0",
+      "verified": false,
+      "tags": [
+        "replay",
+        "debugging",
+        "observability",
+        "coding-agents",
+        "offline"
       ]
     },
     {
