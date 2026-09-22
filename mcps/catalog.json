@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-09-18",
-  "totalServers": 140,
+  "lastUpdated": "2026-09-22",
+  "totalServers": 141,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Search",
@@ -2585,6 +2585,25 @@
         "wanted",
         "callsign",
         "agent-card"
+      ]
+    },
+    {
+      "id": "sendraven-mcp",
+      "name": "SendRaven MCP",
+      "category": "Communication",
+      "github": "https://github.com/CommonNinja/sendraven-mcp-server",
+      "website": "https://sendraven.ai/mcp",
+      "stars": 1,
+      "description": "Email for AI agents: send email, read replies as threads, and reply in context, with per-key send limits and approvals. Requires a SendRaven account.",
+      "install": "npx -y @sendraven/mcp (env SENDRAVEN_API_KEY); or remote https://mcp.sendraven.ai/mcp (streamable HTTP, OAuth)",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "email",
+        "inbound",
+        "threads",
+        "approvals",
+        "transactional-email"
       ]
     }
   ]
