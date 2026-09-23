@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-08-20",
-  "totalPlugins": 55,
+  "lastUpdated": "2026-09-23",
+  "totalPlugins": 56,
   "categories": [
     {
       "name": "Claude Code",
@@ -12,7 +12,7 @@
     },
     {
       "name": "OpenCode",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Cursor",
@@ -246,6 +246,18 @@
       "description": "OpenAPI specification generation and management for OpenCode. Auto-generates API specs from your codebase.",
       "websiteUrl": null,
       "installCommand": "opencode plugin install @openspec/plugin",
+      "license": "MIT"
+    },
+    {
+      "id": "opencode-stay-awake",
+      "name": "Stay Awake",
+      "category": "OpenCode",
+      "platform": "OpenCode",
+      "stars": 0,
+      "installs": null,
+      "description": "Holds a system sleep inhibitor while an OpenCode session is running, using caffeinate on macOS and systemd-inhibit on Linux, and releases it as soon as the work finishes",
+      "websiteUrl": "https://github.com/AuroraAeon/opencode-stay-awake",
+      "installCommand": "opencode plugin add opencode-stay-awake",
       "license": "MIT"
     },
     {
