@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-09-14",
-  "totalSkills": 101,
+  "totalSkills": 102,
   "categories": [
     {
       "name": "Development",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Data",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Security",
@@ -1798,6 +1798,24 @@
         "trends",
         "social-media",
         "recency"
+      ]
+    },
+    {
+      "id": "proof-random-free-beacon",
+      "name": "Proof Random Free Beacon",
+      "source": "kepler-ops-maker/proof-random-api",
+      "category": "Data",
+      "installs": 0,
+      "description": "Fetches a drand quicknet beacon and verifies it client-side before sampling an integer. Free relay, not a VRF.",
+      "install": "npx skills add kepler-ops-maker/proof-random-api",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "randomness",
+        "drand",
+        "verification",
+        "bls"
       ]
     },
     {
