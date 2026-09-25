@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-09-22",
-  "totalServers": 144,
+  "totalServers": 145,
   "categories": [
     {
       "name": "Official Reference",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Security",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Design",
@@ -2072,7 +2072,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/aiservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -2659,6 +2659,24 @@
         "background-check",
         "remote",
         "enrichment"
+      ]
+    },
+    {
+      "id": "crosscheck",
+      "name": "crosscheck",
+      "category": "Security",
+      "github": "https://github.com/maxugc/crosscheck",
+      "stars": 0,
+      "description": "Scans a skill or MCP server's files for credential theft, piped installers, persistence, and prompt injection before install; also reviews an agent's draft or deliverable. Paid per call (x402, USDC), with a signed receipt",
+      "install": "claude mcp add --transport http crosscheck https://crosscheckapi.com/mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "security",
+        "skill-scanner",
+        "prompt-injection",
+        "x402",
+        "remote"
       ]
     }
   ]
