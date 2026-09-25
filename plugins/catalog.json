@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-09-23",
-  "totalPlugins": 56,
+  "lastUpdated": "2026-09-25",
+  "totalPlugins": 57,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 10
+      "count": 11
     },
     {
       "name": "OpenCode",
@@ -714,6 +714,20 @@
       "websiteUrl": "https://github.com/mnemoverse/claude-plugin",
       "installCommand": "claude plugin marketplace add mnemoverse/claude-plugin && claude plugin install mnemoverse@mnemoverse",
       "license": "MIT"
+    },
+    {
+      "id": "api-market",
+      "name": "API.market Gateway Plugin",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 0,
+      "description": "Connect Claude Code to API discovery and execution via a hosted OAuth MCP gateway.",
+      "websiteUrl": "https://github.com/Noveum/api-market-agent-integrations",
+      "installCommand": "/plugin marketplace add Noveum/api-market-agent-integrations\n/plugin install api-market@api-market",
+      "source": "github",
+      "sourceType": "official",
+      "endpoint": "https://api.market/api/mcp/gateway",
+      "notes": "Public client configuration and setup docs, not hosted server implementation. API.market account required. Individual APIs have free tiers or paid plans; execution can incur usage charges and subscription changes can incur costs."
     }
   ]
 }
