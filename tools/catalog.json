@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-09-21",
-  "totalTools": 78,
+  "lastUpdated": "2026-09-26",
+  "totalTools": 79,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Agent Memory",
@@ -839,7 +839,16 @@
       "stars": 0,
       "crossPlatform": true,
       "install": "npm install && npm start"
+    },
+    {
+      "id": "ghostget",
+      "name": "ghostget",
+      "category": "AI Coding CLIs",
+      "description": "Named web actions for AI agents: read a page, archive one media item, or use a connected account, without credentials or a browser.",
+      "url": "https://github.com/hraness/ghostget",
+      "stars": 7,
+      "crossPlatform": true,
+      "install": "bun add --global @hraness/ghostget"
     }
   ]
 }
-
