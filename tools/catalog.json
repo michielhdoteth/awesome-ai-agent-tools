@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-09-26",
-  "totalTools": 79,
+  "lastUpdated": "2026-09-27",
+  "totalTools": 80,
   "categories": [
     {
       "name": "Code Analysis",
@@ -57,6 +57,10 @@
     {
       "name": "Agent Training & Eval",
       "count": 6
+    },
+    {
+      "name": "AI APIs",
+      "count": 1
     }
   ],
   "tools": [
@@ -849,6 +853,16 @@
       "stars": 7,
       "crossPlatform": true,
       "install": "bun add --global @hraness/ghostget"
+    },
+    {
+      "id": "apiclaw",
+      "name": "APIClaw",
+      "category": "AI APIs",
+      "description": "Flat-rate OpenAI-compatible AI API for multi-model applications, with plans from $19/month and 50 free trial requests.",
+      "url": "https://apiclaw.biz",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "Use the OpenAI-compatible API endpoint at https://apiclaw.biz"
     }
   ]
 }
