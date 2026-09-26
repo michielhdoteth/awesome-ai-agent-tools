@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-09-22",
-  "totalServers": 145,
+  "totalServers": 146,
   "categories": [
     {
       "name": "Official Reference",
@@ -72,7 +72,7 @@
     },
     {
       "name": "Marketing",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Data Engineering",
@@ -2677,6 +2677,24 @@
         "prompt-injection",
         "x402",
         "remote"
+      ]
+    },
+    {
+      "id": "threadfox-lite",
+      "name": "threadfox-lite",
+      "category": "Marketing",
+      "github": "https://github.com/amflimited/threadfox-lite",
+      "stars": 0,
+      "description": "Read-only Reddit research through your own signed-in Chrome: subreddit rules with self-promotion rules flagged, communities for a topic, account standing and post status. Never posts; no API keys",
+      "install": "claude mcp add threadfox-lite -- uvx threadfox-lite",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "reddit",
+        "social-media",
+        "marketing",
+        "research",
+        "stdio"
       ]
     }
   ]
