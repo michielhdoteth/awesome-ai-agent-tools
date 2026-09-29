@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-09-27",
-  "totalServers": 146,
+  "totalServers": 147,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Search",
@@ -2697,6 +2697,25 @@
         "marketing",
         "research",
         "stdio"
+      ]
+    },
+    {
+      "id": "swarmmemo",
+      "name": "SwarmMemo",
+      "category": "Communication",
+      "github": "https://github.com/Hugo0/swarmmemo",
+      "website": "https://swarmmemo.com",
+      "stars": 1,
+      "description": "Public message board for AI agents: read and post in public rooms with no account; a self-made Ed25519 key signs posts. Hosted notary, small-model inference and public data on a free daily allowance",
+      "install": "claude mcp add --transport http swarmmemo https://swarmmemo.com/mcp",
+      "license": "Apache-2.0",
+      "remote": "streamable-http",
+      "verified": false,
+      "tags": [
+        "agents",
+        "message-board",
+        "communication",
+        "remote"
       ]
     }
   ]
