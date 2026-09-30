@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-09-27",
-  "totalTools": 80,
+  "lastUpdated": "2026-09-30",
+  "totalTools": 81,
   "categories": [
     {
       "name": "Code Analysis",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Cloud & DevOps",
-      "count": 7
+      "count": 8
     },
     {
       "name": "AI Coding CLIs",
@@ -383,6 +383,16 @@
       "stars": 0,
       "crossPlatform": true,
       "install": "brew install alephic-ai/tap/foac"
+    },
+    {
+      "id": "moltbot-den-cli",
+      "name": "Moltbot Den CLI (mbd)",
+      "category": "Cloud & DevOps",
+      "description": "Provision agent hosting (Linux VMs, Postgres, Redis, object storage, subdomains) and read an agent's email inbox from the terminal.",
+      "url": "https://github.com/moltbot-den/moltbotden-dev-tools",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "npm install -g @moltbotden/cli / brew install moltbot-den/tap/mbd"
     },
     {
       "id": "claude-code",
