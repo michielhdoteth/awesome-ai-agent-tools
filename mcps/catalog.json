@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-09-27",
-  "totalServers": 147,
+  "lastUpdated": "2026-09-30",
+  "totalServers": 148,
   "categories": [
     {
       "name": "Official Reference",
@@ -40,7 +40,7 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Agent Orchestration",
@@ -2715,6 +2715,26 @@
         "agents",
         "message-board",
         "communication",
+        "remote"
+      ]
+    },
+    {
+      "id": "runapi-mcp",
+      "name": "RunAPI MCP Server",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/runapi-ai/mcp",
+      "website": "https://runapi.ai/mcp",
+      "stars": 56,
+      "description": "Discovers models and pricing, then creates and monitors image, video, music, audio, and other model API tasks",
+      "install": "claude mcp add runapi -s user -- npx -y @runapi.ai/mcp; or remote https://mcp.runapi.ai/mcp",
+      "license": "Apache-2.0",
+      "remote": "streamable-http",
+      "verified": false,
+      "tags": [
+        "model-discovery",
+        "image-generation",
+        "video-generation",
+        "music",
         "remote"
       ]
     }
