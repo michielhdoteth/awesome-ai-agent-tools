@@ -4,7 +4,7 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-10-02",
-  "totalTools": 82,
+  "totalTools": 83,
   "categories": [
     {
       "name": "Code Analysis",
@@ -60,7 +60,7 @@
     },
     {
       "name": "AI APIs",
-      "count": 1
+      "count": 2
     }
   ],
   "tools": [
@@ -883,6 +883,16 @@
       "stars": 0,
       "crossPlatform": true,
       "install": "Use the OpenAI-compatible API endpoint at https://apiclaw.biz"
+    },
+    {
+      "id": "clarity-x402",
+      "name": "Clarity",
+      "category": "AI APIs",
+      "description": "Base x402 API for short research reports and chat, with a public discovery descriptor for agent integrations.",
+      "url": "https://agent-tools.cloud/services/desktop-o99r0sf-tail935fba-ts-net-sub899",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "Use the public HTTP API at https://agent-tools.cloud/services/desktop-o99r0sf-tail935fba-ts-net-sub899"
     }
   ]
 }
