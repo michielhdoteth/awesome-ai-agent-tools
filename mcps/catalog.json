@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-02",
-  "totalServers": 149,
+  "totalServers": 150,
   "categories": [
     {
       "name": "Official Reference",
@@ -72,7 +72,7 @@
     },
     {
       "name": "Marketing",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Data Engineering",
@@ -1886,6 +1886,24 @@
         "automation",
         "monitoring",
         "webhooks"
+      ]
+    },
+    {
+      "id": "lognorm",
+      "name": "LogNorm",
+      "category": "Marketing",
+      "github": "https://github.com/lognorm/lognorm-mcp",
+      "stars": 0,
+      "description": "Hosted MCP server that gives Claude Code, Codex and Cursor a ranked SEO and AI-visibility (GEO) backlog: site audits, fixes, content drafts and AI-answer tracking. Includes a SKILL.md.",
+      "install": "Remote endpoint: https://lognorm.com/api/mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "seo",
+        "geo",
+        "ai-visibility",
+        "oauth",
+        "remote"
       ]
     },
     {
