@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-09-14",
-  "totalSkills": 102,
+  "lastUpdated": "2026-10-02",
+  "totalSkills": 103,
   "categories": [
     {
       "name": "Development",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Productivity",
-      "count": 17
+      "count": 19
     },
     {
       "name": "Content",
@@ -1290,7 +1290,7 @@
     },
     {
       "id": "iuliandita-skills",
-      "name": "Iulian Dit\u0103 Skills",
+      "name": "Iulian Dită Skills",
       "source": "iuliandita/skills",
       "category": "DevOps",
       "installs": 2,
@@ -1964,6 +1964,26 @@
         "scope",
         "testing",
         "verification"
+      ]
+    },
+    {
+      "id": "placecall",
+      "name": "PlaceCall",
+      "source": "voygr-tech/placecall",
+      "category": "Productivity",
+      "installs": 0,
+      "description": "Places real phone calls to US businesses via the PlaceCall API; returns outcome and transcript",
+      "install": "claude plugin marketplace add voygr-tech/placecall && claude plugin install placecall@placecall",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "phone",
+        "calls",
+        "voice",
+        "telephony",
+        "reservations",
+        "mcp"
       ]
     }
   ]

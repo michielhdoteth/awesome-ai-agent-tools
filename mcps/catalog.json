@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-02",
-  "totalServers": 148,
+  "totalServers": 149,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Search",
@@ -2737,7 +2737,27 @@
         "remote",
         "oauth"
       ]
+    },
+    {
+      "id": "placecall",
+      "name": "PlaceCall",
+      "category": "Communication",
+      "github": "https://github.com/voygr-tech/placecall",
+      "website": "https://voygr.tech/placecall/",
+      "stars": 34,
+      "description": "Hosted MCP where an AI agent places real phone calls to US businesses and returns outcome and transcript.",
+      "install": "Remote OAuth https://api.voygr.tech/mcp (or X-API-Key header)",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "tags": [
+        "phone",
+        "calls",
+        "voice",
+        "telephony",
+        "remote",
+        "oauth"
+      ]
     }
-
   ]
 }
