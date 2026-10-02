@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-09-30",
-  "totalTools": 81,
+  "lastUpdated": "2026-10-02",
+  "totalTools": 82,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Agent Memory",
@@ -863,6 +863,16 @@
       "stars": 7,
       "crossPlatform": true,
       "install": "bun add --global @hraness/ghostget"
+    },
+    {
+      "id": "ordewell",
+      "name": "Ordewell",
+      "category": "AI Coding CLIs",
+      "description": "Terminal CLI and TUI that turns one goal into an ordered, editable plan of coding agent tasks, each with its own runner, model and mode, and accepts a task as done only when its completion marker appears in that runner's output.",
+      "url": "https://github.com/ordewell/ordewell",
+      "stars": 183,
+      "crossPlatform": true,
+      "install": "npm install -g ordewell"
     },
     {
       "id": "apiclaw",
