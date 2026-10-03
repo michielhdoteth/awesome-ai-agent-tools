@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-03",
-  "totalServers": 149,
+  "totalServers": 150,
   "categories": [
     {
       "name": "Official Reference",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Agent Orchestration",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Monitoring",
@@ -2758,6 +2758,27 @@
         "telephony",
         "remote",
         "oauth"
+      ]
+    },
+    {
+      "id": "tale",
+      "name": "Tale",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/tale-project/tale",
+      "website": "https://tale.dev",
+      "stars": 29,
+      "description": "Self-hosted workspace MCP for knowledge retrieval and automation authoring, testing, and execution",
+      "install": "Deploy Tale (https://docs.tale.dev/self-hosted/install/quickstart), then connect to /api/v1/mcp on your instance with a Bearer API key and X-Organization-Slug header",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "workspace",
+        "automation",
+        "knowledge",
+        "mcp",
+        "self-hosted"
       ]
     }
   ]
