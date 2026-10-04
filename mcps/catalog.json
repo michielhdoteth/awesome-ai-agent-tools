@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-03",
-  "totalServers": 129,
+  "lastUpdated": "2026-10-04",
+  "totalServers": 130,
   "categories": [
     {
       "name": "Official Reference",
@@ -40,7 +40,7 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Agent Orchestration",
@@ -2413,6 +2413,25 @@
         "knowledge",
         "mcp",
         "self-hosted"
+      ]
+    },
+    {
+      "id": "muapi-cli-mcp",
+      "name": "MuAPI CLI & MCP Server",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/SamurAIGPT/muapi-cli",
+      "website": "https://muapi.ai",
+      "stars": 7,
+      "description": "Official MuAPI CLI and MCP server for image, video, and audio generation and editing, with hosted Streamable HTTP and local stdio setup",
+      "install": "Hosted: connect to https://api.muapi.ai/mcp with Authorization: Bearer $MUAPI_API_KEY; local stdio: npm install -g muapi-cli && muapi mcp serve",
+      "remote": "streamable-http",
+      "verified": false,
+      "tags": [
+        "image-generation",
+        "video-generation",
+        "audio-generation",
+        "editing",
+        "remote"
       ]
     }
   ]
