@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-04",
-  "totalServers": 131,
+  "totalServers": 132,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Search",
@@ -2453,6 +2453,24 @@
         "integrations",
         "skills",
         "mcp"
+      ]
+    },
+    {
+      "id": "sendpaper",
+      "name": "Sendpaper MCP",
+      "category": "Communication",
+      "github": "https://github.com/ryan-tish/sendpaper-plugin",
+      "stars": 0,
+      "description": "Mail real postcards and letters (incl. USPS Certified Mail) to US addresses: create, preview, pay and track orders; remote HTTP server, no API key",
+      "install": "claude mcp add --transport http sendpaper https://sendmypaper.com/mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "mail",
+        "postcards",
+        "letters",
+        "usps",
+        "payments"
       ]
     }
   ]
