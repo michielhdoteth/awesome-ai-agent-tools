@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-10-02",
-  "totalTools": 80,
+  "lastUpdated": "2026-10-05",
+  "totalTools": 81,
   "categories": [
     {
       "name": "Code Analysis",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Formatting & Linting",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Database CLIs",
@@ -863,6 +863,16 @@
       "stars": 65,
       "crossPlatform": true,
       "install": "git clone https://github.com/skillberry-ai/cap-evolve && ./install.sh"
+    },
+    {
+      "id": "cage",
+      "name": "Cage",
+      "category": "Formatting & Linting",
+      "description": "TypeScript contract harness for spec, implementation, test, and review-freshness checks.",
+      "url": "https://github.com/vitalik1921/cage",
+      "stars": 2,
+      "crossPlatform": false,
+      "install": "npm install -D cage-ts"
     }
   ]
 }
