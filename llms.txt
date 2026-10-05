@@ -1,6 +1,6 @@
 # Awesome AI Agent Tools
 
-> Installable AI agent components for coding assistants: skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and CLI tools. 594 components across 8 categories, curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+> Installable AI agent components for coding assistants: skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and CLI tools. 600 components across 8 categories, curated from 100+ repositories. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Overview
 
@@ -13,13 +13,13 @@ Built for interoperability, this collection works with Claude Code, OpenCode, Co
 ## What This Repo Contains
 
 - **94 Skills**: SKILL.md files across 9 categories (Development 31, Productivity 17, Design 11, Content 10, DevOps 8, Marketing 6, Data 5, Testing 4, Security 2)
-- **130 MCP Servers**: Model Context Protocol servers with install commands across 19 categories
+- **133 MCP Servers**: Model Context Protocol servers with install commands across 19 categories
 - **103 Agent Loops**: Repeatable workflow patterns with prompts, verification criteria, and source attribution across 7 categories
 - **31 Subagents**: Specialized agents with model routing and tool permissions across 5 categories
 - **23 Hooks**: Event-driven extensions for Claude Code across 7 categories
-- **50 Plugins**: Extensions for Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, and JetBrains across 9 categories
+- **51 Plugins**: Extensions for Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, and JetBrains across 9 categories
 - **84 Prompts**: Curated prompt templates and strategies across 17 categories
-- **79 CLI Tools**: Command-line utilities and automation across 14 categories
+- **81 CLI Tools**: Command-line utilities and automation across 14 categories
 - **JSON Catalogs**: Machine-readable catalogs for programmatic discovery
 
 ## Quick Start
@@ -45,13 +45,13 @@ https://awesome-ai-agent-tools.vercel.app
 - [contributing.md](contributing.md) - How to add skills, MCPs, or loops
 - contributing.md - Human and agent contribution guide
 - [Skills Library](skills/) - 94 SKILL.md files across 9 categories
-- [MCP Servers](mcps/) - 130 MCP servers with install commands
+- [MCP Servers](mcps/) - 133 MCP servers with install commands
 - [Agent Loops](loops/) - 103 workflow patterns with catalog
 - [Subagents](subagents/) - 31 specialized agent definitions
 - [Hooks](hooks/) - 23 event-driven extensions
-- [Plugins](plugins/) - 50 plugins across 9 platforms
+- [Plugins](plugins/) - 51 plugins across 9 platforms
 - [Prompts](prompts/) - 84 curated prompt templates
-- [CLI Tools](tools/) - 79 command-line utilities
+- [CLI Tools](tools/) - 81 command-line utilities
 
 ## Related Resources
 
@@ -64,4 +64,4 @@ awesome, ai-agent-tools, ai-agents, skills, mcp-servers, model-context-protocol,
 
 ## Updated
 
-2026-10-04
+2026-10-05

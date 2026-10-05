@@ -9,7 +9,7 @@ Installable components for AI coding assistants -- skills, MCP servers, agent lo
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/michielhdoteth/awesome-ai-agent-tools?style=flat-square&label=Stars&color=gold)](https://github.com/michielhdoteth/awesome-ai-agent-tools/stargazers)
 
-**594** installable components across **8** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**600** installable components across **8** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -38,7 +38,7 @@ Full catalog: [skills/](skills/) · [catalog.json](skills/catalog.json)
 
 ## MCPs
 
-130 mcps across 19 categories: Developer Tools (15) · AI & Machine Learning (14) · Agent Orchestration (13) · Databases (10) · Communication (10) · Search (10) · DevOps (8) · Official Reference (6) · Security (6) · Research & Data (6) · Browser Automation (5) · Cloud Platforms (5) · Marketing (5) · Monitoring (5) · Finance (4) · Design (3) · Blockchain (3) · Data Engineering (1) · Mobile (1)
+133 mcps across 19 categories: Developer Tools (15) · AI & Machine Learning (14) · Agent Orchestration (14) · Communication (11) · Databases (10) · Search (10) · DevOps (8) · Security (7) · Official Reference (6) · Research & Data (6) · Browser Automation (5) · Cloud Platforms (5) · Marketing (5) · Monitoring (5) · Finance (4) · Design (3) · Blockchain (3) · Data Engineering (1) · Mobile (1)
 
 Full catalog: [mcps/](mcps/) · [catalog.json](mcps/catalog.json)
 
@@ -86,14 +86,14 @@ Full catalog: [hooks/](hooks/) · [catalog.json](hooks/catalog.json)
 
 | Name                                     | Description                                                                                                                                              | Source                                 |
 | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
-| Auto Test                                | Runs related tests automatically after editing source files                                                                                              | `rohitg00/awesome-claude-code-toolkit` |
+| Secret Scanner                           | Scans for leaked secrets (API keys, tokens, passwords) before writing or editing files                                                                   | `rohitg00/awesome-claude-code-toolkit` |
 | Block Dangerous Commands                 | Blocks rm -rf, fork bombs, curl\|sh, and other destructive shell commands                                                                                | `karanb192/claude-code-hooks`          |
-| awesome-claude-code-hooks                | Curated directory of Claude Code hooks organized by category. Meta-resource for discovering hooks in the ecosystem.                                      | `ithiria894/awesome-claude-code-hooks` |
 | Lasso Security Prompt Injection Defenses | Enterprise-grade prompt injection detection and prevention hooks for Claude Code. Detects and blocks indirect prompt injection attacks via tool outputs. | `lasso-security/claude-hooks`          |
+| awesome-claude-code-hooks                | Curated directory of Claude Code hooks organized by category. Meta-resource for discovering hooks in the ecosystem.                                      | `ithiria894/awesome-claude-code-hooks` |
 
 ## Plugins
 
-50 plugins across 9 categories: Claude Code (11) · OpenCode (9) · Cross-Tool (7) · VS Code AI (6) · Cursor (5) · Windsurf (4) · JetBrains (4) · Copilot (3) · Aider (1)
+51 plugins across 9 categories: Claude Code (11) · OpenCode (9) · Cross-Tool (8) · VS Code AI (6) · Cursor (5) · Windsurf (4) · JetBrains (4) · Copilot (3) · Aider (1)
 
 Full catalog: [plugins/](plugins/) · [catalog.json](plugins/catalog.json)
 
@@ -121,7 +121,7 @@ Full catalog: [prompts/](prompts/) · [catalog.json](prompts/catalog.json)
 
 ## Tools
 
-79 tools across 14 categories: AI Coding CLIs (14) · Code Analysis (9) · Cloud & DevOps (7) · Git Utilities (6) · Formatting & Linting (6) · Agent Training & Eval (6) · Package Managers (5) · Docker & Containers (5) · API Testing (5) · Database CLIs (4) · Monitoring (4) · Agent Memory (3) · Terminal Enhancement (3) · AI APIs (2)
+81 tools across 14 categories: AI Coding CLIs (14) · Code Analysis (9) · Cloud & DevOps (7) · Formatting & Linting (7) · Agent Training & Eval (7) · Git Utilities (6) · Package Managers (5) · Docker & Containers (5) · API Testing (5) · Database CLIs (4) · Monitoring (4) · Agent Memory (3) · Terminal Enhancement (3) · AI APIs (2)
 
 Full catalog: [tools/](tools/) · [catalog.json](tools/catalog.json)
 

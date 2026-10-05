@@ -2,13 +2,13 @@
 
 Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms
 
-**50** entries across **9** categories.
+**51** entries across **9** categories.
 
 ## Categories
 
 - **Claude Code** (11)
 - **OpenCode** (9)
-- **Cross-Tool** (7)
+- **Cross-Tool** (8)
 - **VS Code AI** (6)
 - **Cursor** (5)
 - **Windsurf** (4)
@@ -16,7 +16,7 @@ Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms
 - **Copilot** (3)
 - **Aider** (1)
 
-## All 50 plugins
+## All 51 plugins
 
 | Name                              | Category    | Description                                                                                                                                                               | Source                                                                                            | Badges                                                                                                                                                                                                                           |
 | --------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -70,6 +70,7 @@ Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms
 | Flutter Agent Plugins             | Cross-Tool  | Official Flutter team agent plugins bundling Flutter skills, rules, and Dart/Flutter MCP config for widget tests, layout, routing, and architecture.                      | [docs.flutter.dev](https://docs.flutter.dev/ai/get-started)                                       |                                                                                                                                                                                                                                  |
 | Mnemoverse                        | Claude Code | Connects Claude Code to the hosted Mnemoverse memory server over remote MCP with a one-time OAuth sign-in, and bundles the CC0 agent-memory-discipline skill              | [mnemoverse/claude-plugin](https://github.com/mnemoverse/claude-plugin)                           | ![Stars](https://img.shields.io/github/stars/mnemoverse/claude-plugin?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mnemoverse/claude-plugin?style=flat)                           |
 | API.market Gateway Plugin         | Claude Code | Connect Claude Code to API discovery and execution via a hosted OAuth MCP gateway.                                                                                        | [Noveum/api-market-agent-integrations](https://github.com/Noveum/api-market-agent-integrations)   | ![Stars](https://img.shields.io/github/stars/Noveum/api-market-agent-integrations?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Noveum/api-market-agent-integrations?style=flat)   |
+| Context Guru                      | Cross-Tool  | Context optimization plugin: prompt-cache management and context compaction                                                                                               | [rossoctl/context-guru](https://github.com/rossoctl/context-guru)                                 | ![Stars](https://img.shields.io/github/stars/rossoctl/context-guru?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/rossoctl/context-guru?style=flat)                                 |
 
 ---
 

@@ -2,16 +2,16 @@
 
 Essential CLI tools and utilities that enhance AI coding agent capabilities
 
-**79** entries across **14** categories.
+**81** entries across **14** categories.
 
 ## Categories
 
 - **AI Coding CLIs** (14)
 - **Code Analysis** (9)
 - **Cloud & DevOps** (7)
+- **Formatting & Linting** (7)
+- **Agent Training & Eval** (7)
 - **Git Utilities** (6)
-- **Formatting & Linting** (6)
-- **Agent Training & Eval** (6)
 - **Package Managers** (5)
 - **Docker & Containers** (5)
 - **API Testing** (5)
@@ -21,7 +21,7 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 - **Terminal Enhancement** (3)
 - **AI APIs** (2)
 
-## All 79 tools
+## All 81 tools
 
 | Name                  | Category              | Description                                                                                                                                                                                                                          | Source                                                                                           | Badges                                                                                                                                                                                                                 |
 | --------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,6 +104,8 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 | Ordewell              | AI Coding CLIs        | Terminal CLI and TUI that turns one goal into an ordered, editable plan of coding agent tasks, each with its own runner, model and mode, and accepts a task as done only when its completion marker appears in that runner's output. | [ordewell/ordewell](https://github.com/ordewell/ordewell)                                        | ![Stars](https://img.shields.io/github/stars/ordewell/ordewell?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ordewell/ordewell?style=flat)                               |
 | APIClaw               | AI APIs               | Flat-rate OpenAI-compatible AI API for multi-model applications, with plans from $19/month and 50 free trial requests.                                                                                                               | [apiclaw.biz](https://apiclaw.biz)                                                               |                                                                                                                                                                                                                        |
 | Clarity               | AI APIs               | Base x402 API for short research reports and chat, with a public discovery descriptor for agent integrations.                                                                                                                        | [agent-tools.cloud](https://agent-tools.cloud/services/desktop-o99r0sf-tail935fba-ts-net-sub899) |                                                                                                                                                                                                                        |
+| cap-evolve            | Agent Training & Eval | Optimizes an agent's prompts, tool code, and skills from failed evaluation traces, gated by a held-out significance test.                                                                                                            | [skillberry-ai/cap-evolve](https://github.com/skillberry-ai/cap-evolve)                          | ![Stars](https://img.shields.io/github/stars/skillberry-ai/cap-evolve?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/skillberry-ai/cap-evolve?style=flat)                 |
+| Cage                  | Formatting & Linting  | TypeScript contract harness for spec, implementation, test, and review-freshness checks.                                                                                                                                             | [vitalik1921/cage](https://github.com/vitalik1921/cage)                                          | ![Stars](https://img.shields.io/github/stars/vitalik1921/cage?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/vitalik1921/cage?style=flat)                                 |
 
 ---
 

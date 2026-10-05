@@ -48,7 +48,7 @@
       "matcher": "Bash",
       "script": "block-dangerous-commands.js",
       "language": "node",
-      "stars": 425,
+      "stars": 529,
       "tags": [
         "security",
         "safety",
@@ -68,7 +68,7 @@
       "matcher": "Read|Edit|Write|Bash",
       "script": "protect-secrets.js",
       "language": "node",
-      "stars": 425,
+      "stars": 529,
       "tags": [
         "security",
         "secrets",
@@ -89,7 +89,7 @@
       "matcher": "Write|Edit",
       "script": "secret-scanner.js",
       "language": "node",
-      "stars": 425,
+      "stars": 2675,
       "tags": [
         "security",
         "secrets",
@@ -110,7 +110,7 @@
       "matcher": "Edit|Write",
       "script": "auto-stage.js",
       "language": "node",
-      "stars": 425,
+      "stars": 529,
       "tags": [
         "automation",
         "git",
@@ -130,7 +130,7 @@
       "matcher": "Write|Edit",
       "script": "auto-test.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "automation",
         "testing",
@@ -150,7 +150,7 @@
       "matcher": "Write|Edit",
       "script": "lint-fix.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "automation",
         "linting",
@@ -170,7 +170,7 @@
       "matcher": "Write|Edit",
       "script": "type-check.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "automation",
         "typescript",
@@ -190,7 +190,7 @@
       "matcher": "Write|Edit",
       "script": "post-edit-check.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "quality",
         "linting",
@@ -210,7 +210,7 @@
       "matcher": "Bash",
       "script": "suggest-compact.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "quality",
         "context-management",
@@ -230,7 +230,7 @@
       "matcher": "Bash",
       "script": "commit-guard.js",
       "language": "node",
-      "stars": 425,
+      "stars": 2675,
       "tags": [
         "quality",
         "git",
@@ -250,7 +250,7 @@
       "matcher": "permission_prompt|idle_prompt|elicitation_dialog",
       "script": "notify-permission.js",
       "language": "node",
-      "stars": 425,
+      "stars": 529,
       "tags": [
         "notifications",
         "slack",
@@ -270,7 +270,7 @@
       "matcher": "*",
       "script": "notification-log.js",
       "language": "node",
-      "stars": 425,
+      "stars": 2675,
       "tags": [
         "notifications",
         "logging",
@@ -290,7 +290,7 @@
       "matcher": "",
       "script": "session-start.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "session",
         "startup",
@@ -310,7 +310,7 @@
       "matcher": "",
       "script": "session-end.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "session",
         "shutdown",
@@ -330,7 +330,7 @@
       "matcher": "",
       "script": "context-loader.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "session",
         "context",
@@ -350,7 +350,7 @@
       "matcher": "",
       "script": "pre-compact.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "session",
         "compaction",
@@ -370,7 +370,7 @@
       "matcher": "Bash",
       "script": "pre-push-check.js",
       "language": "node",
-      "stars": 425,
+      "stars": 2675,
       "tags": [
         "safety",
         "git",
@@ -390,7 +390,7 @@
       "matcher": "Bash",
       "script": "block-dev-server.js",
       "language": "node",
-      "stars": 425,
+      "stars": 2675,
       "tags": [
         "safety",
         "dev-server",
@@ -411,7 +411,7 @@
       "matcher": "Bash",
       "script": "smart-approve.py",
       "language": "python",
-      "stars": 425,
+      "stars": 2675,
       "tags": [
         "safety",
         "command-analysis",
@@ -431,7 +431,7 @@
       "matcher": "*",
       "script": "event-logger.py",
       "language": "python",
-      "stars": 425,
+      "stars": 529,
       "tags": [
         "utility",
         "logging",
@@ -452,7 +452,7 @@
       "matcher": "",
       "script": "stop-check.js",
       "language": "node",
-      "stars": 2100,
+      "stars": 2675,
       "tags": [
         "utility",
         "testing",
@@ -473,7 +473,7 @@
       "matcher": "Bash|Read|Write|Edit",
       "script": "lasso-security.js",
       "language": "node",
-      "stars": 50,
+      "stars": 267,
       "tags": [
         "security",
         "prompt-injection",
@@ -494,7 +494,7 @@
       "matcher": "N/A",
       "script": "N/A",
       "language": "markdown",
-      "stars": 200,
+      "stars": 26,
       "tags": [
         "curated",
         "directory",
