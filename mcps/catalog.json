@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-04",
-  "totalServers": 130,
+  "totalServers": 131,
   "categories": [
     {
       "name": "Official Reference",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Agent Orchestration",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Monitoring",
@@ -2432,6 +2432,27 @@
         "audio-generation",
         "editing",
         "remote"
+      ]
+    },
+    {
+      "id": "aident-loadout",
+      "name": "Aident Loadout",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/Aident-AI/aident-skill",
+      "website": "https://aident.ai",
+      "stars": 5,
+      "description": "Remote MCP server that connects Claude Code, Codex, Cursor and other agents to 1,000+ apps and 400+ expert-built Skills through one OAuth sign-in",
+      "install": "claude mcp add --transport http loadout https://loadout.aident.ai/mcp (or add https://loadout.aident.ai/mcp as a remote streamable-HTTP MCP server in any client)",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "remote",
+        "oauth",
+        "integrations",
+        "skills",
+        "mcp"
       ]
     }
   ]
