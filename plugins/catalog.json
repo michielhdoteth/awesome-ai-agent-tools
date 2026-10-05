@@ -4,7 +4,7 @@
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
   "lastUpdated": "2026-09-25",
-  "totalPlugins": 50,
+  "totalPlugins": 51,
   "categories": [
     {
       "name": "Claude Code",
@@ -40,7 +40,7 @@
     },
     {
       "name": "Cross-Tool",
-      "count": 7
+      "count": 8
     }
   ],
   "plugins": [
@@ -660,6 +660,19 @@
       "sourceType": "official",
       "endpoint": "https://api.market/api/mcp/gateway",
       "notes": "Public client configuration and setup docs, not hosted server implementation. API.market account required. Individual APIs have free tiers or paid plans; execution can incur usage charges and subscription changes can incur costs."
+    },
+    {
+      "id": "context-guru",
+      "name": "Context Guru",
+      "category": "Cross-Tool",
+      "platform": "Cross-Tool",
+      "stars": 56,
+      "installs": null,
+      "description": "Context optimization plugin: prompt-cache management and context compaction",
+      "websiteUrl": "https://rossoctl.github.io/context-guru/",
+      "installCommand": "/plugin marketplace add rossoctl/context-guru",
+      "license": "Apache-2.0",
+      "github": "https://github.com/rossoctl/context-guru"
     }
   ]
 }
