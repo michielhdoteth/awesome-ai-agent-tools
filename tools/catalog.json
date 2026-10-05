@@ -4,7 +4,7 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-10-02",
-  "totalTools": 79,
+  "totalTools": 80,
   "categories": [
     {
       "name": "Code Analysis",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Agent Memory",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Formatting & Linting",
@@ -853,6 +853,16 @@
       "stars": 0,
       "crossPlatform": true,
       "install": "Use the public HTTP API at https://agent-tools.cloud/services/desktop-o99r0sf-tail935fba-ts-net-sub899"
+    },
+    {
+      "id": "context-guru",
+      "name": "Context Guru",
+      "category": "Agent Memory",
+      "description": "Context optimization for Claude Code and Codex: prompt-cache management and context compaction.",
+      "url": "https://github.com/rossoctl/context-guru",
+      "stars": 56,
+      "crossPlatform": true,
+      "install": "/plugin marketplace add rossoctl/context-guru"
     }
   ]
 }
