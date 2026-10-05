@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-04",
-  "totalServers": 132,
+  "totalServers": 133,
   "categories": [
     {
       "name": "Official Reference",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Security",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Design",
@@ -2471,6 +2471,27 @@
         "letters",
         "usps",
         "payments"
+      ]
+    },
+    {
+      "id": "darkmoon",
+      "name": "Darkmoon",
+      "category": "Security",
+      "github": "https://github.com/ASCIT31/darkmoon-mcp-server",
+      "website": "https://dark-moon.org",
+      "stars": 0,
+      "description": "Start authorized autonomous AI pentest runs, poll status, list campaigns and read findings on your own self-hosted Darkmoon Pro (engine and CLI are open source GPL-3.0; this server needs the Pro dashboard, no hosted endpoint)",
+      "install": "npx -y @darkmoon_ai/mcp-server (set DARKMOON_BASE_URL plus DARKMOON_TOKEN or DARKMOON_USERNAME and DARKMOON_PASSWORD)",
+      "license": "GPL-3.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "pentest",
+        "security",
+        "vulnerabilities",
+        "self-hosted",
+        "ai-agent"
       ]
     }
   ]
