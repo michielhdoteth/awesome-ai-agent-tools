@@ -29,13 +29,13 @@ jobs:
       - name: Check for changes
         id: diff
         run: |
-          git diff --quiet readme.md */README.md llms.txt || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --quiet readme.md */README.md || echo "changed=true" >> $GITHUB_OUTPUT
 
       - name: Commit and push
         if: steps.diff.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add readme.md */README.md llms.txt
+          git add readme.md */README.md
           git commit -m "docs: regenerate README from catalogs [skip ci]"
           git push
