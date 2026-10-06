@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-04",
-  "totalServers": 133,
+  "lastUpdated": "2026-10-05",
+  "totalServers": 134,
   "categories": [
     {
       "name": "Official Reference",
@@ -60,7 +60,7 @@
     },
     {
       "name": "Finance",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Research & Data",
@@ -1473,6 +1473,27 @@
         "ecommerce",
         "products",
         "orders"
+      ]
+    },
+    {
+      "id": "voidpay",
+      "name": "Voidpay Marketplace MCP",
+      "category": "Finance",
+      "github": "https://github.com/voidly-ai/pay-mcp",
+      "website": "https://voidly.ai/pay",
+      "stars": 0,
+      "description": "Find agent services and storefronts on Voidpay and prepare owner-approved checkout links; never signs or pays",
+      "install": "npx -y @voidly/pay-mcp@0.7.3",
+      "license": "Apache-2.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "marketplace",
+        "agent-payments",
+        "checkout",
+        "commerce",
+        "voidpay"
       ]
     },
     {
