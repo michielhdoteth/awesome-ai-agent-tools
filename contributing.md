@@ -67,7 +67,7 @@ Per-catalog link fields:
 | skills | `source` | `"owner/repo"` |
 | mcps | `github` | `"https://github.com/owner/repo"` |
 | loops | `sourceRepo`, `source`, `author` | `"owner/repo"`, URL, author name |
-| subagents | *(none -- stars/tags/license)* | |
+| subagents | *(none - stars/tags/license)* | |
 | hooks | `source`, `sourceType` | `"github"`, `"official"` / `"community"` / `"registry"` |
 | plugins | `websiteUrl`, `installCommand` | URL + platform install command |
 | prompts | `source` | `"owner/repo"` |
@@ -75,10 +75,10 @@ Per-catalog link fields:
 
 ### Required Fields
 
-- `id` -- Unique kebab-case identifier (no duplicates)
-- `name` or `title` -- Human-readable name (loops use `title`)
-- `category` -- Must match an existing category in the target catalog
-- `description` -- Clear, concise one-liner
+- `id` - Unique kebab-case identifier (no duplicates)
+- `name` or `title` - Human-readable name (loops use `title`)
+- `category` - Must match an existing category in the target catalog
+- `description` - Clear, concise one-liner
 - The link field(s) for your catalog (see table above)
 
 ### Adding a New Category
@@ -90,21 +90,21 @@ Per-catalog link fields:
 
 ### Quality Standards
 
-- **No duplicates** -- Search existing entries before adding
-- **Working links** -- GitHub URL must be valid
-- **Accurate stars** -- Use current GitHub star count
-- **Honest description** -- No marketing fluff, just what it does
-- **Proper attribution** -- Source and sourceType required
+- **No duplicates** - Search existing entries before adding
+- **Working links** - GitHub URL must be valid
+- **Accurate stars** - Use current GitHub star count
+- **Honest description** - No marketing fluff, just what it does
+- **Proper attribution** - Source and sourceType required
 
 ### Validation
 
 All PRs are automatically validated by GitHub Actions:
 
-1. **JSON syntax** -- All catalog.json files must be valid JSON
-2. **Schema validation** -- Required fields (id, name, category, description) must be present
-3. **Duplicate detection** -- No duplicate IDs within a catalog
-4. **ID format** -- Must be lowercase kebab-case (e.g., `my-skill-name`)
-5. **Star counts** -- Must be numbers (not strings)
+1. **JSON syntax** - All catalog.json files must be valid JSON
+2. **Schema validation** - Required fields (id, name, category, description) must be present
+3. **Duplicate detection** - No duplicate IDs within a catalog
+4. **ID format** - Must be lowercase kebab-case (e.g., `my-skill-name`)
+5. **Star counts** - Must be numbers (not strings)
 
 You can also validate locally:
 
@@ -119,8 +119,8 @@ If you are an AI agent contributing to this repo, follow these steps:
 ### Step 1: Identify the Item
 
 1. **Ask for the GitHub URL** if not provided
-2. **Fetch the repo metadata** -- name, description, stars, topics
-3. **Determine the catalog** -- skills, mcps, loops, subagents, or plugins
+2. **Fetch the repo metadata** - name, description, stars, topics
+3. **Determine the catalog** - skills, mcps, loops, subagents, or plugins
 4. **Determine the category** within that catalog
 
 ```bash
@@ -186,21 +186,21 @@ Add the new entry to the appropriate array. Use this template:
 ```
 
 **Required fields:**
-- `id` -- Unique, kebab-case, no duplicates
-- `name` -- Human-readable
-- `category` -- Must match existing category
-- `description` -- Clear, no marketing fluff
-- `githubUrl` -- Valid GitHub link
-- `source` -- Where found: `github`, `reddit`, `blog`, `official-docs`
-- `sourceType` -- `official`, `community`, or `registry`
+- `id` - Unique, kebab-case, no duplicates
+- `name` - Human-readable
+- `category` - Must match existing category
+- `description` - Clear, no marketing fluff
+- `githubUrl` - Valid GitHub link
+- `source` - Where found: `github`, `reddit`, `blog`, `official-docs`
+- `sourceType` - `official`, `community`, or `registry`
 
 **Optional fields:**
-- `installCommand` -- How to install
-- `stars` -- Current GitHub stars
-- `tags` -- Searchable tags
-- `npmPackage` -- If available on npm
-- `website` -- Project website
-- `license` -- License type
+- `installCommand` - How to install
+- `stars` - Current GitHub stars
+- `tags` - Searchable tags
+- `npmPackage` - If available on npm
+- `website` - Project website
+- `license` - License type
 
 ### Step 5: Update Metadata
 
@@ -268,11 +268,11 @@ Adds [ITEM_NAME] to the [CATEGORY] catalog.
 
 ### Error Handling
 
-- **Duplicate ID**: Modify the ID to be unique (add suffix or use repo name)
-- **Invalid JSON**: Use `jq` to validate and fix syntax
-- **Missing category**: Add the category first, then the entry
-- **Fork already exists**: Sync with upstream before creating branch
-- **PR already exists**: Update the existing branch instead
+- **Duplicate ID** - Modify the ID to be unique (add suffix or use repo name)
+- **Invalid JSON** - Use `jq` to validate and fix syntax
+- **Missing category** - Add the category first, then the entry
+- **Fork already exists** - Sync with upstream before creating branch
+- **PR already exists** - Update the existing branch instead
 
 ### Tips
 
@@ -296,8 +296,8 @@ Adds [ITEM_NAME] to the [CATEGORY] catalog.
 
 ## What NOT to Edit
 
-- **readme.md** -- Auto-generated from catalog.json files
-- **AGENTS.md** -- Only maintainers update this
+- **readme.md** - Auto-generated from catalog.json files
+- **AGENTS.md** - Only maintainers update this
 
 ## Code of Conduct
 
