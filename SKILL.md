@@ -94,41 +94,44 @@ cp -r skills/test-driven-development/.agents/skills/ your-project/.agents/skills
 
 ## Browsing Resources
 
+Browse by category. Counts are deliberately omitted here because they change on
+every merge; the authoritative counts are in each `catalog.json`.
+
 ### Skills by Category
 
-| Category | Count | Top Skills |
-|----------|------:|------------|
-| Development | 28 | test-driven-development, systematic-debugging, code-reviewer |
-| Productivity | 14 | brainstorming, writing-plans, verification-before-completion |
-| Design | 8 | figma-design-to-code, multimedia-generation, playwright-automation |
-| Content | 7 | cold-email, copywriting, humanizer |
-| Testing | 5 | webapp-testing, agent-browser |
-| DevOps | 5 | devops-infrastructure, using-git-worktrees |
-| Marketing | 3 | seo-audit, content-strategy |
-| Data | 3 | data-analysis, supabase-postgres-best-practices |
-| Security | 2 | mcp-security, security-guidance |
+| Category | Top Skills |
+|----------|------------|
+| Development | test-driven-development, systematic-debugging, code-reviewer |
+| Productivity | brainstorming, writing-plans, verification-before-completion |
+| Design | figma-design-to-code, multimedia-generation, playwright-automation |
+| Content | cold-email, copywriting, humanizer |
+| Testing | webapp-testing, agent-browser |
+| DevOps | devops-infrastructure, using-git-worktrees |
+| Marketing | seo-audit, content-strategy |
+| Data | data-analysis, supabase-postgres-best-practices |
+| Security | mcp-security, security-guidance |
 
 ### MCP Servers by Category
 
-| Category | Count | Top Servers |
-|----------|------:|-------------|
-| Official Reference | 6 | Filesystem, Fetch, Memory, Sequential Thinking, Git, Brave Search |
-| Developer Tools | 8 | Context7 (53K stars), MarkItDown (119K stars), GitHub MCP |
-| Browser/Web | 7 | Playwright (31K stars), Firecrawl (29.7K stars) |
-| Databases | 8 | PostgreSQL, Neon, Supabase, MindsDB, Redis |
-| Cloud Platforms | 5 | AWS, Cloudflare, DigitalOcean, Vercel |
-| DevOps | 5 | Docker, Kubernetes, Terraform, Pulumi |
-| Agent Orchestration | 3 | n8n (185K stars), Ruflo, Claude-Flow |
+| Category | Top Servers |
+|----------|-------------|
+| Official Reference | Filesystem, Fetch, Memory, Sequential Thinking, Git, Brave Search |
+| Developer Tools | Context7, MarkItDown, GitHub MCP |
+| Browser/Web | Playwright, Firecrawl |
+| Databases | PostgreSQL, Neon, Supabase, MindsDB, Redis |
+| Cloud Platforms | AWS, Cloudflare, DigitalOcean, Vercel |
+| DevOps | Docker, Kubernetes, Terraform, Pulumi |
+| Agent Orchestration | n8n, Ruflo, Claude-Flow |
 
 ### Agent Loops by Category
 
-| Category | Count | Top Loops |
-|----------|------:|-----------|
-| Engineering | 41 | overnight-docs-sweep, alpha-loop, kitchenloop, autoloop |
-| Evaluation | 14 | core-agentic-workflow, quality-streak-loop |
-| Operations | 9 | agent-teams, dynamic-workflows, developer-os-memory |
-| Content | 3 | content-refresh-loop, seo-geo-visibility-loop |
-| Design | 6 | ui-ux-score-loop, accessibility-repair-loop |
+| Category | Top Loops |
+|----------|-----------|
+| Engineering | overnight-docs-sweep, alpha-loop, kitchenloop, autoloop |
+| Evaluation | core-agentic-workflow, quality-streak-loop |
+| Operations | agent-teams, dynamic-workflows, developer-os-memory |
+| Content | content-refresh-loop, seo-geo-visibility-loop |
+| Design | ui-ux-score-loop, accessibility-repair-loop |
 
 ## Cross-Platform Compatibility
 
@@ -188,9 +191,9 @@ npx add-mcp @anthropic-ai/mcp-server-github
 
 For programmatic discovery, use the JSON catalogs:
 
-- `skills/catalog.json` - 69 skills with metadata
-- `mcps/catalog.json` - 66 MCP servers with install commands
-- `loops/catalog.json` - 73 agent workflows with prompts
+- `skills/catalog.json` - skills with metadata
+- `mcps/catalog.json` - MCP servers with install commands
+- `loops/catalog.json` - agent workflows with prompts
 
 ## Contributing
 
