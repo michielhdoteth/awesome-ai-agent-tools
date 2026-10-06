@@ -2,15 +2,15 @@
 
 Curated Model Context Protocol servers for AI-assisted development
 
-**134** entries across **19** categories.
+**133** entries across **19** categories.
 
 ## Categories
 
 - **Developer Tools** (15)
 - **AI & Machine Learning** (14)
 - **Agent Orchestration** (14)
-- **Communication** (11)
 - **Databases** (10)
+- **Communication** (10)
 - **Search** (10)
 - **DevOps** (8)
 - **Security** (7)
@@ -26,7 +26,7 @@ Curated Model Context Protocol servers for AI-assisted development
 - **Data Engineering** (1)
 - **Mobile** (1)
 
-## All 134 mcps
+## All 133 mcps
 
 | Name                              | Category              | Description                                                                                                                                                                                                                                                                         | Source                                                                                                                | Badges                                                                                                                                                                                                                                               |
 | --------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -162,7 +162,6 @@ Curated Model Context Protocol servers for AI-assisted development
 | Tale                              | Agent Orchestration   | Self-hosted workspace MCP for knowledge retrieval and automation authoring, testing, and execution                                                                                                                                                                                  | [tale-project/tale](https://github.com/tale-project/tale)                                                             | ![Stars](https://img.shields.io/github/stars/tale-project/tale?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/tale-project/tale?style=flat)                                                             |
 | MuAPI CLI & MCP Server            | AI & Machine Learning | Official MuAPI CLI and MCP server for image, video, and audio generation and editing, with hosted Streamable HTTP and local stdio setup                                                                                                                                             | [SamurAIGPT/muapi-cli](https://github.com/SamurAIGPT/muapi-cli)                                                       | ![Stars](https://img.shields.io/github/stars/SamurAIGPT/muapi-cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/SamurAIGPT/muapi-cli?style=flat)                                                       |
 | Aident Loadout                    | Agent Orchestration   | Remote MCP server that connects Claude Code, Codex, Cursor and other agents to 1,000+ apps and 400+ expert-built Skills through one OAuth sign-in                                                                                                                                   | [Aident-AI/aident-skill](https://github.com/Aident-AI/aident-skill)                                                   | ![Stars](https://img.shields.io/github/stars/Aident-AI/aident-skill?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Aident-AI/aident-skill?style=flat)                                                   |
-| Sendpaper MCP                     | Communication         | Mail real postcards and letters (incl. USPS Certified Mail) to US addresses: create, preview, pay and track orders; remote HTTP server, no API key                                                                                                                                  | [ryan-tish/sendpaper-plugin](https://github.com/ryan-tish/sendpaper-plugin)                                           | ![Stars](https://img.shields.io/github/stars/ryan-tish/sendpaper-plugin?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ryan-tish/sendpaper-plugin?style=flat)                                           |
 | Darkmoon                          | Security              | Start authorized autonomous AI pentest runs, poll status, list campaigns and read findings on your own self-hosted Darkmoon Pro (engine and CLI are open source GPL-3.0; this server needs the Pro dashboard, no hosted endpoint)                                                   | [ASCIT31/darkmoon-mcp-server](https://github.com/ASCIT31/darkmoon-mcp-server)                                         | ![Stars](https://img.shields.io/github/stars/ASCIT31/darkmoon-mcp-server?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ASCIT31/darkmoon-mcp-server?style=flat)                                         |
 
 ---
