@@ -155,6 +155,34 @@ function sourceLink(e) {
   return `[${label}](${url})`;
 }
 
+// One entry as an awesome-list bullet: "- [Name](url) - Description."
+// The name links to the entry's source repo, matching the standard format.
+// Because every bullet in the document shares one link namespace, a repeated
+// URL would trip remark-lint:double-link, so the first occurrence links and
+// later ones fall back to the plain name.
+const usedEntryLinks = new Set();
+
+function entryLine(e) {
+  const name = displayName(e);
+  let desc = (e.description || '').trim();
+  // awesome-lint requires a list-item description to end with proper
+  // punctuation, and catalog descriptions are written inconsistently.
+  if (desc && !/[.!?]$/.test(desc)) desc += '.';
+  const slug = repoOf(e);
+  let url = slug ? `https://github.com/${slug}` : '';
+  if (!url) {
+    const urlFields = ['github', 'githubUrl', 'url', 'sourceUrl', 'repository',
+      'websiteUrl', 'source', 'sourceRepo', 'repo'];
+    for (const f of urlFields) {
+      const v = e[f];
+      if (typeof v === 'string' && /^https?:\/\//.test(v.trim())) { url = v.trim(); break; }
+    }
+  }
+  const label = url && !usedEntryLinks.has(url) ? `[${name}](${url})` : name;
+  if (url) usedEntryLinks.add(url);
+  return desc ? `${label} - ${desc}` : label;
+}
+
 // Highest-starred entries first, one per distinct source repo, so a category's
 // preview shows breadth instead of five rows from the same project.
 // Entries without a star count keep catalog order.
@@ -379,38 +407,38 @@ function generateReadme() {
   // Category sections sit directly after Contents so each ToC item matches
   // its heading in document order (remark-lint:awesome-toc).
   // Each section lists its top entries so every category is reachable, then
-  // links to the folder for the full catalog — the root readme stays small as
-  // the collection grows.
+  // links to the folder for the full catalog. Top 5 only: the full list lives
+  // in the folder README, which keeps the root readme small as it grows.
+  // Entries are plain "- [Name](url) - Description." bullets rather than a
+  // table: that is the standard awesome-list entry format and it avoids the
+  // table-alignment lint rules entirely.
   const TOP_N = 5;
   const categoryDetails = catalogs.map((c) => {
     const catLines = c.categories
       .sort((a, b) => b.count - a.count)
       .map((cat) => `${cat.name} (${cat.count})`)
       .join(' · ');
-    const table = mdTable(
-      ['Name', 'Description', 'Source'],
-      topEntries(c.items, TOP_N).map((e) => [
-        displayName(e),
-        e.description || '',
-        sourceLink(e),
-      ]),
-    );
+    const bullets = topEntries(c.items, TOP_N)
+      .map((e) => `- ${entryLine(e)}`)
+      .join('\n');
     return `## ${c.name}
 
 ${c.count} ${c.plural} across ${c.categories.length} categories: ${catLines}
 
-Full catalog: [${c.folder}/](${c.folder}/) · [catalog.json](${c.folder}/catalog.json)
+Top 5 shown. Full list: [${c.folder}/](${c.folder}/) · [catalog.json](${c.folder}/catalog.json)
 
-${table}`;
+${bullets}`;
   }).join('\n\n');
 
   const readme = `<div align="center">
 
 # Awesome AI Agent Tools
 
+<img src=".github/banner.jpg" alt="Awesome AI Agent Tools" width="800">
+
 </div>
 
-Installable components for AI coding assistants -- skills, MCP servers, agent loops, subagents, hooks, plugins, prompts, and CLI tools, each with a source link and an install command.
+Installable components for AI coding assistants: skills, MCP servers, agent loops, subagents, hooks, plugins, prompts, and CLI tools, each with a source link and an install command.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub Stars](https://img.shields.io/github/stars/${REPO}?style=flat-square&label=Stars&color=gold)](${REPO_URL}/stargazers)
