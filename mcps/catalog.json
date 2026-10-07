@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-05",
-  "totalServers": 133,
+  "lastUpdated": "2026-10-07",
+  "totalServers": 135,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Search",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Marketing",
@@ -2495,6 +2495,49 @@
         "vulnerabilities",
         "self-hosted",
         "ai-agent"
+      ]
+    },
+    {
+      "id": "voidly-atlas",
+      "name": "Voidly Atlas",
+      "category": "Research & Data",
+      "github": "https://github.com/voidly-ai/atlas-mcp",
+      "website": "https://voidly.ai",
+      "stars": 0,
+      "description": "Internet-censorship data (OONI, Censored Planet, IODA) and Sentinel forecasts, plus opt-in agent relay tools; relay messages are relay-readable, not end-to-end encrypted",
+      "install": "npx -y @voidly/mcp-server@3.0.2 (hosted read-only: https://atlas-mcp.voidly.ai/mcp)",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "censorship",
+        "internet-measurement",
+        "ooni",
+        "forecasts",
+        "remote"
+      ]
+    },
+    {
+      "id": "voidmail",
+      "name": "Voidmail",
+      "category": "Communication",
+      "github": "https://github.com/voidly-ai/mcp-email",
+      "website": "https://voidly.ai",
+      "stars": 0,
+      "description": "Email inboxes for AI agents that send only to owner-approved recipients; no phone or CAPTCHA; inboxes are server-readable, not end-to-end encrypted",
+      "install": "npx -y @voidly/mcp-email@1.2.1 (hosted: https://api.voidly.ai/mcp/mail with agent key)",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "email",
+        "inbox",
+        "agents",
+        "remote"
       ]
     }
   ]
