@@ -4,15 +4,15 @@
   "description": "Curated index of subagent definitions, agent harnesses, and platform-specific subagent formats",
   "license": "MIT",
   "lastUpdated": "2026-08-20",
-  "totalSubagents": 34,
+  "totalSubagents": 31,
   "categories": [
     {
       "name": "Subagent Collection",
-      "count": 16
+      "count": 15
     },
     {
       "name": "Agent Harness",
-      "count": 7
+      "count": 6
     },
     {
       "name": "Official SDK",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Curated Directory",
-      "count": 3
+      "count": 2
     }
   ],
   "sources": [
@@ -144,7 +144,8 @@
         "debugging",
         "testing",
         "planning"
-      ]
+      ],
+      "github": "https://github.com/VoltAgent/awesome-claude-code-subagents"
     },
     {
       "id": "awesome-codex-subagents",
@@ -159,7 +160,8 @@
         "toml",
         "code-review",
         "documentation"
-      ]
+      ],
+      "github": "https://github.com/VoltAgent/awesome-codex-subagents"
     },
     {
       "id": "cc-sdd",
@@ -174,7 +176,8 @@
         "software-design",
         "development",
         "multi-agent"
-      ]
+      ],
+      "github": "https://github.com/gotalab/cc-sdd"
     },
     {
       "id": "buildwithclaude",
@@ -189,7 +192,8 @@
         "production",
         "automation",
         "templates"
-      ]
+      ],
+      "github": "https://github.com/davepoon/buildwithclaude"
     },
     {
       "id": "claude-code-subagents",
@@ -204,7 +208,8 @@
         "code-review",
         "debugging",
         "refactoring"
-      ]
+      ],
+      "github": "https://github.com/0xfurai/claude-code-subagents"
     },
     {
       "id": "claude-code-subagents-collection",
@@ -218,7 +223,8 @@
         "subagents",
         "reusable",
         "starter"
-      ]
+      ],
+      "github": "https://github.com/gensecaihq/Claude-Code-Subagents-Collection"
     },
     {
       "id": "fastagent-plugins",
@@ -232,7 +238,8 @@
         "subagents",
         "multi-agent",
         "tools"
-      ]
+      ],
+      "github": "https://github.com/armanzeroeight/fastagent-plugins"
     },
     {
       "id": "awesome-gemini-cli-subagents",
@@ -247,7 +254,8 @@
         "code-review",
         "testing",
         "documentation"
-      ]
+      ],
+      "github": "https://github.com/ankitmundada/awesome-gemini-cli-subagents"
     },
     {
       "id": "oh-my-openagent",
@@ -262,22 +270,8 @@
         "orchestration",
         "delegation",
         "parallel"
-      ]
-    },
-    {
-      "id": "oh-my-opencode",
-      "name": "oh-my-opencode",
-      "category": "Agent Harness",
-      "description": "Now absorbed into oh-my-openagent (64.8K stars). Originally an OpenCode agent harness with subagent management, now part of the unified OMO platform.",
-      "stars": 25000,
-      "license": "MIT",
-      "tags": [
-        "harness",
-        "opencode",
-        "delegation",
-        "workflow",
-        "multi-agent"
-      ]
+      ],
+      "github": "https://github.com/code-yeongyu/oh-my-openagent"
     },
     {
       "id": "oh-my-codex",
@@ -292,7 +286,8 @@
         "orchestration",
         "prompts",
         "handoffs"
-      ]
+      ],
+      "github": "https://github.com/Yeachan-Heo/oh-my-codex"
     },
     {
       "id": "awesome-claude-code",
@@ -306,7 +301,8 @@
         "claude-code",
         "ecosystem",
         "awesome-list"
-      ]
+      ],
+      "github": "https://github.com/hesreallyhim/awesome-claude-code"
     },
     {
       "id": "claude-agent-sdk",
@@ -436,19 +432,6 @@
       ]
     },
     {
-      "id": "curated-subagent-repos",
-      "name": "Curated Subagent Repositories",
-      "category": "Curated Directory",
-      "description": "Index of GitHub repositories containing subagent definitions across Claude Code, Codex, and Gemini CLI platforms.",
-      "stars": 22500,
-      "license": "MIT",
-      "tags": [
-        "directory",
-        "awesome-list",
-        "subagents"
-      ]
-    },
-    {
       "id": "platform-formats-overview",
       "name": "Platform Subagent Formats Overview",
       "category": "Curated Directory",
@@ -475,7 +458,8 @@
         "safety",
         "trust",
         "proof-carrying-code"
-      ]
+      ],
+      "github": "https://github.com/minetechnic2012-lang/claude-ops-inspector"
     },
     {
       "id": "awesome-opencode-skills",
@@ -489,48 +473,36 @@
         "porting",
         "cross-platform",
         "subagents"
-      ]
-    },
-    {
-      "id": "giolabs-conclave",
-      "name": "GioLabs Conclave",
-      "category": "Subagent Collection",
-      "description": "Scrum team roles as subagents. Defines PM, Tech Lead, QA, and Developer agent personas with team-based orchestration patterns.",
-      "stars": 1,
-      "license": "MIT",
-      "tags": [
-        "scrum",
-        "team-roles",
-        "pm",
-        "qa",
-        "orchestration"
-      ]
+      ],
+      "github": "https://github.com/jshsakura/awesome-opencode-skills"
     },
     {
       "id": "chusri-claude-code-agents",
       "name": "chusri/claude-code-agents",
       "category": "Subagent Collection",
       "description": "Claude Code agent definitions collection for various development workflows",
-      "stars": null,
+      "stars": 13,
       "license": "MIT",
       "tags": [
         "claude-code",
         "subagents",
         "development"
-      ]
+      ],
+      "github": "https://github.com/chusri/claude-code-agents"
     },
     {
       "id": "jbeck018-agents-opencode",
       "name": "jbeck018/agents-opencode",
       "category": "Subagent Collection",
       "description": "OpenCode agent definitions for multi-agent development workflows",
-      "stars": null,
+      "stars": 52,
       "license": "MIT",
       "tags": [
         "opencode",
         "subagents",
         "agents"
-      ]
+      ],
+      "github": "https://github.com/jbeck018/agents-opencode"
     },
     {
       "id": "kexinjinnn-opencode-subagents",
@@ -543,7 +515,8 @@
         "opencode",
         "subagents",
         "ai-development"
-      ]
+      ],
+      "github": "https://github.com/kexinjinnn/opencode-subagents"
     },
     {
       "id": "gtheys-opencode",
@@ -556,7 +529,8 @@
         "opencode",
         "subagents",
         "personas"
-      ]
+      ],
+      "github": "https://github.com/gtheys/opencode"
     },
     {
       "id": "simota-agent-skills",
@@ -569,7 +543,8 @@
         "specialist-agents",
         "cross-platform",
         "multi-domain"
-      ]
+      ],
+      "github": "https://github.com/simota/agent-skills"
     },
     {
       "id": "herdr",
@@ -584,14 +559,15 @@
         "multi-agent",
         "cli",
         "orchestration"
-      ]
+      ],
+      "github": "https://github.com/herdrdev/herdr"
     },
     {
       "id": "opensquad",
       "name": "opensquad",
       "category": "Agent Harness",
       "description": "Multi-agent orchestration framework via npm. Coordinate multiple AI agents in a single workflow. npm-first approach for easy Node.js integration.",
-      "stars": null,
+      "stars": 2127,
       "license": "MIT",
       "tags": [
         "npm",
@@ -599,7 +575,8 @@
         "multi-agent",
         "nodejs",
         "framework"
-      ]
+      ],
+      "github": "https://github.com/renatoasse/opensquad"
     },
     {
       "id": "better-harness",
@@ -614,7 +591,8 @@
         "claude-code",
         "codex",
         "evaluation"
-      ]
+      ],
+      "github": "https://github.com/QoderAI/better-harness"
     },
     {
       "id": "ratel",

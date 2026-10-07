@@ -1,0 +1,41 @@
+name: Check Links
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday at 9am UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '*/catalog.json'
+      - 'scripts/check-links.js'
+      - '.github/workflows/check-links.yml'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify every catalog link resolves
+        id: check
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/check-links.js --issue
+
+      - name: Fail the job when links are broken
+        if: steps.check.outcome == 'failure'
+        run: |
+          echo "::error::Catalog contains dead or archived links. See the '${{ env.ISSUE_TITLE }}' issue."
+          exit 1
+        env:
+          ISSUE_TITLE: Broken or archived catalog links

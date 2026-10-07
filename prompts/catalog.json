@@ -4,19 +4,19 @@
   "description": "Curated prompt collections, libraries, and marketplaces for AI coding agents",
   "license": "MIT",
   "lastUpdated": "2026-08-20",
-  "totalPrompts": 103,
+  "totalPrompts": 84,
   "categories": [
     {
       "name": "General Purpose",
-      "count": 8
+      "count": 6
     },
     {
       "name": "Coding",
-      "count": 11
+      "count": 9
     },
     {
       "name": "Code Review",
-      "count": 9
+      "count": 5
     },
     {
       "name": "Architecture",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Debugging",
-      "count": 6
+      "count": 5
     },
     {
       "name": "DevOps",
@@ -36,15 +36,15 @@
     },
     {
       "name": "Security",
-      "count": 6
+      "count": 3
     },
     {
       "name": "Documentation",
-      "count": 6
+      "count": 5
     },
     {
       "name": "Testing",
-      "count": 8
+      "count": 4
     },
     {
       "name": "Design",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Agent Workflows",
-      "count": 6
+      "count": 4
     },
     {
       "name": "Marketplace",
@@ -217,7 +217,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "bug-hunter",
@@ -230,7 +230,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "software-architect",
@@ -243,7 +243,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "devops-engineer",
@@ -256,7 +256,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "security-auditor",
@@ -269,7 +269,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "technical-writer",
@@ -282,7 +282,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "test-engineer",
@@ -295,7 +295,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "full-stack-developer",
@@ -308,7 +308,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "code-explainer",
@@ -321,7 +321,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "refactoring-expert",
@@ -334,7 +334,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "database-expert",
@@ -347,7 +347,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "api-designer",
@@ -360,7 +360,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "performance-engineer",
@@ -373,7 +373,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "ui-designer",
@@ -386,7 +386,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "product-manager",
@@ -399,7 +399,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "data-analyst",
@@ -412,7 +412,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "prompt-engineer",
@@ -452,18 +452,6 @@
         "Gemini"
       ],
       "source": "dair-ai/Prompt-Engineering-Guide"
-    },
-    {
-      "id": "react-agent",
-      "name": "ReAct Agent Prompt",
-      "category": "Agent Workflows",
-      "description": "Reasoning + Acting framework for tool-using agents",
-      "bestFor": "Agent workflows, tool orchestration",
-      "worksWith": [
-        "Claude",
-        "GPT-4"
-      ],
-      "source": "langchain-ai/langchain-hub"
     },
     {
       "id": "code-refactor-craft",
@@ -570,84 +558,6 @@
       "source": "hoangatg/awesome-ai-prompts-2026"
     },
     {
-      "id": "codebase-analyzer",
-      "name": "Codebase Analyzer",
-      "category": "General Purpose",
-      "description": "Deep analysis of project structure, patterns, and tech debt",
-      "bestFor": "Project onboarding, architecture review",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
-      "id": "debugging-partner",
-      "name": "Debugging Partner",
-      "category": "Debugging",
-      "description": "Interactive debugging with hypothesis testing",
-      "bestFor": "Complex bugs, race conditions",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
-      "id": "code-explain-line",
-      "name": "Line-by-Line Code Explanation",
-      "category": "General Purpose",
-      "description": "Detailed explanation of every line with context",
-      "bestFor": "Learning, code reviews",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
-      "id": "security-review",
-      "name": "Security Code Review",
-      "category": "Security",
-      "description": "OWASP Top 10 focused security review",
-      "bestFor": "Security audits, pre-deployment checks",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
-      "id": "test-writer",
-      "name": "Test Writer",
-      "category": "Testing",
-      "description": "Generate comprehensive test suites from code",
-      "bestFor": "Unit tests, integration tests",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
-      "id": "performance-profiler",
-      "name": "Performance Profiler",
-      "category": "Coding",
-      "description": "Identify performance bottlenecks and suggest optimizations",
-      "bestFor": "Slow queries, memory leaks, CPU optimization",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
       "id": "sql-optimizer",
       "name": "SQL Query Optimizer",
       "category": "Data",
@@ -723,7 +633,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "dependency-analyzer",
@@ -736,7 +646,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "code-to-diagram",
@@ -749,7 +659,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "commit-reviewer",
@@ -762,7 +672,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "tech-debt-assessor",
@@ -775,7 +685,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "accessibility-auditor",
@@ -788,7 +698,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "color-palette-generator",
@@ -801,7 +711,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "component-builder",
@@ -814,7 +724,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "blog-writer",
@@ -827,7 +737,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "changelog-writer",
@@ -840,7 +750,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "readme-writer",
@@ -853,7 +763,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "code-commenter",
@@ -866,7 +776,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "meeting-notes",
@@ -879,7 +789,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "rubric-generator",
@@ -892,7 +802,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "e2e-test-designer",
@@ -905,20 +815,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
-    },
-    {
-      "id": "api-test-writer",
-      "name": "API Test Writer",
-      "category": "Testing",
-      "description": "Generate API tests with edge cases and error handling",
-      "bestFor": "REST/GraphQL API testing",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
+      "source": "f/prompts.chat"
     },
     {
       "id": "load-test-designer",
@@ -932,19 +829,6 @@
         "Gemini"
       ],
       "source": "openai/openai-cookbook"
-    },
-    {
-      "id": "contract-test-writer",
-      "name": "Contract Test Writer",
-      "category": "Testing",
-      "description": "Generate consumer-driven contract tests",
-      "bestFor": "Microservices testing, API contracts",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
     },
     {
       "id": "kubernetes-debugger",
@@ -996,7 +880,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "incident-postmortem",
@@ -1009,7 +893,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "code-migration-planner",
@@ -1038,19 +922,6 @@
       "source": "openai/openai-cookbook"
     },
     {
-      "id": "code-style-enforcer",
-      "name": "Code Style Enforcer",
-      "category": "Code Review",
-      "description": "Enforce consistent coding style across a codebase",
-      "bestFor": "Style guide compliance, code consistency",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
       "id": "dependency-upgrader",
       "name": "Dependency Upgrader",
       "category": "Coding",
@@ -1064,19 +935,6 @@
       "source": "hoangatg/awesome-ai-prompts-2026"
     },
     {
-      "id": "code-migration-executor",
-      "name": "Code Migration Executor",
-      "category": "Coding",
-      "description": "Execute code migrations with test verification",
-      "bestFor": "Framework migrations, API version upgrades",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
       "id": "feature-spec-writer",
       "name": "Feature Specification Writer",
       "category": "Productivity",
@@ -1087,7 +945,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "code-review-checklist",
@@ -1116,19 +974,6 @@
       "source": "hoangatg/awesome-ai-prompts-2026"
     },
     {
-      "id": "threat-modeler",
-      "name": "Threat Modeler",
-      "category": "Security",
-      "description": "Generate threat models using STRIDE/DREAD frameworks",
-      "bestFor": "Security architecture, risk assessment",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
       "id": "prompt-optimizer",
       "name": "Prompt Optimizer",
       "category": "General Purpose",
@@ -1140,19 +985,6 @@
         "Gemini"
       ],
       "source": "dair-ai/Prompt-Engineering-Guide"
-    },
-    {
-      "id": "codebase-onboarding",
-      "name": "Codebase Onboarding Guide",
-      "category": "Documentation",
-      "description": "Generate onboarding docs for new team members",
-      "bestFor": "Team onboarding, knowledge transfer",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
     },
     {
       "id": "image-prompt-crafter",
@@ -1168,19 +1000,6 @@
       "source": "Ryan-yang125/gpt-image-2-prompts"
     },
     {
-      "id": "code-to-tests",
-      "name": "Code to Test Converter",
-      "category": "Testing",
-      "description": "Convert existing code into comprehensive test suites",
-      "bestFor": "Test coverage improvement",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
       "id": "debugging-rubber-duck",
       "name": "Rubber Duck Debugger",
       "category": "Debugging",
@@ -1191,20 +1010,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
-    },
-    {
-      "id": "code-review-security",
-      "name": "Security-Focused Code Review",
-      "category": "Security",
-      "description": "Review code specifically for security vulnerabilities",
-      "bestFor": "Pre-deployment security checks",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
+      "source": "f/prompts.chat"
     },
     {
       "id": "microservices-decomposer",
@@ -1217,7 +1023,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "content-repurposer",
@@ -1230,7 +1036,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "technical-debt-tracker",
@@ -1244,19 +1050,6 @@
         "Gemini"
       ],
       "source": "dair-ai/Prompt-Engineering-Guide"
-    },
-    {
-      "id": "code-review-perf",
-      "name": "Performance Review Prompt",
-      "category": "Code Review",
-      "description": "Review code specifically for performance issues",
-      "bestFor": "Performance optimization reviews",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
     },
     {
       "id": "prompt-chainer",
@@ -1281,7 +1074,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
+      "source": "f/prompts.chat"
     },
     {
       "id": "debugging-stack-trace",
@@ -1297,32 +1090,6 @@
       "source": "openai/openai-cookbook"
     },
     {
-      "id": "code-review-maintainability",
-      "name": "Maintainability Review",
-      "category": "Code Review",
-      "description": "Review code for long-term maintainability",
-      "bestFor": "Code quality, technical debt prevention",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
-      "id": "code-review-testing",
-      "name": "Test Coverage Review",
-      "category": "Code Review",
-      "description": "Review test coverage and suggest missing tests",
-      "bestFor": "Test quality improvement",
-      "worksWith": [
-        "Claude",
-        "GPT-4",
-        "Gemini"
-      ],
-      "source": "anthropic/prompt-library"
-    },
-    {
       "id": "code-review-ux",
       "name": "UX Code Review",
       "category": "Code Review",
@@ -1333,19 +1100,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "f/awesome-chatgpt-prompts"
-    },
-    {
-      "id": "tool-use-prompt",
-      "name": "Tool Use / Function Calling",
-      "category": "Agent Workflows",
-      "description": "Structured tool use with schema validation",
-      "bestFor": "MCP tool orchestration",
-      "worksWith": [
-        "Claude",
-        "GPT-4"
-      ],
-      "source": "anthropic/prompt-library"
+      "source": "f/prompts.chat"
     },
     {
       "id": "multi-agent-orchestrator",
@@ -1516,7 +1271,7 @@
       "worksWith": [
         "All models"
       ],
-      "source": "prompthub.com"
+      "source": "https://prompthub.com"
     },
     {
       "id": "huggingface-agents-course",

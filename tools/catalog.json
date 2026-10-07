@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-09-18",
-  "totalTools": 77,
+  "lastUpdated": "2026-10-05",
+  "totalTools": 81,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Agent Memory",
@@ -36,11 +36,11 @@
     },
     {
       "name": "Formatting & Linting",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Database CLIs",
-      "count": 5
+      "count": 4
     },
     {
       "name": "API Testing",
@@ -56,7 +56,11 @@
     },
     {
       "name": "Agent Training & Eval",
-      "count": 6
+      "count": 7
+    },
+    {
+      "name": "AI APIs",
+      "count": 2
     }
   ],
   "tools": [
@@ -195,7 +199,7 @@
       "name": "Gitui",
       "category": "Git Utilities",
       "description": "Blazing fast terminal-ui for git written in Rust.",
-      "url": "https://github.com/extrawurst/gitui",
+      "url": "https://github.com/gitui-org/gitui",
       "stars": 10000,
       "crossPlatform": true,
       "install": "brew install gitui"
@@ -275,7 +279,7 @@
       "name": "Podman",
       "category": "Docker & Containers",
       "description": "Daemonless container engine. Rootless, OCI-compatible Docker alternative.",
-      "url": "https://github.com/containers/podman",
+      "url": "https://github.com/podman-container-tools/podman",
       "stars": 30000,
       "crossPlatform": true,
       "install": "brew install podman"
@@ -361,16 +365,6 @@
       "install": "brew install awscli"
     },
     {
-      "id": "gcloud",
-      "name": "gcloud CLI",
-      "category": "Cloud & DevOps",
-      "description": "Google Cloud command-line interface.",
-      "url": "https://github.com/googlecloudsdk/gcloud_cli",
-      "stars": 5000,
-      "crossPlatform": true,
-      "install": "brew install --cask google-cloud-sdk"
-    },
-    {
       "id": "foac",
       "name": "foac",
       "category": "Cloud & DevOps",
@@ -379,6 +373,16 @@
       "stars": 0,
       "crossPlatform": true,
       "install": "brew install alephic-ai/tap/foac"
+    },
+    {
+      "id": "moltbot-den-cli",
+      "name": "Moltbot Den CLI (mbd)",
+      "category": "Cloud & DevOps",
+      "description": "Provision agent hosting (Linux VMs, Postgres, Redis, object storage, subdomains) and read an agent's email inbox from the terminal.",
+      "url": "https://github.com/moltbot-den/moltbotden-dev-tools",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "npm install -g @moltbotden/cli / brew install moltbot-den/tap/mbd"
     },
     {
       "id": "claude-code",
@@ -415,20 +419,10 @@
       "name": "Aider",
       "category": "AI Coding CLIs",
       "description": "AI pair programming in your terminal. Works with GPT-4, Claude, local models.",
-      "url": "https://github.com/paul-gauthier/aider",
+      "url": "https://github.com/Aider-AI/aider",
       "stars": 42000,
       "crossPlatform": true,
       "install": "pip install aider-chat"
-    },
-    {
-      "id": "opencode",
-      "name": "OpenCode",
-      "category": "AI Coding CLIs",
-      "description": "Open-source AI coding agent. Multi-model support.",
-      "url": "https://github.com/opencode-ai/opencode",
-      "stars": 25000,
-      "crossPlatform": true,
-      "install": "npm install -g opencode"
     },
     {
       "id": "continue",
@@ -445,20 +439,10 @@
       "name": "Cursor",
       "category": "AI Coding CLIs",
       "description": "AI-first code editor. Fork of VS Code with AI superpowers.",
-      "url": "https://github.com/getcursor/cursor",
+      "url": "https://github.com/cursor/cursor",
       "stars": 35000,
       "crossPlatform": true,
       "install": "Download from cursor.com"
-    },
-    {
-      "id": "codeium",
-      "name": "Codeium / Windsurf",
-      "category": "AI Coding CLIs",
-      "description": "Free AI code completion and chat. Now Devin Desktop.",
-      "url": "https://github.com/Exafunction/codeium.vsix",
-      "stars": 8000,
-      "crossPlatform": true,
-      "install": "Install from VS Code marketplace"
     },
     {
       "id": "codex-profiles",
@@ -579,16 +563,6 @@
       "stars": 9000,
       "crossPlatform": true,
       "install": "brew install usql"
-    },
-    {
-      "id": "peppermint",
-      "name": "Peppermint",
-      "category": "Database CLIs",
-      "description": "Modern database client with AI-powered query assistance.",
-      "url": "https://github.com/peppermint-tech/peppermint",
-      "stars": 2000,
-      "crossPlatform": true,
-      "install": "Download from GitHub releases"
     },
     {
       "id": "httpie",
@@ -829,6 +803,76 @@
       "stars": 147,
       "crossPlatform": true,
       "install": "curl -fsSL https://www.looptroop.ovh/install | sh"
+    },
+    {
+      "id": "molt",
+      "name": "molt",
+      "category": "AI Coding CLIs",
+      "description": "A coding agent that won't say done on a false claim. Verification on disk. Receipts for accepts and refusals. Terminal and desktop. OpenAI compatible or Anthropic.",
+      "url": "https://github.com/solvyxtech/molt",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "npm install && npm start"
+    },
+    {
+      "id": "ghostget",
+      "name": "ghostget",
+      "category": "AI Coding CLIs",
+      "description": "Named web actions for AI agents: read a page, archive one media item, or use a connected account, without credentials or a browser.",
+      "url": "https://github.com/hraness/ghostget",
+      "stars": 7,
+      "crossPlatform": true,
+      "install": "bun add --global @hraness/ghostget"
+    },
+    {
+      "id": "ordewell",
+      "name": "Ordewell",
+      "category": "AI Coding CLIs",
+      "description": "Terminal CLI and TUI that turns one goal into an ordered, editable plan of coding agent tasks, each with its own runner, model and mode, and accepts a task as done only when its completion marker appears in that runner's output.",
+      "url": "https://github.com/ordewell/ordewell",
+      "stars": 183,
+      "crossPlatform": true,
+      "install": "npm install -g ordewell"
+    },
+    {
+      "id": "apiclaw",
+      "name": "APIClaw",
+      "category": "AI APIs",
+      "description": "Flat-rate OpenAI-compatible AI API for multi-model applications, with plans from $19/month and 50 free trial requests.",
+      "url": "https://apiclaw.biz",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "Use the OpenAI-compatible API endpoint at https://apiclaw.biz"
+    },
+    {
+      "id": "clarity-x402",
+      "name": "Clarity",
+      "category": "AI APIs",
+      "description": "Base x402 API for short research reports and chat, with a public discovery descriptor for agent integrations.",
+      "url": "https://agent-tools.cloud/services/desktop-o99r0sf-tail935fba-ts-net-sub899",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "Use the public HTTP API at https://agent-tools.cloud/services/desktop-o99r0sf-tail935fba-ts-net-sub899"
+    },
+    {
+      "id": "cap-evolve",
+      "name": "cap-evolve",
+      "category": "Agent Training & Eval",
+      "description": "Optimizes an agent's prompts, tool code, and skills from failed evaluation traces, gated by a held-out significance test.",
+      "url": "https://github.com/skillberry-ai/cap-evolve",
+      "stars": 65,
+      "crossPlatform": true,
+      "install": "git clone https://github.com/skillberry-ai/cap-evolve && ./install.sh"
+    },
+    {
+      "id": "cage",
+      "name": "Cage",
+      "category": "Formatting & Linting",
+      "description": "TypeScript contract harness for spec, implementation, test, and review-freshness checks.",
+      "url": "https://github.com/vitalik1921/cage",
+      "stars": 2,
+      "crossPlatform": false,
+      "install": "npm install -D cage-ts"
     }
   ]
 }

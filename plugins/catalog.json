@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-08-20",
-  "totalPlugins": 55,
+  "lastUpdated": "2026-09-25",
+  "totalPlugins": 51,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 10
+      "count": 11
     },
     {
       "name": "OpenCode",
@@ -16,11 +16,11 @@
     },
     {
       "name": "Cursor",
-      "count": 6
+      "count": 5
     },
     {
       "name": "Copilot",
-      "count": 5
+      "count": 3
     },
     {
       "name": "Windsurf",
@@ -28,7 +28,7 @@
     },
     {
       "name": "Aider",
-      "count": 4
+      "count": 1
     },
     {
       "name": "VS Code AI",
@@ -40,7 +40,7 @@
     },
     {
       "name": "Cross-Tool",
-      "count": 7
+      "count": 8
     }
   ],
   "plugins": [
@@ -121,24 +121,26 @@
       "name": "Claude Code Extensions",
       "category": "Claude Code",
       "platform": "Claude Code",
-      "stars": null,
+      "stars": 16,
       "installs": "21 plugins",
       "description": "Community collection of 21 Claude Code extensions by nodnarbnitram",
       "websiteUrl": null,
       "installCommand": "claude install @nodnarbnitram/claude-code-extensions",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/nodnarbnitram/claude-code-extensions"
     },
     {
       "id": "claude-code-plugins-multi",
       "name": "Claude Code Plugins Multi-Runtime",
       "category": "Claude Code",
       "platform": "Claude Code",
-      "stars": null,
+      "stars": 16,
       "installs": null,
       "description": "Multi-runtime plugin system for Claude Code supporting various execution environments",
       "websiteUrl": null,
       "installCommand": "claude install @pleaseai/claude-code-plugins",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/pleaseai/claude-code-plugins"
     },
     {
       "id": "opencode-plugin-system",
@@ -177,40 +179,30 @@
       "license": "BSD-3-Clause"
     },
     {
-      "id": "opencode-type-inject",
-      "name": "TypeScript Type Injection",
-      "category": "OpenCode",
-      "platform": "OpenCode",
-      "stars": null,
-      "installs": null,
-      "description": "Automatic TypeScript type injection and inference for OpenCode completions",
-      "websiteUrl": null,
-      "installCommand": "opencode plugin install @opencode/type-inject",
-      "license": "MIT"
-    },
-    {
       "id": "opencode-openai-codex-auth",
       "name": "ChatGPT Plus Auth",
       "category": "OpenCode",
       "platform": "OpenCode",
-      "stars": null,
+      "stars": 2208,
       "installs": null,
       "description": "Authentication module for using ChatGPT Plus subscription with OpenCode",
       "websiteUrl": null,
       "installCommand": "opencode plugin install @opencode/codex-auth",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/numman-ali/opencode-openai-codex-auth"
     },
     {
       "id": "opencode-gemini-auth",
       "name": "Gemini Plan Auth",
       "category": "OpenCode",
       "platform": "OpenCode",
-      "stars": null,
+      "stars": 1760,
       "installs": null,
       "description": "Authentication module for Google Gemini plan integration with OpenCode",
       "websiteUrl": null,
       "installCommand": "opencode plugin install @opencode/gemini-auth",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/jenslys/opencode-gemini-auth"
     },
     {
       "id": "opencode-daytona",
@@ -234,7 +226,8 @@
       "description": "Browser automation and web scraping capabilities for OpenCode agents",
       "websiteUrl": null,
       "installCommand": "opencode plugin install @different-ai/browser",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/different-ai/opencode-browser"
     },
     {
       "id": "opencode-openspec",
@@ -246,6 +239,19 @@
       "description": "OpenAPI specification generation and management for OpenCode. Auto-generates API specs from your codebase.",
       "websiteUrl": null,
       "installCommand": "opencode plugin install @openspec/plugin",
+      "license": "MIT",
+      "github": "https://github.com/Octane0411/opencode-plugin-openspec"
+    },
+    {
+      "id": "opencode-stay-awake",
+      "name": "Stay Awake",
+      "category": "OpenCode",
+      "platform": "OpenCode",
+      "stars": 0,
+      "installs": null,
+      "description": "Holds a system sleep inhibitor while an OpenCode session is running, using caffeinate on macOS and systemd-inhibit on Linux, and releases it as soon as the work finishes",
+      "websiteUrl": "https://github.com/AuroraAeon/opencode-stay-awake",
+      "installCommand": "opencode plugin add opencode-stay-awake",
       "license": "MIT"
     },
     {
@@ -270,55 +276,47 @@
       "description": "Curated collection of cursor rules by PatrickJS with 20K stars",
       "websiteUrl": null,
       "installCommand": "Clone and copy .cursorrules to project root",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/PatrickJS/awesome-cursorrules"
     },
     {
       "id": "cursorrules-collection",
       "name": "CursorRules Collection",
       "category": "Cursor",
       "platform": "Cursor",
-      "stars": null,
+      "stars": 37,
       "installs": "110+ rules",
       "description": "Collection of 110+ cursor rule packs for various frameworks and languages",
       "websiteUrl": null,
       "installCommand": "Copy .cursorrules file from collection to project",
-      "license": "MIT"
-    },
-    {
-      "id": "cursor-rules-toolkit",
-      "name": "Cursor Rules Toolkit",
-      "category": "Cursor",
-      "platform": "Cursor",
-      "stars": null,
-      "installs": null,
-      "description": "Enterprise toolkit for batch downloading and managing Cursor rules",
-      "websiteUrl": null,
-      "installCommand": "npm install -g cursor-rules-toolkit",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/nedcodes-ok/cursorrules-collection"
     },
     {
       "id": "cursing-rulez",
       "name": "Cursing Rulez",
       "category": "Cursor",
       "platform": "Cursor",
-      "stars": null,
+      "stars": 1,
       "installs": null,
       "description": "CLI-based rule manager for Cursor with search and install capabilities",
       "websiteUrl": null,
       "installCommand": "npm install -g cursing-rulez",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/jonathanphilippou/cursing-rulez"
     },
     {
       "id": "cursor-rules-dynamic",
       "name": "Cursor Rules Dynamic",
       "category": "Cursor",
       "platform": "Cursor",
-      "stars": null,
+      "stars": 23,
       "installs": null,
       "description": "Dynamic rule management system for Cursor with auto-updating capabilities",
       "websiteUrl": null,
       "installCommand": "Import via Cursor settings or CLI",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/fleXRPL/cursor-rules-dynamic"
     },
     {
       "id": "awesome-copilot",
@@ -333,18 +331,6 @@
       "license": "MIT"
     },
     {
-      "id": "copilot-custom-instructions",
-      "name": "Copilot Custom Instructions",
-      "category": "Copilot",
-      "platform": "GitHub Copilot",
-      "stars": null,
-      "installs": null,
-      "description": "Custom instruction files (.github/copilot-instructions.md) for Copilot behavior",
-      "websiteUrl": "https://docs.github.com/copilot/custom-instructions",
-      "installCommand": "Create .github/copilot-instructions.md in repository",
-      "license": "MIT"
-    },
-    {
       "id": "copilot-extensions-ga",
       "name": "GitHub Copilot Extensions GA",
       "category": "Copilot",
@@ -354,18 +340,6 @@
       "description": "Generally available Copilot Extensions platform for third-party integrations",
       "websiteUrl": "https://githubnext.com/projects/copilot-extensions",
       "installCommand": "Enable via GitHub Copilot settings",
-      "license": "MIT"
-    },
-    {
-      "id": "awesome-copilot-vscode",
-      "name": "Awesome Copilot VS Code",
-      "category": "Copilot",
-      "platform": "GitHub Copilot",
-      "stars": null,
-      "installs": null,
-      "description": "VS Code extension by TimHeuer for enhanced Copilot features and shortcuts",
-      "websiteUrl": null,
-      "installCommand": "code --install-extension TimHeuer.awesome-copilot",
       "license": "MIT"
     },
     {
@@ -433,48 +407,13 @@
       "name": "Aider Composer",
       "category": "Aider",
       "platform": "Aider",
-      "stars": null,
+      "stars": 451,
       "installs": null,
       "description": "VS Code extension for Aider AI pair programming by lee88688",
       "websiteUrl": null,
       "installCommand": "code --install-extension lee88688.aider-composer",
-      "license": "MIT"
-    },
-    {
-      "id": "aider-chat",
-      "name": "Aider Chat",
-      "category": "Aider",
-      "platform": "Aider",
-      "stars": null,
-      "installs": null,
-      "description": "VS Code chat interface for Aider by ChristopherBlodgett",
-      "websiteUrl": null,
-      "installCommand": "code --install-extension ChristopherBlodgett.aider-chat",
-      "license": "MIT"
-    },
-    {
-      "id": "aider-fish",
-      "name": "Aider Fish",
-      "category": "Aider",
-      "platform": "Aider",
-      "stars": null,
-      "installs": null,
-      "description": "VS Code fork of Aider with enhanced Fish shell integration",
-      "websiteUrl": null,
-      "installCommand": "code --install-extension CnsMaple.vscode-aider-fish",
-      "license": "MIT"
-    },
-    {
-      "id": "aider-neovim",
-      "name": "Aider Neovim",
-      "category": "Aider",
-      "platform": "Aider",
-      "stars": null,
-      "installs": null,
-      "description": "Neovim plugin for Aider AI pair programming by joshuavial",
-      "websiteUrl": null,
-      "installCommand": "Plug 'joshuavial/aider.nvim'",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/lee88688/aider-composer"
     },
     {
       "id": "kilo-code-ext",
@@ -589,24 +528,26 @@
       "name": "Load Rules",
       "category": "Cross-Tool",
       "platform": "Cross-Tool",
-      "stars": null,
+      "stars": 1,
       "installs": null,
       "description": "CLI tool for loading AI rules across 4 different coding tools",
       "websiteUrl": null,
       "installCommand": "npm install -g load-rules",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/fix2015/load-rules"
     },
     {
       "id": "awesome-ai-rules",
       "name": "Awesome AI Rules",
       "category": "Cross-Tool",
       "platform": "Cross-Tool",
-      "stars": null,
+      "stars": 5,
       "installs": null,
       "description": "Curated list of AI rules covering 8 tools and 9 tech stacks",
       "websiteUrl": null,
       "installCommand": "Clone and reference from repository",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/Lay4U/awesome-ai-rules"
     },
     {
       "id": "vibecoding-plugins",
@@ -630,19 +571,21 @@
       "description": "Safety net catching destructive git and filesystem commands before execution. Works across Claude Code, OpenCode, Copilot CLI, and Gemini CLI.",
       "websiteUrl": null,
       "installCommand": "Clone from GitHub",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/kenryu42/cc-safety-net"
     },
     {
       "id": "agentenv",
       "name": "AgentEnv",
       "category": "Cross-Tool",
       "platform": "Claude Code, Cursor, Codex",
-      "stars": null,
+      "stars": 3582,
       "installs": null,
       "description": "Project-scoped AI agent and plugin environment manager. Manages agent configurations across multiple AI coding tools.",
       "websiteUrl": null,
       "installCommand": "Clone from GitHub",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/kvcache-ai/AgentENV"
     },
     {
       "id": "kilo-code",
@@ -666,7 +609,8 @@
       "description": "Multi-harness agent marketplace with 84 plugins for 7 different AI coding platforms. Largest multi-harness plugin collection.",
       "websiteUrl": null,
       "installCommand": "git clone https://github.com/wshobson/agents",
-      "license": "MIT"
+      "license": "MIT",
+      "github": "https://github.com/wshobson/agents"
     },
     {
       "id": "change8-marketplace",
@@ -702,6 +646,33 @@
       "websiteUrl": "https://github.com/mnemoverse/claude-plugin",
       "installCommand": "claude plugin marketplace add mnemoverse/claude-plugin && claude plugin install mnemoverse@mnemoverse",
       "license": "MIT"
+    },
+    {
+      "id": "api-market",
+      "name": "API.market Gateway Plugin",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 0,
+      "description": "Connect Claude Code to API discovery and execution via a hosted OAuth MCP gateway.",
+      "websiteUrl": "https://github.com/Noveum/api-market-agent-integrations",
+      "installCommand": "/plugin marketplace add Noveum/api-market-agent-integrations\n/plugin install api-market@api-market",
+      "source": "github",
+      "sourceType": "official",
+      "endpoint": "https://api.market/api/mcp/gateway",
+      "notes": "Public client configuration and setup docs, not hosted server implementation. API.market account required. Individual APIs have free tiers or paid plans; execution can incur usage charges and subscription changes can incur costs."
+    },
+    {
+      "id": "context-guru",
+      "name": "Context Guru",
+      "category": "Cross-Tool",
+      "platform": "Cross-Tool",
+      "stars": 56,
+      "installs": null,
+      "description": "Context optimization plugin: prompt-cache management and context compaction",
+      "websiteUrl": "https://rossoctl.github.io/context-guru/",
+      "installCommand": "/plugin marketplace add rossoctl/context-guru",
+      "license": "Apache-2.0",
+      "github": "https://github.com/rossoctl/context-guru"
     }
   ]
 }

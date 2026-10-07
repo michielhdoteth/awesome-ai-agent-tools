@@ -46,6 +46,13 @@ drafts/
 # Scripts output
 scripts/node_modules/
 
+# One-off catalog remediation helpers (run locally, not part of the build)
+reports/
+scripts/audit-urls*.py
+scripts/remediate-links.py
+scripts/normalize-catalogs.js
+scripts/sync-catalog-metadata.js
+
 # Logs
 *.log
 npm-debug.log*
