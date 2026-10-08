@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-07",
-  "totalServers": 136,
+  "lastUpdated": "2026-10-08",
+  "totalServers": 137,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 10
+      "count": 11
     },
     {
       "name": "AI & Machine Learning",
@@ -2560,6 +2560,28 @@
       "sourceType": "official",
       "website": "https://screenpipe.com",
       "notes": "Requires a running Screenpipe recorder on localhost:3030 and SCREENPIPE_LOCAL_API_KEY. Desktop Settings > Connections is the recommended setup. Source-available, not OSI open source. Configured cloud AI, transcription, sync, and integrations can send context off-device. MCP setup: https://github.com/screenpipe/screenpipe/blob/main/packages/screenpipe-mcp/README.md"
+    },
+    {
+      "id": "arcmira",
+      "name": "Arcmira: YouTube Transcript Search",
+      "category": "Search",
+      "github": "https://github.com/arcmira/mcp",
+      "website": "https://arcmira.com/",
+      "documentation": "https://arcmira.com/docs/mcp-server",
+      "stars": 4,
+      "description": "Search YouTube transcripts for timestamped quotes and speaker appearances.",
+      "install": "claude mcp add --transport http --scope user arcmira https://mcp.arcmira.com/mcp",
+      "license": "Proprietary (hosted service)",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "youtube",
+        "transcripts",
+        "search",
+        "research"
+      ],
+      "lastUpdated": "2026-10-08"
     }
   ]
 }
