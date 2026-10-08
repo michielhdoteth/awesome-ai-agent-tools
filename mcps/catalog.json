@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-08",
-  "totalServers": 137,
+  "totalServers": 138,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 11
+      "count": 12
     },
     {
       "name": "AI & Machine Learning",
@@ -1733,7 +1733,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -2582,6 +2582,29 @@
         "research"
       ],
       "lastUpdated": "2026-10-08"
+    },
+    {
+      "id": "buywhere",
+      "name": "BuyWhere MCP",
+      "category": "Search",
+      "github": "https://github.com/BuyWhere/buywhere-mcp",
+      "website": "https://buywhere.ai",
+      "documentation": "https://docs.buywhere.ai",
+      "stars": 15,
+      "description": "Hosted shopping and product-search MCP for comparing prices across merchants.",
+      "install": "npx -y @buywhere/mcp-server",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "shopping",
+        "search",
+        "ecommerce",
+        "prices"
+      ],
+      "lastUpdated": "2026-10-08",
+      "notes": "Remote MCP: https://api.buywhere.ai/mcp"
     }
   ]
 }
