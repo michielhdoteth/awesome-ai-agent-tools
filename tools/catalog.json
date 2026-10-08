@@ -812,7 +812,7 @@
       "url": "https://github.com/solvyxtech/molt",
       "stars": 0,
       "crossPlatform": true,
-      "install": "npm install && npm start"
+      "install": "git clone https://github.com/solvyxtech/molt && cd molt && npm install && npm run build && npm start"
     },
     {
       "id": "ghostget",
