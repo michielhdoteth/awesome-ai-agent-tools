@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-08",
-  "totalServers": 138,
+  "totalServers": 139,
   "categories": [
     {
       "name": "Official Reference",
@@ -60,7 +60,7 @@
     },
     {
       "name": "Finance",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Research & Data",
@@ -1497,6 +1497,29 @@
       ]
     },
     {
+      "id": "equibles",
+      "name": "Equibles",
+      "category": "Finance",
+      "github": "https://github.com/daniel3303/stock-market-mcp-server",
+      "website": "https://equibles.com/mcp",
+      "stars": 4,
+      "description": "US stock market data: full-text SEC filing search, XBRL financial statements, earnings call transcripts, insider and congressional trades, 13F holdings, short interest and prices through a hosted remote MCP server",
+      "install": "Remote MCP: https://mcp.equibles.com/mcp (Registry: io.github.daniel3303/equibles)",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "finance",
+        "stocks",
+        "sec-filings",
+        "earnings-calls",
+        "13f",
+        "oauth",
+        "remote"
+      ]
+    },
+    {
       "id": "langfuse-mcp-server",
       "name": "Langfuse Prompt MCP",
       "category": "AI & Machine Learning",
@@ -1733,7 +1756,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
