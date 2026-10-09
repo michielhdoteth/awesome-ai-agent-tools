@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-09",
-  "totalServers": 140,
+  "totalServers": 141,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Browser Automation",
@@ -2651,6 +2651,26 @@
       ],
       "lastUpdated": "2026-10-09",
       "notes": "Remote MCP: https://tanod.dev/mcp. No key; free daily allowance per IP, then x402 USDC per call."
+    },
+    {
+      "id": "rea",
+      "name": "REA",
+      "category": "Developer Tools",
+      "github": "https://github.com/morluto/rea",
+      "stars": 37833,
+      "description": "Local reverse-engineering CLI/MCP for coding agents, with evidence provenance and explicit limitations",
+      "install": "npx -y rea-agents@6.1.0 mcp",
+      "license": "MIT",
+      "tags": [
+        "reverse-engineering",
+        "binary-analysis",
+        "electron",
+        "dotnet"
+      ],
+      "source": "github",
+      "sourceType": "community",
+      "lastUpdated": "2026-10-09",
+      "notes": "Native deep analysis requires separately installed Hopper, Ghidra, or IDA. Static JavaScript/Electron and .NET inspection do not require those native providers."
     }
   ]
 }
