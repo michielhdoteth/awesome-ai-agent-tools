@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-10-05",
-  "totalTools": 81,
+  "lastUpdated": "2026-10-10",
+  "totalTools": 82,
   "categories": [
     {
       "name": "Code Analysis",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Agent Memory",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Formatting & Linting",
@@ -783,6 +783,16 @@
       "stars": 1,
       "crossPlatform": true,
       "install": "curl -fsSL https://raw.githubusercontent.com/hassanvfx/clineflow/main/template/.clineflow/bin/install | bash"
+    },
+    {
+      "id": "drevon",
+      "name": "drevon",
+      "category": "Agent Memory",
+      "description": "Turns any directory into an AI workspace with one shared config, cross-session memory, prompts and skills for coding agents.",
+      "url": "https://github.com/csakash/drevon",
+      "stars": 4,
+      "crossPlatform": true,
+      "install": "npx drevon init"
     },
     {
       "id": "yylo-benchmark",
