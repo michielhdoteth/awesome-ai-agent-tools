@@ -9,9 +9,9 @@
 
 </div>
 
-Installable components for AI coding assistants - skills, MCP servers, agent loops, subagents, hooks, plugins, prompts, and CLI tools, each with a source link and an install command.
+Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and CLI tools for AI coding assistants.
 
-**600** installable components across **8** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**609** installable components across **8** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -26,9 +26,9 @@ Installable components for AI coding assistants - skills, MCP servers, agent loo
 
 ## Skills
 
-94 skills across 9 categories: Development (31) · Productivity (17) · Design (11) · Content (10) · DevOps (8) · Marketing (6) · Data (5) · Testing (4) · Security (2)
+95 skills across 9 categories: Development (31) · Productivity (17) · Design (11) · Content (10) · DevOps (8) · Marketing (6) · Testing (5) · Data (5) · Security (2)
 
-**[Browse all 94 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
+**[Browse all 95 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
 
 Top 5 shown:
 
@@ -42,9 +42,9 @@ Top 5 shown:
 
 ## MCPs
 
-133 mcps across 19 categories: Developer Tools (15) · AI & Machine Learning (14) · Agent Orchestration (14) · Databases (10) · Communication (10) · Search (10) · DevOps (8) · Security (7) · Official Reference (6) · Research & Data (6) · Browser Automation (5) · Cloud Platforms (5) · Marketing (5) · Monitoring (5) · Finance (5) · Design (3) · Blockchain (3) · Data Engineering (1) · Mobile (1)
+141 mcps across 19 categories: Developer Tools (17) · AI & Machine Learning (14) · Agent Orchestration (14) · Search (12) · Communication (11) · Databases (10) · DevOps (8) · Security (8) · Research & Data (7) · Official Reference (6) · Finance (6) · Browser Automation (5) · Cloud Platforms (5) · Marketing (5) · Monitoring (5) · Design (3) · Blockchain (3) · Data Engineering (1) · Mobile (1)
 
-**[Browse all 133 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
+**[Browse all 141 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
 
 Top 5 shown:
 

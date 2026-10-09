@@ -328,7 +328,7 @@ ${table}`;
 
 </div>
 
-Installable components for AI coding assistants - skills, MCP servers, agent loops, subagents, hooks, plugins, prompts, and CLI tools, each with a source link and an install command.
+Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and CLI tools for AI coding assistants.
 
 **${totalCount}** installable components across **${categoryCount}** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 

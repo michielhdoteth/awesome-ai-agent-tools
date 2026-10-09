@@ -2,7 +2,7 @@
 
 Reusable AI agent skills following the SKILL.md standard
 
-**94** entries across **9** categories.
+**95** entries across **9** categories.
 
 ## Categories
 
@@ -12,11 +12,11 @@ Reusable AI agent skills following the SKILL.md standard
 - **Content** (10)
 - **DevOps** (8)
 - **Marketing** (6)
+- **Testing** (5)
 - **Data** (5)
-- **Testing** (4)
 - **Security** (2)
 
-## All 94 skills
+## All 95 skills
 
 | Name                                            | Category     | Description                                                                                                                                                                          | Source                                                                                                | Badges                                                                                                                                                                                                                               |
 | ----------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -108,6 +108,7 @@ Reusable AI agent skills following the SKILL.md standard
 | Last30Days Skill                                | Data         | Research any topic across Reddit, X, YouTube, HN, Polymarket, and the web, then synthesize a recency-scored brief. Companion skill to Last30Days MCP.                                | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)                             | ![Stars](https://img.shields.io/github/stars/mvanhorn/last30days-skill?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mvanhorn/last30days-skill?style=flat)                             |
 | Proof Random Free Beacon                        | Data         | Fetches a drand quicknet beacon and verifies it client-side before sampling an integer. Free relay, not a VRF.                                                                       | [kepler-ops-maker/proof-random-api](https://github.com/kepler-ops-maker/proof-random-api)             | ![Stars](https://img.shields.io/github/stars/kepler-ops-maker/proof-random-api?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/kepler-ops-maker/proof-random-api?style=flat)             |
 | QUALITY.md                                      | Testing      | Open format, agent skill, and CLI for engineering quality loops: define QUALITY.md, evaluate, act, and continuously improve.                                                         | [qualitymd/quality.md](https://github.com/qualitymd/quality.md)                                       | ![Stars](https://img.shields.io/github/stars/qualitymd/quality.md?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/qualitymd/quality.md?style=flat)                                       |
+| Jet Browser                                     | Testing      | Runs isolated WPE WebKit checks with ordered JSONL, native input, DOM checks, and PNG capture.                                                                                       | [masakaai/jet-browser](https://github.com/masakaai/jet-browser)                                       | ![Stars](https://img.shields.io/github/stars/masakaai/jet-browser?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/masakaai/jet-browser?style=flat)                                       |
 | J-Space Cognition Suite                         | Development  | Inference-time cognitive-control skill: selective workspace loading, verification, recovery, and an optional loop controller for long-horizon work.                                  | [Tiger3807861189/J-Space-Cognition-Suite](https://github.com/Tiger3807861189/J-Space-Cognition-Suite) | ![Stars](https://img.shields.io/github/stars/Tiger3807861189/J-Space-Cognition-Suite?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Tiger3807861189/J-Space-Cognition-Suite?style=flat) |
 | Angles Video                                    | Content      | Turn a software repository into three selling angles and a launch-ready Angles video from Codex or Claude Code.                                                                      | [anglesvideo/angles-video-skill](https://github.com/anglesvideo/angles-video-skill)                   | ![Stars](https://img.shields.io/github/stars/anglesvideo/angles-video-skill?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/anglesvideo/angles-video-skill?style=flat)                   |
 | Agent Memory Discipline                         | Development  | Standing rules for when an agent recalls from long-term memory before acting and when it saves afterwards. Backend-neutral.                                                          | [mnemoverse/agent-memory-discipline](https://github.com/mnemoverse/agent-memory-discipline)           | ![Stars](https://img.shields.io/github/stars/mnemoverse/agent-memory-discipline?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mnemoverse/agent-memory-discipline?style=flat)           |
