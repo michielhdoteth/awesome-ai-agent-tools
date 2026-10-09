@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-09",
-  "totalServers": 141,
+  "totalServers": 142,
   "categories": [
     {
       "name": "Official Reference",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Security",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Design",
@@ -2651,6 +2651,24 @@
       ],
       "lastUpdated": "2026-10-09",
       "notes": "Remote MCP: https://tanod.dev/mcp. No key; free daily allowance per IP, then x402 USDC per call."
+    },
+    {
+      "id": "fractalai-agent-passport",
+      "name": "FractalAI Agent Passport",
+      "category": "Security",
+      "github": "https://www.npmjs.com/package/@fractalai/agent-passport-mcp",
+      "description": "Issue and verify agent passports signed with ML-DSA-65 (FIPS 204); signatures check offline against a published key directory with epoch rotation",
+      "install": "npx -y @fractalai/agent-passport-mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "agent-identity",
+        "post-quantum",
+        "ml-dsa",
+        "fips-204",
+        "attestation",
+        "verification"
+      ]
     },
     {
       "id": "rea",
