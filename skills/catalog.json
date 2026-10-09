@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-10-02",
-  "totalSkills": 94,
+  "lastUpdated": "2026-10-09",
+  "totalSkills": 95,
   "categories": [
     {
       "name": "Development",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Testing",
-      "count": 4
+      "count": 5
     },
     {
       "name": "DevOps",
@@ -1708,6 +1708,25 @@
         "evaluation",
         "loops",
         "cli"
+      ]
+    },
+    {
+      "id": "jet-browser",
+      "name": "Jet Browser",
+      "source": "masakaai/jet-browser",
+      "category": "Testing",
+      "installs": 0,
+      "description": "Runs isolated WPE WebKit checks with ordered JSONL, native input, DOM checks, and PNG capture.",
+      "install": "npx skills add masakaai/jet-browser --skill jet-browser",
+      "license": "Apache-2.0",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "browser",
+        "testing",
+        "wpe-webkit",
+        "jsonl",
+        "native-input"
       ]
     },
     {
