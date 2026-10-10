@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-09-25",
-  "totalPlugins": 51,
+  "lastUpdated": "2026-10-10",
+  "totalPlugins": 52,
   "categories": [
     {
       "name": "Claude Code",
@@ -40,7 +40,7 @@
     },
     {
       "name": "Cross-Tool",
-      "count": 8
+      "count": 9
     }
   ],
   "plugins": [
@@ -673,6 +673,19 @@
       "installCommand": "/plugin marketplace add rossoctl/context-guru",
       "license": "Apache-2.0",
       "github": "https://github.com/rossoctl/context-guru"
+    },
+    {
+      "id": "lynxprompt",
+      "name": "LynxPrompt",
+      "category": "Cross-Tool",
+      "platform": "Cross-Tool",
+      "stars": 50,
+      "installs": null,
+      "description": "Self-hosted web app and lynxp CLI that turn one set of AI coding rules into 30 rule-file formats.",
+      "websiteUrl": "https://lynxprompt.com",
+      "installCommand": "npm install -g lynxprompt",
+      "license": "AGPL-3.0-or-later",
+      "github": "https://github.com/GeiserX/LynxPrompt"
     }
   ]
 }
