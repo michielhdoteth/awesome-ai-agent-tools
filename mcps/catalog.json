@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-09",
-  "totalServers": 142,
+  "totalServers": 143,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Marketing",
@@ -2539,6 +2539,29 @@
         "internet-measurement",
         "ooni",
         "forecasts",
+        "remote"
+      ]
+    },
+    {
+      "id": "datacircle",
+      "name": "Datacircle",
+      "category": "Research & Data",
+      "github": "https://github.com/waynehamadi/datacircle-plugin",
+      "website": "https://datacircle.dev",
+      "documentation": "https://docs.datacircle.dev/mcp-server",
+      "stars": 2,
+      "description": "Datacircle is a data co-op. Query your favorite B2B data APIs through us. Same request, same price, no markup. Right now we have 3 live LinkedIn profile APIs that we trust: Up2Data, HarvestAPI and Fetchin.",
+      "install": "Remote MCP: https://api.datacircle.dev/mcp (Registry: dev.datacircle/datacircle)",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "b2b-data",
+        "data-api",
+        "linkedin-profile-api",
+        "oauth",
         "remote"
       ]
     },
