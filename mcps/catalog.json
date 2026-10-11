@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-11",
-  "totalServers": 146,
+  "lastUpdated": "2026-10-12",
+  "totalServers": 147,
   "categories": [
     {
       "name": "Official Reference",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Monitoring",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Security",
@@ -1586,6 +1586,29 @@
         "logs",
         "metrics"
       ]
+    },
+    {
+      "id": "solidping",
+      "name": "SolidPing",
+      "category": "Monitoring",
+      "github": "https://github.com/fclairamb/solidping",
+      "stars": 12,
+      "description": "Self-hostable uptime monitor with a built-in MCP server. Create, run and diagnose checks across 43 types, read results and incidents, manage status pages and maintenance windows. Remote (OAuth 2.1) or stdio.",
+      "install": "claude mcp add --transport http solidping https://solidping.io/api/v1/mcp",
+      "license": "AGPL-3.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://www.solidping.io",
+      "tags": [
+        "uptime",
+        "monitoring",
+        "status-page",
+        "incidents",
+        "synthetic-monitoring",
+        "self-hosted"
+      ],
+      "notes": "Remote endpoint uses OAuth 2.1 with dynamic client registration. Self-hosted instances expose the same endpoint at /api/v1/mcp, or run `solidping mcp --stdio` next to the server's database. Docs: https://docs.solidping.io"
     },
     {
       "id": "mcp-server-google-workspace-ts",
