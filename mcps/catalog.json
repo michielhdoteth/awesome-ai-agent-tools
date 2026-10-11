@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-09",
-  "totalServers": 143,
+  "lastUpdated": "2026-10-11",
+  "totalServers": 144,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Marketing",
@@ -2712,6 +2712,28 @@
       "sourceType": "community",
       "lastUpdated": "2026-10-09",
       "notes": "Native deep analysis requires separately installed Hopper, Ghidra, or IDA. Static JavaScript/Electron and .NET inspection do not require those native providers."
+    },
+    {
+      "id": "orano-mcp",
+      "name": "ORANO",
+      "category": "Research & Data",
+      "github": "https://github.com/infotik/orano-mcp-server",
+      "website": "https://oranoai.com/mcp",
+      "stars": 0,
+      "description": "Personal, read-only MCP that lets your AI agent search your saved ORANO library of summaries, plans and notes",
+      "install": "Remote MCP (Streamable HTTP): https://orano-ai-backend-1037939693300.us-central1.run.app/mcp/ with a personal ORANO API key as Bearer token",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "personal-context",
+        "library-search",
+        "read-only",
+        "bearer-auth",
+        "remote"
+      ]
     }
   ]
 }
