@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-10-10",
-  "totalPlugins": 52,
+  "lastUpdated": "2026-10-11",
+  "totalPlugins": 53,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 11
+      "count": 12
     },
     {
       "name": "OpenCode",
@@ -686,6 +686,17 @@
       "installCommand": "npm install -g lynxprompt",
       "license": "AGPL-3.0-or-later",
       "github": "https://github.com/GeiserX/LynxPrompt"
+    },
+    {
+      "id": "workkit",
+      "name": "workkit",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 4,
+      "installs": null,
+      "description": "Claude Code plugin that runs GitHub Issues as the work pipeline, with worker and verifier subagents and hooks that block commits until the full test suite passes.",
+      "installCommand": "claude plugin marketplace add ITW-Creative-Works/workkit && claude plugin install workkit@workkit",
+      "github": "https://github.com/ITW-Creative-Works/workkit"
     }
   ]
 }
