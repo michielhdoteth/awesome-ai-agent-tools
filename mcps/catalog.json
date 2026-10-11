@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-11",
-  "totalServers": 144,
+  "totalServers": 145,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Browser Automation",
@@ -2734,6 +2734,28 @@
         "bearer-auth",
         "remote"
       ]
+    },
+    {
+      "id": "archcore",
+      "name": "Archcore",
+      "category": "Developer Tools",
+      "github": "https://github.com/archcore-ai/archcore",
+      "stars": 68,
+      "description": "Git-native context engineering and spec-driven development for AI coding agents.",
+      "install": "curl -fsSL https://archcore.ai/install.sh | bash",
+      "license": "Apache-2.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://archcore.ai",
+      "tags": [
+        "context-engineering",
+        "spec-driven-development",
+        "coding-agents",
+        "git",
+        "cli"
+      ],
+      "notes": "MCP stdio server command: `archcore mcp`. `archcore init` wires Claude Code, Codex, Cursor, GitHub Copilot and other hosts. Docs: https://docs.archcore.ai"
     }
   ]
 }
