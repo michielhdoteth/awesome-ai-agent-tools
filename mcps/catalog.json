@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-12",
-  "totalServers": 147,
+  "totalServers": 148,
   "categories": [
     {
       "name": "Official Reference",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Data Engineering",
@@ -2795,6 +2795,28 @@
         "cli"
       ],
       "notes": "MCP stdio server command: `archcore mcp`. `archcore init` wires Claude Code, Codex, Cursor, GitHub Copilot and other hosts. Docs: https://docs.archcore.ai"
+    },
+    {
+      "id": "unsora",
+      "name": "Unsora",
+      "category": "Marketing",
+      "github": "https://github.com/Shipped-Studio/unsora",
+      "stars": 2,
+      "description": "Generates AI images, video, voiceovers, music and clips, then schedules and publishes them to connected social accounts.",
+      "install": "Remote MCP: https://mcp.tryunsora.com/mcp (OAuth or API key)",
+      "license": "AGPL-3.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://tryunsora.com",
+      "tags": [
+        "social-media",
+        "scheduling",
+        "video",
+        "image-generation",
+        "content-creation"
+      ],
+      "notes": "Remote Streamable HTTP MCP server that exposes the Unsora public API as tools; self-hostable from apps/mcp. Docs: https://docs.tryunsora.com"
     }
   ]
 }
