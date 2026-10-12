@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-12",
-  "totalServers": 148,
+  "totalServers": 149,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Marketing",
@@ -2817,6 +2817,28 @@
         "content-creation"
       ],
       "notes": "Remote Streamable HTTP MCP server that exposes the Unsora public API as tools; self-hostable from apps/mcp. Docs: https://docs.tryunsora.com"
+    },
+    {
+      "id": "looot",
+      "name": "looot",
+      "category": "Research & Data",
+      "github": "https://github.com/loootai/looot-mcp",
+      "stars": 2,
+      "description": "One API key and prepaid balance for about 2,500 data endpoints from 90+ providers: work email, phone, company enrichment, Google SERP, web pages. Pay per call.",
+      "install": "Remote MCP: https://api.looot.ai/mcp (OAuth 2.1 or Bearer API key)",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://looot.ai",
+      "tags": [
+        "data-api",
+        "enrichment",
+        "lead-generation",
+        "serp",
+        "web-search"
+      ],
+      "notes": "Remote Streamable HTTP MCP server. The agent sees the price before a call and a failed call costs nothing. Prepaid from $5, no subscription. Docs: https://docs.looot.ai"
     }
   ]
 }
