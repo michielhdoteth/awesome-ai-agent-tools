@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-12",
-  "totalServers": 149,
+  "totalServers": 150,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Marketing",
@@ -2839,6 +2839,23 @@
         "web-search"
       ],
       "notes": "Remote Streamable HTTP MCP server. The agent sees the price before a call and a failed call costs nothing. Prepaid from $5, no subscription. Docs: https://docs.looot.ai"
+    },
+    {
+      "id": "statorigin",
+      "name": "StatOrigin MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/SudoAI-App/statorigin-mcp",
+      "stars": 0,
+      "description": "Read-only remote server to search sourced industry statistics, each with its publisher, source document and source sentence",
+      "install": "npx -y mcp-remote https://statorigin.org/mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "statistics",
+        "open-data",
+        "citations",
+        "remote"
+      ]
     }
   ]
 }
