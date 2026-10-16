@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-16",
-  "totalServers": 157,
+  "totalServers": 158,
   "categories": [
     {
       "name": "Official Reference",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Data Engineering",
@@ -3001,6 +3001,27 @@
       ],
       "source": "github",
       "sourceType": "community",
+      "lastUpdated": "2026-10-16"
+    },
+    {
+      "id": "altorank",
+      "name": "AltoRank",
+      "category": "Marketing",
+      "github": "https://github.com/AltoRank/altorank",
+      "stars": 2,
+      "description": "SEO readiness audits, Search Console, keyword research and drafts into a review queue (no approve or publish tool)",
+      "install": "claude mcp add --transport http altorank https://app.altorank.co/api/mcp",
+      "license": "AGPL-3.0",
+      "verified": false,
+      "tags": [
+        "seo",
+        "geo",
+        "content",
+        "search-console",
+        "self-hosted"
+      ],
+      "source": "github",
+      "sourceType": "official",
       "lastUpdated": "2026-10-16"
     }
   ]
