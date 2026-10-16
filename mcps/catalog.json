@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-16",
-  "totalServers": 158,
+  "totalServers": 159,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Browser Automation",
@@ -376,6 +376,28 @@
         "inspection",
         "official"
       ]
+    },
+    {
+      "id": "concord-mcp",
+      "name": "Concord MCP",
+      "category": "Developer Tools",
+      "github": "https://github.com/Get-Concord-AI/concord-mcp",
+      "stars": 520,
+      "description": "Local-first shared work-state for coding agents: presence, claims, messaging, handoffs, and review packets.",
+      "install": "claude mcp add concord -- npx -y @concord-ai/concord-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://getconcord.ai",
+      "tags": [
+        "multi-agent",
+        "coordination",
+        "coding-agents",
+        "handoffs",
+        "messaging"
+      ],
+      "notes": "MCP stdio server via npx -y @concord-ai/concord-mcp. Works with Claude Code, Codex, Cursor and other MCP hosts."
     },
     {
       "id": "chrome-devtools",
