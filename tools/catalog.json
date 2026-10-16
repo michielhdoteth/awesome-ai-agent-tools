@@ -4,11 +4,11 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-10-14",
-  "totalTools": 83,
+  "totalTools": 84,
   "categories": [
     {
       "name": "Code Analysis",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Git Utilities",
@@ -153,6 +153,16 @@
       "stars": 25000,
       "crossPlatform": true,
       "install": "brew install yazi"
+    },
+    {
+      "id": "ironheights",
+      "name": "Ironheights",
+      "category": "Code Analysis",
+      "description": "Static pre-install scanner for agent skills (SKILL.md): flags prompt injection, credential reads, remote-exec installs and persistence; integrity pinning.",
+      "url": "https://github.com/Frank-Masciopinto/ironheights",
+      "stars": 0,
+      "crossPlatform": true,
+      "install": "npx ironheights scan <path-to-skill>"
     },
     {
       "id": "lazygit",
