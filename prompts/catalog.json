@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Curated prompt collections, libraries, and marketplaces for AI coding agents",
   "license": "MIT",
-  "lastUpdated": "2026-08-20",
-  "totalPrompts": 84,
+  "lastUpdated": "2026-10-16",
+  "totalPrompts": 85,
   "categories": [
     {
       "name": "General Purpose",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Coding",
@@ -1285,6 +1285,20 @@
         "LlamaIndex"
       ],
       "source": "huggingface/agents-course"
+    },
+    {
+      "id": "agentkitco-free-prompts",
+      "name": "AgentKit Co Free Prompts",
+      "category": "General Purpose",
+      "description": "41 free copy-paste prompts for coding, game design, tabletop RPGs and AI agents, each with a when-to-use note.",
+      "bestFor": "Starting points for coding help, game design and AI agent setup",
+      "worksWith": [
+        "Claude",
+        "GPT-4",
+        "Gemini"
+      ],
+      "source": "agentkitco/free-prompts",
+      "githubUrl": "https://github.com/agentkitco/free-prompts"
     }
   ]
 }
