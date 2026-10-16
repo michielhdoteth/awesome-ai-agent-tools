@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-16",
-  "totalServers": 156,
+  "totalServers": 157,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 19
+      "count": 20
     },
     {
       "name": "Browser Automation",
@@ -2982,6 +2982,26 @@
         "agent",
         "transaction-broadcast"
       ]
+    },
+    {
+      "id": "openhook-inbox",
+      "name": "Openhook",
+      "category": "Developer Tools",
+      "github": "https://github.com/openhook-dev/openhook-inbox",
+      "stars": 1,
+      "description": "HTTP, email, and DNS callback inbox with MCP tools to capture, inspect, and wait for events",
+      "install": "claude mcp add --transport http openhook https://openhook.dev/mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "webhooks",
+        "callbacks",
+        "testing",
+        "self-hosted"
+      ],
+      "source": "github",
+      "sourceType": "community",
+      "lastUpdated": "2026-10-16"
     }
   ]
 }
