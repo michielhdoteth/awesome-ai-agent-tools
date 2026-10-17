@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-16",
-  "totalServers": 160,
+  "lastUpdated": "2026-10-18",
+  "totalServers": 161,
   "categories": [
     {
       "name": "Official Reference",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Data Engineering",
@@ -3067,6 +3067,28 @@
       "source": "github",
       "sourceType": "official",
       "lastUpdated": "2026-10-17"
+    },
+    {
+      "id": "restosignals",
+      "name": "RestoSignals",
+      "category": "Marketing",
+      "github": "https://github.com/paperandbeyond23-gif/restosignals-mcp",
+      "website": "https://restosignals.com",
+      "stars": 0,
+      "description": "Pre-opening US restaurant and bar leads from liquor, permit and business filings, scored with owner contact",
+      "install": "claude mcp add --transport http restosignals https://api.restosignals.com/mcp --header \"X-API-Key: YOUR_KEY\"",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "lead-generation",
+        "restaurants",
+        "sales",
+        "remote",
+        "api-key"
+      ],
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-18"
     }
   ]
 }
