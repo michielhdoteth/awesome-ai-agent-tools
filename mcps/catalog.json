@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-18",
-  "totalServers": 162,
+  "totalServers": 163,
   "categories": [
     {
       "name": "Official Reference",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Monitoring",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Security",
@@ -1695,6 +1695,26 @@
         "self-hosted"
       ],
       "notes": "Remote endpoint uses OAuth 2.1 with dynamic client registration. Self-hosted instances expose the same endpoint at /api/v1/mcp, or run `solidping mcp --stdio` next to the server's database. Docs: https://docs.solidping.io"
+    },
+    {
+      "id": "agent-chain-doctor",
+      "name": "agent-chain-doctor",
+      "category": "Monitoring",
+      "github": "https://github.com/elfovo/agent-chain-doctor",
+      "stars": 0,
+      "description": "Read-only diagnostic for scheduled AI agents: reads the launchd, cron or systemd config and trace files and reports which of 30 silent-failure modes the setup is exposed to.",
+      "install": "git clone https://github.com/elfovo/agent-chain-doctor && claude mcp add agent-chain-doctor -- python3 \"$PWD/agent-chain-doctor/mcp/server.py\"",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "community",
+      "tags": [
+        "scheduled-agents",
+        "diagnostics",
+        "launchd",
+        "cron",
+        "claude-code"
+      ]
     },
     {
       "id": "mcp-server-google-workspace-ts",
