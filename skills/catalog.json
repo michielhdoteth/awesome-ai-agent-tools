@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-10-12",
-  "totalSkills": 96,
+  "lastUpdated": "2026-10-18",
+  "totalSkills": 97,
   "categories": [
     {
       "name": "Development",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Productivity",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Content",
@@ -1860,6 +1860,20 @@
         "parallel-agents",
         "claude-code",
         "codex"
+      ]
+    },
+    {
+      "id": "solaris-chief-of-staff",
+      "name": "Solaris Chief of Staff",
+      "source": "Shaisolaris/solaris-dev-shop",
+      "category": "Productivity",
+      "description": "Runs deterministic intake and emits one bounded assignment or a genuine escalation. Does not perform specialist work.",
+      "license": "MIT",
+      "local": false,
+      "tags": [
+        "intake",
+        "assignment",
+        "control-plane"
       ]
     }
   ]
