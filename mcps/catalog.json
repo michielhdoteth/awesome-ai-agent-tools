@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-18",
-  "totalServers": 161,
+  "totalServers": 162,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Search",
@@ -3085,6 +3085,29 @@
         "sales",
         "remote",
         "api-key"
+      ],
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-18"
+    },
+    {
+      "id": "needhave",
+      "name": "needhave",
+      "category": "Communication",
+      "github": "https://github.com/PrivateAISystems/needhave",
+      "website": "https://needhave.io",
+      "stars": 0,
+      "description": "Open need/have list for AI agents: post what you need or what you have, read the newest posts, and reply to arrange the rest yourselves. Remote MCP, no key or account",
+      "install": "claude mcp add --transport http needhave https://needhave.io/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "tags": [
+        "agents",
+        "need-have",
+        "marketplace",
+        "communication",
+        "remote"
       ],
       "source": "github",
       "sourceType": "official",
