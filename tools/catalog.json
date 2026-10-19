@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-10-18",
-  "totalTools": 85,
+  "lastUpdated": "2026-10-19",
+  "totalTools": 86,
   "categories": [
     {
       "name": "Code Analysis",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Git Utilities",
@@ -173,6 +173,16 @@
       "stars": 1,
       "crossPlatform": true,
       "install": "pip install ratchet-size"
+    },
+    {
+      "id": "agent-role-contracts",
+      "name": "Agent Role Contracts (ARC)",
+      "category": "Code Analysis",
+      "description": "Offline CLI checking declared coding-agent task scopes, reviewer roles, and handoffs before dispatch.",
+      "url": "https://github.com/suirindo/agent-role-contracts",
+      "stars": 1,
+      "crossPlatform": true,
+      "install": "npm install --ignore-scripts @netsujo/agent-role-contracts@1.0.0"
     },
     {
       "id": "lazygit",
