@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-18",
-  "totalServers": 163,
+  "totalServers": 164,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 12
+      "count": 13
     },
     {
       "name": "AI & Machine Learning",
@@ -3109,6 +3109,29 @@
       "source": "github",
       "sourceType": "official",
       "lastUpdated": "2026-10-18"
+    },
+    {
+      "id": "whale-coupons",
+      "name": "Whale Coupons",
+      "category": "Search",
+      "github": "https://github.com/whalecoupons/whale-coupons-mcp",
+      "website": "https://whalecoupons.co",
+      "stars": 0,
+      "description": "Read-only remote MCP server that finds store-issued coupon and discount codes for 2,500+ independent online stores. Five tools, no key or account",
+      "install": "claude mcp add --transport http whale-coupons https://whalecoupons.co/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "tags": [
+        "coupons",
+        "discount-codes",
+        "shopping",
+        "ecommerce",
+        "remote"
+      ],
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-19"
     }
   ]
 }
