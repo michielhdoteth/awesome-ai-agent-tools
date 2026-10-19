@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-18",
-  "totalServers": 164,
+  "totalServers": 165,
   "categories": [
     {
       "name": "Official Reference",
@@ -40,7 +40,7 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Agent Orchestration",
@@ -3132,6 +3132,27 @@
       "source": "github",
       "sourceType": "official",
       "lastUpdated": "2026-10-19"
+    },
+    {
+      "id": "yap-mcp",
+      "name": "Yap MCP",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/founden-bot/yap-mcp",
+      "website": "https://yapapp.cc/mcp",
+      "stars": 0,
+      "description": "Transcribes local audio and video files on-device with Parakeet TDT v3 (25 European languages, no API key, no upload) and searches the Yap dictation history",
+      "install": "claude mcp add yap -- npx -y github:founden-bot/yap-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-19",
+      "tags": [
+        "speech-to-text",
+        "transcription",
+        "audio",
+        "local"
+      ]
     }
   ]
 }
