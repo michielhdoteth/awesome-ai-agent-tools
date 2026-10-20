@@ -4,11 +4,11 @@
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
   "lastUpdated": "2026-10-12",
-  "totalPlugins": 56,
+  "totalPlugins": 57,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Codex",
@@ -740,6 +740,19 @@
       "installCommand": "/plugin install off-the-wall --marketplace toranalytics/off-the-wall",
       "license": "MIT",
       "github": "https://github.com/toranalytics/off-the-wall"
+    },
+    {
+      "id": "second-brain-starter-kit",
+      "name": "Second Brain Starter Kit",
+      "category": "Claude Code",
+      "platform": "Claude Code, Codex",
+      "stars": 9,
+      "installs": null,
+      "description": "Plugin marketplace with two plugins: a set of skills taken from a running second-brain and assistant setup, and opt-in persistent memory that registers the sqlite-graph-memory MCP server over your own notes.",
+      "websiteUrl": "https://github.com/tonydzi/second-brain-starter-kit",
+      "installCommand": "/plugin marketplace add tonydzi/second-brain-starter-kit && /plugin install second-brain-skills@second-brain",
+      "license": "MIT",
+      "github": "https://github.com/tonydzi/second-brain-starter-kit"
     }
   ]
 }
