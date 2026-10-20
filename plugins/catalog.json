@@ -4,11 +4,11 @@
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
   "lastUpdated": "2026-10-12",
-  "totalPlugins": 55,
+  "totalPlugins": 56,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Codex",
@@ -727,6 +727,19 @@
       "installCommand": "/plugin install subagent-tuner --marketplace Kruhlikau/subagent-tuner",
       "license": "MIT",
       "github": "https://github.com/Kruhlikau/subagent-tuner"
+    },
+    {
+      "id": "off-the-wall",
+      "name": "Off the Wall",
+      "category": "Claude Code",
+      "platform": "Claude Code, Codex",
+      "stars": 1,
+      "installs": null,
+      "description": "Quotes your own past corrections back to Claude Code and Codex before each answer, reports what you correct most, and makes the orchestrator name a cheaper model for each subagent.",
+      "websiteUrl": "https://github.com/toranalytics/off-the-wall",
+      "installCommand": "/plugin install off-the-wall --marketplace toranalytics/off-the-wall",
+      "license": "MIT",
+      "github": "https://github.com/toranalytics/off-the-wall"
     }
   ]
 }
