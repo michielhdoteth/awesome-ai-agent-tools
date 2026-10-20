@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Marketing",
@@ -3152,6 +3152,27 @@
         "transcription",
         "audio",
         "local"
+      ]
+    },
+    {
+      "id": "neverapply",
+      "name": "NeverApply",
+      "category": "Research & Data",
+      "github": "https://github.com/kasovy/neverapply-mcp",
+      "website": "https://neverapply.co/features/mcp",
+      "stars": 0,
+      "description": "Hosted job-search MCP server (Streamable HTTP, OAuth): search and match jobs, tailor resumes, answer screening questions, prepare for interviews, and apply to jobs with your approval",
+      "install": "claude mcp add --transport http neverapply https://neverapply.co/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-20",
+      "tags": [
+        "job-search",
+        "resume",
+        "career",
+        "remote"
       ]
     }
   ]
