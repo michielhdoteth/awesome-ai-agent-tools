@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-18",
-  "totalServers": 167,
+  "totalServers": 168,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Search",
@@ -3216,6 +3216,29 @@
         "startups",
         "saas",
         "product-discovery",
+        "remote"
+      ]
+    },
+    {
+      "id": "ppl",
+      "name": "ppl",
+      "category": "Communication",
+      "url": "https://withppl.com/agents",
+      "website": "https://withppl.com",
+      "github": "https://github.com/ppl-crm/ppl",
+      "stars": 0,
+      "description": "Hosted remote MCP server for ppl, a personal CRM for humans with AI agents: look up and update contacts, log interactions, keep notes, and set reminders and tasks about the people in your life (about 120 tools). OAuth 2.1 sign-in; free beta up to 1,000 contacts at https://withppl.com/register. Official registry id io.github.ppl-crm/ppl.",
+      "install": "claude mcp add --transport http ppl https://withppl.com/mcp",
+      "license": "N/A",
+      "remote": "streamable-http",
+      "verified": false,
+      "sourceType": "official",
+      "lastUpdated": "2026-10-21",
+      "tags": [
+        "crm",
+        "contacts",
+        "relationships",
+        "memory",
         "remote"
       ]
     }
