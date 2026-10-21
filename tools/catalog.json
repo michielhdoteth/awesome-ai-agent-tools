@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-10-19",
-  "totalTools": 86,
+  "lastUpdated": "2026-10-21",
+  "totalTools": 87,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Agent Memory",
@@ -873,6 +873,16 @@
       "stars": 183,
       "crossPlatform": true,
       "install": "npm install -g ordewell"
+    },
+    {
+      "id": "orbi",
+      "name": "Orbi",
+      "category": "AI Coding CLIs",
+      "description": "Open-source (AGPL-3.0) coding agent that turns labeled GitHub Issues into tested PRs, merged after a separate AI review.",
+      "url": "https://github.com/orbi-build/orbi",
+      "stars": 224,
+      "crossPlatform": true,
+      "install": "uv tool install orbi-cli"
     },
     {
       "id": "apiclaw",
