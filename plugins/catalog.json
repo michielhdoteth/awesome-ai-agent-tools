@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-10-12",
-  "totalPlugins": 57,
+  "lastUpdated": "2026-10-22",
+  "totalPlugins": 58,
   "categories": [
     {
       "name": "Claude Code",
@@ -45,6 +45,10 @@
     {
       "name": "Cross-Tool",
       "count": 9
+    },
+    {
+      "name": "Hermes Agent",
+      "count": 1
     }
   ],
   "plugins": [
@@ -753,6 +757,22 @@
       "installCommand": "/plugin marketplace add tonydzi/second-brain-starter-kit && /plugin install second-brain-skills@second-brain",
       "license": "MIT",
       "github": "https://github.com/tonydzi/second-brain-starter-kit"
+    },
+    {
+      "id": "oh-my-hermes",
+      "name": "Oh My Hermes",
+      "category": "Hermes Agent",
+      "platform": "Hermes Agent",
+      "stars": 3541,
+      "description": "Hermes Agent workflow plugin with project memory and task-specific model and reasoning routing.",
+      "websiteUrl": "https://github.com/rlaope/oh-my-hermes",
+      "github": "https://github.com/rlaope/oh-my-hermes",
+      "installCommand": "npm install -g oh-my-hermes && omh setup",
+      "license": "MIT",
+      "source": "github",
+      "sourceType": "community",
+      "lastUpdated": "2026-10-22",
+      "notes": "Requires Hermes Agent. Model-provider usage is separate."
     }
   ]
 }
