@@ -4,7 +4,7 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-10-24",
-  "totalTools": 90,
+  "totalTools": 91,
   "categories": [
     {
       "name": "Code Analysis",
@@ -44,7 +44,7 @@
     },
     {
       "name": "API Testing",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Monitoring",
@@ -963,6 +963,16 @@
       "stars": 6,
       "crossPlatform": true,
       "install": "git clone https://github.com/doomsday-network/cuda-gpu-miner.git && python mine_pool.py --address <DOOM_ADDR>"
+    },
+    {
+      "id": "doom-pay",
+      "name": "DoomPay",
+      "category": "API Testing",
+      "description": "Stripe-style 3-line self-custodial crypto checkout SDK (/pay.js) and /v1/checkout/sessions verification CLI for DOOM (L1) and wDOOM (Base).",
+      "url": "https://github.com/doomsday-network/doom-pay",
+      "stars": 1,
+      "crossPlatform": true,
+      "install": "git clone https://github.com/doomsday-network/doom-pay.git && python doompay.py --help"
     }
   ]
 }
