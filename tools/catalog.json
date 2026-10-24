@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-10-21",
-  "totalTools": 87,
+  "lastUpdated": "2026-10-24",
+  "totalTools": 88,
   "categories": [
     {
       "name": "Code Analysis",
@@ -60,7 +60,7 @@
     },
     {
       "name": "AI APIs",
-      "count": 2
+      "count": 3
     }
   ],
   "tools": [
@@ -933,6 +933,16 @@
       "stars": 2,
       "crossPlatform": true,
       "install": "go install github.com/GeiserX/unsent@latest"
+    },
+    {
+      "id": "system-one-api",
+      "name": "System One API",
+      "category": "AI APIs",
+      "description": "Unified multi-provider AI API for agents and apps. Open SDK @system-one-ai/core. Early-stage (GitHub stars\u22482).",
+      "url": "https://github.com/ziyu/system-one-sdk",
+      "stars": 2,
+      "crossPlatform": true,
+      "install": "npm install @system-one-ai/core \u2014 docs https://system-one.dev/en/api"
     }
   ]
 }
