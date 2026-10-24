@@ -4,11 +4,11 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-10-24",
-  "totalTools": 88,
+  "totalTools": 90,
   "categories": [
     {
       "name": "Code Analysis",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Git Utilities",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Monitoring",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Terminal Enhancement",
@@ -943,6 +943,26 @@
       "stars": 2,
       "crossPlatform": true,
       "install": "npm install @system-one-ai/core \u2014 docs https://system-one.dev/en/api"
+    },
+    {
+      "id": "github-bounty-scanner",
+      "name": "GitHub Bounty Scanner",
+      "category": "Code Analysis",
+      "description": "Zero-dependency CLI scanner that discovers active GitHub bounties and filters out fake bounty farms and prompt-injection honeypots.",
+      "url": "https://github.com/doomsday-network/github-bounty-scanner",
+      "stars": 6,
+      "crossPlatform": true,
+      "install": "git clone https://github.com/doomsday-network/github-bounty-scanner.git && python scan_bounties.py"
+    },
+    {
+      "id": "cuda-gpu-miner",
+      "name": "DoomHash GPU/CPU Miner",
+      "category": "Monitoring",
+      "description": "High-throughput OpenCL/CUDA GPU and multi-core Go/Python CPU Proof-of-Work miner for Doomsday Network (DOOM / wDOOM on Base).",
+      "url": "https://github.com/doomsday-network/cuda-gpu-miner",
+      "stars": 6,
+      "crossPlatform": true,
+      "install": "git clone https://github.com/doomsday-network/cuda-gpu-miner.git && python mine_pool.py --address <DOOM_ADDR>"
     }
   ]
 }
