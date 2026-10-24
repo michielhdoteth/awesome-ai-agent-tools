@@ -4,11 +4,11 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-10-23",
-  "totalSkills": 99,
+  "totalSkills": 101,
   "categories": [
     {
       "name": "Development",
-      "count": 32
+      "count": 33
     },
     {
       "name": "Productivity",
@@ -40,7 +40,7 @@
     },
     {
       "name": "Security",
-      "count": 2
+      "count": 3
     }
   ],
   "sources": [
@@ -1182,7 +1182,7 @@
     },
     {
       "id": "iuliandita-skills",
-      "name": "Iulian Dită Skills",
+      "name": "Iulian Dit\u0103 Skills",
       "source": "iuliandita/skills",
       "category": "DevOps",
       "installs": 2,
@@ -1908,6 +1908,42 @@
         "static-site",
         "publish",
         "deployment"
+      ]
+    },
+    {
+      "id": "bounty-guard",
+      "name": "BountyGuard",
+      "source": "doomsday-network/bounty-guard",
+      "category": "Security",
+      "description": "Audits GitHub bounty issues for cryptographic escrow locks, maintainer association, and prompt-injection traps before an agent writes code.",
+      "install": "npx skills add doomsday-network/bounty-guard",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "security",
+        "bounties",
+        "escrow",
+        "github",
+        "audit"
+      ]
+    },
+    {
+      "id": "web3-agent-skills",
+      "name": "Web3 Agent Skills",
+      "source": "doomsday-network/web3-agent-skills",
+      "category": "Development",
+      "description": "Self-custodial Web3, Proof-of-Work mining, and Base Mainnet ERC-20 verification skills for autonomous coding agents.",
+      "install": "npx skills add doomsday-network/web3-agent-skills",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "web3",
+        "blockchain",
+        "base",
+        "escrow",
+        "mcp"
       ]
     }
   ]
