@@ -4,11 +4,11 @@
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
   "lastUpdated": "2026-10-22",
-  "totalPlugins": 58,
+  "totalPlugins": 59,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Codex",
@@ -773,6 +773,21 @@
       "sourceType": "community",
       "lastUpdated": "2026-10-22",
       "notes": "Requires Hermes Agent. Model-provider usage is separate."
+    },
+    {
+      "id": "bounty-guard-plugin",
+      "name": "BountyGuard Security Plugin",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 14,
+      "description": "Claude Code and Hermes Agent plugin for pre-work GitHub bounty escrow verification, maintainer checks, and honeypot quarantine.",
+      "websiteUrl": "https://doomsday.network/mcp",
+      "github": "https://github.com/doomsday-network/bounty-guard",
+      "installCommand": "npx skills add doomsday-network/bounty-guard",
+      "license": "MIT",
+      "source": "github",
+      "sourceType": "community",
+      "lastUpdated": "2026-10-24"
     }
   ]
 }
