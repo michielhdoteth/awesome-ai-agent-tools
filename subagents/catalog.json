@@ -4,11 +4,11 @@
   "description": "Curated index of subagent definitions, agent harnesses, and platform-specific subagent formats",
   "license": "MIT",
   "lastUpdated": "2026-08-20",
-  "totalSubagents": 31,
+  "totalSubagents": 32,
   "categories": [
     {
       "name": "Subagent Collection",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Agent Harness",
@@ -610,6 +610,22 @@
         "tool-selection",
         "token-optimization"
       ]
+    },
+    {
+      "id": "web3-agent-skills-subagents",
+      "name": "Web3 & Escrow Auditor Subagents",
+      "category": "Subagent Collection",
+      "description": "Self-custodial Web3, Proof-of-Work mining, and cryptographic bounty escrow verification subagent definitions for Claude Code, Codex, and Hermes.",
+      "stars": 4,
+      "license": "MIT",
+      "tags": [
+        "web3",
+        "security",
+        "escrow",
+        "blockchain",
+        "claude-code"
+      ],
+      "github": "https://github.com/doomsday-network/web3-agent-skills"
     }
   ]
 }
