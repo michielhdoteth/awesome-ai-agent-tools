@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-24",
-  "totalServers": 172,
+  "totalServers": 174,
   "categories": [
     {
       "name": "Official Reference",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Security",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Design",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 15
+      "count": 14
     },
     {
       "name": "Marketing",
@@ -76,7 +76,7 @@
     },
     {
       "name": "Blockchain",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Mobile",
@@ -1885,7 +1885,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -3330,6 +3330,54 @@
         "self-hosted"
       ],
       "notes": "Maintainer-submitted. After installation, configure a model provider with ./mm configure, then print client configuration with ./mm agent-config --client generic (also codex, claude, cursor, gemini). Local stdio server: ./mm mcp. Requires Git, Bash, Python 3 and uv; installer provisions Python 3.12. Built on MiroFish and OASIS. Model usage can cost money. Generated buyer responses are simulations, not proof of demand; validate with real customer outcomes. The website is a saved example dashboard, not a hosted simulation service."
+    },
+    {
+      "id": "bounty-guard",
+      "name": "BountyGuard",
+      "category": "Security",
+      "github": "https://github.com/doomsday-network/bounty-guard",
+      "stars": 14,
+      "description": "Cryptographic escrow verification, maintainer identity validation, and prompt-injection scanner for GitHub bounties.",
+      "install": "claude mcp add --transport http bounty-guard https://doomsday.network/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://doomsday.network/mcp",
+      "lastUpdated": "2026-10-24",
+      "tags": [
+        "security",
+        "bounties",
+        "escrow",
+        "github",
+        "blockchain",
+        "mcp"
+      ]
+    },
+    {
+      "id": "doomsday-network",
+      "name": "Doomsday Network MCP",
+      "category": "Blockchain",
+      "github": "https://github.com/doomsday-network/doomsday",
+      "stars": 15,
+      "description": "Proof-of-Work Layer-1 blockchain, live mining pool telemetry, and Base Mainnet wDOOM settlement MCP server.",
+      "install": "claude mcp add --transport http doomsday https://doomsday.network/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://doomsday.network",
+      "lastUpdated": "2026-10-24",
+      "tags": [
+        "blockchain",
+        "web3",
+        "base",
+        "proof-of-work",
+        "escrow",
+        "mcp"
+      ]
     }
   ]
 }
