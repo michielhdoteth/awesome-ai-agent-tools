@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "totalHooks": 25,
+    "totalHooks": 26,
     "lastUpdated": "2026-10-20",
     "sources": [
       "https://github.com/karanb192/claude-code-hooks",
@@ -10,7 +10,7 @@
     "categories": [
       {
         "name": "Security",
-        "count": 5
+        "count": 6
       },
       {
         "name": "Automation",
@@ -549,6 +549,28 @@
       "sourceType": "community",
       "lastUpdated": "2026-10-13",
       "github": "https://github.com/GeiserX/cc-aws-keepalive"
+    },
+    {
+      "id": "bounty-guard-pre-audit",
+      "name": "BountyGuard Pre-Task Audit",
+      "category": "Security",
+      "description": "Pre-task security hook that audits GitHub bounty issues for verified escrow locks and prompt-injection payloads before an agent writes code",
+      "eventType": "UserPromptSubmit",
+      "matcher": "",
+      "script": "bounty_guard.py",
+      "language": "python",
+      "stars": 14,
+      "tags": [
+        "security",
+        "bounties",
+        "escrow",
+        "prompt-injection",
+        "github"
+      ],
+      "source": "github",
+      "sourceType": "community",
+      "lastUpdated": "2026-10-24",
+      "github": "https://github.com/doomsday-network/bounty-guard"
     }
   ]
 }
