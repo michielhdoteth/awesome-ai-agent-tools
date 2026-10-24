@@ -1945,6 +1945,25 @@
         "escrow",
         "mcp"
       ]
+    },
+    {
+      "id": "doom-pay",
+      "name": "DoomPay 3-Line Checkout & Verification",
+      "source": "doomsday-network/doom-pay",
+      "category": "Development",
+      "installs": 120,
+      "description": "Stripe-style 3-line non-custodial crypto checkout SDK (/v1/checkout/sessions, pay.js) and on-chain payment verifier for AI agents and web apps.",
+      "install": "npx skills add doomsday-network/doom-pay --skill doom-pay",
+      "license": "MIT",
+      "verified": true,
+      "local": false,
+      "tags": [
+        "payments",
+        "checkout",
+        "web3",
+        "base",
+        "stripe"
+      ]
     }
   ]
 }
