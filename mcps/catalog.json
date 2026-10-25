@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-24",
-  "totalServers": 174,
+  "lastUpdated": "2026-10-25",
+  "totalServers": 175,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Marketing",
@@ -3377,6 +3377,27 @@
         "proof-of-work",
         "escrow",
         "mcp"
+      ]
+    },
+    {
+      "id": "agentsandboxes",
+      "name": "AgentSandboxes",
+      "category": "Research & Data",
+      "github": "https://agentsandboxes.fyi",
+      "stars": 0,
+      "description": "Neutral index of 25 cloud sandbox providers for AI agents: isolation, cold start, persistence, GPU support, pricing and free tier, each fact linked to its source. Free REST API, no key.",
+      "install": "Remote MCP https://agentsandboxes.fyi/mcp (streamable HTTP, no key)",
+      "license": "N/A",
+      "verified": false,
+      "source": "official-docs",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-25",
+      "tags": [
+        "sandboxes",
+        "agents",
+        "cloud",
+        "directory",
+        "remote-mcp"
       ]
     }
   ]
