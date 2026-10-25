@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-25",
-  "totalServers": 176,
+  "totalServers": 177,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 22
+      "count": 23
     },
     {
       "name": "Browser Automation",
@@ -1885,7 +1885,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -3419,6 +3419,27 @@
         "smtp",
         "remote",
         "oauth"
+      ]
+    },
+    {
+      "id": "scalekit",
+      "name": "Scalekit MCP",
+      "category": "Developer Tools",
+      "github": "https://github.com/scalekit-inc/scalekit-mcp-server",
+      "stars": 5,
+      "description": "Official hosted MCP server for Scalekit: set up and manage agent integrations (600+ connectors, 35,000+ tools, per-user OAuth) plus environments, organizations, users, roles and scopes",
+      "install": "Remote MCP https://mcp.scalekit.com/ (streamable HTTP, OAuth sign-in); local stdio: npm run start:stdio",
+      "license": "Apache-2.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-26",
+      "tags": [
+        "integrations",
+        "oauth",
+        "agents",
+        "remote",
+        "connectors"
       ]
     }
   ]
