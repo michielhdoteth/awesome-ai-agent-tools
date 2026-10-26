@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-25",
-  "totalServers": 177,
+  "lastUpdated": "2026-10-26",
+  "totalServers": 178,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Marketing",
@@ -3440,6 +3440,27 @@
         "agents",
         "remote",
         "connectors"
+      ]
+    },
+    {
+      "id": "webextract",
+      "name": "WebExtract",
+      "category": "Research & Data",
+      "github": "https://github.com/nyx464664816-stack/webextract",
+      "stars": 0,
+      "description": "Hosted MCP server that turns a public URL into clean Markdown (page_markdown) or Markdown plus structured JSON for product/price, tables and article metadata (extract_url). 20 free calls a day per caller IP, then x402 USDC or prepaid credits. Sandbox benchmark on 10 public pages: markdown 38/40, extract 40/40 (https://webextract.dev/benchmark)",
+      "install": "Remote MCP https://api.webextract.dev/mcp (streamable HTTP, no key for the free calls)",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-26",
+      "tags": [
+        "web-scraping",
+        "markdown",
+        "structured-data",
+        "x402",
+        "remote"
       ]
     }
   ]
