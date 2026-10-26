@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-26",
-  "totalServers": 180,
+  "totalServers": 181,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Marketing",
@@ -3507,6 +3507,28 @@
         "remote-mcp"
       ],
       "notes": "Hosted service by Avatar 8 LLC; no public source repo. 13 tools incl. register_agent, get_recommendations, check_in, search_library, get_rules. Scan write-up: https://upskill.coach/research/agent-skill-security"
+    },
+    {
+      "id": "koru",
+      "name": "Koru",
+      "category": "Research & Data",
+      "github": "https://github.com/koruworks/mono",
+      "website": "https://www.koru.do",
+      "stars": 19,
+      "description": "Local MCP server built into Koru, an open-source, local-first notes workspace written in Rust. Lets Claude, Claude Code and other MCP clients search, read, create and edit notes and files stored on the device.",
+      "install": "Install the Koru desktop app (Windows; Linux nightly preview), then register its bundled koru-mcp binary as a stdio MCP server in your client",
+      "license": "MPL-2.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-26",
+      "tags": [
+        "notes",
+        "knowledge",
+        "local-first",
+        "stdio",
+        "rust"
+      ]
     }
   ]
 }
