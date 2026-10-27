@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-10-24",
-  "totalTools": 91,
+  "lastUpdated": "2026-10-27",
+  "totalTools": 92,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Agent Memory",
@@ -938,11 +938,11 @@
       "id": "system-one-api",
       "name": "System One API",
       "category": "AI APIs",
-      "description": "Unified multi-provider AI API for agents and apps. Open SDK @system-one-ai/core. Early-stage (GitHub stars\u22482).",
+      "description": "Unified multi-provider AI API for agents and apps. Open SDK @system-one-ai/core. Early-stage (GitHub stars≈2).",
       "url": "https://github.com/ziyu/system-one-sdk",
       "stars": 2,
       "crossPlatform": true,
-      "install": "npm install @system-one-ai/core \u2014 docs https://system-one.dev/en/api"
+      "install": "npm install @system-one-ai/core — docs https://system-one.dev/en/api"
     },
     {
       "id": "github-bounty-scanner",
@@ -973,6 +973,18 @@
       "stars": 1,
       "crossPlatform": true,
       "install": "git clone https://github.com/doomsday-network/doom-pay.git && python doompay.py --help"
+    },
+    {
+      "id": "talavine-code",
+      "name": "Talavine Code",
+      "category": "AI Coding CLIs",
+      "description": "Free MIT coding workspace with terminal and desktop interfaces and configurable model providers.",
+      "url": "https://github.com/scrossen/talavine-code",
+      "stars": 1,
+      "crossPlatform": true,
+      "install": "https://github.com/scrossen/talavine-code#start-with-the-terminal",
+      "source": "github",
+      "sourceType": "official"
     }
   ]
 }
