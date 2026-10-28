@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-10-22",
-  "totalPlugins": 59,
+  "lastUpdated": "2026-10-28",
+  "totalPlugins": 60,
   "categories": [
     {
       "name": "Claude Code",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Cross-Tool",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Hermes Agent",
@@ -788,6 +788,22 @@
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-10-24"
+    },
+    {
+      "id": "agent-notifications",
+      "name": "Agent Notifications",
+      "category": "Cross-Tool",
+      "platform": "Cross-Tool",
+      "stars": 819,
+      "installs": null,
+      "description": "Desktop task and attention notifications for six AI coding agents on macOS, Linux, and Windows.",
+      "websiteUrl": "https://agent-notifications.com/",
+      "installCommand": "(set -o pipefail; curl -fsSL https://agent-notifications.com/install.sh | bash)",
+      "license": "GPL-3.0-or-later",
+      "github": "https://github.com/777genius/agent-notifications",
+      "source": "github",
+      "sourceType": "community",
+      "lastUpdated": "2026-10-28"
     }
   ]
 }
