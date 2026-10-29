@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-10-28",
-  "totalTools": 93,
+  "lastUpdated": "2026-10-29",
+  "totalTools": 94,
   "categories": [
     {
       "name": "Code Analysis",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Agent Security",
-      "count": 1
+      "count": 2
     }
   ],
   "tools": [
@@ -1000,6 +1000,18 @@
       "crossPlatform": true,
       "install": "pipx install hol-guard",
       "website": "https://hol.org/guard",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "whatileaked",
+      "name": "whatileaked",
+      "category": "Agent Security",
+      "description": "Scans local Claude Code, Codex and Cursor transcripts for credentials already sent to the model, using the gitleaks rule set. No network, zero dependencies.",
+      "url": "https://github.com/selan-ai/whatileaked",
+      "stars": 7,
+      "crossPlatform": true,
+      "install": "npx whatileaked scan",
       "source": "github",
       "sourceType": "official"
     }
