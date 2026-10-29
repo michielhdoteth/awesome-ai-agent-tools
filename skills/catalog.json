@@ -1768,11 +1768,11 @@
     {
       "id": "angles-video-skill",
       "name": "Angles Video",
-      "source": "anglesvideo/angles-video-skill",
+      "source": "anglesvideo/angles-video-skills",
       "category": "Content",
       "installs": 0,
       "description": "Turn a software repository into three selling angles and a launch-ready Angles video from Codex or Claude Code.",
-      "install": "npx skills add anglesvideo/angles-video-skill",
+      "install": "npx skills add anglesvideo/angles-video-skills",
       "license": "MIT",
       "verified": false,
       "local": false,
