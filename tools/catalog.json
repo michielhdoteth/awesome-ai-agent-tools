@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-10-29",
-  "totalTools": 94,
+  "lastUpdated": "2026-10-30",
+  "totalTools": 95,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Agent Memory",
@@ -987,6 +987,19 @@
       "stars": 1,
       "crossPlatform": true,
       "install": "https://github.com/scrossen/talavine-code#start-with-the-terminal",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "mixdog",
+      "name": "Mixdog",
+      "category": "AI Coding CLIs",
+      "description": "Open-source (Apache-2.0) desktop coding agent where a lead model plans and cheaper models handle search, edits and review.",
+      "url": "https://github.com/tribgames/mixdog",
+      "stars": 211,
+      "crossPlatform": true,
+      "install": "npm install -g mixdog",
+      "website": "https://github.com/tribgames/mixdog",
       "source": "github",
       "sourceType": "official"
     },
