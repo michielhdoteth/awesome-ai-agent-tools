@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-27",
-  "totalServers": 182,
+  "lastUpdated": "2026-10-30",
+  "totalServers": 183,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 16
+      "count": 17
     },
     {
       "name": "AI & Machine Learning",
@@ -3553,6 +3553,31 @@
         "remote-mcp"
       ],
       "notes": "Hosted service by Avatar 8 LLC; the MIT repo holds the agent skills and Claude Code / Cursor plugin config, not the server source. Agent docs: https://cooperemail.com/llms.txt. Official MCP Registry id: com.cooperemail/cooper-email."
+    },
+    {
+      "id": "agentsearch-mcp",
+      "name": "AgentSearch MCP",
+      "category": "Search",
+      "github": "https://github.com/agentsearchhq-coder/agentsearch-mcp",
+      "website": "https://agentsearchhq.com",
+      "stars": 0,
+      "description": "Live web search, URL-to-markdown extraction and JS page rendering for agents. Search works with no key or account; extract and render are pay-per-call.",
+      "install": "npx -y @agentsearchhq/agentsearch-mcp",
+      "license": "MIT",
+      "verified": false,
+      "npmPackage": "@agentsearchhq/agentsearch-mcp",
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-30",
+      "tags": [
+        "search",
+        "web",
+        "extract",
+        "markdown",
+        "render",
+        "free-tier"
+      ],
+      "notes": "Free search tier: up to 25 searches/day per IP, subject to shared daily capacity. Extract, render and opt-in paid search cost $0.005/call in USDC on Base via the Pocket Network Agentic Portal (x402). Claude Desktop one-click bundle (.mcpb) in GitHub releases. Official MCP Registry id: io.github.agentsearchhq-coder/agentsearch-mcp."
     }
   ]
 }
