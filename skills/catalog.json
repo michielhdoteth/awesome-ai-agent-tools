@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-10-23",
-  "totalSkills": 101,
+  "lastUpdated": "2026-10-30",
+  "totalSkills": 103,
   "categories": [
     {
       "name": "Development",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Data",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Security",
@@ -1964,6 +1964,7 @@
         "base",
         "stripe"
       ]
-    }
+    },
+    {"id": "computefirst", "name": "ComputeFirst", "source": "321zz321/computefirst-skill", "category": "Data", "description": "Agent skill for deterministic calculations, validation and data transforms via free no-key MCP.", "install": "/plugin marketplace add 321zz321/computefirst-skill\n/plugin install computefirst@computefirst", "license": "MIT", "tags": ["computation", "validation", "data", "mcp"]}
   ]
 }
