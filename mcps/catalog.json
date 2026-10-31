@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-30",
-  "totalServers": 184,
+  "totalServers": 185,
   "categories": [
     {
       "name": "Official Reference",
@@ -60,7 +60,7 @@
     },
     {
       "name": "Finance",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Research & Data",
@@ -3603,6 +3603,30 @@
         "remote-mcp"
       ],
       "notes": "Hosted service; the MIT package and Apache-2.0 OpenAPI repo are public, the service is proprietary. Content expires (default 15 days, max 30, 90 with a free profile). Agent docs: https://brewpage.app/llms.txt. Official MCP Registry id: io.github.kochetkov-ma/brewpage-mcp."
+    },
+    {
+      "id": "fair-value-calculator",
+      "name": "Fair Value Calculator",
+      "category": "Finance",
+      "github": "https://github.com/petz00711/fair-value-calculator-mcp",
+      "website": "https://www.fairvalue-calculator.com/integrations",
+      "stars": 0,
+      "description": "Fair value estimates from 26 valuation models, quality scores, stock screener and comparisons for 40,000+ listed stocks, plus the user's own watchlist and alerts, through a hosted remote MCP server",
+      "install": "Remote MCP: https://www.fairvalue-calculator.com/mcp (streamable HTTP, OAuth sign-in, free account; Registry: com.fairvalue-calculator/fair-value)",
+      "license": "Proprietary",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-31",
+      "tags": [
+        "finance",
+        "stocks",
+        "valuation",
+        "screener",
+        "oauth",
+        "remote"
+      ]
     }
   ]
 }
