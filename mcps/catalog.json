@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-01",
-  "totalServers": 187,
+  "totalServers": 188,
   "categories": [
     {
       "name": "Official Reference",
@@ -40,7 +40,7 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Agent Orchestration",
@@ -1085,7 +1085,7 @@
       "name": "Dodo Payments MCP",
       "category": "Finance",
       "github": "https://github.com/dodopayments/dodo-agent-plugin",
-      "stars": 2,
+      "stars": 5,
       "description": "Live payments, subscriptions, customers, products, refunds, license keys",
       "install": "Available via Glama.ai",
       "license": "MIT",
@@ -2085,7 +2085,7 @@
       "name": "Find MCP",
       "category": "Search",
       "github": "https://github.com/agentage/find-mcp",
-      "stars": 2,
+      "stars": 5,
       "description": "MCP server for discovering other MCP servers. Searches 17,000+ servers synced from the official MCP registry via remote Streamable HTTP (catalog.agentage.io/mcp, no auth for search) or stdio (npx @agentage/find-mcp)",
       "install": "npx -y @agentage/find-mcp",
       "license": "MIT",
@@ -2906,7 +2906,7 @@
       "name": "Unsora",
       "category": "Marketing",
       "github": "https://github.com/Shipped-Studio/unsora",
-      "stars": 2,
+      "stars": 5,
       "description": "Generates AI images, video, voiceovers, music and clips, then schedules and publishes them to connected social accounts.",
       "install": "Remote MCP: https://mcp.tryunsora.com/mcp (OAuth or API key)",
       "license": "AGPL-3.0",
@@ -2928,7 +2928,7 @@
       "name": "looot",
       "category": "Research & Data",
       "github": "https://github.com/loootai/looot-mcp",
-      "stars": 2,
+      "stars": 5,
       "description": "One API key and prepaid balance for about 2,500 data endpoints from 90+ providers: work email, phone, company enrichment, Google SERP, web pages. Pay per call.",
       "install": "Remote MCP: https://api.looot.ai/mcp (OAuth 2.1 or Bearer API key)",
       "license": "MIT",
@@ -3049,7 +3049,7 @@
       "name": "AltoRank",
       "category": "Marketing",
       "github": "https://github.com/AltoRank/altorank",
-      "stars": 2,
+      "stars": 5,
       "description": "SEO readiness audits, Search Console, keyword research and drafts into a review queue (no approve or publish tool)",
       "install": "claude mcp add --transport http altorank https://app.altorank.co/api/mcp",
       "license": "AGPL-3.0",
@@ -3269,7 +3269,7 @@
       "name": "Omega MCP Router",
       "category": "Developer Tools",
       "github": "https://github.com/Omega-JS-Stack/omega",
-      "stars": 2,
+      "stars": 5,
       "description": "One stdio MCP server that proxies many upstream servers. Tool schemas load from a disk cache, and each upstream starts only on the first call that needs it.",
       "install": "claude mcp add mcp-router -- npx -y @omega.js/mcp-router",
       "license": "Elastic-2.0",
@@ -3674,6 +3674,30 @@
         "vulnerabilities",
         "dependency-audit",
         "mcp"
+      ]
+    },
+    {
+      "id": "cloud-alter-ego",
+      "name": "Cloud Alter Ego",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/SebastiaanBoon/cloud-alter-ego",
+      "stars": 5,
+      "description": "Hosted remote MCP connector with OAuth that gives every AI chat your rules, profile, per-project journals and playbooks, kept as plain Markdown files in your own OneDrive, Google Drive, Dropbox, GitHub or Azure DevOps. The server does not store the content. The linked repo is the open source template.",
+      "install": "claude mcp add --transport http cloud-alter-ego https://cloudalterego.cafeboon.com/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://cloudalterego.cafeboon.com",
+      "lastUpdated": "2026-11-01",
+      "tags": [
+        "memory",
+        "context",
+        "rules",
+        "journal",
+        "oauth",
+        "remote"
       ]
     }
   ]
