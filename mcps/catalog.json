@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-10-30",
-  "totalServers": 186,
+  "lastUpdated": "2026-11-01",
+  "totalServers": 187,
   "categories": [
     {
       "name": "Official Reference",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Security",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Design",
@@ -3649,6 +3649,31 @@
         "job-postings",
         "oauth",
         "remote"
+      ]
+    },
+    {
+      "id": "npmscan",
+      "name": "npmscan",
+      "category": "Security",
+      "github": "https://github.com/salemalem/npmscan-mcp-plugin",
+      "stars": 505,
+      "description": "Checks npm packages for confirmed malware, known vulnerabilities (OSV, GitHub advisories, NVD), maintainer changes and install scripts before an agent installs them; audits package.json, lockfiles and SBOMs. No API key.",
+      "install": "claude mcp add --transport http npmscan https://npmscan.com/api/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://npmscan.com/mcp",
+      "lastUpdated": "2026-11-01",
+      "tags": [
+        "security",
+        "npm",
+        "supply-chain",
+        "malware",
+        "vulnerabilities",
+        "dependency-audit",
+        "mcp"
       ]
     }
   ]
