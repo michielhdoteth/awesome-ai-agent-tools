@@ -1,4 +1,4 @@
-name: PR Validation
+name: Safe Catalog Validation
 
 on:
   pull_request:
@@ -8,11 +8,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: pr-validation-${{ github.event.pull_request.number }}
+  group: catalog-validation-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
-  validate:
+  catalog-validation:
+    name: catalog-validation
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
