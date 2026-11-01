@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated prompt collections, libraries, and marketplaces for AI coding agents",
   "license": "MIT",
-  "lastUpdated": "2026-10-16",
-  "totalPrompts": 86,
+  "lastUpdated": "2026-11-01",
+  "totalPrompts": 85,
   "categories": [
     {
       "name": "General Purpose",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Security",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Documentation",
@@ -1299,21 +1299,6 @@
       ],
       "source": "agentkitco/free-prompts",
       "githubUrl": "https://github.com/agentkitco/free-prompts"
-    },
-    {
-      "id": "bounty-guard-security-prompts",
-      "name": "BountyGuard Web3 & Bounty Security Prompts",
-      "category": "Security",
-      "description": "Defensive prompt templates and SKILL.md instructions for auditing untrusted GitHub issues, detecting hidden HTML comment prompt injections, and verifying on-chain escrow locks.",
-      "bestFor": "Hardening autonomous coding agents against unpaid fake bounty farms and repo honeypots",
-      "worksWith": [
-        "Claude Code",
-        "Codex",
-        "Hermes Agent",
-        "Cursor"
-      ],
-      "source": "doomsday-network/bounty-guard",
-      "githubUrl": "https://github.com/doomsday-network/bounty-guard"
     }
   ]
 }

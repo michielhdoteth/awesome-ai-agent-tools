@@ -6,9 +6,9 @@ Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms
 
 ## Categories
 
-- **Claude Code** (16)
+- **Claude Code** (15)
+- **Cross-Tool** (10)
 - **OpenCode** (9)
-- **Cross-Tool** (9)
 - **VS Code AI** (6)
 - **Cursor** (5)
 - **Windsurf** (4)
@@ -80,7 +80,7 @@ Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms
 | Off the Wall                      | Claude Code  | Quotes your own past corrections back to Claude Code and Codex before each answer, reports what you correct most, and makes the orchestrator name a cheaper model for each subagent.                            | [toranalytics/off-the-wall](https://github.com/toranalytics/off-the-wall)                         | ![Stars](https://img.shields.io/github/stars/toranalytics/off-the-wall?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/toranalytics/off-the-wall?style=flat)                         |
 | Second Brain Starter Kit          | Claude Code  | Plugin marketplace with two plugins: a set of skills taken from a running second-brain and assistant setup, and opt-in persistent memory that registers the sqlite-graph-memory MCP server over your own notes. | [tonydzi/second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit)           | ![Stars](https://img.shields.io/github/stars/tonydzi/second-brain-starter-kit?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/tonydzi/second-brain-starter-kit?style=flat)           |
 | Oh My Hermes                      | Hermes Agent | Hermes Agent workflow plugin with project memory and task-specific model and reasoning routing.                                                                                                                 | [rlaope/oh-my-hermes](https://github.com/rlaope/oh-my-hermes)                                     | ![Stars](https://img.shields.io/github/stars/rlaope/oh-my-hermes?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/rlaope/oh-my-hermes?style=flat)                                     |
-| BountyGuard Security Plugin       | Claude Code  | Claude Code and Hermes Agent plugin for pre-work GitHub bounty escrow verification, maintainer checks, and honeypot quarantine.                                                                                 | `doomsday-network/bounty-guard`                                                                   | ![Stars](https://img.shields.io/github/stars/doomsday-network/bounty-guard?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/doomsday-network/bounty-guard?style=flat)                 |
+| Agent Notifications               | Cross-Tool   | Desktop task and attention notifications for six AI coding agents on macOS, Linux, and Windows.                                                                                                                 | [777genius/agent-notifications](https://github.com/777genius/agent-notifications)                 | ![Stars](https://img.shields.io/github/stars/777genius/agent-notifications?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/777genius/agent-notifications?style=flat)                 |
 
 ---
 

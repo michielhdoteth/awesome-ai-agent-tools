@@ -2,11 +2,11 @@
 
 Production-ready Claude Code hooks for security, automation, and quality
 
-**26** entries across **7** categories.
+**25** entries across **7** categories.
 
 ## Categories
 
-- **Security** (6)
+- **Security** (5)
 - **Session Management** (5)
 - **Automation** (4)
 - **Quality** (3)
@@ -14,7 +14,7 @@ Production-ready Claude Code hooks for security, automation, and quality
 - **Utility** (3)
 - **Notifications** (2)
 
-## All 26 hooks
+## All 25 hooks
 
 | Name                                     | Category           | Description                                                                                                                                                                                                            | Source                                                                                          | Badges                                                                                                                                                                                                                         |
 | ---------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -43,7 +43,6 @@ Production-ready Claude Code hooks for security, automation, and quality
 | Lazaretto Guard                          | Security           | Reads a remote MCP server's tool descriptions for poisoning before claude mcp add connects it, and checks pinned package installs against published malware advisories; asks for permission on a finding, never blocks | [jamesdfinance-dev/lazaretto-plugins](https://github.com/jamesdfinance-dev/lazaretto-plugins)   | ![Stars](https://img.shields.io/github/stars/jamesdfinance-dev/lazaretto-plugins?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/jamesdfinance-dev/lazaretto-plugins?style=flat)   |
 | awesome-claude-code-hooks                | Utility            | Curated directory of Claude Code hooks organized by category. Meta-resource for discovering hooks in the ecosystem.                                                                                                    | [ithiria894/awesome-claude-code-hooks](https://github.com/ithiria894/awesome-claude-code-hooks) | ![Stars](https://img.shields.io/github/stars/ithiria894/awesome-claude-code-hooks?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ithiria894/awesome-claude-code-hooks?style=flat) |
 | AWS Credential Check                     | Session Management | Warns before each prompt when Claude Code's AWS Bedrock credentials are expired or near expiry                                                                                                                         | [GeiserX/cc-aws-keepalive](https://github.com/GeiserX/cc-aws-keepalive)                         | ![Stars](https://img.shields.io/github/stars/GeiserX/cc-aws-keepalive?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/GeiserX/cc-aws-keepalive?style=flat)                         |
-| BountyGuard Pre-Task Audit               | Security           | Pre-task security hook that audits GitHub bounty issues for verified escrow locks and prompt-injection payloads before an agent writes code                                                                            | `doomsday-network/bounty-guard`                                                                 | ![Stars](https://img.shields.io/github/stars/doomsday-network/bounty-guard?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/doomsday-network/bounty-guard?style=flat)               |
 
 ---
 
