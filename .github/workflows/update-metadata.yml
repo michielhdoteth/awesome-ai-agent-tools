@@ -104,7 +104,7 @@ jobs:
           "
 
       - name: Regenerate README
-        run: node scripts/generate-readme.js
+        run: node .github/scripts/generate-readme.js
 
       - name: Check for changes
         id: diff
