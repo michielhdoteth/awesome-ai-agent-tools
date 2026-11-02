@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 185,
+  "totalServers": 186,
   "categories": [
     {
       "name": "Official Reference",
@@ -20,7 +20,7 @@
     },
     {
       "name": "Databases",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Cloud Platforms",
@@ -523,6 +523,28 @@
         "auth",
         "storage"
       ]
+    },
+    {
+      "id": "scribase",
+      "name": "Scribase MCP",
+      "category": "Databases",
+      "github": "https://github.com/caelum0x/scribase-agents",
+      "stars": 0,
+      "description": "Remote MCP server for a hosted backend (Postgres, GoTrue-based auth, storage, realtime, edge functions) that a coding agent can both write code against and actually provision, speaking the supabase-js API",
+      "install": "claude mcp add --transport http scribase https://api.scribase.com/mcp",
+      "license": "Unknown",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-03",
+      "tags": [
+        "postgres",
+        "backend",
+        "auth",
+        "storage",
+        "realtime"
+      ],
+      "notes": "Hosted and early access; the underlying backend fork is private, self-hosting is enterprise BYOC by request today, not a public download. Flat $25/project/month, no project cap."
     },
     {
       "id": "mongodb",
