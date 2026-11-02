@@ -78,7 +78,7 @@
   "sources": [
     {
       "name": "f/prompts.chat",
-      "url": "https://github.com/f/awesome-chatgpt-prompts",
+      "url": "https://github.com/f/prompts.chat",
       "stars": 164314,
       "promptCount": 270,
       "description": "World's largest open-source prompt library. Works with ChatGPT, Claude, Gemini, Llama, Mistral."
