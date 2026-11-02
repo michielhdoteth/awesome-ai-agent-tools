@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-01",
-  "totalServers": 188,
+  "totalServers": 185,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 17
+      "count": 16
     },
     {
       "name": "AI & Machine Learning",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Security",
-      "count": 11
+      "count": 10
     },
     {
       "name": "Design",
@@ -76,7 +76,7 @@
     },
     {
       "name": "Blockchain",
-      "count": 5
+      "count": 4
     },
     {
       "name": "Mobile",
@@ -1101,7 +1101,7 @@
       "id": "flox",
       "name": "FLOX MCP",
       "category": "Finance",
-      "github": "https://github.com/FLOX-Foundation/flox",
+      "github": "https://github.com/lrvx/lrvx",
       "stars": 37,
       "description": "Trading framework with 30 tools for backtests, strategy scaffolding, order placement",
       "install": "Available via Glama.ai",
@@ -2246,7 +2246,7 @@
       "id": "mcp-context-server",
       "name": "MCP Context Server",
       "category": "AI & Machine Learning",
-      "github": "https://github.com/alex-feel/mcp-context-server",
+      "github": "https://github.com/GetActionSpace/mcp-context-server",
       "stars": 0,
       "description": "High-performance MCP server for persistent multimodal context storage. Thread-based scoping for multi-agent collaboration. 13 tools including semantic and hybrid search.",
       "install": "pip install mcp-context-server",
@@ -3133,29 +3133,6 @@
       "lastUpdated": "2026-10-18"
     },
     {
-      "id": "whale-coupons",
-      "name": "Whale Coupons",
-      "category": "Search",
-      "github": "https://github.com/whalecoupons/whale-coupons-mcp",
-      "website": "https://whalecoupons.co",
-      "stars": 0,
-      "description": "Read-only remote MCP server that finds store-issued coupon and discount codes for 2,500+ independent online stores. Five tools, no key or account",
-      "install": "claude mcp add --transport http whale-coupons https://whalecoupons.co/mcp",
-      "license": "MIT",
-      "remote": "streamable-http",
-      "verified": false,
-      "tags": [
-        "coupons",
-        "discount-codes",
-        "shopping",
-        "ecommerce",
-        "remote"
-      ],
-      "source": "github",
-      "sourceType": "official",
-      "lastUpdated": "2026-10-19"
-    },
-    {
       "id": "yap-mcp",
       "name": "Yap MCP",
       "category": "AI & Machine Learning",
@@ -3352,54 +3329,6 @@
         "self-hosted"
       ],
       "notes": "Maintainer-submitted. The pinned PyPI package launches the local stdio MCP server through uv; start with doctor, then setup if the engine is missing. Engine setup requires Git, Bash and uv on Linux, macOS or WSL; native Windows has not been validated. Configure the model provider locally with ./mm configure. Startup and discovery of 27 tools were checked in a credential-free environment, not a complete fresh simulation or client certification. Built on MiroFish and OASIS. Model usage can cost money. Generated buyer responses are hypotheses, not established demand or sales forecasts; validate with real customer outcomes. Saved fictional Fitloop dashboard: https://darkworldcoder.github.io/market-mirror/demo/ (no new simulation runs in the browser)."
-    },
-    {
-      "id": "bounty-guard",
-      "name": "BountyGuard",
-      "category": "Security",
-      "github": "https://github.com/doomsday-network/bounty-guard",
-      "stars": 14,
-      "description": "Cryptographic escrow verification, maintainer identity validation, and prompt-injection scanner for GitHub bounties.",
-      "install": "claude mcp add --transport http bounty-guard https://doomsday.network/mcp",
-      "license": "MIT",
-      "remote": "streamable-http",
-      "verified": false,
-      "source": "github",
-      "sourceType": "official",
-      "website": "https://doomsday.network/mcp",
-      "lastUpdated": "2026-10-24",
-      "tags": [
-        "security",
-        "bounties",
-        "escrow",
-        "github",
-        "blockchain",
-        "mcp"
-      ]
-    },
-    {
-      "id": "doomsday-network",
-      "name": "Doomsday Network MCP",
-      "category": "Blockchain",
-      "github": "https://github.com/doomsday-network/doomsday",
-      "stars": 15,
-      "description": "Proof-of-Work Layer-1 blockchain, live mining pool telemetry, and Base Mainnet wDOOM settlement MCP server.",
-      "install": "claude mcp add --transport http doomsday https://doomsday.network/mcp",
-      "license": "MIT",
-      "remote": "streamable-http",
-      "verified": false,
-      "source": "github",
-      "sourceType": "official",
-      "website": "https://doomsday.network",
-      "lastUpdated": "2026-10-24",
-      "tags": [
-        "blockchain",
-        "web3",
-        "base",
-        "proof-of-work",
-        "escrow",
-        "mcp"
-      ]
     },
     {
       "id": "agentsandboxes",

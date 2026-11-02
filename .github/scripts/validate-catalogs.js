@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.resolve(__dirname, '..');
+const ROOT = path.resolve(__dirname, '../..');
 const CATALOGS = [
   { file: 'skills/catalog.json', key: 'skills', totalKey: 'totalSkills' },
   { file: 'mcps/catalog.json', key: 'servers', totalKey: 'totalServers' },

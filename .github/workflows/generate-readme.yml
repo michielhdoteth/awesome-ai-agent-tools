@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - '*/catalog.json'
-      - 'scripts/generate-readme.js'
+      - '.github/scripts/generate-readme.js'
   workflow_dispatch:
 
 permissions:
@@ -24,7 +24,7 @@ jobs:
           node-version: '20'
 
       - name: Generate README from catalogs
-        run: node scripts/generate-readme.js
+        run: node .github/scripts/generate-readme.js
 
       - name: Check for changes
         id: diff

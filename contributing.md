@@ -23,8 +23,8 @@ Your agent will fork the repo, add the entry, validate JSON, and submit a PR. Gi
 This repo uses automated README generation so counts are never stale:
 
 1. **You edit** `*/catalog.json` (add/update/remove entries)
-2. **PR validation** runs `scripts/validate-catalogs.js` to catch errors
-3. **On merge to main** GitHub Actions runs `scripts/generate-readme.js`
+2. **PR validation** runs `.github/scripts/validate-catalogs.js` to catch errors
+3. **On merge to main** GitHub Actions runs `.github/scripts/generate-readme.js`
 4. **readme.md is regenerated** with accurate counts from the catalogs
 5. **Weekly** star counts are updated from the GitHub API
 
@@ -109,7 +109,7 @@ All PRs are automatically validated by GitHub Actions:
 You can also validate locally:
 
 ```bash
-node scripts/validate-catalogs.js
+node .github/scripts/validate-catalogs.js
 ```
 
 ## Agent Step-by-Step
@@ -291,7 +291,7 @@ Adds [ITEM_NAME] to the [CATEGORY] catalog.
 - [ ] Description is clear and honest
 - [ ] Category exists in the catalog
 - [ ] JSON is valid
-- [ ] `node scripts/validate-catalogs.js` passes locally
+- [ ] `node .github/scripts/validate-catalogs.js` passes locally
 - [ ] Starred the repo (optional, but appreciated)
 
 ## What NOT to Edit
