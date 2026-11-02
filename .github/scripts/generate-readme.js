@@ -8,12 +8,13 @@ const REPO = 'michielhdoteth/awesome-ai-agent-tools';
 const REPO_URL = `https://github.com/${REPO}`;
 
 // Extract an owner/repo slug from any catalog entry, handling every URL
-// field naming convention used across the 8 catalogs:
+// field naming convention used across the catalogs:
 //   skills/prompts/hooks -> source ("owner/repo")
 //   mcps                 -> github ("https://github.com/owner/repo")
 //   loops                -> sourceRepo ("owner/repo")
 //   tools                -> url ("https://github.com/owner/repo")
 //   plugins              -> websiteUrl (only when it points at github.com)
+//   mods                 -> source ("owner/repo")
 const SLUG_RE = /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;
 const GH_URL_RE = /github\.com\/([A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+)/;
 
@@ -115,6 +116,15 @@ const CATALOGS = [
     desc: 'Essential CLI tools and utilities that enhance AI coding agent capabilities',
     folder: 'tools',
     plural: 'tools',
+  },
+  {
+    file: 'mods/catalog.json',
+    key: 'mods',
+    name: 'Claude Code Mods',
+    title: 'Claude Code Mods Catalog',
+    desc: 'Claude Code mods, including source, install instructions, and compatibility details',
+    folder: 'mods',
+    plural: 'mods',
   },
 ];
 
@@ -267,7 +277,8 @@ ${buildTable(data.items, cat)}
 Machine-readable data: [catalog.json](catalog.json)`;
 
   const readmePath = path.join(ROOT, cat.folder, 'README.md');
-  fs.writeFileSync(readmePath, readme, 'utf8');
+  const previous = fs.existsSync(readmePath) ? fs.readFileSync(readmePath, 'utf8') : '';
+  if (previous !== readme) fs.writeFileSync(readmePath, readme, 'utf8');
 }
 
 function generateReadme() {
@@ -275,9 +286,13 @@ function generateReadme() {
   const totalCount = catalogs.reduce((sum, c) => sum + c.count, 0);
   const categoryCount = catalogs.length;
 
-  for (const cat of catalogs) {
+  const changedFolders = catalogs.filter((cat) => {
+    const before = fs.existsSync(path.join(ROOT, cat.folder, 'README.md'))
+      ? fs.readFileSync(path.join(ROOT, cat.folder, 'README.md'), 'utf8')
+      : '';
     generateFolderReadme(cat, cat);
-  }
+    return before !== fs.readFileSync(path.join(ROOT, cat.folder, 'README.md'), 'utf8');
+  });
 
   // Build TOC: anchors must match the "## Name" headings below exactly.
   // Contributing stays out per awesome-list convention (lint exempts it);
@@ -306,9 +321,12 @@ function generateReadme() {
         sourceLink(e),
       ]),
     );
+    const categorySummary = catLines
+      ? `${c.count} ${c.plural} across ${c.categories.length} categories: ${catLines}`
+      : `${c.count} ${c.plural}; no entries have been added yet.`;
     return `## ${c.name}
 
-${c.count} ${c.plural} across ${c.categories.length} categories: ${catLines}
+${categorySummary}
 
 **[Browse all ${c.count} ${c.plural} in ${c.folder}/](${c.folder}/)** · [catalog.json](${c.folder}/catalog.json)
 
@@ -328,7 +346,7 @@ ${table}`;
 
 </div>
 
-Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and CLI tools for AI coding assistants.
+Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
 **${totalCount}** installable components across **${categoryCount}** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
@@ -342,16 +360,17 @@ ${categoryDetails}
 
 We welcome contributions. You can:
 
-1. Manual PR - fork, add an entry to a \`catalog.json\` file, validate, and submit. See [contributing.md](contributing.md).
-2. Agent-automated - give your AI agent the contributing.md guide and it handles everything.
+1. Manual contribution - add an entry to a \`catalog.json\` file, validate, then submit a PR from your fork. See [contributing.md](contributing.md).
+2. Agent-assisted contribution - give your AI agent this guide; it can inspect the project, prepare the catalog diff, and validate it for you.
 3. Open an issue to suggest a tool we should add.
 
 All data comes from \`catalog.json\` files in each folder. These catalogs are the single source of truth for programmatic discovery.
 `;
 
   const readmePath = path.join(ROOT, 'readme.md');
-  fs.writeFileSync(readmePath, readme, 'utf8');
-  console.log(`Generated root readme + ${catalogs.length} folder READMEs (${totalCount} total components)`);
+  const previous = fs.existsSync(readmePath) ? fs.readFileSync(readmePath, 'utf8') : '';
+  if (previous !== readme) fs.writeFileSync(readmePath, readme, 'utf8');
+  console.log(`Generated root README and ${changedFolders.length} changed category README(s) (${totalCount} total components)`);
 }
 
 generateReadme();

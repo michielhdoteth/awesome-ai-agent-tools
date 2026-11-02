@@ -17,7 +17,7 @@ reviews:
     - '!readme.md'
     - '!*/README.md'
   path_instructions:
-    - path: '*/catalog.json'
+    - path: '{skills,mcps,loops,subagents,hooks,plugins,prompts,tools,mods}/catalog.json'
       instructions: >-
         This is a curated catalog. Check that new entries have a unique
         lowercase kebab-case id, a category that already exists in the file,
