@@ -2,17 +2,17 @@
 
 Specialized agent definitions with model routing
 
-**31** entries across **5** categories.
+**32** entries across **5** categories.
 
 ## Categories
 
 - **Subagent Collection** (15)
-- **Agent Harness** (6)
+- **Agent Harness** (7)
 - **Official SDK** (4)
 - **Platform Format** (4)
 - **Curated Directory** (2)
 
-## All 31 subagents
+## All 32 subagents
 
 | Name                               | Category            | Description                                                                                                                                                                            | Source                                                                                                        | Badges                                                                                                                                                                                                                                       |
 | ---------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -47,6 +47,7 @@ Specialized agent definitions with model routing
 | opensquad                          | Agent Harness       | Multi-agent orchestration framework via npm. Coordinate multiple AI agents in a single workflow. npm-first approach for easy Node.js integration.                                      | [renatoasse/opensquad](https://github.com/renatoasse/opensquad)                                               | ![Stars](https://img.shields.io/github/stars/renatoasse/opensquad?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/renatoasse/opensquad?style=flat)                                               |
 | better-harness                     | Agent Harness       | Open-source harness-engineering platform: treat the coding-agent work loop as code, inspect evidence, and generate prioritized, verifiable improvements.                               | [QoderAI/better-harness](https://github.com/QoderAI/better-harness)                                           | ![Stars](https://img.shields.io/github/stars/QoderAI/better-harness?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/QoderAI/better-harness?style=flat)                                           |
 | Ratel                              | Agent Harness       | Context-engineering SDK that progressively discloses tools and skills with in-process BM25/semantic retrieval. TypeScript, Python, and Rust packages.                                  | [ratel.sh](https://www.ratel.sh/)                                                                             |                                                                                                                                                                                                                                              |
+| OpenAI Agents Nano x402            | Agent Harness       | Adds x402 payments in fee-free Nano (XNO) to the OpenAI Agents SDK: a Tool that pays x402-priced APIs with self-custodied Nano.                                                        | [dhyabi2/openai-agents-nano-x402](https://github.com/dhyabi2/openai-agents-nano-x402)                         | ![Stars](https://img.shields.io/github/stars/dhyabi2/openai-agents-nano-x402?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/dhyabi2/openai-agents-nano-x402?style=flat)                         |
 
 ---
 

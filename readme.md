@@ -11,7 +11,7 @@
 
 Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
-**681** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**682** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -75,9 +75,9 @@ Top 5 shown:
 
 ## Subagents
 
-31 subagents across 5 categories: Subagent Collection (15) · Agent Harness (6) · Official SDK (4) · Platform Format (4) · Curated Directory (2)
+32 subagents across 5 categories: Subagent Collection (15) · Agent Harness (7) · Official SDK (4) · Platform Format (4) · Curated Directory (2)
 
-**[Browse all 31 subagents in subagents/](subagents/)** · [catalog.json](subagents/catalog.json)
+**[Browse all 32 subagents in subagents/](subagents/)** · [catalog.json](subagents/catalog.json)
 
 Top 5 shown:
 
