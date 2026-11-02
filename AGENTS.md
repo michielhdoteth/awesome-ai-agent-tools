@@ -18,6 +18,7 @@ Awesome AI Agent Tools is an open-source library of installable AI agent compone
 | plugins/ | Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms |
 | prompts/ | Curated prompt collections and marketplace links |
 | tools/ | CLI utilities that enhance agent capabilities |
+| mods/ | Claude Code mods: plugins that customize the Claude Code experience |
 
 Exact per-category counts live in each `catalog.json` and in the generated `readme.md`. Do not hardcode counts in hand-written docs: they go stale. The generator reads the catalogs and emits the counts.
 
@@ -39,6 +40,8 @@ Each directory contains a `catalog.json` file with structured metadata:
   ]
 }
 ```
+
+Claude Code mod entries also require `source` (`owner/repo`), `installCommand`, `compatibility`, and `license`. Mods execute with Claude Code's available access; listing one does not mean it has passed a security audit.
 
 ## How to Contribute
 
@@ -63,3 +66,8 @@ See [contributing.md](contributing.md) for full details. It is also the agent co
 - `skills/catalog.json` - Machine-readable skills catalog
 - `mcps/catalog.json` - Machine-readable MCP catalog
 - `loops/catalog.json` - Machine-readable loops catalog
+- `mods/catalog.json` - Machine-readable Claude Code mods catalog
+
+Review policy: one human approval from someone other than the PR author, plus a passing catalog validation check. An approval should say “Go” and give one brief reason. The repository owner must configure this approval count in GitHub branch protection; documentation alone does not enforce it.
+
+Claude Code mods are executable plugins and run with the user's Claude Code access. Require clear source attribution and available install, compatibility, and license details; do not describe listing as a security audit.

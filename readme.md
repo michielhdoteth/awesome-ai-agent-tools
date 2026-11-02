@@ -9,9 +9,9 @@
 
 </div>
 
-Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and CLI tools for AI coding assistants.
+Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
-**681** installable components across **8** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**681** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -23,6 +23,7 @@ Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and CL
 - [Plugins](#plugins)
 - [Prompts](#prompts)
 - [Tools](#tools)
+- [Claude Code Mods](#claude-code-mods)
 
 ## Skills
 
@@ -134,7 +135,7 @@ Top 5 shown:
 | Prompt Engineer                 | Meta-prompt for designing and optimizing other prompts                        | `dair-ai/Prompt-Engineering-Guide` |
 | Craft Code Refactor             | Systematic code improvement with test coverage maintenance                    | `hoangatg/awesome-ai-prompts-2026` |
 | SQL Query Optimizer             | Analyze and optimize SQL queries with index suggestions                       | `openai/openai-cookbook`           |
-| Image Generation Prompt Crafter | Craft detailed prompts for DALL-E, Midjourney, and Flux                       | `Ryan-yang125/gpt-image-2-prompts` |
+| Image Generation Prompt Crafter | Craft detailed prompts for DALL-E, Midjourney, and Flux                       | `krisyangdev/gpt-image-2-prompts`  |
 
 ## Tools
 
@@ -152,12 +153,23 @@ Top 5 shown:
 | Bun         | Incredibly fast JavaScript runtime, bundler, and package manager.    | `oven-sh/bun`              |
 | Netdata     | Real-time performance and health monitoring.                         | `netdata/netdata`          |
 
+## Claude Code Mods
+
+0 mods; no entries have been added yet.
+
+**[Browse all 0 mods in mods/](mods/)** · [catalog.json](mods/catalog.json)
+
+Top 5 shown:
+
+| Name | Description | Source |
+| ---- | ----------- | ------ |
+
 ## Contributing
 
 We welcome contributions. You can:
 
-1. Manual PR - fork, add an entry to a `catalog.json` file, validate, and submit. See [contributing.md](contributing.md).
-2. Agent-automated - give your AI agent the contributing.md guide and it handles everything.
+1. Manual contribution - add an entry to a `catalog.json` file, validate, then submit a PR from your fork. See [contributing.md](contributing.md).
+2. Agent-assisted contribution - give your AI agent this guide; it can inspect the project, prepare the catalog diff, and validate it for you.
 3. Open an issue to suggest a tool we should add.
 
 All data comes from `catalog.json` files in each folder. These catalogs are the single source of truth for programmatic discovery.

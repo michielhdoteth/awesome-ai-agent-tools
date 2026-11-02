@@ -13,6 +13,7 @@ const CATALOGS = [
   { file: 'plugins/catalog.json', key: 'plugins', totalKey: 'totalPlugins' },
   { file: 'prompts/catalog.json', key: 'prompts', totalKey: 'totalPrompts' },
   { file: 'tools/catalog.json', key: 'tools', totalKey: 'totalTools' },
+  { file: 'mods/catalog.json', key: 'mods', totalKey: 'totalMods' },
 ];
 
 const REQUIRED_FIELDS = ['id', 'description'];
@@ -47,6 +48,28 @@ for (const catalog of CATALOGS) {
     console.error(`FAIL: ${relPath} - missing or non-array key "${catalog.key}"`);
     totalErrors++;
     continue;
+  }
+
+  if (catalog.key === 'mods') {
+    for (const [index, item] of items.entries()) {
+      const context = `  - ${item.id || `(entry ${index + 1})`}`;
+      if (!item.source || !/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(item.source)) {
+        console.error(`FAIL: ${relPath} ${context}: source must be an owner/repo slug`);
+        totalErrors++;
+      }
+      if (!item.installCommand) {
+        console.error(`FAIL: ${relPath} ${context}: installCommand is required for executable mods`);
+        totalErrors++;
+      }
+      if (!item.compatibility) {
+        console.error(`FAIL: ${relPath} ${context}: compatibility details are required`);
+        totalErrors++;
+      }
+      if (!item.license) {
+        console.error(`FAIL: ${relPath} ${context}: state the license or use "Unknown" pending verification`);
+        totalErrors++;
+      }
+    }
   }
 
   // Check total count matches
