@@ -1,0 +1,58 @@
+name: Catalog Maintenance
+
+on:
+  schedule:
+    - cron: '0 8 * * 1' # Weekly metadata refresh
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '*/catalog.json'
+      - '*/README.md'
+      - 'readme.md'
+      - 'contributing.md'
+      - 'AGENTS.md'
+      - '.github/coderabbit.yaml'
+      - '.github/scripts/generate-readme.js'
+      - '.github/scripts/update-metadata.js'
+      - '.github/scripts/create-maintenance-pr.js'
+      - '.github/workflows/catalog-maintenance.yml'
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: catalog-maintenance
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '20'
+
+      - name: Refresh star metadata
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node .github/scripts/update-metadata.js
+
+      - name: Regenerate catalog documentation
+        run: node .github/scripts/generate-readme.js
+
+      - name: Validate generated catalog data
+        run: node .github/scripts/validate-catalogs.js
+
+      - name: Create or update the single maintenance PR
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_BASE_REF: main
+        run: node .github/scripts/create-maintenance-pr.js

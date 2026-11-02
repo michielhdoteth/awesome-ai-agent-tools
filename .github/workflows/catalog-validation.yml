@@ -2,13 +2,15 @@ name: Safe Catalog Validation
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, edited]
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
 
 permissions:
   contents: read
 
 concurrency:
-  group: catalog-validation-${{ github.event.pull_request.number }}
+  group: catalog-validation-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -20,14 +22,12 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Require generated READMEs to match catalogs
-        run: |
-          node .github/scripts/generate-readme.js
-          git diff --exit-code -- readme.md */README.md
-
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '20'
+
+      - name: Verify README generation succeeds
+        run: node .github/scripts/generate-readme.js
 
       - name: Validate catalog JSON syntax
         run: |
