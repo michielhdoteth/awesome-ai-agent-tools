@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 185,
+  "totalServers": 186,
   "categories": [
     {
       "name": "Official Reference",
@@ -60,7 +60,7 @@
     },
     {
       "name": "Finance",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Research & Data",
@@ -1907,7 +1907,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -3628,6 +3628,30 @@
         "oauth",
         "remote"
       ]
+    },
+    {
+      "id": "anansi-haven",
+      "name": "Anansi Haven",
+      "category": "Finance",
+      "github": "https://github.com/kburrus64-max/anansi-haven",
+      "stars": 0,
+      "description": "Hosted remote MCP for trading agents with free rule-based trade_postmortem grading (no AI model calls) and a $0.02 USDC x402 paid twin on Base at /v1/paid/council_grade.",
+      "install": "claude mcp add --transport http anansi-haven https://anansi-haven.anansidata.workers.dev/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "trading",
+        "finance",
+        "x402",
+        "remote",
+        "streamable-http",
+        "base"
+      ],
+      "notes": "MCP tools/list works without a key. trade_postmortem/council_grade are deterministic rule-based graders, not multi-model AI. Paid route: POST https://anansi-haven.anansidata.workers.dev/v1/paid/council_grade (~$0.02 USDC on Base via x402)."
     }
   ]
 }
