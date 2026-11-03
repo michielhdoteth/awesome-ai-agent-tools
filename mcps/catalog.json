@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 185,
+  "totalServers": 186,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 16
+      "count": 17
     },
     {
       "name": "AI & Machine Learning",
@@ -3627,6 +3627,27 @@
         "journal",
         "oauth",
         "remote"
+      ]
+    },
+    {
+      "id": "ats-jobs-mcp",
+      "name": "ATS Jobs MCP",
+      "category": "Search",
+      "github": "https://github.com/GeminiGeorge22/ats-jobs-mcp",
+      "stars": 0,
+      "description": "New job postings since any date or window (24h, 7d, 30d) from Ashby, Greenhouse, Lever and SmartRecruiters job boards. Local stdio server; needs your own Apify API token.",
+      "install": "claude mcp add ats-jobs-mcp -e APIFY_TOKEN=your-token -- npx -y github:GeminiGeorge22/ats-jobs-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "jobs",
+        "recruiting",
+        "greenhouse",
+        "lever",
+        "ashby"
       ]
     }
   ]
