@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 16
+      "count": 17
     },
     {
       "name": "AI & Machine Learning",
@@ -3193,6 +3193,29 @@
         "startups",
         "saas",
         "product-discovery",
+        "remote"
+      ]
+    },
+    {
+      "id": "wheremind",
+      "name": "Wheremind",
+      "category": "Search",
+      "url": "https://wheremind.ai/mcp",
+      "website": "https://wheremind.ai",
+      "stars": 0,
+      "description": "Hosted remote MCP server that gives agents live places search, geocoding, nearby search and directions, so they look up real addresses and routes instead of guessing. Email-code sign-in from the client, no API keys to manage. Official registry id ai.wheremind/wheremind.",
+      "install": "claude mcp add --transport http wheremind https://wheremind.ai/mcp",
+      "license": "N/A",
+      "remote": "streamable-http",
+      "verified": false,
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "maps",
+        "geocoding",
+        "places",
+        "directions",
+        "location",
         "remote"
       ]
     },
