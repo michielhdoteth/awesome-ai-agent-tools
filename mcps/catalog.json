@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 192,
+  "totalServers": 193,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Marketing",
@@ -3778,6 +3778,27 @@
         "ecommerce",
         "sales",
         "market-research",
+        "data"
+      ]
+    },
+    {
+      "id": "sports-odds-mcp",
+      "name": "Sports Odds MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/GeminiGeorge22/sports-odds-mcp",
+      "stars": 1,
+      "description": "Live odds from Kambi sportsbooks (BetRivers, Unibet, Paf, Svenska Spel, ATG and more) in one call, with every book's price and the best price per outcome. Local stdio server; needs your own Apify API token.",
+      "install": "claude mcp add sports-odds-mcp -e APIFY_TOKEN=your-token -- npx -y github:GeminiGeorge22/sports-odds-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "sports",
+        "odds",
+        "betting",
+        "kambi",
         "data"
       ]
     }
