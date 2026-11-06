@@ -2,20 +2,20 @@
 
 Curated Model Context Protocol servers for AI-assisted development
 
-**188** entries across **19** categories.
+**194** entries across **19** categories.
 
 ## Categories
 
 - **Developer Tools** (24)
-- **Research & Data** (18)
-- **Search** (17)
+- **Research & Data** (21)
+- **Search** (18)
 - **AI & Machine Learning** (16)
 - **Agent Orchestration** (16)
 - **Communication** (14)
+- **Marketing** (12)
 - **Databases** (11)
-- **Marketing** (11)
 - **Security** (10)
-- **Finance** (8)
+- **Finance** (9)
 - **DevOps** (8)
 - **Browser Automation** (7)
 - **Monitoring** (7)
@@ -26,7 +26,7 @@ Curated Model Context Protocol servers for AI-assisted development
 - **Mobile** (2)
 - **Data Engineering** (1)
 
-## All 188 mcps
+## All 194 mcps
 
 | Name                               | Category              | Description                                                                                                                                                                                                                                                                                                                                               | Source                                                                                                                | Badges                                                                                                                                                                                                                                               |
 | ---------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -218,6 +218,12 @@ Curated Model Context Protocol servers for AI-assisted development
 | npmscan                            | Security              | Checks npm packages for confirmed malware, known vulnerabilities (OSV, GitHub advisories, NVD), maintainer changes and install scripts before an agent installs them; audits package.json, lockfiles and SBOMs. No API key.                                                                                                                               | [salemalem/npmscan-mcp-plugin](https://github.com/salemalem/npmscan-mcp-plugin)                                       | ![Stars](https://img.shields.io/github/stars/salemalem/npmscan-mcp-plugin?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/salemalem/npmscan-mcp-plugin?style=flat)                                       |
 | Cloud Alter Ego                    | AI & Machine Learning | Hosted remote MCP connector with OAuth that gives every AI chat your rules, profile, per-project journals and playbooks, kept as plain Markdown files in your own OneDrive, Google Drive, Dropbox, GitHub or Azure DevOps. The server does not store the content. The linked repo is the open source template.                                            | [SebastiaanBoon/cloud-alter-ego](https://github.com/SebastiaanBoon/cloud-alter-ego)                                   | ![Stars](https://img.shields.io/github/stars/SebastiaanBoon/cloud-alter-ego?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/SebastiaanBoon/cloud-alter-ego?style=flat)                                   |
 | Datacircle                         | Marketing             | Remote MCP server that finds the best GTM APIs for an agent, free with no key.                                                                                                                                                                                                                                                                            | [waynehamadi/datacircle-plugin](https://github.com/waynehamadi/datacircle-plugin)                                     | ![Stars](https://img.shields.io/github/stars/waynehamadi/datacircle-plugin?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/waynehamadi/datacircle-plugin?style=flat)                                     |
+| MailVeri MCP                       | Marketing             | Verify single emails and bulk lists from AI agents via the MailVeri API: SMTP, catch-all, disposable and role detection.                                                                                                                                                                                                                                  | [mailveri/mailveri-mcp](https://github.com/mailveri/mailveri-mcp)                                                     | ![Stars](https://img.shields.io/github/stars/mailveri/mailveri-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/mailveri/mailveri-mcp?style=flat)                                                     |
+| Anansi Haven                       | Finance               | Hosted remote MCP for trading agents with free rule-based trade_postmortem grading (no AI model calls) and a $0.02 USDC x402 paid twin on Base at /v1/paid/council_grade.                                                                                                                                                                                 | [kburrus64-max/anansi-haven](https://github.com/kburrus64-max/anansi-haven)                                           | ![Stars](https://img.shields.io/github/stars/kburrus64-max/anansi-haven?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/kburrus64-max/anansi-haven?style=flat)                                           |
+| Gov Tenders MCP                    | Research & Data       | Public-sector tenders, grants and awards (SAM.gov, Grants.gov, USAspending, UK Find a Tender, EU TED) plus Legistar city council agendas and minutes, each with its official source link. Local stdio server; needs your own Apify API token.                                                                                                             | [GeminiGeorge22/gov-tenders-mcp](https://github.com/GeminiGeorge22/gov-tenders-mcp)                                   | ![Stars](https://img.shields.io/github/stars/GeminiGeorge22/gov-tenders-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/GeminiGeorge22/gov-tenders-mcp?style=flat)                                   |
+| Etsy Sales MCP                     | Research & Data       | Etsy search results by keyword, marketplace and category plus daily sales counts and growth for any Etsy shop. Local stdio server; needs your own Apify API token.                                                                                                                                                                                        | [GeminiGeorge22/etsy-sales-mcp](https://github.com/GeminiGeorge22/etsy-sales-mcp)                                     | ![Stars](https://img.shields.io/github/stars/GeminiGeorge22/etsy-sales-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/GeminiGeorge22/etsy-sales-mcp?style=flat)                                     |
+| Sports Odds MCP                    | Research & Data       | Live odds from Kambi sportsbooks (BetRivers, Unibet, Paf, Svenska Spel, ATG and more) in one call, with every book's price and the best price per outcome. Local stdio server; needs your own Apify API token.                                                                                                                                            | [GeminiGeorge22/sports-odds-mcp](https://github.com/GeminiGeorge22/sports-odds-mcp)                                   | ![Stars](https://img.shields.io/github/stars/GeminiGeorge22/sports-odds-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/GeminiGeorge22/sports-odds-mcp?style=flat)                                   |
+| ATS Jobs MCP                       | Search                | New job postings since any date or window (24h, 7d, 30d) from Ashby, Greenhouse, Lever and SmartRecruiters job boards. Local stdio server; needs your own Apify API token.                                                                                                                                                                                | [GeminiGeorge22/ats-jobs-mcp](https://github.com/GeminiGeorge22/ats-jobs-mcp)                                         | ![Stars](https://img.shields.io/github/stars/GeminiGeorge22/ats-jobs-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/GeminiGeorge22/ats-jobs-mcp?style=flat)                                         |
 
 ---
 

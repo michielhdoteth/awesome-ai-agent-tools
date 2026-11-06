@@ -11,7 +11,7 @@
 
 Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
-**689** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**696** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -27,9 +27,9 @@ Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI to
 
 ## Skills
 
-101 skills across 9 categories: Development (33) · Productivity (18) · Design (11) · Content (10) · DevOps (9) · Testing (6) · Data (6) · Marketing (6) · Security (2)
+102 skills across 9 categories: Development (33) · Productivity (18) · Design (11) · Content (10) · DevOps (9) · Marketing (7) · Testing (6) · Data (6) · Security (2)
 
-**[Browse all 101 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
+**[Browse all 102 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
 
 Top 5 shown:
 
@@ -43,9 +43,9 @@ Top 5 shown:
 
 ## MCPs
 
-188 mcps across 19 categories: Developer Tools (24) · Research & Data (18) · Search (17) · AI & Machine Learning (16) · Agent Orchestration (16) · Communication (14) · Databases (11) · Marketing (11) · Security (10) · Finance (8) · DevOps (8) · Browser Automation (7) · Monitoring (7) · Official Reference (6) · Cloud Platforms (5) · Blockchain (4) · Design (3) · Mobile (2) · Data Engineering (1)
+194 mcps across 19 categories: Developer Tools (24) · Research & Data (21) · Search (18) · AI & Machine Learning (16) · Agent Orchestration (16) · Communication (14) · Marketing (12) · Databases (11) · Security (10) · Finance (9) · DevOps (8) · Browser Automation (7) · Monitoring (7) · Official Reference (6) · Cloud Platforms (5) · Blockchain (4) · Design (3) · Mobile (2) · Data Engineering (1)
 
-**[Browse all 188 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
+**[Browse all 194 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
 
 Top 5 shown:
 
