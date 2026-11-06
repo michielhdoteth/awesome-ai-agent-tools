@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-11-01",
-  "totalTools": 92,
+  "lastUpdated": "2026-11-03",
+  "totalTools": 93,
   "categories": [
     {
       "name": "Code Analysis",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Git Utilities",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Agent Memory",
@@ -187,6 +187,16 @@
       "stars": 1,
       "crossPlatform": true,
       "install": "npm install --ignore-scripts @netsujo/agent-role-contracts@1.0.0"
+    },
+    {
+      "id": "ponder",
+      "name": "Ponder",
+      "category": "Code Analysis",
+      "description": "Coverage-gated multi-pass review CLI and ledger that refuses stop until every unit is graded.",
+      "url": "https://github.com/Quinnod345/ponder",
+      "stars": 4,
+      "crossPlatform": true,
+      "install": "npx @quinnod345/ponder"
     },
     {
       "id": "lazygit",
@@ -970,6 +980,19 @@
       "crossPlatform": true,
       "install": "npm install -g mixdog",
       "website": "https://github.com/tribgames/mixdog",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "kane-cli",
+      "name": "Kane CLI",
+      "category": "AI Coding CLIs",
+      "description": "Verify any browser flow from your terminal in natural language. Real Chrome, evidence-backed.",
+      "url": "https://github.com/LambdaTest/kane-cli",
+      "stars": 263,
+      "crossPlatform": true,
+      "install": "npm install -g @testmuai/kane-cli",
+      "website": "https://www.testmuai.com/kane-cli/",
       "source": "github",
       "sourceType": "official"
     },
