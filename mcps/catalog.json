@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Data Engineering",
@@ -3651,6 +3651,23 @@
         "journal",
         "oauth",
         "remote"
+      ]
+    },
+    {
+      "id": "datacircle",
+      "name": "Datacircle",
+      "category": "Marketing",
+      "github": "https://github.com/waynehamadi/datacircle-plugin",
+      "stars": 2,
+      "description": "Remote MCP server that finds the best GTM APIs for an agent, free with no key.",
+      "install": "Remote endpoint: https://api.datacircle.dev/mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "gtm",
+        "api",
+        "benchmark",
+        "remote-mcp"
       ]
     }
   ]
