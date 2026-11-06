@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "lastUpdated": "2026-11-07",
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 18
+      "count": 19
     },
     {
       "name": "AI & Machine Learning",
@@ -3822,6 +3822,29 @@
         "lever",
         "ashby"
       ]
+    },
+    {
+      "id": "enhanciar-mcp",
+      "name": "Enhanciar",
+      "category": "Search",
+      "github": "https://github.com/enhanciar/enhanciar-mcp",
+      "website": "https://enhanciar.in",
+      "stars": 0,
+      "description": "Remote MCP server for Enhanciar, a company brain. Answers questions from your Slack, Gmail, Drive, Notion, Jira, Linear, GitHub, Zendesk and Postgres with a link to the source, and can propose a reply or ticket for a person to approve. Paid plans; bring your own AI key.",
+      "install": "claude mcp add --transport http --scope user enhanciar https://enhanciar.in/enhanciar/mcp/ --header \"Authorization: Bearer dh_your_key\"",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-07",
+      "tags": [
+        "search",
+        "knowledge",
+        "slack",
+        "notion",
+        "remote"
+      ],
+      "notes": "Hosted endpoint: https://enhanciar.in/enhanciar/mcp/ (Streamable HTTP). Needs an API key from a paid Enhanciar account. Official MCP Registry id: in.enhanciar/enhanciar."
     }
   ]
 }
