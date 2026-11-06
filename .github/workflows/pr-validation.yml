@@ -1,0 +1,102 @@
+name: Catalog PR Validation
+
+# Trusted validation gate for community (fork) pull requests.
+#
+# Why pull_request_target: workflows triggered by a plain `pull_request` from a
+# first-time contributor are held at "action_required" until a maintainer
+# clicks "Approve and run". The required check then never reports and the PR is
+# blocked forever. pull_request_target always runs, and its check runs DO
+# satisfy required status checks (GitHub docs: "Troubleshooting required
+# status checks").
+#
+# Safety: this workflow checks out the BASE commit only. It never checks out,
+# builds, or runs code from the pull request. PR data is read as JSON through
+# the API. The job token is read-only except for the report/auto-merge jobs,
+# which never execute PR code either.
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review, edited, labeled]
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: catalog-pr-validation-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  catalog-validation:
+    name: catalog-validation
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Check out base commit (trusted)
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Validate PR data (no fork code executed)
+        id: validate
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: node .github/scripts/pr-validate.js
+
+      - name: Publish actionable report
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPORT_PATH: ${{ steps.validate.outputs.report_path }}
+        run: node .github/scripts/pr-report.js
+
+      - name: Enforce validation result
+        if: steps.validate.outcome == 'failure'
+        run: |
+          echo "Catalog validation failed. See the PR comment for the exact file, entry and fix."
+          exit 1
+
+  auto-merge:
+    name: auto-merge-decision
+    needs: catalog-validation
+    if: always()
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Check out base commit (trusted)
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Enable auto-merge when safe
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.event.repository.name }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: node .github/scripts/auto-merge.js
