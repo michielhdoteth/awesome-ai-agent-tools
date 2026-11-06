@@ -2,11 +2,11 @@
 
 Essential CLI tools and utilities that enhance AI coding agent capabilities
 
-**94** entries across **15** categories.
+**93** entries across **15** categories.
 
 ## Categories
 
-- **AI Coding CLIs** (18)
+- **AI Coding CLIs** (17)
 - **Code Analysis** (13)
 - **Cloud & DevOps** (7)
 - **Formatting & Linting** (7)
@@ -22,7 +22,7 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 - **AI APIs** (3)
 - **Agent Security** (2)
 
-## All 94 tools
+## All 93 tools
 
 | Name                       | Category              | Description                                                                                                                                                                                                                          | Source                                                                                           | Badges                                                                                                                                                                                                                 |
 | -------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -106,7 +106,6 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 | YYLO Benchmark             | Agent Training & Eval | Isolated evaluation for task prompts and workflow YAML: private fresh-repository workspaces, deterministic or LLM-judge profiles, hash-linked receipts and manifests.                                                                | [yylo-dev/yylo-benchmark](https://github.com/yylo-dev/yylo-benchmark)                            | ![Stars](https://img.shields.io/github/stars/yylo-dev/yylo-benchmark?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/yylo-dev/yylo-benchmark?style=flat)                   |
 | LoopTroop                  | AI Coding CLIs        | Local orchestrator for coding agents: multi-model planning, retry loops, and isolated worktrees.                                                                                                                                     | [looptroop-ai/LoopTroop](https://github.com/looptroop-ai/LoopTroop)                              | ![Stars](https://img.shields.io/github/stars/looptroop-ai/LoopTroop?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/looptroop-ai/LoopTroop?style=flat)                     |
 | molt                       | AI Coding CLIs        | A coding agent that won't say done on a false claim. Verification on disk. Receipts for accepts and refusals. Terminal and desktop. OpenAI compatible or Anthropic.                                                                  | [solvyxtech/molt](https://github.com/solvyxtech/molt)                                            | ![Stars](https://img.shields.io/github/stars/solvyxtech/molt?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/solvyxtech/molt?style=flat)                                   |
-| ghostget                   | AI Coding CLIs        | Named web actions for AI agents: read a page, archive one media item, or use a connected account, without credentials or a browser.                                                                                                  | [hraness/ghostget](https://github.com/hraness/ghostget)                                          | ![Stars](https://img.shields.io/github/stars/hraness/ghostget?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hraness/ghostget?style=flat)                                 |
 | Ordewell                   | AI Coding CLIs        | Terminal CLI and TUI that turns one goal into an ordered, editable plan of coding agent tasks, each with its own runner, model and mode, and accepts a task as done only when its completion marker appears in that runner's output. | [ordewell/ordewell](https://github.com/ordewell/ordewell)                                        | ![Stars](https://img.shields.io/github/stars/ordewell/ordewell?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/ordewell/ordewell?style=flat)                               |
 | Orbi                       | AI Coding CLIs        | Open-source (AGPL-3.0) coding agent that turns labeled GitHub Issues into tested PRs, merged after a separate AI review.                                                                                                             | [orbi-build/orbi](https://github.com/orbi-build/orbi)                                            | ![Stars](https://img.shields.io/github/stars/orbi-build/orbi?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/orbi-build/orbi?style=flat)                                   |
 | APIClaw                    | AI APIs               | Flat-rate OpenAI-compatible AI API for multi-model applications, with plans from $19/month and 50 free trial requests.                                                                                                               | [apiclaw.biz](https://apiclaw.biz)                                                               |                                                                                                                                                                                                                        |

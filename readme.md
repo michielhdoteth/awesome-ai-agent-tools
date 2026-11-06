@@ -11,7 +11,7 @@
 
 Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
-**696** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**693** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -27,9 +27,9 @@ Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI to
 
 ## Skills
 
-102 skills across 9 categories: Development (33) · Productivity (18) · Design (11) · Content (10) · DevOps (9) · Marketing (7) · Testing (6) · Data (6) · Security (2)
+101 skills across 9 categories: Development (33) · Productivity (17) · Design (11) · Content (10) · DevOps (9) · Marketing (7) · Testing (6) · Data (6) · Security (2)
 
-**[Browse all 102 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
+**[Browse all 101 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
 
 Top 5 shown:
 
@@ -59,9 +59,9 @@ Top 5 shown:
 
 ## Agent Loops
 
-104 loops across 7 categories: engineering (53) · multi-agent (14) · evaluation (12) · meta (10) · operations (6) · design (6) · content (3)
+103 loops across 7 categories: engineering (53) · multi-agent (14) · evaluation (12) · meta (9) · operations (6) · design (6) · content (3)
 
-**[Browse all 104 loops in loops/](loops/)** · [catalog.json](loops/catalog.json)
+**[Browse all 103 loops in loops/](loops/)** · [catalog.json](loops/catalog.json)
 
 Top 5 shown:
 
@@ -139,9 +139,9 @@ Top 5 shown:
 
 ## Tools
 
-94 tools across 15 categories: AI Coding CLIs (18) · Code Analysis (13) · Cloud & DevOps (7) · Formatting & Linting (7) · Agent Training & Eval (7) · Git Utilities (6) · Package Managers (5) · Docker & Containers (5) · API Testing (5) · Agent Memory (4) · Database CLIs (4) · Monitoring (4) · Terminal Enhancement (4) · AI APIs (3) · Agent Security (2)
+93 tools across 15 categories: AI Coding CLIs (17) · Code Analysis (13) · Cloud & DevOps (7) · Formatting & Linting (7) · Agent Training & Eval (7) · Git Utilities (6) · Package Managers (5) · Docker & Containers (5) · API Testing (5) · Agent Memory (4) · Database CLIs (4) · Monitoring (4) · Terminal Enhancement (4) · AI APIs (3) · Agent Security (2)
 
-**[Browse all 94 tools in tools/](tools/)** · [catalog.json](tools/catalog.json)
+**[Browse all 93 tools in tools/](tools/)** · [catalog.json](tools/catalog.json)
 
 Top 5 shown:
 
