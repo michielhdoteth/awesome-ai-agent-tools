@@ -8,7 +8,7 @@
   "categories": [
     {
       "name": "Code Analysis",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Git Utilities",
@@ -187,6 +187,16 @@
       "stars": 1,
       "crossPlatform": true,
       "install": "npm install --ignore-scripts @netsujo/agent-role-contracts@1.0.0"
+    },
+    {
+      "id": "ponder",
+      "name": "Ponder",
+      "category": "Code Analysis",
+      "description": "Coverage-gated multi-pass review CLI and ledger that refuses stop until every unit is graded.",
+      "url": "https://github.com/Quinnod345/ponder",
+      "stars": 4,
+      "crossPlatform": true,
+      "install": "npx @quinnod345/ponder"
     },
     {
       "id": "lazygit",
