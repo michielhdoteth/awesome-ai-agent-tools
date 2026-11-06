@@ -1,0 +1,43 @@
+name: Maintenance PR Auto-merge
+
+# If a MAINTENANCE_TOKEN is configured, finish the loop: after the trusted gate
+# validates the generated-docs PR, merge it. Without the token this workflow is
+# a no-op and the owner merges the single maintenance PR on the weekly visit.
+
+on:
+  workflow_run:
+    workflows: ["Catalog PR Validation"]
+    types: [completed]
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+concurrency:
+  group: maintenance-automerge
+  cancel-in-progress: false
+
+jobs:
+  merge:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'automation/catalog-maintenance'
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Merge the validated maintenance PR
+        env:
+          GH_TOKEN: ${{ secrets.MAINTENANCE_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN:-}" ]; then
+            echo "MAINTENANCE_TOKEN is not configured; leaving the maintenance PR for the weekly owner merge."
+            exit 0
+          fi
+          pr=$(gh pr list --repo "$REPO" --head automation/catalog-maintenance --state open --json number --jq '.[0].number')
+          if [ -z "$pr" ] || [ "$pr" = "null" ]; then
+            echo "No open maintenance PR; nothing to merge."
+            exit 0
+          fi
+          gh pr merge "$pr" --repo "$REPO" --squash --admin --delete-branch=false

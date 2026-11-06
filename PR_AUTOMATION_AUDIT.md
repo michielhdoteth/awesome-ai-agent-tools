@@ -99,6 +99,13 @@ fix is in "Remaining manual settings".
 | `.github/workflows/pr-maintenance.yml` | Scheduled sweep every 30 minutes, on `main` push, and on demand: sync stale branches, then re-evaluate auto-merge. |
 | `tests/catalog-validation.test.js` | 16 regression tests for the schema rules and the live catalogs. |
 | `tests/auto-merge.test.js` | 14 regression tests for the auto-merge gate. |
+| `.github/scripts/lib/digest.js` + `weekly-digest.js` | Pure digest classifier/renderer plus the CLI that upserts the weekly issue. |
+| `.github/scripts/automation-alert.js` | One issue per failing critical workflow, auto-closed on recovery. |
+| `.github/workflows/weekly-digest.yml` | Monday digest issue. |
+| `.github/workflows/automation-alert.yml` | Failure alerting for PR Maintenance, Catalog Maintenance and Check Links. |
+| `.github/workflows/triage.yml` | Daily sync + auto-merge sweep, optional conflict healing with a PAT. |
+| `.github/workflows/maintenance-automerge.yml` | Optional PAT-based merge of the validated maintenance PR. |
+| `tests/digest.test.js` | 12 tests for digest classification and rendering. |
 | `contributing.md` | Documents the trusted gate, the deterministic checks, and squash auto-merge after one approval. |
 
 ## How the pipeline works now
@@ -176,7 +183,37 @@ Issues:
 - 14 community PRs merged through the gate after their `catalog-validation`
   check reported success.
 
-## Remaining manual settings and recommendations
+## Weekly unattended operation
+
+The system is designed so the owner can look once a week:
+
+| Workflow | Cadence | Purpose |
+|---|---|---|
+| `pr-validation.yml` | every PR event | Trusted required check + actionable comment |
+| `pr-maintenance.yml` | hourly and on `main` push | Sync stale branches, force re-validation, re-evaluate auto-merge |
+| `triage.yml` | daily 06:00 UTC + manual | Sync + auto-merge sweep; heals conflicts when a PAT is configured |
+| `weekly-digest.yml` | Monday 08:00 UTC | Upserts one "Weekly maintainer digest" issue with every queue |
+| `automation-alert.yml` | on critical workflow completion | Opens one issue per failing critical workflow; closes on recovery |
+| `maintenance-automerge.yml` | on gate completion for the maintenance branch | Merges the generated-docs PR when a PAT is configured |
+| `catalog-maintenance.yml` | weekly + on catalog changes | Refreshes metadata and regenerates docs |
+| `check-links.yml` | Monday 09:00 UTC | Opens/updates the broken-link issue |
+
+Weekly visit:
+
+1. Open the **Weekly maintainer digest** issue. It lists PRs waiting on
+   approval, PRs needing author action, in-progress PRs, automation failures,
+   the maintenance PR, and the broken-link queue.
+2. Approve the green PRs listed. Auto-merge finishes them.
+3. If conflicts are listed and no PAT is configured, run the one-line heal
+   command printed in the digest.
+4. Read an "Automation failure" issue only if one is open.
+
+Everything else runs without intervention: validation, comments, labels, branch
+sync, forced re-validation, squash merge of approved PRs, link audits, the
+digest, and failure alerts. The digest and alert issues are idempotent (markers),
+so repeated runs never create duplicates.
+
+
 
 1. **Keep one human approval (recommended).** `main` requires one approving
    review, dismisses stale approvals, and requires approval of the last push.

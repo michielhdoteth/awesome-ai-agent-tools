@@ -1,0 +1,44 @@
+name: Automation Alert
+
+# Turns silent breakage into one issue per critical workflow. The issue closes
+# automatically on the next successful scheduled or push run.
+
+on:
+  workflow_run:
+    workflows: ["PR Maintenance", "Catalog Maintenance", "Check Links"]
+    types: [completed]
+
+permissions:
+  contents: read
+  issues: write
+  actions: read
+
+concurrency:
+  group: automation-alert-${{ github.event.workflow_run.name }}
+  cancel-in-progress: true
+
+jobs:
+  alert:
+    # PR-triggered validation failures are normal and are reported on the PR.
+    if: github.event.workflow_run.event != 'pull_request'
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Open or close the automation health issue
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          WORKFLOW_NAME: ${{ github.event.workflow_run.name }}
+          CONCLUSION: ${{ github.event.workflow_run.conclusion }}
+          RUN_URL: ${{ github.event.workflow_run.html_url }}
+          RUN_AT: ${{ github.event.workflow_run.created_at }}
+        run: node .github/scripts/automation-alert.js
