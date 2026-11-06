@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 185,
+  "totalServers": 186,
   "categories": [
     {
       "name": "Official Reference",
@@ -40,7 +40,7 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Agent Orchestration",
@@ -3626,6 +3626,28 @@
         "rules",
         "journal",
         "oauth",
+        "remote"
+      ]
+    },
+    {
+      "id": "ilook-face-analysis",
+      "name": "iLook Face Analysis",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/harshul1404/ilook-mcp",
+      "stars": 0,
+      "description": "Hosted remote MCP server for privacy-first face analysis of one user-provided photo: face-shape context, symmetry signals, proportions, Golden Ratio phi context, and hairstyle and colour direction. Free, no API key. It does not identify people, create biometric profiles or make medical decisions.",
+      "install": "claude mcp add --transport http ilook https://www.ilook.fit/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://www.ilook.fit/",
+      "lastUpdated": "2026-11-06",
+      "tags": [
+        "face-analysis",
+        "computer-vision",
+        "image",
         "remote"
       ]
     }
