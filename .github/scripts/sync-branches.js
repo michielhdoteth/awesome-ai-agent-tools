@@ -18,7 +18,7 @@ const BASE = repoSlug();
 const MAX_UPDATES = Number(process.env.MAX_UPDATES || 25);
 
 const QUERY = `
-query($cursor: String) {
+query($owner: String!, $name: String!, $cursor: String) {
   repository(owner: $owner, name: $name) {
     pullRequests(first: 50, states: OPEN, after: $cursor) {
       pageInfo { hasNextPage endCursor }

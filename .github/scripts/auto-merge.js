@@ -93,7 +93,7 @@ function scope(pr) {
 }
 
 const OPEN_QUERY = `
-query($cursor: String) {
+query($owner: String!, $name: String!, $cursor: String) {
   repository(owner: $owner, name: $name) {
     pullRequests(first: 50, states: OPEN, after: $cursor) {
       pageInfo { hasNextPage endCursor }
