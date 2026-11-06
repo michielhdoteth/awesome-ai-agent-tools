@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 191,
+  "totalServers": 192,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 19
+      "count": 20
     },
     {
       "name": "Marketing",
@@ -3758,6 +3758,27 @@
         "grants",
         "procurement",
         "open-data"
+      ]
+    },
+    {
+      "id": "etsy-sales-mcp",
+      "name": "Etsy Sales MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/GeminiGeorge22/etsy-sales-mcp",
+      "stars": 1,
+      "description": "Etsy search results by keyword, marketplace and category plus daily sales counts and growth for any Etsy shop. Local stdio server; needs your own Apify API token.",
+      "install": "claude mcp add etsy-sales-mcp -e APIFY_TOKEN=your-token -- npx -y github:GeminiGeorge22/etsy-sales-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "etsy",
+        "ecommerce",
+        "sales",
+        "market-research",
+        "data"
       ]
     }
   ]
