@@ -110,12 +110,19 @@ async function main() {
     p.headRepository);
 
   const candidates = [];
+  let stuck = 0;
   for (const pr of possible) {
     const { data: full } = await request(`/repos/${BASE}/pulls/${pr.number}`);
     if (full.mergeable_state === 'behind') candidates.push({ ...pr, full });
+    // Conflicting PRs that maintainers cannot edit can never be healed; label
+    // and comment so the author knows what to do (idempotent).
+    if (full.mergeable_state === 'dirty' && !full.maintainer_can_modify) {
+      await markNeedsAuthor(pr.number);
+      stuck += 1;
+    }
   }
 
-  console.log(`Open PRs: ${prs.length}; behind base: ${candidates.length}`);
+  console.log(`Open PRs: ${prs.length}; behind base: ${candidates.length}; needs author: ${stuck}`);
 
   let updated = 0;
   let skipped = 0;
