@@ -187,7 +187,18 @@ async function main() {
     humanReviewReasons.push(`contains unrelated files: ${unrelated.map((f) => f.path).join(', ')}`);
   }
   if (!catalogs.length && !readmes.length) {
-    errors.push('No catalog or generated README files were changed. Catalog contributions must edit a `*/catalog.json` file.');
+    // A community catalog contribution must change a catalog. Maintainer/
+    // infrastructure PRs (same-repo branches or owner/member/collaborator
+    // authors) are allowed through, but are permanently excluded from
+    // auto-merge by the unsafe-scope rule and still need a human decision.
+    const maintainerPr = headRepo === BASE || ['OWNER', 'MEMBER', 'COLLABORATOR'].includes(pr.author_association || '');
+    if (maintainerPr) {
+      humanReview = true;
+      humanReviewReasons.push('infrastructure-only PR with no catalog changes');
+      notes.push('No catalog or README files changed. This is an infrastructure PR and requires a maintainer decision; it cannot auto-merge.');
+    } else {
+      errors.push('No catalog or generated README files were changed. Catalog contributions must edit a `*/catalog.json` file.');
+    }
   }
 
   const headTexts = {};
