@@ -136,15 +136,13 @@ async function main() {
   if (failures) console.error(`Sweep finished with ${failures} error(s).`);
 }
 
-async function decide(owner, name, number) {
-  const data = await graphql(QUERY, { owner, name, number });
-  const pr = data.repository.pullRequest;
-  if (!pr) { console.log(`PR #${number}: not found, skipping`); return; }
-
+/**
+ * Pure decision: given a GraphQL pull request object, decide whether it may be
+ * queued for auto-merge. Exported for regression tests.
+ */
+function evaluate(pr) {
   const check = checkState(pr);
   const { unsafe, hasCatalog } = scope(pr);
-  const alreadyEnabled = Boolean(pr.autoMergeRequest);
-
   const reasons = [];
   if (pr.isDraft) reasons.push('draft');
   if (pr.mergeable !== 'MERGEABLE') reasons.push(`mergeable=${pr.mergeable}`);
@@ -154,6 +152,16 @@ async function decide(owner, name, number) {
   if (check !== 'SUCCESS') reasons.push(`check=${check}`);
   if (!hasCatalog) reasons.push('no catalog file changed');
   if (unsafe.length) reasons.push(`unsafe scope: ${unsafe.map((f) => f.path).join(', ')}`);
+  return { check, unsafe, hasCatalog, reasons, eligible: reasons.length === 0 };
+}
+
+async function decide(owner, name, number) {
+  const data = await graphql(QUERY, { owner, name, number });
+  const pr = data.repository.pullRequest;
+  if (!pr) { console.log(`PR #${number}: not found, skipping`); return; }
+
+  const { unsafe, reasons } = evaluate(pr);
+  const alreadyEnabled = Boolean(pr.autoMergeRequest);
 
   // Unsafe scope can never auto-merge, and must not leave a stale queue entry.
   if (unsafe.length && alreadyEnabled) {
@@ -185,7 +193,11 @@ async function decide(owner, name, number) {
   }
 }
 
-main().catch((e) => {
-  console.error(`Auto-merge decision failed: ${e.message}`);
-  process.exit(1);
-});
+module.exports = { evaluate };
+
+if (require.main === module) {
+  main().catch((e) => {
+    console.error(`Auto-merge decision failed: ${e.message}`);
+    process.exit(1);
+  });
+}

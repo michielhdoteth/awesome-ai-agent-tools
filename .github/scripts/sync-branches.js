@@ -48,6 +48,28 @@ async function allOpenPrs(owner, name) {
   return out;
 }
 
+async function sleepMs(ms) { return new Promise((r) => setTimeout(r, ms)); }
+
+/**
+ * A branch update does not reliably create a pull_request_target run, so the
+ * required check can stay "missing" forever. If no catalog-validation check
+ * appears for the new head, force one with a close/reopen (the `reopened`
+ * event always triggers the trusted gate).
+ */
+async function ensureGateRun(prNumber, headSha) {
+  for (let i = 0; i < 3; i += 1) {
+    const { data } = await request(`/repos/${BASE}/commits/${headSha}/check-runs?per_page=100`);
+    const hit = (data.check_runs || []).some((c) => c.name === 'catalog-validation');
+    if (hit) return true;
+    await sleepMs(10000);
+  }
+  await request(`/repos/${BASE}/pulls/${prNumber}`, { method: 'PATCH', body: { state: 'closed' }, allowStatus: [422] });
+  await sleepMs(2000);
+  await request(`/repos/${BASE}/pulls/${prNumber}`, { method: 'PATCH', body: { state: 'open' }, allowStatus: [422] });
+  console.log(`PR #${prNumber}: no gate run after sync; reopened to trigger catalog-validation`);
+  return false;
+}
+
 async function main() {
   const [owner, name] = BASE.split('/');
   const prs = await allOpenPrs(owner, name);
@@ -85,6 +107,9 @@ async function main() {
       });
       console.log(`PR #${pr.number}: updated branch from base`);
       updated += 1;
+      const { data: after } = await request(`/repos/${BASE}/pulls/${pr.number}`);
+      const newSha = after.head && after.head.sha;
+      if (newSha) await ensureGateRun(pr.number, newSha);
     } catch (e) {
       if (e.status === 422 || e.status === 409) {
         console.log(`PR #${pr.number}: cannot update automatically (${e.message.slice(0, 160)}); needs the author to rebase`);
