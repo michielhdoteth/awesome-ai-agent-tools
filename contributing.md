@@ -23,10 +23,10 @@ If this catalog is useful, consider starring it or sharing it with another agent
 This repo uses a catalog-first workflow so counts stay consistent:
 
 1. **You edit** `*/catalog.json` (add/update/remove entries)
-2. **PR validation** runs `.github/scripts/validate-catalogs.js` to catch errors
-3. **Locally** run `.github/scripts/generate-readme.js` to preview generated documentation
-4. **Maintainers** include generated README and periodic metadata refreshes with one reviewed maintenance PR
-5. **GitHub Actions** validates catalog PRs; it does not push generated changes directly to `main`
+2. **A trusted validator runs automatically** on every PR, including first-time fork PRs. It reads your catalog data through the API (it does not run your code), checks schema, duplicates, categories, links and generated README consistency, and posts one actionable comment.
+3. **Locally** run `.github/scripts/validate-catalogs.js` to preview the same verdict, and `.github/scripts/generate-readme.js` to preview generated docs.
+4. **Maintainers** regenerate READMEs and refresh metadata in one reviewed maintenance PR; you do not need to include generated files.
+5. **After one human approval**, a passing PR is squash-merged automatically. Stale branches are brought up to date automatically.
 
 **You never need to edit readme.md manually.** Just update the catalog.json files.
 
@@ -103,13 +103,15 @@ Per-catalog link fields:
 
 ### Validation
 
-All PRs are automatically validated by GitHub Actions:
+All PRs are automatically validated by GitHub Actions. The required `catalog-validation` check is produced by a trusted workflow that always runs, even before a maintainer approves workflow runs for a first-time contributor:
 
 1. **JSON syntax** - All catalog.json files must be valid JSON
 2. **Schema validation** - Required fields (id, name, category, description) must be present
-3. **Duplicate detection** - No duplicate IDs within a catalog
-4. **ID format** - Must be lowercase kebab-case (e.g., `my-skill-name`)
-5. **Star counts** - Must be numbers (not strings)
+3. **Duplicate detection** - No duplicate IDs, and no re-submission of an entry that already exists (same source repository + same name). Multiple different entries from one repository are fine.
+4. **ID and category format** - Lowercase kebab-case ID; category must exist in the target catalog
+5. **Source legitimacy** - GitHub source must be a real, non-archived repository; private/loopback/metadata hosts are rejected
+6. **Generated READMEs** - If you include one, it must match `generate-readme.js`; hand-edited READMEs fail
+7. **Scope** - Only catalog and generated documentation files may change in a catalog PR
 
 You can also validate locally:
 
@@ -294,6 +296,8 @@ Adds [ITEM_NAME] to the [CATEGORY] catalog.
 ## Review and merge
 
 Each contribution needs one approval from a person other than the PR author. Review the exact catalog diff, confirm the source and claims, and verify the required `catalog-validation` check passes. A useful approval says **Go** and gives one brief reason tied to the review (for example: `Go — source is active, the license and install path are documented, and validation passes.`). CI results and automated reviews do not count as human approval. The PR author cannot approve their own PR.
+
+Once approved, a PR that passes validation is squash-merged automatically; do not merge it by hand. PRs that touch CI, scripts, or unrelated files are never auto-merged and require an explicit maintainer decision.
 
 Keep generated documentation and metadata maintenance consolidated into maintainer automation; contributors should not create separate README-only PRs for catalog entries.
 
