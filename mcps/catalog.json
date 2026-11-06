@@ -20,7 +20,7 @@
     },
     {
       "name": "Databases",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Cloud Platforms",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 16
+      "count": 17
     },
     {
       "name": "AI & Machine Learning",
@@ -523,6 +523,28 @@
         "auth",
         "storage"
       ]
+    },
+    {
+      "id": "scribase",
+      "name": "Scribase MCP",
+      "category": "Databases",
+      "github": "https://github.com/caelum0x/scribase-agents",
+      "stars": 0,
+      "description": "Remote MCP server for a hosted backend (Postgres, GoTrue-based auth, storage, realtime, edge functions) that a coding agent can both write code against and actually provision, speaking the supabase-js API",
+      "install": "claude mcp add --transport http scribase https://api.scribase.com/mcp",
+      "license": "Unknown",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-03",
+      "tags": [
+        "postgres",
+        "backend",
+        "auth",
+        "storage",
+        "realtime"
+      ],
+      "notes": "Hosted and early access; the underlying backend fork is private, self-hosting is enterprise BYOC by request today, not a public download. Flat $25/project/month, no project cap."
     },
     {
       "id": "mongodb",
@@ -3507,6 +3529,30 @@
         "free-tier"
       ],
       "notes": "Free search tier: up to 25 searches/day per IP, subject to shared daily capacity. Extract, render and opt-in paid search cost $0.005/call in USDC on Base via the Pocket Network Agentic Portal (x402). Claude Desktop one-click bundle (.mcpb) in GitHub releases. Official MCP Registry id: io.github.agentsearchhq-coder/agentsearch-mcp."
+    },
+    {
+      "id": "keenable-mcp",
+      "name": "Keenable MCP",
+      "category": "Search",
+      "github": "https://github.com/keenableai/keenable-mcp",
+      "website": "https://keenable.ai",
+      "stars": 6,
+      "description": "Live web search and page fetch for agents over Keenable's own web index: ranked results with site and publish-date filters, and pages as clean markdown or just the part an extraction prompt asks for. Works with no API key on a shared public tier.",
+      "install": "npx -y @keenable/mcp",
+      "license": "MIT",
+      "verified": false,
+      "npmPackage": "@keenable/mcp",
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-03",
+      "tags": [
+        "search",
+        "web",
+        "fetch",
+        "markdown",
+        "free-tier"
+      ],
+      "notes": "Hosted endpoint: https://api.keenable.ai/mcp (Streamable HTTP). Without a key: 1,000 requests/hour per IP. An optional X-API-Key header removes the hourly cap. Tools: search_web_pages, fetch_page_content. Official MCP Registry id: ai.keenable/web-search."
     },
     {
       "id": "brewpage-mcp",
