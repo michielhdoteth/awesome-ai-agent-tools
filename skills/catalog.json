@@ -3,7 +3,7 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-10-23",
+  "lastUpdated": "2026-11-05",
   "totalSkills": 101,
   "categories": [
     {
@@ -36,11 +36,11 @@
     },
     {
       "name": "Data",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Security",
-      "count": 3
+      "count": 2
     }
   ],
   "sources": [
@@ -1182,7 +1182,7 @@
     },
     {
       "id": "iuliandita-skills",
-      "name": "Iulian Dit\u0103 Skills",
+      "name": "Iulian Dită Skills",
       "source": "iuliandita/skills",
       "category": "DevOps",
       "installs": 2,
@@ -1768,11 +1768,11 @@
     {
       "id": "angles-video-skill",
       "name": "Angles Video",
-      "source": "anglesvideo/angles-video-skill",
+      "source": "anglesvideo/angles-video-skills",
       "category": "Content",
       "installs": 0,
       "description": "Turn a software repository into three selling angles and a launch-ready Angles video from Codex or Claude Code.",
-      "install": "npx skills add anglesvideo/angles-video-skill",
+      "install": "npx skills add anglesvideo/angles-video-skills",
       "license": "MIT",
       "verified": false,
       "local": false,
@@ -1911,58 +1911,36 @@
       ]
     },
     {
-      "id": "bounty-guard",
-      "name": "BountyGuard",
-      "source": "doomsday-network/bounty-guard",
-      "category": "Security",
-      "description": "Audits GitHub bounty issues for cryptographic escrow locks, maintainer association, and prompt-injection traps before an agent writes code.",
-      "install": "npx skills add doomsday-network/bounty-guard",
+      "id": "computefirst",
+      "name": "ComputeFirst",
+      "source": "321zz321/computefirst-skill",
+      "category": "Data",
+      "description": "Agent skill for deterministic calculations, validation and data transforms via free no-key MCP.",
+      "install": "/plugin marketplace add 321zz321/computefirst-skill\n/plugin install computefirst@computefirst",
       "license": "MIT",
-      "verified": false,
-      "local": false,
       "tags": [
-        "security",
-        "bounties",
-        "escrow",
-        "github",
-        "audit"
-      ]
-    },
-    {
-      "id": "web3-agent-skills",
-      "name": "Web3 Agent Skills",
-      "source": "doomsday-network/web3-agent-skills",
-      "category": "Development",
-      "description": "Self-custodial Web3, Proof-of-Work mining, and Base Mainnet ERC-20 verification skills for autonomous coding agents.",
-      "install": "npx skills add doomsday-network/web3-agent-skills",
-      "license": "MIT",
-      "verified": false,
-      "local": false,
-      "tags": [
-        "web3",
-        "blockchain",
-        "base",
-        "escrow",
+        "computation",
+        "validation",
+        "data",
         "mcp"
       ]
     },
     {
-      "id": "doom-pay",
-      "name": "DoomPay 3-Line Checkout & Verification",
-      "source": "doomsday-network/doom-pay",
+      "id": "faber-language",
+      "name": "Faber Language",
+      "source": "faberlang/faberlang.dev",
       "category": "Development",
-      "installs": 120,
-      "description": "Stripe-style 3-line non-custodial crypto checkout SDK (/v1/checkout/sessions, pay.js) and on-chain payment verifier for AI agents and web apps.",
-      "install": "npx skills add doomsday-network/doom-pay --skill doom-pay",
-      "license": "MIT",
-      "verified": true,
+      "installs": 0,
+      "description": "Write and check Faber Romanus programs: mechanical grammar, multi-locale surface, emits Rust/TS/Go/Swift and more. Install CLI + four skills from faberlang.dev.",
+      "install": "npx skills add https://faberlang.dev --skill language",
+      "license": "MIT OR Apache-2.0",
+      "verified": false,
       "local": false,
       "tags": [
-        "payments",
-        "checkout",
-        "web3",
-        "base",
-        "stripe"
+        "programming-language",
+        "compiler",
+        "coding-agents",
+        "multi-target"
       ]
     }
   ]

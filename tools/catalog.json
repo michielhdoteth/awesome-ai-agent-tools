@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-10-24",
-  "totalTools": 91,
+  "lastUpdated": "2026-11-03",
+  "totalTools": 93,
   "categories": [
     {
       "name": "Code Analysis",
-      "count": 13
+      "count": 12
     },
     {
       "name": "Git Utilities",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 15
+      "count": 18
     },
     {
       "name": "Agent Memory",
@@ -44,11 +44,11 @@
     },
     {
       "name": "API Testing",
-      "count": 6
+      "count": 5
     },
     {
       "name": "Monitoring",
-      "count": 5
+      "count": 4
     },
     {
       "name": "Terminal Enhancement",
@@ -61,6 +61,10 @@
     {
       "name": "AI APIs",
       "count": 3
+    },
+    {
+      "name": "Agent Security",
+      "count": 2
     }
   ],
   "tools": [
@@ -938,41 +942,74 @@
       "id": "system-one-api",
       "name": "System One API",
       "category": "AI APIs",
-      "description": "Unified multi-provider AI API for agents and apps. Open SDK @system-one-ai/core. Early-stage (GitHub stars\u22482).",
+      "description": "Unified multi-provider AI API for agents and apps. Open SDK @system-one-ai/core. Early-stage (GitHub stars≈2).",
       "url": "https://github.com/ziyu/system-one-sdk",
       "stars": 2,
       "crossPlatform": true,
-      "install": "npm install @system-one-ai/core \u2014 docs https://system-one.dev/en/api"
+      "install": "npm install @system-one-ai/core — docs https://system-one.dev/en/api"
     },
     {
-      "id": "github-bounty-scanner",
-      "name": "GitHub Bounty Scanner",
-      "category": "Code Analysis",
-      "description": "Zero-dependency CLI scanner that discovers active GitHub bounties and filters out fake bounty farms and prompt-injection honeypots.",
-      "url": "https://github.com/doomsday-network/github-bounty-scanner",
-      "stars": 6,
-      "crossPlatform": true,
-      "install": "git clone https://github.com/doomsday-network/github-bounty-scanner.git && python scan_bounties.py"
-    },
-    {
-      "id": "cuda-gpu-miner",
-      "name": "DoomHash GPU/CPU Miner",
-      "category": "Monitoring",
-      "description": "High-throughput OpenCL/CUDA GPU and multi-core Go/Python CPU Proof-of-Work miner for Doomsday Network (DOOM / wDOOM on Base).",
-      "url": "https://github.com/doomsday-network/cuda-gpu-miner",
-      "stars": 6,
-      "crossPlatform": true,
-      "install": "git clone https://github.com/doomsday-network/cuda-gpu-miner.git && python mine_pool.py --address <DOOM_ADDR>"
-    },
-    {
-      "id": "doom-pay",
-      "name": "DoomPay",
-      "category": "API Testing",
-      "description": "Stripe-style 3-line self-custodial crypto checkout SDK (/pay.js) and /v1/checkout/sessions verification CLI for DOOM (L1) and wDOOM (Base).",
-      "url": "https://github.com/doomsday-network/doom-pay",
+      "id": "talavine-code",
+      "name": "Talavine Code",
+      "category": "AI Coding CLIs",
+      "description": "Free MIT coding workspace with terminal and desktop interfaces and configurable model providers.",
+      "url": "https://github.com/scrossen/talavine-code",
       "stars": 1,
       "crossPlatform": true,
-      "install": "git clone https://github.com/doomsday-network/doom-pay.git && python doompay.py --help"
+      "install": "https://github.com/scrossen/talavine-code#start-with-the-terminal",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "mixdog",
+      "name": "Mixdog",
+      "category": "AI Coding CLIs",
+      "description": "Open-source (Apache-2.0) desktop coding agent where a lead model plans and cheaper models handle search, edits and review.",
+      "url": "https://github.com/tribgames/mixdog",
+      "stars": 211,
+      "crossPlatform": true,
+      "install": "npm install -g mixdog",
+      "website": "https://github.com/tribgames/mixdog",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "kane-cli",
+      "name": "Kane CLI",
+      "category": "AI Coding CLIs",
+      "description": "Verify any browser flow from your terminal in natural language. Real Chrome, evidence-backed.",
+      "url": "https://github.com/LambdaTest/kane-cli",
+      "stars": 263,
+      "crossPlatform": true,
+      "install": "npm install -g @testmuai/kane-cli",
+      "website": "https://www.testmuai.com/kane-cli/",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "hol-guard",
+      "name": "HOL Guard",
+      "category": "Agent Security",
+      "description": "Local-first security checks for AI coding agents, including tool-call approvals, secret access, prompt injection, and plugin or MCP risks.",
+      "url": "https://github.com/hashgraph-online/hol-guard",
+      "stars": 1004,
+      "crossPlatform": true,
+      "install": "pipx install hol-guard",
+      "website": "https://hol.org/guard",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "whatileaked",
+      "name": "whatileaked",
+      "category": "Agent Security",
+      "description": "Scans local Claude Code, Codex and Cursor transcripts for credentials already sent to the model, using the gitleaks rule set. No network, zero dependencies.",
+      "url": "https://github.com/selan-ai/whatileaked",
+      "stars": 7,
+      "crossPlatform": true,
+      "install": "npx whatileaked scan",
+      "source": "github",
+      "sourceType": "official"
     }
   ]
 }

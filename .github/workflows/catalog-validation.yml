@@ -1,0 +1,52 @@
+name: Catalog Validation (full checkout)
+
+# Advisory, defence-in-depth check that actually checks out the pull request and
+# runs the validator against the working tree. Unlike the trusted
+# pull_request_target gate (pr-validation.yml) this CAN be held at
+# "action_required" for first-time contributors; it is intentionally NOT a
+# required check, so that never blocks a legitimate PR.
+#
+# The read-only token and `persist-credentials: false` mean fork code runs
+# without secrets or write access.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: catalog-validation-full-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  catalog-validation-full:
+    name: catalog-validation-full
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Verify README generation is deterministic
+        run: node .github/scripts/generate-readme.js
+
+      - name: Validate catalog JSON syntax
+        run: |
+          set -euo pipefail
+          for f in */catalog.json; do
+            python3 -m json.tool "$f" > /dev/null
+          done
+
+      - name: Validate catalog entries
+        run: node .github/scripts/validate-catalogs.js
+
+      - name: Run automation regression tests
+        run: node --test tests/*.test.js

@@ -9,9 +9,9 @@
 
 </div>
 
-Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and CLI tools for AI coding assistants.
+Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
-**644** installable components across **8** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**682** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -23,12 +23,13 @@ Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, and CL
 - [Plugins](#plugins)
 - [Prompts](#prompts)
 - [Tools](#tools)
+- [Claude Code Mods](#claude-code-mods)
 
 ## Skills
 
-97 skills across 9 categories: Development (32) · Productivity (18) · Design (11) · Content (10) · DevOps (8) · Marketing (6) · Testing (5) · Data (5) · Security (2)
+100 skills across 9 categories: Development (32) · Productivity (18) · Design (11) · Content (10) · DevOps (9) · Testing (6) · Data (6) · Marketing (6) · Security (2)
 
-**[Browse all 97 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
+**[Browse all 100 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
 
 Top 5 shown:
 
@@ -42,9 +43,9 @@ Top 5 shown:
 
 ## MCPs
 
-163 mcps across 19 categories: Developer Tools (21) · Agent Orchestration (15) · AI & Machine Learning (14) · Search (13) · Communication (12) · Research & Data (12) · Databases (10) · Security (9) · DevOps (8) · Marketing (8) · Browser Automation (7) · Monitoring (7) · Official Reference (6) · Finance (6) · Cloud Platforms (5) · Blockchain (4) · Design (3) · Mobile (2) · Data Engineering (1)
+185 mcps across 19 categories: Developer Tools (24) · Research & Data (18) · Search (16) · AI & Machine Learning (16) · Agent Orchestration (16) · Communication (14) · Databases (10) · Marketing (10) · Security (10) · Finance (8) · DevOps (8) · Browser Automation (7) · Monitoring (7) · Official Reference (6) · Cloud Platforms (5) · Blockchain (4) · Design (3) · Mobile (2) · Data Engineering (1)
 
-**[Browse all 163 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
+**[Browse all 185 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
 
 Top 5 shown:
 
@@ -58,9 +59,9 @@ Top 5 shown:
 
 ## Agent Loops
 
-103 loops across 7 categories: engineering (53) · multi-agent (14) · evaluation (11) · meta (10) · operations (6) · design (6) · content (3)
+104 loops across 7 categories: engineering (53) · multi-agent (14) · evaluation (12) · meta (10) · operations (6) · design (6) · content (3)
 
-**[Browse all 103 loops in loops/](loops/)** · [catalog.json](loops/catalog.json)
+**[Browse all 104 loops in loops/](loops/)** · [catalog.json](loops/catalog.json)
 
 Top 5 shown:
 
@@ -74,9 +75,9 @@ Top 5 shown:
 
 ## Subagents
 
-31 subagents across 5 categories: Subagent Collection (15) · Agent Harness (6) · Official SDK (4) · Platform Format (4) · Curated Directory (2)
+32 subagents across 5 categories: Subagent Collection (15) · Agent Harness (7) · Official SDK (4) · Platform Format (4) · Curated Directory (2)
 
-**[Browse all 31 subagents in subagents/](subagents/)** · [catalog.json](subagents/catalog.json)
+**[Browse all 32 subagents in subagents/](subagents/)** · [catalog.json](subagents/catalog.json)
 
 Top 5 shown:
 
@@ -90,9 +91,9 @@ Top 5 shown:
 
 ## Hooks
 
-24 hooks across 7 categories: Session Management (5) · Security (4) · Automation (4) · Quality (3) · Safety (3) · Utility (3) · Notifications (2)
+25 hooks across 7 categories: Security (5) · Session Management (5) · Automation (4) · Quality (3) · Safety (3) · Utility (3) · Notifications (2)
 
-**[Browse all 24 hooks in hooks/](hooks/)** · [catalog.json](hooks/catalog.json)
+**[Browse all 25 hooks in hooks/](hooks/)** · [catalog.json](hooks/catalog.json)
 
 Top 5 shown:
 
@@ -106,19 +107,19 @@ Top 5 shown:
 
 ## Plugins
 
-55 plugins across 10 categories: Claude Code (13) · OpenCode (9) · Cross-Tool (9) · VS Code AI (6) · Cursor (5) · Windsurf (4) · JetBrains (4) · Copilot (3) · Aider (1) · Codex (1)
+59 plugins across 11 categories: Claude Code (15) · Cross-Tool (10) · OpenCode (9) · VS Code AI (6) · Cursor (5) · Windsurf (4) · JetBrains (4) · Copilot (3) · Aider (1) · Codex (1) · Hermes Agent (1)
 
-**[Browse all 55 plugins in plugins/](plugins/)** · [catalog.json](plugins/catalog.json)
+**[Browse all 59 plugins in plugins/](plugins/)** · [catalog.json](plugins/catalog.json)
 
 Top 5 shown:
 
-| Name                             | Description                                                                                                                                          | Source                          |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| Superpowers Plugin               | Comprehensive skill pack with 60+ pre-built skills for Claude Code workflows                                                                         | `superpowers.dev`               |
-| Official Claude Code Marketplace | Official marketplace for Claude Code plugins with 255+ community-contributed extensions                                                              | `claude.ai`                     |
-| Awesome CursorRules              | Curated collection of cursor rules by PatrickJS with 20K stars                                                                                       | `PatrickJS/awesome-cursorrules` |
-| AgentEnv                         | Project-scoped AI agent and plugin environment manager. Manages agent configurations across multiple AI coding tools.                                | `kvcache-ai/AgentENV`           |
-| Flutter Agent Plugins            | Official Flutter team agent plugins bundling Flutter skills, rules, and Dart/Flutter MCP config for widget tests, layout, routing, and architecture. | `docs.flutter.dev`              |
+| Name                             | Description                                                                                                           | Source                          |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| Superpowers Plugin               | Comprehensive skill pack with 60+ pre-built skills for Claude Code workflows                                          | `superpowers.dev`               |
+| Official Claude Code Marketplace | Official marketplace for Claude Code plugins with 255+ community-contributed extensions                               | `claude.ai`                     |
+| Awesome CursorRules              | Curated collection of cursor rules by PatrickJS with 20K stars                                                        | `PatrickJS/awesome-cursorrules` |
+| AgentEnv                         | Project-scoped AI agent and plugin environment manager. Manages agent configurations across multiple AI coding tools. | `kvcache-ai/AgentENV`           |
+| Oh My Hermes                     | Hermes Agent workflow plugin with project memory and task-specific model and reasoning routing.                       | `rlaope/oh-my-hermes`           |
 
 ## Prompts
 
@@ -134,13 +135,13 @@ Top 5 shown:
 | Prompt Engineer                 | Meta-prompt for designing and optimizing other prompts                        | `dair-ai/Prompt-Engineering-Guide` |
 | Craft Code Refactor             | Systematic code improvement with test coverage maintenance                    | `hoangatg/awesome-ai-prompts-2026` |
 | SQL Query Optimizer             | Analyze and optimize SQL queries with index suggestions                       | `openai/openai-cookbook`           |
-| Image Generation Prompt Crafter | Craft detailed prompts for DALL-E, Midjourney, and Flux                       | `Ryan-yang125/gpt-image-2-prompts` |
+| Image Generation Prompt Crafter | Craft detailed prompts for DALL-E, Midjourney, and Flux                       | `krisyangdev/gpt-image-2-prompts`  |
 
 ## Tools
 
-86 tools across 14 categories: AI Coding CLIs (14) · Code Analysis (12) · Cloud & DevOps (7) · Formatting & Linting (7) · Agent Training & Eval (7) · Git Utilities (6) · Package Managers (5) · Docker & Containers (5) · API Testing (5) · Agent Memory (4) · Database CLIs (4) · Monitoring (4) · Terminal Enhancement (4) · AI APIs (2)
+92 tools across 15 categories: AI Coding CLIs (17) · Code Analysis (12) · Cloud & DevOps (7) · Formatting & Linting (7) · Agent Training & Eval (7) · Git Utilities (6) · Package Managers (5) · Docker & Containers (5) · API Testing (5) · Agent Memory (4) · Database CLIs (4) · Monitoring (4) · Terminal Enhancement (4) · AI APIs (3) · Agent Security (2)
 
-**[Browse all 86 tools in tools/](tools/)** · [catalog.json](tools/catalog.json)
+**[Browse all 92 tools in tools/](tools/)** · [catalog.json](tools/catalog.json)
 
 Top 5 shown:
 
@@ -152,12 +153,23 @@ Top 5 shown:
 | Bun         | Incredibly fast JavaScript runtime, bundler, and package manager.    | `oven-sh/bun`              |
 | Netdata     | Real-time performance and health monitoring.                         | `netdata/netdata`          |
 
+## Claude Code Mods
+
+0 mods; no entries have been added yet.
+
+**[Browse all 0 mods in mods/](mods/)** · [catalog.json](mods/catalog.json)
+
+Top 5 shown:
+
+| Name | Description | Source |
+| ---- | ----------- | ------ |
+
 ## Contributing
 
 We welcome contributions. You can:
 
-1. Manual PR - fork, add an entry to a `catalog.json` file, validate, and submit. See [contributing.md](contributing.md).
-2. Agent-automated - give your AI agent the contributing.md guide and it handles everything.
+1. Manual contribution - add an entry to a `catalog.json` file, validate, then submit a PR from your fork. See [contributing.md](contributing.md).
+2. Agent-assisted contribution - give your AI agent this guide; it can inspect the project, prepare the catalog diff, and validate it for you.
 3. Open an issue to suggest a tool we should add.
 
 All data comes from `catalog.json` files in each folder. These catalogs are the single source of truth for programmatic discovery.

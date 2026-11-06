@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-10-25",
-  "totalServers": 175,
+  "totalServers": 190,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 22
+      "count": 24
     },
     {
       "name": "Browser Automation",
@@ -32,19 +32,19 @@
     },
     {
       "name": "Communication",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Search",
-      "count": 16
+      "count": 17
     },
     {
       "name": "AI & Machine Learning",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Agent Orchestration",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Monitoring",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Security",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Design",
@@ -60,15 +60,15 @@
     },
     {
       "name": "Finance",
-      "count": 7
+      "count": 9
     },
     {
       "name": "Research & Data",
-      "count": 14
+      "count": 18
     },
     {
       "name": "Marketing",
-      "count": 9
+      "count": 11
     },
     {
       "name": "Data Engineering",
@@ -131,6 +131,28 @@
     }
   ],
   "servers": [
+    {
+      "id": "agent-payment-node",
+      "name": "Agent Payment Node",
+      "category": "Finance",
+      "github": "https://github.com/nuanu-ai/agent-payment-node",
+      "stars": 0,
+      "description": "Local macOS CLI and stdio MCP payments with foreground owner approval for signing.",
+      "install": "brew install nuanu-ai/tap/apn",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-26",
+      "tags": [
+        "payments",
+        "x402",
+        "macos",
+        "stdio",
+        "cli"
+      ],
+      "notes": "macOS Apple Silicon with Node 24. Start the local stdio server with apn mcp serve after installation. Agent preparation is separate from foreground human approval for signing. External provider and network charges are separate. No hosted endpoint or Docker/Linux support is claimed."
+    },
     {
       "id": "rea-captcha",
       "name": "rea-captcha",
@@ -1885,7 +1907,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -3111,29 +3133,6 @@
       "lastUpdated": "2026-10-18"
     },
     {
-      "id": "whale-coupons",
-      "name": "Whale Coupons",
-      "category": "Search",
-      "github": "https://github.com/whalecoupons/whale-coupons-mcp",
-      "website": "https://whalecoupons.co",
-      "stars": 0,
-      "description": "Read-only remote MCP server that finds store-issued coupon and discount codes for 2,500+ independent online stores. Five tools, no key or account",
-      "install": "claude mcp add --transport http whale-coupons https://whalecoupons.co/mcp",
-      "license": "MIT",
-      "remote": "streamable-http",
-      "verified": false,
-      "tags": [
-        "coupons",
-        "discount-codes",
-        "shopping",
-        "ecommerce",
-        "remote"
-      ],
-      "source": "github",
-      "sourceType": "official",
-      "lastUpdated": "2026-10-19"
-    },
-    {
       "id": "yap-mcp",
       "name": "Yap MCP",
       "category": "AI & Machine Learning",
@@ -3330,6 +3329,345 @@
         "self-hosted"
       ],
       "notes": "Maintainer-submitted. After installation, configure a model provider with ./mm configure, then print client configuration with ./mm agent-config --client generic (also codex, claude, cursor, gemini). Local stdio server: ./mm mcp. Requires Git, Bash, Python 3 and uv; installer provisions Python 3.12. Built on MiroFish and OASIS. Model usage can cost money. Generated buyer responses are simulations, not proof of demand; validate with real customer outcomes. The website is a saved example dashboard, not a hosted simulation service."
+    },
+    {
+      "id": "agentsandboxes",
+      "name": "AgentSandboxes",
+      "category": "Research & Data",
+      "github": "https://agentsandboxes.fyi",
+      "stars": 0,
+      "description": "Neutral index of 25 cloud sandbox providers for AI agents: isolation, cold start, persistence, GPU support, pricing and free tier, each fact linked to its source. Free REST API, no key.",
+      "install": "Remote MCP https://agentsandboxes.fyi/mcp (streamable HTTP, no key)",
+      "license": "N/A",
+      "verified": false,
+      "source": "official-docs",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-25",
+      "tags": [
+        "sandboxes",
+        "agents",
+        "cloud",
+        "directory",
+        "remote-mcp"
+      ]
+    },
+    {
+      "id": "simpleverifier",
+      "name": "SimpleVerifier",
+      "category": "Marketing",
+      "github": "https://github.com/Ahmedmkarrar/simpleverifier-mcp",
+      "stars": 0,
+      "description": "Hosted email verification: valid, risky or invalid with a reason (syntax, domain, disposable, live SMTP mailbox check), phone format and domain MX/SPF/DMARC checks. Paid plan required.",
+      "install": "Remote MCP https://simpleverifier.com/api/mcp (streamable HTTP, OAuth or Bearer API key)",
+      "license": "MIT (configs); hosted service proprietary",
+      "verified": false,
+      "source": "official-docs",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-25",
+      "tags": [
+        "email-verification",
+        "email-validation",
+        "smtp",
+        "remote",
+        "oauth"
+      ]
+    },
+    {
+      "id": "scalekit",
+      "name": "Scalekit MCP",
+      "category": "Developer Tools",
+      "github": "https://github.com/scalekit-inc/scalekit-mcp-server",
+      "stars": 5,
+      "description": "Official hosted MCP server for Scalekit: set up and manage agent integrations (600+ connectors, 35,000+ tools, per-user OAuth) plus environments, organizations, users, roles and scopes",
+      "install": "Remote MCP https://mcp.scalekit.com/ (streamable HTTP, OAuth sign-in); local stdio: npm run start:stdio",
+      "license": "Apache-2.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-26",
+      "tags": [
+        "integrations",
+        "oauth",
+        "agents",
+        "remote",
+        "connectors"
+      ]
+    },
+    {
+      "id": "webextract",
+      "name": "WebExtract",
+      "category": "Research & Data",
+      "github": "https://github.com/nyx464664816-stack/webextract",
+      "stars": 0,
+      "description": "Hosted MCP server that turns a public URL into clean Markdown (page_markdown) or Markdown plus structured JSON for product/price, tables and article metadata (extract_url). 20 free calls a day per caller IP, then x402 USDC or prepaid credits. Sandbox benchmark on 10 public pages: markdown 38/40, extract 40/40 (https://webextract.dev/benchmark)",
+      "install": "Remote MCP https://api.webextract.dev/mcp (streamable HTTP, no key for the free calls)",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-26",
+      "tags": [
+        "web-scraping",
+        "markdown",
+        "structured-data",
+        "x402",
+        "remote"
+      ]
+    },
+    {
+      "id": "agent-coach-upskill",
+      "name": "Agent Coach (Upskill)",
+      "category": "Agent Orchestration",
+      "github": "https://upskill.coach",
+      "website": "https://upskill.coach",
+      "stars": 0,
+      "description": "Matches an AI agent to security-scanned skills, MCP servers and prompts, then checks in daily; public verdict rules decide keep, temporary or remove. Free.",
+      "install": "Remote MCP https://upskill.coach/mcp (streamable HTTP); REST API spec at https://upskill.coach/openapi.json",
+      "license": "N/A",
+      "verified": false,
+      "source": "official-docs",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-26",
+      "tags": [
+        "skills",
+        "skill-discovery",
+        "security-scan",
+        "agent-coaching",
+        "remote-mcp"
+      ],
+      "notes": "Hosted service by Avatar 8 LLC; no public source repo. 13 tools incl. register_agent, get_recommendations, check_in, search_library, get_rules. Scan write-up: https://upskill.coach/research/agent-skill-security"
+    },
+    {
+      "id": "koru",
+      "name": "Koru",
+      "category": "Research & Data",
+      "github": "https://github.com/koruworks/mono",
+      "website": "https://www.koru.do",
+      "stars": 19,
+      "description": "Local MCP server built into Koru, an open-source, local-first notes workspace written in Rust. Lets Claude, Claude Code and other MCP clients search, read, create and edit notes and files stored on the device.",
+      "install": "Install the Koru desktop app (Windows; Linux nightly preview), then register its bundled koru-mcp binary as a stdio MCP server in your client",
+      "license": "MPL-2.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-26",
+      "tags": [
+        "notes",
+        "knowledge",
+        "local-first",
+        "stdio",
+        "rust"
+      ]
+    },
+    {
+      "id": "cooper-email",
+      "name": "Cooper Email",
+      "category": "Communication",
+      "github": "https://github.com/cooper-email/cooper-email",
+      "website": "https://cooperemail.com/docs/mcp",
+      "stars": 0,
+      "description": "Gives each AI agent its own inbox: send, read, search and reply to email, and wait for the next message or a sign-up code. The agent creates its inbox and API key with one request; free tier, no card.",
+      "install": "Remote MCP https://cooperemail.com/mcp (streamable HTTP, OAuth or Bearer COOPER_API_KEY); skills: npx skills add cooper-email/cooper-email",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "official-docs",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-27",
+      "tags": [
+        "email",
+        "inbox",
+        "agents",
+        "verification-codes",
+        "remote-mcp"
+      ],
+      "notes": "Hosted service by Avatar 8 LLC; the MIT repo holds the agent skills and Claude Code / Cursor plugin config, not the server source. Agent docs: https://cooperemail.com/llms.txt. Official MCP Registry id: com.cooperemail/cooper-email."
+    },
+    {
+      "id": "agentsearch-mcp",
+      "name": "AgentSearch MCP",
+      "category": "Search",
+      "github": "https://github.com/agentsearchhq-coder/agentsearch-mcp",
+      "website": "https://agentsearchhq.com",
+      "stars": 0,
+      "description": "Live web search, URL-to-markdown extraction and JS page rendering for agents. Search works with no key or account; extract and render are pay-per-call.",
+      "install": "npx -y @agentsearchhq/agentsearch-mcp",
+      "license": "MIT",
+      "verified": false,
+      "npmPackage": "@agentsearchhq/agentsearch-mcp",
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-30",
+      "tags": [
+        "search",
+        "web",
+        "extract",
+        "markdown",
+        "render",
+        "free-tier"
+      ],
+      "notes": "Free search tier: up to 25 searches/day per IP, subject to shared daily capacity. Extract, render and opt-in paid search cost $0.005/call in USDC on Base via the Pocket Network Agentic Portal (x402). Claude Desktop one-click bundle (.mcpb) in GitHub releases. Official MCP Registry id: io.github.agentsearchhq-coder/agentsearch-mcp."
+    },
+    {
+      "id": "brewpage-mcp",
+      "name": "BrewPage",
+      "category": "Developer Tools",
+      "github": "https://github.com/kochetkov-ma/brewpage-openapi",
+      "website": "https://brewpage.app",
+      "stars": 0,
+      "description": "Publishes HTML pages, Markdown, static sites, files, JSON and key-value data to temporary HTTPS links with no signup or API key; the returned owner token updates or deletes the content.",
+      "install": "npx -y brewpage-mcp; remote MCP https://brewpage.app/mcp (streamable HTTP, no sign-in)",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "npmPackage": "brewpage-mcp",
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-31",
+      "tags": [
+        "hosting",
+        "html",
+        "markdown",
+        "file-sharing",
+        "remote-mcp"
+      ],
+      "notes": "Hosted service; the MIT package and Apache-2.0 OpenAPI repo are public, the service is proprietary. Content expires (default 15 days, max 30, 90 with a free profile). Agent docs: https://brewpage.app/llms.txt. Official MCP Registry id: io.github.kochetkov-ma/brewpage-mcp."
+    },
+    {
+      "id": "fair-value-calculator",
+      "name": "Fair Value Calculator",
+      "category": "Finance",
+      "url": "https://www.fairvalue-calculator.com/mcp",
+      "website": "https://www.fairvalue-calculator.com/integrations",
+      "stars": 0,
+      "description": "Fair value estimates from 26 valuation models, quality scores, stock screener and comparisons for 40,000+ listed stocks, plus the user's own watchlist and alerts, through a hosted remote MCP server.",
+      "install": "Remote MCP: https://www.fairvalue-calculator.com/mcp (streamable HTTP, OAuth sign-in, free account; Registry: com.fairvalue-calculator/fair-value)",
+      "license": "Proprietary",
+      "remote": "streamable-http",
+      "verified": false,
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "finance",
+        "stocks",
+        "valuation",
+        "screener",
+        "oauth",
+        "remote"
+      ],
+      "notes": "Hosted service; the previously listed GitHub source repository is no longer available."
+    },
+    {
+      "id": "jobspipe",
+      "name": "JobsPipe",
+      "category": "Research & Data",
+      "github": "https://github.com/jobspipe/mcp",
+      "website": "https://jobspipe.dev",
+      "stars": 0,
+      "description": "Live job postings from 30+ ATS feeds and job boards in one normalized schema: search and fetch postings, filter by location, salary, seniority, skills and visa stance, and save searches as alerts, through a hosted remote MCP server",
+      "install": "Remote MCP: https://mcp.jobspipe.dev/mcp (streamable HTTP, OAuth sign-in or Bearer jp_live_ key, free plan with 1,000 credits; Registry: dev.jobspipe/mcp)",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-01",
+      "tags": [
+        "jobs",
+        "hiring",
+        "job-postings",
+        "oauth",
+        "remote"
+      ]
+    },
+    {
+      "id": "npmscan",
+      "name": "npmscan",
+      "category": "Security",
+      "github": "https://github.com/salemalem/npmscan-mcp-plugin",
+      "stars": 505,
+      "description": "Checks npm packages for confirmed malware, known vulnerabilities (OSV, GitHub advisories, NVD), maintainer changes and install scripts before an agent installs them; audits package.json, lockfiles and SBOMs. No API key.",
+      "install": "claude mcp add --transport http npmscan https://npmscan.com/api/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://npmscan.com/mcp",
+      "lastUpdated": "2026-11-01",
+      "tags": [
+        "security",
+        "npm",
+        "supply-chain",
+        "malware",
+        "vulnerabilities",
+        "dependency-audit",
+        "mcp"
+      ]
+    },
+    {
+      "id": "cloud-alter-ego",
+      "name": "Cloud Alter Ego",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/SebastiaanBoon/cloud-alter-ego",
+      "stars": 5,
+      "description": "Hosted remote MCP connector with OAuth that gives every AI chat your rules, profile, per-project journals and playbooks, kept as plain Markdown files in your own OneDrive, Google Drive, Dropbox, GitHub or Azure DevOps. The server does not store the content. The linked repo is the open source template.",
+      "install": "claude mcp add --transport http cloud-alter-ego https://cloudalterego.cafeboon.com/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://cloudalterego.cafeboon.com",
+      "lastUpdated": "2026-11-01",
+      "tags": [
+        "memory",
+        "context",
+        "rules",
+        "journal",
+        "oauth",
+        "remote"
+      ]
+    },
+    {
+      "id": "datacircle",
+      "name": "Datacircle",
+      "category": "Marketing",
+      "github": "https://github.com/waynehamadi/datacircle-plugin",
+      "stars": 2,
+      "description": "Remote MCP server that finds the best GTM APIs for an agent, free with no key.",
+      "install": "Remote endpoint: https://api.datacircle.dev/mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "gtm",
+        "api",
+        "benchmark",
+        "remote-mcp"
+      ]
+    },
+    {
+      "id": "whale-coupons",
+      "name": "Whale Coupons",
+      "category": "Search",
+      "github": "https://github.com/whalecoupons/whale-coupons-mcp",
+      "website": "https://whalecoupons.co",
+      "stars": 0,
+      "description": "Read-only remote MCP server that finds store-issued coupon and discount codes for 2,500+ independent online stores. Five tools, no key or account",
+      "install": "claude mcp add --transport http whale-coupons https://whalecoupons.co/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "tags": [
+        "coupons",
+        "discount-codes",
+        "shopping",
+        "ecommerce",
+        "remote"
+      ],
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-10-19"
     },
     {
       "id": "bounty-guard",

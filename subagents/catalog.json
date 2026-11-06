@@ -3,16 +3,16 @@
   "version": "2026.08",
   "description": "Curated index of subagent definitions, agent harnesses, and platform-specific subagent formats",
   "license": "MIT",
-  "lastUpdated": "2026-08-20",
+  "lastUpdated": "2026-11-02",
   "totalSubagents": 32,
   "categories": [
     {
       "name": "Subagent Collection",
-      "count": 16
+      "count": 15
     },
     {
       "name": "Agent Harness",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Official SDK",
@@ -612,20 +612,22 @@
       ]
     },
     {
-      "id": "web3-agent-skills-subagents",
-      "name": "Web3 & Escrow Auditor Subagents",
-      "category": "Subagent Collection",
-      "description": "Self-custodial Web3, Proof-of-Work mining, and cryptographic bounty escrow verification subagent definitions for Claude Code, Codex, and Hermes.",
-      "stars": 4,
+      "id": "openai-agents-nano-x402",
+      "name": "OpenAI Agents Nano x402",
+      "category": "Agent Harness",
+      "description": "Adds x402 payments in fee-free Nano (XNO) to the OpenAI Agents SDK: a Tool that pays x402-priced APIs with self-custodied Nano.",
+      "stars": 0,
       "license": "MIT",
       "tags": [
-        "web3",
-        "security",
-        "escrow",
-        "blockchain",
-        "claude-code"
+        "openai-agents-sdk",
+        "x402",
+        "nano",
+        "xno",
+        "payments",
+        "agent-payments",
+        "python"
       ],
-      "github": "https://github.com/doomsday-network/web3-agent-skills"
+      "github": "https://github.com/dhyabi2/openai-agents-nano-x402"
     }
   ]
 }

@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated prompt collections, libraries, and marketplaces for AI coding agents",
   "license": "MIT",
-  "lastUpdated": "2026-10-16",
-  "totalPrompts": 86,
+  "lastUpdated": "2026-11-02",
+  "totalPrompts": 85,
   "categories": [
     {
       "name": "General Purpose",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Security",
-      "count": 4
+      "count": 3
     },
     {
       "name": "Documentation",
@@ -78,7 +78,7 @@
   "sources": [
     {
       "name": "f/prompts.chat",
-      "url": "https://github.com/f/awesome-chatgpt-prompts",
+      "url": "https://github.com/f/prompts.chat",
       "stars": 164314,
       "promptCount": 270,
       "description": "World's largest open-source prompt library. Works with ChatGPT, Claude, Gemini, Llama, Mistral."
@@ -997,7 +997,7 @@
         "GPT-4",
         "Gemini"
       ],
-      "source": "Ryan-yang125/gpt-image-2-prompts"
+      "source": "krisyangdev/gpt-image-2-prompts"
     },
     {
       "id": "debugging-rubber-duck",
@@ -1172,7 +1172,7 @@
         "GPT-4",
         "DALL-E"
       ],
-      "source": "Ryan-yang125/gpt-image-2-prompts"
+      "source": "krisyangdev/gpt-image-2-prompts"
     },
     {
       "id": "image-gen-technical",
@@ -1184,7 +1184,7 @@
         "GPT-4",
         "DALL-E"
       ],
-      "source": "Ryan-yang125/gpt-image-2-prompts"
+      "source": "krisyangdev/gpt-image-2-prompts"
     },
     {
       "id": "image-gen-icon",
@@ -1197,7 +1197,7 @@
         "DALL-E",
         "Midjourney"
       ],
-      "source": "Ryan-yang125/gpt-image-2-prompts"
+      "source": "krisyangdev/gpt-image-2-prompts"
     },
     {
       "id": "image-gen-illustration",
@@ -1299,21 +1299,6 @@
       ],
       "source": "agentkitco/free-prompts",
       "githubUrl": "https://github.com/agentkitco/free-prompts"
-    },
-    {
-      "id": "bounty-guard-security-prompts",
-      "name": "BountyGuard Web3 & Bounty Security Prompts",
-      "category": "Security",
-      "description": "Defensive prompt templates and SKILL.md instructions for auditing untrusted GitHub issues, detecting hidden HTML comment prompt injections, and verifying on-chain escrow locks.",
-      "bestFor": "Hardening autonomous coding agents against unpaid fake bounty farms and repo honeypots",
-      "worksWith": [
-        "Claude Code",
-        "Codex",
-        "Hermes Agent",
-        "Cursor"
-      ],
-      "source": "doomsday-network/bounty-guard",
-      "githubUrl": "https://github.com/doomsday-network/bounty-guard"
     }
   ]
 }
