@@ -4,11 +4,11 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-11-04",
-  "totalSkills": 101,
+  "totalSkills": 102,
   "categories": [
     {
       "name": "Development",
-      "count": 32
+      "count": 33
     },
     {
       "name": "Productivity",
@@ -1923,6 +1923,24 @@
         "validation",
         "data",
         "mcp"
+      ]
+    },
+    {
+      "id": "faber-language",
+      "name": "Faber Language",
+      "source": "faberlang/faberlang.dev",
+      "category": "Development",
+      "installs": 0,
+      "description": "Write and check Faber Romanus programs: mechanical grammar, multi-locale surface, emits Rust/TS/Go/Swift and more. Install CLI + four skills from faberlang.dev.",
+      "install": "npx skills add https://faberlang.dev --skill language",
+      "license": "MIT OR Apache-2.0",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "programming-language",
+        "compiler",
+        "coding-agents",
+        "multi-target"
       ]
     },
     {
