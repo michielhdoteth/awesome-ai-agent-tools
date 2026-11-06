@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 185,
+  "totalServers": 186,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 24
+      "count": 25
     },
     {
       "name": "Browser Automation",
@@ -3627,6 +3627,26 @@
         "journal",
         "oauth",
         "remote"
+      ]
+    },
+    {
+      "id": "mcpserverlist-mcp",
+      "name": "mcpserverlist-mcp",
+      "category": "Developer Tools",
+      "github": "https://github.com/sudomichael/mcpserverlist-mcp",
+      "stars": 0,
+      "description": "Check if your MCP server is ready for MCP directories, then get it submitted.",
+      "install": "claude mcp add --transport http mcpserverlist-mcp https://mcpserverlist.io/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://mcpserverlist.io/",
+      "lastUpdated": "2026-11-04",
+      "tags": [
+        "remote",
+        "no-auth"
       ]
     }
   ]
