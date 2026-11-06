@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 187,
+  "totalServers": 194,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 17
+      "count": 18
     },
     {
       "name": "AI & Machine Learning",
@@ -60,15 +60,15 @@
     },
     {
       "name": "Finance",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Research & Data",
-      "count": 18
+      "count": 21
     },
     {
       "name": "Marketing",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Data Engineering",
@@ -3690,6 +3690,116 @@
         "api",
         "benchmark",
         "remote-mcp"
+      ]
+    },
+    {
+      "id": "mailveri-mcp",
+      "name": "MailVeri MCP",
+      "category": "Marketing",
+      "github": "https://github.com/mailveri/mailveri-mcp",
+      "website": "https://mailveri.com/docs/mcp/",
+      "stars": 0,
+      "description": "Verify single emails and bulk lists from AI agents via the MailVeri API: SMTP, catch-all, disposable and role detection.",
+      "install": "uvx --from git+https://github.com/mailveri/mailveri-mcp mailveri-mcp (stdio; env MAILVERI_API_KEY)",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-06",
+      "tags": [
+        "email-verification",
+        "email-validation",
+        "smtp",
+        "bulk",
+        "stdio"
+      ],
+      "notes": "Pay-as-you-go API from $9 per 10,000 credits, 1,000 free credits, no subscription."
+    },
+    {
+      "id": "anansi-haven",
+      "name": "Anansi Haven",
+      "category": "Finance",
+      "github": "https://github.com/kburrus64-max/anansi-haven",
+      "stars": 0,
+      "description": "Hosted remote MCP for trading agents with free rule-based trade_postmortem grading (no AI model calls) and a $0.02 USDC x402 paid twin on Base at /v1/paid/council_grade.",
+      "install": "claude mcp add --transport http anansi-haven https://anansi-haven.anansidata.workers.dev/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "trading",
+        "finance",
+        "x402",
+        "remote",
+        "streamable-http",
+        "base"
+      ],
+      "notes": "MCP tools/list works without a key. trade_postmortem/council_grade are deterministic rule-based graders, not multi-model AI. Paid route: POST https://anansi-haven.anansidata.workers.dev/v1/paid/council_grade (~$0.02 USDC on Base via x402)."
+    },
+    {
+      "id": "gov-tenders-mcp",
+      "name": "Gov Tenders MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/GeminiGeorge22/gov-tenders-mcp",
+      "stars": 0,
+      "description": "Public-sector tenders, grants and awards (SAM.gov, Grants.gov, USAspending, UK Find a Tender, EU TED) plus Legistar city council agendas and minutes, each with its official source link. Local stdio server; needs your own Apify API token.",
+      "install": "claude mcp add gov-tenders-mcp -e APIFY_TOKEN=your-token -- npx -y github:GeminiGeorge22/gov-tenders-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "government",
+        "tenders",
+        "grants",
+        "procurement",
+        "open-data"
+      ]
+    },
+    {
+      "id": "etsy-sales-mcp",
+      "name": "Etsy Sales MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/GeminiGeorge22/etsy-sales-mcp",
+      "stars": 1,
+      "description": "Etsy search results by keyword, marketplace and category plus daily sales counts and growth for any Etsy shop. Local stdio server; needs your own Apify API token.",
+      "install": "claude mcp add etsy-sales-mcp -e APIFY_TOKEN=your-token -- npx -y github:GeminiGeorge22/etsy-sales-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "etsy",
+        "ecommerce",
+        "sales",
+        "market-research",
+        "data"
+      ]
+    },
+    {
+      "id": "sports-odds-mcp",
+      "name": "Sports Odds MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/GeminiGeorge22/sports-odds-mcp",
+      "stars": 1,
+      "description": "Live odds from Kambi sportsbooks (BetRivers, Unibet, Paf, Svenska Spel, ATG and more) in one call, with every book's price and the best price per outcome. Local stdio server; needs your own Apify API token.",
+      "install": "claude mcp add sports-odds-mcp -e APIFY_TOKEN=your-token -- npx -y github:GeminiGeorge22/sports-odds-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "sports",
+        "odds",
+        "betting",
+        "kambi",
+        "data"
       ]
     },
     {
