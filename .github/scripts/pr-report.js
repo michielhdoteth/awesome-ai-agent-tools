@@ -34,7 +34,24 @@ function readReport() {
   for (const p of candidates) {
     if (p && fs.existsSync(p)) return JSON.parse(fs.readFileSync(p, 'utf8'));
   }
-  throw new Error('validation report not found (run pr-validate.js first)');
+  // The validator may have crashed before writing a report. Still publish an
+  // actionable message instead of failing the reporting job too.
+  return {
+    repository: BASE,
+    pr: Number(PR),
+    title: '',
+    author: '',
+    headSha: '',
+    valid: false,
+    humanReview: false,
+    humanReviewReasons: [],
+    errors: ['The validator did not produce a report. This is a repository-side failure, not a problem with your PR. A maintainer will investigate.'],
+    warnings: [],
+    notes: [],
+    files: [],
+    added: [],
+    removed: [],
+  };
 }
 
 function buildBody(report) {

@@ -29,6 +29,14 @@ concurrency:
 jobs:
   catalog-validation:
     name: catalog-validation
+    # Ignore label events caused by this bot's own triage labels, otherwise
+    # every report would trigger itself again.
+    if: >-
+      github.event.action != 'labeled' ||
+      (github.event.label.name != 'validation:passed' &&
+       github.event.label.name != 'validation:failed' &&
+       github.event.label.name != 'needs-human-review' &&
+       github.event.label.name != 'merge-conflict')
     runs-on: ubuntu-24.04
     permissions:
       contents: read
@@ -38,7 +46,7 @@ jobs:
       - name: Check out base commit (trusted)
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
-          ref: ${{ github.event.pull_request.base.sha }}
+          ref: ${{ github.event.repository.default_branch }}
           persist-credentials: false
 
       - name: Set up Node
@@ -83,7 +91,7 @@ jobs:
       - name: Check out base commit (trusted)
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
         with:
-          ref: ${{ github.event.pull_request.base.sha }}
+          ref: ${{ github.event.repository.default_branch }}
           persist-credentials: false
 
       - name: Set up Node
