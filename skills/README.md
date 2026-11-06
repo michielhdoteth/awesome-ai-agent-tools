@@ -2,12 +2,12 @@
 
 Reusable AI agent skills following the SKILL.md standard
 
-**102** entries across **9** categories.
+**101** entries across **9** categories.
 
 ## Categories
 
 - **Development** (33)
-- **Productivity** (18)
+- **Productivity** (17)
 - **Design** (11)
 - **Content** (10)
 - **DevOps** (9)
@@ -16,7 +16,7 @@ Reusable AI agent skills following the SKILL.md standard
 - **Data** (6)
 - **Security** (2)
 
-## All 102 skills
+## All 101 skills
 
 | Name                                            | Category     | Description                                                                                                                                                                          | Source                                                                                                | Badges                                                                                                                                                                                                                               |
 | ----------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -117,7 +117,6 @@ Reusable AI agent skills following the SKILL.md standard
 | Patchy McPatchface                              | Development  | Evidence-driven workflow for scope, reuse, and proof in non-trivial code changes.                                                                                                    | [Shivansh-Gaur2/patchy-mcpatchface](https://github.com/Shivansh-Gaur2/patchy-mcpatchface)             | ![Stars](https://img.shields.io/github/stars/Shivansh-Gaur2/patchy-mcpatchface?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Shivansh-Gaur2/patchy-mcpatchface?style=flat)             |
 | PlaceCall                                       | Productivity | Places real phone calls to US businesses via the PlaceCall API; returns outcome and transcript                                                                                       | [voygr-tech/placecall](https://github.com/voygr-tech/placecall)                                       | ![Stars](https://img.shields.io/github/stars/voygr-tech/placecall?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/voygr-tech/placecall?style=flat)                                       |
 | Review PR                                       | Development  | Reviews a pull request with independent parallel reviewers, verifies every finding, fixes the valid in-scope ones, and has an independent reviewer re-check the result.              | [GeiserX/agent-skills](https://github.com/GeiserX/agent-skills)                                       | ![Stars](https://img.shields.io/github/stars/GeiserX/agent-skills?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/GeiserX/agent-skills?style=flat)                                       |
-| Solaris Chief of Staff                          | Productivity | Runs deterministic intake and emits one bounded assignment or a genuine escalation. Does not perform specialist work.                                                                | [Shaisolaris/solaris-dev-shop](https://github.com/Shaisolaris/solaris-dev-shop)                       | ![Stars](https://img.shields.io/github/stars/Shaisolaris/solaris-dev-shop?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/Shaisolaris/solaris-dev-shop?style=flat)                       |
 | deed.page                                       | DevOps       | Publishes an HTML file or static folder to a permanent https://<slug>.deed.page/ URL with one curl request. No account or API key.                                                   | [f-o-x11/deed-page-skill](https://github.com/f-o-x11/deed-page-skill)                                 | ![Stars](https://img.shields.io/github/stars/f-o-x11/deed-page-skill?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/f-o-x11/deed-page-skill?style=flat)                                 |
 | ComputeFirst                                    | Data         | Agent skill for deterministic calculations, validation and data transforms via free no-key MCP.                                                                                      | [321zz321/computefirst-skill](https://github.com/321zz321/computefirst-skill)                         | ![Stars](https://img.shields.io/github/stars/321zz321/computefirst-skill?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/321zz321/computefirst-skill?style=flat)                         |
 | Faber Language                                  | Development  | Write and check Faber Romanus programs: mechanical grammar, multi-locale surface, emits Rust/TS/Go/Swift and more. Install CLI + four skills from faberlang.dev.                     | [faberlang/faberlang.dev](https://github.com/faberlang/faberlang.dev)                                 | ![Stars](https://img.shields.io/github/stars/faberlang/faberlang.dev?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/faberlang/faberlang.dev?style=flat)                                 |

@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 18
+      "count": 17
     },
     {
       "name": "Agent Memory",
@@ -867,16 +867,6 @@
       "stars": 0,
       "crossPlatform": true,
       "install": "git clone https://github.com/solvyxtech/molt && cd molt && npm install && npm run build && npm start"
-    },
-    {
-      "id": "ghostget",
-      "name": "ghostget",
-      "category": "AI Coding CLIs",
-      "description": "Named web actions for AI agents: read a page, archive one media item, or use a connected account, without credentials or a browser.",
-      "url": "https://github.com/hraness/ghostget",
-      "stars": 7,
-      "crossPlatform": true,
-      "install": "bun add --global @hraness/ghostget"
     },
     {
       "id": "ordewell",

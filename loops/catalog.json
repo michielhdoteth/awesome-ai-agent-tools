@@ -4,7 +4,7 @@
   "description": "Repeatable AI-agent workflows with feedback loops",
   "license": "MIT",
   "lastUpdated": "2026-07-13",
-  "totalLoops": 104,
+  "totalLoops": 103,
   "categories": [
     {
       "name": "engineering",
@@ -28,7 +28,7 @@
     },
     {
       "name": "meta",
-      "count": 10
+      "count": 9
     },
     {
       "name": "multi-agent",
@@ -1455,27 +1455,6 @@
       "related": [
         "alpha-loop",
         "goal-forge-loop"
-      ]
-    },
-    {
-      "id": "autoloop",
-      "title": "Autoloop",
-      "category": "meta",
-      "author": "GitHub Next",
-      "source": "https://github.com/githubnext/autoloop",
-      "sourceRepo": "githubnext/autoloop",
-      "description": "Loop anything in your repo: automate research, development and maintenance",
-      "prompt": "On every scheduled run: picks the most-overdue program, proposes a change, runs evaluation, commits if improved.",
-      "verification": "Metric improved and change committed to branch.",
-      "tags": [
-        "automated",
-        "scheduled",
-        "metric-driven",
-        "open-ended"
-      ],
-      "related": [
-        "autonomy-loop",
-        "five-minute-repository-maintainer-loop"
       ]
     },
     {

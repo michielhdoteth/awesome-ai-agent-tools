@@ -2,19 +2,19 @@
 
 Repeatable AI-agent workflows with feedback loops
 
-**104** entries across **7** categories.
+**103** entries across **7** categories.
 
 ## Categories
 
 - **engineering** (53)
 - **multi-agent** (14)
 - **evaluation** (12)
-- **meta** (10)
+- **meta** (9)
 - **operations** (6)
 - **design** (6)
 - **content** (3)
 
-## All 104 loops
+## All 103 loops
 
 | Name                                                 | Category    | Description                                                                                                                                                                                            | Source                                                                                                                             | Badges                                                                                                                                                                                                                         |
 | ---------------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -81,7 +81,6 @@ Repeatable AI-agent workflows with feedback loops
 | Supervisor Line                                      | engineering | Runner through stale detection to restart or stop with durable logs                                                                                                                                    | `rohanbalkondekar/agent-loop-patterns`                                                                                             | ![Stars](https://img.shields.io/github/stars/rohanbalkondekar/agent-loop-patterns?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/rohanbalkondekar/agent-loop-patterns?style=flat) |
 | Alpha Loop                                           | engineering | Agent-agnostic automated development loop: Plan -> Build -> Test -> Review -> Ship                                                                                                                     | [bradtaylorsf/alpha-loop](https://github.com/bradtaylorsf/alpha-loop)                                                              | ![Stars](https://img.shields.io/github/stars/bradtaylorsf/alpha-loop?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/bradtaylorsf/alpha-loop?style=flat)                           |
 | The Workflow Loop                                    | engineering | Complete shipping loop for coding agents with Plan/Execute/Land/Learn phases                                                                                                                           | [iKon85/agent-workflow-kit](https://github.com/iKon85/agent-workflow-kit)                                                          | ![Stars](https://img.shields.io/github/stars/iKon85/agent-workflow-kit?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/iKon85/agent-workflow-kit?style=flat)                       |
-| Autoloop                                             | meta        | Loop anything in your repo: automate research, development and maintenance                                                                                                                             | [githubnext/autoloop](https://github.com/githubnext/autoloop)                                                                      | ![Stars](https://img.shields.io/github/stars/githubnext/autoloop?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/githubnext/autoloop?style=flat)                                   |
 | Beacon Loop Planning                                 | multi-agent | Loop-planning agent that watches repo state and ranks what matters next                                                                                                                                | [anshulixyz/multi-agent-loop-kit](https://github.com/anshulixyz/multi-agent-loop-kit)                                              | ![Stars](https://img.shields.io/github/stars/anshulixyz/multi-agent-loop-kit?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/anshulixyz/multi-agent-loop-kit?style=flat)           |
 | The Kitchen Loop                                     | engineering | Autonomous self-evolving codebase framework where LLM agent uses product as synthetic power user                                                                                                       | [0xagentkitchen/kitchenloop](https://github.com/0xagentkitchen/kitchenloop)                                                        | ![Stars](https://img.shields.io/github/stars/0xagentkitchen/kitchenloop?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/0xagentkitchen/kitchenloop?style=flat)                     |
 | Ralph Bash Loop                                      | engineering | Serial execution loop for PRD task completion with Claude Code                                                                                                                                         | [snarktank/ralph](https://github.com/snarktank/ralph)                                                                              | ![Stars](https://img.shields.io/github/stars/snarktank/ralph?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/snarktank/ralph?style=flat)                                           |
