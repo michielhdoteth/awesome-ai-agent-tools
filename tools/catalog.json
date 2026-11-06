@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Agent Memory",
@@ -980,6 +980,19 @@
       "crossPlatform": true,
       "install": "npm install -g mixdog",
       "website": "https://github.com/tribgames/mixdog",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "kane-cli",
+      "name": "Kane CLI",
+      "category": "AI Coding CLIs",
+      "description": "Verify any browser flow from your terminal in natural language. Real Chrome, evidence-backed.",
+      "url": "https://github.com/LambdaTest/kane-cli",
+      "stars": 263,
+      "crossPlatform": true,
+      "install": "npm install -g @testmuai/kane-cli",
+      "website": "https://www.testmuai.com/kane-cli/",
       "source": "github",
       "sourceType": "official"
     },
