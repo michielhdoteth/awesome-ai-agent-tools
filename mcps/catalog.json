@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 185,
+  "totalServers": 186,
   "categories": [
     {
       "name": "Official Reference",
@@ -3628,6 +3628,6 @@
         "oauth",
         "remote"
       ]
-    }
+    },{"id":"mailveri-mcp","name":"MailVeri MCP","category":"Marketing","github":"https://github.com/mailveri/mailveri-mcp","website":"https://mailveri.com/docs/mcp/","stars":0,"description":"Verify single emails and bulk lists from AI agents via the MailVeri API: SMTP, catch-all, disposable and role detection.","install":"uvx --from git+https://github.com/mailveri/mailveri-mcp mailveri-mcp (stdio; env MAILVERI_API_KEY)","license":"MIT","verified":false,"source":"github","sourceType":"official","lastUpdated":"2026-11-06","tags":["email-verification","email-validation","smtp","bulk","stdio"],"notes":"Pay-as-you-go API from $9 per 10,000 credits, 1,000 free credits, no subscription."}
   ]
 }
