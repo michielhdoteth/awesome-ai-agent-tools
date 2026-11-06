@@ -12,7 +12,7 @@
  * Idempotent and bounded: at most MAX_UPDATES per run, no retry loop.
  */
 
-const { request, graphql, repoSlug, sleep } = require('./lib/github');
+const { request, paginate, graphql, repoSlug, sleep } = require('./lib/github');
 
 const BASE = repoSlug();
 const MAX_UPDATES = Number(process.env.MAX_UPDATES || 25);
@@ -70,6 +70,33 @@ async function ensureGateRun(prNumber, headSha) {
   return false;
 }
 
+const AUTO_LABEL = { name: 'needs-author-action', color: 'fbca04', description: 'Maintainers cannot update this branch; the author must rebase' };
+const AUTO_MARKER = '<!-- needs-author-rebase -->';
+
+async function ensureLabel(label) {
+  const { status } = await request(`/repos/${BASE}/labels/${encodeURIComponent(label.name)}`, { allowStatus: [404] });
+  if (status === 404) await request(`/repos/${BASE}/labels`, { method: 'POST', body: label, allowStatus: [422] });
+}
+
+/** Label a PR that cannot be synced and leave one actionable comment. */
+async function markNeedsAuthor(prNumber) {
+  await ensureLabel(AUTO_LABEL);
+  await request(`/repos/${BASE}/issues/${prNumber}/labels`, { method: 'POST', body: { labels: [AUTO_LABEL.name] }, allowStatus: [422] });
+  const comments = await paginate(`/repos/${BASE}/issues/${prNumber}/comments`, { maxPages: 3, perPage: 100 });
+  if (comments.some((c) => (c.body || '').includes(AUTO_MARKER))) return;
+  const body = [
+    AUTO_MARKER,
+    'This branch conflicts with `main` and maintainers cannot update it automatically.',
+    '',
+    'Please do one of the following, then push:',
+    '1. `git fetch upstream && git merge upstream/main` on your branch, resolve the conflict by keeping both catalog entries, and push.',
+    '2. Enable **Allow edits by maintainers** on the PR; the next triage run will heal and validate it for you.',
+    '',
+    'The trusted `catalog-validation` check re-runs automatically after the push or after a maintainer heal.',
+  ].join('\n');
+  await request(`/repos/${BASE}/issues/${prNumber}/comments`, { method: 'POST', body: { body } });
+}
+
 async function main() {
   const [owner, name] = BASE.split('/');
   const prs = await allOpenPrs(owner, name);
@@ -114,6 +141,7 @@ async function main() {
       if (e.status === 422 || e.status === 409) {
         console.log(`PR #${pr.number}: cannot update automatically (${e.message.slice(0, 160)}); needs the author to rebase`);
         skipped += 1;
+        await markNeedsAuthor(pr.number);
       } else {
         throw e;
       }

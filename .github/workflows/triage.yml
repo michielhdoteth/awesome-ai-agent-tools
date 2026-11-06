@@ -1,0 +1,66 @@
+name: PR Triage
+
+# Daily unattended pass:
+#   1. sync stale branches and force the trusted gate to run,
+#   2. re-evaluate auto-merge for approved PRs,
+#   3. if MAINTENANCE_TOKEN is configured, heal conflicting catalog PRs.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: pr-triage
+  cancel-in-progress: false
+
+jobs:
+  triage:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          ref: main
+          persist-credentials: false
+
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Sync stale branches and force re-validation
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node .github/scripts/sync-branches.js
+
+      - name: Re-evaluate auto-merge
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node .github/scripts/auto-merge.js
+
+      - name: Check for a maintenance token
+        id: token
+        env:
+          TOKEN: ${{ secrets.MAINTENANCE_TOKEN }}
+        run: |
+          if [ -n "${TOKEN:-}" ]; then
+            echo "present=1" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=0" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Heal conflicting catalog PRs (optional PAT)
+        if: steps.token.outputs.present == '1'
+        env:
+          GITHUB_TOKEN: ${{ secrets.MAINTENANCE_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          AUTO_CONFLICTS: '1'
+          REOPEN_AFTER_PUSH: '1'
+        run: node .github/scripts/maintainer-heal-conflicts.js

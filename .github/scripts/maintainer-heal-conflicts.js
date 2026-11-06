@@ -24,7 +24,7 @@ const { execFileSync } = require('child_process');
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
-const { request, repoSlug } = require('./lib/github');
+const { request, paginate, repoSlug } = require('./lib/github');
 const { classifyPath, definitionForFolder } = require('./lib/catalogs');
 
 const BASE_REPO = repoSlug();
@@ -84,8 +84,18 @@ function unionCatalogs(baseText, branchText, relPath) {
 }
 
 async function main() {
-  const prs = (process.env.PRS || '').split(/\s+/).filter(Boolean).map(Number);
-  if (!prs.length) { console.error('Set PRS to one or more PR numbers'); process.exit(1); }
+  let prs = (process.env.PRS || '').split(/\s+/).filter(Boolean).map(Number);
+
+  if (!prs.length && process.env.AUTO_CONFLICTS) {
+    const open = await paginate(`/repos/${BASE_REPO}/pulls?state=open&base=main`, { maxPages: 2, perPage: 100 });
+    prs = open
+      .filter((p) => p.maintainer_can_modify && p.mergeable_state === 'dirty' && !(p.user && p.user.type === 'Bot'))
+      .map((p) => p.number);
+    console.log(`AUTO_CONFLICTS: ${prs.length} healable conflicting PR(s)`);
+    if (!prs.length) return;
+  }
+
+  if (!prs.length) { console.error('Set PRS to one or more PR numbers (or AUTO_CONFLICTS=1)'); process.exit(1); }
 
   for (const n of prs) {
     const { data: pr } = await request(`/repos/${BASE_REPO}/pulls/${n}`);
@@ -134,6 +144,13 @@ async function main() {
         continue;
       }
       console.log(`#${n} HEALED and pushed to ${headRepo}:${branch}`);
+
+      if (process.env.REOPEN_AFTER_PUSH === '1') {
+        await request(`/repos/${BASE_REPO}/pulls/${n}`, { method: 'PATCH', body: { state: 'closed' }, allowStatus: [422] });
+        await new Promise((r) => setTimeout(r, 2000));
+        await request(`/repos/${BASE_REPO}/pulls/${n}`, { method: 'PATCH', body: { state: 'open' }, allowStatus: [422] });
+        console.log(`#${n} reopened to trigger catalog-validation`);
+      }
     } catch (e) {
       console.log(`#${n} ERROR: ${String(e.message).slice(0, 200)}`);
     } finally {
