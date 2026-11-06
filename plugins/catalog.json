@@ -734,16 +734,16 @@
     },
     {
       "id": "off-the-wall",
-      "name": "Off the Wall",
+      "name": "Dude Toldya",
       "category": "Claude Code",
       "platform": "Claude Code, Codex",
       "stars": 1,
       "installs": null,
       "description": "Quotes your own past corrections back to Claude Code and Codex before each answer, reports what you correct most, and makes the orchestrator name a cheaper model for each subagent.",
-      "websiteUrl": "https://github.com/toranalytics/off-the-wall",
-      "installCommand": "/plugin install off-the-wall --marketplace toranalytics/off-the-wall",
+      "websiteUrl": "https://github.com/toranalytics/dude-toldya",
+      "installCommand": "claude plugin marketplace add toranalytics/dude-toldya && claude plugin install dude-toldya@dude-toldya",
       "license": "MIT",
-      "github": "https://github.com/toranalytics/off-the-wall"
+      "github": "https://github.com/toranalytics/dude-toldya"
     },
     {
       "id": "second-brain-starter-kit",
