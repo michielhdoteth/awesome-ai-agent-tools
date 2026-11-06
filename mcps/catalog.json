@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 190,
+  "totalServers": 191,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 18
+      "count": 19
     },
     {
       "name": "Marketing",
@@ -3738,6 +3738,27 @@
         "base"
       ],
       "notes": "MCP tools/list works without a key. trade_postmortem/council_grade are deterministic rule-based graders, not multi-model AI. Paid route: POST https://anansi-haven.anansidata.workers.dev/v1/paid/council_grade (~$0.02 USDC on Base via x402)."
+    },
+    {
+      "id": "gov-tenders-mcp",
+      "name": "Gov Tenders MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/GeminiGeorge22/gov-tenders-mcp",
+      "stars": 0,
+      "description": "Public-sector tenders, grants and awards (SAM.gov, Grants.gov, USAspending, UK Find a Tender, EU TED) plus Legistar city council agendas and minutes, each with its official source link. Local stdio server; needs your own Apify API token.",
+      "install": "claude mcp add gov-tenders-mcp -e APIFY_TOKEN=your-token -- npx -y github:GeminiGeorge22/gov-tenders-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-02",
+      "tags": [
+        "government",
+        "tenders",
+        "grants",
+        "procurement",
+        "open-data"
+      ]
     }
   ]
 }
