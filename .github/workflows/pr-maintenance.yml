@@ -1,0 +1,51 @@
+name: PR Maintenance
+
+# Keeps the merge pipeline moving without a human in the loop:
+#   1. Bring "behind" PR branches up to date so the required (strict) check can
+#      run against the latest base.
+#   2. Re-evaluate auto-merge eligibility for every open PR, so a PR approved
+#      after its checks passed still gets queued for squash merge.
+#
+# API-only: no PR code is checked out or executed.
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: pr-maintenance
+  cancel-in-progress: false
+
+jobs:
+  maintain:
+    name: sync-branches-and-auto-merge
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          ref: main
+          persist-credentials: false
+
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Bring stale PR branches up to date
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node .github/scripts/sync-branches.js
+
+      - name: Re-evaluate auto-merge for open PRs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node .github/scripts/auto-merge.js

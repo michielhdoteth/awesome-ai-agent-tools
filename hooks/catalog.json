@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "totalHooks": 25,
-    "lastUpdated": "2026-11-01",
+    "totalHooks": 26,
+    "lastUpdated": "2026-11-03",
     "sources": [
       "https://github.com/karanb192/claude-code-hooks",
       "https://github.com/rohitg00/awesome-claude-code-toolkit",
@@ -10,7 +10,7 @@
     "categories": [
       {
         "name": "Security",
-        "count": 5
+        "count": 6
       },
       {
         "name": "Automation",
@@ -549,6 +549,28 @@
       "sourceType": "community",
       "lastUpdated": "2026-10-13",
       "github": "https://github.com/GeiserX/cc-aws-keepalive"
+    },
+    {
+      "id": "vulnify-approval-hook",
+      "name": "Vulnify Approval Hook",
+      "category": "Security",
+      "description": "Asks Vulnify before shell, file write, web fetch and MCP tool calls run (read-only calls skipped by default); ALLOW continues, REVIEW waits for a person, BLOCK denies. Fails closed",
+      "eventType": "PreToolUse",
+      "matcher": "Bash|PowerShell|Write|Edit|MultiEdit|NotebookEdit|WebFetch|mcp__.*",
+      "script": "claude-code-hook/vulnify-hook.mjs",
+      "language": "node",
+      "stars": 0,
+      "tags": [
+        "security",
+        "approval",
+        "human-in-the-loop",
+        "mcp",
+        "audit"
+      ],
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-03",
+      "github": "https://github.com/vulnify/vulnify-examples"
     }
   ]
 }

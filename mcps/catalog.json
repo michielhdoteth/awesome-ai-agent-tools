@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 186,
+  "totalServers": 187,
   "categories": [
     {
       "name": "Official Reference",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Data Engineering",
@@ -1907,7 +1907,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -3627,6 +3627,23 @@
         "journal",
         "oauth",
         "remote"
+      ]
+    },
+    {
+      "id": "datacircle",
+      "name": "Datacircle",
+      "category": "Marketing",
+      "github": "https://github.com/waynehamadi/datacircle-plugin",
+      "stars": 2,
+      "description": "Remote MCP server that finds the best GTM APIs for an agent, free with no key.",
+      "install": "Remote endpoint: https://api.datacircle.dev/mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "gtm",
+        "api",
+        "benchmark",
+        "remote-mcp"
       ]
     },
     {
