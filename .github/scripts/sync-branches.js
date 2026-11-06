@@ -52,11 +52,19 @@ async function main() {
   const [owner, name] = BASE.split('/');
   const prs = await allOpenPrs(owner, name);
 
-  const candidates = prs.filter((p) =>
+  // GraphQL `mergeStateStatus` reports BLOCKED before BEHIND when a review is
+  // also required, so it cannot be used to detect staleness. Use the REST
+  // `mergeable_state` field, which reports "behind" for an out-of-date branch.
+  const possible = prs.filter((p) =>
     !p.isDraft &&
-    p.mergeStateStatus === 'BEHIND' &&
     p.baseRefName === 'main' &&
     p.headRepository);
+
+  const candidates = [];
+  for (const pr of possible) {
+    const { data: full } = await request(`/repos/${BASE}/pulls/${pr.number}`);
+    if (full.mergeable_state === 'behind') candidates.push({ ...pr, full });
+  }
 
   console.log(`Open PRs: ${prs.length}; behind base: ${candidates.length}`);
 
@@ -67,8 +75,7 @@ async function main() {
       console.log(`Reached MAX_UPDATES=${MAX_UPDATES}; remaining PRs handled next run.`);
       break;
     }
-    const { data: full } = await request(`/repos/${BASE}/pulls/${pr.number}`);
-    const headSha = full.head && full.head.sha;
+    const headSha = pr.full.head && pr.full.head.sha;
     if (!headSha) { skipped += 1; continue; }
 
     try {
