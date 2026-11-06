@@ -2,7 +2,7 @@
 
 Reusable AI agent skills following the SKILL.md standard
 
-**101** entries across **9** categories.
+**102** entries across **9** categories.
 
 ## Categories
 
@@ -11,12 +11,12 @@ Reusable AI agent skills following the SKILL.md standard
 - **Design** (11)
 - **Content** (10)
 - **DevOps** (9)
+- **Marketing** (7)
 - **Testing** (6)
 - **Data** (6)
-- **Marketing** (6)
 - **Security** (2)
 
-## All 101 skills
+## All 102 skills
 
 | Name                                            | Category     | Description                                                                                                                                                                          | Source                                                                                                | Badges                                                                                                                                                                                                                               |
 | ----------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -121,6 +121,7 @@ Reusable AI agent skills following the SKILL.md standard
 | deed.page                                       | DevOps       | Publishes an HTML file or static folder to a permanent https://<slug>.deed.page/ URL with one curl request. No account or API key.                                                   | [f-o-x11/deed-page-skill](https://github.com/f-o-x11/deed-page-skill)                                 | ![Stars](https://img.shields.io/github/stars/f-o-x11/deed-page-skill?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/f-o-x11/deed-page-skill?style=flat)                                 |
 | ComputeFirst                                    | Data         | Agent skill for deterministic calculations, validation and data transforms via free no-key MCP.                                                                                      | [321zz321/computefirst-skill](https://github.com/321zz321/computefirst-skill)                         | ![Stars](https://img.shields.io/github/stars/321zz321/computefirst-skill?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/321zz321/computefirst-skill?style=flat)                         |
 | Faber Language                                  | Development  | Write and check Faber Romanus programs: mechanical grammar, multi-locale surface, emits Rust/TS/Go/Swift and more. Install CLI + four skills from faberlang.dev.                     | [faberlang/faberlang.dev](https://github.com/faberlang/faberlang.dev)                                 | ![Stars](https://img.shields.io/github/stars/faberlang/faberlang.dev?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/faberlang/faberlang.dev?style=flat)                                 |
+| LinkBunny                                       | Marketing    | Coding-agent workflow for relevant, owner-approved nofollow link exchanges; account required.                                                                                        | [hboon/linkbunny-agent-skill](https://github.com/hboon/linkbunny-agent-skill)                         | ![Stars](https://img.shields.io/github/stars/hboon/linkbunny-agent-skill?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hboon/linkbunny-agent-skill?style=flat)                         |
 
 ---
 
