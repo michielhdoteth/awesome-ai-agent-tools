@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-11-05",
-  "totalSkills": 101,
+  "lastUpdated": "2026-11-04",
+  "totalSkills": 102,
   "categories": [
     {
       "name": "Development",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Marketing",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Data",
@@ -1941,6 +1941,21 @@
         "compiler",
         "coding-agents",
         "multi-target"
+      ]
+    },
+    {
+      "id": "linkbunny",
+      "name": "LinkBunny",
+      "source": "hboon/linkbunny-agent-skill",
+      "category": "Marketing",
+      "description": "Coding-agent workflow for relevant, owner-approved nofollow link exchanges; account required.",
+      "install": "npx skills add hboon/linkbunny-agent-skill --skill linkbunny",
+      "license": "MIT-0",
+      "tags": [
+        "seo",
+        "backlinks",
+        "nofollow",
+        "marketing"
       ]
     }
   ]
