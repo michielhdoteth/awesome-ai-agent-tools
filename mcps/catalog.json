@@ -3822,6 +3822,28 @@
         "lever",
         "ashby"
       ]
+    },
+    {
+      "id": "zambo",
+      "name": "Zambo",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/zambodotdev/zambo-mcp",
+      "stars": 0,
+      "description": "Remote MCP server with 153 tools, cross-AI handover and continuity, and a verifiable AER-1 receipt for every job",
+      "install": "claude mcp add --transport http zambo https://zambo.dev/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-07",
+      "tags": [
+        "mcp",
+        "remote-mcp",
+        "orchestration",
+        "handover",
+        "continuity",
+        "execution-receipts"
+      ]
     }
   ]
 }
