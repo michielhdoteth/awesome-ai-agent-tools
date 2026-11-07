@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-11-01",
-  "totalPlugins": 59,
+  "lastUpdated": "2026-11-07",
+  "totalPlugins": 60,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Codex",
@@ -789,6 +789,19 @@
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-10-28"
+    },
+    {
+      "id": "akii-seo-ai-search-optimizer",
+      "name": "Akii: SEO & AI Search Optimizer",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 79,
+      "description": "A free Claude Code plugin that audits sites, checks links, plans content and creates JSON-LD.",
+      "websiteUrl": "https://akii.com/portfolio#search-optimizer",
+      "installCommand": "/plugin marketplace add https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer\n/plugin install akii-seo-ai-search-optimizer@akii",
+      "license": "MIT",
+      "github": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+      "sourceType": "official"
     }
   ]
 }
