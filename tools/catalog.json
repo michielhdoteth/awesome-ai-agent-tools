@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-11-03",
-  "totalTools": 93,
+  "lastUpdated": "2026-11-07",
+  "totalTools": 94,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Agent Memory",
@@ -983,6 +983,18 @@
       "crossPlatform": true,
       "install": "npm install -g @testmuai/kane-cli",
       "website": "https://www.testmuai.com/kane-cli/",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "byagent",
+      "name": "byagent",
+      "category": "AI Coding CLIs",
+      "description": "Turns Markdown or HTML an agent makes into a shareable link, with versions and line comments.",
+      "url": "https://github.com/anup-a/byagent",
+      "crossPlatform": true,
+      "install": "npx byagent publish ./plan.md",
+      "website": "https://byagent.dev",
       "source": "github",
       "sourceType": "official"
     },
