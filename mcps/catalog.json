@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 18
+      "count": 19
     },
     {
       "name": "AI & Machine Learning",
@@ -1929,7 +1929,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -3821,6 +3821,24 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "vaneform",
+      "name": "Vaneform MCP",
+      "category": "Search",
+      "github": "https://github.com/jiangqizheng/vaneform-mcp",
+      "stars": 0,
+      "description": "Hosted MCP for free website traffic lookups: estimated monthly visits, trends, and traffic sources for any domain.",
+      "install": "Remote MCP: https://vaneform.com/mcp",
+      "license": "Unknown",
+      "verified": false,
+      "tags": [
+        "traffic",
+        "analytics",
+        "seo",
+        "remote",
+        "hosted"
       ]
     }
   ]
