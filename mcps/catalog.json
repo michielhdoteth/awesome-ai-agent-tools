@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -80,7 +80,7 @@
     },
     {
       "name": "Mobile",
-      "count": 2
+      "count": 3
     }
   ],
   "sources": [
@@ -2365,6 +2365,24 @@
         "android",
         "mobile",
         "emulator"
+      ]
+    },
+    {
+      "id": "tapflow",
+      "name": "tapflow",
+      "category": "Mobile",
+      "github": "https://github.com/jo-duchan/tapflow",
+      "stars": 1672,
+      "description": "Self-hosted MCP server that lets coding agents drive iOS simulators and Android emulators on your own Mac, with a live browser view of the device. App data stays on your network.",
+      "install": "npm install -g @tapflowio/mcp-server",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "ios",
+        "android",
+        "simulator",
+        "emulator",
+        "self-hosted"
       ]
     },
     {
