@@ -4,11 +4,11 @@
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
   "lastUpdated": "2026-11-01",
-  "totalPlugins": 59,
+  "totalPlugins": 60,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Codex",
@@ -789,6 +789,23 @@
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-10-28"
+    },
+    {
+      "id": "agentik",
+      "name": "Agentik",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 0,
+      "description": "Claude Code plugin for the hosted Agentik MCP gateway: 3,500+ third-party tools from 165 providers, each call at the provider's price, with the price shown before each call.",
+      "websiteUrl": "https://www.agentik.cc",
+      "installCommand": "/plugin marketplace add agent-tool-router/agentik\n/plugin install agentik@agentik",
+      "license": "MIT",
+      "github": "https://github.com/agent-tool-router/agentik",
+      "source": "github",
+      "sourceType": "official",
+      "endpoint": "https://ai.agentik.cc/mcp",
+      "lastUpdated": "2026-11-04",
+      "notes": "The plugin, CLI and SDK are MIT; the hosted service is not open source. Agentik account required (sign in with Google or GitHub); calls draw from a prepaid balance."
     }
   ]
 }
