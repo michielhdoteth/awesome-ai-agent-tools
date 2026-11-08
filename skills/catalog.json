@@ -1943,6 +1943,21 @@
         "nofollow",
         "marketing"
       ]
+    },
+    {
+      "id": "imagera-media",
+      "name": "Imagera",
+      "source": "alexadams6ix/imagera-skills",
+      "category": "Content",
+      "description": "Image, video, voice and music generation through the hosted Imagera MCP server, with skills for product photos, ads and reels; paid account required.",
+      "install": "npx skills add alexadams6ix/imagera-skills",
+      "license": "MIT",
+      "tags": [
+        "image-generation",
+        "video-generation",
+        "mcp",
+        "content"
+      ]
     }
   ]
 }
