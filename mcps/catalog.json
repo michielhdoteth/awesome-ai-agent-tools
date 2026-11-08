@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "lastUpdated": "2026-11-07",
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Security",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Design",
@@ -1929,7 +1929,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -3649,6 +3649,24 @@
         "vulnerabilities",
         "dependency-audit",
         "mcp"
+      ]
+    },
+    {
+      "id": "ichi-mcp",
+      "name": "ICHI MCP Server",
+      "category": "Security",
+      "github": "https://github.com/bernik-bot/ichi-mcp",
+      "stars": 0,
+      "description": "Internet Cyber Health Index MCP server \u2014 query the daily internet-wide cyber-health band, critical vulnerability advisories, and feed source health from AI agents",
+      "install": "uvx --from git+https://github.com/bernik-bot/ichi-mcp ichi-mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "security",
+        "threat-intelligence",
+        "cyber-health",
+        "monitoring",
+        "alerts"
       ]
     },
     {
