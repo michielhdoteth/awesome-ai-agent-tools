@@ -2780,8 +2780,8 @@
       "github": "https://github.com/arcmira/mcp",
       "website": "https://arcmira.com/",
       "documentation": "https://arcmira.com/docs/mcp-server",
-      "stars": 4,
-      "description": "Search YouTube transcripts for timestamped quotes and speaker appearances.",
+      "stars": 34,
+      "description": "YouTube transcript search and monitoring for your AI: exact quotes, full transcripts and speakers.",
       "install": "claude mcp add --transport http --scope user arcmira https://mcp.arcmira.com/mcp",
       "license": "Proprietary (hosted service)",
       "verified": false,
@@ -2793,7 +2793,7 @@
         "search",
         "research"
       ],
-      "lastUpdated": "2026-10-08"
+      "lastUpdated": "2026-11-08"
     },
     {
       "id": "buywhere",
