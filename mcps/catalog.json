@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Marketing",
@@ -3821,6 +3821,28 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "bowmark-mcp",
+      "name": "Bowmark MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/bowmark-ai/mcp",
+      "website": "https://bowmark.ai",
+      "stars": 1,
+      "description": "Typed, tested functions for 750+ live websites (Amazon, LinkedIn, YouTube, Airbnb and more): your agent asks for prices, listings, profiles or reviews and gets structured results back. Hosted at https://api.bowmark.ai/mcp; free $10 to start.",
+      "install": "claude mcp add --transport http bowmark https://api.bowmark.ai/mcp",
+      "license": "N/A",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-08",
+      "tags": [
+        "web-data",
+        "scraping",
+        "structured-data",
+        "ecommerce",
+        "social"
       ]
     }
   ]
