@@ -3681,7 +3681,7 @@
       "category": "Marketing",
       "github": "https://github.com/waynehamadi/datacircle-plugin",
       "stars": 2,
-      "description": "Remote MCP server that finds the best GTM APIs for an agent, free with no key.",
+      "description": "Remote MCP server that finds the best GTM APIs for an agent, free with no key. https://datacircle.dev",
       "install": "Remote endpoint: https://api.datacircle.dev/mcp",
       "license": "MIT",
       "verified": false,
