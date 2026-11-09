@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "lastUpdated": "2026-11-09",
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Finance",
@@ -3821,6 +3821,27 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "design-os-studio",
+      "name": "DESIGN:OS Studio MCP",
+      "category": "Design",
+      "github": "https://github.com/jangtrinh/design-os-studio",
+      "stars": 87,
+      "description": "Built-in stdio MCP server (39 tools) of a FREE desktop design studio: agents read, edit and lint .fig files",
+      "install": "Download the app from GitHub Releases; Studio registers designos-mcp for supported CLIs",
+      "license": "PolyForm-Shield-1.0.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-09",
+      "tags": [
+        "design",
+        "fig",
+        "stdio",
+        "desktop",
+        "rust"
       ]
     }
   ]
