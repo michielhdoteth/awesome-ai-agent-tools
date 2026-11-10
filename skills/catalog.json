@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-11-04",
-  "totalSkills": 101,
+  "totalSkills": 102,
   "categories": [
     {
       "name": "Development",
@@ -20,7 +20,7 @@
     },
     {
       "name": "Design",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Testing",
@@ -1942,6 +1942,23 @@
         "backlinks",
         "nofollow",
         "marketing"
+      ]
+    },
+    {
+      "id": "whatishipped",
+      "name": "whatishipped",
+      "source": "selan-ai/whatishipped",
+      "category": "Design",
+      "description": "A Claude Code skill that recreates a mobile app's UI as it ships: every screen, state, component and journey of an iOS or Android app, drawn from its code and checked against the app's own screenshots.",
+      "install": "/plugin marketplace add selan-ai/whatishipped",
+      "license": "MIT",
+      "tags": [
+        "ios",
+        "android",
+        "swiftui",
+        "jetpack-compose",
+        "design-system",
+        "screenshots"
       ]
     }
   ]
