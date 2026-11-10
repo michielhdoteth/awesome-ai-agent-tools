@@ -1943,6 +1943,21 @@
         "nofollow",
         "marketing"
       ]
+    },
+    {
+      "id": "resume-claim-guard",
+      "name": "Resume Claim Guard",
+      "source": "korey2028-prog/resume-claim-guard",
+      "category": "Productivity",
+      "description": "Agent skill that tailors a resume to a job description from confirmed facts only and blocks invented metrics or inflated verbs.",
+      "install": "git clone https://github.com/korey2028-prog/resume-claim-guard ~/.claude/skills/resume-claim-guard",
+      "license": "MIT",
+      "tags": [
+        "resume",
+        "career",
+        "job-search",
+        "writing"
+      ]
     }
   ]
 }
