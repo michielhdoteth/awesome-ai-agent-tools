@@ -4,7 +4,7 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-11-03",
-  "totalTools": 93,
+  "totalTools": 94,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Agent Memory",
@@ -1010,6 +1010,16 @@
       "install": "npx whatileaked scan",
       "source": "github",
       "sourceType": "official"
+    },
+    {
+      "id": "sno-station",
+      "name": "Sno Station",
+      "category": "AI Coding CLIs",
+      "description": "Runs Claude Code, Codex and Cursor as one team: sno reach pair puts a builder and a challenger on a task, and work moves to another agent at a usage limit.",
+      "url": "https://github.com/sno-ai/sno-station",
+      "stars": 971,
+      "crossPlatform": false,
+      "install": "curl -fsSL https://sno.ai/install | sh"
     }
   ]
 }
