@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Browser Automation",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Databases",
@@ -131,6 +131,29 @@
     }
   ],
   "servers": [
+        {
+                "id": "easi-run",
+                "name": "easi.run",
+                "category": "Browser Automation",
+                "github": "https://github.com/julianosig/easi.run",
+                "stars": 47,
+                "description": "Self-hosted Chrome for AI agents via MCP/REST, with live viewing and human takeover for logins, 2FA and approvals",
+                "install": "docker exec -i easi-run-admin-1 admin mcp",
+                "license": "AGPL-3.0-only",
+                "verified": false,
+                "source": "github",
+                "sourceType": "official",
+                "lastUpdated": "2026-11-10",
+                "tags": [
+                          "browser",
+                          "chrome",
+                          "mcp",
+                          "self-hosted",
+                          "docker",
+                          "human-in-the-loop"
+                ],
+                "notes": "The stdio command connects to an already installed easi.run stack; it is not a standalone image or hosted public endpoint. Install on your own Linux x86-64 server with systemd and rootful Docker Engine 28+, then use stdio or your authenticated /mcp Streamable HTTP endpoint. Your agent/model supplies reasoning; server and model costs are separate from the free software. Docs: https://docs.easi.run ; demo: https://easi.run/demo . Submitted by creator Juliano Gouveia with AI assistance."
+        },
     {
       "id": "agent-payment-node",
       "name": "Agent Payment Node",
