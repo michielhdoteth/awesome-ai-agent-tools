@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Finance",
@@ -3821,6 +3821,26 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "honeyvid-mcp",
+      "name": "HoneyVid MCP",
+      "category": "Design",
+      "github": "https://github.com/HoneyVid/cli",
+      "stars": 0,
+      "description": "Hosted remote MCP server (Streamable HTTP, OAuth) for AI video and images: trending templates from a photo, or Kling, Veo and Seedance generation. Paid HoneyVid credits; each video quoted first.",
+      "install": "claude mcp add --transport http honeyvid https://honeyvid.ai/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-11",
+      "tags": [
+        "video",
+        "ai-video",
+        "image-generation",
+        "remote"
       ]
     }
   ]
