@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-11-03",
-  "totalTools": 93,
+  "lastUpdated": "2026-11-11",
+  "totalTools": 94,
   "categories": [
     {
       "name": "Code Analysis",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Formatting & Linting",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Database CLIs",
@@ -507,6 +507,16 @@
       "stars": 2,
       "crossPlatform": true,
       "install": "curl -fsSL https://raw.githubusercontent.com/TerminallyLazy/Tree-Ring-Memory/main/install.sh | sh"
+    },
+    {
+      "id": "agents-md-check",
+      "name": "AGENTS.md Check",
+      "category": "Formatting & Linting",
+      "description": "Offline checks for mechanical issues in AGENTS.md files.",
+      "url": "https://github.com/yangdoh/agents-md-check",
+      "stars": 0,
+      "crossPlatform": false,
+      "install": "git clone https://github.com/yangdoh/agents-md-check.git"
     },
     {
       "id": "biome",
