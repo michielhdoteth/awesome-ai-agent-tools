@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Finance",
@@ -3822,6 +3822,29 @@
         "lever",
         "ashby"
       ]
+    },
+    {
+      "id": "toolbox-pod",
+      "name": "Toolbox POD",
+      "category": "Design",
+      "github": "https://github.com/Toolbox-POD/toolbox-pod-mcp",
+      "stars": 0,
+      "description": "Remote MCP server to design custom tees and hoodies, see mockups in chosen colors, and order prints made and shipped from Utah.",
+      "install": "claude mcp add --transport http toolbox-pod https://mcp.toolboxpod.com/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-11",
+      "tags": [
+        "print-on-demand",
+        "t-shirts",
+        "mockups",
+        "e-commerce",
+        "oauth",
+        "remote-mcp"
+      ],
+      "notes": "Hosted Streamable HTTP endpoint with OAuth 2.1 sign-in; anyone can sign up while connecting. The AI prepares orders and returns a checkout link the user pays on toolboxpod.com; it never pays. US shipping only. The repository holds the connection guide and plugin manifests (MIT), not the server source. Official MCP Registry: com.toolboxpod/mcp."
     }
   ]
 }
