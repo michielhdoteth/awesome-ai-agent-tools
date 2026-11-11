@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -60,7 +60,7 @@
     },
     {
       "name": "Finance",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Research & Data",
@@ -1929,7 +1929,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -3822,6 +3822,28 @@
         "lever",
         "ashby"
       ]
+    },
+    {
+      "id": "cred402",
+      "name": "Cred402 MCP",
+      "category": "Finance",
+      "github": "https://github.com/caelum0x/cred402",
+      "stars": 0,
+      "description": "Credit scoring and reputation for autonomous AI agents: register agents, settle x402 micropayments, and draw/repay on-chain credit lines via 16 stdio MCP tools.",
+      "install": "npx tsx mcp/server.ts",
+      "license": "Apache-2.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-12",
+      "tags": [
+        "x402",
+        "credit-scoring",
+        "agent-reputation",
+        "near",
+        "stdio"
+      ],
+      "notes": "Stdio-only (no hosted remote endpoint). Built for the NEAR Hackathon 2026 Agent Economy track on NEAR; also exposes paid x402 credit-score endpoints on Algorand and QIE. 450/450 TS tests passing as of 2026-11-12."
     }
   ]
 }
