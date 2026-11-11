@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -40,7 +40,7 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Agent Orchestration",
@@ -3821,6 +3821,24 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "umpirix",
+      "name": "Umpirix",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/caelum0x/umpirix",
+      "stars": 0,
+      "description": "Self-hostable, Apache-2.0 typed-decision MCP server: choice/score/noul/decide tools return calibrated probabilities instead of generated text, via a local CPU-only embedding engine (int8 ONNX, lexical fallback) with no API key or database required. Formerly named OpenJev.",
+      "install": "git clone https://github.com/caelum0x/umpirix && cd umpirix && npm install && npm run dev; then claude mcp add --transport http umpirix http://localhost:8080/v1/mcp (or stdio: claude mcp add umpirix -- node scripts/cli.mjs mcp)",
+      "license": "Apache-2.0",
+      "verified": false,
+      "tags": [
+        "typed-decisions",
+        "classification",
+        "self-hosted",
+        "mcp-server",
+        "no-api-key"
       ]
     }
   ]
