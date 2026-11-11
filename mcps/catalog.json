@@ -3829,7 +3829,7 @@
       "category": "Finance",
       "github": "https://github.com/caelum0x/cred402",
       "stars": 0,
-      "description": "Credit scoring and reputation for autonomous AI agents: register agents, settle x402 micropayments, and draw/repay on-chain credit lines via 16 stdio MCP tools.",
+      "description": "Credit scoring and reputation for autonomous AI agents: register agents, settle x402 micropayments, and draw/repay on-chain credit lines via 78 stdio MCP tools.",
       "install": "npx tsx mcp/server.ts",
       "license": "Apache-2.0",
       "verified": false,
