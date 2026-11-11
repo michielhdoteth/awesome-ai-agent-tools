@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-11-04",
-  "totalSkills": 101,
+  "totalSkills": 102,
   "categories": [
     {
       "name": "Development",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Content",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Design",
@@ -1942,6 +1942,21 @@
         "backlinks",
         "nofollow",
         "marketing"
+      ]
+    },
+    {
+      "id": "honeyvid",
+      "name": "HoneyVid",
+      "source": "HoneyVid/skills",
+      "category": "Content",
+      "description": "Five skills for making AI videos and images through HoneyVid: trending templates from a photo, Kling/Veo/Seedance generation, batches; HoneyVid account and paid credits required.",
+      "install": "npx skills add HoneyVid/skills",
+      "license": "MIT",
+      "tags": [
+        "video",
+        "ai-video",
+        "image-generation",
+        "content"
       ]
     }
   ]
