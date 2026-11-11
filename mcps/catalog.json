@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Cloud Platforms",
-      "count": 5
+      "count": 6
     },
     {
       "name": "DevOps",
@@ -3821,6 +3821,26 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "cloudgpu",
+      "name": "CloudGPU MCP",
+      "category": "Cloud Platforms",
+      "github": "https://github.com/mrhy7176/cloudgpu-mcp",
+      "stars": 0,
+      "description": "Local stdio server that lets an agent list rental GPUs, get a quote, rent an instance, upload files, run commands or jobs, read logs, download results and shut the GPU down. Needs a CloudGPU API key or the connect_account approval flow.",
+      "install": "claude mcp add cloudgpu --env CLOUDGPU_API_KEY=your-key -- npx -y cloudgpu-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-11",
+      "tags": [
+        "gpu",
+        "cloud",
+        "compute",
+        "jobs"
       ]
     }
   ]
