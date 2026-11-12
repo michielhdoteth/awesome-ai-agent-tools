@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-11-04",
-  "totalSkills": 101,
+  "totalSkills": 102,
   "categories": [
     {
       "name": "Development",
@@ -20,7 +20,7 @@
     },
     {
       "name": "Design",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Testing",
@@ -1942,6 +1942,25 @@
         "backlinks",
         "nofollow",
         "marketing"
+      ]
+    },
+    {
+      "id": "easysociable-slideshow",
+      "name": "EasySociable",
+      "source": "murphywuwu/easysociable-mcp",
+      "category": "Design",
+      "installs": 0,
+      "description": "Turns a prompt into a branded multi-page carousel for TikTok, Instagram, and LinkedIn, inside your coding agent.",
+      "install": "npx skills add murphywuwu/easysociable-mcp --skill easysociable-slideshow",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "carousel",
+        "social",
+        "design",
+        "tiktok",
+        "instagram"
       ]
     }
   ]
