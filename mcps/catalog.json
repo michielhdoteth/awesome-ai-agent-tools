@@ -3844,7 +3844,7 @@
         "oauth",
         "remote-mcp"
       ],
-      "notes": "Hosted Streamable HTTP endpoint with OAuth 2.1 sign-in; anyone can sign up while connecting. The AI prepares orders and returns a checkout link the user pays on toolboxpod.com; it never pays. US shipping only. The repository holds the connection guide and plugin manifests (MIT), not the server source. Official MCP Registry: com.toolboxpod/mcp."
+      "notes": "Hosted Streamable HTTP endpoint with OAuth 2.1 sign-in; anyone can sign up while connecting. The AI prepares orders and returns a checkout link the user pays on toolboxpod.com; it pays only within a spending limit the account owner sets. US shipping only. The repository holds the connection guide and plugin manifests (MIT), not the server source. Official MCP Registry: com.toolboxpod/mcp."
     }
   ]
 }
