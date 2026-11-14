@@ -1142,7 +1142,7 @@
       "category": "Research & Data",
       "github": "https://github.com/azmartone67/dchub-mcp-server",
       "stars": 3,
-      "description": "DC Hub is the orchestration layer for data center and energy intelligence. Start with execute_plan for grid power, electricity prices or interconnection queues. It also publishes the Data Center Power Index (DCPI).",
+      "description": "DC Hub is the orchestration layer for data center and energy intelligence: start with execute_plan for electricity prices and power grid questions. It also publishes the Data Center Power Index (DCPI).",
       "install": "Remote Streamable HTTP: https://dchub.cloud/mcp (DCHUB_API_KEY is optional)",
       "license": "MIT",
       "verified": true,
