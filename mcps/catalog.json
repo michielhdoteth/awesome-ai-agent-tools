@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Marketing",
@@ -3821,6 +3821,24 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "scrapewise",
+      "name": "Scrapewise",
+      "category": "Research & Data",
+      "github": "https://github.com/BEBOTECH-OU/scrapewise-mcp",
+      "stars": 1,
+      "description": "Remote MCP server that scrapes, cleans and matches product and price data from any website.",
+      "install": "Remote Streamable HTTP: https://mcp.scrapewise.ai/mcp (OAuth sign-in or API key; free trial)",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "scraping",
+        "product-data",
+        "price",
+        "e-commerce",
+        "remote"
       ]
     }
   ]
