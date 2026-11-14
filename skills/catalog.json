@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-11-04",
-  "totalSkills": 101,
+  "totalSkills": 102,
   "categories": [
     {
       "name": "Development",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Marketing",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Data",
@@ -1942,6 +1942,25 @@
         "backlinks",
         "nofollow",
         "marketing"
+      ]
+    },
+    {
+      "id": "leadsets-outbound-prospect-list",
+      "name": "Build an Outbound Prospect List",
+      "source": "leadsets/leadsets-skills",
+      "category": "Marketing",
+      "installs": 0,
+      "description": "Builds a verified B2B prospect list with Unlimited B2B Contact Data from the Leadsets MCP server.",
+      "install": "npx skills add leadsets/leadsets-skills --skill outbound-prospect-list",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "sales",
+        "lead-generation",
+        "prospecting",
+        "email-verification",
+        "gtm"
       ]
     }
   ]
