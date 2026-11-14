@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Marketing",
@@ -3821,6 +3821,29 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "getyoutubetranscript-youtube-mcp",
+      "name": "GetYouTubeTranscript YouTube MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/tubeagentkit/youtube-mcp",
+      "website": "https://getyoutubetranscript.com/youtube-mcp-server",
+      "stars": 10,
+      "description": "YouTube transcripts with optional timestamps, caption languages, video and channel search, and channel and playlist listings (13 tools) via a hosted remote MCP server or a local stdio server.",
+      "install": "claude mcp add --transport http youtube-transcript https://getyoutubetranscript.com/api/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-14",
+      "notes": "The server code is MIT; the getyoutubetranscript.com service it calls is proprietary. Sign in with OAuth 2.1 in the MCP client, or send an API key as a Bearer header. A free account includes 100 credits; each call uses credits. Reads existing captions only.",
+      "tags": [
+        "youtube",
+        "transcripts",
+        "search",
+        "research",
+        "remote-mcp"
       ]
     }
   ]
