@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -1929,7 +1929,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -3822,6 +3822,25 @@
         "lever",
         "ashby"
       ]
+    },
+    {
+      "id": "no-stairs-please",
+      "name": "No Stairs Please",
+      "category": "Entertainment & Travel",
+      "url": "https://nostairsplease.com/mcp",
+      "description": "Hosted Streamable HTTP MCP server exposing a curated US live-music venue database across all 50 states, with room capacities, stage/load-in specs, and booking contacts.",
+      "verified": false,
+      "source": "official",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-15",
+      "tags": [
+        "music",
+        "venues",
+        "mcp",
+        "streamable-http",
+        "touring"
+      ],
+      "notes": "Remote Streamable HTTP MCP endpoint at https://nostairsplease.com/mcp (server card at https://nostairsplease.com/.well-known/mcp/server-card.json)."
     }
   ]
 }
