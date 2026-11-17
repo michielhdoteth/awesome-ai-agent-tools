@@ -26,7 +26,7 @@ This repo uses a catalog-first workflow so counts stay consistent:
 2. **A trusted validator runs automatically** on every PR, including first-time fork PRs. It reads your catalog data through the API (it does not run your code), checks schema, duplicates, categories, links and generated README consistency, and posts one actionable comment.
 3. **Locally** run `.github/scripts/validate-catalogs.js` to preview the same verdict, and `.github/scripts/generate-readme.js` to preview generated docs.
 4. **Maintainers** regenerate READMEs and refresh metadata in one reviewed maintenance PR; you do not need to include generated files.
-5. **After one human approval**, a passing PR is squash-merged automatically. Stale branches are brought up to date automatically.
+5. **After required checks pass**, a catalog-only PR is squash-merged automatically. Stale branches are brought up to date automatically.
 
 **You never need to edit readme.md manually.** Just update the catalog.json files.
 
@@ -293,11 +293,9 @@ Adds [ITEM_NAME] to the [CATEGORY] catalog.
 - [ ] `node .github/scripts/validate-catalogs.js` passes locally
 - [ ] Starred the repo (optional, but appreciated)
 
-## Review and merge
+## Checks and auto-merge
 
-Each contribution needs one approval from a person other than the PR author. Review the exact catalog diff, confirm the source and claims, and verify the required `catalog-validation` check passes. A useful approval says **Go** and gives one brief reason tied to the review (for example: `Go — source is active, the license and install path are documented, and validation passes.`). CI results and automated reviews do not count as human approval. The PR author cannot approve their own PR.
-
-Once approved, a PR that passes validation is squash-merged automatically; do not merge it by hand. PRs that touch CI, scripts, or unrelated files are never auto-merged and require an explicit maintainer decision.
+Catalog contributions are auto-merged after the trusted `catalog-validation` check succeeds, the PR is conflict-free, and its changes stay within catalog and generated documentation files. PRs that touch CI, scripts, or unrelated files are never auto-merged and require a maintainer decision. Automated validation checks catalog structure, required fields, duplicates, source availability, categories, and README consistency; passing checks are a catalog eligibility signal, not a security audit or endorsement.
 
 Keep generated documentation and metadata maintenance consolidated into maintainer automation; contributors should not create separate README-only PRs for catalog entries.
 
