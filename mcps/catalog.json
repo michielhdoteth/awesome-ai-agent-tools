@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 195,
+  "totalServers": 199,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Search",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Agent Orchestration",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Monitoring",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Data Engineering",
@@ -3569,32 +3569,33 @@
       ],
       "notes": "Hosted service by Avatar 8 LLC; the MIT repo holds the agent skills and Claude Code / Cursor plugin config, not the server source. Agent docs: https://cooperemail.com/llms.txt. Official MCP Registry id: com.cooperemail/cooper-email."
     },
-        {
-                "id": "api-supp",
-                "name": "API-Supp",
-                "category": "Communication",
-                "github": "https://github.com/yehudashtein/wa-bridge-mcp",
-                "website": "https://api-supp.com",
-                "stars": 0,
-                "description": "WhatsApp REST API and OAuth MCP for your existing number (unofficial QR bridge, not Meta's Cloud API). Paid, $7.50/number/month.",
-                "install": "pip install wa-bridge-mcp (env API_SUPP_TENANT_TOKEN); or remote https://app.api-supp.com/api/mcp (streamable HTTP, OAuth)",
-                "license": "MIT",
-                "remote": "streamable-http",
-                "verified": false,
-                "source": "github",
-                "sourceType": "official",
-                "lastUpdated": "2026-11-13",
-                "tags": [
-                          "whatsapp",
-                          "messaging",
-                          "chat",
-                          "media",
-                          "voice",
-                          "remote",
-                          "oauth"
-                ],
-                "notes": "Unofficial WhatsApp bridge (not Meta's Cloud API). Local MIT client: https://github.com/yehudashtein/wa-bridge-mcp. Hosted OAuth MCP: https://app.api-supp.com/api/mcp. Paid service at $7.50/number/month."
-        },{
+    {
+      "id": "api-supp",
+      "name": "API-Supp",
+      "category": "Communication",
+      "github": "https://github.com/yehudashtein/wa-bridge-mcp",
+      "website": "https://api-supp.com",
+      "stars": 0,
+      "description": "WhatsApp REST API and OAuth MCP for your existing number (unofficial QR bridge, not Meta's Cloud API). Paid, $7.50/number/month.",
+      "install": "pip install wa-bridge-mcp (env API_SUPP_TENANT_TOKEN); or remote https://app.api-supp.com/api/mcp (streamable HTTP, OAuth)",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-13",
+      "tags": [
+        "whatsapp",
+        "messaging",
+        "chat",
+        "media",
+        "voice",
+        "remote",
+        "oauth"
+      ],
+      "notes": "Unofficial WhatsApp bridge (not Meta's Cloud API). Local MIT client: https://github.com/yehudashtein/wa-bridge-mcp. Hosted OAuth MCP: https://app.api-supp.com/api/mcp. Paid service at $7.50/number/month."
+    },
+    {
       "id": "agentsearch-mcp",
       "name": "AgentSearch MCP",
       "category": "Search",
@@ -3954,6 +3955,28 @@
         "scheduler",
         "meta",
         "remote-mcp"
+      ]
+    },
+    {
+      "id": "zambo",
+      "name": "Zambo",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/zambodotdev/zambo-mcp",
+      "stars": 0,
+      "description": "Remote MCP server with 153 tools, cross-AI handover and continuity, and a verifiable AER-1 receipt for every job",
+      "install": "claude mcp add --transport http zambo https://zambo.dev/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-07",
+      "tags": [
+        "mcp",
+        "remote-mcp",
+        "orchestration",
+        "handover",
+        "continuity",
+        "execution-receipts"
       ]
     }
   ]
