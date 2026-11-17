@@ -2,12 +2,12 @@
 
 Curated Model Context Protocol servers for AI-assisted development
 
-**212** entries across **19** categories.
+**213** entries across **19** categories.
 
 ## Categories
 
 - **Research & Data** (26)
-- **Developer Tools** (24)
+- **Developer Tools** (25)
 - **Search** (20)
 - **Agent Orchestration** (17)
 - **AI & Machine Learning** (16)
@@ -26,7 +26,7 @@ Curated Model Context Protocol servers for AI-assisted development
 - **Mobile** (3)
 - **Data Engineering** (1)
 
-## All 212 mcps
+## All 213 mcps
 
 | Name                               | Category              | Description                                                                                                                                                                                                                                                                                                                                               | Source                                                                                                                | Badges                                                                                                                                                                                                                                               |
 | ---------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -242,6 +242,7 @@ Curated Model Context Protocol servers for AI-assisted development
 | Vaneform MCP                       | Search                | Hosted MCP for free website traffic lookups: estimated monthly visits, trends, and traffic sources for any domain.                                                                                                                                                                                                                                        | [jiangqizheng/vaneform-mcp](https://github.com/jiangqizheng/vaneform-mcp)                                             | ![Stars](https://img.shields.io/github/stars/jiangqizheng/vaneform-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/jiangqizheng/vaneform-mcp?style=flat)                                             |
 | Enhanciar                          | Search                | Remote MCP server for Enhanciar, a company brain. Answers questions from your Slack, Gmail, Drive, Notion, Jira, Linear, GitHub, Zendesk and Postgres with a link to the source, and can propose a reply or ticket for a person to approve. Paid plans; bring your own AI key.                                                                            | [enhanciar/enhanciar-mcp](https://github.com/enhanciar/enhanciar-mcp)                                                 | ![Stars](https://img.shields.io/github/stars/enhanciar/enhanciar-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/enhanciar/enhanciar-mcp?style=flat)                                                 |
 | No Stairs Please                   | Research & Data       | Hosted Streamable HTTP MCP server exposing a curated US live-music venue database across all 50 states, with room capacities, stage/load-in specs, and booking contacts.                                                                                                                                                                                  | [nostairsplease.com](https://nostairsplease.com/mcp)                                                                  |                                                                                                                                                                                                                                                      |
+| mcpserverlist-mcp                  | Developer Tools       | Check if your MCP server is ready for MCP directories, then get it submitted.                                                                                                                                                                                                                                                                             | [sudomichael/mcpserverlist-mcp](https://github.com/sudomichael/mcpserverlist-mcp)                                     | ![Stars](https://img.shields.io/github/stars/sudomichael/mcpserverlist-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sudomichael/mcpserverlist-mcp?style=flat)                                     |
 
 ---
 

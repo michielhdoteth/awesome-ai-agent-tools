@@ -11,7 +11,7 @@
 
 Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
-**725** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**726** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -43,9 +43,9 @@ Top 5 shown:
 
 ## MCPs
 
-212 mcps across 19 categories: Research & Data (26) · Developer Tools (24) · Search (20) · Agent Orchestration (17) · AI & Machine Learning (16) · Communication (15) · Marketing (14) · Databases (11) · Security (11) · Finance (9) · Browser Automation (8) · DevOps (8) · Monitoring (7) · Design (7) · Official Reference (6) · Cloud Platforms (5) · Blockchain (4) · Mobile (3) · Data Engineering (1)
+213 mcps across 19 categories: Research & Data (26) · Developer Tools (25) · Search (20) · Agent Orchestration (17) · AI & Machine Learning (16) · Communication (15) · Marketing (14) · Databases (11) · Security (11) · Finance (9) · Browser Automation (8) · DevOps (8) · Monitoring (7) · Design (7) · Official Reference (6) · Cloud Platforms (5) · Blockchain (4) · Mobile (3) · Data Engineering (1)
 
-**[Browse all 212 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
+**[Browse all 213 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
 
 Top 5 shown:
 
