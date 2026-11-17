@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Finance",
@@ -2062,6 +2062,29 @@
         "veo2",
         "ai-video",
         "creative"
+      ]
+    },
+    {
+      "id": "imageat",
+      "name": "imageat",
+      "category": "Design",
+      "github": "https://github.com/incendies/imageat-mcp",
+      "stars": 0,
+      "description": "Official MCP server for generating and editing images and videos, plus narrated explainers and voiceovers.",
+      "install": "npx -y @imageat/mcp; remote MCP https://mcp.imageat.com/mcp (streamable HTTP, OAuth 2.1 or Bearer API key)",
+      "license": "MIT",
+      "verified": false,
+      "website": "https://imageat.com/mcp",
+      "npmPackage": "@imageat/mcp",
+      "remote": "streamable-http",
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "image-generation",
+        "video-generation",
+        "image-editing",
+        "official",
+        "remote"
       ]
     },
     {
