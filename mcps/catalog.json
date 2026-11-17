@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-02",
-  "totalServers": 194,
+  "lastUpdated": "2026-11-17",
+  "totalServers": 195,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 21
+      "count": 22
     },
     {
       "name": "Marketing",
@@ -3821,6 +3821,27 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "plushsource-mcp",
+      "name": "PlushSource MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/quickman924/plushsource-mcp",
+      "stars": 0,
+      "description": "Search, filter and compare 55 custom plush manufacturers by MOQ, lead time, OEM/ODM and claimed certifications, from the PlushSource directory. Local stdio; bundled data, no API key.",
+      "install": "claude mcp add plushsource -- npx -y plushsource-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-17",
+      "tags": [
+        "manufacturing",
+        "sourcing",
+        "suppliers",
+        "plush",
+        "dataset"
       ]
     }
   ]
