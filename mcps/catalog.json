@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 12
+      "count": 13
     },
     {
       "name": "Data Engineering",
@@ -3839,6 +3839,28 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "mindthread-mcp",
+      "name": "MindThread MCP",
+      "category": "Marketing",
+      "github": "https://github.com/ppcvote/mindthread-mcp",
+      "stars": 1,
+      "description": "Write, schedule and publish Threads posts, review drafted replies and read post insights through MindThread, a Threads automation SaaS built on Meta's official Threads API. Tools are served by the hosted server; needs a MindThread API key.",
+      "install": "claude mcp add mindthread --env MINDTHREAD_API_KEY=mt_live_your_key -- npx -y mindthread-mcp (stdio), or remote https://mindthread.tw/api/mcp (streamable HTTP, Bearer API key or OAuth)",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-17",
+      "website": "https://mindthread.tw/developers",
+      "tags": [
+        "threads",
+        "social-media",
+        "scheduler",
+        "meta",
+        "remote-mcp"
       ]
     }
   ]
