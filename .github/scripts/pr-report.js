@@ -22,8 +22,10 @@ const MARKER = '<!-- catalog-validation-report -->';
 const LABELS = {
   passed: { name: 'validation:passed', color: '0e8a16', description: 'Deterministic catalog validation passed' },
   failed: { name: 'validation:failed', color: 'd73a4a', description: 'Deterministic catalog validation failed' },
-  human: { name: 'needs-human-review', color: 'fbca04', description: 'Requires a maintainer decision before merge' },
+  human: { name: 'needs-maintainer', color: 'fbca04', description: 'Changes outside catalog-only auto-merge scope' },
   conflict: { name: 'merge-conflict', color: 'b60205', description: 'Conflicts with the base branch' },
+  executable: { name: 'risk:executable', color: 'd93f0b', description: 'Listing installs or references executable code; inspect before use' },
+  riskSkill: { name: 'risk:skill', color: 'e4e669', description: 'Agent skill contains instructions that may influence tool use' },
 };
 
 function readReport() {
@@ -60,7 +62,7 @@ function buildBody(report) {
   lines.push(MARKER);
   lines.push(`### ${ok ? 'Catalog validation passed' : 'Catalog validation failed'}`);
   lines.push('');
-  lines.push('This is an automated data check, **not a formal review or approval**.');
+  lines.push('Automated catalog checks validate metadata and source availability. They do not run or security-audit listed software. Treat executable tools as untrusted until reviewed.');
 
   if (report.added && report.added.length) {
     lines.push('');
@@ -84,9 +86,9 @@ function buildBody(report) {
 
   if (report.humanReview && report.humanReviewReasons && report.humanReviewReasons.length) {
     lines.push('');
-    lines.push('**Maintainer review required**');
+    lines.push('**Maintainer handling required**');
     for (const r of report.humanReviewReasons) lines.push(`- ${r}`);
-    lines.push('This PR will not be auto-merged.');
+    lines.push('This PR is outside catalog-only auto-merge scope.');
   }
 
   if (!ok) {
@@ -103,7 +105,7 @@ function buildBody(report) {
 
   if (ok && !report.humanReview) {
     lines.push('');
-    lines.push('A maintainer approval is still required. Once approved, auto-merge (squash) completes the merge automatically.');
+    lines.push('Eligible catalog-only changes auto-merge after required checks pass and GitHub reports the PR is conflict-free.');
   }
 
   lines.push('');
@@ -164,6 +166,10 @@ async function main() {
   if (report.humanReview) {
     await setLabel(number, LABELS.human, []);
   }
+  const executableRisk = (report.added || []).some((entry) => /mods\/catalog\.json|hooks\/catalog\.json|plugins\/catalog\.json|tools\/catalog\.json|skills\/catalog\.json/.test(entry.file));
+  if (executableRisk) await setLabel(number, LABELS.executable, []);
+  const skillRisk = (report.added || []).some((entry) => entry.file === 'skills/catalog.json');
+  if (skillRisk) await setLabel(number, LABELS.riskSkill, []);
   if (hasConflict) {
     await setLabel(number, LABELS.conflict, []);
   }
