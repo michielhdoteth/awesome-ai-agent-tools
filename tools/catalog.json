@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-11-11",
-  "totalTools": 94,
+  "lastUpdated": "2026-11-16",
+  "totalTools": 96,
   "categories": [
     {
       "name": "Code Analysis",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Package Managers",
-      "count": 5
+      "count": 6
     },
     {
       "name": "Docker & Containers",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Agent Memory",
@@ -509,16 +509,6 @@
       "install": "curl -fsSL https://raw.githubusercontent.com/TerminallyLazy/Tree-Ring-Memory/main/install.sh | sh"
     },
     {
-      "id": "agents-md-check",
-      "name": "AGENTS.md Check",
-      "category": "Formatting & Linting",
-      "description": "Offline checks for mechanical issues in AGENTS.md files.",
-      "url": "https://github.com/yangdoh/agents-md-check",
-      "stars": 0,
-      "crossPlatform": false,
-      "install": "git clone https://github.com/yangdoh/agents-md-check.git"
-    },
-    {
       "id": "biome",
       "name": "Biome",
       "category": "Formatting & Linting",
@@ -997,6 +987,19 @@
       "sourceType": "official"
     },
     {
+      "id": "clx",
+      "name": "clx",
+      "category": "AI Coding CLIs",
+      "description": "Linux launcher for Claude Code that starts on whichever of your own Pro/Max accounts has the most usage left and moves a running session to the next account at a usage threshold, without a restart. Unofficial.",
+      "url": "https://github.com/KrasimirKralev/clx",
+      "stars": 0,
+      "crossPlatform": false,
+      "install": "curl -fsSL https://github.com/KrasimirKralev/clx/releases/latest/download/clx.tar.gz | tar xz && ./clx/install.sh",
+      "website": "https://github.com/KrasimirKralev/clx",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
       "id": "hol-guard",
       "name": "HOL Guard",
       "category": "Agent Security",
@@ -1020,6 +1023,29 @@
       "install": "npx whatileaked scan",
       "source": "github",
       "sourceType": "official"
+    },
+    {
+      "id": "skills-manager",
+      "name": "Skills Manager",
+      "category": "Package Managers",
+      "description": "Desktop app and CLI to install, organize, and sync agent skills across Claude Code, Codex, Cursor, and 50+ tools.",
+      "url": "https://github.com/xingkongliang/skills-manager",
+      "stars": 7542,
+      "crossPlatform": true,
+      "install": "brew install --cask skills-manager / scoop install extras/skills-manager",
+      "license": "MIT",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "agents-md-check",
+      "name": "AGENTS.md Check",
+      "category": "Formatting & Linting",
+      "description": "Offline checks for mechanical issues in AGENTS.md files.",
+      "url": "https://github.com/yangdoh/agents-md-check",
+      "stars": 0,
+      "crossPlatform": false,
+      "install": "git clone https://github.com/yangdoh/agents-md-check.git"
     }
   ]
 }
