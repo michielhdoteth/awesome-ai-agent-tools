@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 199,
+  "totalServers": 212,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 18
+      "count": 20
     },
     {
       "name": "AI & Machine Learning",
@@ -52,11 +52,11 @@
     },
     {
       "name": "Security",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Design",
-      "count": 4
+      "count": 7
     },
     {
       "name": "Finance",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 21
+      "count": 26
     },
     {
       "name": "Marketing",
@@ -131,29 +131,29 @@
     }
   ],
   "servers": [
-        {
-                "id": "easi-run",
-                "name": "easi.run",
-                "category": "Browser Automation",
-                "github": "https://github.com/julianosig/easi.run",
-                "stars": 47,
-                "description": "Self-hosted Chrome for AI agents via MCP/REST, with live viewing and human takeover for logins, 2FA and approvals",
-                "install": "docker exec -i easi-run-admin-1 admin mcp",
-                "license": "AGPL-3.0-only",
-                "verified": false,
-                "source": "github",
-                "sourceType": "official",
-                "lastUpdated": "2026-11-10",
-                "tags": [
-                          "browser",
-                          "chrome",
-                          "mcp",
-                          "self-hosted",
-                          "docker",
-                          "human-in-the-loop"
-                ],
-                "notes": "The stdio command connects to an already installed easi.run stack; it is not a standalone image or hosted public endpoint. Install on your own Linux x86-64 server with systemd and rootful Docker Engine 28+, then use stdio or your authenticated /mcp Streamable HTTP endpoint. Your agent/model supplies reasoning; server and model costs are separate from the free software. Docs: https://docs.easi.run ; demo: https://easi.run/demo . Submitted by creator Juliano Gouveia with AI assistance."
-        },
+    {
+      "id": "easi-run",
+      "name": "easi.run",
+      "category": "Browser Automation",
+      "github": "https://github.com/julianosig/easi.run",
+      "stars": 47,
+      "description": "Self-hosted Chrome for AI agents via MCP/REST, with live viewing and human takeover for logins, 2FA and approvals",
+      "install": "docker exec -i easi-run-admin-1 admin mcp",
+      "license": "AGPL-3.0-only",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-10",
+      "tags": [
+        "browser",
+        "chrome",
+        "mcp",
+        "self-hosted",
+        "docker",
+        "human-in-the-loop"
+      ],
+      "notes": "The stdio command connects to an already installed easi.run stack; it is not a standalone image or hosted public endpoint. Install on your own Linux x86-64 server with systemd and rootful Docker Engine 28+, then use stdio or your authenticated /mcp Streamable HTTP endpoint. Your agent/model supplies reasoning; server and model costs are separate from the free software. Docs: https://docs.easi.run ; demo: https://easi.run/demo . Submitted by creator Juliano Gouveia with AI assistance."
+    },
     {
       "id": "agent-payment-node",
       "name": "Agent Payment Node",
@@ -3978,6 +3978,232 @@
         "continuity",
         "execution-receipts"
       ]
+    },
+    {
+      "id": "design-os-studio",
+      "name": "DESIGN:OS Studio MCP",
+      "category": "Design",
+      "github": "https://github.com/jangtrinh/design-os-studio",
+      "stars": 87,
+      "description": "Built-in stdio MCP server (39 tools) of a FREE desktop design studio: agents read, edit and lint .fig files",
+      "install": "Download the app from GitHub Releases; Studio registers designos-mcp for supported CLIs",
+      "license": "PolyForm-Shield-1.0.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-09",
+      "tags": [
+        "design",
+        "fig",
+        "stdio",
+        "desktop",
+        "rust"
+      ]
+    },
+    {
+      "id": "bowmark-mcp",
+      "name": "Bowmark MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/bowmark-ai/mcp",
+      "website": "https://bowmark.ai",
+      "stars": 1,
+      "description": "Typed, tested functions for 750+ live websites (Amazon, LinkedIn, YouTube, Airbnb and more): your agent asks for prices, listings, profiles or reviews and gets structured results back. Hosted at https://api.bowmark.ai/mcp; free $10 to start.",
+      "install": "claude mcp add --transport http bowmark https://api.bowmark.ai/mcp",
+      "license": "N/A",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-08",
+      "tags": [
+        "web-data",
+        "scraping",
+        "structured-data",
+        "ecommerce",
+        "social"
+      ]
+    },
+    {
+      "id": "ichi-mcp",
+      "name": "ICHI MCP Server",
+      "category": "Security",
+      "github": "https://github.com/bernik-bot/ichi-mcp",
+      "stars": 0,
+      "description": "Internet Cyber Health Index MCP server — query the daily internet-wide cyber-health band, critical vulnerability advisories, and feed source health from AI agents",
+      "install": "uvx --from git+https://github.com/bernik-bot/ichi-mcp ichi-mcp",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "security",
+        "threat-intelligence",
+        "cyber-health",
+        "monitoring",
+        "alerts"
+      ]
+    },
+    {
+      "id": "plushsource-mcp",
+      "name": "PlushSource MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/quickman924/plushsource-mcp",
+      "stars": 0,
+      "description": "Search, filter and compare 55 custom plush manufacturers by MOQ, lead time, OEM/ODM and claimed certifications, from the PlushSource directory. Local stdio; bundled data, no API key.",
+      "install": "claude mcp add plushsource -- npx -y plushsource-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-17",
+      "tags": [
+        "manufacturing",
+        "sourcing",
+        "suppliers",
+        "plush",
+        "dataset"
+      ]
+    },
+    {
+      "id": "scrapewise",
+      "name": "Scrapewise",
+      "category": "Research & Data",
+      "github": "https://github.com/BEBOTECH-OU/scrapewise-mcp",
+      "stars": 1,
+      "description": "Remote MCP server that scrapes, cleans and matches product and price data from any website.",
+      "install": "Remote Streamable HTTP: https://mcp.scrapewise.ai/mcp (OAuth sign-in or API key; free trial)",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "scraping",
+        "product-data",
+        "price",
+        "e-commerce",
+        "remote"
+      ]
+    },
+    {
+      "id": "getyoutubetranscript-youtube-mcp",
+      "name": "GetYouTubeTranscript YouTube MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/tubeagentkit/youtube-mcp",
+      "website": "https://getyoutubetranscript.com/youtube-mcp-server",
+      "stars": 10,
+      "description": "YouTube transcripts with optional timestamps, caption languages, video and channel search, and channel and playlist listings (13 tools) via a hosted remote MCP server or a local stdio server.",
+      "install": "claude mcp add --transport http youtube-transcript https://getyoutubetranscript.com/api/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-14",
+      "notes": "The server code is MIT; the getyoutubetranscript.com service it calls is proprietary. Sign in with OAuth 2.1 in the MCP client, or send an API key as a Bearer header. A free account includes 100 credits; each call uses credits. Reads existing captions only.",
+      "tags": [
+        "youtube",
+        "transcripts",
+        "search",
+        "research",
+        "remote-mcp"
+      ]
+    },
+    {
+      "id": "toolbox-pod",
+      "name": "Toolbox POD",
+      "category": "Design",
+      "github": "https://github.com/Toolbox-POD/toolbox-pod-mcp",
+      "stars": 0,
+      "description": "Remote MCP server to design custom tees and hoodies, see mockups in chosen colors, and order prints made and shipped from Utah.",
+      "install": "claude mcp add --transport http toolbox-pod https://mcp.toolboxpod.com/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-11",
+      "tags": [
+        "print-on-demand",
+        "t-shirts",
+        "mockups",
+        "e-commerce",
+        "oauth",
+        "remote-mcp"
+      ],
+      "notes": "Hosted Streamable HTTP endpoint with OAuth 2.1 sign-in; anyone can sign up while connecting. The AI prepares orders and returns a checkout link the user pays on toolboxpod.com; it pays only within a spending limit the account owner sets. US shipping only. The repository holds the connection guide and plugin manifests (MIT), not the server source. Official MCP Registry: com.toolboxpod/mcp."
+    },
+    {
+      "id": "honeyvid-mcp",
+      "name": "HoneyVid MCP",
+      "category": "Design",
+      "github": "https://github.com/HoneyVid/cli",
+      "stars": 0,
+      "description": "Hosted remote MCP server (Streamable HTTP, OAuth) for AI video and images: trending templates from a photo, or Kling, Veo and Seedance generation. Paid HoneyVid credits; each video quoted first.",
+      "install": "claude mcp add --transport http honeyvid https://honeyvid.ai/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-11",
+      "tags": [
+        "video",
+        "ai-video",
+        "image-generation",
+        "remote"
+      ]
+    },
+    {
+      "id": "vaneform",
+      "name": "Vaneform MCP",
+      "category": "Search",
+      "github": "https://github.com/jiangqizheng/vaneform-mcp",
+      "stars": 0,
+      "description": "Hosted MCP for free website traffic lookups: estimated monthly visits, trends, and traffic sources for any domain.",
+      "install": "Remote MCP: https://vaneform.com/mcp",
+      "license": "Unknown",
+      "verified": false,
+      "tags": [
+        "traffic",
+        "analytics",
+        "seo",
+        "remote",
+        "hosted"
+      ]
+    },
+    {
+      "id": "enhanciar-mcp",
+      "name": "Enhanciar",
+      "category": "Search",
+      "github": "https://github.com/enhanciar/enhanciar-mcp",
+      "website": "https://enhanciar.in",
+      "stars": 0,
+      "description": "Remote MCP server for Enhanciar, a company brain. Answers questions from your Slack, Gmail, Drive, Notion, Jira, Linear, GitHub, Zendesk and Postgres with a link to the source, and can propose a reply or ticket for a person to approve. Paid plans; bring your own AI key.",
+      "install": "claude mcp add --transport http --scope user enhanciar https://enhanciar.in/enhanciar/mcp/ --header \"Authorization: Bearer dh_your_key\"",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-07",
+      "tags": [
+        "search",
+        "knowledge",
+        "slack",
+        "notion",
+        "remote"
+      ],
+      "notes": "Hosted endpoint: https://enhanciar.in/enhanciar/mcp/ (Streamable HTTP). Needs an API key from a paid Enhanciar account. Official MCP Registry id: in.enhanciar/enhanciar."
+    },
+    {
+      "id": "no-stairs-please",
+      "name": "No Stairs Please",
+      "category": "Research & Data",
+      "url": "https://nostairsplease.com/mcp",
+      "description": "Hosted Streamable HTTP MCP server exposing a curated US live-music venue database across all 50 states, with room capacities, stage/load-in specs, and booking contacts.",
+      "verified": false,
+      "source": "official",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-15",
+      "tags": [
+        "music",
+        "venues",
+        "mcp",
+        "streamable-http",
+        "touring"
+      ],
+      "notes": "Remote Streamable HTTP MCP endpoint at https://nostairsplease.com/mcp (server card at https://nostairsplease.com/.well-known/mcp/server-card.json)."
     }
   ]
 }

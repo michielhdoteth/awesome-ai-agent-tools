@@ -2,14 +2,14 @@
 
 Essential CLI tools and utilities that enhance AI coding agent capabilities
 
-**95** entries across **15** categories.
+**98** entries across **15** categories.
 
 ## Categories
 
-- **AI Coding CLIs** (18)
+- **AI Coding CLIs** (20)
 - **Code Analysis** (13)
+- **Formatting & Linting** (8)
 - **Cloud & DevOps** (7)
-- **Formatting & Linting** (7)
 - **Agent Training & Eval** (7)
 - **Git Utilities** (6)
 - **Package Managers** (6)
@@ -22,7 +22,7 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 - **AI APIs** (3)
 - **Agent Security** (2)
 
-## All 95 tools
+## All 98 tools
 
 | Name                       | Category              | Description                                                                                                                                                                                                                          | Source                                                                                           | Badges                                                                                                                                                                                                                 |
 | -------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -121,6 +121,9 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 | HOL Guard                  | Agent Security        | Local-first security checks for AI coding agents, including tool-call approvals, secret access, prompt injection, and plugin or MCP risks.                                                                                           | [hashgraph-online/hol-guard](https://github.com/hashgraph-online/hol-guard)                      | ![Stars](https://img.shields.io/github/stars/hashgraph-online/hol-guard?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hashgraph-online/hol-guard?style=flat)             |
 | whatileaked                | Agent Security        | Scans local Claude Code, Codex and Cursor transcripts for credentials already sent to the model, using the gitleaks rule set. No network, zero dependencies.                                                                         | [selan-ai/whatileaked](https://github.com/selan-ai/whatileaked)                                  | ![Stars](https://img.shields.io/github/stars/selan-ai/whatileaked?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/selan-ai/whatileaked?style=flat)                         |
 | Skills Manager             | Package Managers      | Desktop app and CLI to install, organize, and sync agent skills across Claude Code, Codex, Cursor, and 50+ tools.                                                                                                                    | [xingkongliang/skills-manager](https://github.com/xingkongliang/skills-manager)                  | ![Stars](https://img.shields.io/github/stars/xingkongliang/skills-manager?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/xingkongliang/skills-manager?style=flat)         |
+| AGENTS.md Check            | Formatting & Linting  | Offline checks for mechanical issues in AGENTS.md files.                                                                                                                                                                             | [yangdoh/agents-md-check](https://github.com/yangdoh/agents-md-check)                            | ![Stars](https://img.shields.io/github/stars/yangdoh/agents-md-check?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/yangdoh/agents-md-check?style=flat)                   |
+| Sno Station                | AI Coding CLIs        | Runs Claude Code, Codex and Cursor as one team: sno reach pair puts a builder and a challenger on a task, and work moves to another agent at a usage limit.                                                                          | [sno-ai/sno-station](https://github.com/sno-ai/sno-station)                                      | ![Stars](https://img.shields.io/github/stars/sno-ai/sno-station?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sno-ai/sno-station?style=flat)                             |
+| byagent                    | AI Coding CLIs        | Turns Markdown or HTML an agent makes into a shareable link, with versions and line comments.                                                                                                                                        | [anup-a/byagent](https://github.com/anup-a/byagent)                                              | ![Stars](https://img.shields.io/github/stars/anup-a/byagent?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/anup-a/byagent?style=flat)                                     |
 
 ---
 

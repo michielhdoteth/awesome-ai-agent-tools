@@ -11,7 +11,7 @@
 
 Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
-**704** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**725** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -27,9 +27,9 @@ Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI to
 
 ## Skills
 
-102 skills across 9 categories: Development (33) · Productivity (17) · Design (11) · Content (10) · DevOps (9) · Data (7) · Marketing (7) · Testing (6) · Security (2)
+107 skills across 9 categories: Development (33) · Productivity (18) · Design (13) · Content (11) · DevOps (9) · Marketing (8) · Data (7) · Testing (6) · Security (2)
 
-**[Browse all 102 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
+**[Browse all 107 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
 
 Top 5 shown:
 
@@ -43,9 +43,9 @@ Top 5 shown:
 
 ## MCPs
 
-201 mcps across 19 categories: Developer Tools (24) · Research & Data (21) · Search (18) · Agent Orchestration (17) · AI & Machine Learning (16) · Communication (15) · Marketing (14) · Databases (11) · Security (10) · Finance (9) · Browser Automation (8) · DevOps (8) · Monitoring (7) · Official Reference (6) · Cloud Platforms (5) · Design (4) · Blockchain (4) · Mobile (3) · Data Engineering (1)
+212 mcps across 19 categories: Research & Data (26) · Developer Tools (24) · Search (20) · Agent Orchestration (17) · AI & Machine Learning (16) · Communication (15) · Marketing (14) · Databases (11) · Security (11) · Finance (9) · Browser Automation (8) · DevOps (8) · Monitoring (7) · Design (7) · Official Reference (6) · Cloud Platforms (5) · Blockchain (4) · Mobile (3) · Data Engineering (1)
 
-**[Browse all 201 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
+**[Browse all 212 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
 
 Top 5 shown:
 
@@ -107,9 +107,9 @@ Top 5 shown:
 
 ## Plugins
 
-60 plugins across 11 categories: Claude Code (16) · Cross-Tool (10) · OpenCode (9) · VS Code AI (6) · Cursor (5) · Windsurf (4) · JetBrains (4) · Copilot (3) · Aider (1) · Codex (1) · Hermes Agent (1)
+62 plugins across 11 categories: Claude Code (18) · Cross-Tool (10) · OpenCode (9) · VS Code AI (6) · Cursor (5) · Windsurf (4) · JetBrains (4) · Copilot (3) · Aider (1) · Codex (1) · Hermes Agent (1)
 
-**[Browse all 60 plugins in plugins/](plugins/)** · [catalog.json](plugins/catalog.json)
+**[Browse all 62 plugins in plugins/](plugins/)** · [catalog.json](plugins/catalog.json)
 
 Top 5 shown:
 
@@ -139,9 +139,9 @@ Top 5 shown:
 
 ## Tools
 
-95 tools across 15 categories: AI Coding CLIs (18) · Code Analysis (13) · Cloud & DevOps (7) · Formatting & Linting (7) · Agent Training & Eval (7) · Git Utilities (6) · Package Managers (6) · Docker & Containers (5) · API Testing (5) · Agent Memory (4) · Database CLIs (4) · Monitoring (4) · Terminal Enhancement (4) · AI APIs (3) · Agent Security (2)
+98 tools across 15 categories: AI Coding CLIs (20) · Code Analysis (13) · Formatting & Linting (8) · Cloud & DevOps (7) · Agent Training & Eval (7) · Git Utilities (6) · Package Managers (6) · Docker & Containers (5) · API Testing (5) · Agent Memory (4) · Database CLIs (4) · Monitoring (4) · Terminal Enhancement (4) · AI APIs (3) · Agent Security (2)
 
-**[Browse all 95 tools in tools/](tools/)** · [catalog.json](tools/catalog.json)
+**[Browse all 98 tools in tools/](tools/)** · [catalog.json](tools/catalog.json)
 
 Top 5 shown:
 
