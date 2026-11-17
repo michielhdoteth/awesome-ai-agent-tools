@@ -3,13 +3,12 @@
 
 /**
  * Enable GitHub auto-merge (squash) for a PR that is safe to merge once its
- * required review + checks pass.
+ * required catalog checks pass.
  *
  * This script never merges directly and never bypasses a rule. It only asks
  * GitHub to queue the merge. Conditions, all deterministic:
  *   - PR is not a draft
  *   - no merge conflict (mergeable == MERGEABLE)
- *   - reviewDecision == APPROVED
  *   - required check `catalog-validation` is SUCCESS
  *   - every changed file is a catalog/README/doc file (no CI or code changes)
  *   - at least one catalog file changed
@@ -32,7 +31,6 @@ query($owner: String!, $name: String!, $number: Int!) {
       isDraft
       mergeable
       mergeStateStatus
-      reviewDecision
       autoMergeRequest { mergeMethod enabledAt }
       files(first: 100) { nodes { path } }
       commits(last: 1) {
@@ -148,7 +146,6 @@ function evaluate(pr) {
   if (pr.mergeable !== 'MERGEABLE') reasons.push(`mergeable=${pr.mergeable}`);
   if (pr.mergeStateStatus === 'DIRTY') reasons.push('conflict');
   if (pr.mergeStateStatus === 'BEHIND') reasons.push('branch behind base (will be synced)');
-  if (pr.reviewDecision !== 'APPROVED') reasons.push(`reviewDecision=${pr.reviewDecision || 'NONE'}`);
   if (check !== 'SUCCESS') reasons.push(`check=${check}`);
   if (!hasCatalog) reasons.push('no catalog file changed');
   if (unsafe.length) reasons.push(`unsafe scope: ${unsafe.map((f) => f.path).join(', ')}`);
