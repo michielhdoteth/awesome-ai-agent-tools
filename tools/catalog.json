@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Agent Memory",
@@ -983,6 +983,19 @@
       "crossPlatform": true,
       "install": "npm install -g @testmuai/kane-cli",
       "website": "https://www.testmuai.com/kane-cli/",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "clx",
+      "name": "clx",
+      "category": "AI Coding CLIs",
+      "description": "Linux launcher for Claude Code that starts on whichever of your own Pro/Max accounts has the most usage left and moves a running session to the next account at a usage threshold, without a restart. Unofficial.",
+      "url": "https://github.com/KrasimirKralev/clx",
+      "stars": 0,
+      "crossPlatform": false,
+      "install": "curl -fsSL https://github.com/KrasimirKralev/clx/releases/latest/download/clx.tar.gz | tar xz && ./clx/install.sh",
+      "website": "https://github.com/KrasimirKralev/clx",
       "source": "github",
       "sourceType": "official"
     },
