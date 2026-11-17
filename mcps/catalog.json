@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 195,
+  "totalServers": 199,
   "categories": [
     {
       "name": "Official Reference",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Browser Automation",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Databases",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Search",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Agent Orchestration",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Monitoring",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 13
+      "count": 14
     },
     {
       "name": "Data Engineering",
@@ -80,7 +80,7 @@
     },
     {
       "name": "Mobile",
-      "count": 2
+      "count": 3
     }
   ],
   "sources": [
@@ -131,6 +131,29 @@
     }
   ],
   "servers": [
+        {
+                "id": "easi-run",
+                "name": "easi.run",
+                "category": "Browser Automation",
+                "github": "https://github.com/julianosig/easi.run",
+                "stars": 47,
+                "description": "Self-hosted Chrome for AI agents via MCP/REST, with live viewing and human takeover for logins, 2FA and approvals",
+                "install": "docker exec -i easi-run-admin-1 admin mcp",
+                "license": "AGPL-3.0-only",
+                "verified": false,
+                "source": "github",
+                "sourceType": "official",
+                "lastUpdated": "2026-11-10",
+                "tags": [
+                          "browser",
+                          "chrome",
+                          "mcp",
+                          "self-hosted",
+                          "docker",
+                          "human-in-the-loop"
+                ],
+                "notes": "The stdio command connects to an already installed easi.run stack; it is not a standalone image or hosted public endpoint. Install on your own Linux x86-64 server with systemd and rootful Docker Engine 28+, then use stdio or your authenticated /mcp Streamable HTTP endpoint. Your agent/model supplies reasoning; server and model costs are separate from the free software. Docs: https://docs.easi.run ; demo: https://easi.run/demo . Submitted by creator Juliano Gouveia with AI assistance."
+        },
     {
       "id": "agent-payment-node",
       "name": "Agent Payment Node",
@@ -2391,6 +2414,24 @@
       ]
     },
     {
+      "id": "tapflow",
+      "name": "tapflow",
+      "category": "Mobile",
+      "github": "https://github.com/jo-duchan/tapflow",
+      "stars": 1672,
+      "description": "Self-hosted MCP server that lets coding agents drive iOS simulators and Android emulators on your own Mac, with a live browser view of the device. App data stays on your network.",
+      "install": "npm install -g @tapflowio/mcp-server",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "ios",
+        "android",
+        "simulator",
+        "emulator",
+        "self-hosted"
+      ]
+    },
+    {
       "id": "animica-mcp",
       "name": "Animica MCP",
       "category": "Blockchain",
@@ -2803,8 +2844,8 @@
       "github": "https://github.com/arcmira/mcp",
       "website": "https://arcmira.com/",
       "documentation": "https://arcmira.com/docs/mcp-server",
-      "stars": 4,
-      "description": "Search YouTube transcripts for timestamped quotes and speaker appearances.",
+      "stars": 34,
+      "description": "YouTube transcript search and monitoring for your AI: exact quotes, full transcripts and speakers.",
       "install": "claude mcp add --transport http --scope user arcmira https://mcp.arcmira.com/mcp",
       "license": "Proprietary (hosted service)",
       "verified": false,
@@ -2816,7 +2857,7 @@
         "search",
         "research"
       ],
-      "lastUpdated": "2026-10-08"
+      "lastUpdated": "2026-11-08"
     },
     {
       "id": "buywhere",
@@ -3528,32 +3569,33 @@
       ],
       "notes": "Hosted service by Avatar 8 LLC; the MIT repo holds the agent skills and Claude Code / Cursor plugin config, not the server source. Agent docs: https://cooperemail.com/llms.txt. Official MCP Registry id: com.cooperemail/cooper-email."
     },
-        {
-                "id": "api-supp",
-                "name": "API-Supp",
-                "category": "Communication",
-                "github": "https://github.com/yehudashtein/wa-bridge-mcp",
-                "website": "https://api-supp.com",
-                "stars": 0,
-                "description": "WhatsApp REST API and OAuth MCP for your existing number (unofficial QR bridge, not Meta's Cloud API). Paid, $7.50/number/month.",
-                "install": "pip install wa-bridge-mcp (env API_SUPP_TENANT_TOKEN); or remote https://app.api-supp.com/api/mcp (streamable HTTP, OAuth)",
-                "license": "MIT",
-                "remote": "streamable-http",
-                "verified": false,
-                "source": "github",
-                "sourceType": "official",
-                "lastUpdated": "2026-11-13",
-                "tags": [
-                          "whatsapp",
-                          "messaging",
-                          "chat",
-                          "media",
-                          "voice",
-                          "remote",
-                          "oauth"
-                ],
-                "notes": "Unofficial WhatsApp bridge (not Meta's Cloud API). Local MIT client: https://github.com/yehudashtein/wa-bridge-mcp. Hosted OAuth MCP: https://app.api-supp.com/api/mcp. Paid service at $7.50/number/month."
-        },{
+    {
+      "id": "api-supp",
+      "name": "API-Supp",
+      "category": "Communication",
+      "github": "https://github.com/yehudashtein/wa-bridge-mcp",
+      "website": "https://api-supp.com",
+      "stars": 0,
+      "description": "WhatsApp REST API and OAuth MCP for your existing number (unofficial QR bridge, not Meta's Cloud API). Paid, $7.50/number/month.",
+      "install": "pip install wa-bridge-mcp (env API_SUPP_TENANT_TOKEN); or remote https://app.api-supp.com/api/mcp (streamable HTTP, OAuth)",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-13",
+      "tags": [
+        "whatsapp",
+        "messaging",
+        "chat",
+        "media",
+        "voice",
+        "remote",
+        "oauth"
+      ],
+      "notes": "Unofficial WhatsApp bridge (not Meta's Cloud API). Local MIT client: https://github.com/yehudashtein/wa-bridge-mcp. Hosted OAuth MCP: https://app.api-supp.com/api/mcp. Paid service at $7.50/number/month."
+    },
+    {
       "id": "agentsearch-mcp",
       "name": "AgentSearch MCP",
       "category": "Search",
@@ -3729,7 +3771,7 @@
       "category": "Marketing",
       "github": "https://github.com/waynehamadi/datacircle-plugin",
       "stars": 2,
-      "description": "Remote MCP server that finds the best GTM APIs for an agent, free with no key.",
+      "description": "Remote MCP server that finds the best GTM APIs for an agent, free with no key. https://datacircle.dev",
       "install": "Remote endpoint: https://api.datacircle.dev/mcp",
       "license": "MIT",
       "verified": false,
@@ -3913,6 +3955,28 @@
         "scheduler",
         "meta",
         "remote-mcp"
+      ]
+    },
+    {
+      "id": "zambo",
+      "name": "Zambo",
+      "category": "Agent Orchestration",
+      "github": "https://github.com/zambodotdev/zambo-mcp",
+      "stars": 0,
+      "description": "Remote MCP server with 153 tools, cross-AI handover and continuity, and a verifiable AER-1 receipt for every job",
+      "install": "claude mcp add --transport http zambo https://zambo.dev/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-07",
+      "tags": [
+        "mcp",
+        "remote-mcp",
+        "orchestration",
+        "handover",
+        "continuity",
+        "execution-receipts"
       ]
     }
   ]
