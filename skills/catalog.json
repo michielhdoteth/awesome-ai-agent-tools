@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-11-04",
-  "totalSkills": 102,
+  "lastUpdated": "2026-11-12",
+  "totalSkills": 103,
   "categories": [
     {
       "name": "Development",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Data",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Security",
@@ -1945,6 +1945,21 @@
       ]
     },
     {
+      "id": "firecrawl",
+      "name": "Firecrawl",
+      "source": "firecrawl/skills",
+      "category": "Data",
+      "description": "Official Firecrawl skills for AI agents to search, scrape, crawl, map and interact with the web, find structured data through Firecrawl Alexandria, and build on the Firecrawl API.",
+      "install": "npx skills add firecrawl/skills",
+      "license": "ISC",
+      "tags": [
+        "web-search",
+        "scraping",
+        "crawling",
+        "web-data"
+      ]
+    },
+    {
       "id": "easysociable-slideshow",
       "name": "EasySociable",
       "source": "murphywuwu/easysociable-mcp",
@@ -1961,7 +1976,8 @@
         "design",
         "tiktok",
         "instagram"
-      ]
+      ],
+      "notes": "Community MCP wrapper: by default it forwards the full process environment to a third-party CLI fetched with npx (EASYSOCIABLE_ALLOW_ENV_CREDENTIALS=true). Use a scoped API key and review that CLI before enabling it."
     }
   ]
 }
