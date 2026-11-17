@@ -16,7 +16,7 @@
     },
     {
       "name": "Browser Automation",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Databases",
@@ -80,7 +80,7 @@
     },
     {
       "name": "Mobile",
-      "count": 2
+      "count": 3
     }
   ],
   "sources": [
@@ -131,6 +131,29 @@
     }
   ],
   "servers": [
+        {
+                "id": "easi-run",
+                "name": "easi.run",
+                "category": "Browser Automation",
+                "github": "https://github.com/julianosig/easi.run",
+                "stars": 47,
+                "description": "Self-hosted Chrome for AI agents via MCP/REST, with live viewing and human takeover for logins, 2FA and approvals",
+                "install": "docker exec -i easi-run-admin-1 admin mcp",
+                "license": "AGPL-3.0-only",
+                "verified": false,
+                "source": "github",
+                "sourceType": "official",
+                "lastUpdated": "2026-11-10",
+                "tags": [
+                          "browser",
+                          "chrome",
+                          "mcp",
+                          "self-hosted",
+                          "docker",
+                          "human-in-the-loop"
+                ],
+                "notes": "The stdio command connects to an already installed easi.run stack; it is not a standalone image or hosted public endpoint. Install on your own Linux x86-64 server with systemd and rootful Docker Engine 28+, then use stdio or your authenticated /mcp Streamable HTTP endpoint. Your agent/model supplies reasoning; server and model costs are separate from the free software. Docs: https://docs.easi.run ; demo: https://easi.run/demo . Submitted by creator Juliano Gouveia with AI assistance."
+        },
     {
       "id": "agent-payment-node",
       "name": "Agent Payment Node",
@@ -2391,6 +2414,24 @@
       ]
     },
     {
+      "id": "tapflow",
+      "name": "tapflow",
+      "category": "Mobile",
+      "github": "https://github.com/jo-duchan/tapflow",
+      "stars": 1672,
+      "description": "Self-hosted MCP server that lets coding agents drive iOS simulators and Android emulators on your own Mac, with a live browser view of the device. App data stays on your network.",
+      "install": "npm install -g @tapflowio/mcp-server",
+      "license": "MIT",
+      "verified": false,
+      "tags": [
+        "ios",
+        "android",
+        "simulator",
+        "emulator",
+        "self-hosted"
+      ]
+    },
+    {
       "id": "animica-mcp",
       "name": "Animica MCP",
       "category": "Blockchain",
@@ -2803,8 +2844,8 @@
       "github": "https://github.com/arcmira/mcp",
       "website": "https://arcmira.com/",
       "documentation": "https://arcmira.com/docs/mcp-server",
-      "stars": 4,
-      "description": "Search YouTube transcripts for timestamped quotes and speaker appearances.",
+      "stars": 34,
+      "description": "YouTube transcript search and monitoring for your AI: exact quotes, full transcripts and speakers.",
       "install": "claude mcp add --transport http --scope user arcmira https://mcp.arcmira.com/mcp",
       "license": "Proprietary (hosted service)",
       "verified": false,
@@ -2816,7 +2857,7 @@
         "search",
         "research"
       ],
-      "lastUpdated": "2026-10-08"
+      "lastUpdated": "2026-11-08"
     },
     {
       "id": "buywhere",
