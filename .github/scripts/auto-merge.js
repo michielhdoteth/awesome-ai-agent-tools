@@ -31,6 +31,7 @@ query($owner: String!, $name: String!, $number: Int!) {
       isDraft
       mergeable
       mergeStateStatus
+      reviewDecision
       autoMergeRequest { mergeMethod enabledAt }
       files(first: 100) { nodes { path } }
       commits(last: 1) {
@@ -143,6 +144,12 @@ function evaluate(pr) {
   const { unsafe, hasCatalog } = scope(pr);
   const reasons = [];
   if (pr.isDraft) reasons.push('draft');
+  // A maintainer requesting changes is an explicit stop signal: never queue
+  // auto-merge over it, even if the catalog checks pass. REVIEW_REQUIRED is
+  // only reported when GitHub itself demands a review, not for the normal
+  // check-based catalog flow.
+  if (pr.reviewDecision === 'CHANGES_REQUESTED') reasons.push('changes requested by a reviewer');
+  if (pr.reviewDecision === 'REVIEW_REQUIRED') reasons.push('reviewDecision=REVIEW_REQUIRED');
   if (pr.mergeable !== 'MERGEABLE') reasons.push(`mergeable=${pr.mergeable}`);
   if (pr.mergeStateStatus === 'DIRTY') reasons.push('conflict');
   if (pr.mergeStateStatus === 'BEHIND') reasons.push('branch behind base (will be synced)');
