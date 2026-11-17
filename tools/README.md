@@ -2,17 +2,17 @@
 
 Essential CLI tools and utilities that enhance AI coding agent capabilities
 
-**93** entries across **15** categories.
+**95** entries across **15** categories.
 
 ## Categories
 
-- **AI Coding CLIs** (17)
+- **AI Coding CLIs** (18)
 - **Code Analysis** (13)
 - **Cloud & DevOps** (7)
 - **Formatting & Linting** (7)
 - **Agent Training & Eval** (7)
 - **Git Utilities** (6)
-- **Package Managers** (5)
+- **Package Managers** (6)
 - **Docker & Containers** (5)
 - **API Testing** (5)
 - **Agent Memory** (4)
@@ -22,7 +22,7 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 - **AI APIs** (3)
 - **Agent Security** (2)
 
-## All 93 tools
+## All 95 tools
 
 | Name                       | Category              | Description                                                                                                                                                                                                                          | Source                                                                                           | Badges                                                                                                                                                                                                                 |
 | -------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -117,8 +117,10 @@ Essential CLI tools and utilities that enhance AI coding agent capabilities
 | Talavine Code              | AI Coding CLIs        | Free MIT coding workspace with terminal and desktop interfaces and configurable model providers.                                                                                                                                     | [scrossen/talavine-code](https://github.com/scrossen/talavine-code)                              | ![Stars](https://img.shields.io/github/stars/scrossen/talavine-code?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/scrossen/talavine-code?style=flat)                     |
 | Mixdog                     | AI Coding CLIs        | Open-source (Apache-2.0) desktop coding agent where a lead model plans and cheaper models handle search, edits and review.                                                                                                           | [tribgames/mixdog](https://github.com/tribgames/mixdog)                                          | ![Stars](https://img.shields.io/github/stars/tribgames/mixdog?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/tribgames/mixdog?style=flat)                                 |
 | Kane CLI                   | AI Coding CLIs        | Verify any browser flow from your terminal in natural language. Real Chrome, evidence-backed.                                                                                                                                        | [LambdaTest/kane-cli](https://github.com/LambdaTest/kane-cli)                                    | ![Stars](https://img.shields.io/github/stars/LambdaTest/kane-cli?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/LambdaTest/kane-cli?style=flat)                           |
+| clx                        | AI Coding CLIs        | Linux launcher for Claude Code that starts on whichever of your own Pro/Max accounts has the most usage left and moves a running session to the next account at a usage threshold, without a restart. Unofficial.                    | [KrasimirKralev/clx](https://github.com/KrasimirKralev/clx)                                      | ![Stars](https://img.shields.io/github/stars/KrasimirKralev/clx?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/KrasimirKralev/clx?style=flat)                             |
 | HOL Guard                  | Agent Security        | Local-first security checks for AI coding agents, including tool-call approvals, secret access, prompt injection, and plugin or MCP risks.                                                                                           | [hashgraph-online/hol-guard](https://github.com/hashgraph-online/hol-guard)                      | ![Stars](https://img.shields.io/github/stars/hashgraph-online/hol-guard?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hashgraph-online/hol-guard?style=flat)             |
 | whatileaked                | Agent Security        | Scans local Claude Code, Codex and Cursor transcripts for credentials already sent to the model, using the gitleaks rule set. No network, zero dependencies.                                                                         | [selan-ai/whatileaked](https://github.com/selan-ai/whatileaked)                                  | ![Stars](https://img.shields.io/github/stars/selan-ai/whatileaked?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/selan-ai/whatileaked?style=flat)                         |
+| Skills Manager             | Package Managers      | Desktop app and CLI to install, organize, and sync agent skills across Claude Code, Codex, Cursor, and 50+ tools.                                                                                                                    | [xingkongliang/skills-manager](https://github.com/xingkongliang/skills-manager)                  | ![Stars](https://img.shields.io/github/stars/xingkongliang/skills-manager?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/xingkongliang/skills-manager?style=flat)         |
 
 ---
 
