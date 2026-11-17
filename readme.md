@@ -11,7 +11,7 @@
 
 Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
-**704** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**705** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -27,9 +27,9 @@ Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI to
 
 ## Skills
 
-102 skills across 9 categories: Development (33) · Productivity (17) · Design (11) · Content (10) · DevOps (9) · Data (7) · Marketing (7) · Testing (6) · Security (2)
+103 skills across 9 categories: Development (33) · Productivity (18) · Design (11) · Content (10) · DevOps (9) · Data (7) · Marketing (7) · Testing (6) · Security (2)
 
-**[Browse all 102 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
+**[Browse all 103 skills in skills/](skills/)** · [catalog.json](skills/catalog.json)
 
 Top 5 shown:
 

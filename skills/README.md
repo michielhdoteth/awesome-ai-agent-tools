@@ -2,12 +2,12 @@
 
 Reusable AI agent skills following the SKILL.md standard
 
-**102** entries across **9** categories.
+**103** entries across **9** categories.
 
 ## Categories
 
 - **Development** (33)
-- **Productivity** (17)
+- **Productivity** (18)
 - **Design** (11)
 - **Content** (10)
 - **DevOps** (9)
@@ -16,7 +16,7 @@ Reusable AI agent skills following the SKILL.md standard
 - **Testing** (6)
 - **Security** (2)
 
-## All 102 skills
+## All 103 skills
 
 | Name                                            | Category     | Description                                                                                                                                                                          | Source                                                                                                | Badges                                                                                                                                                                                                                               |
 | ----------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -122,6 +122,7 @@ Reusable AI agent skills following the SKILL.md standard
 | Faber Language                                  | Development  | Write and check Faber Romanus programs: mechanical grammar, multi-locale surface, emits Rust/TS/Go/Swift and more. Install CLI + four skills from faberlang.dev.                     | [faberlang/faberlang.dev](https://github.com/faberlang/faberlang.dev)                                 | ![Stars](https://img.shields.io/github/stars/faberlang/faberlang.dev?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/faberlang/faberlang.dev?style=flat)                                 |
 | LinkBunny                                       | Marketing    | Coding-agent workflow for relevant, owner-approved nofollow link exchanges; account required.                                                                                        | [hboon/linkbunny-agent-skill](https://github.com/hboon/linkbunny-agent-skill)                         | ![Stars](https://img.shields.io/github/stars/hboon/linkbunny-agent-skill?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/hboon/linkbunny-agent-skill?style=flat)                         |
 | Firecrawl                                       | Data         | Official Firecrawl skills for AI agents to search, scrape, crawl, map and interact with the web, find structured data through Firecrawl Alexandria, and build on the Firecrawl API.  | [firecrawl/skills](https://github.com/firecrawl/skills)                                               | ![Stars](https://img.shields.io/github/stars/firecrawl/skills?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/firecrawl/skills?style=flat)                                               |
+| Resume Claim Guard                              | Productivity | Agent skill that tailors a resume to a job description from confirmed facts only and blocks invented metrics or inflated verbs.                                                      | [korey2028-prog/resume-claim-guard](https://github.com/korey2028-prog/resume-claim-guard)             | ![Stars](https://img.shields.io/github/stars/korey2028-prog/resume-claim-guard?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/korey2028-prog/resume-claim-guard?style=flat)             |
 
 ---
 
