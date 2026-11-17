@@ -3,12 +3,12 @@
   "version": "2026.08",
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
-  "lastUpdated": "2026-11-07",
-  "totalPlugins": 60,
+  "lastUpdated": "2026-11-01",
+  "totalPlugins": 61,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Codex",
@@ -791,6 +791,21 @@
       "lastUpdated": "2026-10-28"
     },
     {
+      "id": "kling-ai-claude",
+      "name": "Kling AI for Claude Code",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 2,
+      "description": "Generate images and videos through the hosted Kling MCP using OAuth and paid credits.",
+      "websiteUrl": "https://github.com/klingai-tech/claude-plugin",
+      "installCommand": "claude plugin marketplace add klingai-tech/claude-plugin && claude plugin install kling-ai@klingai",
+      "license": "MIT",
+      "github": "https://github.com/klingai-tech/claude-plugin",
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-14"
+    },
+    {
       "id": "akii-seo-ai-search-optimizer",
       "name": "Akii: SEO & AI Search Optimizer",
       "category": "Claude Code",
@@ -801,7 +816,8 @@
       "installCommand": "/plugin marketplace add https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer\n/plugin install akii-seo-ai-search-optimizer@akii",
       "license": "MIT",
       "github": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
-      "sourceType": "official"
+      "sourceType": "official",
+      "notes": "SessionEnd hook sends opt-out anonymized telemetry (plugin version, hashed machine UUID, OS) to akii.com and checks GitHub for updates. Disable with AKII_PLUGIN_DISABLE_TELEMETRY=1 or DO_NOT_TRACK=1."
     }
   ]
 }
