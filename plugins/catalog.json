@@ -4,11 +4,11 @@
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
   "lastUpdated": "2026-11-01",
-  "totalPlugins": 59,
+  "totalPlugins": 60,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Codex",
@@ -789,6 +789,21 @@
       "source": "github",
       "sourceType": "community",
       "lastUpdated": "2026-10-28"
+    },
+    {
+      "id": "kling-ai-claude",
+      "name": "Kling AI for Claude Code",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 2,
+      "description": "Generate images and videos through the hosted Kling MCP using OAuth and paid credits.",
+      "websiteUrl": "https://github.com/klingai-tech/claude-plugin",
+      "installCommand": "claude plugin marketplace add klingai-tech/claude-plugin && claude plugin install kling-ai@klingai",
+      "license": "MIT",
+      "github": "https://github.com/klingai-tech/claude-plugin",
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-14"
     }
   ]
 }

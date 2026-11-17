@@ -2,11 +2,11 @@
 
 Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms
 
-**59** entries across **11** categories.
+**60** entries across **11** categories.
 
 ## Categories
 
-- **Claude Code** (15)
+- **Claude Code** (16)
 - **Cross-Tool** (10)
 - **OpenCode** (9)
 - **VS Code AI** (6)
@@ -18,7 +18,7 @@ Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms
 - **Codex** (1)
 - **Hermes Agent** (1)
 
-## All 59 plugins
+## All 60 plugins
 
 | Name                              | Category     | Description                                                                                                                                                                                                     | Source                                                                                            | Badges                                                                                                                                                                                                                           |
 | --------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -81,6 +81,7 @@ Extensions for Claude Code, OpenCode, Cursor, and 6 more platforms
 | Second Brain Starter Kit          | Claude Code  | Plugin marketplace with two plugins: a set of skills taken from a running second-brain and assistant setup, and opt-in persistent memory that registers the sqlite-graph-memory MCP server over your own notes. | [tonydzi/second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit)           | ![Stars](https://img.shields.io/github/stars/tonydzi/second-brain-starter-kit?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/tonydzi/second-brain-starter-kit?style=flat)           |
 | Oh My Hermes                      | Hermes Agent | Hermes Agent workflow plugin with project memory and task-specific model and reasoning routing.                                                                                                                 | [rlaope/oh-my-hermes](https://github.com/rlaope/oh-my-hermes)                                     | ![Stars](https://img.shields.io/github/stars/rlaope/oh-my-hermes?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/rlaope/oh-my-hermes?style=flat)                                     |
 | Agent Notifications               | Cross-Tool   | Desktop task and attention notifications for six AI coding agents on macOS, Linux, and Windows.                                                                                                                 | [777genius/agent-notifications](https://github.com/777genius/agent-notifications)                 | ![Stars](https://img.shields.io/github/stars/777genius/agent-notifications?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/777genius/agent-notifications?style=flat)                 |
+| Kling AI for Claude Code          | Claude Code  | Generate images and videos through the hosted Kling MCP using OAuth and paid credits.                                                                                                                           | [klingai-tech/claude-plugin](https://github.com/klingai-tech/claude-plugin)                       | ![Stars](https://img.shields.io/github/stars/klingai-tech/claude-plugin?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/klingai-tech/claude-plugin?style=flat)                       |
 
 ---
 
