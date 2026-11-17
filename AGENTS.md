@@ -68,6 +68,6 @@ See [contributing.md](contributing.md) for full details. It is also the agent co
 - `loops/catalog.json` - Machine-readable loops catalog
 - `mods/catalog.json` - Machine-readable Claude Code mods catalog
 
-Review policy: one human approval from someone other than the PR author, plus a passing catalog validation check. An approval should say “Go” and give one brief reason. The repository owner must configure this approval count in GitHub branch protection; documentation alone does not enforce it.
+Merge policy: catalog-only PRs auto-merge after the trusted catalog validation check passes and GitHub reports the branch is mergeable. Keep the required catalog validation check enabled in GitHub branch protection; do not require human approvals for catalog contributions. Changes to workflows, scripts, or unrelated files require maintainer handling.
 
 Claude Code mods are executable plugins and run with the user's Claude Code access. Require clear source attribution and available install, compatibility, and license details; do not describe listing as a security audit.
