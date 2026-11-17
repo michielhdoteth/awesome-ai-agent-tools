@@ -4,7 +4,7 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-11-16",
-  "totalTools": 94,
+  "totalTools": 98,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 18
+      "count": 20
     },
     {
       "name": "Agent Memory",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Formatting & Linting",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Database CLIs",
@@ -1034,6 +1034,38 @@
       "crossPlatform": true,
       "install": "brew install --cask skills-manager / scoop install extras/skills-manager",
       "license": "MIT",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "agents-md-check",
+      "name": "AGENTS.md Check",
+      "category": "Formatting & Linting",
+      "description": "Offline checks for mechanical issues in AGENTS.md files.",
+      "url": "https://github.com/yangdoh/agents-md-check",
+      "stars": 0,
+      "crossPlatform": false,
+      "install": "git clone https://github.com/yangdoh/agents-md-check.git"
+    },
+    {
+      "id": "sno-station",
+      "name": "Sno Station",
+      "category": "AI Coding CLIs",
+      "description": "Runs Claude Code, Codex and Cursor as one team: sno reach pair puts a builder and a challenger on a task, and work moves to another agent at a usage limit.",
+      "url": "https://github.com/sno-ai/sno-station",
+      "stars": 971,
+      "crossPlatform": false,
+      "install": "curl -fsSL https://sno.ai/install | sh"
+    },
+    {
+      "id": "byagent",
+      "name": "byagent",
+      "category": "AI Coding CLIs",
+      "description": "Turns Markdown or HTML an agent makes into a shareable link, with versions and line comments.",
+      "url": "https://github.com/anup-a/byagent",
+      "crossPlatform": true,
+      "install": "npx byagent publish ./plan.md",
+      "website": "https://byagent.dev",
       "source": "github",
       "sourceType": "official"
     }

@@ -4,11 +4,11 @@
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
   "lastUpdated": "2026-11-01",
-  "totalPlugins": 60,
+  "totalPlugins": 62,
   "categories": [
     {
       "name": "Claude Code",
-      "count": 16
+      "count": 18
     },
     {
       "name": "Codex",
@@ -804,6 +804,37 @@
       "source": "github",
       "sourceType": "official",
       "lastUpdated": "2026-11-14"
+    },
+    {
+      "id": "agentik",
+      "name": "Agentik",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 0,
+      "description": "Claude Code plugin for the hosted Agentik MCP gateway: 3,500+ third-party tools from 165 providers, each call at the provider's price, with the price shown before each call.",
+      "websiteUrl": "https://www.agentik.cc",
+      "installCommand": "/plugin marketplace add agent-tool-router/agentik\n/plugin install agentik@agentik",
+      "license": "MIT",
+      "github": "https://github.com/agent-tool-router/agentik",
+      "source": "github",
+      "sourceType": "official",
+      "endpoint": "https://ai.agentik.cc/mcp",
+      "lastUpdated": "2026-11-04",
+      "notes": "The plugin, CLI and SDK are MIT; the hosted service is not open source. Agentik account required (sign in with Google or GitHub); calls draw from a prepaid balance."
+    },
+    {
+      "id": "akii-seo-ai-search-optimizer",
+      "name": "Akii: SEO & AI Search Optimizer",
+      "category": "Claude Code",
+      "platform": "Claude Code",
+      "stars": 79,
+      "description": "A free Claude Code plugin that audits sites, checks links, plans content and creates JSON-LD.",
+      "websiteUrl": "https://akii.com/portfolio#search-optimizer",
+      "installCommand": "/plugin marketplace add https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer\n/plugin install akii-seo-ai-search-optimizer@akii",
+      "license": "MIT",
+      "github": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
+      "sourceType": "official",
+      "notes": "SessionEnd hook sends opt-out anonymized telemetry (plugin version, hashed machine UUID, OS) to akii.com and checks GitHub for updates. Disable with AKII_PLUGIN_DISABLE_TELEMETRY=1 or DO_NOT_TRACK=1."
     }
   ]
 }
