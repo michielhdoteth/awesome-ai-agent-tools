@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 195,
+  "totalServers": 199,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 14
+      "count": 15
     },
     {
       "name": "Search",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 3
+      "count": 4
     },
     {
       "name": "Finance",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 12
+      "count": 14
     },
     {
       "name": "Data Engineering",
@@ -1142,8 +1142,8 @@
       "category": "Research & Data",
       "github": "https://github.com/azmartone67/dchub-mcp-server",
       "stars": 3,
-      "description": "DC Hub is the live data layer for data-center site selection. Its Data Center Power Index (DCPI) is a daily score of where data centers can get grid power, across 300+ markets.",
-      "install": "Remote Streamable HTTP: https://dchub.cloud/mcp (free tier, no key; optional X-API-Key)",
+      "description": "DC Hub is the orchestration layer for data center and energy intelligence: start with execute_plan for electricity prices and power grid questions. It also publishes the Data Center Power Index (DCPI).",
+      "install": "Remote Streamable HTTP: https://dchub.cloud/mcp (DCHUB_API_KEY is optional)",
       "license": "MIT",
       "verified": true,
       "tags": [
@@ -2062,6 +2062,29 @@
         "veo2",
         "ai-video",
         "creative"
+      ]
+    },
+    {
+      "id": "imageat",
+      "name": "imageat",
+      "category": "Design",
+      "github": "https://github.com/incendies/imageat-mcp",
+      "stars": 0,
+      "description": "Official MCP server for generating and editing images and videos, plus narrated explainers and voiceovers.",
+      "install": "npx -y @imageat/mcp; remote MCP https://mcp.imageat.com/mcp (streamable HTTP, OAuth 2.1 or Bearer API key)",
+      "license": "MIT",
+      "verified": false,
+      "website": "https://imageat.com/mcp",
+      "npmPackage": "@imageat/mcp",
+      "remote": "streamable-http",
+      "source": "github",
+      "sourceType": "official",
+      "tags": [
+        "image-generation",
+        "video-generation",
+        "image-editing",
+        "official",
+        "remote"
       ]
     },
     {
@@ -3506,6 +3529,32 @@
       "notes": "Hosted service by Avatar 8 LLC; the MIT repo holds the agent skills and Claude Code / Cursor plugin config, not the server source. Agent docs: https://cooperemail.com/llms.txt. Official MCP Registry id: com.cooperemail/cooper-email."
     },
     {
+      "id": "api-supp",
+      "name": "API-Supp",
+      "category": "Communication",
+      "github": "https://github.com/yehudashtein/wa-bridge-mcp",
+      "website": "https://api-supp.com",
+      "stars": 0,
+      "description": "WhatsApp REST API and OAuth MCP for your existing number (unofficial QR bridge, not Meta's Cloud API). Paid, $7.50/number/month.",
+      "install": "pip install wa-bridge-mcp (env API_SUPP_TENANT_TOKEN); or remote https://app.api-supp.com/api/mcp (streamable HTTP, OAuth)",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-13",
+      "tags": [
+        "whatsapp",
+        "messaging",
+        "chat",
+        "media",
+        "voice",
+        "remote",
+        "oauth"
+      ],
+      "notes": "Unofficial WhatsApp bridge (not Meta's Cloud API). Local MIT client: https://github.com/yehudashtein/wa-bridge-mcp. Hosted OAuth MCP: https://app.api-supp.com/api/mcp. Paid service at $7.50/number/month."
+    },
+    {
       "id": "agentsearch-mcp",
       "name": "AgentSearch MCP",
       "category": "Search",
@@ -3716,6 +3765,28 @@
       "notes": "Pay-as-you-go API from $9 per 10,000 credits, 1,000 free credits, no subscription."
     },
     {
+      "id": "wavegrain",
+      "name": "Wavegrain",
+      "category": "Marketing",
+      "github": "https://github.com/wavegrain/wavegrain-mcp",
+      "website": "https://wavegrain.com/mcp",
+      "stars": 0,
+      "description": "Curated slideshows and carousels for your brand on autopilot: writes TikTok slideshows and Instagram carousels in the brand voice, then schedules and posts them.",
+      "install": "Remote endpoint: https://wavegrain.com/api/mcp (Streamable HTTP, OAuth); MCP Registry name com.wavegrain/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-12",
+      "tags": [
+        "social-media",
+        "tiktok",
+        "instagram",
+        "carousels",
+        "remote-mcp"
+      ]
+    },
+    {
       "id": "anansi-haven",
       "name": "Anansi Haven",
       "category": "Finance",
@@ -3821,6 +3892,28 @@
         "greenhouse",
         "lever",
         "ashby"
+      ]
+    },
+    {
+      "id": "mindthread-mcp",
+      "name": "MindThread MCP",
+      "category": "Marketing",
+      "github": "https://github.com/ppcvote/mindthread-mcp",
+      "stars": 1,
+      "description": "Write, schedule and publish Threads posts, review drafted replies and read post insights through MindThread, a Threads automation SaaS built on Meta's official Threads API. Tools are served by the hosted server; needs a MindThread API key.",
+      "install": "claude mcp add mindthread --env MINDTHREAD_API_KEY=mt_live_your_key -- npx -y mindthread-mcp (stdio), or remote https://mindthread.tw/api/mcp (streamable HTTP, Bearer API key or OAuth)",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-17",
+      "website": "https://mindthread.tw/developers",
+      "tags": [
+        "threads",
+        "social-media",
+        "scheduler",
+        "meta",
+        "remote-mcp"
       ]
     },
     {
