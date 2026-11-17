@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-11-12",
-  "totalSkills": 102,
+  "totalSkills": 107,
   "categories": [
     {
       "name": "Development",
@@ -12,15 +12,15 @@
     },
     {
       "name": "Productivity",
-      "count": 17
+      "count": 18
     },
     {
       "name": "Content",
-      "count": 10
+      "count": 11
     },
     {
       "name": "Design",
-      "count": 11
+      "count": 13
     },
     {
       "name": "Testing",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Marketing",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Data",
@@ -1957,6 +1957,92 @@
         "scraping",
         "crawling",
         "web-data"
+      ]
+    },
+    {
+      "id": "leadsets-outbound-prospect-list",
+      "name": "Build an Outbound Prospect List",
+      "source": "leadsets/leadsets-skills",
+      "category": "Marketing",
+      "installs": 0,
+      "description": "Builds a verified B2B prospect list with Unlimited B2B Contact Data from the Leadsets MCP server.",
+      "install": "npx skills add leadsets/leadsets-skills --skill outbound-prospect-list",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "sales",
+        "lead-generation",
+        "prospecting",
+        "email-verification",
+        "gtm"
+      ]
+    },
+    {
+      "id": "easysociable-slideshow",
+      "name": "EasySociable",
+      "source": "murphywuwu/easysociable-mcp",
+      "category": "Design",
+      "installs": 0,
+      "description": "Turns a prompt into a branded multi-page carousel for TikTok, Instagram, and LinkedIn, inside your coding agent.",
+      "install": "npx skills add murphywuwu/easysociable-mcp --skill easysociable-slideshow",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "carousel",
+        "social",
+        "design",
+        "tiktok",
+        "instagram"
+      ],
+      "notes": "Community MCP wrapper: by default it forwards the full process environment to a third-party CLI fetched with npx (EASYSOCIABLE_ALLOW_ENV_CREDENTIALS=true). Use a scoped API key and review that CLI before enabling it."
+    },
+    {
+      "id": "resume-claim-guard",
+      "name": "Resume Claim Guard",
+      "source": "korey2028-prog/resume-claim-guard",
+      "category": "Productivity",
+      "description": "Agent skill that tailors a resume to a job description from confirmed facts only and blocks invented metrics or inflated verbs.",
+      "install": "git clone https://github.com/korey2028-prog/resume-claim-guard ~/.claude/skills/resume-claim-guard",
+      "license": "MIT",
+      "tags": [
+        "resume",
+        "career",
+        "job-search",
+        "writing"
+      ]
+    },
+    {
+      "id": "whatishipped",
+      "name": "whatishipped",
+      "source": "selan-ai/whatishipped",
+      "category": "Design",
+      "description": "A Claude Code skill that recreates a mobile app's UI as it ships: every screen, state, component and journey of an iOS or Android app, drawn from its code and checked against the app's own screenshots.",
+      "install": "/plugin marketplace add selan-ai/whatishipped",
+      "license": "MIT",
+      "tags": [
+        "ios",
+        "android",
+        "swiftui",
+        "jetpack-compose",
+        "design-system",
+        "screenshots"
+      ]
+    },
+    {
+      "id": "honeyvid",
+      "name": "HoneyVid",
+      "source": "HoneyVid/skills",
+      "category": "Content",
+      "description": "Five skills for making AI videos and images through HoneyVid: trending templates from a photo, Kling/Veo/Seedance generation, batches; HoneyVid account and paid credits required.",
+      "install": "npx skills add HoneyVid/skills",
+      "license": "MIT",
+      "tags": [
+        "video",
+        "ai-video",
+        "image-generation",
+        "content"
       ]
     }
   ]
