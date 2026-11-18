@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-11-12",
-  "totalSkills": 107,
+  "lastUpdated": "2026-11-19",
+  "totalSkills": 108,
   "categories": [
     {
       "name": "Development",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Productivity",
-      "count": 18
+      "count": 19
     },
     {
       "name": "Content",
@@ -2043,6 +2043,21 @@
         "ai-video",
         "image-generation",
         "content"
+      ]
+    },
+    {
+      "id": "perq",
+      "name": "Perq",
+      "source": "f-o-x11/perq-skill",
+      "category": "Productivity",
+      "description": "Looks up verified free AI credits, startup programs and perks (with source links and last-verified dates) from the perq.sh directory; also ships the perq.sh MCP server. Free, no account.",
+      "install": "npx skills add f-o-x11/perq-skill",
+      "license": "MIT",
+      "tags": [
+        "credits",
+        "startup-perks",
+        "free-tier",
+        "mcp"
       ]
     }
   ]
