@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 213,
+  "totalServers": 214,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Marketing",
@@ -4223,6 +4223,28 @@
       "tags": [
         "remote",
         "no-auth"
+      ]
+    },
+    {
+      "id": "lantern-works-gpu-prices",
+      "name": "Lantern Works GPU Prices",
+      "category": "Research & Data",
+      "github": "https://github.com/connormatthewdouglas/agent-work-stack-deals",
+      "stars": 2,
+      "description": "Free, read-only MCP server for GPU cloud rental prices, price changes and deals across providers.",
+      "install": "claude mcp add --transport http lantern-works-gpu-prices https://lantern-works-mcp.lantern-works.workers.dev/mcp (no API key), or uvx lantern-works-deals-mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://thelanternworks.com/?ref=ai-agent-tools",
+      "lastUpdated": "2026-11-19",
+      "tags": [
+        "remote",
+        "no-auth",
+        "gpu",
+        "pricing"
       ]
     }
   ]
