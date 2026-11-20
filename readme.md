@@ -164,6 +164,10 @@ Top 5 shown:
 | Name | Description | Source |
 | ---- | ----------- | ------ |
 
+## Sponsor
+
+This project is supported by [1Lookup](https://www.1lookup.io), providing phone and email lookup and validation tools, including an MCP server for agent workflows.
+
 ## Contributing
 
 We welcome contributions. You can:
