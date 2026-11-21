@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-20",
-  "totalServers": 215,
+  "totalServers": 216,
   "categories": [
     {
       "name": "Official Reference",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Data Engineering",
@@ -4223,6 +4223,26 @@
       "tags": [
         "remote",
         "no-auth"
+      ]
+    },
+    {
+      "id": "linkedin-people-search-api",
+      "name": "LinkedIn People Search API",
+      "category": "Marketing",
+      "url": "https://mcp.apify.com?tools=johnvc/linkedin-people-search-api",
+      "description": "Hosted MCP tool on Apify that searches LinkedIn people by name, job title, company, school or location and returns public profile data as JSON (profile URL, headline, employer, work history, education). No LinkedIn login; needs an Apify API token, pay per result.",
+      "install": "claude mcp add --transport http linkedin-people-search \"https://mcp.apify.com?tools=johnvc/linkedin-people-search-api\" --header \"Authorization: Bearer <APIFY_TOKEN>\"",
+      "verified": false,
+      "source": "official",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-18",
+      "website": "https://apify.com/johnvc/linkedin-people-search-api",
+      "tags": [
+        "linkedin",
+        "people-search",
+        "lead-generation",
+        "apify",
+        "remote-mcp"
       ]
     },
     {
