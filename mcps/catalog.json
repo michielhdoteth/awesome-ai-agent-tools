@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 214,
+  "totalServers": 215,
   "categories": [
     {
       "name": "Official Reference",
@@ -81,6 +81,10 @@
     {
       "name": "Mobile",
       "count": 3
+    },
+    {
+      "name": "Travel",
+      "count": 1
     }
   ],
   "sources": [
@@ -4244,6 +4248,28 @@
         "apify",
         "remote-mcp"
       ]
+    },
+    {
+      "id": "cheapcarent-search",
+      "name": "CheapCarRent Search",
+      "category": "Travel",
+      "github": "https://github.com/aleksandrjefimov4-crypto/cheapcarent-mcp",
+      "stars": 0,
+      "description": "Hosted Streamable HTTP MCP server for car rental search at 15,000 pickup points in 46 countries and 19 languages. No account or API key, read-only",
+      "install": "claude mcp add --transport http cheapcarent-search https://cheapcarent.com/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-17",
+      "tags": [
+        "travel",
+        "car-rental",
+        "search",
+        "remote",
+        "http"
+      ],
+      "notes": "No authentication. Tools are read-only: list_locations and search_cars. Docs: https://cheapcarent.com/developers"
     }
   ]
 }
