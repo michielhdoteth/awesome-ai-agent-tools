@@ -2,7 +2,7 @@
 
 Curated Model Context Protocol servers for AI-assisted development
 
-**213** entries across **19** categories.
+**218** entries across **20** categories.
 
 ## Categories
 
@@ -10,23 +10,24 @@ Curated Model Context Protocol servers for AI-assisted development
 - **Developer Tools** (25)
 - **Search** (20)
 - **Agent Orchestration** (17)
+- **Marketing** (16)
 - **AI & Machine Learning** (16)
 - **Communication** (15)
-- **Marketing** (14)
 - **Databases** (11)
 - **Security** (11)
 - **Finance** (9)
+- **Design** (9)
 - **Browser Automation** (8)
 - **DevOps** (8)
 - **Monitoring** (7)
-- **Design** (7)
 - **Official Reference** (6)
 - **Cloud Platforms** (5)
 - **Blockchain** (4)
 - **Mobile** (3)
 - **Data Engineering** (1)
+- **Travel** (1)
 
-## All 213 mcps
+## All 218 mcps
 
 | Name                               | Category              | Description                                                                                                                                                                                                                                                                                                                                               | Source                                                                                                                | Badges                                                                                                                                                                                                                                               |
 | ---------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -243,6 +244,11 @@ Curated Model Context Protocol servers for AI-assisted development
 | Enhanciar                          | Search                | Remote MCP server for Enhanciar, a company brain. Answers questions from your Slack, Gmail, Drive, Notion, Jira, Linear, GitHub, Zendesk and Postgres with a link to the source, and can propose a reply or ticket for a person to approve. Paid plans; bring your own AI key.                                                                            | [enhanciar/enhanciar-mcp](https://github.com/enhanciar/enhanciar-mcp)                                                 | ![Stars](https://img.shields.io/github/stars/enhanciar/enhanciar-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/enhanciar/enhanciar-mcp?style=flat)                                                 |
 | No Stairs Please                   | Research & Data       | Hosted Streamable HTTP MCP server exposing a curated US live-music venue database across all 50 states, with room capacities, stage/load-in specs, and booking contacts.                                                                                                                                                                                  | [nostairsplease.com](https://nostairsplease.com/mcp)                                                                  |                                                                                                                                                                                                                                                      |
 | mcpserverlist-mcp                  | Developer Tools       | Check if your MCP server is ready for MCP directories, then get it submitted.                                                                                                                                                                                                                                                                             | [sudomichael/mcpserverlist-mcp](https://github.com/sudomichael/mcpserverlist-mcp)                                     | ![Stars](https://img.shields.io/github/stars/sudomichael/mcpserverlist-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/sudomichael/mcpserverlist-mcp?style=flat)                                     |
+| LinkedIn People Search API         | Marketing             | Hosted MCP tool on Apify that searches LinkedIn people by name, job title, company, school or location and returns public profile data as JSON (profile URL, headline, employer, work history, education). No LinkedIn login; needs an Apify API token, pay per result.                                                                                   | [mcp.apify.com](https://mcp.apify.com?tools=johnvc/linkedin-people-search-api)                                        |                                                                                                                                                                                                                                                      |
+| CheapCarRent Search                | Travel                | Hosted Streamable HTTP MCP server for car rental search at 15,000 pickup points in 46 countries and 19 languages. No account or API key, read-only                                                                                                                                                                                                        | [aleksandrjefimov4-crypto/cheapcarent-mcp](https://github.com/aleksandrjefimov4-crypto/cheapcarent-mcp)               | ![Stars](https://img.shields.io/github/stars/aleksandrjefimov4-crypto/cheapcarent-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/aleksandrjefimov4-crypto/cheapcarent-mcp?style=flat)               |
+| Car Listing Check                  | Marketing             | Remote MCP server that checks supplied vehicle listings for completeness and presentation and returns a score with concrete fixes.                                                                                                                                                                                                                        | [TRW123123/car-listing-check-mcp](https://github.com/TRW123123/car-listing-check-mcp)                                 | ![Stars](https://img.shields.io/github/stars/TRW123123/car-listing-check-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/TRW123123/car-listing-check-mcp?style=flat)                                 |
+| Headshot Photo Check               | Design                | Remote MCP server that technically checks profile and job-application photos (resolution, brightness, contrast, sharpness, crop recommendations) and returns a score with prioritized tips. No face or person judgments.                                                                                                                                  | [TRW123123/bewerbungsfoto-check-mcp](https://github.com/TRW123123/bewerbungsfoto-check-mcp)                           | ![Stars](https://img.shields.io/github/stars/TRW123123/bewerbungsfoto-check-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/TRW123123/bewerbungsfoto-check-mcp?style=flat)                           |
+| Ginta                              | Design                | Hosted MCP server that builds, publishes and edits small-business websites with contact forms, bookings, an online shop and a blog.                                                                                                                                                                                                                       | [justlinuxnoob/ginta-mcp](https://github.com/justlinuxnoob/ginta-mcp)                                                 | ![Stars](https://img.shields.io/github/stars/justlinuxnoob/ginta-mcp?style=flat&label=Stars&color=gold) ![Last Commit](https://img.shields.io/github/last-commit/justlinuxnoob/ginta-mcp?style=flat)                                                 |
 
 ---
 
