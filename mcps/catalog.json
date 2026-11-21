@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "lastUpdated": "2026-11-21",
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Search",
-      "count": 20
+      "count": 21
     },
     {
       "name": "AI & Machine Learning",
@@ -1956,7 +1956,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -4032,7 +4032,7 @@
       "category": "Security",
       "github": "https://github.com/bernik-bot/ichi-mcp",
       "stars": 0,
-      "description": "Internet Cyber Health Index MCP server — query the daily internet-wide cyber-health band, critical vulnerability advisories, and feed source health from AI agents",
+      "description": "Internet Cyber Health Index MCP server \u2014 query the daily internet-wide cyber-health band, critical vulnerability advisories, and feed source health from AI agents",
       "install": "uvx --from git+https://github.com/bernik-bot/ichi-mcp ichi-mcp",
       "license": "MIT",
       "verified": false,
@@ -4337,6 +4337,29 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "you-com-mcp",
+      "name": "You.com MCP",
+      "category": "Search",
+      "github": "https://github.com/youdotcom-oss/mcp",
+      "website": "https://you.com/docs/agents/mcp-server",
+      "stars": 27,
+      "description": "Hosted You.com web search MCP. Works with no API key on the free profile (about 100 searches a day). An optional key lifts that limit.",
+      "install": "npx -y @youdotcom-oss/mcp",
+      "license": "MIT",
+      "verified": false,
+      "npmPackage": "@youdotcom-oss/mcp",
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-21",
+      "tags": [
+        "search",
+        "web",
+        "free-tier",
+        "hosted"
+      ],
+      "notes": "Hosted endpoint: https://api.you.com/mcp?profile=free (Streamable HTTP). For the STDIO bridge set YDC_PROFILE=free. An optional YDC_API_KEY uses https://api.you.com/mcp. Tools on the free profile include you-search, you-extract, and you-discover."
     }
   ]
 }
