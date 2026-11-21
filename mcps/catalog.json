@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-20",
-  "totalServers": 217,
+  "lastUpdated": "2026-11-02",
+  "totalServers": 218,
   "categories": [
     {
       "name": "Official Reference",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Finance",
@@ -4314,6 +4314,29 @@
         "photo",
         "profile-photo"
       ]
+    },
+    {
+      "id": "ginta",
+      "name": "Ginta",
+      "category": "Design",
+      "github": "https://github.com/justlinuxnoob/ginta-mcp",
+      "stars": 0,
+      "description": "Hosted MCP server that builds, publishes and edits small-business websites with contact forms, bookings, an online shop and a blog.",
+      "install": "claude mcp add --transport http ginta https://ginta.app/mcp",
+      "license": "Proprietary",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://ginta.app/website-builder-mcp/",
+      "lastUpdated": "2026-11-20",
+      "tags": [
+        "remote",
+        "oauth",
+        "websites",
+        "hosting"
+      ],
+      "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
     }
   ]
 }
