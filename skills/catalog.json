@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-11-12",
-  "totalSkills": 107,
+  "totalSkills": 108,
   "categories": [
     {
       "name": "Development",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Productivity",
-      "count": 18
+      "count": 19
     },
     {
       "name": "Content",
@@ -2043,6 +2043,25 @@
         "ai-video",
         "image-generation",
         "content"
+      ]
+    },
+    {
+      "id": "apify-find-hiring-manager",
+      "name": "Find Hiring Manager",
+      "source": "johnisanerd/claude-skill-find-hiring-manager",
+      "category": "Productivity",
+      "installs": 0,
+      "description": "Finds the likely hiring manager, recruiter and referral contacts for a job posting from public LinkedIn data, with evidence and outreach drafts; needs an Apify account (paid per result).",
+      "install": "npx skills add johnisanerd/claude-skill-find-hiring-manager --skill apify-find-hiring-manager",
+      "license": "MIT",
+      "verified": false,
+      "local": false,
+      "tags": [
+        "job-search",
+        "recruiting",
+        "linkedin",
+        "outreach",
+        "apify"
       ]
     }
   ]
