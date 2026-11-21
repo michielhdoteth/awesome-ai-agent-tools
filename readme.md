@@ -11,7 +11,7 @@
 
 Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI tools, and Claude Code mods for AI coding assistants.
 
-**726** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
+**731** installable components across **9** categories. Every entry is sourced from a real open-source project. Works with Claude Code, OpenCode, Codex, Cursor, Gemini CLI, Copilot, and 30+ AI coding assistants.
 
 ## Contents
 
@@ -24,6 +24,10 @@ Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI to
 - [Prompts](#prompts)
 - [Tools](#tools)
 - [Claude Code Mods](#claude-code-mods)
+
+## Sponsor
+
+This project is supported by [1Lookup](https://www.1lookup.io), providing phone and email lookup and validation tools, including an MCP server for agent workflows.
 
 ## Skills
 
@@ -43,9 +47,9 @@ Top 5 shown:
 
 ## MCPs
 
-213 mcps across 19 categories: Research & Data (26) · Developer Tools (25) · Search (20) · Agent Orchestration (17) · AI & Machine Learning (16) · Communication (15) · Marketing (14) · Databases (11) · Security (11) · Finance (9) · Browser Automation (8) · DevOps (8) · Monitoring (7) · Design (7) · Official Reference (6) · Cloud Platforms (5) · Blockchain (4) · Mobile (3) · Data Engineering (1)
+218 mcps across 20 categories: Research & Data (26) · Developer Tools (25) · Search (20) · Agent Orchestration (17) · Marketing (16) · AI & Machine Learning (16) · Communication (15) · Databases (11) · Security (11) · Finance (9) · Design (9) · Browser Automation (8) · DevOps (8) · Monitoring (7) · Official Reference (6) · Cloud Platforms (5) · Blockchain (4) · Mobile (3) · Data Engineering (1) · Travel (1)
 
-**[Browse all 213 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
+**[Browse all 218 mcps in mcps/](mcps/)** · [catalog.json](mcps/catalog.json)
 
 Top 5 shown:
 
@@ -164,9 +168,6 @@ Top 5 shown:
 | Name | Description | Source |
 | ---- | ----------- | ------ |
 
-## Sponsor
-
-This project is supported by [1Lookup](https://www.1lookup.io), providing phone and email lookup and validation tools, including an MCP server for agent workflows.
 
 ## Contributing
 

@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 215,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 7
+      "count": 9
     },
     {
       "name": "Finance",
@@ -68,7 +68,7 @@
     },
     {
       "name": "Marketing",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Data Engineering",
@@ -81,6 +81,10 @@
     {
       "name": "Mobile",
       "count": 3
+    },
+    {
+      "name": "Travel",
+      "count": 1
     }
   ],
   "sources": [
@@ -4244,6 +4248,95 @@
         "apify",
         "remote-mcp"
       ]
+    },
+    {
+      "id": "cheapcarent-search",
+      "name": "CheapCarRent Search",
+      "category": "Travel",
+      "github": "https://github.com/aleksandrjefimov4-crypto/cheapcarent-mcp",
+      "stars": 0,
+      "description": "Hosted Streamable HTTP MCP server for car rental search at 15,000 pickup points in 46 countries and 19 languages. No account or API key, read-only",
+      "install": "claude mcp add --transport http cheapcarent-search https://cheapcarent.com/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-17",
+      "tags": [
+        "travel",
+        "car-rental",
+        "search",
+        "remote",
+        "http"
+      ],
+      "notes": "No authentication. Tools are read-only: list_locations and search_cars. Docs: https://cheapcarent.com/developers"
+    },
+    {
+      "id": "car-listing-check-mcp",
+      "name": "Car Listing Check",
+      "category": "Marketing",
+      "github": "https://github.com/TRW123123/car-listing-check-mcp",
+      "stars": 0,
+      "description": "Remote MCP server that checks supplied vehicle listings for completeness and presentation and returns a score with concrete fixes.",
+      "install": "claude mcp add --transport http car-listing-check https://mcp.aicarvideo.com/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://aicarvideo.com",
+      "lastUpdated": "2026-11-20",
+      "tags": [
+        "remote",
+        "no-auth",
+        "automotive",
+        "vehicle-listings"
+      ]
+    },
+    {
+      "id": "headshot-photo-check-mcp",
+      "name": "Headshot Photo Check",
+      "category": "Design",
+      "github": "https://github.com/TRW123123/bewerbungsfoto-check-mcp",
+      "stars": 0,
+      "description": "Remote MCP server that technically checks profile and job-application photos (resolution, brightness, contrast, sharpness, crop recommendations) and returns a score with prioritized tips. No face or person judgments.",
+      "install": "claude mcp add --transport http headshot-photo-check https://mcp.profilfoto-ki.de/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://profilfoto-ki.de",
+      "lastUpdated": "2026-11-20",
+      "tags": [
+        "remote",
+        "no-auth",
+        "photo",
+        "profile-photo"
+      ]
+    },
+    {
+      "id": "ginta",
+      "name": "Ginta",
+      "category": "Design",
+      "github": "https://github.com/justlinuxnoob/ginta-mcp",
+      "stars": 0,
+      "description": "Hosted MCP server that builds, publishes and edits small-business websites with contact forms, bookings, an online shop and a blog.",
+      "install": "claude mcp add --transport http ginta https://ginta.app/mcp",
+      "license": "Proprietary",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://ginta.app/website-builder-mcp/",
+      "lastUpdated": "2026-11-20",
+      "tags": [
+        "remote",
+        "oauth",
+        "websites",
+        "hosting"
+      ],
+      "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
     },
     {
       "id": "lantern-works-gpu-prices",
