@@ -3656,7 +3656,7 @@
       "website": "https://brewpage.app",
       "stars": 0,
       "description": "Publishes HTML pages, Markdown, static sites, files, JSON and key-value data to temporary HTTPS links with no signup or API key; the returned owner token updates or deletes the content.",
-      "install": "npx -y brewpage-mcp; remote MCP https://brewpage.app/mcp (streamable HTTP, no sign-in)",
+      "install": "claude mcp add --transport http brewpage https://brewpage.app/mcp",
       "license": "MIT",
       "remote": "streamable-http",
       "verified": false,
@@ -3671,7 +3671,7 @@
         "file-sharing",
         "remote-mcp"
       ],
-      "notes": "Hosted service; the MIT package and Apache-2.0 OpenAPI repo are public, the service is proprietary. Content expires (default 15 days, max 30, 90 with a free profile). Agent docs: https://brewpage.app/llms.txt. Official MCP Registry id: io.github.kochetkov-ma/brewpage-mcp."
+      "notes": "The hosted Streamable HTTP connection exposes 13 tools and supports anonymous publishing and optional OAuth. For local stdio, run npx -y brewpage-mcp@3.0.0. The MIT package and Apache-2.0 OpenAPI repo are public, and the hosted service is proprietary. Content expires (default 15 days, max 30, 90 with a free profile). Agent docs: https://brewpage.app/llms.txt. Official MCP Registry id: io.github.kochetkov-ma/brewpage-mcp."
     },
     {
       "id": "fair-value-calculator",
