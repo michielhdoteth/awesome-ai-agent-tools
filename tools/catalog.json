@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-11-16",
-  "totalTools": 98,
+  "lastUpdated": "2026-11-18",
+  "totalTools": 99,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Agent Memory",
@@ -1066,6 +1066,18 @@
       "crossPlatform": true,
       "install": "npx byagent publish ./plan.md",
       "website": "https://byagent.dev",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "watch-session-handoff",
+      "name": "Watch",
+      "category": "AI Coding CLIs",
+      "description": "Local CLI and desktop app for handing saved coding-agent sessions to another agent.",
+      "url": "https://github.com/can4hou6joeng4/Watch",
+      "stars": 1,
+      "crossPlatform": true,
+      "install": "git clone https://github.com/can4hou6joeng4/Watch.git && cd Watch && npm install",
       "source": "github",
       "sourceType": "official"
     }
