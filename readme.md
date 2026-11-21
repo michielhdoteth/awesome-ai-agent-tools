@@ -25,6 +25,10 @@ Skills, MCP servers, agent workflows, subagents, hooks, plugins, prompts, CLI to
 - [Tools](#tools)
 - [Claude Code Mods](#claude-code-mods)
 
+## Sponsor
+
+This project is supported by [1Lookup](https://www.1lookup.io), providing phone and email lookup and validation tools, including an MCP server for agent workflows.
+
 ## Skills
 
 107 skills across 9 categories: Development (33) · Productivity (18) · Design (13) · Content (11) · DevOps (9) · Marketing (8) · Data (7) · Testing (6) · Security (2)
@@ -164,9 +168,6 @@ Top 5 shown:
 | Name | Description | Source |
 | ---- | ----------- | ------ |
 
-## Sponsor
-
-This project is supported by [1Lookup](https://www.1lookup.io), providing phone and email lookup and validation tools, including an MCP server for agent workflows.
 
 ## Contributing
 
