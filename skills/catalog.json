@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-11-12",
-  "totalSkills": 107,
+  "lastUpdated": "2026-11-20",
+  "totalSkills": 108,
   "categories": [
     {
       "name": "Development",
@@ -36,7 +36,7 @@
     },
     {
       "name": "Data",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Security",
@@ -2043,6 +2043,24 @@
         "ai-video",
         "image-generation",
         "content"
+      ]
+    },
+    {
+      "id": "questionpunk-research-skills",
+      "name": "QuestionPunk Research Skills",
+      "source": "questionpunk/research-skills",
+      "category": "Data",
+      "description": "22 skills for questionnaire design, sample sizing, pricing research and survey crosstabs.",
+      "install": "npx skills add questionpunk/research-skills",
+      "license": "MIT",
+      "githubUrl": "https://github.com/questionpunk/research-skills",
+      "sourceType": "official",
+      "tags": [
+        "surveys",
+        "market-research",
+        "pricing-research",
+        "statistics",
+        "user-research"
       ]
     }
   ]
