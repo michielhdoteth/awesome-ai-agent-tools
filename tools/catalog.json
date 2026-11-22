@@ -4,7 +4,7 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-11-16",
-  "totalTools": 98,
+  "totalTools": 99,
   "categories": [
     {
       "name": "Code Analysis",
@@ -28,7 +28,7 @@
     },
     {
       "name": "AI Coding CLIs",
-      "count": 20
+      "count": 21
     },
     {
       "name": "Agent Memory",
@@ -497,6 +497,16 @@
       "stars": 49,
       "crossPlatform": true,
       "install": "npm install -g codex-profile"
+    },
+    {
+      "id": "folkbench-switch",
+      "name": "Folkbench Switch",
+      "category": "AI Coding CLIs",
+      "description": "Desktop app (macOS/Windows, beta) that writes a saved API endpoint and key into Claude Code, Codex and Gemini CLI configs after showing a diff.",
+      "url": "https://github.com/Folkbench/folkbench",
+      "stars": 3349,
+      "crossPlatform": true,
+      "install": "Download from GitHub Releases (macOS / Windows installers)"
     },
     {
       "id": "tree-ring-memory",
