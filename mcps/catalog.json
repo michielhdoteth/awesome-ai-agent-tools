@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Security",
-      "count": 11
+      "count": 12
     },
     {
       "name": "Design",
@@ -4337,6 +4337,30 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "iotaudit",
+      "name": "iotaudit",
+      "category": "Security",
+      "github": "https://github.com/emirmrkaljevic/iotaudit",
+      "stars": 7,
+      "description": "Local MCP server and CLI that audits smart home devices on your own network, covering traffic, open ports, default credentials, UPnP mappings, and an A to F grade.",
+      "install": "pip install \"iotaudit[mcp]\" && iotaudit-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://emirmrkaljevic.github.io/iotaudit/",
+      "lastUpdated": "2026-11-22",
+      "tags": [
+        "iot",
+        "security",
+        "smart-home",
+        "network",
+        "privacy",
+        "mcp"
+      ],
+      "notes": "Local stdio server. It only audits the user's own network after an explicit confirmation. All data stays on the machine. No telemetry."
     }
   ]
 }
