@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
-  "lastUpdated": "2026-11-16",
-  "totalTools": 98,
+  "lastUpdated": "2026-11-22",
+  "totalTools": 99,
   "categories": [
     {
       "name": "Code Analysis",
@@ -48,7 +48,7 @@
     },
     {
       "name": "Monitoring",
-      "count": 4
+      "count": 5
     },
     {
       "name": "Terminal Enhancement",
@@ -1068,6 +1068,18 @@
       "website": "https://byagent.dev",
       "source": "github",
       "sourceType": "official"
+    },
+    {
+      "id": "agent-city",
+      "name": "Agent City",
+      "category": "Monitoring",
+      "description": "Local 3D city view of Claude Code and omp sessions, showing each agent's live tool, file and status.",
+      "url": "https://github.com/Lulu-The-Narwhal/agent-city",
+      "crossPlatform": true,
+      "install": "npx agent-city-ai",
+      "website": "https://www.npmjs.com/package/agent-city-ai",
+      "source": "github",
+      "sourceType": "community"
     }
   ]
 }
