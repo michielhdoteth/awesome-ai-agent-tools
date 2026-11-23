@@ -4,7 +4,7 @@
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
   "lastUpdated": "2026-11-12",
-  "totalSkills": 107,
+  "totalSkills": 108,
   "categories": [
     {
       "name": "Development",
@@ -40,7 +40,7 @@
     },
     {
       "name": "Security",
-      "count": 2
+      "count": 3
     }
   ],
   "sources": [
@@ -2043,6 +2043,22 @@
         "ai-video",
         "image-generation",
         "content"
+      ]
+    },
+    {
+      "id": "omniforge-skills",
+      "name": "OmniForge Pre-Deploy Security & DNS Audit Skills",
+      "source": "zColdWater/omniforge-skills",
+      "category": "Security",
+      "description": "40 pre-deploy audit skills for client JS secret scanning, Supabase RLS, CSP/HSTS headers, SPF/DKIM/DMARC deliverability, llms.txt readiness, and 78-TLD RDAP checks.",
+      "install": "npx skills add zColdWater/omniforge-skills",
+      "license": "MIT",
+      "tags": [
+        "security",
+        "supabase",
+        "dns",
+        "dmarc",
+        "llms-txt"
       ]
     }
   ]
