@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "lastUpdated": "2026-11-23",
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Marketing",
@@ -1207,6 +1207,27 @@
       ]
     },
     {
+      "id": "skool-community-mcp",
+      "name": "Skool Community Scraper",
+      "category": "Research & Data",
+      "github": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+      "stars": 0,
+      "description": "Search Skool communities by keyword: members, price, rating, estimated revenue, and daily growth. Hosted Streamable HTTP; needs Apify OAuth or your own Apify API token.",
+      "install": "Connect the remote MCP endpoint `https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker` (Apify OAuth or Authorization: Bearer $APIFY_TOKEN).",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-23",
+      "tags": [
+        "skool",
+        "communities",
+        "search",
+        "growth",
+        "apify"
+      ]
+    },
+    {
       "id": "trendradar",
       "name": "TrendRadar",
       "category": "Research & Data",
@@ -1956,7 +1977,7 @@
       "category": "Blockchain",
       "github": "https://github.com/vbkotecha/agentservices-api",
       "stars": 0,
-      "description": "Paid data APIs for AI agents — crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
+      "description": "Paid data APIs for AI agents \u2014 crypto prices, DeFi yields, on-chain analytics, whale tracking, market intelligence via x402 nanopayments",
       "install": "Remote endpoint: https://agentservices.to/mcp",
       "license": "MIT",
       "verified": true,
@@ -4032,7 +4053,7 @@
       "category": "Security",
       "github": "https://github.com/bernik-bot/ichi-mcp",
       "stars": 0,
-      "description": "Internet Cyber Health Index MCP server — query the daily internet-wide cyber-health band, critical vulnerability advisories, and feed source health from AI agents",
+      "description": "Internet Cyber Health Index MCP server \u2014 query the daily internet-wide cyber-health band, critical vulnerability advisories, and feed source health from AI agents",
       "install": "uvx --from git+https://github.com/bernik-bot/ichi-mcp ichi-mcp",
       "license": "MIT",
       "verified": false,
