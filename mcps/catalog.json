@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Finance",
@@ -4337,6 +4337,31 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "vidocu-mcp",
+      "name": "Vidocu MCP",
+      "category": "Design",
+      "github": "https://github.com/CommonNinja/vidocu-mcp-server",
+      "stars": 1,
+      "description": "Hosted MCP server that turns videos, PDFs and slides into subtitles, AI voiceovers, translations, help articles, knowledge bases and training courses, with async job polling.",
+      "install": "claude mcp add --transport http vidocu https://mcp.vidocu.ai/",
+      "license": "Proprietary",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://vidocu.ai/docs/mcp",
+      "lastUpdated": "2026-11-23",
+      "tags": [
+        "remote",
+        "oauth",
+        "video",
+        "subtitles",
+        "voiceover",
+        "knowledge-base"
+      ],
+      "notes": "Remote Streamable HTTP MCP endpoint at https://mcp.vidocu.ai/ with OAuth 2.1 sign-in or a Bearer API key; works on the free plan. Official MCP Registry name ai.vidocu/vidocu. The linked repository holds the docs and registry manifest; the server itself is closed source."
     }
   ]
 }
