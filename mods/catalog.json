@@ -3,7 +3,30 @@
   "description": "Curated Claude Code mods that customize the Claude Code experience",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalMods": 0,
-  "categories": [],
-  "mods": []
+  "totalMods": 1,
+  "categories": [
+    {
+      "name": "Security",
+      "count": 1
+    }
+  ],
+  "mods": [
+    {
+      "id": "vibeshield-mod",
+      "name": "VibeShield Secret-Leak Guardrail Mod",
+      "source": "zColdWater/vibeshield-claude-mod",
+      "category": "Security",
+      "description": "Zero-network Claude Code function-hooks mod that blocks writing secrets into NEXT_PUBLIC_/VITE_ client variables, hardcoded live keys in frontend bundles, and git add .env.",
+      "installCommand": "CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1 claude plugin marketplace add zColdWater/vibeshield-claude-mod && claude plugin install vibeshield-mod",
+      "compatibility": "Claude Code 2.1.287+ (CLAUDE_CODE_ENABLE_FUNCTION_HOOKS=1)",
+      "license": "MIT",
+      "tags": [
+        "security",
+        "secret-scanning",
+        "function-hooks",
+        "nextjs",
+        "vite"
+      ]
+    }
+  ]
 }
