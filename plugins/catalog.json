@@ -4,7 +4,7 @@
   "description": "Plugins, extensions, and rules for AI coding agents (Claude Code, OpenCode, Cursor, Copilot, Windsurf, Aider, JetBrains)",
   "license": "MIT",
   "lastUpdated": "2026-11-01",
-  "totalPlugins": 62,
+  "totalPlugins": 63,
   "categories": [
     {
       "name": "Claude Code",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Codex",
-      "count": 1
+      "count": 2
     },
     {
       "name": "OpenCode",
@@ -835,6 +835,20 @@
       "github": "https://github.com/akii-technologies-ltd/akii-seo-ai-search-optimizer",
       "sourceType": "official",
       "notes": "SessionEnd hook sends opt-out anonymized telemetry (plugin version, hashed machine UUID, OS) to akii.com and checks GitHub for updates. Disable with AKII_PLUGIN_DISABLE_TELEMETRY=1 or DO_NOT_TRACK=1."
+    },
+    {
+      "id": "omniforge-codex-plugin",
+      "name": "OmniForge Launch Audit Plugin",
+      "category": "Codex",
+      "platform": "Codex",
+      "stars": 1,
+      "installs": null,
+      "description": "Pre-deploy security, SPF/DKIM/DMARC email DNS, llms.txt citation, and 78-TLD RDAP domain auditor plugin with 4 skills and remote MCP connector.",
+      "websiteUrl": "https://omnipulse-x402.appwrite.network",
+      "installCommand": "npx skills add zColdWater/omniforge-codex-plugin",
+      "license": "MIT",
+      "github": "https://github.com/zColdWater/omniforge-codex-plugin",
+      "sourceType": "community"
     }
   ]
 }
