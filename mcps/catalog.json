@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Search",
@@ -4337,6 +4337,29 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "humancalls",
+      "name": "HumanCalls",
+      "category": "Communication",
+      "github": "https://github.com/Hire-Overseas/humancalls-mcp",
+      "stars": 0,
+      "description": "Hosted MCP server where a trained person phones a US or Canadian business for your agent and returns typed answers, a summary, the recording and a transcript.",
+      "install": "claude mcp add --transport http humancalls https://humancalls.ai/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://humancalls.ai",
+      "lastUpdated": "2026-11-23",
+      "tags": [
+        "remote",
+        "oauth",
+        "phone-calls",
+        "human-in-the-loop"
+      ],
+      "notes": "Remote Streamable HTTP endpoint at https://humancalls.ai/mcp with OAuth 2.1 (PKCE) sign-in; $1 per connected minute, 10 free minutes for new accounts. The linked repository holds the public connector configs (MIT); the service is operated by Hire Overseas."
     }
   ]
 }
