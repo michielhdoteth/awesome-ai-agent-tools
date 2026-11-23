@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Finance",
@@ -4337,6 +4337,30 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "embeddable-mcp",
+      "name": "Embeddable MCP",
+      "category": "Design",
+      "github": "https://github.com/CommonNinja/embeddable-mcp-server",
+      "stars": 0,
+      "description": "Hosted MCP server that builds, edits, previews and publishes website widgets and landing pages (forms, quizzes, calculators, pricing tables, popups, reviews) with Embeddable's AI builder, and returns embed codes. Requires an Embeddable account.",
+      "install": "claude mcp add --transport http embeddable https://mcp.embeddable.co/mcp",
+      "license": "Proprietary",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://embeddable.co/mcp",
+      "lastUpdated": "2026-11-23",
+      "tags": [
+        "remote",
+        "oauth",
+        "widgets",
+        "landing-pages",
+        "website-builder"
+      ],
+      "notes": "Remote Streamable HTTP MCP endpoint at https://mcp.embeddable.co/mcp with OAuth 2.1 sign-in; free plan available. Edits stay drafts until publish_widget, and the connection cannot delete anything. Official MCP Registry name co.embeddable/embeddable. The linked repository holds the docs and registry manifest; the server itself is closed source."
     }
   ]
 }
