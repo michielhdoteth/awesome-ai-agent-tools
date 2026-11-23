@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Marketing",
@@ -4337,6 +4337,30 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "tinyrex-mcp",
+      "name": "TinyRex MCP",
+      "category": "Research & Data",
+      "github": "https://github.com/emirmrkaljevic/tinyrex-mcp",
+      "stars": 2,
+      "description": "Local stdio MCP server that runs the 27 TinyRex Apify Store actors (remote jobs, Shopify products, audio and video transcription, tech stack detection, EU tenders and grants) with your own APIFY_TOKEN.",
+      "install": "pip install git+https://github.com/emirmrkaljevic/tinyrex-mcp.git && tinyrex-mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://apify.com/tinyrex",
+      "lastUpdated": "2026-11-15",
+      "tags": [
+        "scraping",
+        "apify",
+        "jobs",
+        "e-commerce",
+        "tenders",
+        "transcription"
+      ],
+      "notes": "Requires your own Apify account and APIFY_TOKEN. The server is free; the actors are pay-per-event on your Apify account, and failed or empty results are not charged."
     }
   ]
 }
