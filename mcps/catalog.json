@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -56,7 +56,7 @@
     },
     {
       "name": "Design",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Finance",
@@ -4337,6 +4337,25 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "a1-gallery",
+      "name": "A1 Gallery MCP",
+      "category": "Design",
+      "github": "https://github.com/a1-gallery/a1-mcp",
+      "stars": 1,
+      "description": "Official remote MCP server: design references from a hand-picked gallery of real live websites, with sections, full pages, fonts and measured design tokens",
+      "install": "Remote MCP: https://www.a1.gallery/api/mcp",
+      "license": "Proprietary",
+      "verified": false,
+      "tags": [
+        "design",
+        "ui",
+        "fonts",
+        "design-tokens",
+        "remote",
+        "official"
+      ]
     }
   ]
 }
