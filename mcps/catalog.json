@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "lastUpdated": "2026-11-25",
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -60,7 +60,7 @@
     },
     {
       "name": "Finance",
-      "count": 9
+      "count": 10
     },
     {
       "name": "Research & Data",
@@ -4337,6 +4337,30 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "alphasift",
+      "name": "AlphaSift",
+      "category": "Finance",
+      "github": "https://github.com/ZhuLinsen/alphasift",
+      "stars": 579,
+      "description": "Read-only 14-tool MCP server and CLI for multi-market stock screening and T+N pattern replay.",
+      "install": "pip install alphasift && alphasift-mcp",
+      "license": "Apache-2.0",
+      "verified": false,
+      "source": "github",
+      "sourceType": "community",
+      "website": "https://alphasift.zhulinsen.tech/",
+      "lastUpdated": "2026-11-25",
+      "tags": [
+        "stocks",
+        "quant",
+        "screening",
+        "mcp",
+        "stdio",
+        "read-only"
+      ],
+      "notes": "Local stdio MCP server exposing 14 read-only tools across CN, HK, US, JP, KR, TW, and ETFs with zero order-execution tools."
     }
   ]
 }
