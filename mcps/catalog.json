@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -12,7 +12,7 @@
     },
     {
       "name": "Developer Tools",
-      "count": 25
+      "count": 26
     },
     {
       "name": "Browser Automation",
@@ -4337,6 +4337,29 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "docstar",
+      "name": "DocStar",
+      "category": "Developer Tools",
+      "github": "https://github.com/swayammaheshwari/docstar-mcp",
+      "stars": 0,
+      "description": "Hosted MCP server that turns a product's API into published docs that users' AI assistants can read and call.",
+      "install": "claude mcp add --transport http docstar-workspace https://mcp.docstar.io/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://docstar.io",
+      "lastUpdated": "2026-11-25",
+      "tags": [
+        "remote",
+        "oauth",
+        "api-docs",
+        "documentation"
+      ],
+      "notes": "Remote Streamable HTTP MCP endpoint at https://mcp.docstar.io/mcp; OAuth 2.1 (PKCE, dynamic client registration); reading docs needs no account, changes need DocStar sign-in. 14 tools, e.g. search_docstar_docs, get_docstar_api_docs, call_any_api_of_docstar, create_endpoint, publish_pages."
     }
   ]
 }
