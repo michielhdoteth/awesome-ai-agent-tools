@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "totalHooks": 26,
-    "lastUpdated": "2026-11-03",
+    "totalHooks": 27,
+    "lastUpdated": "2026-11-26",
     "sources": [
       "https://github.com/karanb192/claude-code-hooks",
       "https://github.com/rohitg00/awesome-claude-code-toolkit",
@@ -26,7 +26,7 @@
       },
       {
         "name": "Session Management",
-        "count": 5
+        "count": 6
       },
       {
         "name": "Safety",
@@ -571,6 +571,26 @@
       "sourceType": "official",
       "lastUpdated": "2026-11-03",
       "github": "https://github.com/vulnify/vulnify-examples"
+    },
+    {
+      "id": "claude-collision-guard",
+      "name": "Claude Collision Guard",
+      "category": "Session Management",
+      "description": "Blocks a write once when another live Claude Code session holds the same file",
+      "eventType": "PreToolUse",
+      "matcher": "Edit|Write|MultiEdit|NotebookEdit|Bash|PowerShell|mcp__.*",
+      "script": "claims.py",
+      "language": "python",
+      "stars": 1,
+      "tags": [
+        "parallel-sessions",
+        "file-conflicts",
+        "safety"
+      ],
+      "source": "github",
+      "sourceType": "community",
+      "lastUpdated": "2026-11-25",
+      "github": "https://github.com/paultuddenham/claude-collision-guard"
     }
   ]
 }
