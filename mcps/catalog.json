@@ -4337,6 +4337,30 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "improvado-mcp",
+      "name": "Improvado MCP",
+      "category": "Marketing",
+      "github": "https://github.com/tekliner/improvado-mcp",
+      "website": "https://improvado.io/docs-section-topic/improvado-mcp",
+      "stars": 0,
+      "description": "Hosted MCP for querying Google Ads, Meta Ads, LinkedIn Ads and GA4 data in an Improvado workspace",
+      "install": "Remote MCP https://ai.improvado.io/experimental/agent/api/mcp-customer/v1/invoke/ (streamable HTTP, OAuth); Claude Code: claude plugin marketplace add tekliner/improvado-mcp, then claude plugin install improvado@improvado",
+      "license": "MIT (setup files and docs); hosted service proprietary",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-26",
+      "tags": [
+        "marketing",
+        "google-ads",
+        "meta-ads",
+        "ga4",
+        "remote",
+        "oauth"
+      ],
+      "notes": "Needs an Improvado account; Improvado is a paid commercial product. The server code is not open source and is not in the repo, which holds client setup files (server.json, .mcp.json, plugin manifests) and docs. Official MCP Registry name: io.improvado/mcp. Existing customers connect through report.improvado.io or their company's own Improvado domain."
     }
   ]
 }
