@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Marketing",
@@ -2090,6 +2090,28 @@
         "ai-video",
         "creative"
       ]
+    },
+    {
+      "id": "groundsocial",
+      "name": "Groundsocial",
+      "category": "Research & Data",
+      "github": "https://github.com/shivanshmehendiratta/groundsocial-mcp",
+      "stars": 0,
+      "description": "Remote MCP server for read-only public data from 77 platforms: Reddit, X, TikTok, Instagram, YouTube, LinkedIn, Google Search and more.",
+      "install": "Remote endpoint: https://api.groundsocial.dev/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-26",
+      "tags": [
+        "social-media",
+        "reddit",
+        "web-scraping",
+        "remote",
+        "research"
+      ],
+      "notes": "Hosted Streamable HTTP endpoint with OAuth 2.1 or an API key as a Bearer token; tools/list works without signing in. The repo holds client configs and examples (MIT); the server itself is closed source. Pay per call with 100 free credits. Docs: https://groundsocial.dev/docs/mcp . Submitted by the developer."
     },
     {
       "id": "imageat",
