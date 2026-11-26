@@ -4,7 +4,7 @@
   "description": "Essential CLI tools and utilities that enhance AI coding agent capabilities",
   "license": "MIT",
   "lastUpdated": "2026-11-16",
-  "totalTools": 98,
+  "totalTools": 99,
   "categories": [
     {
       "name": "Code Analysis",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Agent Security",
-      "count": 2
+      "count": 3
     }
   ],
   "tools": [
@@ -1066,6 +1066,18 @@
       "crossPlatform": true,
       "install": "npx byagent publish ./plan.md",
       "website": "https://byagent.dev",
+      "source": "github",
+      "sourceType": "official"
+    },
+    {
+      "id": "checkwash",
+      "name": "checkwash",
+      "category": "Agent Security",
+      "description": "Local, no-LLM CLI that flags loosened asserts, skipped tests, and weakened CI checks in a Git diff. Optional Claude Code hooks; never executes your code.",
+      "url": "https://github.com/taipei49314/checkwash",
+      "stars": 2,
+      "crossPlatform": true,
+      "install": "pipx install checkwash==0.13.2",
       "source": "github",
       "sourceType": "official"
     }
