@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "lastUpdated": "2026-11-26",
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Marketing",
@@ -135,6 +135,30 @@
     }
   ],
   "servers": [
+    {
+      "id": "ipgeolocation-io-mcp",
+      "name": "IPGeolocation.io MCP Server",
+      "category": "Research & Data",
+      "github": "https://github.com/IPGeolocation/ipgeolocation-io-mcp",
+      "stars": 6,
+      "description": "IP geolocation, IP security (VPN, proxy, Tor, bot, hosting and spam), company, ASN and network data",
+      "install": "npx -y ipgeolocation-io-mcp@latest",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-26",
+      "tags": [
+        "ip-geolocation",
+        "ip-security",
+        "company",
+        "asn",
+        "network-data",
+        "abuse-contacts",
+        "currency"
+      ],
+      "notes": "The official server provides IP geolocation, IP security (VPN, proxy, Tor, bot, hosting and spam detection), company information, ASN and network data, abuse contacts, time zones, astronomy, currency data and user-agent parsing. Run 17 tools locally over stdio with Node.js 22 or later, or connect to 16 hosted tools at https://mcp.ipgeolocation.io/mcp over Streamable HTTP. Configure IPGEOLOCATION_API_KEY locally or use the X-IPGeolocation-API-Key header for hosted access. get_cached_result reads saved pages without another API request. See https://ipgeolocation.io/integrations/ipgeolocation-io-mcp for setup."
+    },
     {
       "id": "easi-run",
       "name": "easi.run",
