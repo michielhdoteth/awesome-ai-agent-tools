@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -40,7 +40,7 @@
     },
     {
       "name": "AI & Machine Learning",
-      "count": 16
+      "count": 17
     },
     {
       "name": "Agent Orchestration",
@@ -4337,6 +4337,29 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "folio",
+      "name": "Folio",
+      "category": "AI & Machine Learning",
+      "github": "https://github.com/evergreen-it-dev/folio",
+      "stars": 94,
+      "description": "Self-hosted workspace whose Markdown docs, tables and whiteboards live in Git; MCP server with 52 tools",
+      "install": "docker compose up -d, then connect to https://<your-folio-host>/mcp (Streamable HTTP, OAuth 2.1 or a personal access token)",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-27",
+      "tags": [
+        "mcp",
+        "knowledge-base",
+        "docs",
+        "git",
+        "markdown",
+        "self-hosted"
+      ],
+      "notes": "The MCP server is built into each Folio instance; there is no shared hosted endpoint. Agents act with the rights of the user who connected them."
     }
   ]
 }
