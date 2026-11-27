@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Marketing",
@@ -135,6 +135,28 @@
     }
   ],
   "servers": [
+    {
+      "id": "frank-ai-researcher",
+      "name": "Frank AI Researcher",
+      "category": "Research & Data",
+      "github": "https://github.com/nar-vardanyan/frank-mcp",
+      "stars": 0,
+      "description": "Remote MCP server for running AI-moderated voice interviews with your own customers in 50+ languages and reading back transcripts, themes and quotes",
+      "install": "claude mcp add --transport http frank https://api.hifrank.ai/mcp",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-27",
+      "tags": [
+        "research",
+        "customer-interviews",
+        "voice",
+        "remote",
+        "oauth"
+      ],
+      "notes": "Hosted remote server (Streamable HTTP with OAuth); the MIT repo holds docs and client configs, not a self-hostable backend. Also available as an app in ChatGPT, and works with Claude, Grok and Muse plus other MCP clients that support remote servers with OAuth. Requires a Frank account; a free plan exists. Website: https://www.hifrank.ai/?utm_source=awesome-ai-agent-tools&utm_medium=directory&utm_campaign=mcp . Submitted by the Frank team."
+    },
     {
       "id": "easi-run",
       "name": "easi.run",
