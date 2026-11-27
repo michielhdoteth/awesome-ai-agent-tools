@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Research & Data",
-      "count": 26
+      "count": 27
     },
     {
       "name": "Marketing",
@@ -4337,6 +4337,29 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "batchdata",
+      "name": "BatchData",
+      "category": "Research & Data",
+      "github": "https://github.com/batchdataco/batchdata-mcp-server",
+      "stars": 1,
+      "description": "Official hosted MCP server for U.S. property data: property lookup, comps, property search, skip tracing, and address and phone checks",
+      "install": "claude mcp add --transport http batchdata https://mcp.batchdata.com",
+      "license": "MIT",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "lastUpdated": "2026-11-27",
+      "tags": [
+        "real-estate",
+        "property-data",
+        "skip-tracing",
+        "geocoding",
+        "remote",
+        "oauth"
+      ],
+      "notes": "Remote Streamable HTTP endpoint at https://mcp.batchdata.com with OAuth 2.1 sign-in, or a BatchData API token as a Bearer header for clients without OAuth. Requires a BatchData account (commercial, usage-based). The repository holds client setup docs, a Claude Code plugin and Agent Skills; the server itself is hosted by BatchData. Official MCP Registry name: io.github.batchdataco/batchdata-mcp-server. Submitted by BatchData (affiliated)."
     }
   ]
 }
