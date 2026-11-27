@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Communication",
-      "count": 15
+      "count": 16
     },
     {
       "name": "Search",
@@ -4337,6 +4337,30 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "genaya-connect",
+      "name": "Genaya Connect",
+      "category": "Communication",
+      "github": "https://github.com/genaya-app/genaya-claude-plugins",
+      "stars": 0,
+      "description": "Hosted MCP server for Genaya, an operations app for service businesses: ask about appointments, clients, invoices, calls and tasks, and prepare changes the member confirms.",
+      "install": "claude mcp add --transport http genaya https://api.genaya.com/mcp",
+      "license": "Proprietary",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://developer.genaya.com/mcp",
+      "lastUpdated": "2026-11-27",
+      "tags": [
+        "remote",
+        "oauth",
+        "crm",
+        "scheduling",
+        "invoicing"
+      ],
+      "notes": "Remote Streamable HTTP MCP endpoint at https://api.genaya.com/mcp with OAuth 2.1 sign-in; commercial hosted product with a 14-day free trial and no free plan. The linked repository holds the public Claude plugin and connector config (MIT); the server itself is closed source."
     }
   ]
 }
