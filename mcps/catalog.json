@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
-  "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "lastUpdated": "2026-11-27",
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -16,7 +16,7 @@
     },
     {
       "name": "Browser Automation",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Databases",
@@ -4337,6 +4337,31 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "tolsey-mcp",
+      "name": "Tolsey",
+      "category": "Browser Automation",
+      "github": "https://github.com/tolseymcp/tolsey-mcp",
+      "stars": 0,
+      "description": "Web tools for agents: read pages and PDFs as Markdown, screenshot, extract tables, check links, seal and diff pages, and extract fields with source quotes.",
+      "install": "claude mcp add --transport http tolsey https://tolsey.xyz/v1/mcp",
+      "license": "MIT",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://tolsey.xyz",
+      "lastUpdated": "2026-11-27",
+      "tags": [
+        "remote",
+        "stdio",
+        "web-scraping",
+        "screenshot",
+        "markdown",
+        "x402"
+      ],
+      "notes": "Remote Streamable HTTP endpoint at https://tolsey.xyz/v1/mcp; the linked repository is the local stdio server (MIT). Free mode needs no setup; paid mode pays per call in USDG over x402 with local spend caps."
     }
   ]
 }
