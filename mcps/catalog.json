@@ -4,7 +4,7 @@
   "description": "Curated Model Context Protocol servers for AI-assisted development",
   "license": "MIT",
   "lastUpdated": "2026-11-02",
-  "totalServers": 218,
+  "totalServers": 219,
   "categories": [
     {
       "name": "Official Reference",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Cloud Platforms",
-      "count": 5
+      "count": 6
     },
     {
       "name": "DevOps",
@@ -4337,6 +4337,28 @@
         "hosting"
       ],
       "notes": "Remote Streamable HTTP MCP endpoint at https://ginta.app/mcp with OAuth 2.1 sign-in; free plan, custom domains on paid plans. The linked repository holds the public connector configs (MIT); the server itself is closed source."
+    },
+    {
+      "id": "embarko",
+      "name": "Embarko",
+      "category": "Cloud Platforms",
+      "github": "https://github.com/walkover-mcp/embarko",
+      "stars": 0,
+      "description": "Hosted MCP server for Embarko, a shared workspace to publish, use and improve anything built with AI.",
+      "install": "claude mcp add --transport http embarko https://mcp.embarko.ai/mcp",
+      "remote": "streamable-http",
+      "verified": false,
+      "source": "github",
+      "sourceType": "official",
+      "website": "https://embarko.ai",
+      "lastUpdated": "2026-11-25",
+      "tags": [
+        "remote",
+        "oauth",
+        "hosting",
+        "deployment"
+      ],
+      "notes": "Remote Streamable HTTP MCP endpoint at https://mcp.embarko.ai/mcp with OAuth 2.1 sign-in (sign in to Embarko once). Tools: deploy_app, read_app, update_app, app_danger_zone."
     }
   ]
 }
