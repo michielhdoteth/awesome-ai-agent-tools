@@ -4344,7 +4344,7 @@
       "category": "Research & Data",
       "github": "https://github.com/connormatthewdouglas/agent-work-stack-deals",
       "stars": 2,
-      "description": "Free, read-only MCP server for GPU cloud rental prices, price changes and deals across providers.",
+      "description": "Free MCP server for GPU cloud rental prices, price changes and deals (the local uvx package is read-only; the hosted endpoint adds optional price watches and alerts) across providers.",
       "install": "claude mcp add --transport http lantern-works-gpu-prices https://lantern-works-mcp.lantern-works.workers.dev/mcp (no API key), or uvx lantern-works-deals-mcp",
       "license": "MIT",
       "remote": "streamable-http",
