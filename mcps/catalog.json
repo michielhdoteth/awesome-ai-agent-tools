@@ -4344,7 +4344,7 @@
       "category": "Cloud Platforms",
       "github": "https://github.com/walkover-mcp/embarko",
       "stars": 0,
-      "description": "Hosted MCP server to deploy and host AI-built apps and websites and get a live URL without any DevOps setup.",
+      "description": "Hosted MCP server for Embarko, a shared workspace to publish, use and improve anything built with AI.",
       "install": "claude mcp add --transport http embarko https://mcp.embarko.ai/mcp",
       "remote": "streamable-http",
       "verified": false,
