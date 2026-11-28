@@ -3,8 +3,8 @@
   "version": "2026.08",
   "description": "Reusable AI agent skills following the SKILL.md standard",
   "license": "MIT",
-  "lastUpdated": "2026-11-12",
-  "totalSkills": 107,
+  "lastUpdated": "2026-11-28",
+  "totalSkills": 108,
   "categories": [
     {
       "name": "Development",
@@ -32,7 +32,7 @@
     },
     {
       "name": "Marketing",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Data",
@@ -2043,6 +2043,24 @@
         "ai-video",
         "image-generation",
         "content"
+      ]
+    },
+    {
+      "id": "fairvalid-email-verification",
+      "name": "FairValid Email Verification",
+      "source": "moonlitnayeem/fairvalid-ai",
+      "sourceType": "official",
+      "category": "Marketing",
+      "description": "Verifies emails and reads job results via FairValid MCP; account and credits required.",
+      "install": "npx skills add moonlitnayeem/fairvalid-ai --skill email-verification",
+      "license": "MIT",
+      "stars": 0,
+      "verified": false,
+      "local": false,
+      "tags": [
+        "email-verification",
+        "mcp",
+        "verification-results"
       ]
     }
   ]
